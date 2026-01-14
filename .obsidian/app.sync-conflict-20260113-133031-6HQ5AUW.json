@@ -1,0 +1,19 @@
+{
+  "promptDelete": false,
+  "useMarkdownLinks": false,
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./",
+  "livePreview": true,
+  "spellcheck": false,
+  "useTab": false,
+  "tabSize": 2
+}

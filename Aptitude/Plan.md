@@ -1,0 +1,144 @@
+## 🗓️ 4-Day Intensive Aptitude Checklist
+
+### **Day 1: Core Quant Foundation**
+
+#### **Number System**
+
+* [ ] Divisibility rules
+* [ ] LCM & HCF (fractions, remainders)
+* [ ] Remainders & cyclicity
+* [ ] Units digit / last digits
+* [ ] Number of factors
+* [ ] Prime/composite logic
+* [ ] 🟢 **Surds & Indices** (Basic rules of powers)
+
+#### **Problems on Ages**
+
+* [x] Linear equation setup
+* [x] Ratio → equation conversion
+* [x] Past/future age shifts
+
+#### **Simple & Compound Interest**
+
+* [ ] SI formula applications
+* [ ] CI yearly / half-yearly
+* [ ] CI − SI difference
+* [ ] Growth & decay (Population problems)
+
+---
+
+### **Day 2: Commercial Math + Work**
+
+#### **Profit & Loss**
+
+* [ ] CP–SP–MP relations
+* [ ] Profit / Loss %
+* [ ] Successive profit/loss
+* [ ] False weight / Dishonest dealer
+
+#### **Discount**
+
+* [ ] Single & successive discounts
+* [ ] Discount ↔ profit linkage
+
+#### **Time & Work**
+
+* [ ] Unit work (LCM) method
+* [ ] Efficiency ratios
+* [ ] Men–days conversion ()
+
+#### **Pipes & Cistern**
+
+* [ ] Inlet–outlet logic
+* [ ] Net work per unit time
+
+#### **Foundational Math (🟢 Added)**
+
+* [ ] **Ratio & Proportion** (The foundation for P&L and Work)
+* [ ] **Averages & Mixtures** (Alligation method for quick solving)
+
+---
+
+### **Day 3: Speed + Structured Reasoning**
+
+#### **Time, Speed & Distance**
+
+* [ ] Relative speed
+* [ ] Average speed (Harmonic mean)
+* [ ] Boats & streams (Upstream/Downstream)
+* [ ] Circular motion
+
+#### **Problems on Trains**
+
+* [ ] Pole / platform / train crossing
+* [ ] Relative speed + length addition
+
+#### **Seating Arrangement**
+
+* [ ] Linear (facing North/South)
+* [ ] Circular (facing center/outside)
+
+#### **Blood Relation**
+
+* [ ] Family tree construction
+* [ ] Generation logic / Coded relations
+
+#### **Direction Sense (🟢 Added)**
+
+* [ ] North/South/East/West displacements
+* [ ] Pythagoras theorem applications
+
+---
+
+### **Day 4: Logic + Verbal Reasoning**
+
+#### **Puzzles**
+
+* [ ] Floor-based
+* [ ] Order & ranking
+* [ ] Multi-condition logic (Scheduling)
+
+#### **Alpha Numeric Series**
+
+* [ ] Letter–number mapping (A=1, Z=26)
+* [ ] Positional patterns
+
+#### **Syllogism (🟢 Added)**
+
+* [ ] Venn Diagram method
+* [ ] "Some", "All", "No", "Only a few" logic
+
+#### **Statement & Conclusion**
+
+* [ ] Valid conclusion rules
+* [ ] Extreme word elimination
+
+#### **Verbal Reasoning**
+
+* [ ] Cause & effect
+* [ ] Course of action
+* [ ] Inference
+
+#### **Data Interpretation (🟢 Added)**
+
+* [ ] Reading Pie charts / Bar graphs / Tables
+
+---
+
+## ⏱️ Daily Execution Strategy
+
+| Phase | Duration | Focus |
+| --- | --- | --- |
+| **Concepts** | 40 min | Watch a video or read rules for the Day's topics. |
+| **Standard Models** | 60 min | Solve 5-10 "classic" examples of each type. |
+| **Timed Practice** | 90 min | Solve mixed questions with a stopwatch (1 min per quest). |
+| **Error Review** | 20 min | **Vital:** Analyze why you got it wrong (Calculation vs. Logic). |
+
+**Final Goals:**
+
+* [ ] Formula Sheet created (1 page summary)
+* [ ] Squares (up to 30) and Cubes (up to 15) memorized
+* [ ] Fraction-to-Percentage table memorized (e.g., )
+* [ ] 1 Full-Length Mock Test completed
+
+---

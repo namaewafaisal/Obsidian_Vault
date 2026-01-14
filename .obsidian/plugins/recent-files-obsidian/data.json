@@ -1,0 +1,60 @@
+{
+  "recentFiles": [
+    {
+      "basename": "Dependency resolution",
+      "path": "Java Backend/Dependency resolution.md"
+    },
+    {
+      "basename": "Java Backend Index",
+      "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "pom.xml structure",
+      "path": "Java Backend/pom.xml structure.md"
+    },
+    {
+      "basename": "Hiragana",
+      "path": "Personal/Hiragana.md"
+    },
+    {
+      "basename": "152. Maximum Product Subarray",
+      "path": "Leetcode/Problems/152. Maximum Product Subarray.md"
+    },
+    {
+      "basename": "What is Java",
+      "path": "Java Backend/JAVA/What is Java.md"
+    },
+    {
+      "basename": "Digits",
+      "path": "Leetcode/DSA/Digits.md"
+    },
+    {
+      "basename": "383. Ransom Note",
+      "path": "Misc/383. Ransom Note.md"
+    },
+    {
+      "basename": "Relationships",
+      "path": "Personal/Relationships.md"
+    },
+    {
+      "basename": "Plan",
+      "path": "Personal/Plan.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Personal/Untitled.md"
+    },
+    {
+      "basename": "JVM lifecycle",
+      "path": "Java Backend/JVM lifecycle.md"
+    },
+    {
+      "basename": "Java IO vs NIO",
+      "path": "Java Backend/Java IO vs NIO.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}

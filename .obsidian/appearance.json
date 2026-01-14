@@ -1,0 +1,9 @@
+{
+  "cssTheme": "Minimal",
+  "accentColor": "#9572fd",
+  "interfaceFontFamily": "Maple Mono,Adwaita Mono,Courier New",
+  "textFontFamily": "Helvetica",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font",
+  "nativeMenus": false,
+  "baseFontSize": 16
+}
