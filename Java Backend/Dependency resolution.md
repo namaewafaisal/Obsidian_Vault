@@ -237,15 +237,4 @@ If you can reason about the dependency graph, Maven stops feeling magical.
 * [[Spring Boot parent POM]]
 * [[Classpath]]
 
----
-
-### Status checkpoint (important)
-
-You should now be able to answer:
-
-* *Why adding one dependency pulls many others*
-* *Why version conflicts happen*
-* *Why runtime errors can occur even when compilation succeeds*
-
-Do **not** move forward if this is unclear.
 
