@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Transitive dependencies",
+      "path": "Java Backend/Transitive dependencies.md"
+    },
+    {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Dependency resolution",
+      "path": "Java Backend/Dependency resolution.md"
+    },
+    {
+      "basename": "pom.xml structure",
+      "path": "Java Backend/pom.xml structure.md"
     },
     {
       "basename": "Hair Health and Growth_Research Webs",
@@ -139,14 +151,6 @@
     {
       "basename": "Java Backend Notes Template",
       "path": "Java Backend/Java Backend Notes Template.md"
-    },
-    {
-      "basename": "Dependency resolution",
-      "path": "Java Backend/Dependency resolution.md"
-    },
-    {
-      "basename": "pom.xml structure",
-      "path": "Java Backend/pom.xml structure.md"
     },
     {
       "basename": "152. Maximum Product Subarray",
