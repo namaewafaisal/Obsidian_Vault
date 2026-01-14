@@ -13,7 +13,7 @@
   "imgGrid": false,
   "imgWidth": "img-default-width",
   "tableWidth": "table-default-width",
-  "iframeWidth": "iframe-default-width",
+  "iframeWidth": "iframe-100",
   "mapWidth": "map-default-width",
   "chartWidth": "chart-default-width",
   "colorfulHeadings": false,
