@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Colours",
+      "path": "Personal/Colours.md"
+    },
+    {
       "basename": "Hiragana",
       "path": "Personal/Hiragana.md"
     },
@@ -51,10 +55,6 @@
     {
       "basename": "Relationships",
       "path": "Personal/Relationships.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Personal/Untitled.md"
     },
     {
       "basename": "JVM lifecycle",
