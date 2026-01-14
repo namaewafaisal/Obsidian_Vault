@@ -5,12 +5,12 @@
       "path": "Java Backend/Transitive dependencies.md"
     },
     {
-      "basename": "Java Backend Index",
-      "path": "Java Backend/Java Backend Index.md"
-    },
-    {
       "basename": "Dependency resolution",
       "path": "Java Backend/Dependency resolution.md"
+    },
+    {
+      "basename": "Java Backend Index",
+      "path": "Java Backend/Java Backend Index.md"
     },
     {
       "basename": "pom.xml structure",
