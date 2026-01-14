@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Introduction to Java Course</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:05:04.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Java Development Kit setup</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:13:21.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>First code in Java</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:24:35.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>How Java Works</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:36:34.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Variables in Java</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:48:11.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Data types in Java</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:00:28.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Literal</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:04:49.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Type conversion</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:17:20.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Assignment Operators</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:27:32.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Relational Operators </ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:35:35.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Logical Operators</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:46:47.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>If Else</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:59:45.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>If Else if</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:05:18.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Ternary</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:09:51.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Switch Statement</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:17:50.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Need For Loop</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:21:12.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>While Loop</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:33:35.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Do While Loop</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:36:48.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>For Loop</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:50:06.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Which Loop To Use</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:51:48.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Class And Object Theory</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:57:30.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Class and Object Practical</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>03:13:03.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>JDK JRE JVM</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>03:18:22.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Methods</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>03:29:44.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Method Overloading</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>03:35:41.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Stack And Heap</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>03:48:12.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Need of an Array</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>03:52:01.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Creation of Array</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>03:59:28.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Multi Dimensional Array</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>04:12:30.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Jagged and 3D Array</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>04:18:08.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Drawbacks of Array</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>04:20:54.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Array of Objects</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>04:29:42.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Enhanced for loop</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>04:35:07.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>What is String</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>04:42:24.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Mutable vs Immutable String</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>04:48:43.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>StringBuffer and StringBuilder</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>04:54:23.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Static Variable</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>05:01:26.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Static Block</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>05:08:43.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Static Method</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>05:13:25.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Encapsulation</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>05:25:04.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Getters and Setters</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>05:27:55.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>This Keyword</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>05:37:36.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Constructor</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>05:44:35.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Default vs Parameterized Constructor</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>05:49:36.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>This and Super Method</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>06:01:42.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Naming Convention</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>06:06:08.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Anonymous Object</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>06:10:51.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Need of Inheritance</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>06:17:06.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>What is Inheritance</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>06:25:50.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Single and Multilevel Inheritance</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>06:29:41.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Multiple Inheritance</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>06:36:16.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Method Overriding</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>06:44:05.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Packages</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>06:56:20.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Access Modifiers</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>07:04:42.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Polymorphism</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>07:08:31.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Dynamic Method Dispatch</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>07:16:29.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Final Keyword</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>07:22:43.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Object Class Equals, toString, hashCode</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>07:34:41.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Upcasting and Downcasting</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>07:41:17.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Abstract Keyword</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>07:53:26.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Inner Class</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>07:59:03.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Anonymous Inner Class</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:04:11.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Abstract and Anonymous Inner Class</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:07:22.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>What is Interface</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:15:18.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>More on Interfaces</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:18:40.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Need of Interface</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:27:11.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>What is Enum</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:34:04.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Enum If and Switch</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:37:59.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Enum Class</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:45:45.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>What is Annotation</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:53:14.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Functional Interface</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>08:56:43.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Lambda Expression</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:02:51.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Lambda Expression with Return</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:06:08.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Types of Interface</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:10:41.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>What is Exception</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:15:57.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Exception Handling Using Try Catch</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:21:58.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Try with Multiple Catch</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:32:14.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Exception Hierarchy</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:36:30.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Exception Throw Keyword</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:42:05.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Custom Exception</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:45:35.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Ducking Exception using Throws</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>09:55:29.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>User Input using BufferedReader and Scanner</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>10:07:17.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Try with Resources</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>10:15:25.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Threads</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>10:20:37.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Multiple Threads</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>10:31:58.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Thread Priority and Sleep</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>10:39:20.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Runnable vs Thread</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>10:47:45.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Race Condition</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>11:00:15.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Thread States</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>11:03:45.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Collection API</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>11:08:30.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>ArrayList</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>11:20:23.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Set</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>11:27:30.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Map</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>11:37:32.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Comparator vs Comparable</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>11:53:15.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Need of Stream API</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>12:00:12.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>forEach Method</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>12:05:01.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Stream API</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>12:14:09.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Map Filter Reduce Sorted</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>13:13:08.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>JUnit</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:04:39.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>DSA</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:04:42.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>DSA Intro</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:11:50.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Abstract Data Type</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:19:01.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Arrays</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:26:53.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Time Complexity</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:29:25.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Linear Search</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:33:31.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Binary Search</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:40:03.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Time Complexity</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:41:48.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Time Complexity for Linear Search</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:43:54.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Time Complexity for Binary Search</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:47:55.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Linear Search &amp; Binary Search</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:49:00.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Linear Search</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>16:55:12.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Binary Search (Using While Loop)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:03:46.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Binary Search (Using Recursion)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:07:10.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Sorting Techniques</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:07:53.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Sorting</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:09:20.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Bubble Sort</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:14:55.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Bubble Sort</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:23:05.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Selection Sort</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:30:00.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Selection Sort</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:37:13.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Insertion Sort</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:44:33.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Insertion Sort</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>17:57:26.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Quick Sort</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>18:04:06.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Example for Quick Sort (Logic)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>18:18:45.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Example for Quick Sort (Code)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>18:25:44.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Merge Sort</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>18:35:49.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Example for Merge Sort (Logic)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>18:41:55.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Example for Merge Sort (Code)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>18:53:18.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Linked List</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:06:41.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Linked List</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:11:43.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Insert</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:19:37.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Show</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:27:10.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>InsertAtStart</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:30:12.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>InsertAt</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:38:44.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>DeleteAt</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:43:58.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Stack</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:52:58.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Stack (Fixed Size Array)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:54:15.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Push</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:57:45.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Show</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>19:58:35.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Pop</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:01:10.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Peek</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:02:50.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Size</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:04:08.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>IsEmpty</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:09:42.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Stack (Dynamic Size Array)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:22:41.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Queue</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:27:28.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Queue</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:28:15.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Enqueue</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:30:02.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Show</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:32:13.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Dequeue</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:42:23.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Size</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:43:23.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>IsEmpty</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:44:16.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>IsFull</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:46:55.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Tree</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:47:05.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Tree</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:49:26.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Binary Tree</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:55:06.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Binary Search Tree</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:56:59.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Code for Binary Search Tree (Insert)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>20:57:56.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Insert</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>21:06:01.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Tree Traversal (InOrder)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>21:11:07.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Tree Traversal (PreOrder)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>21:11:50.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Git</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>23:12:20.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>JDBC</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>24:33:04.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Servlet and JSP</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>24:33:14.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Servlet</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>26:11:17.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>JSP</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>27:32:19.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>JSTL</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>30:29:58.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Hibernate</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>30:29:58.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Introduction to Hibernate</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>30:32:13.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Prerequisites for Hibernate</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>30:34:48.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Hibernate Theory</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>30:44:32.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Hibernate Practical</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>30:56:29.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>How to Add Hibernate Plugin in Eclipse</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>30:58:06.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Configuration File</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>31:05:21.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Working</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>31:09:58.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Show SQL Property</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>31:13:20.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Annotation</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>31:18:07.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Fetch Data Using Hibernate</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>31:22:39.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>How to Use Embeddable Object</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>31:30:31.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Mapping Relations Theory</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>31:43:35.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Mapping Relations Practical</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>33:49:37.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Rest API Web Service </ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>33:23:20.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>JPA</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:24:17.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring Framework</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:16:19.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Introduction to Spring</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:24:20.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:26:16.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring Documentation</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:29:09.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Prerequisites</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:31:21.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Software Requirements</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:33:48.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>STS Setup</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:39:19.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Dependency Injection in Spring</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:44:56.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Creating Spring Starter Project</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:50:07.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Dependency Injection in Spring Boot</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:55:42.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring Boot Autowire</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>36:59:30.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Bean Factory</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>37:11:45.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Application Context</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>37:14:27.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring Container</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>37:20:34.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Singleton vs Prototype</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>37:23:31.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Setter Injection</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>37:32:11.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Constructor Injection</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>37:36:18.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Autowire</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>37:44:51.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Primary</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>37:46:54.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring JDBC</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>38:16:19.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring MVC </ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>38:46:48.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring Boot MVC</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>38:57:44.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>@RequestParam</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>39:00:37.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Model</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>39:01:27.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>ModelMap vs Model</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>39:11:55.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>@ModelAttribute as a Parameter</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>39:14:51.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>@ModelAttribute as a Method</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>39:41:39.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring ORM Theory</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>40:12:45.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring Data JPA</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>40:41:13.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Rest API Using Spring Boot</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>40:41:17.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>REST</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>41:17:32.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Project Using Spring Boot MVC</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>41:18:09.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Java Project</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>43:45:47.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Java Spring Boot MongoDB Full Project</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>45:01:07.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring AOP</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>45:21:59.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring Security</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>45:34:18.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Spring Security -> Login</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>45:38:17.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>How to Create User and Password in Memory -> Configuration File</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>45:44:51.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>How to Fetch and Store User and Password in a DB  </ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>45:49:37.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Creating User Class</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>45:50:42.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Creating Service (UserDetailService) and Setting Password Encoder</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>45:55:42.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Creating UserDetails Implementation</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>46:01:02.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Recap</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>46:02:37.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>BCrypt Password Encoder</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>46:08:57.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Customize Login</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>46:28:34.000</ChapterTimeStart>
+      <ChapterDisplay>
+        <ChapterString>Microservice</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>
