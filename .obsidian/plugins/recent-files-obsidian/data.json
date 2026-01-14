@@ -1,20 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Dependency resolution",
-      "path": "Java Backend/Dependency resolution.md"
+      "basename": "Hiragana",
+      "path": "Personal/Hiragana.md"
+    },
+    {
+      "basename": "Plan",
+      "path": "Personal/Plan.md"
     },
     {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
     },
     {
-      "basename": "pom.xml structure",
-      "path": "Java Backend/pom.xml structure.md"
+      "basename": "What is a build tool",
+      "path": "Java Backend/What is a build tool.md"
     },
     {
-      "basename": "Hiragana",
-      "path": "Personal/Hiragana.md"
+      "basename": "Maven vs Gradle",
+      "path": "Java Backend/Maven vs Gradle.md"
+    },
+    {
+      "basename": "Java Backend Notes Template",
+      "path": "Java Backend/Java Backend Notes Template.md"
+    },
+    {
+      "basename": "Dependency resolution",
+      "path": "Java Backend/Dependency resolution.md"
+    },
+    {
+      "basename": "pom.xml structure",
+      "path": "Java Backend/pom.xml structure.md"
     },
     {
       "basename": "152. Maximum Product Subarray",
@@ -35,10 +51,6 @@
     {
       "basename": "Relationships",
       "path": "Personal/Relationships.md"
-    },
-    {
-      "basename": "Plan",
-      "path": "Personal/Plan.md"
     },
     {
       "basename": "Untitled",
