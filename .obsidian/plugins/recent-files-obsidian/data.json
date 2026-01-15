@@ -5,6 +5,10 @@
       "path": "Java Backend/Fat JAR & classpath.md"
     },
     {
+      "basename": "Dependency resolution",
+      "path": "Java Backend/Dependency resolution.md"
+    },
+    {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
     },
@@ -167,10 +171,6 @@
     {
       "basename": "Transitive dependencies",
       "path": "Java Backend/Transitive dependencies.md"
-    },
-    {
-      "basename": "Dependency resolution",
-      "path": "Java Backend/Dependency resolution.md"
     },
     {
       "basename": "pom.xml structure",
