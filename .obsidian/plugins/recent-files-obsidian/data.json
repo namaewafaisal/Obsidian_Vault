@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "206. Reverse Linked List",
-      "path": "Leetcode/206. Reverse Linked List.md"
+      "basename": "Maven lifecycle phases",
+      "path": "Java Backend/Maven lifecycle phases.md"
+    },
+    {
+      "basename": "Java Backend Index",
+      "path": "Java Backend/Java Backend Index.md"
     },
     {
       "basename": "New year plan",
       "path": "Leetcode/New year plan.md"
+    },
+    {
+      "basename": "College test plan",
+      "path": "Leetcode/College test plan.md"
     },
     {
       "basename": "383. Ransom Note",
@@ -17,8 +25,8 @@
       "path": "Leetcode/Problems/242. Valid Anagram.md"
     },
     {
-      "basename": "College test plan",
-      "path": "Leetcode/College test plan.md"
+      "basename": "206. Reverse Linked List",
+      "path": "Leetcode/206. Reverse Linked List.md"
     },
     {
       "basename": "215. Kth Largest Element in an Array",
@@ -75,10 +83,6 @@
     {
       "basename": "JVM lifecycle",
       "path": "Java Backend/JVM lifecycle.md"
-    },
-    {
-      "basename": "Java Backend Index",
-      "path": "Java Backend/Java Backend Index.md"
     },
     {
       "basename": "13. Roman to Integer",
@@ -195,10 +199,6 @@
     {
       "basename": "anki",
       "path": "Misc/anki.md"
-    },
-    {
-      "basename": "Leetcode Template",
-      "path": "Misc/Templates/Leetcode Template.md"
     }
   ],
   "omittedPaths": [],
