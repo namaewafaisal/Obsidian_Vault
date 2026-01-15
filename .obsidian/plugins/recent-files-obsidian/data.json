@@ -1,8 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "Spring Boot parent POM",
-      "path": "Java Backend/Spring Boot parent POM.md"
+      "basename": "Fat JAR & classpath",
+      "path": "Java Backend/Fat JAR & classpath.md"
     },
     {
       "basename": "Java Backend Index",
@@ -11,6 +11,10 @@
     {
       "basename": "Plugins vs dependencies",
       "path": "Java Backend/Plugins vs dependencies.md"
+    },
+    {
+      "basename": "Spring Boot parent POM",
+      "path": "Java Backend/Spring Boot parent POM.md"
     },
     {
       "basename": "Digits",
@@ -195,10 +199,6 @@
     {
       "basename": "Minecraft",
       "path": "Misc/Minecraft.md"
-    },
-    {
-      "basename": "Flutter Installation",
-      "path": "Misc/Flutter Installation.md"
     }
   ],
   "omittedPaths": [],
