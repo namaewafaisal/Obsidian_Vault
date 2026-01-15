@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "HTTP protocol basics",
+      "path": "Java Backend/HTTP protocol basics.md"
+    },
+    {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Client–Server model",
+      "path": "Java Backend/Client–Server model.md"
     },
     {
       "basename": "Build & Dependency Management (Maven)",
@@ -191,14 +199,6 @@
     {
       "basename": "Zathura",
       "path": "Misc/Zathura.md"
-    },
-    {
-      "basename": "Sites",
-      "path": "Misc/Sites.md"
-    },
-    {
-      "basename": "Part B",
-      "path": "Misc/Part B.md"
     }
   ],
   "omittedPaths": [],
