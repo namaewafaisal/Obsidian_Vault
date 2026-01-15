@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "242. Valid Anagram",
+      "path": "Leetcode/Problems/242. Valid Anagram.md"
+    },
+    {
       "basename": "New year plan",
       "path": "Leetcode/New year plan.md"
+    },
+    {
+      "basename": "383. Ransom Note",
+      "path": "Leetcode/383. Ransom Note.md"
     },
     {
       "basename": "College test plan",
@@ -11,10 +19,6 @@
     {
       "basename": "215. Kth Largest Element in an Array",
       "path": "Leetcode/215. Kth Largest Element in an Array.md"
-    },
-    {
-      "basename": "383. Ransom Note",
-      "path": "Leetcode/383. Ransom Note.md"
     },
     {
       "basename": "141. Linked List Cycle",
