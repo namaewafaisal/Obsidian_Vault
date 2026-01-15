@@ -1,16 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
       "basename": "New year plan",
       "path": "Leetcode/New year plan.md"
     },
     {
-      "basename": "13. Roman to Integer",
-      "path": "Leetcode/Problems/13. Roman to Integer.md"
+      "basename": "Index",
+      "path": "Misc/Index.md"
+    },
+    {
+      "basename": "21. Merge Two Sorted Lists",
+      "path": "Leetcode/21. Merge Two Sorted Lists.md"
+    },
+    {
+      "basename": "125. Valid Palindrome",
+      "path": "Leetcode/Problems/125. Valid Palindrome.md"
+    },
+    {
+      "basename": "2. H.C.F. and L.C.M. of Numbers",
+      "path": "Misc/2. H.C.F. and L.C.M. of Numbers.md"
+    },
+    {
+      "basename": "Vim",
+      "path": "Misc/Vim.md"
+    },
+    {
+      "basename": "347. Top K Frequent Elements",
+      "path": "Misc/347. Top K Frequent Elements.md"
+    },
+    {
+      "basename": "1. Number System",
+      "path": "Misc/1. Number System.md"
     },
     {
       "basename": "141. Linked List Cycle",
       "path": "Leetcode/141. Linked List Cycle.md"
+    },
+    {
+      "basename": "JVM lifecycle",
+      "path": "Java Backend/JVM lifecycle.md"
+    },
+    {
+      "basename": "Java Backend Index",
+      "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "13. Roman to Integer",
+      "path": "Leetcode/Problems/13. Roman to Integer.md"
     },
     {
       "basename": "383. Ransom Note",
@@ -89,10 +129,6 @@
       "path": "Leetcode/Problems/53. Maximum Subarray.md"
     },
     {
-      "basename": "Java Backend Index",
-      "path": "Java Backend/Java Backend Index.md"
-    },
-    {
       "basename": "Dependency scopes",
       "path": "Java Backend/Dependency scopes.md"
     },
@@ -125,20 +161,12 @@
       "path": "Misc/Sites.md"
     },
     {
-      "basename": "Vim",
-      "path": "Misc/Vim.md"
-    },
-    {
       "basename": "Part B",
       "path": "Misc/Part B.md"
     },
     {
       "basename": "Minecraft",
       "path": "Misc/Minecraft.md"
-    },
-    {
-      "basename": "Index",
-      "path": "Misc/Index.md"
     },
     {
       "basename": "Flutter Installation",
@@ -171,34 +199,6 @@
     {
       "basename": "Interfaces",
       "path": "Java Backend/JAVA/gemini/Interfaces.md"
-    },
-    {
-      "basename": "Exception Handling",
-      "path": "Java Backend/JAVA/gemini/Exception Handling.md"
-    },
-    {
-      "basename": "Topics",
-      "path": "Aptitude/Topics.md"
-    },
-    {
-      "basename": "Number Systems",
-      "path": "Aptitude/Number Systems.md"
-    },
-    {
-      "basename": "Formulas",
-      "path": "Aptitude/Formulas.md"
-    },
-    {
-      "basename": "Actual Formulas",
-      "path": "Aptitude/Actual Formulas.md"
-    },
-    {
-      "basename": "Unit 5",
-      "path": "Academics/CS3591-Networks/Unit 5.md"
-    },
-    {
-      "basename": "Unit 3",
-      "path": "Academics/CS3591-Networks/Unit 3.md"
     }
   ],
   "omittedPaths": [],
