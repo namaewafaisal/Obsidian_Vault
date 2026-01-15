@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Maven lifecycle phases",
-      "path": "Java Backend/Maven lifecycle phases.md"
+      "basename": "Plugins vs dependencies",
+      "path": "Java Backend/Plugins vs dependencies.md"
     },
     {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Maven lifecycle phases",
+      "path": "Java Backend/Maven lifecycle phases.md"
     },
     {
       "basename": "New year plan",
@@ -195,10 +199,6 @@
     {
       "basename": "Anymex and dartotsu",
       "path": "Misc/Anymex and dartotsu.md"
-    },
-    {
-      "basename": "anki",
-      "path": "Misc/anki.md"
     }
   ],
   "omittedPaths": [],
