@@ -34,15 +34,15 @@
 
 * [x] [242. Valid Anagram](Problems/242.%20Valid%20Anagram.md)
 * [x] [[Problems/49. Group Anagrams]]
-* [x] [[../Misc/347. Top K Frequent Elements]]
-* [ ] [[../Misc/383. Ransom Note]]
-* [x] [[13. Roman to Integer]] ✅ 2026-01-15
+* [x] [347. Top K Frequent Elements](Problems/347.%20Top%20K%20Frequent%20Elements.md)
+* [ ] [383. Ransom Note](383.%20Ransom%20Note.md)
+* [x] [13. Roman to Integer](Problems/13.%20Roman%20to%20Integer.md) ✅ 2026-01-15
 
 ### Day 6: Linked Lists & Stacks
 
-* [ ] [[206. Reverse Linked List]]
-* [ ] [[141. Linked List Cycle]]
-* [ ] [[21. Merge Two Sorted Lists]]
+* [ ] [206. Reverse Linked List](206.%20Reverse%20Linked%20List)
+* [ ] [141. Linked List Cycle](141.%20Linked%20List%20Cycle.md)
+* [ ] [Problems/21. Merge Two Sorted Lists](Problems/21.%20Merge%20Two%20Sorted%20Lists)
 * [ ] [[20. Valid Parentheses]]
 * [ ] [[150. Evaluate Reverse Polish Notation]]
 
