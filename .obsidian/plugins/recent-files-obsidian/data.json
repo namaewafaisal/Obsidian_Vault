@@ -1,6 +1,94 @@
 {
   "recentFiles": [
     {
+      "basename": "New year plan",
+      "path": "Leetcode/New year plan.md"
+    },
+    {
+      "basename": "13. Roman to Integer",
+      "path": "Leetcode/Problems/13. Roman to Integer.md"
+    },
+    {
+      "basename": "141. Linked List Cycle",
+      "path": "Leetcode/141. Linked List Cycle.md"
+    },
+    {
+      "basename": "383. Ransom Note",
+      "path": "Leetcode/383. Ransom Note.md"
+    },
+    {
+      "basename": "College test plan",
+      "path": "Leetcode/College test plan.md"
+    },
+    {
+      "basename": "Leetcode",
+      "path": "Leetcode/Leetcode.md"
+    },
+    {
+      "basename": "Leetcode problems",
+      "path": "Leetcode/Leetcode problems.md"
+    },
+    {
+      "basename": "39. Combination Sum",
+      "path": "Leetcode/39. Combination Sum.md"
+    },
+    {
+      "basename": "50. Pow(x, n)",
+      "path": "Leetcode/50. Pow(x, n).md"
+    },
+    {
+      "basename": "7. Reverse Integer",
+      "path": "Leetcode/7. Reverse Integer.md"
+    },
+    {
+      "basename": "1. Two Sum",
+      "path": "Leetcode/Problems/1. Two Sum.md"
+    },
+    {
+      "basename": "152. Maximum Product Subarray",
+      "path": "Leetcode/Problems/152. Maximum Product Subarray.md"
+    },
+    {
+      "basename": "121. Best Time to Buy and Sell Stock",
+      "path": "Leetcode/Problems/121. Best Time to Buy and Sell Stock.md"
+    },
+    {
+      "basename": "1876. Substrings of Size Three with Distinct Characters",
+      "path": "Leetcode/Problems/1876. Substrings of Size Three with Distinct Characters.md"
+    },
+    {
+      "basename": "1343. Number of Sub-arrays of Size K and Average ≥ Threshold",
+      "path": "Leetcode/Problems/1343. Number of Sub-arrays of Size K and Average ≥ Threshold.md"
+    },
+    {
+      "basename": "643. Maximum Average Subarray I",
+      "path": "Leetcode/Problems/643. Maximum Average Subarray I.md"
+    },
+    {
+      "basename": "424. Longest Repeating Character Replacement",
+      "path": "Leetcode/Problems/424. Longest Repeating Character Replacement.md"
+    },
+    {
+      "basename": "209. Minimum Size Subarray Sum",
+      "path": "Leetcode/Problems/209. Minimum Size Subarray Sum.md"
+    },
+    {
+      "basename": "3. Longest Substring Without Repeating Characters",
+      "path": "Leetcode/Problems/3. Longest Substring Without Repeating Characters.md"
+    },
+    {
+      "basename": "56. Merge Intervals",
+      "path": "Leetcode/Problems/56. Merge Intervals.md"
+    },
+    {
+      "basename": "238. Product of Array Except Self",
+      "path": "Leetcode/Problems/238. Product of Array Except Self.md"
+    },
+    {
+      "basename": "53. Maximum Subarray",
+      "path": "Leetcode/Problems/53. Maximum Subarray.md"
+    },
+    {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
     },
@@ -111,78 +199,6 @@
     {
       "basename": "Unit 3",
       "path": "Academics/CS3591-Networks/Unit 3.md"
-    },
-    {
-      "basename": "Unit 1",
-      "path": "Academics/CS3591-Networks/Unit 1.md"
-    },
-    {
-      "basename": "Questions",
-      "path": "Academics/CS3591-Networks/Questions.md"
-    },
-    {
-      "basename": "Notebooklm Networking",
-      "path": "Academics/CS3591-Networks/Notebooklm Networking.md"
-    },
-    {
-      "basename": "Network notes",
-      "path": "Academics/CS3591-Networks/Network notes.md"
-    },
-    {
-      "basename": "CS3591",
-      "path": "Academics/CS3591-Networks/CS3591.md"
-    },
-    {
-      "basename": "College Computer Networks",
-      "path": "Academics/CS3591-Networks/College Computer Networks.md"
-    },
-    {
-      "basename": "Hiragana",
-      "path": "Personal/Hiragana.md"
-    },
-    {
-      "basename": "Plan",
-      "path": "Personal/Plan.md"
-    },
-    {
-      "basename": "What is a build tool",
-      "path": "Java Backend/What is a build tool.md"
-    },
-    {
-      "basename": "Maven vs Gradle",
-      "path": "Java Backend/Maven vs Gradle.md"
-    },
-    {
-      "basename": "Java Backend Notes Template",
-      "path": "Java Backend/Java Backend Notes Template.md"
-    },
-    {
-      "basename": "152. Maximum Product Subarray",
-      "path": "Leetcode/Problems/152. Maximum Product Subarray.md"
-    },
-    {
-      "basename": "What is Java",
-      "path": "Java Backend/JAVA/What is Java.md"
-    },
-    {
-      "basename": "Digits",
-      "path": "Leetcode/DSA/Digits.md"
-    },
-    {
-      "basename": "383. Ransom Note",
-      "path": "Misc/383. Ransom Note.md"
-    },
-    {
-      "basename": "Relationships",
-      "path": "Personal/Relationships.md"
-    },
-    {
-      "basename": "JVM lifecycle",
-      "path": "Java Backend/JVM lifecycle.md"
-    },
-    {
-      "basename": "Java IO vs NIO",
-      "path": "Java Backend/Java IO vs NIO.md"
     }
   ],
   "omittedPaths": [],
