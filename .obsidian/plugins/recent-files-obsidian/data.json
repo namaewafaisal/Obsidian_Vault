@@ -1,24 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Java Backend Index",
+      "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Build & Dependency Management (Maven)",
+      "path": "Java Backend/Build & Dependency Management (Maven).md"
+    },
+    {
       "basename": "Fat JAR & classpath",
       "path": "Java Backend/Fat JAR & classpath.md"
     },
     {
-      "basename": "Dependency resolution",
-      "path": "Java Backend/Dependency resolution.md"
-    },
-    {
-      "basename": "Java Backend Index",
-      "path": "Java Backend/Java Backend Index.md"
+      "basename": "Spring Boot parent POM",
+      "path": "Java Backend/Spring Boot parent POM.md"
     },
     {
       "basename": "Plugins vs dependencies",
       "path": "Java Backend/Plugins vs dependencies.md"
     },
     {
-      "basename": "Spring Boot parent POM",
-      "path": "Java Backend/Spring Boot parent POM.md"
+      "basename": "Dependency resolution",
+      "path": "Java Backend/Dependency resolution.md"
     },
     {
       "basename": "Digits",
@@ -195,10 +199,6 @@
     {
       "basename": "Part B",
       "path": "Misc/Part B.md"
-    },
-    {
-      "basename": "Minecraft",
-      "path": "Misc/Minecraft.md"
     }
   ],
   "omittedPaths": [],

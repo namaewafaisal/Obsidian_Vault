@@ -19,7 +19,7 @@
 
 ---
 
-## 01 Build & Dependency Management (Maven)
+## 01 [Build & Dependency Management (Maven)](Build%20&%20Dependency%20Management%20(Maven).md)
 
 * [ ] [[What is a build tool]]
 * [ ] [[Maven vs Gradle]]
