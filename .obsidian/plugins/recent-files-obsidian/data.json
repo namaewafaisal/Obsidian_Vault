@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Plugins vs dependencies",
-      "path": "Java Backend/Plugins vs dependencies.md"
+      "basename": "Spring Boot parent POM",
+      "path": "Java Backend/Spring Boot parent POM.md"
     },
     {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Plugins vs dependencies",
+      "path": "Java Backend/Plugins vs dependencies.md"
+    },
+    {
+      "basename": "Digits",
+      "path": "Leetcode/DSA/Digits.md"
     },
     {
       "basename": "Maven lifecycle phases",
@@ -191,14 +199,6 @@
     {
       "basename": "Flutter Installation",
       "path": "Misc/Flutter Installation.md"
-    },
-    {
-      "basename": "Attendance",
-      "path": "Misc/Attendance.md"
-    },
-    {
-      "basename": "Anymex and dartotsu",
-      "path": "Misc/Anymex and dartotsu.md"
     }
   ],
   "omittedPaths": [],
