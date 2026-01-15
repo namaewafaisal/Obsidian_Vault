@@ -35,7 +35,7 @@
 * [x] [242. Valid Anagram](Problems/242.%20Valid%20Anagram.md)
 * [x] [49. Group Anagrams](Problems/49.%20Group%20Anagrams.md)
 * [x] [347. Top K Frequent Elements](Problems/347.%20Top%20K%20Frequent%20Elements.md)
-* [ ] [383. Ransom Note](383.%20Ransom%20Note.md)
+* [x] [383. Ransom Note](Problems/383.%20Ransom%20Note.md) ✅ 2026-01-15
 * [x] [13. Roman to Integer](Problems/13.%20Roman%20to%20Integer.md) ✅ 2026-01-15
 
 ### Day 6: Linked Lists & Stacks

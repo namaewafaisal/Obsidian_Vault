@@ -1,8 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "242. Valid Anagram",
-      "path": "Leetcode/Problems/242. Valid Anagram.md"
+      "basename": "206. Reverse Linked List",
+      "path": "Leetcode/206. Reverse Linked List.md"
     },
     {
       "basename": "New year plan",
@@ -10,7 +10,11 @@
     },
     {
       "basename": "383. Ransom Note",
-      "path": "Leetcode/383. Ransom Note.md"
+      "path": "Leetcode/Problems/383. Ransom Note.md"
+    },
+    {
+      "basename": "242. Valid Anagram",
+      "path": "Leetcode/Problems/242. Valid Anagram.md"
     },
     {
       "basename": "College test plan",
