@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Dependency scopes",
-      "path": "Java Backend/Dependency scopes.md"
-    },
-    {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Dependency scopes",
+      "path": "Java Backend/Dependency scopes.md"
     },
     {
       "basename": "Transitive dependencies",
