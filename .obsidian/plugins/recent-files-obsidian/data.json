@@ -9,6 +9,14 @@
       "path": "Java Backend/Java Backend Index.md"
     },
     {
+      "basename": "Transitive dependencies",
+      "path": "Java Backend/Transitive dependencies.md"
+    },
+    {
+      "basename": "pom.xml structure",
+      "path": "Java Backend/pom.xml structure.md"
+    },
+    {
       "basename": "Client–Server model",
       "path": "Java Backend/Client–Server model.md"
     },
@@ -179,14 +187,6 @@
     {
       "basename": "Dependency scopes",
       "path": "Java Backend/Dependency scopes.md"
-    },
-    {
-      "basename": "Transitive dependencies",
-      "path": "Java Backend/Transitive dependencies.md"
-    },
-    {
-      "basename": "pom.xml structure",
-      "path": "Java Backend/pom.xml structure.md"
     },
     {
       "basename": "Hair Health and Growth_Research Webs",
