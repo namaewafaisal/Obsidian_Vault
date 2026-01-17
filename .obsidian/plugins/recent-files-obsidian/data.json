@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "About me",
+      "path": "My Writing/About me.md"
+    },
+    {
       "basename": "Common Verbs",
       "path": "Personal/Common Verbs.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "3. Longest Substring Without Repeating Characters",
       "path": "Leetcode/Problems/3. Longest Substring Without Repeating Characters.md"
-    },
-    {
-      "basename": "56. Merge Intervals",
-      "path": "Leetcode/Problems/56. Merge Intervals.md"
     }
   ],
   "omittedPaths": [],
