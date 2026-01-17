@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Plan",
+      "path": "Personal/Plan.md"
+    },
+    {
       "basename": "HTTP methods semantics",
       "path": "Java Backend/HTTP methods semantics.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "238. Product of Array Except Self",
       "path": "Leetcode/Problems/238. Product of Array Except Self.md"
-    },
-    {
-      "basename": "53. Maximum Subarray",
-      "path": "Leetcode/Problems/53. Maximum Subarray.md"
     }
   ],
   "omittedPaths": [],
