@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "REST principles",
+      "path": "Java Backend/REST principles.md"
+    },
+    {
       "basename": "Stateless vs Stateful systems",
       "path": "Java Backend/Stateless vs Stateful systems.md"
     },
     {
-      "basename": "Request–Response lifecycle",
-      "path": "Java Backend/Request–Response lifecycle.md"
-    },
-    {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Request–Response lifecycle",
+      "path": "Java Backend/Request–Response lifecycle.md"
     },
     {
       "basename": "HTTP protocol basics",
@@ -195,10 +199,6 @@
     {
       "basename": "Dependency scopes",
       "path": "Java Backend/Dependency scopes.md"
-    },
-    {
-      "basename": "Hair Health and Growth_Research Webs",
-      "path": "Misc/Hair Health and Growth_Research Webs.md"
     }
   ],
   "omittedPaths": [],
