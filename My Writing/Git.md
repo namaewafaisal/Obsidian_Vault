@@ -69,4 +69,13 @@ Revert creates a new commit that applies the inverse of an earlier commit, undoi
 
 ## Rebase
 
-a feature branch may have branched out from main. main moved 2 commits. feature moved 2 commits. we can either merge which create a merge commit with 2 parents which are the previous main and feature branch. Rebase
+a feature branch may have branched out from main. main moved 2 commits. feature moved 2 commits. we can either merge which create a merge commit with 2 parents which are the previous main and feature branch. Rebase does not merge them to create a parellel dag but puts the changes on top of the current main. its like plucking the branch from the root and planting on the main. the parent of the oldest commit in feature branch is the current main. then each of the feature branches commits are put on top essetially a dupliacate with new hashcode, and the child of the added duplicate feature branch commit is the current main now. 
+problem is the hash of the commit when feature commits were separate is different from the copies we inserted on the top of the main. since they are treated different commits if rebase and merge happens together (dont know in which order its harmful) it adds duplicates in line of code
+basically if you want linear changes in the local then use rebase
+![](Rebase%201.jpg)
+
+
+## Reflog
+
+Its the history of the commits head moved. we can recover the commits using reflog essentially recovering the code. 
+reflog retains reachable commits for 90 days and unreachable for 30 days
