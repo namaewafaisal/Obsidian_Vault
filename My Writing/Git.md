@@ -28,4 +28,17 @@ So to the question that if i move a head to a previous commit then do i lost tra
 head points to the branched which inturn points to the comiits. when we checkout other bracnh we just move head from the current branch to the checkout branch. the one we worked on is not lost and still stored with the branch name. 
 **But when we move head to a Specific commit and not a  branch** essentially head changes from a Ptr to a ptr and becomes a ptr to the commit. when we work on the specific commit and commit the changes it creates an orphan commit because there is no branch pointing to it. so if you move to a branch like main to merge the change you did you the garbage collector will remove the orphan because we dont have its address. its like head equals head.next. the orphan points to the commit we worked on but the orphan itself is lost (address) so we the changes are also lost
 Head pointing to a commit instead of a branch is called detatched head
-i think a solution here could be to create a branch and labelling it to the orphan before moving the head
+i think a solution here could be to create a branch and labelling it to the orphan before moving the head to somewhere else.
+![](Head%201.jpg)
+
+so the 30 - 90 days holding feels wrong when realising nothing points to the orphan now. but here comes the reflog. it is a log that stores every movement of head. so if head moved from the orphan to the main then that log stores the orphan commit, and main. so orphan is not lost until log is updated more and old logs are flushed out.
+
+i was right about creating a branch to hold the orphan to not lose it or you want to work from then on
+
+## Code living
+Code can live in 3 areas in git.
+Working dir : the actual files.
+`git add .`
+Staging area : its now in a waiting to be stored in next commit
+`git commit -m "Message"`
+Reposit
