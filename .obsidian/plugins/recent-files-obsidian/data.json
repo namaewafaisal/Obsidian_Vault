@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Git",
+      "path": "My Writing/Git.md"
+    },
+    {
       "basename": "About me",
       "path": "My Writing/About me.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "209. Minimum Size Subarray Sum",
       "path": "Leetcode/Problems/209. Minimum Size Subarray Sum.md"
-    },
-    {
-      "basename": "3. Longest Substring Without Repeating Characters",
-      "path": "Leetcode/Problems/3. Longest Substring Without Repeating Characters.md"
     }
   ],
   "omittedPaths": [],
