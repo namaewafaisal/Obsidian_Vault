@@ -23,3 +23,9 @@ they are just like a pointer which point to a certain commit in the dag. just to
 either main or other branch, any new commit just created and that points to the parent and the branch label or the pointer to the latest commit of that branch is moved forward
 so creating a branch use git checkout or similar is instant because it just creates a label for that commit. just a dedicated name for it to work with.
 main branch aint special but agreed to be the master or the best or the **Main** one.
+
+So to the question that if i move a head to a previous commit then do i lost track of the latest is i dont. head is a poniter to pointer *mostly* 
+head points to the branched which inturn points to the comiits. when we checkout other bracnh we just move head from the current branch to the checkout branch. the one we worked on is not lost and still stored with the branch name. 
+**But when we move head to a Specific commit and not a  branch** essentially head changes from a Ptr to a ptr and becomes a ptr to the commit. when we work on the specific commit and commit the changes it creates an orphan commit because there is no branch pointing to it. so if you move to a branch like main to merge the change you did you the garbage collector will remove the orphan because we dont have its address. its like head equals head.next. the orphan points to the commit we worked on but the orphan itself is lost (address) so we the changes are also lost
+Head pointing to a commit instead of a branch is called detatched head
+i think a solution here could be to create a branch and labelling it to the orphan before moving the head
