@@ -82,3 +82,6 @@ rebasing the commits which other people have creates duplication cuz after rebas
 
 Its the history of the commits head moved. we can recover the commits using reflog essentially recovering the code. 
 reflog retains reachable commits for 90 days and unreachable for 30 days
+
+
+# Git commands
