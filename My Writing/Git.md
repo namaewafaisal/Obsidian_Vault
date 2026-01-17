@@ -41,4 +41,14 @@ Working dir : the actual files.
 `git add .`
 Staging area : its now in a waiting to be stored in next commit
 `git commit -m "Message"`
-Reposit
+Repository : the database where the commit is stored
+
+![](3%20phases%201.jpg)
+
+**Checkout** Only head moves. basically head can point any commit or a branch
+The directory now shows the files from that commit. nothing from the repository change or the branch change. just head points somewhere else -> Safe
+
+## Reset
+move the branch itself. meaning the branch points to a different commit.
+three modes. 
+`--soft` : Anychanges and commits in the commits after the new main is still there in the current main. like the w
