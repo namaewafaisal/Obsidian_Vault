@@ -51,4 +51,8 @@ The directory now shows the files from that commit. nothing from the repository 
 ## Reset
 move the branch itself. meaning the branch points to a different commit.
 three modes. 
-`--soft` : Anychanges and commits in the commits after the new main is still there in the current main. like the work or the staging of the files havent changed.
+`--soft` : Anychanges and changes in the commits after the new main is still there in the current main. like the work or the staging of the files havent changed.
+its like nothing changed because the code is exactly as the same before and after resetting the main, but the code is staged and not pushed yet. like you can have many commits after that to get to those code but every change is now here to stage and push which creates a single commit with all of that. Index is basically the structure of the snapshot. it mirrors the state how the code will look with those staged changes.
+soft does not change the commit history, remove commits from the objects of database, lose the code but does stage the code , history of the movement of the head.
+
+`--mixed` : The 
