@@ -60,4 +60,13 @@ so if we commit the unstaged index it looks like same as the current main.
 We can also manually unstage the files from soft so `soft + manual unstage ~ mixed`
 why the mixed exist? : although both can be done from soft we can also make them a separete function because they are used commonly. 
 
-`--hard` : basically resets the working dir, 
+`--hard` : basically resets the working dir, index etc. its as though like the changes were never done unless we look in the reflog to get those commit changes. its used to start from scratch from the current main.
+
+
+## Revert
+Revert  does not move the branch to the past commit but create a new commit that undo the changes did in the current commit. its like not orphaning the unwanted changes but have it in the dag while still create a new commit that does now have the changes from the unwanted commit
+Revert creates a new commit that applies the inverse of an earlier commit, undoing its effect without changing existing history.
+
+## Rebase
+
+a feature branch may have branched out from main. main moved 2 commits. feature moved 2 commits. we can either merge which create a merge commit with 2 parents which are the previous main and feature branch. Rebase
