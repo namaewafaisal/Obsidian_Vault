@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "HTTP methods semantics",
+      "path": "Java Backend/HTTP methods semantics.md"
+    },
+    {
       "basename": "REST principles",
       "path": "Java Backend/REST principles.md"
     },
     {
-      "basename": "Stateless vs Stateful systems",
-      "path": "Java Backend/Stateless vs Stateful systems.md"
-    },
-    {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Stateless vs Stateful systems",
+      "path": "Java Backend/Stateless vs Stateful systems.md"
     },
     {
       "basename": "Request–Response lifecycle",
@@ -195,10 +199,6 @@
     {
       "basename": "53. Maximum Subarray",
       "path": "Leetcode/Problems/53. Maximum Subarray.md"
-    },
-    {
-      "basename": "Dependency scopes",
-      "path": "Java Backend/Dependency scopes.md"
     }
   ],
   "omittedPaths": [],
