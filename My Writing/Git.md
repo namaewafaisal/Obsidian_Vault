@@ -51,4 +51,4 @@ The directory now shows the files from that commit. nothing from the repository 
 ## Reset
 move the branch itself. meaning the branch points to a different commit.
 three modes. 
-`--soft` : Anychanges and commits in the commits after the new main is still there in the current main. like the w
+`--soft` : Anychanges and commits in the commits after the new main is still there in the current main. like the work or the staging of the files havent changed.
