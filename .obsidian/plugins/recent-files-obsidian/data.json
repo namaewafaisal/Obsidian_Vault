@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Common Verbs",
+      "path": "Personal/Common Verbs.md"
+    },
+    {
       "basename": "Plan",
       "path": "Personal/Plan.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "56. Merge Intervals",
       "path": "Leetcode/Problems/56. Merge Intervals.md"
-    },
-    {
-      "basename": "238. Product of Array Except Self",
-      "path": "Leetcode/Problems/238. Product of Array Except Self.md"
     }
   ],
   "omittedPaths": [],
