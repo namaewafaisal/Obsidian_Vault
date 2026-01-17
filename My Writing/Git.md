@@ -55,4 +55,9 @@ three modes.
 its like nothing changed because the code is exactly as the same before and after resetting the main, but the code is staged and not pushed yet. like you can have many commits after that to get to those code but every change is now here to stage and push which creates a single commit with all of that. Index is basically the structure of the snapshot. it mirrors the state how the code will look with those staged changes.
 soft does not change the commit history, remove commits from the objects of database, lose the code but does stage the code , history of the movement of the head.
 
-`--mixed` : The 
+`--mixed` : The same as the soft but the code is unstaged. nothing else is different.
+so if we commit the unstaged index it looks like same as the current main.
+We can also manually unstage the files from soft so `soft + manual unstage ~ mixed`
+why the mixed exist? : although both can be done from soft we can also make them a separete function because they are used commonly. 
+
+`--hard` : basically resets the working dir, 
