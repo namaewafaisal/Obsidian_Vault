@@ -8,7 +8,7 @@ does changing head to a past commit make it forget the commits after that?
 ![](DAG%201.jpg)
 
 Its always directed meaning child commit points to its parent and not viceVersa
-Acyclic meaning cant point to both parent and grandparent. its commit can have only one childe i think. but parents cant be in the same chain. in the above both branch 1 and branch 2 are parents or merge but they dont belong in a same path. they are parellel. if they were not then either of them must be an ancestor or merge and you cant point to ancestor but only to parent
+Acyclic meaning i cant be my own ancestor so the no cylces. cant point to both parent and grandparent.  but parents cant be in the same chain. in the above both branch 1 and branch 2 are parents or merge but they dont belong in a same path. they are parellel. if they were not then either of them must be an ancestor or merge and you cant point to ancestor but only to parent
 No loops is what i meant 
 Each commit is complete snapshot and can just be jumped to to be viewed. all code is just there without any problems. but how?
 Dag is your entire project's history
@@ -26,7 +26,7 @@ main branch aint special but agreed to be the master or the best or the **Main**
 
 So to the question that if i move a head to a previous commit then do i lost track of the latest is i dont. head is a poniter to pointer *mostly* 
 head points to the branched which inturn points to the comiits. when we checkout other bracnh we just move head from the current branch to the checkout branch. the one we worked on is not lost and still stored with the branch name. 
-**But when we move head to a Specific commit and not a  branch** essentially head changes from a Ptr to a ptr and becomes a ptr to the commit. when we work on the specific commit and commit the changes it creates an orphan commit because there is no branch pointing to it. so if you move to a branch like main to merge the change you did you the garbage collector will remove the orphan because we dont have its address. its like head equals head.next. the orphan points to the commit we worked on but the orphan itself is lost (address) so we the changes are also lost
+**But when we move head to a Specific commit and not a  branch** essentially head changes from a Ptr to a ptr and becomes a ptr to the commit. when we work on the specific commit and commit the changes it creates an orphan commit because there is no branch pointing to it. so if you move to a branch like main to merge the change you did you the garbage collector will remove the orphan because we dont have its address but its in reflog for a while before its deleted. its like head equals head.next. the orphan points to the commit we worked on but the orphan itself is lost (address) so we the changes are also lost
 Head pointing to a commit instead of a branch is called detatched head
 i think a solution here could be to create a branch and labelling it to the orphan before moving the head to somewhere else.
 ![](Head%201.jpg)
@@ -41,7 +41,8 @@ Working dir : the actual files.
 `git add .`
 Staging area : its now in a waiting to be stored in next commit
 `git commit -m "Message"`
-Repository : the database where the commit is stored
+Object database : where commits, trees, and blobs are stored
+Repository : “Repository” includes refs, reflog, config, etc.
 
 ![](3%20phases%201.jpg)
 
@@ -69,9 +70,11 @@ Revert creates a new commit that applies the inverse of an earlier commit, undoi
 
 ## Rebase
 
-a feature branch may have branched out from main. main moved 2 commits. feature moved 2 commits. we can either merge which create a merge commit with 2 parents which are the previous main and feature branch. Rebase does not merge them to create a parellel dag but puts the changes on top of the current main. its like plucking the branch from the root and planting on the main. the parent of the oldest commit in feature branch is the current main. then each of the feature branches commits are put on top essetially a dupliacate with new hashcode, and the child of the added duplicate feature branch commit is the current main now. 
+a feature branch may have branched out from main. main moved 2 commits. feature moved 2 commits. we can either merge which create a merge commit with 2 parents which are the previous main and feature branch. Rebase does not merge them to create a parellel dag but puts the changes on top of the current main. its like plucking the branch from the root and planting on the main. the parent of the oldest commit in feature branch is the current main. then each of the feature branches commits are put on top essetially a dupliacate with new hashcode, and the child of the added duplicate feature branch commit is the current main now. Rebase replays feature commits on top of the current main by creating new commits with new hashes, resulting in a linear history.
 problem is the hash of the commit when feature commits were separate is different from the copies we inserted on the top of the main. since they are treated different commits if rebase and merge happens together (dont know in which order its harmful) it adds duplicates in line of code
 basically if you want linear changes in the local then use rebase
+
+rebasing the commits which other people have creates duplication cuz after rebase you work on the duplicate but the others work on the original then they both will be added in main
 ![](Rebase%201.jpg)
 
 
