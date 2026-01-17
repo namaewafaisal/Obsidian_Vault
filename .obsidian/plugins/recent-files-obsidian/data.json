@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Stateless vs Stateful systems",
+      "path": "Java Backend/Stateless vs Stateful systems.md"
+    },
+    {
       "basename": "Request–Response lifecycle",
       "path": "Java Backend/Request–Response lifecycle.md"
     },
     {
-      "basename": "HTTP protocol basics",
-      "path": "Java Backend/HTTP protocol basics.md"
-    },
-    {
       "basename": "Java Backend Index",
       "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "HTTP protocol basics",
+      "path": "Java Backend/HTTP protocol basics.md"
     },
     {
       "basename": "Transitive dependencies",
@@ -195,10 +199,6 @@
     {
       "basename": "Hair Health and Growth_Research Webs",
       "path": "Misc/Hair Health and Growth_Research Webs.md"
-    },
-    {
-      "basename": "Colours",
-      "path": "Personal/Colours.md"
     }
   ],
   "omittedPaths": [],
