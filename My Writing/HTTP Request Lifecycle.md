@@ -25,4 +25,14 @@ HTTP is still not created
 
 ## Stage 3 CDN
 CDN is optional
-Our request reaches the CDN and CDN (Content Delivery Network) provides the stuff that it has which is not backend logic. Like it can have the Images, Css, JS, and cached API responses so that if CDN is closer to you it can handle these tasks so less latency and less traffic in the backend. If it does not have what the client needs it re routes the Request. So its like a nearby warehouse which mostly store heavy stuff like 
+Our request reaches the CDN and CDN (Content Delivery Network) provides the stuff that it has which is not backend logic. Like it can have the Images, Css, JS, and cached API responses so that if CDN is closer to you it can handle these tasks so less latency and less traffic in the backend. If it does not have what the client needs it re routes the Request. So its like a nearby warehouse which mostly store heavy stuff like images etc and not the backend logic. 
+
+## Stage 4 WAF (Web application firewall)
+Firewall is like a filter that block request based on some constraints or rules.
+WAF is a rule engine
+The rules are the filters such as
+- does this look malicious
+- SQL Injection
+- XSS (Malicious scripts or JS)
+- Weird payload size
+
