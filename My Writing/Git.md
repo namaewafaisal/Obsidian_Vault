@@ -180,3 +180,11 @@ you can also set an alias for the git commands using `git config --global alias.
 `git init` inside a folder creates the necessary preparations and make it a folder tracked by git. it create a `.git` folder which has the repository, objects etc basically every info related to that specific git folder. its like enabling git features for this folder
 
 `git status` shows the state of the files. tracked, untracked, added, staged, deleted, etc. return nothing to commit if the staging area is empty.
+
+`git add` is used to add the files to the staging area.
+`git add .` to add all untracked and modified files or to add a single file we can use `git add <filename>`
+git tracks the changes done to the files in staging area. but when we further modify a file then its new changes are not tracked anymore. it only holds the change when we added it.
+
+`git commit -m "Commit message"` commits the files in the staging area with the commit message. `-m` denotes message i think.
+
+`git clone` is used to clone a remote repository it can be from github / gitlab or just another repository (.git folder)
