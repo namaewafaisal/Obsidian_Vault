@@ -165,7 +165,7 @@ graph TD
 
 ## Then how can a commit contain full data.
 Each commit creates a new blob for changed files, resuse older blobs for unchanged. same for tree, commit points the lates tree and if the tree is changed then it points to the new tree, which in turn points to the latest blobs and inner trees etc. 
-So each commit can logically have the entire data but un
+So each commit can logically have the entire data but unchanged blobs and trees are not duplicated but reused.
 
 
 
