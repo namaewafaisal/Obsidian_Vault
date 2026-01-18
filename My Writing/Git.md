@@ -54,7 +54,7 @@ move the branch itself. meaning the branch points to a different commit.
 three modes. 
 `--soft` : Anychanges and changes in the commits after the new main is still there in the current main. like the work or the staging of the files havent changed.
 its like nothing changed because the code is exactly as the same before and after resetting the main, but the code is staged and not pushed yet. like you can have many commits after that to get to those code but every change is now here to stage and push which creates a single commit with all of that. Index is basically the structure of the snapshot. it mirrors the state how the code will look with those staged changes.
-soft does not change the commit history, remove commits from the objects of database, lose the code but does stage the code , history of the movement of the head.
+soft creates a new branching and connection while the old ones are just orphaned, when orphaned are removed its like they vanished. remove commits from the objects of database, lose the code but does stage the code , history of the movement of the head.
 
 `--mixed` : The same as the soft but the code is unstaged. nothing else is different.
 so if we commit the unstaged index it looks like same as the current main.
@@ -85,8 +85,9 @@ reflog retains reachable commits for 90 days and unreachable for 30 days
 
 ## Snapshots
 Bundling the changes which corresponds to a commit. most cases each commit have multipe modified files but often are related (or the changes are for a single task).
+Snapshot not only has the blobs but also the tree which is discussed below
 
-# Git commands
+
 
 ## Staging Area
 Basically an intermediate place the changes go through before storing as commit. like a snapshot booth where changes are put together, taken a snapshot then the snapshot along with metadata is bundled as a commit ans stored in the repository.
@@ -115,7 +116,7 @@ storing the copy in a backup folder ~ commit
 ## Git Tree
 It is the DAG which is the commit graph. the git tree here is the linked list like structure where commits point to their parent commits. tree is the object directory
 
-In GIT Sense Tree not eua
+In GIT Sense Tree not equals to DAG
 
 we dont track individual file changes but track individual features and each commit is more or less a feature in development so works exactly as wanted
 
@@ -162,3 +163,16 @@ graph TD
 
 ```
 
+
+# Git commands
+
+Git config
+`git config --global user.name "<usernamein github or gitlab>"`
+`git config --global user.email "<email github or gitlab>"`
+the above commands are like configuring and letting git know that this github profile is the owner of this laptop or the commits pushed
+This sets up not just for the git directory but the entire system
+
+same can be done but for just the git folder using `--local` insead of `--global`
+
+`git config --list` shows all the configurations i have made so far. like the email etc
+you can also set an alias for the git commands using `git config --global alias.i init` where `i` 
