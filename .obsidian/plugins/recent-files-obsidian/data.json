@@ -5,6 +5,10 @@
       "path": "My Writing/Git.md"
     },
     {
+      "basename": "Dependency resolution",
+      "path": "Java Backend/Dependency resolution.md"
+    },
+    {
       "basename": "About me",
       "path": "My Writing/About me.md"
     },
@@ -67,10 +71,6 @@
     {
       "basename": "Plugins vs dependencies",
       "path": "Java Backend/Plugins vs dependencies.md"
-    },
-    {
-      "basename": "Dependency resolution",
-      "path": "Java Backend/Dependency resolution.md"
     },
     {
       "basename": "Digits",
