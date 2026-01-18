@@ -175,4 +175,8 @@ This sets up not just for the git directory but the entire system
 same can be done but for just the git folder using `--local` insead of `--global`
 
 `git config --list` shows all the configurations i have made so far. like the email etc
-you can also set an alias for the git commands using `git config --global alias.i init` where `i` 
+you can also set an alias for the git commands using `git config --global alias.i init` where `i` is the alias for `init`
+
+`git init` inside a folder creates the necessary preparations and make it a folder tracked by git. it create a `.git` folder which has the repository, objects etc basically every info related to that specific git folder. its like enabling git features for this folder
+
+`git status` shows the state of the files. tracked, untracked, added, staged, deleted, etc. return nothing to commit if the staging area is empty.
