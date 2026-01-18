@@ -195,4 +195,11 @@ we can even clone a .git folder in our pc
 `git branch` shows the branches we have for the repo. 
 `git switch <branchname>` switch to a branch. similar to checkout i think.
 
-`git push` pushes the commits from the local repo to the remote repo. 
+`git push` pushes the commits from the local repo to the remote repo. here as well the remote does not need to be a github repo but can also be another folder in your pc too. these commits will be pushed there in the branch we specify.
+`git push origin main` this pushes the commits , to the remote url given which will be automatically added if we clone or manually added, `main` is the remote branch. we can push from whatever branch to whatever branch and no need to have same name. (i mean its not like we need to push the main in local to main in remote). 
+
+`pull request` is initiated to `merge` a branch with another.
+pull request megre the remote branches but our local branches have not reflected the changes yet
+we use `git pull` from the branch we are in to pull the changes to our local repo
+
+`git show` is used to show the commits we did. its a way to know what we did and how its connected to remote
