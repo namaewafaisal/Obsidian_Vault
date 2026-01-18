@@ -203,3 +203,6 @@ pull request megre the remote branches but our local branches have not reflected
 we use `git pull` from the branch we are in to pull the changes to our local repo
 
 `git show` is used to show the commits we did. its a way to know what we did and how its connected to remote
+
+`git branch -d <branch-name>` to delete a branch locally
+`git branch --delete <branch-name>` delete branch in the remote
