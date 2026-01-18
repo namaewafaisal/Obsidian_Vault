@@ -187,4 +187,12 @@ git tracks the changes done to the files in staging area. but when we further mo
 
 `git commit -m "Commit message"` commits the files in the staging area with the commit message. `-m` denotes message i think.
 
-`git clone` is used to clone a remote repository it can be from github / gitlab or just another repository (.git folder)
+`git clone` is used to clone a remote repository it can be from github / gitlab or just another repository (.git folder) all we need is just the path local or global url.
+we can even clone a .git folder in our pc
+
+`git checkout -b branch-name` creates a branch named `branch-name` and switch to it. basically the latest commit had a label `main` now another label is added called `branch-name` so any new commits from the branch is different from the main.
+
+`git branch` shows the branches we have for the repo. 
+`git switch <branchname>` switch to a branch. similar to checkout i think.
+
+`git push` pushes the commits from the local repo to the remote repo. 
