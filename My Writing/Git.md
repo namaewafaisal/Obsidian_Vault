@@ -100,3 +100,14 @@ We have to tell git to track the files explicitly, until then the files are untr
 
 ## Git files Stages
 Files in a git initialised folder can be in 3 states
+### 1. Commited :
+So basically they are tracked and commited atleast once. they are safely store in the repository(at least the snapshots of the files)
+### 2. Modified :
+Any changes done to a file **after** its being tracked state makes then in the modified state. only happens for the tracked files. changes like edits, deletion makes them modifies. which means the latest commited file is not 1:1 with the current because of changes. it will become **Commited** from modified once we commit the file
+
+### Staged :
+File is included to be taken a snapshot and put in the next commit.
+basically the index is the staged files. basically selecting them for the next commit.
+
+Selecting a file in file manager ~ staging
+storing the copy in a backup folder ~ commit
