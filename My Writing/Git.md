@@ -87,3 +87,16 @@ reflog retains reachable commits for 90 days and unreachable for 30 days
 
 
 # Git commands
+
+## Staging Area
+Basically an intermediate place the changes go through before storing as commit. like a snapshot booth where changes are put together, taken a snapshot then the snapshot along with metadata is bundled as a commit ans stored in the repository.
+
+
+## Working Directory
+Files that we are currently working at the time is the working directory
+
+## Untracked Files
+We have to tell git to track the files explicitly, until then the files are untracked
+
+## Git files Stages
+Files in a git initialised folder can be in 3 states
