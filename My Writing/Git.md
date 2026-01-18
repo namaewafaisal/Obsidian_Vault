@@ -113,12 +113,16 @@ Selecting a file in file manager ~ staging
 storing the copy in a backup folder ~ commit
 
 ## Git Tree
-It is the DAG graph or Tree in other words because it can have multiple branches. Basically a graph is ~ Tree. the git tree here is the linked list like structure where commits point to their parent commits
+It is the DAG which is the commit graph. the git tree here is the linked list like structure where commits point to their parent commits. tree is the object directory
+
+In GIT Sense Tree not eua
 
 we dont track individual file changes but track individual features and each commit is more or less a feature in development so works exactly as wanted
 
 ## Blob
-file content
+file content, not the file name or anything else. just the content at the specific commit.
+## Tree
+the dir structure of the blob files. it has both the changed and unchaged files in the structure but the changed has newer blob to point while the unchanged uses the old ones
 
 Git Objects (Core Internals)
 Git stores everything as immutable objects:
@@ -126,3 +130,35 @@ Blob – file content
 Tree – directory structure (names → blobs / trees)
 Commit – snapshot pointer (tree) + metadata + parents
 Tag – named pointer to a commit (optional)
+
+```mermaid
+graph TD
+    C["Commit Object"]
+    P["Parent Commit"]
+    T["Tree Object (snapshot)"]
+    T2["Tree: subfolder/"]
+    B1["Blob: file1.txt"]
+    B2["Blob: file2.txt"]
+    B3["Blob: subfile.txt"]
+
+    C -->|points to| T
+    C -->|parent| P
+
+    T -->|file name| B1
+    T -->|file name| B2
+    T -->|dir name| T2
+
+    T2 -->|file name| B3
+
+    subgraph Object_Database
+        C
+        P
+        T
+        T2
+        B1
+        B2
+        B3
+    end
+
+```
+
