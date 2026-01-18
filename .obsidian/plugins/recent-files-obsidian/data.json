@@ -1,16 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "About me",
+      "path": "My Writing/About me.md"
+    },
+    {
       "basename": "Git",
       "path": "My Writing/Git.md"
     },
     {
       "basename": "Dependency resolution",
       "path": "Java Backend/Dependency resolution.md"
-    },
-    {
-      "basename": "About me",
-      "path": "My Writing/About me.md"
     },
     {
       "basename": "Common Verbs",
