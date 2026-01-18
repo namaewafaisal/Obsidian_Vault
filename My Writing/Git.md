@@ -84,7 +84,7 @@ Its the history of the commits head moved. we can recover the commits using refl
 reflog retains reachable commits for 90 days and unreachable for 30 days
 
 ## Snapshots
-
+Bundling the changes which corresponds to a commit. most cases each commit have multipe modified files but often are related (or the changes are for a single task).
 
 # Git commands
 
@@ -111,3 +111,18 @@ basically the index is the staged files. basically selecting them for the next c
 
 Selecting a file in file manager ~ staging
 storing the copy in a backup folder ~ commit
+
+## Git Tree
+It is the DAG graph or Tree in other words because it can have multiple branches. Basically a graph is ~ Tree. the git tree here is the linked list like structure where commits point to their parent commits
+
+we dont track individual file changes but track individual features and each commit is more or less a feature in development so works exactly as wanted
+
+## Blob
+file content
+
+Git Objects (Core Internals)
+Git stores everything as immutable objects:
+Blob – file content
+Tree – directory structure (names → blobs / trees)
+Commit – snapshot pointer (tree) + metadata + parents
+Tag – named pointer to a commit (optional)
