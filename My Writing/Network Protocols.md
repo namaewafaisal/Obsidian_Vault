@@ -1,0 +1,1 @@
+When two devices communicate, the devices must agree on some rules and behave based on them. without that they cant communicate. 

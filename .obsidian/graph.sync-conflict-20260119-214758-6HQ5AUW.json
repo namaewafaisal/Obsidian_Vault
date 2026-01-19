@@ -6,32 +6,17 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "path:Leetcode  ",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "",
-      "color": {
-        "a": 1,
-        "rgb": 14725458
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": -0.3,
   "nodeSizeMultiplier": 0.985899653979239,
   "lineSizeMultiplier": 3.23667820069204,
   "collapse-forces": false,
-  "centerStrength": 0.442073569838984,
+  "centerStrength": 0.474048442906574,
   "repelStrength": 11.1418685121107,
   "linkStrength": 0.705017301038062,
   "linkDistance": 500,
-  "scale": 0.0967320559039091,
-  "close": false
+  "scale": 0.1204614534110015,
+  "close": true
 }
