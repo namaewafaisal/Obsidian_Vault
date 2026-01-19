@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "3 phases",
-      "path": "Assets/3 phases.jpg"
+      "basename": "Threads basics",
+      "path": "Java Backend/Threads basics.md"
     },
     {
-      "basename": "Head 1",
-      "path": "My Writing/Head 1.jpg"
+      "basename": "Unit 2",
+      "path": "Academics/CS3591-Networks/Unit 2.md"
     },
     {
       "basename": "Git",
       "path": "Concepts/Git.md"
+    },
+    {
+      "basename": "Questions",
+      "path": "Academics/CS3591-Networks/Questions.md"
+    },
+    {
+      "basename": "Relationships",
+      "path": "Personal/Jap/Relationships.md"
     },
     {
       "basename": "3 phases 1",
@@ -27,10 +35,6 @@
     {
       "basename": "Transitive dependencies",
       "path": "Java Backend/Transitive dependencies.md"
-    },
-    {
-      "basename": "DAG",
-      "path": "My Writing/DAG.jpg"
     },
     {
       "basename": "Heap vs Stack",
@@ -82,11 +86,11 @@
     },
     {
       "basename": "Common Verbs",
-      "path": "Personal/Common Verbs.md"
+      "path": "Personal/Jap/Common Verbs.md"
     },
     {
       "basename": "Plan",
-      "path": "Personal/Plan.md"
+      "path": "Personal/Jap/Plan.md"
     },
     {
       "basename": "HTTP methods semantics",
@@ -195,10 +199,6 @@
     {
       "basename": "2. H.C.F. and L.C.M. of Numbers",
       "path": "Misc/2. H.C.F. and L.C.M. of Numbers.md"
-    },
-    {
-      "basename": "Vim",
-      "path": "Misc/Vim.md"
     }
   ],
   "omittedPaths": [],
