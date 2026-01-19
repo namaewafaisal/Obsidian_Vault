@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "OSI vs TCP-IP",
+      "path": "Academics/CS3591-Networks/OSI vs TCP-IP.md"
+    },
+    {
+      "basename": "TCP-IP Model",
+      "path": "Academics/CS3591-Networks/TCP-IP Model.md"
+    },
+    {
+      "basename": "OSI Model",
+      "path": "Academics/CS3591-Networks/OSI Model.md"
+    },
+    {
       "basename": "Unit 1",
       "path": "Academics/CS3591-Networks/Unit 1.md"
     },
@@ -9,16 +21,20 @@
       "path": "Academics/CS3591-Networks/College Computer Networks.md"
     },
     {
+      "basename": "HTTP",
+      "path": "My Writing/HTTP.md"
+    },
+    {
       "basename": "HTTP Request Lifecycle",
       "path": "My Writing/HTTP Request Lifecycle.md"
     },
     {
-      "basename": "About me",
-      "path": "My Writing/About me.md"
+      "basename": "Git",
+      "path": "Concepts/Git.md"
     },
     {
-      "basename": "Git",
-      "path": "My Writing/Git.md"
+      "basename": "About me",
+      "path": "My Writing/About me.md"
     },
     {
       "basename": "Dependency resolution",
@@ -183,22 +199,6 @@
     {
       "basename": "1. Two Sum",
       "path": "Leetcode/Problems/1. Two Sum.md"
-    },
-    {
-      "basename": "152. Maximum Product Subarray",
-      "path": "Leetcode/Problems/152. Maximum Product Subarray.md"
-    },
-    {
-      "basename": "121. Best Time to Buy and Sell Stock",
-      "path": "Leetcode/Problems/121. Best Time to Buy and Sell Stock.md"
-    },
-    {
-      "basename": "1876. Substrings of Size Three with Distinct Characters",
-      "path": "Leetcode/Problems/1876. Substrings of Size Three with Distinct Characters.md"
-    },
-    {
-      "basename": "1343. Number of Sub-arrays of Size K and Average ≥ Threshold",
-      "path": "Leetcode/Problems/1343. Number of Sub-arrays of Size K and Average ≥ Threshold.md"
     }
   ],
   "omittedPaths": [],

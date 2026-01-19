@@ -1,3 +1,4 @@
+[[HTTP]] is a status protocol
 So a web request is basically data moving through the web through many programs.
 4 things can happen when the request moving through. request can get
 1. Transformed
