@@ -238,7 +238,7 @@ If you understand this, REST, Spring MVC, and APIs stop feeling magical.
 
 * [[Client–Server model]]
 * [[Request–Response lifecycle]]
-* [[Stateless vs Stateful systems]]
+* [Stateless vs Stateful systems](Stateless%20vs%20Stateful%20systems.md)
 * [[HTTP methods semantics]]
 * [[HTTP status codes]]
 * [[Headers vs Body]]

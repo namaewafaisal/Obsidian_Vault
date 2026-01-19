@@ -44,7 +44,7 @@ Staging area : its now in a waiting to be stored in next commit
 Object database : where commits, trees, and blobs are stored
 Repository : “Repository” includes refs, reflog, config, etc.
 
-![](3%20phases%201.jpg)
+![](../Assets/3%20phases%201.jpg)
 
 **Checkout** Only head moves. basically head can point any commit or a branch
 The directory now shows the files from that commit. nothing from the repository change or the branch change. just head points somewhere else -> Safe
