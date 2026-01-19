@@ -77,7 +77,9 @@ Without DNS → we would have to type IP numbers for every website! 😵
 
 ### 🔹 DNS Namespace Structure (Hierarchy)
 
-         `Root (.)            │  ┌─────────┴─────────┐  .com     .org     .edu  (Top Level Domains - TLD)    │         │  google     wikipedia     (Second-level domains)    │  www, mail, drive  (Subdomains / Hosts)`
+         `Root (.)         
+                    │ 
+ ┌─────────┴─────────┐  .com     .org     .edu  (Top Level Domains - TLD)    │         │  google     wikipedia     (Second-level domains)    │  www, mail, drive  (Subdomains / Hosts)`
 
 Like a **tree** from top to bottom 🌳
 

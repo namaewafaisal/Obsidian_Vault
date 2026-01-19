@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Threads basics",
-      "path": "Java Backend/Threads basics.md"
+      "basename": "Unit 1",
+      "path": "Academics/CS3591-Networks/Unit 1.md"
     },
     {
       "basename": "Unit 2",
       "path": "Academics/CS3591-Networks/Unit 2.md"
+    },
+    {
+      "basename": "HTTP",
+      "path": "My Writing/HTTP.md"
+    },
+    {
+      "basename": "HTTP Request Lifecycle",
+      "path": "My Writing/HTTP Request Lifecycle.md"
+    },
+    {
+      "basename": "Threads basics",
+      "path": "Java Backend/Threads basics.md"
     },
     {
       "basename": "Git",
@@ -49,10 +61,6 @@
       "path": "Java Backend/Exception propagation.md"
     },
     {
-      "basename": "HTTP",
-      "path": "My Writing/HTTP.md"
-    },
-    {
       "basename": "OSI Model",
       "path": "Academics/CS3591-Networks/OSI Model.md"
     },
@@ -65,16 +73,8 @@
       "path": "Academics/CS3591-Networks/TCP-IP Model.md"
     },
     {
-      "basename": "Unit 1",
-      "path": "Academics/CS3591-Networks/Unit 1.md"
-    },
-    {
       "basename": "College Computer Networks",
       "path": "Academics/CS3591-Networks/College Computer Networks.md"
-    },
-    {
-      "basename": "HTTP Request Lifecycle",
-      "path": "My Writing/HTTP Request Lifecycle.md"
     },
     {
       "basename": "About me",

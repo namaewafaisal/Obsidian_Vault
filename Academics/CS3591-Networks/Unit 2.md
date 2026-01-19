@@ -26,16 +26,16 @@
 
 ## 1️⃣ **Protocol Comparison – TCP vs UDP vs SCTP**
 
-|Feature|TCP|UDP|SCTP|
-|---|---|---|---|
-|Full Form|Transmission Control Protocol|User Datagram Protocol|Stream Control Transmission Protocol|
-|Communication Type|Connection-oriented|Connectionless|Connection-oriented|
-|Reliability|✔ Yes (ACK, retransmission)|✖ No|✔ Yes|
-|Ordering|✔ In-sequence|✖ Not guaranteed|✔ Multiple ordered streams|
-|Speed|Slower|Faster|Medium|
-|Header Size|Larger (20+ bytes)|Smaller (8 bytes)|Largest (≈ 32+ bytes)|
-|Congestion Control|✔ Yes|✖ No|✔ Yes|
-|Applications|Web (HTTP), Email (SMTP), File Transfer (FTP)|Live streaming, VoIP, Games|Telecom networks (VoLTE)|
+| Feature            | TCP                                           | UDP                         | SCTP                                 |
+| ------------------ | --------------------------------------------- | --------------------------- | ------------------------------------ |
+| Full Form          | Transmission Control Protocol                 | User Datagram Protocol      | Stream Control Transmission Protocol |
+| Communication Type | Connection-oriented                           | Connectionless              | Connection-oriented                  |
+| Reliability        | ✔ Yes (ACK, retransmission)                   | ✖ No                        | ✔ Yes                                |
+| Ordering           | ✔ In-sequence                                 | ✖ Not guaranteed            | ✔ Multiple ordered streams           |
+| Speed              | Slower                                        | Faster                      | Medium                               |
+| Header Size        | Larger (20+ bytes)                            | Smaller (8 bytes)           | Largest (≈ 32+ bytes)                |
+| Congestion Control | ✔ Yes                                         | ✖ No                        | ✔ Yes                                |
+| Applications       | Web (HTTP), Email (SMTP), File Transfer (FTP) | Live streaming, VoIP, Games | Telecom networks (VoLTE)             |
 
 📌 **Analogy:**
 
