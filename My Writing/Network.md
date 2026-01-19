@@ -1,6 +1,6 @@
-> A Network is a connection between multiple devices which enables communication between them
+> A **Network** is a connection between multiple *individual* devices which enables communication and resource sharing between them
 
-Each device can access its own resources directly but to access resources from other devices it requires some sort of connection. That's Network
+The key idea is for the communication to work large distance with agreed rules.
+The rules are called [[Network Protocols]].
 
-Where Network is needed?
-- 
+Internet means **very large network of networks**.
