@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Network",
+      "path": "My Writing/Network.md"
+    },
+    {
       "basename": "Unit 1",
       "path": "Academics/CS3591-Networks/Unit 1.md"
     },
@@ -22,7 +26,7 @@
     },
     {
       "basename": "Git",
-      "path": "Concepts/Git.md"
+      "path": "My Writing/Git.md"
     },
     {
       "basename": "Questions",
@@ -195,10 +199,6 @@
     {
       "basename": "125. Valid Palindrome",
       "path": "Leetcode/Problems/125. Valid Palindrome.md"
-    },
-    {
-      "basename": "2. H.C.F. and L.C.M. of Numbers",
-      "path": "Misc/2. H.C.F. and L.C.M. of Numbers.md"
     }
   ],
   "omittedPaths": [],
