@@ -36,3 +36,15 @@ The rules are the filters such as
 - XSS (Malicious scripts or JS)
 - Weird payload size
 
+If true -> Blocked
+False -> Forward
+
+## Stage 5 Load Balancer (Traffic Router)
+**Receives a request and chooses which backed instance to forward the request to**
+Backend services usually have multiple instances of same service running and each responding a certain amount of request. load balancer chooses the closest server and lesser traffic
+
+==More to be added
+
+## Stage 6 Reverse Proxy (NGINX)
+
+
