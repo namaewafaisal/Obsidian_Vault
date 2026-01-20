@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Colours",
+      "path": "Personal/Jap/Colours.md"
+    },
+    {
       "basename": "Transitive dependencies",
       "path": "Java Backend/Transitive dependencies.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Index",
       "path": "Misc/Index.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Untitled.md"
     }
   ],
   "omittedPaths": [],

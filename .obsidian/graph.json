@@ -3,7 +3,7 @@
   "search": "",
   "showTags": false,
   "showAttachments": true,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
@@ -11,18 +11,32 @@
       "query": "path:Leetcode  ",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 16740493
       }
     },
     {
-      "query": "",
+      "query": "path:\"Java Backend\"  ",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 5439452
+      }
+    },
+    {
+      "query": "path:\"My Writing\" path:Personal  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:Personal/Jap  ",
+      "color": {
+        "a": 1,
+        "rgb": 16723502
       }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": -0.3,
   "nodeSizeMultiplier": 0.985899653979239,
@@ -32,6 +46,6 @@
   "repelStrength": 11.1418685121107,
   "linkStrength": 0.705017301038062,
   "linkDistance": 500,
-  "scale": 0.0967320559039091,
-  "close": false
+  "scale": 0.09673205590390899,
+  "close": true
 }
