@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "Plan",
+      "path": "Aptitude/Plan.md"
+    },
+    {
+      "basename": "Formulas",
+      "path": "Aptitude/Formulas.md"
+    },
+    {
+      "basename": "Topics",
+      "path": "Aptitude/Topics.md"
+    },
+    {
+      "basename": "Number Systems",
+      "path": "Aptitude/Number Systems.md"
+    },
+    {
+      "basename": "1. Two Sum",
+      "path": "Leetcode/Problems/1. Two Sum.md"
+    },
+    {
+      "basename": "Leetcode Template",
+      "path": "Misc/Templates/Leetcode Template.md"
+    },
+    {
+      "basename": "Plan",
+      "path": "Personal/Jap/Plan.md"
+    },
+    {
+      "basename": "Flutter Installation",
+      "path": "Misc/Flutter Installation.md"
+    },
+    {
       "basename": "Colours",
       "path": "Personal/Jap/Colours.md"
     },
@@ -101,10 +133,6 @@
       "path": "Personal/Jap/Common Verbs.md"
     },
     {
-      "basename": "Plan",
-      "path": "Personal/Jap/Plan.md"
-    },
-    {
       "basename": "HTTP methods semantics",
       "path": "Java Backend/HTTP methods semantics.md"
     },
@@ -171,34 +199,6 @@
     {
       "basename": "215. Kth Largest Element in an Array",
       "path": "Leetcode/215. Kth Largest Element in an Array.md"
-    },
-    {
-      "basename": "141. Linked List Cycle",
-      "path": "Leetcode/141. Linked List Cycle.md"
-    },
-    {
-      "basename": "50. Pow(x, n)",
-      "path": "Leetcode/50. Pow(x, n).md"
-    },
-    {
-      "basename": "39. Combination Sum",
-      "path": "Leetcode/39. Combination Sum.md"
-    },
-    {
-      "basename": "21. Merge Two Sorted Lists",
-      "path": "Leetcode/21. Merge Two Sorted Lists.md"
-    },
-    {
-      "basename": "7. Reverse Integer",
-      "path": "Leetcode/7. Reverse Integer.md"
-    },
-    {
-      "basename": "10. Logarithms",
-      "path": "Misc/10. Logarithms.md"
-    },
-    {
-      "basename": "Index",
-      "path": "Misc/Index.md"
     }
   ],
   "omittedPaths": [],
