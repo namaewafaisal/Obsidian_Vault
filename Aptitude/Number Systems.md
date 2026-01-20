@@ -1,5 +1,9 @@
 ---
-tags: [placement, quant, math]
+tags:
+  - placement
+  - quant
+  - math
+  - aptitude
 topic: Number Systems
 ---
 # 🔢 Number System — Aptitude Master Notes (Exam-Oriented)

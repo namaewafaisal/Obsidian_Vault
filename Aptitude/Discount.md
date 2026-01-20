@@ -1,11 +1,11 @@
-Understood. You want **the same depth, structure, and exam-oriented completeness** as your **Number System master note**, but now for **Discount**, written in the **same Markdown + LaTeX style**, suitable for Obsidian, with **basic + advanced gap cases**.
-
-Below is a **FULL DISCOUNT MASTER NOTE**, matching the **level, tone, and structure** of what you shared.
-
-You can paste this **as-is**.
-
 ---
-
+tags:
+  - aptitude
+  - placement
+  - Math
+topic: Discount
+date-time: 2026-01-20T20:56:00
+---
 # 💸 Discount — Aptitude Master Notes (Exam-Oriented)
 
 > **Scope:** Placement aptitude (TCS, Accenture, Infosys, Wipro, Capgemini)
@@ -21,10 +21,13 @@ You can paste this **as-is**.
 
 ### Basic Relations
 
-[$$\text{Discount} = MP - SP]$$
+$$
+\text{Discount} = MP - SP
+$$
 
+$$
 \text{Discount %} = \frac{MP - SP}{MP} \times 100
-]
+$$
 
 ---
 
@@ -32,20 +35,21 @@ You can paste this **as-is**.
 
 ### Selling Price after Discount
 
-[
+$$
 SP = MP\left(1 - \frac{d}{100}\right)
-]
+$$
 
 ### Marked Price from Selling Price
 
-[
+$$
 MP = \frac{SP}{1 - \frac{d}{100}}
-]
+$$
 
 or equivalently:
-[
+
+$$
 MP = SP \times \frac{100}{100 - d}
-]
+$$
 
 📌 **Used in:** reverse discount, missing MP questions
 
@@ -56,20 +60,21 @@ MP = SP \times \frac{100}{100 - d}
 ### Two Successive Discounts
 
 If discounts are (a%) and (b%):
-[
+
+$$
 \text{Net Discount %} = a + b - \frac{ab}{100}
-]
+$$
 
 ### Three Successive Discounts (Rare but Possible)
 
-[
+$$
 \text{Net Discount %}
 = a + b + c
 
 * \frac{ab + bc + ca}{100}
 
 - \frac{abc}{10000}
-  ]
+  $$
 
 📌 **Used in:** “shopkeeper gives successive discounts” questions
 
@@ -79,12 +84,14 @@ If discounts are (a%) and (b%):
 
 ### Core Relation
 
-[
+$$
 MP\left(1 - \frac{d}{100}\right)
-================================
+================================-
+property
+---
 
 CP\left(1 + \frac{p}{100}\right)
-]
+$$
 
 This single equation connects:
 
@@ -98,19 +105,21 @@ This single equation connects:
 ### Derived Forms
 
 **Cost Price**
-[
+
+$$
 CP =
 \frac{MP\left(1 - \frac{d}{100}\right)}
 {1 + \frac{p}{100}}
-]
+$$
 
 **Profit %**
-[
+
+$$
 \text{Profit %}
 ===============
 
 \frac{SP - CP}{CP} \times 100
-]
+$$
 
 📌 **Used in:** “sold at x% discount and y% profit” questions
 
@@ -124,12 +133,13 @@ If:
 * Discount = (d%)
 
 Then:
-[
+
+$$
 \text{Net % Effect}
 ===================
 
 m - d - \frac{md}{100}
-]
+$$
 
 * Positive → **Profit**
 * Negative → **Loss**
@@ -149,9 +159,10 @@ m - d - \frac{md}{100}
 ### Formula
 
 If discount difference = (x%) and SP difference = (\Delta):
-[
+
+$$
 MP = \frac{\Delta}{x/100}
-]
+$$
 
 📌 **Used in:** fast elimination questions
 
@@ -160,9 +171,10 @@ MP = \frac{\Delta}{x/100}
 ## 7. Equivalent Discount Concept
 
 Two successive discounts (a%) and (b%) are equivalent to:
-[
+
+$$
 D = a + b - \frac{ab}{100}
-]
+$$
 
 📌 **Used in:** converting multiple discounts into one
 
@@ -214,13 +226,3 @@ D = a + b - \frac{ab}{100}
 
 > **Coverage:** ~95% of Discount questions
 > **Status:** COMPLETE
-
----
-
-### Next (same format, your choice)
-
-* **Partnership — Master Notes**
-* **Time & Work — Master Notes**
-* **Profit & Loss — Master Notes (combined with Discount)**
-
-Just say the topic name.
