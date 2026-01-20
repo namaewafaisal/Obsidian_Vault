@@ -1,28 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Discount",
+      "path": "Aptitude/Discount.md"
+    },
+    {
       "basename": "Number Systems",
       "path": "Aptitude/Number Systems.md"
+    },
+    {
+      "basename": "1.Topics",
+      "path": "Aptitude/1.Topics.md"
+    },
+    {
+      "basename": "Profit & Loss",
+      "path": "Aptitude/Profit & Loss.md"
+    },
+    {
+      "basename": "Problems on Ages",
+      "path": "Aptitude/Problems on Ages.md"
     },
     {
       "basename": "0.Apti_Plan",
       "path": "Aptitude/0.Apti_Plan.md"
     },
     {
-      "basename": "Discount",
-      "path": "Aptitude/Discount.md"
-    },
-    {
-      "basename": "1. Number System",
-      "path": "Misc/1. Number System.md"
+      "basename": "Partnership",
+      "path": "Aptitude/Partnership.md"
     },
     {
       "basename": "Formulas",
       "path": "Aptitude/Formulas.md"
     },
     {
-      "basename": "Topics",
-      "path": "Aptitude/Topics.md"
+      "basename": "1. Number System",
+      "path": "Misc/1. Number System.md"
     },
     {
       "basename": "1. Two Sum",
@@ -187,18 +199,6 @@
     {
       "basename": "New year plan",
       "path": "Leetcode/New year plan.md"
-    },
-    {
-      "basename": "College test plan",
-      "path": "Leetcode/College test plan.md"
-    },
-    {
-      "basename": "383. Ransom Note",
-      "path": "Leetcode/Problems/383. Ransom Note.md"
-    },
-    {
-      "basename": "242. Valid Anagram",
-      "path": "Leetcode/Problems/242. Valid Anagram.md"
     }
   ],
   "omittedPaths": [],
