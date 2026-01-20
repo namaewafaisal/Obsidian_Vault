@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Plan",
-      "path": "Aptitude/Plan.md"
+      "basename": "Number Systems",
+      "path": "Aptitude/Number Systems.md"
+    },
+    {
+      "basename": "0.Apti_Plan",
+      "path": "Aptitude/0.Apti_Plan.md"
+    },
+    {
+      "basename": "Discount",
+      "path": "Aptitude/Discount.md"
+    },
+    {
+      "basename": "1. Number System",
+      "path": "Misc/1. Number System.md"
     },
     {
       "basename": "Formulas",
@@ -11,10 +23,6 @@
     {
       "basename": "Topics",
       "path": "Aptitude/Topics.md"
-    },
-    {
-      "basename": "Number Systems",
-      "path": "Aptitude/Number Systems.md"
     },
     {
       "basename": "1. Two Sum",
@@ -191,14 +199,6 @@
     {
       "basename": "242. Valid Anagram",
       "path": "Leetcode/Problems/242. Valid Anagram.md"
-    },
-    {
-      "basename": "206. Reverse Linked List",
-      "path": "Leetcode/206. Reverse Linked List.md"
-    },
-    {
-      "basename": "215. Kth Largest Element in an Array",
-      "path": "Leetcode/215. Kth Largest Element in an Array.md"
     }
   ],
   "omittedPaths": [],
