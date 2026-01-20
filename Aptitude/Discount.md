@@ -71,7 +71,7 @@ $$
 \text{Net Discount %}
 = a + b + c
 
-* \frac{ab + bc + ca}{100}
+- \frac{ab + bc + ca}{100}
 
 - \frac{abc}{10000}
   $$
@@ -86,10 +86,7 @@ $$
 
 $$
 MP\left(1 - \frac{d}{100}\right)
-================================-
-property
----
-
+=
 CP\left(1 + \frac{p}{100}\right)
 $$
 
@@ -226,3 +223,4 @@ $$
 
 > **Coverage:** ~95% of Discount questions
 > **Status:** COMPLETE
+
