@@ -2,7 +2,15 @@
   "recentFiles": [
     {
       "basename": "21. Merge Two Sorted Lists",
-      "path": "Leetcode/21. Merge Two Sorted Lists.md"
+      "path": "Leetcode/Problems/21. Merge Two Sorted Lists.md"
+    },
+    {
+      "basename": "20. Valid Parentheses",
+      "path": "Leetcode/20. Valid Parentheses.md"
+    },
+    {
+      "basename": "Plan",
+      "path": "Personal/Jap/Plan.md"
     },
     {
       "basename": "New year plan",
@@ -83,10 +91,6 @@
     {
       "basename": "Leetcode Template",
       "path": "Misc/Templates/Leetcode Template.md"
-    },
-    {
-      "basename": "Plan",
-      "path": "Personal/Jap/Plan.md"
     },
     {
       "basename": "Flutter Installation",
@@ -195,10 +199,6 @@
     {
       "basename": "HTTP methods semantics",
       "path": "Java Backend/HTTP methods semantics.md"
-    },
-    {
-      "basename": "REST principles",
-      "path": "Java Backend/REST principles.md"
     }
   ],
   "omittedPaths": [],

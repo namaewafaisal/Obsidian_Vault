@@ -339,4 +339,7 @@ If you want next, I can:
 
 Tell me what you want to lock in.
 
+[Colours](Colours.md)
+[Common Verbs](Common%20Verbs.md)
+[Relationships](Relationships.md)
 [^1]: [[Hiragana]]
