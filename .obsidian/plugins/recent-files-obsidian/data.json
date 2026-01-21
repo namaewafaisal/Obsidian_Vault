@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "141. Linked List Cycle",
-      "path": "Leetcode/141. Linked List Cycle.md"
-    },
-    {
-      "basename": "206. Reverse Linked List",
-      "path": "Leetcode/206. Reverse Linked List.md"
+      "basename": "21. Merge Two Sorted Lists",
+      "path": "Leetcode/21. Merge Two Sorted Lists.md"
     },
     {
       "basename": "New year plan",
       "path": "Leetcode/New year plan.md"
+    },
+    {
+      "basename": "42. Trapping Rain Water",
+      "path": "Leetcode/Problems/42. Trapping Rain Water.md"
+    },
+    {
+      "basename": "7. Reverse Integer",
+      "path": "Leetcode/7. Reverse Integer.md"
+    },
+    {
+      "basename": "39. Combination Sum",
+      "path": "Leetcode/39. Combination Sum.md"
+    },
+    {
+      "basename": "50. Pow(x, n)",
+      "path": "Leetcode/50. Pow(x, n).md"
+    },
+    {
+      "basename": "141. Linked List Cycle",
+      "path": "Leetcode/Problems/141. Linked List Cycle.md"
+    },
+    {
+      "basename": "206. Reverse Linked List",
+      "path": "Leetcode/Problems/206. Reverse Linked List.md"
+    },
+    {
+      "basename": "215. Kth Largest Element in an Array",
+      "path": "Leetcode/215. Kth Largest Element in an Array.md"
     },
     {
       "basename": "Leetcode problems",
@@ -175,30 +199,6 @@
     {
       "basename": "REST principles",
       "path": "Java Backend/REST principles.md"
-    },
-    {
-      "basename": "Java Backend Index",
-      "path": "Java Backend/Java Backend Index.md"
-    },
-    {
-      "basename": "Request–Response lifecycle",
-      "path": "Java Backend/Request–Response lifecycle.md"
-    },
-    {
-      "basename": "pom.xml structure",
-      "path": "Java Backend/pom.xml structure.md"
-    },
-    {
-      "basename": "Client–Server model",
-      "path": "Java Backend/Client–Server model.md"
-    },
-    {
-      "basename": "Build & Dependency Management (Maven)",
-      "path": "Java Backend/Build & Dependency Management (Maven).md"
-    },
-    {
-      "basename": "Spring Boot parent POM",
-      "path": "Java Backend/Spring Boot parent POM.md"
     }
   ],
   "omittedPaths": [],

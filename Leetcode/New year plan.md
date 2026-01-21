@@ -40,9 +40,9 @@
 
 ### Day 6: Linked Lists & Stacks
 
-* [x] [206. Reverse Linked List](206.%20Reverse%20Linked%20List) ✅ 2026-01-21
-* [ ] [141. Linked List Cycle](141.%20Linked%20List%20Cycle.md)
-* [ ] [Problems/21. Merge Two Sorted Lists](Problems/21.%20Merge%20Two%20Sorted%20Lists)
+* [x] [206. Reverse Linked List](Problems/206.%20Reverse%20Linked%20List.md) ✅ 2026-01-21
+* [x] [141. Linked List Cycle](Problems/141.%20Linked%20List%20Cycle.md) ✅ 2026-01-21
+* [ ] [21. Merge Two Sorted Lists](21.%20Merge%20Two%20Sorted%20Lists.md)
 * [ ] [[20. Valid Parentheses]]
 * [ ] [[150. Evaluate Reverse Polish Notation]]
 
