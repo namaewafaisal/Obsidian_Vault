@@ -25,6 +25,9 @@
     "TQ_show_tree": "checkbox",
     "TQ_show_urgency": "checkbox",
     "time-commitment": "datetime",
-    "date-time": "datetime"
+    "date-time": "datetime",
+    "time-taken": "number",
+    "time-taken(min)": "number",
+    "difficulty": "text"
   }
 }

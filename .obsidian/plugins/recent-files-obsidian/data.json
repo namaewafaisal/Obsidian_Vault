@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "206. Reverse Linked List",
+      "path": "Leetcode/206. Reverse Linked List.md"
+    },
+    {
+      "basename": "New year plan",
+      "path": "Leetcode/New year plan.md"
+    },
+    {
+      "basename": "Leetcode problems",
+      "path": "Leetcode/Leetcode problems.md"
+    },
+    {
       "basename": "Number Systems",
       "path": "Aptitude/Number Systems.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Plugins vs dependencies",
       "path": "Java Backend/Plugins vs dependencies.md"
-    },
-    {
-      "basename": "Digits",
-      "path": "Leetcode/DSA/Digits.md"
-    },
-    {
-      "basename": "Maven lifecycle phases",
-      "path": "Java Backend/Maven lifecycle phases.md"
-    },
-    {
-      "basename": "New year plan",
-      "path": "Leetcode/New year plan.md"
     }
   ],
   "omittedPaths": [],
