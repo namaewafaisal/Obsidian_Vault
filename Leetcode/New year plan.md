@@ -40,7 +40,7 @@
 
 ### Day 6: Linked Lists & Stacks
 
-* [ ] [206. Reverse Linked List](206.%20Reverse%20Linked%20List)
+* [x] [206. Reverse Linked List](206.%20Reverse%20Linked%20List) ✅ 2026-01-21
 * [ ] [141. Linked List Cycle](141.%20Linked%20List%20Cycle.md)
 * [ ] [Problems/21. Merge Two Sorted Lists](Problems/21.%20Merge%20Two%20Sorted%20Lists)
 * [ ] [[20. Valid Parentheses]]

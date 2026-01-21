@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "141. Linked List Cycle",
+      "path": "Leetcode/141. Linked List Cycle.md"
+    },
+    {
       "basename": "206. Reverse Linked List",
       "path": "Leetcode/206. Reverse Linked List.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Spring Boot parent POM",
       "path": "Java Backend/Spring Boot parent POM.md"
-    },
-    {
-      "basename": "Plugins vs dependencies",
-      "path": "Java Backend/Plugins vs dependencies.md"
     }
   ],
   "omittedPaths": [],

@@ -16,5 +16,6 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "./",
   "showUnsupportedFiles": true,
-  "defaultViewMode": "preview"
+  "defaultViewMode": "preview",
+  "readableLineLength": false
 }
