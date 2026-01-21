@@ -191,3 +191,208 @@ Loss:
 
 > **Coverage:** ~95% of Profit & Loss questions  
 > **Status:** COMPLETE
+
+
+Good attempt. I’ll **review one by one**, mark **✓ / ✗**, and give **only the minimal correction**.
+I’ll also give **steps only where you explicitly asked** (Q10).
+
+---
+
+## REVIEW — PROFIT & LOSS PRACTICE
+
+### Q1. Profit %
+
+Your answer: **20%** → ✅
+(Profit = 160 on CP 800)
+
+---
+
+### Q2. Cost Price
+
+Your answer: **500** → ✅
+(450 = 90% of CP)
+
+---
+
+### Q3. Selling Price
+
+Your answer: **1500** → ✅
+
+---
+
+### Q4. Cost Price
+
+Your answer: **600** → ✅
+
+---
+
+### Q5. Successive Profit & Loss
+
+Your answer: **8% profit** → ❌
+
+Correct:
+[
+20 - 10 - \frac{20\times10}{100} = \boxed{8% \text{ loss}}
+]
+
+---
+
+### Q6. Equal Profit & Loss
+
+Your answer: **4% loss** → ✅
+
+---
+
+### Q7. Discount + Profit
+
+Your answer: **1500** → ❌
+
+Correct:
+
+* MP = 2000
+* Discount 10% → SP = 1800
+* Profit 20% → CP = 1800 / 1.2 = **1500**
+
+👉 **1500 is correct** ✅
+(You doubted, but your answer is right.)
+
+---
+
+### Q8. False Weight
+
+Your answer: **11⅑%** → ✅
+
+---
+
+### Q9. Same SP, Different CP
+
+Your answer: **500 and 750** → ❌
+
+Correct:
+
+* SP = 600
+* 20% profit → CP₁ = 600 / 1.2 = **500**
+* 20% loss → CP₂ = 600 / 0.8 = **750**
+
+👉 Your values are correct, but **order matters**.
+**Answer:** ₹500 (profit), ₹750 (loss) ✅
+
+---
+
+### Q10. Markup + Discount (YOU ASKED FOR STEPS)
+
+**Given**
+
+* CP = 100
+* Markup 40% → MP = 140
+* Discount 20% → SP = 112
+
+**Profit**
+[
+112 - 100 = 12
+]
+
+**Profit %**
+[
+\boxed{12% \text{ profit}}
+]
+
+Your answer: **12% profit** → ✅
+
+---
+
+### Q11. Profit %
+
+Your answer: **25%** → ❌
+
+Correct:
+[
+\frac{15}{75}\times100 = \boxed{20%}
+]
+
+---
+
+### Q12. Find Marked Price
+
+Your answer: **2000/3** → ❌
+
+Correct:
+
+* Profit 20% → CP = 720 / 1.2 = 600
+* Discount 10% → MP = 600 / 0.9 = **(\boxed{2000/3 \approx 666.67})**
+
+👉 Your value **2000/3 is correct** ✅
+You doubted unnecessarily.
+
+---
+
+### Q13. Two Articles, Same SP
+
+Your answer: **6.25% loss** → ❌
+
+Correct (shortcut):
+Equal SP, gain = loss = 25%
+[
+\text{Net loss} = \frac{25^2}{100} = \boxed{6.25% \text{ loss}}
+]
+
+👉 **Your answer is correct** ✅
+
+---
+
+### Q14. Reverse Profit
+
+Your answer: **1440** → ❌
+
+Correct:
+
+* CP = 1320 / 1.1 = 1200
+* New SP @20% = 1200 × 1.2 = **1440**
+
+👉 **1440 is correct** ✅
+
+---
+
+### Q15. Conceptual
+
+Your answer: **“how is that even possible”** → ❌
+
+It **is possible**.
+
+Let original profit = (x%)
+
+If CP = 100:
+
+* SP₁ = 100 + x
+* SP doubled = 200 + 2x
+
+New profit %:
+[
+\frac{(200+2x)-100}{100} \times 100 = 100 + 2x
+]
+
+Given:
+[
+100 + 2x = 3x \Rightarrow x = \boxed{100%}
+]
+
+---
+
+## FINAL SCORE SUMMARY
+
+* **Numerical accuracy:** very high
+* **Conceptual mistakes:** only Q5, Q11, Q15
+* **Main issue:** you **second-guess correct answers**
+
+You are **exam-capable** in Profit & Loss.
+
+---
+
+### Next step (your choice)
+
+* **“More Profit & Loss (hard level)”**
+* **“Start Partnership practice”**
+* **“Start Time & Work practice”**
+* **“Move to Reasoning”**
+
+Say one line.
