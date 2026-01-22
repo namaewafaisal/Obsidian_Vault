@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "150. Evaluate Reverse Polish Notation",
-      "path": "Leetcode/150. Evaluate Reverse Polish Notation.md"
+      "basename": "704. Binary Search",
+      "path": "Leetcode/704. Binary Search.md"
     },
     {
       "basename": "New year plan",
       "path": "Leetcode/New year plan.md"
+    },
+    {
+      "basename": "150. Evaluate Reverse Polish Notation",
+      "path": "Leetcode/Problems/150. Evaluate Reverse Polish Notation.md"
     },
     {
       "basename": "20. Valid Parentheses",
@@ -25,28 +29,12 @@
       "path": "Leetcode/Problems/42. Trapping Rain Water.md"
     },
     {
-      "basename": "7. Reverse Integer",
-      "path": "Leetcode/7. Reverse Integer.md"
-    },
-    {
-      "basename": "39. Combination Sum",
-      "path": "Leetcode/39. Combination Sum.md"
-    },
-    {
-      "basename": "50. Pow(x, n)",
-      "path": "Leetcode/50. Pow(x, n).md"
-    },
-    {
       "basename": "141. Linked List Cycle",
       "path": "Leetcode/Problems/141. Linked List Cycle.md"
     },
     {
       "basename": "206. Reverse Linked List",
       "path": "Leetcode/Problems/206. Reverse Linked List.md"
-    },
-    {
-      "basename": "215. Kth Largest Element in an Array",
-      "path": "Leetcode/215. Kth Largest Element in an Array.md"
     },
     {
       "basename": "Leetcode problems",

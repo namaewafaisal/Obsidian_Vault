@@ -44,15 +44,15 @@
 * [x] [141. Linked List Cycle](Problems/141.%20Linked%20List%20Cycle.md) ✅ 2026-01-21
 * [x] [21. Merge Two Sorted Lists](Problems/21.%20Merge%20Two%20Sorted%20Lists.md) ✅ 2026-01-21
 * [x] [20. Valid Parentheses](Problems/20.%20Valid%20Parentheses.md) ✅ 2026-01-22
-* [ ] [150. Evaluate Reverse Polish Notation](150.%20Evaluate%20Reverse%20Polish%20Notation)
+* [x] [150. Evaluate Reverse Polish Notation](Problems/150.%20Evaluate%20Reverse%20Polish%20Notation.md) ✅ 2026-01-22
 
 ### Day 7: Binary Search & Matrices
 
-* [ ] [[704. Binary Search]]
-* [ ] [[33. Search in Rotated Sorted Array]]
-* [ ] [[74. Search a 2D Matrix]]
-* [ ] [[54. Spiral Matrix]]
-* [ ] [[48. Rotate Image]]
+* [ ] [704. Binary Search](704.%20Binary%20Search)⏳ 2026-01-22 
+* [ ] [33. Search in Rotated Sorted Array](33.%20Search%20in%20Rotated%20Sorted%20Array) ⏳ 2026-01-22 
+* [ ] [74. Search a 2D Matrix](74.%20Search%20a%202D%20Matrix)
+* [ ] [54. Spiral Matrix](54.%20Spiral%20Matrix)
+* [ ] [48. Rotate Image](48.%20Rotate%20Image)
 
 ### Day 8: Trees (DFS & BFS)
 
