@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "704. Binary Search",
-      "path": "Leetcode/704. Binary Search.md"
+      "basename": "33. Search in Rotated Sorted Array",
+      "path": "Leetcode/33. Search in Rotated Sorted Array.md"
     },
     {
       "basename": "New year plan",
       "path": "Leetcode/New year plan.md"
+    },
+    {
+      "basename": "704. Binary Search",
+      "path": "Leetcode/Problems/704. Binary Search.md"
     },
     {
       "basename": "150. Evaluate Reverse Polish Notation",
