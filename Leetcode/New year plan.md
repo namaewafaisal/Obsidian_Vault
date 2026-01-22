@@ -49,7 +49,7 @@
 ### Day 7: Binary Search & Matrices
 
 * [x] [704. Binary Search](Problems/704.%20Binary%20Search.md) ⏳ 2026-01-22 ✅ 2026-01-22
-* [ ] [33. Search in Rotated Sorted Array](33.%20Search%20in%20Rotated%20Sorted%20Array) ⏳ 2026-01-22 
+* [x] [33. Search in Rotated Sorted Array](Problems/33.%20Search%20in%20Rotated%20Sorted%20Array.md) ⏳ 2026-01-22 ✅ 2026-01-22
 * [ ] [74. Search a 2D Matrix](74.%20Search%20a%202D%20Matrix)
 * [ ] [54. Spiral Matrix](54.%20Spiral%20Matrix)
 * [ ] [48. Rotate Image](48.%20Rotate%20Image)
