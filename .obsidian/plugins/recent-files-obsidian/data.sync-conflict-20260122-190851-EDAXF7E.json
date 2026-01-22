@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "20. Valid Parentheses",
-      "path": "Leetcode/20. Valid Parentheses.md"
+      "basename": "200. Number of Islands",
+      "path": "Leetcode/200. Number of Islands.md"
     },
     {
       "basename": "New year plan",
       "path": "Leetcode/New year plan.md"
+    },
+    {
+      "basename": "20. Valid Parentheses",
+      "path": "Leetcode/20. Valid Parentheses.md"
+    },
+    {
+      "basename": "141. Linked List Cycle",
+      "path": "Leetcode/Problems/141. Linked List Cycle.md"
+    },
+    {
+      "basename": "Git",
+      "path": "My Writing/Git.md"
     },
     {
       "basename": "21. Merge Two Sorted Lists",
@@ -31,10 +43,6 @@
     {
       "basename": "50. Pow(x, n)",
       "path": "Leetcode/50. Pow(x, n).md"
-    },
-    {
-      "basename": "141. Linked List Cycle",
-      "path": "Leetcode/Problems/141. Linked List Cycle.md"
     },
     {
       "basename": "206. Reverse Linked List",
@@ -133,10 +141,6 @@
       "path": "Java Backend/Threads basics.md"
     },
     {
-      "basename": "Git",
-      "path": "My Writing/Git.md"
-    },
-    {
       "basename": "Questions",
       "path": "Academics/CS3591-Networks/Questions.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Common Verbs",
       "path": "Personal/Jap/Common Verbs.md"
-    },
-    {
-      "basename": "HTTP methods semantics",
-      "path": "Java Backend/HTTP methods semantics.md"
     }
   ],
   "omittedPaths": [],
