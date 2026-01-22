@@ -43,7 +43,7 @@
 * [x] [206. Reverse Linked List](Problems/206.%20Reverse%20Linked%20List.md) ✅ 2026-01-21
 * [x] [141. Linked List Cycle](Problems/141.%20Linked%20List%20Cycle.md) ✅ 2026-01-21
 * [x] [21. Merge Two Sorted Lists](Problems/21.%20Merge%20Two%20Sorted%20Lists.md) ✅ 2026-01-21
-* [ ] [20. Valid Parentheses](20.%20Valid%20Parentheses.md)
+* [x] [20. Valid Parentheses](Problems/20.%20Valid%20Parentheses.md) ✅ 2026-01-22
 * [ ] [150. Evaluate Reverse Polish Notation](150.%20Evaluate%20Reverse%20Polish%20Notation)
 
 ### Day 7: Binary Search & Matrices
