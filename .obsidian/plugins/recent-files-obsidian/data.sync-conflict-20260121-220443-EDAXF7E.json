@@ -1,0 +1,208 @@
+{
+  "recentFiles": [
+    {
+      "basename": "Git",
+      "path": "My Writing/Git.md"
+    },
+    {
+      "basename": "1. Two Sum",
+      "path": "Leetcode/Problems/1. Two Sum.md"
+    },
+    {
+      "basename": "Plan",
+      "path": "Aptitude/Plan.md"
+    },
+    {
+      "basename": "Formulas",
+      "path": "Aptitude/Formulas.md"
+    },
+    {
+      "basename": "Topics",
+      "path": "Aptitude/Topics.md"
+    },
+    {
+      "basename": "Number Systems",
+      "path": "Aptitude/Number Systems.md"
+    },
+    {
+      "basename": "Leetcode Template",
+      "path": "Misc/Templates/Leetcode Template.md"
+    },
+    {
+      "basename": "Plan",
+      "path": "Personal/Jap/Plan.md"
+    },
+    {
+      "basename": "Flutter Installation",
+      "path": "Misc/Flutter Installation.md"
+    },
+    {
+      "basename": "Colours",
+      "path": "Personal/Jap/Colours.md"
+    },
+    {
+      "basename": "Transitive dependencies",
+      "path": "Java Backend/Transitive dependencies.md"
+    },
+    {
+      "basename": "Network Protocols",
+      "path": "My Writing/Network Protocols.md"
+    },
+    {
+      "basename": "Network",
+      "path": "My Writing/Network.md"
+    },
+    {
+      "basename": "Unit 1",
+      "path": "Academics/CS3591-Networks/Unit 1.md"
+    },
+    {
+      "basename": "Unit 2",
+      "path": "Academics/CS3591-Networks/Unit 2.md"
+    },
+    {
+      "basename": "HTTP",
+      "path": "My Writing/HTTP.md"
+    },
+    {
+      "basename": "HTTP Request Lifecycle",
+      "path": "My Writing/HTTP Request Lifecycle.md"
+    },
+    {
+      "basename": "Threads basics",
+      "path": "Java Backend/Threads basics.md"
+    },
+    {
+      "basename": "Questions",
+      "path": "Academics/CS3591-Networks/Questions.md"
+    },
+    {
+      "basename": "Relationships",
+      "path": "Personal/Jap/Relationships.md"
+    },
+    {
+      "basename": "3 phases 1",
+      "path": "Assets/3 phases 1.jpg"
+    },
+    {
+      "basename": "HTTP protocol basics",
+      "path": "Java Backend/HTTP protocol basics.md"
+    },
+    {
+      "basename": "Stateless vs Stateful systems",
+      "path": "Java Backend/Stateless vs Stateful systems.md"
+    },
+    {
+      "basename": "Heap vs Stack",
+      "path": "Java Backend/Heap vs Stack.md"
+    },
+    {
+      "basename": "Fat JAR & classpath",
+      "path": "Java Backend/Fat JAR & classpath.md"
+    },
+    {
+      "basename": "Exception propagation",
+      "path": "Java Backend/Exception propagation.md"
+    },
+    {
+      "basename": "OSI Model",
+      "path": "Academics/CS3591-Networks/OSI Model.md"
+    },
+    {
+      "basename": "OSI vs TCP-IP",
+      "path": "Academics/CS3591-Networks/OSI vs TCP-IP.md"
+    },
+    {
+      "basename": "TCP-IP Model",
+      "path": "Academics/CS3591-Networks/TCP-IP Model.md"
+    },
+    {
+      "basename": "College Computer Networks",
+      "path": "Academics/CS3591-Networks/College Computer Networks.md"
+    },
+    {
+      "basename": "About me",
+      "path": "My Writing/About me.md"
+    },
+    {
+      "basename": "Dependency resolution",
+      "path": "Java Backend/Dependency resolution.md"
+    },
+    {
+      "basename": "Common Verbs",
+      "path": "Personal/Jap/Common Verbs.md"
+    },
+    {
+      "basename": "HTTP methods semantics",
+      "path": "Java Backend/HTTP methods semantics.md"
+    },
+    {
+      "basename": "REST principles",
+      "path": "Java Backend/REST principles.md"
+    },
+    {
+      "basename": "Java Backend Index",
+      "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Request–Response lifecycle",
+      "path": "Java Backend/Request–Response lifecycle.md"
+    },
+    {
+      "basename": "pom.xml structure",
+      "path": "Java Backend/pom.xml structure.md"
+    },
+    {
+      "basename": "Client–Server model",
+      "path": "Java Backend/Client–Server model.md"
+    },
+    {
+      "basename": "Build & Dependency Management (Maven)",
+      "path": "Java Backend/Build & Dependency Management (Maven).md"
+    },
+    {
+      "basename": "Spring Boot parent POM",
+      "path": "Java Backend/Spring Boot parent POM.md"
+    },
+    {
+      "basename": "Plugins vs dependencies",
+      "path": "Java Backend/Plugins vs dependencies.md"
+    },
+    {
+      "basename": "Digits",
+      "path": "Leetcode/DSA/Digits.md"
+    },
+    {
+      "basename": "Maven lifecycle phases",
+      "path": "Java Backend/Maven lifecycle phases.md"
+    },
+    {
+      "basename": "New year plan",
+      "path": "Leetcode/New year plan.md"
+    },
+    {
+      "basename": "College test plan",
+      "path": "Leetcode/College test plan.md"
+    },
+    {
+      "basename": "383. Ransom Note",
+      "path": "Leetcode/Problems/383. Ransom Note.md"
+    },
+    {
+      "basename": "242. Valid Anagram",
+      "path": "Leetcode/Problems/242. Valid Anagram.md"
+    },
+    {
+      "basename": "206. Reverse Linked List",
+      "path": "Leetcode/206. Reverse Linked List.md"
+    },
+    {
+      "basename": "215. Kth Largest Element in an Array",
+      "path": "Leetcode/215. Kth Largest Element in an Array.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}
