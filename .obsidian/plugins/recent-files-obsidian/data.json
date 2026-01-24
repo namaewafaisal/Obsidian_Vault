@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "HTTP status codes",
+      "path": "Java Backend/HTTP status codes.md"
+    },
+    {
+      "basename": "Java Backend Index",
+      "path": "Java Backend/Java Backend Index.md"
+    },
+    {
+      "basename": "Client–Server model",
+      "path": "Java Backend/Client–Server model.md"
+    },
+    {
+      "basename": "HTTP methods semantics",
+      "path": "Java Backend/HTTP methods semantics.md"
+    },
+    {
       "basename": "New year plan",
       "path": "Leetcode/New year plan.md"
     },
@@ -183,14 +199,6 @@
     {
       "basename": "About me",
       "path": "My Writing/About me.md"
-    },
-    {
-      "basename": "Dependency resolution",
-      "path": "Java Backend/Dependency resolution.md"
-    },
-    {
-      "basename": "Common Verbs",
-      "path": "Personal/Jap/Common Verbs.md"
     }
   ],
   "omittedPaths": [],
