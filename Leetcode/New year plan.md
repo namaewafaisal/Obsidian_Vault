@@ -56,7 +56,7 @@
 
 ### Day 8: Trees (DFS & BFS)
 
-* [ ] [[226. Invert Binary Tree]]
+* [x] [[226. Invert Binary Tree]] ✅ 2026-01-26
 * [ ] [[102. Binary Tree Level Order Traversal]]
 * [ ] [[235. Lowest Common Ancestor of a BST]]
 * [ ] [[98. Validate Binary Search Tree]]
