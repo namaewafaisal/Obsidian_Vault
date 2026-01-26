@@ -49,10 +49,10 @@
 ### Day 7: Binary Search & Matrices
 
 * [x] [704. Binary Search](Problems/704.%20Binary%20Search.md) ⏳ 2026-01-22 ✅ 2026-01-22
-* [x] [33. Search in Rotated Sorted Array](Problems/33.%20Search%20in%20Rotated%20Sorted%20Array.md) ⏳ 2026-01-22 ✅ 2026-01-22
+* [x] [33. Search in Rotated Sorted Array](Problems/33.%20Search%20in%20Rotated%20Sorted%20Array.md) ⏳ 2026-01-22 ✅ 2026-01-22 🔁 📅 2026-01-27 
 * [x] [74. Search a 2D Matrix](74.%20Search%20a%202D%20Matrix) ✅ 2026-01-24
-* [x] [54. Spiral Matrix](54.%20Spiral%20Matrix) ✅ 2026-01-24
-* [ ] [48. Rotate Image](48.%20Rotate%20Image)
+* [x] [54. Spiral Matrix](54.%20Spiral%20Matrix) ✅ 2026-01-24 🔁 ⏳ 2026-01-28 
+* [x] [48. Rotate Image](Problems/48.%20Rotate%20Image.md) ✅ 2026-01-26 🔁 ⏳ 2026-01-29
 
 ### Day 8: Trees (DFS & BFS)
 
