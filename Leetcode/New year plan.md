@@ -56,26 +56,26 @@
 
 ### Day 8: Trees (DFS & BFS)
 
-* [x] [[Problems/226. Invert Binary Tree]] ✅ 2026-01-26
-* [x] [[Problems/102. Binary Tree Level Order Traversal]] ✅ 2026-01-26
-* [x] [[Problems/235. Lowest Common Ancestor of a BST]] ✅ 2026-01-27
-* [ ] [[98. Validate Binary Search Tree]]
-* [ ] [[105. Construct Binary Tree from Preorder and Inorder Traversal]]
+* [x] [226. Invert Binary Tree](Problems/226.%20Invert%20Binary%20Tree.md)✅ 2026-01-26
+* [x] [102. Binary Tree Level Order Traversal](Problems/102.%20Binary%20Tree%20Level%20Order%20Traversal.md) ✅ 2026-01-26
+* [x] [235. Lowest Common Ancestor of a BST](Problems/235.%20Lowest%20Common%20Ancestor%20of%20a%20BST.md)✅ 2026-01-27
+* [x] [98. Validate Binary Search Tree](98.%20Validate%20Binary%20Search%20Tree.md) ✅ 2026-01-27
+* [ ] [105. Construct Binary Tree from Preorder and Inorder Traversal](105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal)
 
 ### Day 9: Graphs
 
-* [ ] [[200. Number of Islands]]
-* [ ] [[133. Clone Graph]]
-* [ ] [[207. Course Schedule]]
-* [ ] [[994. Rotting Oranges]]
-* [ ] [[733. Flood Fill]]
+* [ ] [200. Number of Islands](200.%20Number%20of%20Islands)
+* [ ] [133. Clone Graph](133.%20Clone%20Graph)
+* [ ] [207. Course Schedule](207.%20Course%20Schedule)
+* [ ] [994. Rotting Oranges](994.%20Rotting%20Oranges)
+* [ ] [733. Flood Fill](733.%20Flood%20Fill)
 
 ### Day 10: Dynamic Programming & Heaps
 
-* [ ] [[70. Climbing Stairs]]
-* [ ] [[322. Coin Change]]
-* [ ] [[198. House Robber]]
-* [ ] [[973. K Closest Points to Origin]]
-* [ ] [[215. Kth Largest Element in an Array]]
+* [ ] [70. Climbing Stairs](70.%20Climbing%20Stairs)
+* [ ] [322. Coin Change](322.%20Coin%20Change)
+* [ ] [198. House Robber](198.%20House%20Robber)
+* [ ] [973. K Closest Points to Origin](973.%20K%20Closest%20Points%20to%20Origin)
+* [ ] [215. Kth Largest Element in an Array](215.%20Kth%20Largest%20Element%20in%20an%20Array)
 
 ---
