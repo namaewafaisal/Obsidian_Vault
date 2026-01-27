@@ -56,8 +56,8 @@
 
 ### Day 8: Trees (DFS & BFS)
 
-* [x] [[226. Invert Binary Tree]] ✅ 2026-01-26
-* [x] [[102. Binary Tree Level Order Traversal]] ✅ 2026-01-26
+* [x] [[Problems/226. Invert Binary Tree]] ✅ 2026-01-26
+* [x] [[Problems/102. Binary Tree Level Order Traversal]] ✅ 2026-01-26
 * [ ] [[235. Lowest Common Ancestor of a BST]]
 * [ ] [[98. Validate Binary Search Tree]]
 * [ ] [[105. Construct Binary Tree from Preorder and Inorder Traversal]]
