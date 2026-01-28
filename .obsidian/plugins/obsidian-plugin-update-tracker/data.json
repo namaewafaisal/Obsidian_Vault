@@ -1,6 +1,18 @@
 {
   "daysToSuppressNewUpdates": 0,
-  "dismissedVersionsByPluginId": {},
+  "dismissedVersionsByPluginId": {
+    "templater-obsidian": {
+      "pluginId": "templater-obsidian",
+      "pluginRepoPath": "SilentVoid13/Templater",
+      "dismissedVersions": [
+        {
+          "versionNumber": "2.18.0",
+          "versionName": "2.18.0",
+          "publishedAt": "2026-01-28T04:14:10Z"
+        }
+      ]
+    }
+  },
   "showIconOnMobile": true,
   "showNotificationOnNewUpdate": false,
   "excludeBetaVersions": true,
