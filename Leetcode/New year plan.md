@@ -60,7 +60,7 @@
 * [x] [102. Binary Tree Level Order Traversal](Problems/102.%20Binary%20Tree%20Level%20Order%20Traversal.md) ✅ 2026-01-26
 * [x] [235. Lowest Common Ancestor of a BST](Problems/235.%20Lowest%20Common%20Ancestor%20of%20a%20BST.md)✅ 2026-01-27
 * [x] [98. Validate Binary Search Tree](Problems/98.%20Validate%20Binary%20Search%20Tree.md) ✅ 2026-01-27
-* [ ] [105. Construct Binary Tree from Preorder and Inorder Traversal](105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal)
+* [x] [105. Construct Binary Tree from Preorder and Inorder Traversal](Problems/105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal.md) ✅ 2026-01-29
 
 ### Day 9: Graphs
 
