@@ -171,7 +171,7 @@
 ### College
 * [ ] [LC 232. Implement Queue using Stacks](232.%20Implement%20Queue%20using%20Stacks.md)
 * [ ] [LC 933. Number of Recent Calls](933.%20Number%20of%20Recent%20Calls.md)
-* [ ] [LC 994. Rotting Oranges](994.%20Rotting%20Oranges.md)
+* [ ] [LC 994. Rotting Oranges](Problems/994.%20Rotting%20Oranges.md)
 * [ ] [LC 1091. Shortest Path in Binary Matrix](1091.%20Shortest%20Path%20in%20Binary%20Matrix.md)
 
 ### Grind 75 Only
@@ -230,7 +230,7 @@
 * [ ] [LC 133. Clone Graph](133.%20Clone%20Graph.md)
 * [ ] [LC 207. Course Schedule](207.%20Course%20Schedule.md)
 * [ ] [LC 200. Number of Islands](Problems/200.%20Number%20of%20Islands.md)
-* [ ] [LC 994. Rotting Oranges](994.%20Rotting%20Oranges.md)
+* [ ] [LC 994. Rotting Oranges](Problems/994.%20Rotting%20Oranges.md)
 * [ ] [LC 721. Accounts Merge](721.%20Accounts%20Merge.md)
 * [ ] [LC 127. Word Ladder](127.%20Word%20Ladder.md)
 * [ ] [LC 79. Word Search](79.%20Word%20Search.md)

@@ -67,7 +67,7 @@
 * [x] [200. Number of Islands](Problems/200.%20Number%20of%20Islands.md) ✅ 2026-01-29
 * [ ] [133. Clone Graph](133.%20Clone%20Graph)
 * [ ] [207. Course Schedule](207.%20Course%20Schedule)
-* [x] [994. Rotting Oranges](994.%20Rotting%20Oranges) ✅ 2026-01-29
+* [x] [994. Rotting Oranges](Problems/994.%20Rotting%20Oranges.md) ✅ 2026-01-29
 * [x] [733. Flood Fill](Problems/733.%20Flood%20Fill.md) ✅ 2026-01-29
 
 ### Day 10: Dynamic Programming & Heaps
