@@ -1,11 +1,14 @@
 views:
   - type: table
     name: Table
-  - type: list
+  - type: table
     name: View
     filters:
       and:
         - file.folder == "Leetcode/Problems"
-    groupBy:
-      property: tags
-      direction: ASC
+    order:
+      - file.name
+      - difficulty
+    sort: []
+    columnSize:
+      file.name: 448
