@@ -79,3 +79,79 @@
 * [ ] [215. Kth Largest Element in an Array](215.%20Kth%20Largest%20Element%20in%20an%20Array)
 
 ---
+
+## 🔁 Phase 2: Pattern Deepening & Test Preparation
+
+> Goal: increase Medium/Hard count and test readiness using **only familiar patterns**.
+
+---
+
+### Day 11: Arrays & Prefix Sums (Stress Variants)
+
+* [ ] [325. Maximum Size Subarray Sum Equals K](325.%20Maximum%20Size%20Subarray%20Sum%20Equals%20K) — harder variant of prefix sums (from 560)
+* [ ] [[918. Maximum Sum Circular Subarray]] — Kadane’s twist (from 53)
+* [ ] [[229. Majority Element II]] — Boyer–Moore extension (from 169)
+* [ ] [[167. Two Sum II - Input Array Is Sorted]] — two pointers on sorted arrays (from 1)
+
+---
+
+### Day 12: Sliding Window Control
+
+* [ ] [[567. Permutation in String]] — tighter anagram window (from 438)
+* [ ] [[159. Longest Substring with At Most Two Distinct Characters]] — controlled window intro
+* [ ] [[340. Longest Substring with At Most K Distinct Characters]] — generalized window
+* [ ] [[16. 3Sum Closest]] — two pointers refinement (from 15)
+
+---
+
+### Day 13: Stack & Boundary Reasoning
+
+* [ ] [[84. Largest Rectangle in Histogram]] — stack depth (from 42)
+* [ ] [[581. Shortest Unsorted Continuous Subarray]] — boundary detection
+* [ ] [[287. Find the Duplicate Number]] — cycle detection (from 141)
+
+---
+
+### Day 14: Trees → Graph Reinforcement
+
+* [ ] [[695. Max Area of Island]] — DFS counting (from 200)
+* [ ] [[199. Binary Tree Right Side View]] — BFS levels (from 102)
+* [ ] [[236. Lowest Common Ancestor of a Binary Tree]] — harder LCA (from 235)
+* [ ] [[106. Construct Binary Tree from Inorder and Postorder Traversal]] — tree construction (from 105)
+
+---
+
+### Day 15: Graphs (Abstract but Familiar)
+
+* [ ] [[133. Clone Graph]] — DFS + hashmap
+* [ ] [[547. Number of Provinces]] — islands via adjacency matrix
+* [ ] [[1091. Shortest Path in Binary Matrix]] — BFS distance (from 994)
+* [ ] [[210. Course Schedule II]] — topo sort result (from 207)
+
+---
+
+### Day 16: Dynamic Programming (Controlled Scope)
+
+* [ ] [[70. Climbing Stairs]] — DP base
+* [ ] [[198. House Robber]] — state decision DP
+* [ ] [[213. House Robber II]] — circular constraint
+* [ ] [[322. Coin Change]] — DP with impossible states
+
+---
+
+### Day 17: Heaps & Selection
+
+* [ ] [[973. K Closest Points to Origin]] — heap basics
+* [ ] [[215. Kth Largest Element in an Array]] — heap vs selection
+* [ ] [[692. Top K Frequent Words]] — heap + comparator
+* [ ] [[703. Kth Largest Element in a Stream]] — maintaining heap over time
+
+---
+
+### 🔄 Review Rule
+
+* Every 3rd day:
+  * [ ] Re-solve 2 previously checked problems
+  * [ ] Time-boxed (30–40 min), no notes
+
+---
