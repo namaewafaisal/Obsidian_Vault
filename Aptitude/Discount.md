@@ -113,7 +113,7 @@ $$
 
 $$
 \text{Profit %}
-===============
+=
 
 \frac{SP - CP}{CP} \times 100
 $$
@@ -133,8 +133,7 @@ Then:
 
 $$
 \text{Net % Effect}
-===================
-
+=
 m - d - \frac{md}{100}
 $$
 
