@@ -5,14 +5,6 @@ status: active
 exam: Placement Aptitude
 priority: Medium
 ---
----
-title: Algebra — AP, GP & HP (Aptitude Master Notes)
-tags: [aptitude, quantitative, algebra, ap, gp, hp]
-status: active
-exam: Placement Aptitude
-priority: Medium
----
-
 # 🧮 Algebra — AP, GP & HP (Exam-Oriented Master Notes)
 
 > **Scope:** Placement aptitude (TCS, Accenture, Infosys, Wipro, Capgemini)  
