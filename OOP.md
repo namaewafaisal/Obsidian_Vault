@@ -3,7 +3,7 @@ tags:
   - java
   - oop
   - core-java
-date-time:
+date-time: 2026-01-31T12:50:00
 status: foundation
 ---
 
