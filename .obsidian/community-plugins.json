@@ -1,5 +1,6 @@
 [
   "obsidian-git",
   "obsidian-plugin-update-tracker",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "dataview"
 ]

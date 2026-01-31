@@ -4,6 +4,9 @@ views:
     filters:
       and:
         - file.folder == "Leetcode/Problems"
+    groupBy:
+      property: patterns
+      direction: ASC
     order:
       - file.name
       - difficulty

@@ -89,7 +89,7 @@
 ### Day 11: Arrays & Prefix Sums (Stress Variants)
 
 * [ ] [325. Maximum Size Subarray Sum Equals K](325.%20Maximum%20Size%20Subarray%20Sum%20Equals%20K) — harder variant of prefix sums (from 560)
-* [ ] [[918. Maximum Sum Circular Subarray]] — Kadane’s twist (from 53)
+* [ ] [[Problems/918. Maximum Sum Circular Subarray]] — Kadane’s twist (from 53)
 * [ ] [[229. Majority Element II]] — Boyer–Moore extension (from 169)
 * [ ] [[167. Two Sum II - Input Array Is Sorted]] — two pointers on sorted arrays (from 1)
 
