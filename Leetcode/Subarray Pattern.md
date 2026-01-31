@@ -5,7 +5,7 @@ Problems that involve contiguous segments, running sums, or window-based accumul
 ## Problems
 ```dataview
 LIST
-FROM "Problems"
+FROM "Leetcode/Problems"
 WHERE contains(patterns, "subarray")
 ```
 
