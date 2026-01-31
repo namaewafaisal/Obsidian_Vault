@@ -1,6 +1,9 @@
 ---
-tags: [java, oop, core-java]
-date-time: INVALID_DATETIME
+tags:
+  - java
+  - oop
+  - core-java
+date-time:
 status: foundation
 ---
 
@@ -250,5 +253,287 @@ abstract class Test {
 - **Interface** → can-do / capability
 
 If you remember this, **design + MCQs become easy**.
+
+---
+
+---
+tags: [java, oop, core-java]
+date-time: INVALID_DATETIME
+status: foundation
+---
+
+# Java OOP — Encapsulation, Inheritance, Polymorphism, Abstraction
+
+---
+
+## 1️⃣ Encapsulation
+
+### What Encapsulation **IS**
+- Wrapping **data + methods** together
+- Controlling **access**, not hiding completely
+- Achieved using **access modifiers**
+
+### What Encapsulation **HAS**
+- `private` fields
+- `public` / `protected` methods
+- Getter / Setter methods
+
+### What Encapsulation **DOES NOT MEAN**
+- ❌ Data hiding = security (it’s control, not security)
+- ❌ Just using getters/setters blindly
+
+### What Encapsulation **CAN DO**
+- Prevent invalid state
+- Control write access
+- Add validation logic
+
+---
+
+### Example: Encapsulation
+
+```java
+class BankAccount {
+    private double balance;
+
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+```
+
+### Implicit rules (MCQ traps)
+- Fields should almost always be `private`
+- Logic goes in **methods**, not setters blindly
+- Encapsulation ≠ immutability
+
+---
+
+## 2️⃣ Inheritance
+
+### What Inheritance **IS**
+- One class acquiring behavior of another
+- Represents **is-a** relationship
+
+### What Inheritance **HAS**
+- `extends` keyword
+- Method overriding
+- Access to `protected` members
+
+### What Inheritance **CANNOT DO**
+- Multiple class inheritance
+- Access `private` members directly
+- Override `final` methods
+
+---
+
+### Example: Inheritance
+
+```java
+class Vehicle {
+    void move() {
+        System.out.println("Vehicle moving");
+    }
+}
+
+class Car extends Vehicle {
+    void honk() {
+        System.out.println("Car honking");
+    }
+}
+```
+
+---
+
+### Important rules
+- Constructors are **not inherited**
+- `super()` is called implicitly
+- `protected` allows subclass access
+
+---
+
+## 3️⃣ Polymorphism (MOST IMPORTANT FOR OUTPUT QUESTIONS)
+
+### What Polymorphism **IS**
+- Same method name, **different behavior**
+- Resolved at **runtime** (dynamic binding)
+
+### What Polymorphism **REQUIRES**
+- Inheritance
+- Method overriding
+- Parent reference → child object
+
+### What Polymorphism **DOES NOT APPLY TO**
+- Static methods
+- Variables
+- Constructors
+
+---
+
+### Example: Runtime Polymorphism
+
+```java
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+
+class Test {
+    public static void main(String[] args) {
+        Animal a = new Dog();
+        a.sound();
+    }
+}
+```
+
+**Output**
+```
+Bark
+```
+
+### Why?
+- Method call resolved at **runtime**
+- Based on **object**, not reference
+
+---
+
+### MCQ Trap: Variables are NOT polymorphic
+
+```java
+class A {
+    int x = 10;
+}
+
+class B extends A {
+    int x = 20;
+}
+
+class Test {
+    public static void main(String[] args) {
+        A obj = new B();
+        System.out.println(obj.x);
+    }
+}
+```
+
+**Output**
+```
+10
+```
+
+Variables depend on **reference type**, not object.
+
+---
+
+## 4️⃣ Compile-Time Polymorphism (Method Overloading)
+
+### What it **IS**
+- Same method name
+- Different parameter list
+- Resolved at **compile time**
+
+### What it **DOES NOT CONSIDER**
+- Return type only
+- Method body
+
+---
+
+### Example: Method Overloading
+
+```java
+class Calculator {
+
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+```
+
+---
+
+### MCQ Trap: Overloading vs Overriding
+
+```java
+class A {
+    void test(int x) {}
+}
+
+class B extends A {
+    void test(double x) {}
+}
+```
+
+✅ This is **overloading**, NOT overriding.
+
+---
+
+## 5️⃣ Abstraction (Ties Everything Together)
+
+### What Abstraction **IS**
+- Showing **what**, not **how**
+- Achieved using:
+  - Abstract classes
+  - Interfaces
+
+### What Abstraction **DOES**
+- Hides implementation details
+- Exposes behavior
+
+### What Abstraction **IS NOT**
+- ❌ Encapsulation
+- ❌ Just interfaces
+
+---
+
+### Example: Abstraction via Interface
+
+```java
+interface Payment {
+    void pay();
+}
+
+class UpiPayment implements Payment {
+    public void pay() {
+        System.out.println("Paying via UPI");
+    }
+}
+```
+
+---
+
+## 6️⃣ One-Glance Summary (LOCK THIS)
+
+| Concept | Core Idea |
+|------|---------|
+| Encapsulation | Control access |
+| Inheritance | Reuse behavior |
+| Polymorphism | One call, many behaviors |
+| Abstraction | Hide implementation |
+
+---
+
+## 7️⃣ Ultimate MCQ Rule (Very Important)
+
+> **Reference decides variables**  
+> **Object decides overridden methods**
+
+If you remember this → **90% output questions are solved**.
 
 ---
