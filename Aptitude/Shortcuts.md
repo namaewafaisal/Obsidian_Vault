@@ -165,3 +165,226 @@ $$
 - Question explicitly asks for method
 
 ---
+# ⚡ Aptitude — Universal Shortcuts (High-ROI Only)
+
+> Use only after knowing formulas.  
+> These are **thinking shortcuts**, not derivations.
+
+---
+
+## 👨‍👩‍👦 AGES — GAP METHOD (VERY IMPORTANT)
+
+### Golden Rule
+- **Age difference is constant**
+
+---
+
+### Case 1: Ratios at Two Times, Same Gap
+If:
+- Present ratio = a : b  
+- Future ratio = c : d  
+
+And:
+$$
+(b-a) = (d-c)
+$$
+
+Then:
+- 1 unit increase = time gap given
+
+(No equation needed)
+
+---
+
+### Case 2: Ratios at Two Times, Different Gaps (BALANCING)
+
+If:
+- Present ratio = a : b → gap = (b-a)  
+- Future ratio = c : d → gap = (d-c)
+
+Steps:
+1. Multiply present ratio by (future gap)
+2. Multiply future ratio by (present gap)
+3. New gaps become equal
+4. Now apply Case 1
+
+👉 This **avoids equations completely**
+
+---
+
+## ⏱️ TIME & WORK — SHORTCUTS
+
+### Efficiency ↔ Time
+- Efficiency ∝ 1 / Time  
+- If efficiency ratio = a : b  
+  → Time ratio = b : a
+
+---
+
+### “A is twice as efficient as B”
+- Efficiency: A : B = 2 : 1  
+- Time: A : B = 1 : 2
+
+---
+
+### Joining / Leaving Shortcut
+- Always calculate **work done**, not days
+- Work done = Rate × Time
+- Remaining work ÷ New rate = Remaining time
+
+---
+
+## 🚗 TIME, SPEED & DISTANCE — SHORTCUTS
+
+### Equal Distance Average Speed
+Never take simple average.
+Use:
+$$
+\frac{2xy}{x+y}
+$$
+
+---
+
+### Trains
+- Crossing pole → only **train length**
+- Crossing platform → **train + platform**
+
+---
+
+### Relative Speed
+- Same direction → difference
+- Opposite direction → sum
+
+---
+
+## 📊 AVERAGES — GAP / REPLACEMENT SHORTCUT
+
+If 1 person replaced:
+
+$$
+\text{New person age}
+=
+\text{Old person age}
++
+(\text{Number of persons} \times \text{Change in average})
+$$
+
+No need to calculate total sum.
+
+---
+
+## 💹 PERCENTAGE — SHORTCUTS
+
+### Same % Increase and Decrease
+If +x% then −x%:
+$$
+\text{Net loss} = \frac{x^2}{100}\%
+$$
+
+---
+
+### A is x% more than B
+Then:
+$$
+B \text{ is } \frac{x}{100+x} \times 100 \% \text{ less than A}
+$$
+
+---
+
+### Consumption Problems
+- Price ↑ x% → Consumption ↓
+$$
+\frac{x}{100+x} \times 100
+$$
+
+---
+
+## 💰 PROFIT & LOSS — SHORTCUTS
+
+### Same % Profit & Loss
+If profit = loss = x%:
+$$
+\text{Net loss} = \frac{x^2}{100}
+$$
+
+---
+
+### False Weight Trick
+If weight reduced by x%:
+$$
+\text{Gain \%} = \frac{x}{100-x} \times 100
+$$
+
+---
+
+## 🏷️ DISCOUNT — SHORTCUTS
+
+### Successive Discounts
+$$
+a + b - \frac{ab}{100}
+$$
+
+---
+
+### Marked ↑ x% then Discount x%
+Always results in:
+$$
+\frac{x^2}{100}\% \text{ loss}
+$$
+
+---
+
+## 🤝 PARTNERSHIP — SHORTCUT
+
+Profit ratio:
+$$
+\text{Investment} \times \text{Time}
+$$
+
+If time same → ignore time  
+If investment same → ignore investment
+
+---
+
+## 💰 SI–CI — SHORTCUTS
+
+### CI − SI (2 years)
+$$
+P\left(\frac{R}{100}\right)^2
+$$
+
+(No need to find CI and SI separately)
+
+---
+
+### Population / Value / Depreciation
+Always **CI formula**  
+Never SI
+
+---
+
+## 🔢 NUMBER SYSTEM — QUICK RECAP SHORTCUTS
+
+- Same remainder → LCM ± remainder
+- Perfect square → even powers only
+- Trailing zeros → count only 5s
+- Unit digit → cycle method
+
+---
+
+## 🧠 EXAM MINDSET SHORTCUTS
+
+- If options are close → check **unit digit**
+- If numbers are huge → use **modulo**
+- If ratio present → try **gap method first**
+- If calculation long → eliminate options
+
+---
+
+## ❌ DO NOT APPLY SHORTCUTS WHEN
+
+- Question explicitly asks for steps
+- Multiple topics are mixed
+- Exact values (not ratio) required
+
+---
