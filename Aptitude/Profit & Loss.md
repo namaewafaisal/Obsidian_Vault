@@ -4,395 +4,177 @@ tags:
   - Math
   - placement
 topic: Profit & Loss
+exam: Placement Aptitude
+priority: High
+status: final
 date-time: 2026-01-20T21:06:00
 ---
 
-# 💰 Profit & Loss — Aptitude Master Notes (Exam-Oriented)
-
-> **Scope:** Placement aptitude (TCS, Accenture, Infosys, Wipro, Capgemini)  
-> **Goal:** Instantly relate CP–SP–MP, avoid percentage base traps
+# 💰 Profit & Loss — Complete Formula Sheet (Most → Least Important)
 
 ---
 
-## 1. Core Definitions
+## 🔴 CORE DEFINITIONS (MUST WRITE)
 
-- **Cost Price (CP):** Price at which an article is bought
-- **Selling Price (SP):** Price at which an article is sold
-- **Profit (Gain):** SP − CP
-- **Loss:** CP − SP
+- Cost Price = CP  
+- Selling Price = SP  
+- Marked Price = MP
 
 ---
 
-## 2. Basic Formulas
-
-Profit:
+### Profit
 $$
 \text{Profit} = SP - CP
 $$
 
-Loss:
+### Loss
 $$
 \text{Loss} = CP - SP
 $$
 
-Profit Percentage:
+---
+
+### Profit %
 $$
 \text{Profit \%} = \frac{\text{Profit}}{CP} \times 100
 $$
 
-Loss Percentage:
+### Loss %
 $$
 \text{Loss \%} = \frac{\text{Loss}}{CP} \times 100
 $$
 
 ---
 
-## 3. Selling Price Formulas
+## 🔴 DIRECT CP–SP RELATIONS (VERY IMPORTANT)
 
-If profit = p%:
+### If Profit = R%
 $$
-SP = CP\left(1 + \frac{p}{100}\right)
-$$
-
-If loss = l%:
-$$
-SP = CP\left(1 - \frac{l}{100}\right)
+SP = CP \times \left(1 + \frac{R}{100}\right)
 $$
 
----
-
-## 4. Cost Price from Selling Price
-
-If profit = p%:
+### If Loss = R%
 $$
-CP = \frac{SP}{1 + \frac{p}{100}}
-$$
-
-If loss = l%:
-$$
-CP = \frac{SP}{1 - \frac{l}{100}}
+SP = CP \times \left(1 - \frac{R}{100}\right)
 $$
 
 ---
 
-## 5. Marked Price (Link with Discount)
+### Finding CP from SP
 
-Relationship:
+If Profit = R%:
 $$
-SP = MP\left(1 - \frac{d}{100}\right)
+CP = \frac{SP}{1 + \frac{R}{100}}
 $$
 
-Combined with profit:
+If Loss = R%:
 $$
-MP\left(1 - \frac{d}{100}\right)
+CP = \frac{SP}{1 - \frac{R}{100}}
+$$
+
+---
+
+## 🟠 MARKED PRICE & DISCOUNT LINK (COMMON)
+
+### Discount
+$$
+\text{Discount} = MP - SP
+$$
+
+### Discount %
+$$
+\text{Discount \%} = \frac{MP - SP}{MP} \times 100
+$$
+
+---
+
+### SP after Discount of D%
+$$
+SP = MP \times \left(1 - \frac{D}{100}\right)
+$$
+
+---
+
+### Profit–Discount Relation
+$$
+MP \times \left(1 - \frac{D}{100}\right)
 =
-CP\left(1 + \frac{p}{100}\right)
+CP \times \left(1 + \frac{P}{100}\right)
 $$
 
 ---
 
-## 6. Successive Profit / Loss (IMPORTANT)
+## 🟠 SUCCESSIVE PROFIT / LOSS
 
-If profit = a% followed by loss = b%:
+### Two Successive Changes (Profit/Loss)
 $$
-\text{Net \%} = a - b - \frac{ab}{100}
-$$
-
-If two profits a% and b%:
-$$
-\text{Net Profit \%} = a + b + \frac{ab}{100}
+\text{Net \%} = a + b + \frac{ab}{100}
 $$
 
-If two losses a% and b%:
-$$
-\text{Net Loss \%} = a + b + \frac{ab}{100}
-$$
+(Use + for profit, − for loss)
 
 ---
 
-## 7. Equal Profit & Loss on Same CP (CLASSIC TRAP)
-
-If profit = loss = x% on two different articles (same CP):
+### Same % Profit and Loss
+If profit = x% and loss = x%:
 $$
-\text{Net Loss \%} = \frac{x^2}{100}
+\text{Net Loss} = \frac{x^2}{100}\%
 $$
 
 ---
 
-## 8. False Weight / Dishonest Dealer
+## 🟡 FALSE WEIGHT / DISHONEST DEALER (HIGH ROI)
 
-If a dealer uses false weight:
+### Gain when Selling at CP but Giving Less Weight
 
-Selling 1 kg but gives x kg:
+If dealer gives only \(x\) instead of \(y\):
 $$
-\text{Profit \%} = \frac{(1 - x)}{x} \times 100
-$$
-
-Example:
-- Uses 900 g instead of 1 kg
-- Profit % = 11⅑%
-
----
-
-## 9. Gain or Loss per Article
-
-If profit per article = ₹x and CP per article = ₹y:
-$$
-\text{Profit \%} = \frac{x}{y} \times 100
+\text{Gain \%} = \frac{y-x}{x} \times 100
 $$
 
-Used in bulk selling questions.
+---
+
+### Gain when Uses False Weight & Overcharges
+
+Multiply the individual gain factors.
 
 ---
 
-## 10. Mental Percentage Anchors (Speed Boost)
+## 🟡 EQUAL SP / EQUAL CP CASES
 
-- 10% profit → ×1.1  
-- 20% profit → ×1.2  
-- 25% profit → ×1.25  
-- 33⅓% profit → ×4/3  
-- 50% profit → ×1.5  
+### Two Articles Sold at Same SP
 
-Loss:
-- 10% loss → ×0.9  
-- 20% loss → ×0.8  
-- 25% loss → ×0.75  
+One at profit p% and one at loss p%:
+$$
+\text{Net Loss} = \frac{p^2}{100}
+$$
 
 ---
 
-## 11. Standard Question Models (What Exams Repeat)
+## 🟢 PARTNERSHIP LINK (RARE HERE, BUT EASY)
 
-1. Find SP given CP and profit/loss %
-2. Find CP given SP and profit/loss %
-3. Successive profit/loss
-4. Equal profit & loss on two articles
-5. False weight / dishonest dealer
-6. Discount + profit combined problems
-7. Find profit % when MP and discount given
+Profit share:
+$$
+\text{Investment} \times \text{Time}
+$$
 
 ---
 
-## 12. Common Traps & Exam Notes
+## 🟢 QUICK FRACTION EQUIVALENTS (TIME SAVERS)
 
-- Profit and loss are **always calculated on CP**
-- Discount is **never on CP**, always on MP
-- Successive % ≠ simple addition/subtraction
-- Same CP does **not** mean same SP
-- Use fractions instead of decimals when possible
-
----
-
-## Exam Takeaways
-
-- Fix the base first (CP or MP)
-- Convert % to multipliers early
-- Avoid algebra if ratio logic works
-- Pattern recognition ≤ **5 seconds**
-
-> **Coverage:** ~95% of Profit & Loss questions  
-> **Status:** COMPLETE
-
-
-Good attempt. I’ll **review one by one**, mark **✓ / ✗**, and give **only the minimal correction**.
-I’ll also give **steps only where you explicitly asked** (Q10).
+- 10% = 1/10  
+- 20% = 1/5  
+- 25% = 1/4  
+- 33⅓% = 1/3  
+- 50% = 1/2  
+- 66⅔% = 2/3  
 
 ---
 
-## REVIEW — PROFIT & LOSS PRACTICE
+## ❌ DO NOT WRITE
 
-### Q1. Profit %
-
-Your answer: **20%** → ✅
-(Profit = 160 on CP 800)
-
----
-
-### Q2. Cost Price
-
-Your answer: **500** → ✅
-(450 = 90% of CP)
+- Long word explanations  
+- Case derivations  
+- Story-based tricks  
 
 ---
-
-### Q3. Selling Price
-
-Your answer: **1500** → ✅
-
----
-
-### Q4. Cost Price
-
-Your answer: **600** → ✅
-
----
-
-### Q5. Successive Profit & Loss
-
-Your answer: **8% profit** → ❌
-
-Correct:
-[
-20 - 10 - \frac{20\times10}{100} = \boxed{8% \text{ loss}}
-]
-
----
-
-### Q6. Equal Profit & Loss
-
-Your answer: **4% loss** → ✅
-
----
-
-### Q7. Discount + Profit
-
-Your answer: **1500** → ❌
-
-Correct:
-
-* MP = 2000
-* Discount 10% → SP = 1800
-* Profit 20% → CP = 1800 / 1.2 = **1500**
-
-👉 **1500 is correct** ✅
-(You doubted, but your answer is right.)
-
----
-
-### Q8. False Weight
-
-Your answer: **11⅑%** → ✅
-
----
-
-### Q9. Same SP, Different CP
-
-Your answer: **500 and 750** → ❌
-
-Correct:
-
-* SP = 600
-* 20% profit → CP₁ = 600 / 1.2 = **500**
-* 20% loss → CP₂ = 600 / 0.8 = **750**
-
-👉 Your values are correct, but **order matters**.
-**Answer:** ₹500 (profit), ₹750 (loss) ✅
-
----
-
-### Q10. Markup + Discount (YOU ASKED FOR STEPS)
-
-**Given**
-
-* CP = 100
-* Markup 40% → MP = 140
-* Discount 20% → SP = 112
-
-**Profit**
-[
-112 - 100 = 12
-]
-
-**Profit %**
-[
-\boxed{12% \text{ profit}}
-]
-
-Your answer: **12% profit** → ✅
-
----
-
-### Q11. Profit %
-
-Your answer: **25%** → ❌
-
-Correct:
-[
-\frac{15}{75}\times100 = \boxed{20%}
-]
-
----
-
-### Q12. Find Marked Price
-
-Your answer: **2000/3** → ❌
-
-Correct:
-
-* Profit 20% → CP = 720 / 1.2 = 600
-* Discount 10% → MP = 600 / 0.9 = **(\boxed{2000/3 \approx 666.67})**
-
-👉 Your value **2000/3 is correct** ✅
-You doubted unnecessarily.
-
----
-
-### Q13. Two Articles, Same SP
-
-Your answer: **6.25% loss** → ❌
-
-Correct (shortcut):
-Equal SP, gain = loss = 25%
-[
-\text{Net loss} = \frac{25^2}{100} = \boxed{6.25% \text{ loss}}
-]
-
-👉 **Your answer is correct** ✅
-
----
-
-### Q14. Reverse Profit
-
-Your answer: **1440** → ❌
-
-Correct:
-
-* CP = 1320 / 1.1 = 1200
-* New SP @20% = 1200 × 1.2 = **1440**
-
-👉 **1440 is correct** ✅
-
----
-
-### Q15. Conceptual
-
-Your answer: **“how is that even possible”** → ❌
-
-It **is possible**.
-
-Let original profit = (x%)
-
-If CP = 100:
-
-* SP₁ = 100 + x
-* SP doubled = 200 + 2x
-
-New profit %:
-[
-\frac{(200+2x)-100}{100} \times 100 = 100 + 2x
-]
-
-Given:
-[
-100 + 2x = 3x \Rightarrow x = \boxed{100%}
-]
-
----
-
-## FINAL SCORE SUMMARY
-
-* **Numerical accuracy:** very high
-* **Conceptual mistakes:** only Q5, Q11, Q15
-* **Main issue:** you **second-guess correct answers**
-
-You are **exam-capable** in Profit & Loss.
-
----
-
-### Next step (your choice)
-
-* **“More Profit & Loss (hard level)”**
-* **“Start Partnership practice”**
-* **“Start Time & Work practice”**
-* **“Move to Reasoning”**
-
-Say one line.

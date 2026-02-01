@@ -5,194 +5,203 @@ status: active
 exam: Placement Aptitude
 priority: High
 ---
-
-# 📊 Percentage — Aptitude Master Notes (Exam-Oriented)
-
-> **Scope:** Placement aptitude (TCS, Accenture, Infosys, Wipro, Capgemini)  
-> **Goal:** Master percentage as fractions, decimals, growth, comparison, and applications
+# 📊 Percentage — Complete Formula Sheet (Most → Least Important)
 
 ---
 
-## 1. Core Concept of Percentage
+## 🔴 CORE FORMULAS (MUST WRITE)
 
-- “Percent” means **per hundred**
-- $$x\% = \frac{x}{100}$$
-
-Everything in percentage problems depends on choosing the **correct base value**.
-
----
-
-## 2. Fraction ↔ Percentage (HIGH FREQUENCY)
-
-### Standard Conversions (Must Memorize)
-
-| Fraction | Percentage |
-|--------|-----------|
-| 1/2 | 50% |
-| 1/3 | 33⅓% |
-| 2/3 | 66⅔% |
-| 1/4 | 25% |
-| 3/4 | 75% |
-| 1/5 | 20% |
-| 2/5 | 40% |
-| 3/5 | 60% |
-| 4/5 | 80% |
-| 1/6 | 16⅔% |
-| 1/8 | 12.5% |
-| 3/8 | 37.5% |
-| 5/8 | 62.5% |
-| 7/8 | 87.5% |
-| 1/10 | 10% |
-| 1/20 | 5% |
-| 1/25 | 4% |
+### Meaning of Percentage
+$$
+x\% = \frac{x}{100}
+$$
 
 ---
 
-## 3. Decimal ↔ Percentage
-
-### Decimal → Percentage
-Multiply by 100
-
-| Decimal | Percentage |
-|------|-----------|
-| 0.1 | 10% |
-| 0.2 | 20% |
-| 0.25 | 25% |
-| 0.375 | 37.5% |
-| 0.5 | 50% |
-| 0.6 | 60% |
-| 0.75 | 75% |
-| 0.8 | 80% |
-| 1.25 | 125% |
-
-### Percentage → Decimal
-$$x\% = 0.x$$
+### x% of a Number
+$$
+x\% \text{ of } N = \frac{x}{100} \times N
+$$
 
 ---
 
-## 4. Basic Percentage Formulas
-
-### Find x% of a number
-$$x\% \text{ of } N = \frac{x}{100} \times N$$
-
-### What percent is A of B?
-$$\frac{A}{B} \times 100$$
+### What % is A of B
+$$
+\frac{A}{B} \times 100
+$$
 
 ---
 
-## 5. Increase & Decrease
+### Increase / Decrease
 
-### Increase by R%
-$$\text{New Value} = \text{Original} \times \left(1 + \frac{R}{100}\right)$$
+**Increase by R%**
+$$
+\text{New Value} = \text{Original} \times \left(1 + \frac{R}{100}\right)
+$$
 
-### Decrease by R%
-$$\text{New Value} = \text{Original} \times \left(1 - \frac{R}{100}\right)$$
-
-> ⚠️ Decrease by R% and increase by R% are **not reversible**
-
----
-
-## 6. Successive Percentage Change
-
-If two successive changes are x% and y%:
-
-$$\text{Net Change \%} = x + y + \frac{xy}{100}$$
-
-- Use **+** for increase
-- Use **−** for decrease or discount
-
-### Special Case
-If value increases by x% and then decreases by x%:
-$$\text{Net decrease} = \frac{x^2}{100}\%$$
+**Decrease by R%**
+$$
+\text{New Value} = \text{Original} \times \left(1 - \frac{R}{100}\right)
+$$
 
 ---
 
-## 7. Comparison Shortcuts
+### Reverse Percentage (VERY IMPORTANT)
 
-### A is R% more than B
-Then B is less than A by:
-$$\frac{R}{100 + R} \times 100$$
+After R% increase:
+$$
+\text{Original} = \frac{\text{Final}}{1 + \frac{R}{100}}
+$$
 
-### A is R% less than B
-Then B is more than A by:
-$$\frac{R}{100 - R} \times 100$$
-
----
-
-## 8. Consumption & Expenditure
-
-### Price Increase (Expenditure Constant)
-If price increases by R%:
-$$\text{Reduction in consumption \%} = \frac{R}{100 + R} \times 100$$
-
-### Price Decrease (Expenditure Constant)
-If price decreases by R%:
-$$\text{Increase in consumption \%} = \frac{R}{100 - R} \times 100$$
+After R% decrease:
+$$
+\text{Original} = \frac{\text{Final}}{1 - \frac{R}{100}}
+$$
 
 ---
 
-## 9. Population Growth
+## 🔴 FRACTION ↔ PERCENTAGE (MEMORIZE)
 
-Let present population = P  
-Growth rate = R% per year
-
-### Population after n years
-$$P\left(1 + \frac{R}{100}\right)^n$$
-
-### Population n years ago
-$$\frac{P}{\left(1 + \frac{R}{100}\right)^n}$$
-
----
-
-## 10. Depreciation
-
-Let present value = P  
-Depreciation rate = R%
-
-### Value after n years
-$$P\left(1 - \frac{R}{100}\right)^n$$
-
-### Value n years ago
-$$\frac{P}{\left(1 - \frac{R}{100}\right)^n}$$
+- 1/2 = 50%
+- 1/3 = 33⅓%
+- 2/3 = 66⅔%
+- 1/4 = 25%
+- 3/4 = 75%
+- 1/5 = 20%
+- 1/8 = 12.5%
+- 3/8 = 37.5%
+- 5/8 = 62.5%
+- 1/10 = 10%
+- 1/20 = 5%
+- 1/25 = 4%
 
 ---
 
-## 11. Percentage of a Percentage
+## 🟠 VERY FREQUENT APPLICATIONS
+
+### Successive Percentage Change
+
+Two increases a% and b%:
+$$
+\text{Net Change} = a + b + \frac{ab}{100}
+$$
+
+Increase a% then decrease b%:
+$$
+\text{Net Change} = a - b - \frac{ab}{100}
+$$
+
+---
+
+### Same % Increase and Decrease
+$$
+\text{Net Decrease} = \frac{x^2}{100}\%
+$$
+
+---
+
+### Comparison Shortcut
+
+If A is R% more than B:
+$$
+B \text{ is } \frac{R}{100+R} \times 100\% \text{ less than A}
+$$
+
+If A is R% less than B:
+$$
+B \text{ is } \frac{R}{100-R} \times 100\% \text{ more than A}
+$$
+
+---
+
+### Percentage Change Using Ratio
+$$
+\%\text{ Change} = \frac{b-a}{a} \times 100
+$$
+
+---
+
+### Identity (Time Saver)
+$$
+x\% \text{ of } y = y\% \text{ of } x
+$$
+
+---
+
+## 🟡 COMMON SPECIAL CASES
+
+### Consumption–Expenditure
+
+Price increases by R%:
+$$
+\text{Consumption Decrease} = \frac{R}{100+R} \times 100
+$$
+
+Price decreases by R%:
+$$
+\text{Consumption Increase} = \frac{R}{100-R} \times 100
+$$
+
+---
+
+### Population Growth
+$$
+P_n = P \times \left(1 + \frac{R}{100}\right)^n
+$$
+
+$$
+P_{\text{past}} = \frac{P}{\left(1 + \frac{R}{100}\right)^n}
+$$
+
+---
+
+### Depreciation
+$$
+V_n = P \times \left(1 - \frac{R}{100}\right)^n
+$$
+
+$$
+V_{\text{past}} = \frac{P}{\left(1 - \frac{R}{100}\right)^n}
+$$
+
+---
+
+### Percentage of a Percentage
 
 If A% of B% of X:
-$$\frac{A}{100} \times \frac{B}{100} \times X$$
+$$
+\frac{A}{100} \times \frac{B}{100} \times X
+$$
 
 ---
 
-## 12. Common Exam Traps
+## 🟢 RARE BUT EASY
 
-- Percentage is **always relative to base**
-- Do not mix CP, MP, SP bases
-- Prefer fractions over decimals
-- Read “more than” vs “less than” carefully
-- Successive % ≠ simple addition
-
----
-
-## 13. Standard Question Models
-
-1. Fraction → Percentage
-2. Decimal → Percentage
-3. % increase / decrease
-4. Successive % change
-5. Population growth / decay
-6. Consumption adjustment
-7. Comparison (% more / % less)
-8. Reverse percentage
+### Salary / Saving Change
+$$
+\text{Saving Increase} = \frac{R}{100-R} \times 100
+$$
 
 ---
 
-## Final Takeaways
+### Error Percentage
+- Length → x%
+- Area → 2x%
+- Volume → 3x%
 
-- Fix the **base** first
-- Use **fraction equivalents**
-- Avoid long division
-- Pattern recognition ≤ 5 seconds
+---
 
-> **Coverage:** ~95% of placement percentage questions  
-> **Status:** COMPLETE
+### Percentage Distribution
+$$
+\text{Part A \%} = \frac{a}{a+b} \times 100
+$$
+
+---
+
+## ❌ DO NOT WRITE
+
+- Derivations  
+- Explanations  
+- Graph-based theory  
+
+---
