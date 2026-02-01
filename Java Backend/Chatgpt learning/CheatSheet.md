@@ -120,7 +120,7 @@ Inherited by all classes.
 
 ---
 
-## [[OOP Rules]]
+## [OOP Rules](OOP%20Rules)
 
 - Variables → resolved by **reference**
 - Overridden methods → resolved by **object**
