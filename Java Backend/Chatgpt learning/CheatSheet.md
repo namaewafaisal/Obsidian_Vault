@@ -106,7 +106,7 @@ int[] b = {1,2,3};
 
 ---
 
-## [[Object Class]]
+## [Object Class](Object%20Class)
 
 Inherited by all classes.
 
@@ -213,7 +213,7 @@ Java 8+:
 
 ---
 
-## [[Exception Handling]]
+## [Exception Handling](Exception%20Handling.md) 
 
 ### Keywords
 - `try`
@@ -238,7 +238,7 @@ class MyRunEx extends RuntimeException { }
 
 ---
 
-## [[Memory Model]]
+## [Memory Model](Memory%20Model)
 
 - Stack → method calls, locals
 - Heap → objects

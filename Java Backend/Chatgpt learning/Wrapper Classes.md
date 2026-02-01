@@ -1,10 +1,14 @@
 ---
-tags: [java, wrapper-classes, cheatsheet, core-java]
-date-time: INVALID_DATETIME
+tags:
+  - java
+  - wrapper-classes
+  - cheatsheet
+  - core-java
+date-time: 2026-02-01T11:45:00
 status: revision
 ---
 
-# [[Wrapper Classes]] — Core Java Cheatsheet
+# Wrapper Classes — Core Java Cheatsheet
 
 Wrap **primitives as objects**.
 
