@@ -1,6 +1,11 @@
 ---
-tags: [java, imports, cheatsheet, revision, core-java]
-date-time: INVALID_DATETIME
+tags:
+  - java
+  - imports
+  - cheatsheet
+  - revision
+  - core-java
+date-time: 2026-02-01T12:01:00
 status: revision
 ---
 

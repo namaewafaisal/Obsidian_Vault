@@ -1,6 +1,10 @@
 ---
-tags: [java, exception-handling, cheatsheet, core-java]
-date-time: INVALID_DATETIME
+tags:
+  - java
+  - exception-handling
+  - cheatsheet
+  - core-java
+date-time: 2026-02-01T23:53:00
 status: revision
 ---
 

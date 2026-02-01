@@ -1,9 +1,12 @@
 ---
-tags: [java, core-java, cheatsheet, revision]
-date-time: INVALID_DATETIME
+tags:
+  - java
+  - core-java
+  - cheatsheet
+  - revision
+date-time: 2026-02-01T23:53:00
 status: revision
 ---
-
 # [[Small Java Keywords & Rules]] — Cheatsheet
 
 This note groups **small, rule-based Java topics** that don’t need deep notes but **do appear in tests**.
