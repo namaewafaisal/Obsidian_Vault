@@ -50,7 +50,7 @@ public static void main(String[] args)
 
 ---
 
-## [[StringBuilder]] / [[StringBuffer]]
+## [StringBuilder StringBuffer](StringBuilder%20StringBuffer)
 
 ### Difference
 - `StringBuilder` → not thread-safe (faster)
@@ -89,7 +89,7 @@ int[] b = {1,2,3};
 
 ---
 
-## [[Wrapper Classes]]
+## [Wrapper Classes](Wrapper%20Classes)
 
 ### Common ones
 - `Integer`, `Double`, `Boolean`, `Character`
