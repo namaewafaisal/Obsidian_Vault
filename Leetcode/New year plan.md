@@ -104,9 +104,9 @@
 
 ### Day 13: Stack & Boundary Reasoning
 
-* [ ] [[84. Largest Rectangle in Histogram]] — stack depth (from 42)
-* [ ] [[581. Shortest Unsorted Continuous Subarray]] — boundary detection
-* [ ] [[287. Find the Duplicate Number]] — cycle detection (from 141)
+* [x] [84. Largest Rectangle in Histogram](Problems/84.%20Largest%20Rectangle%20in%20Histogram.md) — stack depth (from 42) ✅ 2026-02-01
+* [ ] [581. Shortest Unsorted Continuous Subarray](581.%20Shortest%20Unsorted%20Continuous%20Subarray) — boundary detection
+* [ ] [287. Find the Duplicate Number](287.%20Find%20the%20Duplicate%20Number) — cycle detection (from 141)
 
 ---
 
