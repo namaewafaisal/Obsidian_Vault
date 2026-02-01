@@ -65,7 +65,7 @@
 * [ ] [LC 3. Longest Substring Without Repeating Characters](3.%20Longest%20Substring%20Without%20Repeating%20Characters.md)
 * [ ] [LC 424. Longest Repeating Character Replacement](424.%20Longest%20Repeating%20Character%20Replacement.md)
 * [ ] [LC 1004. Max Consecutive Ones III](1004.%20Max%20Consecutive%20Ones%20III.md)
-* [ ] [LC 567. Permutation in String](567.%20Permutation%20in%20String.md)
+* [ ] [LC 567. Permutation in String](Problems/567.%20Permutation%20in%20String.md)
 
 ### Grind 75 Only
 * [ ] [LC 76. Minimum Window Substring](76.%20Minimum%20Window%20Substring.md)

@@ -91,16 +91,14 @@
 * [ ] [325. Maximum Size Subarray Sum Equals K](325.%20Maximum%20Size%20Subarray%20Sum%20Equals%20K) — harder variant of prefix sums (from 560)
 * [x] [918. Maximum Sum Circular Subarray](Problems/918.%20Maximum%20Sum%20Circular%20Subarray.md) — Kadane’s twist (from 53) ✅ 2026-01-31
 * [x] [229. Majority Element II](Problems/229.%20Majority%20Element%20II.md) — Boyer–Moore extension (from 169) ✅ 2026-01-31
-* [x] [167. Two Sum II - Input Array Is Sorted](167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted) — two pointers on sorted arrays (from 1) ✅ 2026-01-31
+* [x] [167. Two Sum II - Input Array Is Sorted](Problems/167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted.md) — two pointers on sorted arrays (from 1) ✅ 2026-01-31
 
 ---
 
 ### Day 12: Sliding Window Control
 
-* [ ] [[567. Permutation in String]] — tighter anagram window (from 438)
-* [ ] [[159. Longest Substring with At Most Two Distinct Characters]] — controlled window intro
-* [ ] [[340. Longest Substring with At Most K Distinct Characters]] — generalized window
-* [ ] [[16. 3Sum Closest]] — two pointers refinement (from 15)
+* [x] [567. Permutation in String](Problems/567.%20Permutation%20in%20String.md) — tighter anagram window (from 438) ✅ 2026-02-01
+* [ ] [16. 3Sum Closest](16.%203Sum%20Closest) — two pointers refinement (from 15)
 
 ---
 
