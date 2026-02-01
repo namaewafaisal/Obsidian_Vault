@@ -1,141 +1,95 @@
 ---
-title: Time & Work — Aptitude Master Notes
-tags: [aptitude, quantitative, time-work]
-status: active
+title: Time & Work — Formula Sheet (Aptitude)
+tags:
+  - aptitude
+  - quantitative
+  - time-work
 exam: Placement Aptitude
 priority: High
+status: final
+date-time: 2026-02-01T16:20:00
+topic: time-work
 ---
 
-# ⏱️ Time & Work — Aptitude Master Notes (Exam-Oriented)
-
-> **Scope:** Placement aptitude (TCS, Accenture, Infosys, Wipro, Capgemini)  
-> **Goal:** Convert people–days problems into rate problems instantly
-
----
-
-## 1. Core Concept (MOST IMPORTANT)
-
-Work problems are solved using **rates**, not days.
-
-> If a person can do a work in **x days**,  
-> then **1-day work = 1/x**
-
-This single rule solves most questions.
+# ⏱️ Time & Work — Complete Formula Sheet (Most → Least Important)
 
 ---
 
-## 2. One Person Working Alone
+## 🔴 CORE IDEA (MUST WRITE)
 
-If A completes a work in x days:
+If a person can do a work in **x days**:
 $$
-\text{A's 1-day work} = \frac{1}{x}
-$$
-
-Time taken to complete work:
-$$
-\text{Days} = \frac{1}{\text{1-day work}}
+\text{1 day work} = \frac{1}{x}
 $$
 
 ---
 
-## 3. Two or More People Working Together
+## 🔴 WORKING TOGETHER
 
 If:
 - A takes x days
 - B takes y days
 
-Then:
+Together:
 $$
-\text{(A + B)'s 1-day work} = \frac{1}{x} + \frac{1}{y}
+\text{1 day work} = \frac{1}{x} + \frac{1}{y}
 $$
 
-Time taken together:
+Time taken:
 $$
 \text{Days} = \frac{1}{\frac{1}{x} + \frac{1}{y}}
 $$
 
 ---
 
-## 4. LCM (Unit Work) Method — EXAM FRIENDLY
+## 🔴 LCM (UNIT WORK) METHOD
 
-### When to Use
-- More than two people
-- Fractions become messy
-
-### Method
-1. Take **LCM of given days** as total work
-2. Convert each person's work per day
-3. Add or subtract rates
-4. Divide total work by total rate
-
-### Example Structure
-- Total work = LCM units
-- Person’s rate = (Total work ÷ days)
+Steps:
+1. Take LCM of given days = Total work  
+2. Convert each person’s work per day  
+3. Add / subtract rates  
+4. Time = Total work ÷ Total rate
 
 ---
 
-## 5. Efficiency Concept (VERY IMPORTANT)
+## 🟠 EFFICIENCY CONCEPT (VERY IMPORTANT)
 
-Efficiency ∝ Rate of work
+Efficiency ∝ Work rate  
+Efficiency ∝ \( \frac{1}{\text{Time}} \)
 
-If:
-- A is twice as efficient as B
-
-Then:
-$$
-\text{Efficiency ratio (A:B)} = 2:1
-$$
-
-Time is **inversely proportional** to efficiency:
-$$
-\text{Time ratio (A:B)} = 1:2
-$$
+If efficiency ratio = a : b  
+Then time ratio = b : a
 
 ---
 
-## 6. Relation Between Work, Time, and Efficiency
+## 🟠 MEN–DAYS–WORK
 
-- More efficiency → less time
-- Less efficiency → more time
+Work ∝ Men × Days × Efficiency
 
-Key relation:
-$$
-\text{Efficiency} \propto \frac{1}{\text{Time}}
-$$
-
----
-
-## 7. Men–Days–Work Concept
-
-Work is proportional to:
-$$
-\text{Men} \times \text{Days} \times \text{Efficiency}
-$$
-
-If work is constant:
+If work constant:
 - More men → fewer days
 - Higher efficiency → fewer days
 
 ---
 
-## 8. Work with Joining and Leaving
+## 🟠 JOINING / LEAVING CASES
 
-### Standard Steps
+Steps:
 1. Find total work (LCM method)
-2. Calculate work done before leaving/joining
-3. Subtract from total work
-4. Divide remaining work by remaining rate
+2. Find work done before change
+3. Remaining work = Total − Done
+4. Time = Remaining work ÷ Remaining rate
 
 ---
 
-## 9. Pipes & Cistern (Same Logic)
+## 🟡 PIPES & CISTERN (SAME LOGIC)
 
-- Filling pipe → **+**
-- Emptying pipe → **−**
+- Inlet pipe → **+**
+- Outlet pipe → **−**
 
 If:
-- Pipe A fills tank in x hours → +1/x
-- Pipe B empties tank in y hours → −1/y
+- Pipe fills in x hours → \(+\frac{1}{x}\)
+- Pipe empties in y hours → \(−\frac{1}{y}\)
 
 Net work per hour:
 $$
@@ -149,44 +103,26 @@ $$
 
 ---
 
-## 10. Common Language Traps
+## 🟡 COMMON LANGUAGE TRAPS
 
-- “A takes **twice as much time** as B”  
-  → A is **half as efficient** as B
-
-- “A is **3 times more efficient** than B”  
-  → Efficiency ratio = **4 : 1**
-
-- Never add **days** directly — add **rates**
+- “Twice the time” → half efficiency  
+- “3 times more efficient” → ratio 4 : 1  
+- Never add **days**, always add **rates**
 
 ---
 
-## 11. Standard Question Models (Exams Repeat)
+## 🟢 QUICK NOTES
 
-1. Two people working together
-2. One leaves, other continues
-3. Efficiency comparison
-4. Men–days conversion
-5. Pipes filling and emptying
-6. Fractional work per day
+- Always convert days → rate first  
+- Use LCM if fractions look messy  
+- Pipes = Time & Work with signs  
 
 ---
 
-## 12. Common Exam Mistakes
+## ❌ DO NOT WRITE
 
-- Adding days instead of rates
-- Forgetting inverse relation of efficiency & time
-- Ignoring plus/minus in pipes
-- Choosing wrong base work
+- Derivations  
+- Story explanations  
+- Case-by-case examples  
 
 ---
-
-## Final Takeaways
-
-- Always convert **days → rate**
-- Use **LCM method** if confused
-- Efficiency and time are inversely related
-- Pattern recognition ≤ **5 seconds**
-
-> **Coverage:** ~95% of Time & Work questions  
-> **Status:** COMPLETE
