@@ -1,50 +1,54 @@
 ---
-title: Time, Speed & Distance — Aptitude Master Notes
-tags: [aptitude, quantitative, tsd]
-status: active
+title: Time, Speed & Distance — Formula Sheet (Aptitude)
+tags:
+  - aptitude
+  - quantitative
+  - time-speed-distance
 exam: Placement Aptitude
 priority: High
+status: final
+date-time: 2026-02-01T16:35:00
+topic: time-speed-distance
 ---
 
-# 🚗 Time, Speed & Distance — Aptitude Master Notes (Exam-Oriented)
-
-> **Scope:** Placement aptitude (TCS, Accenture, Infosys, Wipro, Capgemini)  
-> **Goal:** Master movement problems using relative speed and averages
+# 🚗 Time, Speed & Distance — Complete Formula Sheet (Most → Least Important)
 
 ---
 
-## 1. Core Formula (Foundation)
+## 🔴 CORE FORMULAS (MUST WRITE)
 
+### Speed
 $$
 \text{Speed} = \frac{\text{Distance}}{\text{Time}}
 $$
 
-Derived:
+### Distance
 $$
 \text{Distance} = \text{Speed} \times \text{Time}
 $$
 
+### Time
 $$
 \text{Time} = \frac{\text{Distance}}{\text{Speed}}
 $$
 
 ---
 
-## 2. Unit Conversion (VERY IMPORTANT)
+## 🔴 UNIT CONVERSION (VERY IMPORTANT)
 
+### km/h to m/s
 $$
 1 \text{ km/h} = \frac{5}{18} \text{ m/s}
 $$
 
+### m/s to km/h
 $$
 1 \text{ m/s} = \frac{18}{5} \text{ km/h}
 $$
 
-> Always convert **before** solving train problems.
-
 ---
 
-## 3. Relative Speed (MOST IMPORTANT CONCEPT)
+## 🔴 RELATIVE SPEED (MOST IMPORTANT)
 
 ### Same Direction
 $$
@@ -56,47 +60,44 @@ $$
 \text{Relative Speed} = v_1 + v_2
 $$
 
-Used in:
-- Trains
-- Races
-- Overtaking problems
-
 ---
 
-## 4. Average Speed
+## 🟠 AVERAGE SPEED (HIGH ROI)
 
-### Case 1: Equal Distances (Very Common)
+### Equal Distances
 $$
-\text{Avg Speed} = \frac{2xy}{x+y}
-$$
-
-> Never use simple average here.
-
----
-
-### Case 2: Unequal Distances (Always Safe)
-$$
-\text{Avg Speed} = \frac{\text{Total Distance}}{\text{Total Time}}
+\text{Average Speed} = \frac{2xy}{x+y}
 $$
 
 ---
 
-## 5. Trains (High Frequency)
+### Unequal Distances
+$$
+\text{Average Speed} = \frac{\text{Total Distance}}{\text{Total Time}}
+$$
 
-### Crossing a Pole / Man / Signal
-Distance covered = **Length of train**
+---
+
+## 🟠 TRAINS (VERY COMMON)
+
+### Crossing a Pole / Man
+$$
+\text{Distance} = \text{Length of train}
+$$
 
 ### Crossing a Platform / Bridge
-Distance covered = **Length of train + length of platform**
+$$
+\text{Distance} = \text{Length of train} + \text{Length of platform}
+$$
 
-Speed:
+### Speed of Train
 $$
 \text{Speed} = \frac{\text{Distance}}{\text{Time}}
 $$
 
 ---
 
-## 6. Trains Moving Together
+## 🟠 TWO TRAINS CROSSING
 
 ### Same Direction
 $$
@@ -108,58 +109,62 @@ $$
 \text{Relative Speed} = v_1 + v_2
 $$
 
-Distance = sum of train lengths
+Distance covered:
+$$
+\text{Sum of train lengths}
+$$
 
 ---
 
-## 7. Boats & Streams
+## 🟡 BOATS & STREAMS
 
 Let:
-- Speed in still water = \(u\)
-- Speed of stream = \(v\)
+- Speed in still water = u  
+- Speed of stream = v  
 
+### Downstream
 $$
-\text{Downstream speed} = u + v
-$$
-
-$$
-\text{Upstream speed} = u - v
+u + v
 $$
 
-### Key Result
+### Upstream
 $$
-u = \frac{D + U}{2}, \quad v = \frac{D - U}{2}
+u - v
 $$
 
----
-
-## 8. Races & Relative Motion
-
-- Faster person wins by distance or time
-- Use **relative speed**
-
-If A beats B by d meters:
+### Finding u and v
 $$
-\frac{\text{Speed of A}}{\text{Speed of B}} = \frac{\text{Race length}}{\text{Race length} - d}
+u = \frac{D + U}{2}
+$$
+
+$$
+v = \frac{D - U}{2}
 $$
 
 ---
 
-## 9. Common Exam Traps
+## 🟡 RACES
 
-- Average speed ≠ arithmetic mean
-- Always check direction for relative speed
-- Convert km/h ↔ m/s in train problems
-- Equal time ≠ equal distance
+If A beats B by d meters in a race of length L:
+$$
+\frac{\text{Speed of A}}{\text{Speed of B}} = \frac{L}{L - d}
+$$
 
 ---
 
-## Final Takeaways
+## 🟢 QUICK SHORTCUT NOTES
 
-- Relative speed is the key
-- Use harmonic mean for equal distances
-- Convert units early
-- Pattern recognition ≤ 5 seconds
+- Average speed ≠ arithmetic mean (unless equal speeds)  
+- Always convert units before solving trains  
+- Relative speed depends on direction  
+- For equal distance → use harmonic mean formula  
 
-> **Coverage:** ~95% of TSD questions  
-> **Status:** COMPLETE
+---
+
+## ❌ DO NOT WRITE
+
+- Graph-based motion  
+- Long story explanations  
+- Derivations  
+
+---
