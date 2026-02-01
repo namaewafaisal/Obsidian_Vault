@@ -46,7 +46,7 @@ public static void main(String[] args)
 | `replace()` | `char,char` | `String` | `"aba".replace('a','x')` |
 | `indexOf()` | `char/String` | `int` | `"abc".indexOf('b')` |
 
-⚠️ ` ==` compares **references**, not content.
+⚠️ == compares **references**, not content.
 
 ---
 

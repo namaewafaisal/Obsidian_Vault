@@ -1,6 +1,10 @@
 ---
-tags: [java, string, cheatsheet, core-java]
-date-time: INVALID_DATETIME
+tags:
+  - java
+  - string
+  - cheatsheet
+  - core-java
+date-time: 2026-02-01T11:19:00
 status: revision
 ---
 
@@ -38,7 +42,7 @@ String c = new String("abc");
 | `a == c` | `false` |
 | `a.equals(c)` | `true` |
 
-⚠️ ` ==` → reference  
+⚠️ == → reference  
 ⚠️ `equals()` → content
 
 ---
@@ -176,7 +180,7 @@ See: [[StringBuilder]]
 - `String` is immutable
 - `length()` is a **method**
 - `split()` uses **regex**
-- `==` checks reference
+- ` ==` checks reference
 - `new String()` always creates new object
 
 ---
