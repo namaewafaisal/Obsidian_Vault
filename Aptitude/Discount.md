@@ -1,225 +1,118 @@
 ---
+title: Discount — Formula Sheet (Aptitude)
 tags:
   - aptitude
-  - placement
-  - Math
-topic: Discount
-date-time: 2026-01-20T20:56:00
----
-# 💸 Discount — Aptitude Master Notes (Exam-Oriented)
-
-> **Scope:** Placement aptitude (TCS, Accenture, Infosys, Wipro, Capgemini)
-> **Goal:** Convert MP–SP–CP relations instantly, avoid percentage traps
-
+  - quantitative
+  - discount
+exam: Placement Aptitude
+priority: High
+status: final
+date-time: 2026-02-01T16:08:00
+topic: discount
 ---
 
-## 1. Core Definitions
+# 🏷️ Discount — Complete Formula Sheet (Most → Least Important)
 
-* **Marked Price (MP):** Price marked by the seller
-* **Selling Price (SP):** Actual price paid by buyer
-* **Discount:** Reduction on MP
+---
 
-### Basic Relations
+## 🔴 CORE DEFINITIONS (MUST WRITE)
 
+- Marked Price = MP  
+- Selling Price = SP  
+
+---
+
+### Discount
 $$
 \text{Discount} = MP - SP
 $$
 
+---
+
+### Discount %
 $$
-\text{Discount %} = \frac{MP - SP}{MP} \times 100
+\text{Discount \%} = \frac{MP - SP}{MP} \times 100
 $$
 
 ---
 
-## 2. Selling Price & Marked Price Formulas
+## 🔴 DIRECT FORMULAS (VERY IMPORTANT)
 
-### Selling Price after Discount
-
+### SP after Discount of D%
 $$
-SP = MP\left(1 - \frac{d}{100}\right)
+SP = MP \times \left(1 - \frac{D}{100}\right)
 $$
-
-### Marked Price from Selling Price
-
-$$
-MP = \frac{SP}{1 - \frac{d}{100}}
-$$
-
-or equivalently:
-
-$$
-MP = SP \times \frac{100}{100 - d}
-$$
-
-📌 **Used in:** reverse discount, missing MP questions
 
 ---
 
-## 3. Successive Discount (Very High Frequency)
-
-### Two Successive Discounts
-
-If discounts are (a%) and (b%):
-
+### MP when Discount and SP Known
 $$
-\text{Net Discount %} = a + b - \frac{ab}{100}
+MP = \frac{SP}{1 - \frac{D}{100}}
 $$
-
-### Three Successive Discounts (Rare but Possible)
-
-$$
-\text{Net Discount %}
-= a + b + c
-
-- \frac{ab + bc + ca}{100}
-
-- \frac{abc}{10000}
-  $$
-
-📌 **Used in:** “shopkeeper gives successive discounts” questions
 
 ---
 
-## 4. Discount ↔ Profit / Loss Link (MOST IMPORTANT MODEL)
+## 🟠 SUCCESSIVE DISCOUNT (FREQUENT)
 
-### Core Relation
-
+If discounts are a% and b%:
 $$
-MP\left(1 - \frac{d}{100}\right)
+\text{Net Discount \%} = a + b - \frac{ab}{100}
+$$
+
+---
+
+### Special Case: Two Same Discounts
+If discount = x% twice:
+$$
+\text{Net Discount} = 2x - \frac{x^2}{100}
+$$
+
+---
+
+## 🟠 DISCOUNT ↔ PROFIT LINK (VERY IMPORTANT)
+
+When discount and profit are both involved:
+$$
+MP \times \left(1 - \frac{D}{100}\right)
 =
-CP\left(1 + \frac{p}{100}\right)
+CP \times \left(1 + \frac{P}{100}\right)
 $$
-
-This single equation connects:
-
-* Marked Price
-* Discount
-* Cost Price
-* Profit / Loss
 
 ---
 
-### Derived Forms
+## 🟡 EQUIVALENT DISCOUNT (SELLER’S TRICK)
 
-**Cost Price**
-
+If marked price is increased by x% and then discounted by x%:
 $$
-CP =
-\frac{MP\left(1 - \frac{d}{100}\right)}
-{1 + \frac{p}{100}}
+\text{Net Effect} = \text{Loss of } \frac{x^2}{100}\%
 $$
-
-**Profit %**
-
-$$
-\text{Profit %}
-=
-
-\frac{SP - CP}{CP} \times 100
-$$
-
-📌 **Used in:** “sold at x% discount and y% profit” questions
 
 ---
 
-## 5. Markup–Discount Net Effect (Trap Area)
+## 🟡 QUICK FRACTION CONVERSIONS (TIME SAVERS)
 
-If:
-
-* Markup = (m%)
-* Discount = (d%)
-
-Then:
-
-$$
-\text{Net % Effect}
-=
-m - d - \frac{md}{100}
-$$
-
-* Positive → **Profit**
-* Negative → **Loss**
-
-📌 **Used in:** “marked above cost price and discount given” questions
+- 10% = 1/10  
+- 12.5% = 1/8  
+- 20% = 1/5  
+- 25% = 1/4  
+- 33⅓% = 1/3  
+- 50% = 1/2  
 
 ---
 
-## 6. Same Selling Price – Different Discounts (Classic Trap)
+## 🟢 COMMON QUESTION MODELS
 
-### Scenario
-
-* Same **Marked Price**
-* Two different discounts
-* Difference in Selling Prices is given
-
-### Formula
-
-If discount difference = (x%) and SP difference = (\Delta):
-
-$$
-MP = \frac{\Delta}{x/100}
-$$
-
-📌 **Used in:** fast elimination questions
+- Find SP after discount  
+- Find MP when SP and discount given  
+- Successive discounts  
+- Discount + profit together  
 
 ---
 
-## 7. Equivalent Discount Concept
+## ❌ DO NOT WRITE
 
-Two successive discounts (a%) and (b%) are equivalent to:
-
-$$
-D = a + b - \frac{ab}{100}
-$$
-
-📌 **Used in:** converting multiple discounts into one
+- Derivations  
+- Long story explanations  
+- Repeated examples  
 
 ---
-
-## 8. Mental Percentage Anchors (Speed Boost)
-
-| Discount | Multiply SP by |
-| -------- | -------------- |
-| 10%      | 0.9            |
-| 20%      | 0.8            |
-| 25%      | 0.75           |
-| 33⅓%     | 2/3            |
-| 40%      | 0.6            |
-| 50%      | 0.5            |
-
-📌 **Used in:** mental math, no-calculator rounds
-
----
-
-## 9. Standard Question Models (What Exams Repeat)
-
-1. Find SP after given discount
-2. Find MP when SP and discount % are given
-3. Successive discount → net discount
-4. Discount + profit combined questions
-5. Same MP, different discounts
-6. Markup–discount net gain/loss
-7. Reverse discount (SP given)
-
----
-
-## 10. Common Traps & Exam Notes
-
-* Discount is **always on MP**, not CP
-* Profit / loss is **always on CP**
-* Never mix bases (MP vs CP)
-* Successive discount ≠ simple addition
-* Use fraction equivalents whenever possible
-
----
-
-## Exam Takeaways
-
-* Convert % to multipliers early
-* Use linkage formula instead of steps
-* Skip algebra if mental shortcut exists
-* Pattern recognition ≤ **5 seconds**
-
-> **Coverage:** ~95% of Discount questions
-> **Status:** COMPLETE
-
