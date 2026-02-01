@@ -1,6 +1,6 @@
 {
-  "cssTheme": "Vanilla AMOLED",
-  "accentColor": "#9572fd",
+  "cssTheme": "Catppuccin",
+  "accentColor": "",
   "interfaceFontFamily": "Maple Mono,Adwaita Mono,Courier New",
   "textFontFamily": "Helvetica",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
