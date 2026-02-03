@@ -34,13 +34,13 @@
 * [ ] [LC 189. Rotate Array](189.%20Rotate%20Array.md)
 * [ ] [LC 525. Contiguous Array](525.%20Contiguous%20Array.md)
 * [ ] [LC 759. Employee Free Time](759.%20Employee%20Free%20Time.md)
-* [ ] [LC 283. Move Zeroes](283.%20Move%20Zeroes.md)
+* [ ] [LC 283. Move Zeroes](Problems/283.%20Move%20Zeroes.md)
 * [ ] [LC 253. Meeting Rooms II](253.%20Meeting%20Rooms%20II.md)
 * [x] [LC 239. Sliding Window Maximum](239.%20Sliding%20Window%20Maximum.md)
 * [ ] [LC 977. Squares of a Sorted Array](977.%20Squares%20of%20a%20Sorted%20Array.md)
-* [ ] [LC 16. 3Sum Closest](16.%203Sum%20Closest.md)
+* [ ] [LC 16. 3Sum Closest](Problems/16.%203Sum%20Closest.md)
 * [x] [LC 435. Non-overlapping Intervals](435.%20Non-overlapping%20Intervals.md)
-* [ ] [LC 31. Next Permutation](31.%20Next%20Permutation.md)
+* [ ] [LC 31. Next Permutation](Problems/31.%20Next%20Permutation.md)
 * [ ] [LC 152. Maximum Product Subarray](152.%20Maximum%20Product%20Subarray.md)
 
 ---
@@ -279,7 +279,7 @@
 * [ ] [LC 46. Permutations](46.%20Permutations.md)
 * [ ] [LC 78. Subsets](78.%20Subsets.md)
 * [ ] [LC 17. Letter Combinations of a Phone Number](17.%20Letter%20Combinations%20of%20a%20Phone%20Number.md)
-* [ ] [LC 31. Next Permutation](31.%20Next%20Permutation.md)
+* [ ] [LC 31. Next Permutation](Problems/31.%20Next%20Permutation.md)
 * [ ] [LC 22. Generate Parentheses](22.%20Generate%20Parentheses.md)
 * [ ] [LC 51. N-Queens](51.%20N-Queens.md)
 

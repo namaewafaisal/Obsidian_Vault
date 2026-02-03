@@ -98,7 +98,7 @@
 ### Day 12: Sliding Window Control
 
 * [x] [567. Permutation in String](Problems/567.%20Permutation%20in%20String.md) — tighter anagram window (from 438) ✅ 2026-02-01
-* [x] [16. 3Sum Closest](16.%203Sum%20Closest) — two pointers refinement (from 15) ✅ 2026-02-01
+* [x] [16. 3Sum Closest](Problems/16.%203Sum%20Closest.md) — two pointers refinement (from 15) ✅ 2026-02-01
 
 ---
 
