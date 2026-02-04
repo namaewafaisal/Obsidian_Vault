@@ -189,7 +189,7 @@
 * [ ] [LC 1235. Maximum Profit in Job Scheduling](1235.%20Maximum%20Profit%20in%20Job%20Scheduling.md)
 * [ ] [LC 4. Median of Two Sorted Arrays](4.%20Median%20of%20Two%20Sorted%20Arrays.md)
 * [ ] [LC 74. Search a 2D Matrix](74.%20Search%20a%202D%20Matrix.md)
-* [ ] [LC 153. Find Minimum in Rotated Sorted Array](153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array.md)
+* [ ] [LC 153. Find Minimum in Rotated Sorted Array](Problems/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array.md)
 
 ---
 
@@ -280,7 +280,7 @@
 * [ ] [LC 78. Subsets](78.%20Subsets.md)
 * [ ] [LC 17. Letter Combinations of a Phone Number](17.%20Letter%20Combinations%20of%20a%20Phone%20Number.md)
 * [ ] [LC 31. Next Permutation](Problems/31.%20Next%20Permutation.md)
-* [ ] [LC 22. Generate Parentheses](22.%20Generate%20Parentheses.md)
+* [ ] [LC 22. Generate Parentheses](Problems/22.%20Generate%20Parentheses.md)
 * [ ] [LC 51. N-Queens](51.%20N-Queens.md)
 
 ---
