@@ -154,4 +154,4 @@
 
 ---
 
-[[633. Sum of Square Numbers]]
+[[Problems/633. Sum of Square Numbers]]

@@ -3,7 +3,7 @@
 - [26. Remove Duplicates from Sorted Array](Problems/26.%20Remove%20Duplicates%20from%20Sorted%20Array.md)
 - [27. Remove Element](27.%20Remove%20Element)
 - [283. Move Zeroes](Problems/283.%20Move%20Zeroes.md)
-- [977. Squares of a Sorted Array](977.%20Squares%20of%20a%20Sorted%20Array)
+- [977. Squares of a Sorted Array](Problems/977.%20Squares%20of%20a%20Sorted%20Array.md)
 - [88. Merge Sorted Array](Problems/88.%20Merge%20Sorted%20Array.md)
 - [189. Rotate Array](189.%20Rotate%20Array)
 - [169. Majority Element](Problems/169.%20Majority%20Element.md) (re-implement without reference)
@@ -12,7 +12,7 @@
 
 ## Phase B — Hashing & Frequency (Easy → Medium Bridge)
 
-- [217. Contains Duplicate](217.%20Contains%20Duplicate)
+- [217. Contains Duplicate](Problems/217.%20Contains%20Duplicate.md)
 - [219. Contains Duplicate II](219.%20Contains%20Duplicate%20II)
 - [1. Two Sum](Problems/1.%20Two%20Sum.md) (solve without hashmap first)
 - [242. Valid Anagram](Problems/242.%20Valid%20Anagram.md)
