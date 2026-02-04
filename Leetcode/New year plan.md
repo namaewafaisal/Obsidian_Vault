@@ -153,3 +153,5 @@
   * [ ] Time-boxed (30–40 min), no notes
 
 ---
+
+[[633. Sum of Square Numbers]]
