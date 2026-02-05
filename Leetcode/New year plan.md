@@ -163,6 +163,6 @@ TABLE
   topic,
   date
 FROM "Leetcode/Problems"
-WHERE contains(file.outlinks, this.file.link)
+WHERE contains(file.inlinks, this.file.link)
 SORT difficulty ASC
 ```
