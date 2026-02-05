@@ -27,7 +27,7 @@
 * [x] [LC 169. Majority Element](169.%20Majority%20Element.md)
 * [x] [LC 75. Sort Colors](75.%20Sort%20Colors.md)
 * [ ] [LC 217. Contains Duplicate](Problems/217.%20Contains%20Duplicate.md)
-* [x] [LC 11. Container With Most Water](11.%20Container%20With%20Most%20Water.md)
+* [x] [LC 11. Container With Most Water](Problems/11.%20Container%20With%20Most%20Water.md)
 * [ ] [LC 252. Meeting Rooms](252.%20Meeting%20Rooms.md)
 * [ ] [LC 134. Gas Station](134.%20Gas%20Station.md)
 * [ ] [LC 128. Longest Consecutive Sequence](128.%20Longest%20Consecutive%20Sequence.md)
@@ -50,7 +50,7 @@
 ### College
 * [ ] [LC 125. Valid Palindrome](125.%20Valid%20Palindrome.md)
 * [ ] [LC 26. Remove Duplicates from Sorted Array](26.%20Remove%20Duplicates%20from%20Sorted%20Array.md)
-* [ ] [LC 11. Container With Most Water](11.%20Container%20With%20Most%20Water.md)
+* [ ] [LC 11. Container With Most Water](Problems/11.%20Container%20With%20Most%20Water.md)
 * [ ] [LC 15. 3Sum](15.%203Sum.md)
 * [ ] [LC 42. Trapping Rain Water](42.%20Trapping%20Rain%20Water.md)
 * [ ] [LC 75. Sort Colors](75.%20Sort%20Colors.md)
@@ -62,7 +62,7 @@
 ### College
 * [ ] [LC 643. Maximum Average Subarray I](643.%20Maximum%20Average%20Subarray%20I.md)
 * [ ] [LC 219. Contains Duplicate II](219.%20Contains%20Duplicate%20II.md)
-* [ ] [LC 3. Longest Substring Without Repeating Characters](3.%20Longest%20Substring%20Without%20Repeating%20Characters.md)
+* [ ] [LC 3. Longest Substring Without Repeating Characters](Problems/3.%20Longest%20Substring%20Without%20Repeating%20Characters.md)
 * [ ] [LC 424. Longest Repeating Character Replacement](424.%20Longest%20Repeating%20Character%20Replacement.md)
 * [ ] [LC 1004. Max Consecutive Ones III](1004.%20Max%20Consecutive%20Ones%20III.md)
 * [ ] [LC 567. Permutation in String](Problems/567.%20Permutation%20in%20String.md)
@@ -87,7 +87,7 @@
 * [ ] [LC 383. Ransom Note](383.%20Ransom%20Note.md)
 * [ ] [LC 49. Group Anagrams](49.%20Group%20Anagrams.md)
 * [ ] [LC 438. Find All Anagrams in a String](438.%20Find%20All%20Anagrams%20in%20a%20String.md)
-* [ ] [LC 3. Longest Substring Without Repeating Characters](3.%20Longest%20Substring%20Without%20Repeating%20Characters.md)
+* [ ] [LC 3. Longest Substring Without Repeating Characters](Problems/3.%20Longest%20Substring%20Without%20Repeating%20Characters.md)
 * [ ] [LC 424. Longest Repeating Character Replacement](424.%20Longest%20Repeating%20Character%20Replacement.md)
 * [ ] [LC 76. Minimum Window Substring](76.%20Minimum%20Window%20Substring.md)
 

@@ -1,11 +1,11 @@
-## 🔁 Needs Review
+## 📊 Overall Progress
 
 ```dataview
 TABLE
   difficulty,
+  status,
   topic,
   date
 FROM "Leetcode/Problems"
-WHERE status = "needs-review"
-SORT difficulty ASC
+SORT date DESC
 ```
