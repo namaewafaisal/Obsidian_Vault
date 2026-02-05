@@ -32,7 +32,7 @@
 * [ ] [LC 134. Gas Station](134.%20Gas%20Station.md)
 * [ ] [LC 128. Longest Consecutive Sequence](128.%20Longest%20Consecutive%20Sequence.md)
 * [ ] [LC 189. Rotate Array](Problems/189.%20Rotate%20Array.md)
-* [ ] [LC 525. Contiguous Array](525.%20Contiguous%20Array.md)
+* [ ] [LC 525. Contiguous Array](Problems/525.%20Contiguous%20Array.md)
 * [ ] [LC 759. Employee Free Time](759.%20Employee%20Free%20Time.md)
 * [ ] [LC 283. Move Zeroes](Problems/283.%20Move%20Zeroes.md)
 * [ ] [LC 253. Meeting Rooms II](253.%20Meeting%20Rooms%20II.md)
@@ -147,7 +147,7 @@
 ### College
 * [ ] [LC 20. Valid Parentheses](20.%20Valid%20Parentheses.md)
 * [ ] [LC 1021. Remove Outermost Parentheses](1021.%20Remove%20Outermost%20Parentheses.md)
-* [ ] [LC 503. Next Greater Element II](503.%20Next%20Greater%20Element%20II.md)
+* [ ] [LC 503. Next Greater Element II](Problems/503.%20Next%20Greater%20Element%20II.md)
 * [ ] [LC 739. Daily Temperatures](739.%20Daily%20Temperatures.md)
 * [ ] [LC 150. Evaluate Reverse Polish Notation](150.%20Evaluate%20Reverse%20Polish%20Notation.md)
 
