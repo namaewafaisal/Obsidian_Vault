@@ -1,4 +1,3 @@
 ---
 cssclasses:
-  - style.css
 ---

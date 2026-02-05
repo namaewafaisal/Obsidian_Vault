@@ -6,5 +6,6 @@
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
   "nativeMenus": false,
   "baseFontSize": 16,
-  "theme": "system"
+  "theme": "system",
+  "enabledCssSnippets": []
 }
