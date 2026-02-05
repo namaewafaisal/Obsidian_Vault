@@ -151,7 +151,18 @@
 * Every 3rd day:
   * [ ] Re-solve 2 previously checked problems
   * [ ] Time-boxed (30–40 min), no notes
-
+[1. Two Sum](Problems/1.%20Two%20Sum.md)
 ---
 
 [[Problems/633. Sum of Square Numbers]]
+
+```dataview
+TABLE
+  difficulty,
+  status,
+  topic,
+  date
+FROM "Leetcode/Problems"
+WHERE contains(file.outlinks, this.file.link)
+SORT difficulty ASC
+```

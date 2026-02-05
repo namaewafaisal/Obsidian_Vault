@@ -19,7 +19,7 @@
 * [ ] [LC 73. Set Matrix Zeroes](73.%20Set%20Matrix%20Zeroes.md)
 
 ### Grind 75 Only
-* [x] [LC 1. Two Sum](1.%20Two%20Sum.md)
+* [x] [LC 1. Two Sum](Problems/1.%20Two%20Sum.md)
 * [x] [LC 121. Best Time to Buy and Sell Stock](121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md)
 * [x] [LC 57. Insert Interval](57.%20Insert%20Interval.md)
 * [x] [LC 15. 3Sum](15.%203Sum.md)

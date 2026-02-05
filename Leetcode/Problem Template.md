@@ -1,3 +1,5 @@
+# Below is instructions and template to give Leetcode problem obsidian notes 
+````notes
 ---
 topic: ONE_MAIN_TOPIC_ONLY
 difficulty: easy | medium | hard
@@ -137,3 +139,4 @@ Only include cases that break naive logic.
 ## One-Line Recall
 
 > Single sentence that lets you reconstruct the solution from scratch
+````
