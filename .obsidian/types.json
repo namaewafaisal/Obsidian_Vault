@@ -28,6 +28,7 @@
     "date-time": "datetime",
     "time-taken": "number",
     "time-taken(min)": "number",
-    "difficulty": "text"
+    "difficulty": "text",
+    "date": "date"
   }
 }
