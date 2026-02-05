@@ -15,7 +15,7 @@ date: YYYY-MM-DD
 > [!NOTE] for chatgpt
 > Always enclose this entire note from frontmatter till the end in a 4 backtick code block so that it doesnt affect the actual code block. This template is for leetcode problems notes in OBSIDIAN. so follow obsidian syntax
 
-# Problem number and name like 
+# Problem number and name example 334. Increasing Triplet Subsequence
 
 ## Problem (LeetCode Statement)
 
