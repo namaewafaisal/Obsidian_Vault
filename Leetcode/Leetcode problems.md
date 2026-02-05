@@ -22,7 +22,7 @@
 * [x] [LC 1. Two Sum](Problems/1.%20Two%20Sum.md)
 * [x] [LC 121. Best Time to Buy and Sell Stock](121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md)
 * [x] [LC 57. Insert Interval](57.%20Insert%20Interval.md)
-* [x] [LC 15. 3Sum](15.%203Sum.md)
+* [x] [LC 15. 3Sum](Problems/15.%203Sum.md)
 * [ ] [LC 39. Combination Sum](39.%20Combination%20Sum.md)
 * [x] [LC 169. Majority Element](169.%20Majority%20Element.md)
 * [x] [LC 75. Sort Colors](75.%20Sort%20Colors.md)
@@ -51,7 +51,7 @@
 * [ ] [LC 125. Valid Palindrome](125.%20Valid%20Palindrome.md)
 * [ ] [LC 26. Remove Duplicates from Sorted Array](26.%20Remove%20Duplicates%20from%20Sorted%20Array.md)
 * [ ] [LC 11. Container With Most Water](Problems/11.%20Container%20With%20Most%20Water.md)
-* [ ] [LC 15. 3Sum](15.%203Sum.md)
+* [ ] [LC 15. 3Sum](Problems/15.%203Sum.md)
 * [ ] [LC 42. Trapping Rain Water](42.%20Trapping%20Rain%20Water.md)
 * [ ] [LC 75. Sort Colors](75.%20Sort%20Colors.md)
 
@@ -125,7 +125,7 @@
 ### College
 * [ ] [LC 206. Reverse Linked List](206.%20Reverse%20Linked%20List.md)
 * [ ] [LC 141. Linked List Cycle](141.%20Linked%20List%20Cycle.md)
-* [ ] [LC 21. Merge Two Sorted Lists](21.%20Merge%20Two%20Sorted%20Lists.md)
+* [ ] [LC 21. Merge Two Sorted Lists](Problems/21.%20Merge%20Two%20Sorted%20Lists.md)
 * [ ] [LC 19. Remove Nth Node From End of List](19.%20Remove%20Nth%20Node%20From%20End%20of%20List.md)
 * [ ] [LC 2. Add Two Numbers](2.%20Add%20Two%20Numbers.md)
 * [ ] [LC 143. Reorder List](143.%20Reorder%20List.md)
@@ -145,7 +145,7 @@
 ## 🥞 Stack (15 Questions)
 
 ### College
-* [ ] [LC 20. Valid Parentheses](20.%20Valid%20Parentheses.md)
+* [ ] [LC 20. Valid Parentheses](Problems/20.%20Valid%20Parentheses.md)
 * [ ] [LC 1021. Remove Outermost Parentheses](1021.%20Remove%20Outermost%20Parentheses.md)
 * [ ] [LC 503. Next Greater Element II](Problems/503.%20Next%20Greater%20Element%20II.md)
 * [ ] [LC 739. Daily Temperatures](739.%20Daily%20Temperatures.md)
@@ -319,7 +319,7 @@
 ## ➗ Math (5 Questions)
 
 ### Grind 75 Only
-* [ ] [LC 13. Roman to Integer](13.%20Roman%20to%20Integer.md)
+* [ ] [LC 13. Roman to Integer](Problems/13.%20Roman%20to%20Integer.md)
 * [ ] [LC 528. Random Pick with Weight](528.%20Random%20Pick%20with%20Weight.md)
 * [ ] [LC 50. Pow(x, n)](50.%20Pow(x,%20n).md)
 * [ ] [LC 7. Reverse Integer](7.%20Reverse%20Integer.md)
