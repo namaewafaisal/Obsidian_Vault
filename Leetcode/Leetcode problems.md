@@ -31,7 +31,7 @@
 * [ ] [LC 252. Meeting Rooms](252.%20Meeting%20Rooms.md)
 * [ ] [LC 134. Gas Station](134.%20Gas%20Station.md)
 * [ ] [LC 128. Longest Consecutive Sequence](128.%20Longest%20Consecutive%20Sequence.md)
-* [ ] [LC 189. Rotate Array](189.%20Rotate%20Array.md)
+* [ ] [LC 189. Rotate Array](Problems/189.%20Rotate%20Array.md)
 * [ ] [LC 525. Contiguous Array](525.%20Contiguous%20Array.md)
 * [ ] [LC 759. Employee Free Time](759.%20Employee%20Free%20Time.md)
 * [ ] [LC 283. Move Zeroes](Problems/283.%20Move%20Zeroes.md)
