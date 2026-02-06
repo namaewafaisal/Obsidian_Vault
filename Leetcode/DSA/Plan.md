@@ -24,8 +24,8 @@ tags:
 ## Phase 0 — Absolute Foundations
 *(Understand memory, indexing, and basic storage)*
 
-0. [[Arrays]]
-1. [[Strings]]
+0. [Arrays](Data-Structues/Arrays.md)
+1. [Strings](Data-Structues/Strings.md)
 
 ---
 
