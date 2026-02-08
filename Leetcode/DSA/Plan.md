@@ -25,7 +25,7 @@ tags:
 *(Understand memory, indexing, and basic storage)*
 
 0. [Arrays_Fundamentals](Data-Structues/Arrays_Fundamentals.md)
-1. [Strings](Data-Structues/Strings.md)
+1. [Strings_Fundamentals](Data-Structues/Strings_Fundamentals.md)
 
 ---
 
