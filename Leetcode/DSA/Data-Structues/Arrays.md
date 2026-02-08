@@ -7,25 +7,21 @@ mutability: fixed
 access: direct
 
 priority: high
-
-importance_reason:
-  - foundation for almost all DSA problems
-  - enables constant-time index access
-
-used_in:
-  - sliding window
-  - two pointers
-  - prefix sum
-  - hashing (as backing storage)
-
 difficulty: basic
 status: foundation
+
+used_in:
+  - sliding_window
+  - two_pointers
+  - prefix_sum
+  - hashing_backing_storage
 
 tags:
   - dsa
   - array
   - linear
 ---
+
 # Arrays
 
 ## Definition
