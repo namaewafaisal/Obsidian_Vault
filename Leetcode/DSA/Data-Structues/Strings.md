@@ -169,7 +169,7 @@ sb.append(" world");
 
 ## Common Pitfalls
 
-- Using `==` instead of `.equals()`
+- Using ` == ` instead of `.equals()`
 - Building strings in loops with `+`
 - Forgetting substring cost
 - Assuming modification is in-place
