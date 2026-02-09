@@ -39,6 +39,10 @@ class Node{
     }
 
 }
+class SinglyLinkedList {
+    Node head;
+}
+
 public class ListMain{
     public static void main(String[] args){
         Node head = new Node(10);
