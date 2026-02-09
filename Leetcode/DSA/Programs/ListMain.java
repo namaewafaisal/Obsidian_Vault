@@ -7,11 +7,19 @@ class Node{
         this.next = null;
     }
 
-    public void add(int data){
+    public Node add(int data){
         Node newNode = new Node(data);
         Node temp = this;
+        if(temp == null){
+            return newNode;
+        }
+        while(temp.next != null){
+            temp = temp.next;
+        }
         
+
     }
+
 
     public int size(){
         Node temp = this;
