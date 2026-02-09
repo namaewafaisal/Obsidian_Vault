@@ -1,8 +1,9 @@
-public class SinglyLinkedList {
+public class DoublyLinkedList {
     
-    static class Node{
+    private static class Node<E>{
         int data;
-        Node next;
+        Node<E> next;
+        Node<E> prev;
 
         Node(int data){
             this.data = data;
@@ -127,7 +128,7 @@ public class SinglyLinkedList {
 
     }
     public static void main(String[] args) {
-        SinglyLinkedList list = new SinglyLinkedList();
+        DoublyLinkedList list = new DoublyLinkedList();
 
         list.insertAtBeginning(10);
         list.insertAtBeginning(5);
