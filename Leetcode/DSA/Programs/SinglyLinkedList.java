@@ -10,7 +10,7 @@ public class SinglyLinkedList {
         }
     }
 
-    public Node head;
+    private Node head;
 
 
     public void insertAtBeginning(int data){
@@ -92,6 +92,30 @@ public class SinglyLinkedList {
         curr.next = curr.next.next;
     }
 
+    public boolean contains(int data){
+        Node curr = head;
+        while(curr != null){
+            if(curr.data == data){
+                return true;
+            }
+            curr = curr.next;
+        }
+        return false;
+    }
+
+    public int indexOf(int data){
+        Node curr = head;
+        int index = -1;
+        while(curr != null){
+            index++;
+            if(curr.data == data){
+                return index;
+            }
+            curr = curr.next;
+        }
+        return -1;
+    }
+
     public void display(){
         Node curr = head;
         while(curr != null){
@@ -119,5 +143,9 @@ public class SinglyLinkedList {
         list.insertAtEnd(30);
         list.deleteAtPosition(2);
         list.display();
+
+        System.out.println(list.contains(20));
+        System.out.println(list.indexOf(30));
+
     }
 }
