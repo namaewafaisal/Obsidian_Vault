@@ -57,7 +57,28 @@ public class SinglyLinkedList {
     }
     public void deleteAtEnd(){
         Node curr = head;
-        while(curr.next.next != null){}
+        if(curr == null){
+            return;
+        }
+        if(curr.next == null){
+            head = null;
+        }
+        while(curr.next.next != null){
+            curr = curr.next;
+        }
+        curr.next = null;
+    }
+
+    public void deleteAtPosition(int pos){
+        Node curr = head;
+        for(int i = 1; i < pos - 1; i++){ 
+            if(curr == null){
+                return;
+            }
+            curr = curr.next;
+        }
+        if(curr)
+        curr.next = curr.next.next;
     }
 
     public void display(){
