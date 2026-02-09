@@ -7,12 +7,18 @@ class Node{
         this.next = null;
     }
 
+    public void add(int data){
+        Node newNode = new Node(data);
+        Node temp = this;
+        
+    }
+
     public int size(){
         Node temp = this;
         int size = 0;
         while(temp != null){
             size++;
-            temp.next = t
+            temp = temp.next;
         }
         return size;
     }
@@ -33,6 +39,7 @@ public class ListMain{
 
         head.display();
         System.out.println(head.size());
+        head.add(10);
         
     }
 }
