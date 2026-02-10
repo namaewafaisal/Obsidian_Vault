@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -74,7 +75,37 @@ public class Graph {
     }
 
     public static List<Integer> topoSort(int n, List<List<Integer>> graph){
-        int[]
+        int[] indegree = new int[n];
+
+        for(int u = 0; u<n; u++){
+            for(int v : graph.get(u)){
+                indegree[v]++;
+            }
+        }
+
+        Queue<Integer> q = new LinkedList<>();
+        for(int i = 0; i<n; i++){
+            if(indegree[i]==0){
+                q.add(i);
+            }
+        }
+        List<Integer> topo = new ArrayList<>();
+
+        while(!q.isEmpty()){
+            int node = q.poll();
+            topo.add(node);
+
+            for(int nei : graph.get(node)){
+                indegree[nei]--;
+                if(indegree[nei]==0){
+                    q.add(nei);
+                }
+            }
+        }
+        if(topo.size() != n){
+            System.out.println("Cycle exist");
+        }
+        return topo;
     }
     public static void main(String[] args) {
         int n = 4;
@@ -122,6 +153,12 @@ public class Graph {
                     break;
                 }
             }
+        }
+        List<Integer> topo = topoSort(n, graph);
+        Iterator<Integer> it = topo.iterator();
+
+        while(it.hasNext()){
+            System.out.println(it.next());
         }
 
     }
