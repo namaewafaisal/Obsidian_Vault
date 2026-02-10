@@ -1,33 +1,38 @@
-public class DoublyLinkedList {
+public class DoublyLinkedList<E> {
     
     private static class Node<E>{
-        int data;
+        E data;
         Node<E> next;
         Node<E> prev;
 
-        Node(int data){
+        Node(E data){
             this.data = data;
             this.next = null;
+            this.prev = null;
         }
     }
 
-    private Node head;
+    private Node<E> first;
+    private Node<E> last;
 
 
     public void insertAtBeginning(int data){
-        Node newNode = new Node(data);
-        newNode.next = head;
-        head = newNode;
+        Node<E> newNode = new Node(data);
+        newNode.next = first;
+        first = newNode;
+        if(last == null){
+            last = first;
+        }
     }
 
     public void insertAtEnd(int data){
-        Node newNode = new Node(data);
+        Node<E> newNode = new Node(data);
         
-        if(head == null){
-            head = newNode;
+        if(first == null){
+            first = newNode;
             return;
         }
-        Node curr = head;
+        Node curr = first;
         while(curr.next != null){
             curr = curr.next;
         }
@@ -39,7 +44,7 @@ public class DoublyLinkedList {
             return;
         }
         Node newNode = new Node(data);
-        Node curr = head;
+        Node curr = first;
 
         for(int i = 1; i < pos; i++){
             if(curr == null){
@@ -54,16 +59,16 @@ public class DoublyLinkedList {
     }
 
     public void deleteAtBeginning(){
-        if(head != null)
-            head = head.next;
+        if(first != null)
+            first = first.next;
     }
     public void deleteAtEnd(){
-        Node curr = head;
+        Node curr = first;
         if(curr == null){
             return;
         }
         if(curr.next == null){
-            head = null;
+            first = null;
             return;
         }
         while(curr.next.next != null){
@@ -73,7 +78,7 @@ public class DoublyLinkedList {
     }
 
     public void deleteAtPosition(int pos){
-        Node curr = head;
+        Node curr = first;
         if(pos<0){
             return;
         }
@@ -94,7 +99,7 @@ public class DoublyLinkedList {
     }
 
     public boolean contains(int data){
-        Node curr = head;
+        Node curr = first;
         while(curr != null){
             if(curr.data == data){
                 return true;
@@ -105,7 +110,7 @@ public class DoublyLinkedList {
     }
 
     public int indexOf(int data){
-        Node curr = head;
+        Node curr = first;
         int index = 0;
         while(curr != null){
             if(curr.data == data){
@@ -119,7 +124,7 @@ public class DoublyLinkedList {
     }
 
     public void display(){
-        Node curr = head;
+        Node curr = first;
         while(curr != null){
             System.out.print(curr.data + " -> ");
             curr = curr.next;
