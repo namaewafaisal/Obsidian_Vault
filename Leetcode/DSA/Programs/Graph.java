@@ -110,10 +110,10 @@ public class Graph {
         //         }
         //     }
         // }
-        boolean[] path = n
+        boolean[] path = new boolean[n];
         for (int i = 0; i < n; i++) {
             if (!visited[i]) {
-                if (hasCycle(i, -1, graph, visited, path)) {
+                if (hasCycleDirected(i, graph, visited, path)) {
                     System.out.println("Cycle exists");
                     break;
                 }
