@@ -50,6 +50,28 @@ public class Graph {
             }
             return false;
         }
+
+    public static boolean hasCycleDirected(
+        int node,  
+        List<List<Integer>> graph, 
+        boolean[] visited,
+        boolean[] path){
+            visited[node] = true;
+            path[node] = true;
+            for(int nei: graph.get(node)){
+                if(!visited[nei]){
+                    if(hasCycleDirected(nei,graph, visited, path)){
+                        return true;
+                    }
+                }
+                else if(path[nei]){
+                    return true;
+                }
+            }
+
+            path[node] = false;
+            return false;
+    }
     public static void main(String[] args) {
         int n = 4;
         int[][] edges = {
@@ -80,13 +102,23 @@ public class Graph {
         boolean[] visited = new boolean[n];
         System.out.println(hasCycle(0, -1, graph, new boolean[n]));
 
+        // for (int i = 0; i < n; i++) {
+        //     if (!visited[i]) {
+        //         if (hasCycle(i, -1, graph, visited)) {
+        //             System.out.println("Cycle exists");
+        //             break;
+        //         }
+        //     }
+        // }
+        boolean[] path = n
         for (int i = 0; i < n; i++) {
             if (!visited[i]) {
-                if (hasCycle(i, -1, graph, visited)) {
+                if (hasCycle(i, -1, graph, visited, path)) {
                     System.out.println("Cycle exists");
                     break;
                 }
             }
         }
+
     }
 }
