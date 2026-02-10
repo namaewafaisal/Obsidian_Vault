@@ -72,6 +72,10 @@ public class Graph {
             path[node] = false;
             return false;
     }
+
+    public static List<Integer> topoSort(int n, List<List<Integer>> graph){
+        int[]
+    }
     public static void main(String[] args) {
         int n = 4;
         int[][] edges = {
