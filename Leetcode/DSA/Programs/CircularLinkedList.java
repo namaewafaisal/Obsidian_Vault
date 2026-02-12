@@ -1,4 +1,4 @@
-public class CircularDoublyLinkedList<E> {
+public class CircularLinkedList<E> {
     
     private static class Node<E> {
         E data;
@@ -6,7 +6,6 @@ public class CircularDoublyLinkedList<E> {
 
         Node(E data){
             this.data = data;
-            this.next = null;
         }
     }
 
@@ -16,32 +15,30 @@ public class CircularDoublyLinkedList<E> {
     public void insertAtBeginning(E data){
         Node<E> newNode = new Node(data);
         if(head == null){
-            head = newNode;
-            tail = newNode;
-            head.next = tail;
+            head = tail = newNode;
+            newNode.next = head;
             return;
         }
-        tail.next = newNode;
         newNode.next = head;
-        head = tail.next;
+        tail.next = newNode;
+        head = newNode;
     }
 
     public void insertAtEnd(E data){
         Node<E> newNode = new Node(data);
         if(head == null){
-            head = newNode;
-            tail = newNode;
-            head.next = tail;
+            head = tail = newNode;
+            newNode.next = head;
             return;
         }
         tail.next = newNode;
         newNode.next = head;
-        tail = tail.next;
+        tail = newNode;
     }
     public void deleteAtBeginning(){
         if(head == null) return;
-        if(head.next == head){
-            head = null;
+        if(head == tail){
+            head = tail = null;
             return;
         }
         head = head.next;
@@ -49,7 +46,10 @@ public class CircularDoublyLinkedList<E> {
     }
 
     public void display(){
-        if(head == null) return;
+        if(head == null) {
+            System.out.println("Empty");
+            return;
+        }
         Node<E> curr = head;
         
         do{
@@ -57,9 +57,10 @@ public class CircularDoublyLinkedList<E> {
             curr = curr.next;
         }
         while(curr != head);
+        System.out.println("(back to head)");
     }
     public static void main(String[] args) {
-        CircularDoublyLinkedList<Integer> lst = new CircularDoublyLinkedList<>();
+        CircularLinkedList<Integer> lst = new CircularLinkedList<>();
         lst.insertAtBeginning(5);
         lst.insertAtBeginning(10);
         lst.insertAtEnd(15);
