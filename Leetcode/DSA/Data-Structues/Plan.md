@@ -32,7 +32,7 @@ tags:
 ## Phase 1 — Linear Pointer-Based Structures
 *(Dynamic size, reference-based traversal)*
 
-2. [[Singly Linked List]]
+2. [[Singly_Linked_List]]
 3. [[Doubly Linked List]]
 4. [[Circular Linked List]]
 
