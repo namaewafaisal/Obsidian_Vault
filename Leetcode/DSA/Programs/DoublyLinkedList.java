@@ -16,69 +16,92 @@ public class DoublyLinkedList<E> {
     private Node<E> last;
 
 
-    public void insertAtBeginning(int data){
+    public void insertAtBeginning(E data){
         Node<E> newNode = new Node(data);
-        newNode.next = first;
-        first = newNode;
-        if(last == null){
-            last = first;
-        }
-    }
-
-    public void insertAtEnd(int data){
-        Node<E> newNode = new Node(data);
-        
-        if(first == null){
+        if(first == null || last == null){
             first = newNode;
+            last = newNode;
             return;
         }
-        Node curr = first;
-        while(curr.next != null){
-            curr = curr.next;
-        }
-        curr.next = newNode;
+        newNode.next = first;
+        first.prev = newNode;
+        first = newNode;
+
     }
 
-    public void insertAtPosition(int data, int pos){
+    public void insertAtEnd(E data){
+        Node<E> newNode = new Node(data);
+        
+        if(last == null){
+            first = newNode;
+            last = newNode;
+            return;
+        }
+        last.next = newNode;
+        newNode.prev = last;
+        last = newNode;
+    }
+
+    public void insertAtPosition(E data, int pos){
         if(pos < 0){
             return;
         }
-        Node newNode = new Node(data);
-        Node curr = first;
-
-        for(int i = 1; i < pos; i++){
-            if(curr == null){
-                return;
-            }
+        if (pos == 0) {
+            insertAtBeginning(data);
+            return;
+        }
+        Node<E> curr = first;
+        
+        /*[] done
+        [0] 
+        [0,1]
+        [0,1,2]
+         */ 
+        for(int i = 0; i < pos -1; i++){
+            if(curr == null) return;
             curr = curr.next;
+            
         }
         if(curr == null) return;
+        if(curr == last){
+            insertAtEnd(data);
+            return;
+        }
+        Node<E> newNode = new Node(data);
 
         newNode.next = curr.next;
+        newNode.prev = curr;
         curr.next = newNode;
+        newNode.next.prev = newNode;
+
     }
 
     public void deleteAtBeginning(){
-        if(first != null)
-            first = first.next;
-    }
-    public void deleteAtEnd(){
-        Node curr = first;
-        if(curr == null){
-            return;
-        }
-        if(curr.next == null){
+        if(first == null) return;
+        if(first == last){
             first = null;
+            last = null;
             return;
         }
-        while(curr.next.next != null){
-            curr = curr.next;
+        first = first.next;
+        first.prev = null;
+    }
+   
+    public void deleteAtEnd(){
+        if (last == null) {
+            return;
         }
-        curr.next = null;
+        if(first == last) {
+            first = null;
+            last = null;
+            return;
+        }
+        last = last.prev;
+        last.next = null;
     }
 
     public void deleteAtPosition(int pos){
-        Node curr = first;
+        Node<E> curr = first;
         if(pos<0){
             return;
         }
@@ -86,22 +109,29 @@ public class DoublyLinkedList<E> {
             deleteAtBeginning();
             return;
         }
-        for(int i = 1; i < pos; i++){ 
+        for(int i = 0; i < pos; i++){ 
             if(curr == null){
                 return;
             }
             curr = curr.next;
+            
         }
-        if(curr==null || curr.next == null){
+        if(curr == null){
             return;
         }
-        curr.next = curr.next.next;
+        if(curr == last){
+            deleteAtEnd();
+            return;
+        }
+
+        curr.next.prev = curr.prev;
+        curr.prev.next = curr.next;
     }
 
-    public boolean contains(int data){
-        Node curr = first;
+    public boolean contains(E data){
+        Node<E> curr = first;
         while(curr != null){
-            if(curr.data == data){
+            if(curr.data.equals(data)){
                 return true;
             }
             curr = curr.next;
@@ -109,11 +139,11 @@ public class DoublyLinkedList<E> {
         return false;
     }
 
-    public int indexOf(int data){
-        Node curr = first;
+    public int indexOf(E data){
+        Node<E> curr = first;
         int index = 0;
         while(curr != null){
-            if(curr.data == data){
+            if(curr.data.equals(data)){
                 return index;
             }
             curr = curr.next;
@@ -124,7 +154,7 @@ public class DoublyLinkedList<E> {
     }
 
     public void display(){
-        Node curr = first;
+        Node<E> curr = first;
         while(curr != null){
             System.out.print(curr.data + " -> ");
             curr = curr.next;
@@ -133,26 +163,15 @@ public class DoublyLinkedList<E> {
 
     }
     public static void main(String[] args) {
-        DoublyLinkedList list = new DoublyLinkedList();
+        DoublyLinkedList<Integer> list = new DoublyLinkedList();
 
         list.insertAtBeginning(10);
         list.insertAtBeginning(5);
         list.insertAtEnd(20);
         list.insertAtEnd(30);
         list.display();
-        list.insertAtPosition(15, 2); // insert at index 2
-        list.display();
-        list.deleteAtBeginning();
-        list.display();
-        list.deleteAtEnd();
-        list.display();
-        list.insertAtEnd(20);
-        list.insertAtEnd(30);
-        list.deleteAtPosition(2);
-        list.display();
 
-        System.out.println(list.contains(20));
-        System.out.println(list.indexOf(30));
+
 
     }
 }
