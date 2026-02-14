@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+
+# -------- Unified (Official + AUR) --------
+archpkg_install() {
+  selection=$(yay -Sl |
+    fzf -m \
+      --height=85% \
+      --layout=reverse \
+      --border \
+      --preview '
+          repo=$(echo {} | awk "{print \$1}");
+          pkg=$(echo {} | awk "{print \$2}");
+          if [ "$repo" = "aur" ]; then
+            yay -Si "$pkg";
+          else
+            pacman -Si "$pkg";
+          fi
+        ' \
+      --preview-window=right:60%)
+
+  [ -z "$selection" ] && return
+
+  while read -r line; do
+    repo=$(echo "$line" | awk '{print $1}')
+    pkg=$(echo "$line" | awk '{print $2}')
+
+    if [ "$repo" = "aur" ]; then
+      yay -S "$pkg"
+    else
+      sudo pacman -S "$pkg"
+    fi
+  done <<<"$selection"
+}
+
+# -------- Pacman Only --------
+archpkg_pacman() {
+  selection=$(pacman -Sl |
+    fzf -m \
+      --height=85% \
+      --layout=reverse \
+      --border \
+      --preview '
+          pkg=$(echo {} | awk "{print \$2}");
+          pacman -Si "$pkg"
+        ' \
+      --preview-window=right:60%)
+
+  [ -z "$selection" ] && return
+
+  while read -r line; do
+    pkg=$(echo "$line" | awk '{print $2}')
+    sudo pacman -S "$pkg"
+  done <<<"$selection"
+}
+
+# -------- Remove Installed --------
+archpkg_remove() {
+  selection=$(pacman -Qe |
+    fzf -m \
+      --height=85% \
+      --layout=reverse \
+      --border \
+      --preview '
+          pkg=$(echo {} | awk "{print \$1}");
+          pacman -Qi "$pkg"
+        ' \
+      --preview-window=right:60%)
+
+  [ -z "$selection" ] && return
+
+  while read -r line; do
+    pkg=$(echo "$line" | awk '{print $1}')
+    sudo pacman -Rns "$pkg"
+  done <<<"$selection"
+}
+
+# -------- Router --------
+case "$1" in
+install) archpkg_install ;;
+pacman) archpkg_pacman ;;
+remove) archpkg_remove ;;
+*)
+  echo "Usage:"
+  echo "  archpkg install"
+  echo "  archpkg pacman"
+  echo "  archpkg remove"
+  ;;
+esac
