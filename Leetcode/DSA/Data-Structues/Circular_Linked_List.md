@@ -1,42 +1,49 @@
 ---
 topic: circular_linked_list
 category: linear
-structure: pointer_based
-termination: cyclic
-memory: non_contiguous
-
+structure: pointer_based_cyclic
+data: homogeneous_or_generic
+mutability: dynamic_structure
+access: cyclic_sequential
 priority: medium
 difficulty: intermediate
 status: foundation
-
-depends_on:
-  - singly_linked_list
-
 used_in:
-  - round_robin
-  - circular_buffer
-  - queue_implementation
-
+  - round_robin_scheduling
+  - circular_queue
+  - multiplayer_turn_systems
 tags:
   - dsa
   - linked_list
   - circular
 ---
 
-# Circular Singly Linked List — Cyclic Structure
+# Circular Singly Linked List — Fundamentals (Cyclic Termination, Invariants)
 
 ## 0. The real problem this structure solves
 
 Standard linked list ends with null.
 
-Circular list removes null termination.
+Circular linked list removes null termination and creates a cycle.
 
 **One-line anchor:**  
-> No null termination — traversal stops at head.
+> Circular list replaces null termination with head termination.
 
 ---
 
-## 1. Core Structure
+## 1. What a circular linked list really is
+
+It is a singly linked list where:
+
+```
+tail.next == head
+```
+
+There is no null at the end.
+
+---
+
+## 2. Node structure
 
 ```java
 private static class Node<E> {
@@ -54,7 +61,7 @@ private Node<E> tail;
 
 ---
 
-## 2. Core Invariant
+## 3. Structural invariant (most important)
 
 For non-empty list:
 
@@ -62,16 +69,28 @@ For non-empty list:
 tail.next == head
 ```
 
-If this is false, structure is broken.
+If this fails, structure is broken.
+
+Single-node case:
+
+```
+head == tail
+head.next == head
+```
 
 ---
 
-## 3. Traversal Pattern
+## 4. Traversal pattern
 
-Must use `do-while`:
+Cannot use:
 
 ```java
-Node<E> curr = head;
+while(curr != null)
+```
+
+Must use:
+
+```java
 do {
     curr = curr.next;
 } while(curr != head);
@@ -79,32 +98,109 @@ do {
 
 ---
 
-## 4. Time Complexity
+## 5. Insert at Beginning (O(1))
 
-Same as singly linked list:
-- Insert at head → O(1)
-- Insert at tail → O(1) (if tail stored)
-- Traversal → O(n)
-
----
-
-## 5. Edge Cases
-
-- Single node: `head.next == head`
-- Deleting last node resets both head and tail to null
+```java
+newNode.next = head;
+tail.next = newNode;
+head = newNode;
+```
 
 ---
 
-## 6. Practical Importance
+## 6. Insert at End (O(1))
+
+```java
+tail.next = newNode;
+newNode.next = head;
+tail = newNode;
+```
+
+---
+
+## 7. Delete at Beginning (O(1))
+
+Single-node case:
+
+```java
+head = tail = null;
+```
+
+Multi-node case:
+
+```java
+head = head.next;
+tail.next = head;
+```
+
+---
+
+## 8. Strengths
+
+- Efficient circular queue logic
+- No null checks in traversal
+- Natural cycle modeling
+
+---
+
+## 9. Weaknesses
+
+- Infinite loop risk
+- Harder debugging
+- Less intuitive termination
+- Rarely used directly in business systems
+
+---
+
+## 10. Common bugs
+
+- Forgetting to update `tail.next`
+- Incorrect single-node handling
+- Using `while` instead of `do-while`
+- Infinite traversal
+
+---
+
+## 11. When to use
 
 Used in:
+
 - Round robin scheduling
-- Circular queues
-- Cycle detection problems
+- Multiplayer turn systems
+- Circular buffers
+- Simulation systems
 
 ---
 
-## Linked Notes
+## 12. When NOT to use
 
-- [Singly_Linked_List](Singly_Linked_List)
-- [Doubly_Linked_List](Doubly_Linked_List.md)
+Avoid when:
+
+- Clear termination needed
+- Simpler singly list suffices
+- Debugging complexity must be low
+
+---
+
+## 13. Backend relevance
+
+Often used conceptually in:
+
+- Circular queue implementation
+- Task schedulers
+- Operating system time slicing
+
+---
+
+## 14. Final mental model
+
+> Circular linked list removes null and replaces it with structural cycle.
+
+---
+
+## 15. Linked notes
+
+- [[Singly_Linked_List]]
+- [[Doubly_Linked_List]]
+- [[Circular_Queue_Implementation]]
+- [[Fast_Slow_Pointer_Technique]]
