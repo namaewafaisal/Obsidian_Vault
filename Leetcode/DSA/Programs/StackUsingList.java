@@ -1,3 +1,4 @@
+import java.util.EmptyStackException;
 
 public class StackUsingList<E> {
 
@@ -33,8 +34,20 @@ public class StackUsingList<E> {
         return (E) head.data;
     }
     public E pop(){
+        if(isEmpty()) throw new EmptyStackException();
         E value = (E) head.data;
         head = head.next;
+        size--;
+        return value;
+    }
+    public void display(){
+        Node curr = head;
+        if(curr == null) {System.out.println("Nothing to display"); return;}
+        while(curr != null){
+            System.out.print(curr.data + " -> ");
+            curr = curr.next;
+        }
+        System.out.println("null");
     }
 
 
@@ -42,6 +55,18 @@ public class StackUsingList<E> {
 class StackUsingListMain{
     public static void main(String[] args) {
         StackUsingList stack = new StackUsingList();
+        stack.push(0);
+        stack.push(1);
+        stack.push(2);
+        stack.display();
+        System.out.println(stack.size());
+        System.out.println(stack.isEmpty());
+        stack.pop();
+        stack.peek();
+        stack.pop();
+        stack.pop();
+        System.out.println(stack.size());
+        stack.display();
 
     }
 }
