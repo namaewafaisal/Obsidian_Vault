@@ -1,48 +1,16 @@
-import java.util.ArrayList;
-import java.util.EmptyStackException;
-
 public class StackUsingArrays<E> {
+    private E arr[];
+    private int top;
+    private int capacity;
 
-  private ArrayList<E> list;
-
-  StackUsingArrays(){
-    this.list = new ArrayList<>();
-  }
-
-  public void push(E data){
-    list.add(data);
-  }
-  public E pop(){
-    if(list.isEmpty()) throw new EmptyStackException();
-    E value = list.remove(list.size() -1);
-    return value;
-  }
-
-  public E peek(){
-    if(list.isEmpty()) throw new EmptyStackException();
-    return list.get(list.size()-1);
-  }
-  public boolean isEmpty(){
-    return list.isEmpty();
-  }
-  public 
-  public void display(){
-    for(int i = list.size()-1; i>=0; i--){
-      System.out.print(list.get(i) + " ");
+    StackUsingArrays(int capacity){
+        this.top = -1;
+        this.arr = new E[capacity];
+        this.capacity = capacity;
     }
-  }
 }
-class StackArrayMain{
-  public static void main(String[] args) {
-    StackUsingArrays<Integer> stack = new StackUsingArrays<>();
-    stack.push(0);
-    stack.push(2);
-    stack.push(3);
-    System.out.print(stack.pop());
-    System.out.println();
-    stack.push(5);
-    stack.push(6);
-    stack.display();
-
-  }
+class StackUsingArraysMain{
+    public static void main(String[] args) {
+        StackUsingArrays<Integer> stack = new StackUsingArrays<>(10);
+    }
 }
