@@ -13,7 +13,6 @@ tags:
   - stack
   - queue
 ---
-
 # Stack vs Queue — Behavioral Discipline
 
 ## Stack
