@@ -1,30 +1,47 @@
-import java.util.LinkedList;
 
 public class StackUsingList<E> {
-    private LinkedList<E> stack;
+
+    static class Node<E>{
+        E data;
+        Node next;
+
+        Node(E data){
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    private Node head;
+    private int size;
     
 
-    public StackUsingList (){
-        stack = new LinkedList<>();
-    }
+    
     public boolean isEmpty(){
-        return stack.isEmpty();
+        return size == 0;
     }
     public int size(){
-        return stack.size();
+        return size;
     }
     public void push(E data){
-        stack.add(data)
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+        size++;
     }
     public E peek(){
-        return stack.getFirst();
+        if(isEmpty()) throw new EmptyStackException();
+        return (E) head.data;
+    }
+    public E pop(){
+        E value = (E) head.data;
+        head = head.next;
     }
 
 
 }
 class StackUsingListMain{
     public static void main(String[] args) {
-        StackUsingList<Integer> stack = new StackUsingList<>();
+        StackUsingList stack = new StackUsingList();
 
     }
 }

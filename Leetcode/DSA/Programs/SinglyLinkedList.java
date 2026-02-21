@@ -145,12 +145,14 @@ public class SinglyLinkedList {
         list.insertAtBeginning(5);
         list.insertAtEnd(20);
         list.insertAtEnd(30);
+        System.out.println(list.size());
         list.display();
         list.insertAtPosition(15, 2); // insert at index 2
         list.display();
         list.deleteAtBeginning();
         list.display();
         list.deleteAtEnd();
+        System.out.println(list.size());
         list.display();
         list.insertAtEnd(20);
         list.insertAtEnd(30);
