@@ -1,10 +1,8 @@
 ---
 title: LeetCode Validation Automation – Debugging & Final Architecture
 topic: python-automation
-date-time: 2026-INVALID-DATE
-time-taken(min): INVALID-TIME
 ---
-1
+
 # 🎯 Objective
 
 Validate LeetCode usernames from a CSV file and generate a clean output file containing:
