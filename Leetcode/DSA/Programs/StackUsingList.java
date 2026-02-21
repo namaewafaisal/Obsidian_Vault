@@ -4,7 +4,7 @@ public class StackUsingList<E> {
 
     static class Node<E>{
         E data;
-        Node next;
+        Node<E> next;
 
         Node(E data){
             this.data = data;
@@ -12,7 +12,7 @@ public class StackUsingList<E> {
         }
     }
 
-    private Node head;
+    private Node<E> head;
     private int size;
     
 
@@ -31,11 +31,11 @@ public class StackUsingList<E> {
     }
     public E peek(){
         if(isEmpty()) throw new EmptyStackException();
-        return (E) head.data;
+        return head.data;
     }
     public E pop(){
         if(isEmpty()) throw new EmptyStackException();
-        E value = (E) head.data;
+        E value = head.data;
         head = head.next;
         size--;
         return value;
@@ -54,7 +54,7 @@ public class StackUsingList<E> {
 }
 class StackUsingListMain{
     public static void main(String[] args) {
-        StackUsingList stack = new StackUsingList();
+        StackUsingList<Integer> stack = new StackUsingList<>();
         stack.push(0);
         stack.push(1);
         stack.push(2);
