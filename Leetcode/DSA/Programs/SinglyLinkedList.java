@@ -11,12 +11,17 @@ public class SinglyLinkedList {
     }
 
     private Node head;
+    private int size;
 
 
     public void insertAtBeginning(int data){
         Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
+        size++;
+    }
+    public int size(){
+        return size;
     }
 
     public void insertAtEnd(int data){
@@ -24,6 +29,7 @@ public class SinglyLinkedList {
         
         if(head == null){
             head = newNode;
+            size++;
             return;
         }
         Node curr = head;
@@ -31,6 +37,7 @@ public class SinglyLinkedList {
             curr = curr.next;
         }
         curr.next = newNode;
+        size++;
     }
 
     public void insertAtPosition(int data, int pos){
@@ -50,11 +57,13 @@ public class SinglyLinkedList {
 
         newNode.next = curr.next;
         curr.next = newNode;
+        size++;
     }
 
     public void deleteAtBeginning(){
         if(head != null)
             head = head.next;
+        size--;
     }
     public void deleteAtEnd(){
         Node curr = head;
@@ -63,12 +72,14 @@ public class SinglyLinkedList {
         }
         if(curr.next == null){
             head = null;
+            size--;
             return;
         }
         while(curr.next.next != null){
             curr = curr.next;
         }
         curr.next = null;
+        size--;
     }
 
     public void deleteAtPosition(int pos){
@@ -90,6 +101,7 @@ public class SinglyLinkedList {
             return;
         }
         curr.next = curr.next.next;
+        size--;
     }
 
     public boolean contains(int data){
@@ -144,6 +156,7 @@ public class SinglyLinkedList {
         list.insertAtEnd(30);
         list.deleteAtPosition(2);
         list.display();
+        System.out.println(list.size());
 
         System.out.println(list.contains(20));
         System.out.println(list.indexOf(30));
