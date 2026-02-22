@@ -71,6 +71,9 @@ public class CircularQueue<E> {
         System.out.println();
     }
     public static void main(String[] args) {
-        CircularQueue<Integer> q = new CircularQueue<>(5)
+        CircularQueue<Integer> q = new CircularQueue<>(5);
+        q.enqueue(0);
+        q.dequeue();
+        q.display();
     }
 }
