@@ -12,11 +12,11 @@ Focus:
 ## Phase A — Arrays (Contiguous Memory Discipline)
 
 - [[26. Remove Duplicates from Sorted Array]]
-- [[../../27. Remove Element]]
-- [[283. Move Zeroes]]
-- [[88. Merge Sorted Array]]
-- [[189. Rotate Array]]
-- [[35. Search Insert Position]]
+- [27. Remove Element](27.%20Remove%20Element.md)
+- [283. Move Zeroes](Not%20Fixed/283.%20Move%20Zeroes.md)
+- [88. Merge Sorted Array](Not%20Fixed/88.%20Merge%20Sorted%20Array.md)
+- [189. Rotate Array](Not%20Fixed/189.%20Rotate%20Array.md)
+- [35. Search Insert Position](35.%20Search%20Insert%20Position)
 - [[66. Plus One]]
 
 Goal:
