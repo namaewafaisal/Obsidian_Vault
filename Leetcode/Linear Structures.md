@@ -12,12 +12,12 @@ Focus:
 ## Phase A — Arrays (Contiguous Memory Discipline)
 
 - [[26. Remove Duplicates from Sorted Array]]
-- [27. Remove Element](27.%20Remove%20Element.md)
+- [27. Remove Element](Problems/27.%20Remove%20Element.md)
 - [283. Move Zeroes](Not%20Fixed/283.%20Move%20Zeroes.md)
 - [88. Merge Sorted Array](Not%20Fixed/88.%20Merge%20Sorted%20Array.md)
 - [189. Rotate Array](Not%20Fixed/189.%20Rotate%20Array.md)
-- [35. Search Insert Position](35.%20Search%20Insert%20Position)
-- [[66. Plus One]]
+- [35. Search Insert Position](Problems/35.%20Search%20Insert%20Position.md)
+- [66. Plus One](Problems/66.%20Plus%20One.md)
 
 Goal:
 - In-place updates
@@ -29,9 +29,9 @@ Goal:
 
 ## Phase B — Strings (Array-Backed Behavior)
 
-- [[125. Valid Palindrome]]
-- [[344. Reverse String]]
-- [[14. Longest Common Prefix]]
+- [125. Valid Palindrome](Not%20Fixed/125.%20Valid%20Palindrome.md)
+- [344. Reverse String](344.%20Reverse%20String)
+- [14. Longest Common Prefix](14.%20Longest%20Common%20Prefix)
 - [[28. Find the Index of the First Occurrence in a String]]
 - [[58. Length of Last Word]]
 
