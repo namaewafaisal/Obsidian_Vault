@@ -20,3 +20,8 @@ possesion - phone or keycard
 inherence - unique to you only (biometrics)
 OTP - can be a problem if hacker convinces that sim is swapped
 keylogging - recording keystrokes and send to the hacker
+credential stuffing - using the data from a dataleak to try in another website
+social engineering - showing trust then collecting data like password
+phishing - hook that when you click it steals data like a spam email. posing like a legitimate email but redirecting to wrong url to extract
+Machine in the middle - Routers, routing servers etc maybe a threat.
+man in the middle - hacker posing as server and 
