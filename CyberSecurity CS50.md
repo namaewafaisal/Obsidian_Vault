@@ -234,3 +234,7 @@ Dictionary attacks can be done by hashing each dictionary value, same for brute 
 Rainbow table - have all the possible password and hash value. then just compare the hash instead of hashing again. precomputing.
 Same password between user can produce same hashes so one is compromised then other is too
 Salting - sprinkling extra data to the hashfuntion so even for same input it produces unique output. salt is also in the hashfunction like 46hdbgkagy389 when 46 is tha salt so its not lost.
+should not reinvent these hashing stuff unless we are the one developing
+nowadays the hashes have the data of what hash function was used. 
+if a website mails you the password when you click reset password then its not hashed there and should not be used.
+if a company has been compramised then it may or may not reve
