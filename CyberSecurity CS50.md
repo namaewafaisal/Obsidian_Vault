@@ -18,3 +18,5 @@ ways of authentication
 Knowledge - password
 possesion - phone or keycard
 inherence - unique to you only (biometrics)
+OTP - can be a problem if hacker convinces that sim is swapped
+keylogging - recording keystrokes and send to the hacker
