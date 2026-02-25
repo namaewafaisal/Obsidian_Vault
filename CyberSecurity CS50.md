@@ -227,7 +227,7 @@ Eliminates:
 ---
 # Protecting Data
 
-data leak - database data got leak which may have username and password
+<mark style="background: #FF5582A6;">data leak</mark> - database data got leak which may have username and password
 hashing - a data goes through a hash function and create hashcode of fixed length. unique to the input. irreversible. does not have any pattern or represent the input in any way
 even admin cant see the password, compare the hash with the hash of the entered password and if the hashes are same then logged in.
 Dictionary attacks can be done by hashing each dictionary value, same for brute force
