@@ -13,4 +13,8 @@ which is more that 6 quadrillion
 Nist has some recommendation or standards for password, min 8 and max 64 chars. allow all of unicode. verifiers to check if teh password is commonly used or sequence or repeated chars and tell the user to make better passwords
 dont use the hint like what was the name of the first pet
 implement rate of failed limit to slow dont the brute force attacks
-T2F 
+TFA or MFA used as an double barrier which the works with possesion
+ways of authentication 
+Knowledge - password
+possesion - phone or keycard
+inherence - unique to you only (biometrics)
