@@ -229,3 +229,8 @@ Eliminates:
 
 data leak - database data got leak which may have username and password
 hashing - a data goes through a hash function and create hashcode of fixed length. unique to the input. irreversible. does not have any pattern or represent the input in any way
+even admin cant see the password, compare the hash with the hash of the entered password and if the hashes are same then logged in.
+Dictionary attacks can be done by hashing each dictionary value, same for brute force
+Rainbow table - have all the possible password and hash value. then just compare the hash instead of hashing again. precomputing.
+Same password between user can produce same hashes so one is compromised then other is too
+Salting - sprinkling extra data to the hashfuntion so even for same input it produces unique output. salt is also in the hashfunction like 46hdbgkagy389 when 46 is tha salt so its not lost.
