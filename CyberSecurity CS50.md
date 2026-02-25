@@ -227,7 +227,7 @@ Eliminates:
 ---
 # Protecting Data
 
-<mark style="background: #FF5582A6;">data leak</mark> - database data got leak which may have username and password
+data leak - database data got leak which may have username and password
 hashing - a data goes through a hash function and create hashcode of fixed length. unique to the input. irreversible. does not have any pattern or represent the input in any way
 even admin cant see the password, compare the hash with the hash of the entered password and if the hashes are same then logged in.
 Dictionary attacks can be done by hashing each dictionary value, same for brute force
@@ -237,4 +237,6 @@ Salting - sprinkling extra data to the hashfuntion so even for same input it pro
 should not reinvent these hashing stuff unless we are the one developing
 nowadays the hashes have the data of what hash function was used. 
 if a website mails you the password when you click reset password then its not hashed there and should not be used.
-if a company has been compramised then it may or may not reve
+if a company has been compramised then it may or may not reveal depending on consequencses of future attacks happeing chances
+the hash functions which are common are sha2 and sha3 stuffs. hmac, cmac for integrity which will be learned later.
+hash is not entirely unique because theoretically taking infinite number of possibilities and converting them into a fixed legth then some hash can have multiple inputs that lead to it. but the longer the length of the hash the more unique hashes. this is one way hashing
