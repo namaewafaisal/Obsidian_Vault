@@ -226,17 +226,234 @@ Eliminates:
 
 ---
 # Protecting Data
+## Data Leaks, Hashing & Password Storage
 
-data leak - database data got leak which may have username and password
-hashing - a data goes through a hash function and create hashcode of fixed length. unique to the input. irreversible. does not have any pattern or represent the input in any way
-even admin cant see the password, compare the hash with the hash of the entered password and if the hashes are same then logged in.
-Dictionary attacks can be done by hashing each dictionary value, same for brute force
-Rainbow table - have all the possible password and hash value. then just compare the hash instead of hashing again. precomputing.
-Same password between user can produce same hashes so one is compromised then other is too
-Salting - sprinkling extra data to the hashfuntion so even for same input it produces unique output. salt is also in the hashfunction like 46hdbgkagy389 when 46 is tha salt so its not lost.
-should not reinvent these hashing stuff unless we are the one developing
-nowadays the hashes have the data of what hash function was used. 
-if a website mails you the password when you click reset password then its not hashed there and should not be used.
-if a company has been compramised then it may or may not reveal depending on consequencses of future attacks happeing chances
-the hash functions which are common are sha2 and sha3 stuffs. hmac, cmac for integrity which will be learned later.
-hash is not entirely unique because theoretically taking infinite number of possibilities and converting them into a fixed legth then some hash can have multiple inputs that lead to it. but the longer the length of the hash the more unique hashes. this is one way hashing
+## 1. Data Leak
+
+> A data leak means database data has been exposed.
+
+It may include:
+- Username
+- Email
+- Password (if stored badly)
+- Other personal information
+
+If passwords are stored in **plain text**, attackers immediately gain access.
+If passwords are **hashed**, attackers must attempt to crack them.
+
+---
+
+## 2. Hashing
+
+> Hashing = input → hash function → fixed-length hash output.
+
+Properties:
+
+- Fixed length output
+- Deterministic (same input → same hash)
+- Irreversible (one-way function)
+- Does not reveal the original input
+- No visible pattern representing the input
+
+Example flow:
+
+- User enters password
+- System hashes it
+- Stores only the hash
+
+Even admins cannot see the original password.
+
+During login:
+
+- User enters password
+- System hashes entered password
+- Compares with stored hash
+- If hashes match → login success
+
+---
+
+## 3. Attacks on Hashed Passwords
+
+### Dictionary Attack on Hashes
+
+Attacker:
+- Takes each word in dictionary
+- Hashes it
+- Compares with stolen hashes
+
+Same idea as brute force, but limited to common words.
+
+---
+
+### Brute Force on Hashes
+
+Attacker:
+- Generates all possible combinations
+- Hashes each
+- Compares with stolen hashes
+
+Still computationally expensive for strong passwords.
+
+---
+
+## 4. Rainbow Tables
+
+> Precomputed table of password → hash pairs.
+
+Instead of hashing every guess again:
+- Attacker looks up the stolen hash
+- Finds matching password instantly (if present in table)
+
+This is called **precomputation attack**.
+
+---
+
+## 5. Problem: Same Password → Same Hash
+
+If two users use the same password:
+
+```
+password123 → same hash
+```
+
+If one hash is cracked:
+- Other users with same password are also compromised.
+
+---
+
+## 6. Salting
+
+> Adding random extra data to the password before hashing.
+
+Example:
+
+```
+password + random_salt → hash
+```
+
+Salt:
+- Is unique per user
+- Stored alongside the hash
+- Not secret, but random
+
+Even if two users use the same password:
+
+```
+password + salt1 → hash1
+password + salt2 → hash2
+```
+
+Outputs are different.
+
+This defeats rainbow table attacks.
+
+---
+
+## 7. Do Not Reinvent Hashing
+
+- Do not create your own hashing algorithm
+- Use well-tested libraries
+- Modern password hashing algorithms:
+  - bcrypt
+  - Argon2
+  - PBKDF2
+
+General cryptographic hash functions:
+- SHA-2
+- SHA-3
+
+(Password hashing and general hashing are not the same use case.)
+
+---
+
+## 8. Hash Metadata
+
+Modern systems often store:
+
+- Which algorithm was used
+- Cost factor / work factor
+- Salt
+- The hash
+
+All encoded together in one string.
+
+This allows:
+- Algorithm upgrades
+- Safe comparison later
+
+---
+
+## 9. Major Red Flag
+
+If a website emails you your original password during reset:
+
+> It means they stored your password in plain text.
+
+That website should not be trusted.
+
+Proper systems:
+- Store only hashes
+- Send password reset links
+- Never send original passwords
+
+---
+
+## 10. Company Breach Disclosure
+
+If a company is compromised:
+
+- They may disclose immediately
+- Or delay disclosure
+
+Depends on:
+- Legal requirements
+- Ongoing investigations
+- Risk of further attacks
+
+---
+
+## 11. Hash Collisions (Important Clarification)
+
+A hash is not mathematically unique.
+
+Reason:
+
+- Infinite possible inputs
+- Fixed-length output
+
+By pigeonhole principle:
+- Different inputs can produce the same hash (collision)
+
+However:
+
+- Strong cryptographic hashes make collisions computationally infeasible
+- Longer hash length → lower collision probability
+
+This is still considered **one-way hashing**.
+
+---
+
+## 12. Integrity Hashes (Future Topic)
+
+Used for verifying data integrity:
+
+- HMAC (Hash-based Message Authentication Code)
+- CMAC (Cipher-based MAC)
+
+These are different from password hashing.
+They are used for:
+- Message integrity
+- Authenticity verification
+
+(To be studied separately.)
+
+---
+# Cryptography
+
+This refers to the reversible secret code method called encryption and decryption. we need not only the secret code but also the manual for that to decrypt. they are called keys.
+Encode plaintext -> codetext
+Decode codetext -> plaintext
+Ciphers - the manuals but uses math or computational way which considers and changes each chars and not entire words 
+encypher - plain to ciphertext 
+decypher - cipher to plain but digitally
+keys - the value used to encrypt then decrypt. shared between sender and receiver
