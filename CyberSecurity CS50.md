@@ -464,3 +464,9 @@ key --> algorithm
 plaintext --> algorithm  
 algorithm --> ciphertext
 ```
+
+Ceaser cypher - rotational sypher. rotate the chars in alphabets
+cryptanalusis - finding what a crypttext could be
+Algorithms:
+AES , Triple DES
+sender and receiver have same and shared key
