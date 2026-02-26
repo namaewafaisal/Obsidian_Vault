@@ -459,7 +459,8 @@ decypher - cipher to plain but digitally
 keys - the value used to encrypt then decrypt. shared between sender and receiver
 secret key crytpography - relies on secrecy of a key. both A and B has the same key.
 ```mermaid
-l
-key, plaintext -> algorithm
-algorithm -> ciphertext
+graph LR  
+key --> algorithm  
+plaintext --> algorithm  
+algorithm --> ciphertext
 ```
