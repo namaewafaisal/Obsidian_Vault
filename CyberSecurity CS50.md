@@ -470,3 +470,7 @@ cryptanalusis - finding what a crypttext could be
 Algorithms:
 AES , Triple DES
 sender and receiver have same and shared key
+The symmetric key cryptography or the same key ones require you to share a key which is a secret so we need a secure way to share the key itself which needs another encryption and so on. this deadlock is soved using assymmetric key cryptography. such as Diffie- Hellman, MQV, RSA. also calles public key cryptography.
+public key cryptography - sender encrypts the data in receiver's public key and receiver can only read the message by decrypting with his private key. this is the relationship between public key and private key.
+RSA - famous and used in all or most browsers. relies on very big prime number. $n = p \times q$
+
