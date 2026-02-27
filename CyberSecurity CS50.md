@@ -478,3 +478,15 @@ RSA - famous and used in all or most browsers. relies on very big prime number. 
 Other techniques to key exchange is diffie hellman. 
 $A = g^a \mod p$
 $B = g^b \mod p$
+
+Digital signature - DSA ECDSA RSA to sign the document digitally
+```mermaid
+graph LR
+message --> A[Algorithm]
+A --> hash
+privatekey --> B[Algorithm]
+hash --> B
+B --> signature
+```
+
+verify - they covert the message to hash too. then use the signature(valid) and the public key of the person who signed to get hash of OG. then compare hashes
