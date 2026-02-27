@@ -490,3 +490,4 @@ B --> signature
 ```
 
 verify - they covert the message to hash too. then use the signature(valid) and the public key of the person who signed to get hash of OG. then compare hashes
+passkeys - web authentication. passwordless logins. created a public and private key just for the website and pubic key is sent to the website. the website asks us to digitally sign some piece of info with private key and send so it verifies signature inturn to authenticate you.
