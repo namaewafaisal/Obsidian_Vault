@@ -448,16 +448,53 @@ They are used for:
 (To be studied separately.)
 
 ---
-# Cryptography
+## Cryptography
 
-This refers to the reversible secret code method called encryption and decryption. we need not only the secret code but also the manual for that to decrypt. they are called keys.
-Encode plaintext -> codetext
-Decode codetext -> plaintext
-Ciphers - the manuals but uses math or computational way which considers and changes each chars and not entire words 
-encypher - plain to ciphertext 
-decypher - cipher to plain but digitally
-keys - the value used to encrypt then decrypt. shared between sender and receiver
-secret key crytpography - relies on secrecy of a key. both A and B has the same key.
+- Cryptography refers to reversible secret code methods:
+  - Encryption
+  - Decryption
+- To decrypt, you need:
+  - The algorithm
+  - The key (secret value)
+
+---
+
+## Basic Terminology
+
+- Encode: plaintext → ciphertext  
+- Decode: ciphertext → plaintext  
+
+### Cipher
+
+- Mathematical/computational procedure used to transform data.
+- Operates on characters or bits, not entire words.
+
+### Encipher
+
+- Plaintext → Ciphertext
+
+### Decipher
+
+- Ciphertext → Plaintext
+
+---
+
+## Keys
+
+- A key is a value used by the algorithm.
+- Required for:
+  - Encryption
+  - Decryption
+- In symmetric systems:
+  - Shared between sender and receiver.
+
+---
+
+## Secret Key Cryptography (Symmetric)
+
+- Relies on secrecy of a shared key.
+- Both sender (A) and receiver (B) have the same key.
+
 ```mermaid
 graph LR  
 key --> algorithm  
@@ -465,29 +502,239 @@ plaintext --> algorithm
 algorithm --> ciphertext
 ```
 
-Ceaser cypher - rotational sypher. rotate the chars in alphabets
-cryptanalusis - finding what a crypttext could be
+### Common Algorithms
+
+- AES (Advanced Encryption Standard)
+- Triple DES
+
+---
+
+### Key Distribution Problem
+
+- Symmetric encryption requires sharing a secret key.
+- Sharing that key securely is difficult.
+- If you encrypt the key, you need another key to protect it.
+- This creates the key exchange problem.
+
+Solved using asymmetric cryptography.
+
+---
+
+## Asymmetric Key Cryptography (Public Key Cryptography)
+
+- Uses two keys:
+  - Public key
+  - Private key
+- Public key can be shared.
+- Private key must remain secret.
+
+### Encryption Flow
+
+- Sender encrypts using receiver’s public key.
+- Receiver decrypts using their private key.
+- Only the private key holder can read the message.
+
+---
+
+## RSA (Rivest–Shamir–Adleman)
+
+- Based on large prime numbers.
+
+Choose two large primes:
+
+$$
+p, \; q
+$$
+
+Compute:
+
+$$
+n = p \times q
+$$
+
+$$
+\phi(n) = (p - 1)(q - 1)
+$$
+
+Choose public exponent:
+
+$$
+e
+$$
+
+Such that:
+
+$$
+\gcd(e, \phi(n)) = 1
+$$
+
+Compute private exponent:
+
+$$
+d \equiv e^{-1} \pmod{\phi(n)}
+$$
+
+### Public Key
+
+$$
+(e, n)
+$$
+
+### Private Key
+
+$$
+(d, n)
+$$
+
+### Encryption
+
+$$
+C = M^e \bmod n
+$$
+
+### Decryption
+
+$$
+M = C^d \bmod n
+$$
+
+Security relies on difficulty of factoring large:
+
+$$
+n
+$$
+
+---
+
+## Diffie–Hellman Key Exchange
+
+Used to securely establish a shared secret over an insecure channel.
+
+Public values:
+
+$$
+p, g
+$$
+
+Each party chooses private values:
+
+$$
+a \quad \text{(for A)}
+$$
+
+$$
+b \quad \text{(for B)}
+$$
+
+Exchange:
+
+$$
+A = g^a \bmod p
+$$
+
+$$
+B = g^b \bmod p
+$$
+
+Shared secret:
+
+$$
+S = B^a \bmod p
+$$
+
+$$
+S = A^b \bmod p
+$$
+
+Both compute the same secret without transmitting it directly.
+
+---
+
+## Cryptanalysis
+
+- Attempting to break ciphertext.
+- Trying to discover:
+  - Plaintext
+  - Key
+  - Weakness in algorithm
+
+---
+
+## Digital Signature
+
+Used to:
+- Prove authenticity
+- Ensure integrity
+- Provide non-repudiation
+
 Algorithms:
-AES , Triple DES
-sender and receiver have same and shared key
-The symmetric key cryptography or the same key ones require you to share a key which is a secret so we need a secure way to share the key itself which needs another encryption and so on. this deadlock is soved using assymmetric key cryptography. such as Diffie- Hellman, MQV, RSA. also calles public key cryptography.
-public key cryptography - sender encrypts the data in receiver's public key and receiver can only read the message by decrypting with his private key. this is the relationship between public key and private key.
-RSA - famous and used in all or most browsers. relies on very big prime number. $n = p \times q$
-> fill the rsa formulas here
+- DSA
+- ECDSA
+- RSA (for signing)
 
-Other techniques to key exchange is diffie hellman. 
-$A = g^a \mod p$
-$B = g^b \mod p$
-
-Digital signature - DSA ECDSA RSA to sign the document digitally
 ```mermaid
 graph LR
-message --> A[Algorithm]
+message --> A[Hash Algorithm]
 A --> hash
-privatekey --> B[Algorithm]
+privatekey --> B[Signing Algorithm]
 hash --> B
 B --> signature
 ```
 
-verify - they covert the message to hash too. then use the signature(valid) and the public key of the person who signed to get hash of OG. then compare hashes
-passkeys - web authentication. passwordless logins. created a public and private key just for the website and pubic key is sent to the website. the website asks us to digitally sign some piece of info with private key and send so it verifies signature inturn to authenticate you.
+### Signing Process
+
+1. Hash the message.
+2. Sign the hash using private key.
+3. Output → digital signature.
+
+---
+
+### Verification Process
+
+1. Receiver hashes the received message.
+2. Uses sender’s public key to verify the signature.
+3. Recovers original hash from signature.
+4. Compares both hashes.
+5. If equal → valid signature.
+
+---
+
+## Caesar Cipher
+
+- Rotational cipher.
+- Each letter is shifted by fixed number of positions.
+
+Example (shift 3):
+
+```
+A → D
+B → E
+C → F
+```
+
+Simple but insecure.
+
+---
+
+## Passkeys (Web Authentication)
+
+- Passwordless login system.
+- Based on public key cryptography.
+
+Process:
+
+1. Device generates:
+   - Public key
+   - Private key
+2. Public key is sent to website.
+3. Private key stays on device.
+4. During login:
+   - Website sends challenge.
+   - Device signs challenge using private key.
+   - Website verifies using stored public key.
+
+Properties:
+
+- No password stored.
+- Resistant to phishing.
+- Unique key pair per website.
