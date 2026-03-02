@@ -19,4 +19,7 @@ Microservices
 - each service may not need its own repository so we put related together based on need
 - so less requirements
 - loosely coupled yet efficient
-- 
+Orchestration 
+creating and configuring the systems exactly as their need without version conflicts and stuff. (dont know fully)
+developing team hand the code to devops
+next is no ops so no heavy devops work
