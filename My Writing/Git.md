@@ -213,3 +213,129 @@ we use `git pull` from the branch we are in to pull the changes to our local rep
 `git branch --delete <branch-name>` delete branch in the remote
 
 
+Here is a **compact TL;DR summary** you can place at the bottom of your notes.
+
+---
+
+## TL;DR
+
+**Git Concept**
+
+* Git is a **content-addressed database** storing project history.
+* Every **commit = snapshot of the project + metadata + parent commit pointer**.
+* Commits form a **Directed Acyclic Graph (DAG)** where commits point **backward to parents**.
+
+**Commit**
+
+* Contains:
+
+  * snapshot (tree)
+  * metadata (author, message, time)
+  * parent commit(s)
+* Commits are **immutable** and identified by a **hash**.
+
+**Branch**
+
+* A **branch is just a movable pointer** to a commit.
+* Creating a branch is instant because it only creates a **label to an existing commit**.
+* The branch pointer moves forward when new commits are created.
+
+**HEAD**
+
+* `HEAD` normally points to a **branch**, which then points to the latest commit.
+* If `HEAD` points directly to a commit → **detached HEAD**.
+* Commits made in detached state become **orphan commits** unless a branch is created.
+
+**Git Object Model**
+Git stores everything as immutable objects:
+
+* **Blob** → file content
+* **Tree** → directory structure (points to blobs/trees)
+* **Commit** → snapshot pointer + metadata + parent
+* **Tag** → named pointer to a commit
+
+Git avoids duplication by **reusing unchanged blobs and trees**.
+
+**File Areas**
+Code exists in three places:
+
+1. **Working Directory** – current files you edit
+2. **Staging Area (Index)** – selected changes for the next commit
+3. **Object Database (Repository)** – stored commits, trees, blobs
+
+Workflow:
+
+```
+Working Directory → git add → Staging Area → git commit → Repository
+```
+
+**File States**
+Tracked files can be:
+
+* **Modified** – changed but not staged
+* **Staged** – ready for next commit
+* **Committed** – safely stored in repository
+
+**Checkout**
+
+* Moves **HEAD** to another commit or branch.
+* Updates working directory to that snapshot.
+* Does **not change history**.
+
+**Reset**
+Moves the **branch pointer** to another commit.
+
+Modes:
+
+* `--soft` → keeps staged changes
+* `--mixed` → unstages changes
+* `--hard` → resets working directory and index
+
+**Revert**
+
+* Creates a **new commit that reverses an earlier commit**.
+* Does not rewrite history.
+
+**Rebase**
+
+* Replays commits onto a new base commit.
+* Creates **new commits with new hashes**.
+* Produces **linear history**.
+* Avoid rebasing commits already shared with others.
+
+**Merge**
+
+* Combines histories from two branches.
+* Creates a **merge commit with two parents**.
+
+**Reflog**
+
+* Records movements of `HEAD`.
+* Allows recovering lost commits.
+* Default retention:
+
+  * **90 days (reachable commits)**
+  * **30 days (unreachable commits)**
+
+**Important Idea**
+Even though each commit represents the **entire project snapshot**, Git stores data efficiently by **reusing unchanged objects**.
+
+**Common Commands**
+
+```
+git init            initialize repository
+git status          show file states
+git add             stage changes
+git commit -m ""    create commit
+git branch          list branches
+git switch <branch> switch branch
+git checkout -b     create + switch branch
+git push            send commits to remote
+git pull            fetch + merge remote changes
+git reset           move branch pointer
+git revert          undo commit with new commit
+```
+
+---
+
+If you want, I can also give you an **even shorter “super TL;DR” (like 10 lines)** that captures **90% of Git understanding**, which is useful for quick revision.
