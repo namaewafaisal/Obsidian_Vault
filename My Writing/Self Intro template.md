@@ -13,4 +13,11 @@ Tech i used in the project.
 End result of the project.
 as part of my academics i was also involved in various clubs.impact matters not the participation. 
 i would like to talk about a few qualifications of mine.(talk about leadership, problem solving, creativity etc)
-Leetcode and other certificat
+Leetcode and other certifications stuff(only after project)
+Thankyou for the oppurtunity
+
+this is called elevator pitch?!!
+Less time to impress the person
+
+Tell the passion
+    tone should be expressive about the joy or passion
