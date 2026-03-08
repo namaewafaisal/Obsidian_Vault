@@ -30,7 +30,7 @@ Goal:
 ## Phase B — Strings (Array-Backed Behavior)
 
 - [125. Valid Palindrome](Not%20Fixed/125.%20Valid%20Palindrome.md)
-- [344. Reverse String](344.%20Reverse%20String)
+- [344. Reverse String](Problems/344.%20Reverse%20String.md)
 - [14. Longest Common Prefix](14.%20Longest%20Common%20Prefix)
 - [[28. Find the Index of the First Occurrence in a String]]
 - [[58. Length of Last Word]]
@@ -79,7 +79,7 @@ Goal:
 ## Phase E — Queue (FIFO Discipline & Circular Logic)
 
 - [[933. Number of Recent Calls]]
-- [[225. Implement Stack using Queues]]
+- [[Problems/225. Implement Stack using Queues]]
 - [[232. Implement Queue using Stacks]]
 
 Goal:
