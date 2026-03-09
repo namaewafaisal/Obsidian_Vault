@@ -1,3 +1,8 @@
+---
+folders:
+  - Leetcode/Problems
+  - Leetcode/Not Fixed
+---
 # 🚀 DSA Master Question List (186 Questions)
 
 ## 📋 Legend
