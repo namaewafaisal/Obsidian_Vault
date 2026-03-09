@@ -112,9 +112,9 @@
 ## 🧊 Matrix (5 Questions)
 
 ### Grind 75 Only
-* [ ] [LC 54. Spiral Matrix](54.%20Spiral%20Matrix.md)
+* [x] [LC 54. Spiral Matrix](54.%20Spiral%20Matrix.md) ✅ 2026-03-09
 * [ ] [LC 36. Valid Sudoku](36.%20Valid%20Sudoku.md)
-* [ ] [LC 48. Rotate Image](48.%20Rotate%20Image.md)
+* [x] [LC 48. Rotate Image](48.%20Rotate%20Image.md) ✅ 2026-03-09
 * [ ] [LC 73. Set Matrix Zeroes](73.%20Set%20Matrix%20Zeroes.md)
 * [ ] [LC 37. Sudoku Solver](37.%20Sudoku%20Solver.md)
 
@@ -123,9 +123,9 @@
 ## 🔗 Linked List (14 Questions)
 
 ### College
-* [ ] [LC 206. Reverse Linked List](206.%20Reverse%20Linked%20List.md)
-* [ ] [LC 141. Linked List Cycle](141.%20Linked%20List%20Cycle.md)
-* [ ] [LC 21. Merge Two Sorted Lists](Problems/21.%20Merge%20Two%20Sorted%20Lists.md)
+* [x] [LC 206. Reverse Linked List](206.%20Reverse%20Linked%20List.md) ✅ 2026-03-09
+* [x] [LC 141. Linked List Cycle](141.%20Linked%20List%20Cycle.md) ✅ 2026-03-09
+* [x] [LC 21. Merge Two Sorted Lists](Problems/21.%20Merge%20Two%20Sorted%20Lists.md) ✅ 2026-03-09
 * [ ] [LC 19. Remove Nth Node From End of List](19.%20Remove%20Nth%20Node%20From%20End%20of%20List.md)
 * [ ] [LC 2. Add Two Numbers](2.%20Add%20Two%20Numbers.md)
 * [ ] [LC 143. Reorder List](143.%20Reorder%20List.md)
