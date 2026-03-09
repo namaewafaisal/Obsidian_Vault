@@ -1,6 +1,8 @@
 ---
 plan_file: plan.md
 ---
+
+
 ```dataviewjs
 const planPath = dv.current().plan_file;
 const planFile = dv.page(planPath);
@@ -37,6 +39,7 @@ if (!planFile) {
         let sortedHeadings = [...headings].sort((a,b) => a.position.start.line - b.position.start.line);
         let sortedLinks    = [...links].sort((a,b) => a.position.start.line - b.position.start.line);
 
+        // Build topic → [names]
         let topicMap = new Map();
         let orderedTopics = [];
 
@@ -55,7 +58,7 @@ if (!planFile) {
                 }
             }
             if (assignedTopic) {
-                topicMap.get(assignedTopic).push(clean(l.original ?? l.link));
+                topicMap.get(assignedTopic).push(clean(l.link));
             }
         }
 
@@ -66,47 +69,92 @@ if (!planFile) {
             return page.status;
         }
 
-        function statusIcon(status) {
-            switch(status) {
-                case "done":         return "✅";
-                case "needs-review": return "🔁";
-                case "missing":      return "❌";
-                case "refactor":     return "⚠️";
-                default:             return "🔵";
+        // Build status → topic → [entries]
+        // entry: { name, page or null }
+        // Status priority order (most important first)
+        const statusOrder = ["missing", "needs-review", "refactor", "done"];
+
+        const statusMeta = {
+            "missing":      { label: "❌ Not Created (Planned)",         icon: "❌" },
+            "needs-review": { label: "🔁 Needs Review",                  icon: "🔁" },
+            "refactor":     { label: "⚠️ Needs Refactor (Missing Status)", icon: "⚠️" },
+            "done":         { label: "✅ Done",                           icon: "✅" },
+        };
+
+        // Collect into status → topic → entries
+        let statusTopicMap = new Map();
+        for (let s of statusOrder) {
+            statusTopicMap.set(s, new Map());
+            for (let t of orderedTopics) {
+                statusTopicMap.get(s).set(t, []);
             }
         }
 
+        // Also capture unknown statuses (todo, in-progress, etc.)
+        let unknownStatuses = new Set();
+
         for (let topic of orderedTopics) {
-            let names = topicMap.get(topic);
-            if (names.length === 0) continue;
-
-            dv.header(2, topic);
-
-            let rows = names.map(name => {
-                let status = getStatus(name);
-                let icon = statusIcon(status);
-                if (status === "missing") {
-                    return [icon, name, status];
+            for (let name of topicMap.get(topic)) {
+                let s = getStatus(name);
+                if (!statusTopicMap.has(s)) {
+                    unknownStatuses.add(s);
+                    statusTopicMap.set(s, new Map());
+                    for (let t of orderedTopics) {
+                        statusTopicMap.get(s).set(t, []);
+                    }
                 }
-                let page = noteMap.get(name);
-                return [icon, dv.fileLink(page.file.path, false, name), status];
-            });
-
-            dv.table(["", "Problem", "Status"], rows);
+                statusTopicMap.get(s).get(topic).push(name);
+            }
         }
 
-        let allNames = orderedTopics.flatMap(t => topicMap.get(t));
-        let counts = { done: 0, "needs-review": 0, refactor: 0, missing: 0, todo: 0 };
-        for (let name of allNames) {
-            let s = getStatus(name);
-            if (s in counts) counts[s]++;
-            else counts.todo++;
+        const allStatuses = [...statusOrder, ...unknownStatuses];
+
+        // Count totals per status for summary
+        let counts = {};
+        for (let s of allStatuses) counts[s] = 0;
+
+        // Render: status first, topics inside
+        for (let s of allStatuses) {
+            let topicEntries = statusTopicMap.get(s);
+            if (!topicEntries) continue;
+
+            // Check if any entries exist under this status
+            let total = [...topicEntries.values()].reduce((acc, arr) => acc + arr.length, 0);
+            if (total === 0) continue;
+
+            counts[s] = total;
+
+            let meta = statusMeta[s] ?? { label: `🔵 ${s}`, icon: "🔵" };
+            dv.header(2, `${meta.label} — ${total}`);
+
+            for (let topic of orderedTopics) {
+                let names = topicEntries.get(topic);
+                if (!names || names.length === 0) continue;
+
+                dv.header(4, topic);
+
+                let rows = names.map(name => {
+                    if (s === "missing") {
+                        return [name];
+                    }
+                    let page = noteMap.get(name);
+                    return [dv.fileLink(page.file.path, false, name)];
+                });
+
+                dv.table(["Problem"], rows);
+            }
         }
 
+        // Summary
         dv.header(2, "Summary");
         dv.table(
-            ["✅ Done", "🔁 Review", "🔵 Todo", "⚠️ Refactor", "❌ Missing"],
-            [[counts.done, counts["needs-review"], counts.todo, counts.refactor, counts.missing]]
+            ["❌ Planned", "🔁 Review", "⚠️ Refactor", "✅ Done"],
+            [[
+                counts["missing"]      ?? 0,
+                counts["needs-review"] ?? 0,
+                counts["refactor"]     ?? 0,
+                counts["done"]         ?? 0,
+            ]]
         );
     }
 }
