@@ -7,20 +7,26 @@ folders:
 
 const folders = dv.current().folders;
 
-// collect all notes in both folders
+// collect notes
 let notes = [];
 for (let f of folders) {
     notes = notes.concat(dv.pages(`"${f}"`).array());
 }
 
-// map by filename
-let noteMap = new Map();
-for (let n of notes) {
-    noteMap.set(n.file.name, n);
+// normalize name helper
+function clean(name){
+    return name.replace(".md","").trim();
 }
 
-// extract planned problems from links
-let planned = dv.current().file.outlinks.map(l => l.path.split("/").pop().replace(".md",""));
+// map existing files
+let noteMap = new Map();
+for (let n of notes) {
+    noteMap.set(clean(n.file.name), n);
+}
+
+// extract planned links
+let planned = dv.current().file.outlinks.map(l => clean(l.path.split("/").pop()));
+
 
 // containers
 let done = [];
@@ -28,6 +34,7 @@ let review = [];
 let todo = [];
 let refactor = [];
 let missing = [];
+
 
 for (let name of planned) {
 
@@ -52,22 +59,23 @@ for (let name of planned) {
     else {
         todo.push(page);
     }
+
 }
 
 
 // OUTPUT
 
 dv.header(2,"Remaining (Not Done)");
-dv.list(todo.map(p=>dv.fileLink(p.file.path)));
+dv.list(todo.map(p => dv.fileLink(p.file.path)));
 
 dv.header(2,"Needs Review");
-dv.list(review.map(p=>dv.fileLink(p.file.path)));
+dv.list(review.map(p => dv.fileLink(p.file.path)));
 
 dv.header(2,"Needs Refactor (Missing YAML)");
-dv.list(refactor.map(p=>dv.fileLink(p.file.path)));
+dv.list(refactor.map(p => dv.fileLink(p.file.path)));
 
 dv.header(2,"Done");
-dv.list(done.map(p=>dv.fileLink(p.file.path)));
+dv.list(done.map(p => dv.fileLink(p.file.path)));
 
 dv.header(2,"Not Yet Created");
 dv.list(missing);
