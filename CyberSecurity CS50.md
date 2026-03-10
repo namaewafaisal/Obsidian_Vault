@@ -877,4 +877,9 @@ K[Algorithm] --> H[Hash]
 I dont know what else happens in browser making the secure connection etc
 
 SSL Striping 
-when type example.com it tries http then https so when the first http connection is 
+when type example.com it tries http then https so when the first http connection is enough to help the adversary to make you connect to a third party making you think that you are in a secure connection but not.
+if i send GET / HTTP/3 HOST : example.com
+then the server says to redirect to https like
+HTTP/3 307(redirect) Location: https://example.com
+
+this message is not encrypted cuz we are still in the http so they may change the location to another fishy site maybe or the redirect is from the hacker in teh first place
