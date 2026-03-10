@@ -848,4 +848,16 @@ Host : example.com
 or POST /checkout HTTP/3
 Host : example.com
 number = 329834722987
-here the credit card number is also just plain text and thisis a security threat. if it contains a password then thats even
+here the credit card number is also just plain text and thisis a security threat. if it contains a password then thats even bigger risk.
+IP address unique internet address. : hacker dont need to know IP to sniff packets but these packets have ip of seender and receiver too.
+
+Cookie : like the identity memory or like a context
+HTTP/3 200
+Set-Cookie:session = 1234abcd
+cookies can be like a pass you get so that you can show that to confirm identity instead of re auth
+A request might look like GET / HTTP/3 Cookie : session= 1234abcd
+Session Hijacking : stealing session id and using that to pose as the user and essentially getting control of the account
+HTTPS : Secure, data is encrypted althought the packet sender and receiver detailes are not so the router can route. but the data, header, cookie are safe.
+
+TLS Secure the request and use public key policy like certificate. 
+SSL its an older method and TLS is the newer method
