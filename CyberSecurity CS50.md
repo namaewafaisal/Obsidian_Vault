@@ -841,4 +841,11 @@ Wifi protected access the data is scrambled from point A to B. the router needs 
 
 Http : Hypertext Transfer Protocol, Not secure, the way that the world wide web communicates.
 the data is not ecrypted in transit and can be evesdropped by a person in the middle if intercepted
-Machine in the middle attacks : Communicating between server and client is essentially just pas
+Machine in the middle attacks : Communicating between server and client is essentially just pass the html files. if the data is not encrypted then the machine in the middle can see, and modify the files like adding an "ad.js" script to enfore ads.
+Packet sniffing is same that if the packets are not encrypted then they can see and modify before passing them
+Example : GET /search?q=cats HTTP/3
+Host : example.com
+or POST /checkout HTTP/3
+Host : example.com
+number = 329834722987
+here the credit card number is also just plain text and thisis a security threat. if it contains a password then thats even
