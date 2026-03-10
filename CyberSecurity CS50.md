@@ -882,4 +882,12 @@ if i send GET / HTTP/3 HOST : example.com
 then the server says to redirect to https like
 HTTP/3 307(redirect) Location: https://example.com
 
-this message is not encrypted cuz we are still in the http so they may change the location to another fishy site maybe or the redirect is from the hacker in teh first place
+this message is not encrypted cuz we are still in the http so they may change the location to another fishy site maybe or the redirect is from the hacker in the first place. it might be https://examp1e.com
+
+HSTS : The server should make the user use https no matter what 
+Security tramnsport security max age 239820 what?
+includesubdomain
+the browser is enforced to useonly https for atleast a year so the very first request is the only vulnarable so reduced the window of not secure. preload is used to use always https and it should come with the browser
+super cookie embedded isp, or uni level.
+always use https
+https only
