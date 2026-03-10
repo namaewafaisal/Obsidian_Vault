@@ -890,4 +890,9 @@ includesubdomain
 the browser is enforced to useonly https for atleast a year so the very first request is the only vulnarable so reduced the window of not secure. preload is used to use always https and it should come with the browser
 super cookie embedded isp, or uni level.
 always use https
-https only
+https only web traffic
+VPN secure all web traffic between me and VPN server. encrypt the channel used for comms, 
+Whatever we access its encryoter. company level it is used.
+if i access vpn then Me --> vpn service --> server then the server sees the vpn services ip not mine
+SSH can be used to even create a VPN but used to securly execute commands on other remote machine.
+ssh stanford.edu means weconnect
