@@ -743,4 +743,10 @@ Properties:
 Encryption in transit - encryption from point A to B then B to C but not when data is in the B. Like Gmail is B then users have secure connection and data encryption between transit and gmail to B,but when the data is in the gmail its not encypted and can be read by google.
 End - to end encryption - the data is secure all the way from A to B regardless of whatever third party or machine the data goes through. (Whatsapp)
 
-Deletion : the OS doesnt chn
+Deletion : the OS doesnt change the bits or reset it butjust forget that the location of the file is not used anymore. hence its available for future files and overwritten but not instantly. so it eventually gets deleted but not the moment you click delete. so secure files should not be just "Deleted" but secure deletion
+
+Secure deletion initially just deletes the capacity of the bits used by the files. they will no longer be usable. but now they are just filled with 0s so its not a meaningful data
+
+Encryption at rest : Encrypted the data when in hard drive, flash drive etc and require some means of authentication. they can delete, destroy or sell the computer or memory device but cannot access it
+
+full disk encyption : entire disk looks with random 0s and 1s until you authenticate. unless the hacker know the password the data is meaning less and cannot be useful. Disk can wear out so using full disk encryption makes sure all of the data is secure.
