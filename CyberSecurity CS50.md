@@ -1050,4 +1050,13 @@ https://proxy.company.com/?url=https://example.com
 
 > Even VPNs don't help if a CA has been installed on your device — everything still flows through the proxy first.
 
-
+---
+Malware malicious software
+virus : you click or run. human mistake or intervention needed
+how can we know if a software we have is a virus. we trust and install from trusted source
+More sandboxed then more restriction
+worm : travel computer to computer without the human intervention. listen to port then if not protected then spread.
+Botnet : Install software that constantly running, listening for command. its like taking control of PCs and when time all botnet can be used to simultaneously attack another computer or server.
+Denial of Service : Deny the service for others by overloading a server,
+Distributer DOS goes not from a single device but all of the device the botnet is.
+normal dos is easy to just block the
