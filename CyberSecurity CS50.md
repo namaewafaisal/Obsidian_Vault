@@ -906,3 +906,14 @@ Penetration Testing: to penetrate and see if there are open ports that should no
 Ethincal hacking is doing all of that legally within the company
 Blue team defend red team attack
 Firewall : software between you and outside to restrict things from and to the network
+firewalls are not absolute, they can be opened for certain services
+IP Address: firewall can block the traffic using IP address and port in the packet
+You can like block the sites in home network using firewall
+but only works if used the network thats been configured and if used mobile data then that firewall does not affect ours
+we can block all the ports even by the firewall
+Deep packet inspection can open the packet and block based on the data, domain name? Dont know how if that is encrypted
+it can block malware
+Proxy: a server or just a software sits between 2 points, it can eves drop and delete if it needs blocking or pass it. similar to firewall but needs configured between 2 point and not just in your device. 
+Companies can even put up a proxy so everything can be monitored by them and even add a certificate authority. 
+the addition CA can make you think that you are connected to the real site but it maybe a proxy server added by you company!! Oooh scary
+its like machine in the middle attack but its like facilitated by someone else and 
