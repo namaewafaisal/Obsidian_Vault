@@ -1062,3 +1062,5 @@ Distributer DOS goes not from a single device but all of the device the botnet i
 normal dos is easy to just block the IP but if its distributed you cant just block all the IP the requests are coming from
 Anti virus, Constantly or periodically checking the device for any malicious code
 Enabling auto matic update are safer cuz latest versions fix older bugs and weaknesses and know about the latest malwares hence protect better. but it can also bring changes that break the device
+Zero day attack - Adversary writes worm and start spreading in days that the companies and the world could not catch up in time
+security is layer by layer and not just a single software.
