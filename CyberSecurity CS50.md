@@ -835,88 +835,219 @@ Classical bits are strictly `0` or `1`. Qubits exist in **superposition** — bo
 
 # Securing Systems
 
-Everything will be built upon encryption
-## Wifi
-Wifi protected access the data is scrambled from point A to B. the router needs to have this feature
+> Everything builds on encryption.
 
-Http : Hypertext Transfer Protocol, Not secure, the way that the world wide web communicates.
-the data is not ecrypted in transit and can be evesdropped by a person in the middle if intercepted
-Machine in the middle attacks : Communicating between server and client is essentially just pass the html files. if the data is not encrypted then the machine in the middle can see, and modify the files like adding an "ad.js" script to enfore ads.
-Packet sniffing is same that if the packets are not encrypted then they can see and modify before passing them
-Example : GET /search?q=cats HTTP/3
-Host : example.com
-or POST /checkout HTTP/3
-Host : example.com
-number = 329834722987
-here the credit card number is also just plain text and thisis a security threat. if it contains a password then thats even bigger risk.
-IP address unique internet address. : hacker dont need to know IP to sniff packets but these packets have ip of seender and receiver too.
+---
 
-Cookie : like the identity memory or like a context
+## WiFi
+
+**WPA (WiFi Protected Access)** — encrypts data between your device and the router.
+
+- Without it, anyone on the same network can read your traffic
+- The router must support and enforce WPA
+
+---
+
+## HTTP vs HTTPS
+
+### HTTP
+
+- **HyperText Transfer Protocol** — how the web communicates
+- Data is **not encrypted** in transit
+- Vulnerable to interception and modification
+
+Example request:
+```http
+GET /search?q=cats HTTP/3
+Host: example.com
+```
+
+Example with sensitive data:
+```http
+POST /checkout HTTP/3
+Host: example.com
+
+card_number=3298347229871234
+```
+> Credit card in plain text — anyone intercepting sees it directly.
+
+---
+
+### Machine-in-the-Middle / Packet Sniffing
+
+- Attacker sits between client and server
+- Can **read** unencrypted packets
+- Can **modify** them — e.g. injecting a malicious `<script src="ad.js">` into HTML responses
+
+---
+
+### HTTPS
+
+- HTTP + **TLS encryption**
+- Data, headers, and cookies are encrypted
+- Packet metadata (sender/receiver IP, port) is still visible so routers can route — but the payload is safe
+
+---
+
+## Cookies & Session Hijacking
+
+### Cookie
+
+A token the server gives you after login so you don't re-authenticate every request.
+```http
 HTTP/3 200
-Set-Cookie:session = 1234abcd
-cookies can be like a pass you get so that you can show that to confirm identity instead of re auth
-A request might look like GET / HTTP/3 Cookie : session= 1234abcd
-Session Hijacking : stealing session id and using that to pose as the user and essentially getting control of the account
-HTTPS : Secure, data is encrypted althought the packet sender and receiver detailes are not so the router can route. but the data, header, cookie are safe.
+Set-Cookie: session=1234abcd
+```
 
-TLS Secure the request and use public key policy like certificate. 
-SSL its an older method and TLS is the newer method
-Certificate is signed. like X.509 
-it might have name etc
-Certificate Authority (CA) collection of company that signs, and each browser manufaturer trust certain companies in these to sign tehir reequest
+Subsequent request:
+```http
+GET / HTTP/3
+Cookie: session=1234abcd
+```
 
+### Session Hijacking
+
+- Attacker steals your session ID (via sniffing, XSS, etc.)
+- Uses it to impersonate you without needing your password
+
+> HTTPS prevents sniffing of cookies in transit.
+
+---
+
+## TLS & Certificates
+
+**TLS (Transport Layer Security)** — the protocol that secures HTTPS.
+SSL is the older, deprecated predecessor. TLS is the current standard.
+
+### How a Certificate Works
+
+- Server presents a certificate (X.509 format)
+- Contains: domain name, public key, expiry, issuer
+- Signed by a **Certificate Authority (CA)**
 ```mermaid
 graph LR
-A(certificate from the server) --> C[Algorithm] 
-C --> B(Hash)
-
-G[public key] --> K[Algorithm]
-R[Signature] --> K[Algorithm]
-K[Algorithm] --> H[Hash]
+    Server -->|sends| Cert[Certificate]
+    Cert -->|contains| PubKey[Public Key]
+    Cert -->|signed by| CA[Certificate Authority]
+    Browser -->|trusts CA?| Verify{Verify Signature}
+    Verify -->|yes| Secure[Secure Connection]
+    Verify -->|no| Warn[Warning Shown]
 ```
-I dont know what else happens in browser making the secure connection etc
 
-SSL Striping 
-when type example.com it tries http then https so when the first http connection is enough to help the adversary to make you connect to a third party making you think that you are in a secure connection but not.
-if i send GET / HTTP/3 HOST : example.com
-then the server says to redirect to https like
-HTTP/3 307(redirect) Location: https://example.com
+**Certificate Authorities (CAs)** — companies like DigiCert, Let's Encrypt that browsers inherently trust to sign certificates.
 
-this message is not encrypted cuz we are still in the http so they may change the location to another fishy site maybe or the redirect is from the hacker in the first place. it might be https://examp1e.com
+---
 
-HSTS : The server should make the user use https no matter what 
-Security tramnsport security max age 239820 what?
-includesubdomain
-the browser is enforced to useonly https for atleast a year so the very first request is the only vulnarable so reduced the window of not secure. preload is used to use always https and it should come with the browser
-super cookie embedded isp, or uni level.
-always use https
-https only web traffic
-VPN secure all web traffic between me and VPN server. encrypt the channel used for comms, 
-Whatever we access its encryoter. company level it is used.
-if i access vpn then Me --> vpn service --> server then the server sees the vpn services ip not mine
-SSH can be used to even create a VPN but used to securly execute commands on other remote machine.
-ssh stanford.edu means weconnect to the stanford and run commands in that device. and ssh is encrypted
-Outside of the envelope(packet)
-port number means the service that accepts or sends the packet. meaning 80 means the data should be opened by a web server or like browser and 80 is http. then if redirected then the port is 443 which is https
-22 for ssh
-they are listening and if not listening then no access
-Port Scanning:
-trying every port (brute force) find services running on a computer. not a usual practice to secure port scanning i think
-Penetration Testing: to penetrate and see if there are open ports that should not be and try to access it? or take advantage of it. good to find the flaws to fix that
-Ethincal hacking is doing all of that legally within the company
-Blue team defend red team attack
-Firewall : software between you and outside to restrict things from and to the network
-firewalls are not absolute, they can be opened for certain services
-IP Address: firewall can block the traffic using IP address and port in the packet
-You can like block the sites in home network using firewall
-but only works if used the network thats been configured and if used mobile data then that firewall does not affect ours
-we can block all the ports even by the firewall
-Deep packet inspection can open the packet and block based on the data, domain name? Dont know how if that is encrypted
-it can block malware
-Proxy: a server or just a software sits between 2 points, it can eves drop and delete if it needs blocking or pass it. similar to firewall but needs configured between 2 point and not just in your device. 
-Companies can even put up a proxy so everything can be monitored by them and even add a certificate authority. 
-the addition CA can make you think that you are connected to the real site but it maybe a proxy server added by you company!! Oooh scary
-its like machine in the middle attack but its like facilitated by someone else and we get tricked.
-they can use a url rewriter like this https://example.com/?url=.. like this instead of giving the url directly so that the link first opens the example.com which would be a proxy server then it redirects so that it know and ensure you open the right url. this is to help protect you but they know what we do.
-VPN secure you but not fully private cuz the service can disclose info if needed legally for example.
-if the device has a authority done and CA added then it can never be safe or atleast anonymous even with VPN cuz everything goes through the proxy.
+## SSL Stripping
+
+When you type `example.com`, browser first tries HTTP then redirects to HTTPS.
+```http
+HTTP/3 307 Redirect
+Location: https://example.com
+```
+
+> This redirect is unencrypted — attacker can intercept and change it to `https://examp1e.com`
+
+### HSTS (HTTP Strict Transport Security)
+
+Server tells browser: *only ever use HTTPS for this domain.*
+```
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+```
+
+- `max-age` — enforce HTTPS for at least this many seconds (~1 year)
+- `includeSubDomains` — applies to all subdomains
+- `preload` — browser ships with HTTPS-only list baked in, eliminating even the first HTTP request
+
+> The very first visit is the only remaining vulnerability. Preload eliminates that too.
+
+---
+
+## VPN
+
+Encrypts all traffic between you and the VPN server.
+```mermaid
+graph LR
+    You -->|encrypted tunnel| VPN[VPN Server]
+    VPN --> Website
+    Website -->|sees VPN IP, not yours| VPN
+```
+
+- Server sees VPN's IP, not yours
+- Useful for privacy and bypassing network-level restrictions
+- **Not fully private** — VPN provider can still log and disclose traffic if legally required
+
+---
+
+## SSH (Secure Shell)
+
+Encrypted protocol for remotely executing commands on another machine.
+```bash
+ssh user@stanford.edu
+```
+
+- Connects to the remote machine securely
+- All commands and responses are encrypted
+- Can also be used to tunnel other traffic (ad-hoc VPN)
+
+---
+
+## Ports
+
+A port number tells the OS which service should handle an incoming packet.
+
+| Port | Service  |
+|------|----------|
+| 80   | HTTP     |
+| 443  | HTTPS    |
+| 22   | SSH      |
+
+- A service must be **listening** on a port to accept connections
+- Closed port = no access
+
+### Port Scanning
+
+Trying all ports to discover what services are running on a machine.
+
+### Penetration Testing
+
+Authorized attempt to exploit open or misconfigured ports to find vulnerabilities before attackers do.
+
+- **Red team** — attackers
+- **Blue team** — defenders
+- **Ethical hacking** — doing this legally, within scope
+
+---
+
+## Firewall
+
+Software (or hardware) that filters traffic entering or leaving a network based on rules.
+
+- Can block by **IP address**, **port**, or **protocol**
+- Example: block all traffic on port 23 (Telnet)
+- **Deep Packet Inspection (DPI)** — opens and inspects packet contents, can block by domain or detect malware
+- Only effective on the network it controls — mobile data bypasses a home firewall
+
+---
+
+## Proxy
+
+A server sitting between client and destination that can inspect, filter, or modify traffic.
+```mermaid
+graph LR
+    You --> Proxy
+    Proxy -->|pass or block| Website
+```
+
+- Companies use proxies to monitor all employee web traffic
+- Can add a **custom CA** to intercept HTTPS — your device trusts the proxy's certificate, so it can decrypt, inspect, and re-encrypt everything
+- This is a **sanctioned machine-in-the-middle** — facilitated by your organization
+
+URL rewriting example (used by proxies to control outbound links):
+```
+https://proxy.company.com/?url=https://example.com
+```
+
+> Even VPNs don't help if a CA has been installed on your device — everything still flows through the proxy first.
+
+
