@@ -916,4 +916,7 @@ it can block malware
 Proxy: a server or just a software sits between 2 points, it can eves drop and delete if it needs blocking or pass it. similar to firewall but needs configured between 2 point and not just in your device. 
 Companies can even put up a proxy so everything can be monitored by them and even add a certificate authority. 
 the addition CA can make you think that you are connected to the real site but it maybe a proxy server added by you company!! Oooh scary
-its like machine in the middle attack but its like facilitated by someone else and 
+its like machine in the middle attack but its like facilitated by someone else and we get tricked.
+they can use a url rewriter like this https://example.com/?url=.. like this instead of giving the url directly so that the link first opens the example.com which would be a proxy server then it redirects so that it know and ensure you open the right url. this is to help protect you but they know what we do.
+VPN secure you but not fully private cuz the service can disclose info if needed legally for example.
+if the device has a authority done and CA added then it can never be safe or atleast anonymous even with VPN cuz everything goes through the proxy.
