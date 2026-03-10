@@ -835,3 +835,10 @@ Classical bits are strictly `0` or `1`. Qubits exist in **superposition** — bo
 
 # Securing Systems
 
+Everything will be built upon encryption
+## Wifi
+Wifi protected access the data is scrambled from point A to B. the router needs to have this feature
+
+Http : Hypertext Transfer Protocol, Not secure, the way that the world wide web communicates.
+the data is not ecrypted in transit and can be evesdropped by a person in the middle if intercepted
+Machine in the middle attacks : Communicating between server and client is essentially just pas
