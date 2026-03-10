@@ -750,3 +750,7 @@ Secure deletion initially just deletes the capacity of the bits used by the file
 Encryption at rest : Encrypted the data when in hard drive, flash drive etc and require some means of authentication. they can delete, destroy or sell the computer or memory device but cannot access it
 
 full disk encyption : entire disk looks with random 0s and 1s until you authenticate. unless the hacker know the password the data is meaning less and cannot be useful. Disk can wear out so using full disk encryption makes sure all of the data is secure.
+
+Ransomware : Hacker Encrypts all of the data in user's computer and have demands to settle before giving the key which may not be the actual key too.
+Quantum Computing : bits can be 0 and 1 at the same time. 1 qbit is 2 bit, 2 qbit is 4 bit etc.
+Its very fast and can perform billions of operations very fast and can brute force current encryption.
