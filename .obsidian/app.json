@@ -18,5 +18,6 @@
   "showUnsupportedFiles": true,
   "defaultViewMode": "preview",
   "readableLineLength": false,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "vimMode": true
 }

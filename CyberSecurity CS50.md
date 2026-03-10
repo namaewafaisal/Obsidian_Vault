@@ -738,3 +738,9 @@ Properties:
 - No password stored.
 - Resistant to phishing.
 - Unique key pair per website.
+
+
+Encryption in transit - encryption from point A to B then B to C but not when data is in the B. Like Gmail is B then users have secure connection and data encryption between transit and gmail to B,but when the data is in the gmail its not encypted and can be read by google.
+End - to end encryption - the data is secure all the way from A to B regardless of whatever third party or machine the data goes through. (Whatsapp)
+
+Deletion : the OS doesnt chn
