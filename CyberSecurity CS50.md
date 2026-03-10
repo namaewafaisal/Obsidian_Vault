@@ -861,3 +861,20 @@ HTTPS : Secure, data is encrypted althought the packet sender and receiver detai
 
 TLS Secure the request and use public key policy like certificate. 
 SSL its an older method and TLS is the newer method
+Certificate is signed. like X.509 
+it might have name etc
+Certificate Authority (CA) collection of company that signs, and each browser manufaturer trust certain companies in these to sign tehir reequest
+
+```mermaid
+graph LR
+A(certificate from the server) --> C[Algorithm] 
+C --> B(Hash)
+
+G[public key] --> K[Algorithm]
+R[Signature] --> K[Algorithm]
+K[Algorithm] --> H[Hash]
+```
+I dont know what else happens in browser making the secure connection etc
+
+SSL Striping 
+when type example.com it tries http then https so when the first http connection is 
