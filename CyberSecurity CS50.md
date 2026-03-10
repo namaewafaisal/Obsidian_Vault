@@ -895,4 +895,14 @@ VPN secure all web traffic between me and VPN server. encrypt the channel used f
 Whatever we access its encryoter. company level it is used.
 if i access vpn then Me --> vpn service --> server then the server sees the vpn services ip not mine
 SSH can be used to even create a VPN but used to securly execute commands on other remote machine.
-ssh stanford.edu means weconnect
+ssh stanford.edu means weconnect to the stanford and run commands in that device. and ssh is encrypted
+Outside of the envelope(packet)
+port number means the service that accepts or sends the packet. meaning 80 means the data should be opened by a web server or like browser and 80 is http. then if redirected then the port is 443 which is https
+22 for ssh
+they are listening and if not listening then no access
+Port Scanning:
+trying every port (brute force) find services running on a computer. not a usual practice to secure port scanning i think
+Penetration Testing: to penetrate and see if there are open ports that should not be and try to access it? or take advantage of it. good to find the flaws to fix that
+Ethincal hacking is doing all of that legally within the company
+Blue team defend red team attack
+Firewall : software between you and outside to restrict things from and to the network
