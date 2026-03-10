@@ -739,18 +739,99 @@ Properties:
 - Resistant to phishing.
 - Unique key pair per website.
 
+---
+## Protecting Data in Practice
 
-Encryption in transit - encryption from point A to B then B to C but not when data is in the B. Like Gmail is B then users have secure connection and data encryption between transit and gmail to B,but when the data is in the gmail its not encypted and can be read by google.
-End - to end encryption - the data is secure all the way from A to B regardless of whatever third party or machine the data goes through. (Whatsapp)
+### Encryption in Transit
 
-Deletion : the OS doesnt change the bits or reset it butjust forget that the location of the file is not used anymore. hence its available for future files and overwritten but not instantly. so it eventually gets deleted but not the moment you click delete. so secure files should not be just "Deleted" but secure deletion
+Data is encrypted while moving between points — A→B, B→C — but **not while resting at B**.
 
-Secure deletion initially just deletes the capacity of the bits used by the files. they will no longer be usable. but now they are just filled with 0s so its not a meaningful data
+Example:
+- Gmail (B) uses HTTPS to secure your connection
+- But once data lands on Google's servers, Google can read it
+- Secure on the road, not in the warehouse
 
-Encryption at rest : Encrypted the data when in hard drive, flash drive etc and require some means of authentication. they can delete, destroy or sell the computer or memory device but cannot access it
+---
 
-full disk encyption : entire disk looks with random 0s and 1s until you authenticate. unless the hacker know the password the data is meaning less and cannot be useful. Disk can wear out so using full disk encryption makes sure all of the data is secure.
+### End-to-End Encryption (E2EE)
 
-Ransomware : Hacker Encrypts all of the data in user's computer and have demands to settle before giving the key which may not be the actual key too.
-Quantum Computing : bits can be 0 and 1 at the same time. 1 qbit is 2 bit, 2 qbit is 4 bit etc.
-Its very fast and can perform billions of operations very fast and can brute force current encryption.
+Data is encrypted for the **entire journey** from sender to recipient.
+
+- No intermediate server (including the service provider) can read it
+- Only sender and recipient hold the keys
+
+Example:
+- WhatsApp messages are E2EE — WhatsApp's servers only see ciphertext
+
+---
+
+### Deletion (How It Actually Works)
+
+When you delete a file, the OS does **not** wipe the data.
+
+- It only marks that storage space as "available"
+- The original bits remain untouched until overwritten by a new file
+- Deleted files are often fully recoverable with forensic tools
+
+> Sensitive files should never be "just deleted."
+
+---
+
+### Secure Deletion
+
+Actively overwrites the file's storage space — typically with zeros or random data — so the original content cannot be recovered.
+
+- Basic: overwrite with `0`s
+- Stronger: multiple passes with random data
+
+---
+
+### Encryption at Rest
+
+Data is encrypted while stored on a physical device (hard drive, SSD, flash drive).
+
+- Requires authentication (password, key) to access
+- If the device is stolen, sold, or destroyed — data remains unreadable
+
+---
+
+### Full Disk Encryption
+
+The **entire disk** appears as random, meaningless bytes until authenticated.
+
+- Without the key, even pulling the drive and plugging it into another machine yields nothing
+- As disks age and wear, encryption ensures no residual data is recoverable
+
+Example:
+- BitLocker (Windows)
+- LUKS (Linux)
+
+---
+
+### Ransomware
+
+An attacker encrypts the victim's files with their own key, then demands payment for the decryption key.
+
+- There is **no guarantee** the provided key works or is real
+- Even paying does not ensure data recovery
+
+---
+
+### Quantum Computing (Threat to Cryptography)
+
+Classical bits are strictly `0` or `1`. Qubits exist in **superposition** — both simultaneously.
+
+| Qubits | States Represented |
+|--------|-------------------|
+| 1      | 2                 |
+| 2      | 4                 |
+| 3      | 8                 |
+| n      | 2ⁿ                |
+
+- Allows quantum computers to explore vast solution spaces in parallel
+- Algorithms like **Shor's algorithm** can factor large numbers efficiently
+- Threatens RSA and other encryption relying on factoring difficulty
+- Post-quantum cryptography is an active area of research
+
+# Securing Systems
+
