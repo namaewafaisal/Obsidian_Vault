@@ -1066,4 +1066,6 @@ Zero day attack - Adversary writes worm and start spreading in days that the com
 security is layer by layer and not just a single software.
 
 # Securing Software
-Html tags such as <a> can have both link and name. suppose the user
+Html tags such as `<a>` can have both link and name. suppose the user just saw the name or the name is also a link and he clicks it thinking it goes to the site shown in the name and but its not the name but the url that may be anything.
+
+They can also download the pages in the harward and use that so it looks legit andi money
