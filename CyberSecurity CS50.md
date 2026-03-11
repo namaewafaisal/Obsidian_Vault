@@ -1064,3 +1064,6 @@ Anti virus, Constantly or periodically checking the device for any malicious cod
 Enabling auto matic update are safer cuz latest versions fix older bugs and weaknesses and know about the latest malwares hence protect better. but it can also bring changes that break the device
 Zero day attack - Adversary writes worm and start spreading in days that the companies and the world could not catch up in time
 security is layer by layer and not just a single software.
+
+# Securing Software
+Html tags such as <a> can have both link and name. suppose the user
