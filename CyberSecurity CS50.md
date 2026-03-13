@@ -1091,4 +1091,10 @@ inline scripts are not executed but the files in src=" .. " are executed
 we can also make sure that for CSS using `Content-Security-Policy: style-src https://example.com`
 only execute css in separate file and only if its from example.com
 `<link href=" " rel="stylesheet">` is that the way we link the css
-SQL injection :
+SQL injection : same CRSS like but in SQL. if they list all the user with username the use like 
+```SQL
+SELECT * FROM users
+WHERE username = '{username}'
+```
+queries are generated dynamically using other backend tools like JPA or JDBC so this code is generated.
+{} is often used to format the variable inside with the actuall value. 
