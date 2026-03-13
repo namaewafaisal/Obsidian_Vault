@@ -1075,4 +1075,11 @@ Code injecton
 Cross site scripting : in search maybe if it uses the input of user directly. likr `<srcipt> alert('attack')</script>`
 although this is not harmful as much this is similar to how they actually use this vulnerablitly.
 Reflected attack : <a href="">fsf</a> search liiks like ... search?q=cats
-what if they use `<a href="https://www.google.com.search?q=%3Cscript%3Ealert%28%27attack%27%29%3C%2Fscript`
+what if they use `<a href="https://www.google.com.search?q=%3Cscript%3Ealert%28%27attack%27%29%3C%2Fscript%3E">cats</a>`
+notice that the script is converted into the supported format of a url. if you click thinking that you are gonna search the cats but it executes a js.
+what if it was alert(document.cookie) or send that somewhere else.
+blocking js is not a realistic solution cuz a lot of sites are rendered using js (maybe react)
+Stored attack : suppose you mail that script, its stored in server, and if they dont know then anytime the recepient opens mail then it executes. but we should be just shown the text instead of execution
+
+Character Excapes : the < or > are escaped like &lt;script&gt;
+generally these are escaped : < : &lt; , > : &gt , &amp; : & , &quot; :
