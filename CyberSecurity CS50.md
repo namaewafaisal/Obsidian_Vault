@@ -1119,4 +1119,7 @@ WHERE username = 'malan' AND password = ''
 OR '1'='1'
 ```
 Solution : 
-we use prepared statements. most DB query generation have already solved this so dont retry solving but just use whatever the solution is already available. db handles escape. for `'` we escape using another `''`
+we use prepared statements. most DB query generation have already solved this so dont retry solving but just use whatever the solution is already available. db handles escape. for `'` we escape using another as `''`
+Command Injection : 
+progrmming language have `system` to execute system level operations like maybe `system.exit(0)` or something like `eval`
+these language already always have an escaping solution so look into it.

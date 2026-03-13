@@ -12,7 +12,8 @@
 | [[02 - Protecting Data]] | Data Security | Hashing, salting, E2EE, encryption at rest, ransomware |
 | [[03 - Cryptography]] | Crypto Fundamentals | Symmetric, RSA, Diffie-Hellman, digital signatures |
 | [[04 - Securing Systems]] | Network Security | HTTP/S, TLS, cookies, firewall, VPN, proxy, SSH |
-| [[05 - Malware & Threats]] | Malware | Viruses, worms, botnets, DoS/DDoS, antivirus |
+| [[05 - Malware & Threats]] | Malware | Viruses, worms, botnets, DoS/DDoS, zero day, antivirus |
+| [[06 - Securing Software]] | App Security | XSS, SQL injection, command injection, CSP, escaping |
 
 ---
 
@@ -27,4 +28,7 @@ graph TD
     Accounts -->|credential threats| Malware[Malware & Threats]
     Systems -->|network threats| Malware
     Data -->|storage threats| Malware
+    
+    Malware -->|app-level threats| Software[Securing Software]
+    Systems -->|HTTP, cookies| Software
 ```
