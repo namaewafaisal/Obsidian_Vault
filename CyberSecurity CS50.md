@@ -1069,3 +1069,10 @@ security is layer by layer and not just a single software.
 Html tags such as `<a>` can have both link and name. suppose the user just saw the name or the name is also a link and he clicks it thinking it goes to the site shown in the name and but its not the name but the url that may be anything.
 
 They can also download the pages in the harward and use that so it looks legit andi money
+
+
+Code injecton
+Cross site scripting : in search maybe if it uses the input of user directly. likr `<srcipt> alert('attack')</script>`
+although this is not harmful as much this is similar to how they actually use this vulnerablitly.
+Reflected attack : <a href="">fsf</a> search liiks like ... search?q=cats
+what if they use `<a href="https://www.google.com.search?q=%3Cscript%3Ealert%28%27attack%27%29%3C%2Fscript`
