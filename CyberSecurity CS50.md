@@ -1109,6 +1109,14 @@ the adversery or the hacker can input
 ```json
 {
 "username" : "alex"
-"password" : "' OR 1 == 1 --"
+"password" : "' OR '1' == '1"
 }
 ```
+It becomes
+```SQL
+SELECT * FROM users
+WHERE username = 'malan' AND password = '' 
+OR '1'='1'
+```
+Solution : 
+we use prepared statements. most DB query generation have already solved this so dont retry solving but just use whatever the solution is already available. db handles escape. for `'` we escape using another `''`
