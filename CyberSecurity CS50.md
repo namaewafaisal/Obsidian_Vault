@@ -1098,3 +1098,17 @@ WHERE username = '{username}'
 ```
 queries are generated dynamically using other backend tools like JPA or JDBC so this code is generated.
 {} is often used to format the variable inside with the actuall value. 
+what if the input is as such `malan'; DELETE FROM users; --`
+the above syntax, `'` closed the input then DELETE is executed as code and not as username text then the remainling `'` is commented out using `--`
+same thing can be done to login like
+```SQL
+SELECT * FROM users
+WHERE username = '{username}' AND password = '{password}'
+```
+the adversery or the hacker can input
+```json
+{
+"username" : "alex"
+"password" : "' OR 1 == 1 --"
+}
+```
