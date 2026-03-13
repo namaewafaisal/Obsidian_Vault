@@ -1082,4 +1082,13 @@ blocking js is not a realistic solution cuz a lot of sites are rendered using js
 Stored attack : suppose you mail that script, its stored in server, and if they dont know then anytime the recepient opens mail then it executes. but we should be just shown the text instead of execution
 
 Character Excapes : the < or > are escaped like &lt;script&gt;
-generally these are escaped : < : &lt; , > : &gt , &amp; : & , &quot; :
+generally these are escaped : < : &lt; , > : &gt; , &amp; : & , &quot; : " , &apos; : '
+escaping inputs are usefull. 
+
+`HTTP headers : Content-Security-Policy: script-src https://example.com`
+it says the browser to not execute any `<script>` tag in the html and only execute from a separate js file
+inline scripts are not executed but the files in src=" .. " are executed
+we can also make sure that for CSS using `Content-Security-Policy: style-src https://example.com`
+only execute css in separate file and only if its from example.com
+`<link href=" " rel="stylesheet">` is that the way we link the css
+SQL injection :
