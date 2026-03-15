@@ -1123,3 +1123,8 @@ we use prepared statements. most DB query generation have already solved this so
 Command Injection : 
 progrmming language have `system` to execute system level operations like maybe `system.exit(0)` or something like `eval`
 these language already always have an escaping solution so look into it.
+
+
+Developer tools : We can see the html, css etc
+html css, are sent to the client. so any kind of restrictions made to the user should not be in the client side cuz user can override, edit the html , js anytime. so always restrict the permissions and access in the server side. for example <input disabled type="checkbox"> `<input disabled type="checkbox"> ` meaning you have intended to restrict the user from clicking this maybe based on their role etc. but they can edit and remove the disabled and click the checkbox. now if you just trust the checkbox and not verify if the user is allowed to click checkbox by you then its a security risk
+So client side validation helps user to have fast and ea
