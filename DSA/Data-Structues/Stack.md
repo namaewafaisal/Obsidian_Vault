@@ -93,7 +93,7 @@ Used in:
 ## 5. Implementation Variants
 
 - [Stack_Array_Implementation](Stack_Array_Implementation.md)
-- [Stack_LinkedList_Implementation](Stack_LinkedList_Implementation)
+- [Stack_LinkedList_Implementation](Stack_LinkedList_Implementation.md)
 - [Stack_Java_Collections](Stack_Java_Collections)
 
 ---

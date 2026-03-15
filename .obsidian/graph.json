@@ -8,7 +8,7 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:Leetcode  ",
+      "query": "path:Leetcode",
       "color": {
         "a": 1,
         "rgb": 16740493
@@ -34,6 +34,13 @@
         "a": 1,
         "rgb": 16723502
       }
+    },
+    {
+      "query": "path:DSA  ",
+      "color": {
+        "a": 1,
+        "rgb": 5862105
+      }
     }
   ],
   "collapse-display": true,
@@ -46,6 +53,6 @@
   "repelStrength": 11.1418685121107,
   "linkStrength": 0.705017301038062,
   "linkDistance": 500,
-  "scale": 0.1157209926137088,
+  "scale": 0.11290510980444751,
   "close": true
 }

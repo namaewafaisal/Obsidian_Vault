@@ -268,5 +268,5 @@ This is a core linked list pattern.
 
 - [[Singly_Linked_List]]
 - [[Circular_Linked_List]]
-- [Fast_Slow_Pointer_Technique](Fast_Slow_Pointer_Technique)
+- [Fast_Slow_Pointer_Technique](Fast_Slow_Pointer_Technique.md)
 - [[Two_Pointers_Pattern]]

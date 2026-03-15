@@ -53,4 +53,4 @@ peek()
 ## Linked Notes
 
 - [Queue](Queue.md)
-- [Deque](Deque)
+- [Deque](Deque.md)

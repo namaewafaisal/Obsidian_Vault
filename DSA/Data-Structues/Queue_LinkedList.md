@@ -96,4 +96,4 @@ tail = null
 ## Linked Notes
 
 - [[Queue]]
-- [Singly_Linked_List](Leetcode/DSA/Data-Structues/Singly_Linked_List.md)
+- [Singly_Linked_List](Singly_Linked_List.md)

@@ -89,7 +89,7 @@ Used in:
 - [Queue_Array_Naive](Queue_Array_Naive.md)
 - [Queue_Circular_Array](Queue_Circular_Array.md)
 - [Queue_LinkedList](Queue_LinkedList.md)
-- [Queue_Java_Collections](Queue_Java_Collections)
+- [Queue_Java_Collections](Queue_Java_Collections.md)
 
 ---
 

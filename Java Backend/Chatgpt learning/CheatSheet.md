@@ -67,7 +67,7 @@ public static void main(String[] args)
 
 ---
 
-## [[../../Leetcode/DSA/Data-Structues/Arrays_Fundamentals]]
+## [[../../DSA/Data-Structues/Arrays_Fundamentals]]
 
 ### Basics
 ```java

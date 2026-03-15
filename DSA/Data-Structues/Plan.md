@@ -24,8 +24,8 @@ tags:
 ## Phase 0 — Absolute Foundations
 *(Understand memory, indexing, and basic storage)*
 
-0. [Arrays_Fundamentals](Data-Structues/Arrays_Fundamentals.md)
-1. [Strings_Fundamentals](Data-Structues/Strings_Fundamentals.md)
+0. [Arrays_Fundamentals](Arrays_Fundamentals.md)
+1. [Strings_Fundamentals](Strings_Fundamentals.md)
 
 ---
 
@@ -53,14 +53,14 @@ tags:
 8. [[Dynamic Array]]
 9. [Prefix_Storage_Structures](Prefix_Storage_Structures.md)
 10. [[Sparse_Array]]
-11. [Frequency_Array](Frequency_Array)
+11. [Frequency_Array](Frequency_Array.md)
 
 ---
 
 ## Phase 4 — Hierarchical Structures
 *(First non-linear mental jump)*
 
-12. [[Tree — General Concept]]
+12. [Tree — General Concept](../Tree%20—%20General%20Concept.md)
 13. [[Binary Tree]]
 14. [[Binary Search Tree]]
 15. [[Balanced Trees — Conceptual]]
@@ -99,7 +99,7 @@ tags:
 
 25. [[Trie]]
 26. [[Disjoint Set (Union-Find)]]
-27. [[Segment Tree — Conceptual]]
+27. [[../Segment Tree — Conceptual]]
 28. [[Fenwick Tree — Conceptual]]
 
 ---

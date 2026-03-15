@@ -154,4 +154,4 @@ public class FrequencyArray {
 - [[Arrays_Fundamentals]] — underlying structure
 - [Hash_Map](Hash_Map) — fallback for unbounded or non-integer values
 - [[Counting_Sort]] — algorithm built entirely on this structure
-- [Sparse_Array](Sparse_Array) — related: both avoid storing what doesn't exist
+- [Sparse_Array](Sparse_Array.md) — related: both avoid storing what doesn't exist
