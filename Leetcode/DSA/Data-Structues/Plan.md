@@ -51,9 +51,9 @@ tags:
 *(Still linear, but conceptually richer)*
 
 8. [[Dynamic Array]]
-9. [[Prefix Storage Structures]]
-10. [[Sparse Array]]
-11. [[Frequency Array]]
+9. [Prefix_Storage_Structures](Prefix_Storage_Structures.md)
+10. [[Sparse_Array]]
+11. [Frequency_Array](Frequency_Array)
 
 ---
 
