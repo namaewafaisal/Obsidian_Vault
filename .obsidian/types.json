@@ -29,6 +29,7 @@
     "time-taken": "number",
     "time-taken(min)": "number",
     "difficulty": "text",
-    "date": "date"
+    "date": "date",
+    "TQ_show_toolbar": "checkbox"
   }
 }
