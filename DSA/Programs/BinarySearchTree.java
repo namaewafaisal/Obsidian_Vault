@@ -1,10 +1,10 @@
-public class BinarySearchTree {
+public class BinarySearchTree<T extends Comparable<T>>{
     static class Node{
-        int data;
-        Node left;
-        Node right;
+        T data;
+        Node<T> left;
+        Node<T> right;
 
-        Node(int data){
+        Node(T data){
             this.data = data;
             left = null;
             right = null;
