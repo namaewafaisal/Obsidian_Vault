@@ -1146,4 +1146,20 @@ POST : Even these are vulnerable. GET puts the info needed to get the data from 
 <input name="dp" type="hidden" value="B07XLQ2FSK">
 <button type="submit">Buy Now</button>
 </form>
+```
+here img tag wont trigger but using js we can make it trigger when site loads
+```js
+<script>
+document.forms[0].sumbit();
+</script>
+```
+We can solve it using csrf token
+```html
+<form action="https://www.amazon.com/" method="post">
+<input name="csrf_token" type="hiddem" value="1234abcd">
+<input name="dp" type="hidden" value="B07XLQ2FSK">
+<button type="submit">Buy Now</button>
+</form>
+```
 
+the csrf token is random and unique for the user. if amazon creates a random value and gives it to you then the buy now request works only when the csrf matches and if it doesnt then request ignored. the token is remembered by server to verify. since each user have unique and only works inside amazon.com then the hacker can
