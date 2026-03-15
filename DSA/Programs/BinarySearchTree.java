@@ -41,23 +41,35 @@ public class BinarySearchTree<T extends Comparable<T>>{
         inOrder(root.right);
     }
     public void delete(T data){
-        delete(root,data); 
+        root = delete(root,data); 
     }
-    private void delete(Node root, T data){
+    private Node<T> delete(Node<T> root, T data){
+        if(root == null) return null;
+        if(data.compareTo(root.data) < 0) root.left = delete(root.left, data);
+        else if(data.compareTo(root.data) > 0) root.right = delete(root.right, data);
+        else{
+            if(root.left == null) return root.right;
+            if(root.right == null) return root.left;
 
+            root.data = min(root.right);
+            root.right = delete(root.right, root.data);
+        }
+        return root;
     }
     
     public T max(){
-        max(root);
+        return max(root);
     }
     private T max(Node<T> root) {
-        
+        if(root.right == null) return root.data;
+        return max(root.right);
     }
     public T min(){
-        min(root);
+        return min(root);
     }
     private T min(Node<T> root){
-        
+        if(root.left == null) return root.data;
+        return min(root.left);
     }
 
 }
