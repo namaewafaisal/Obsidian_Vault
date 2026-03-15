@@ -1,10 +1,14 @@
-public class FrequencyArray<T> {
+public class FrequencyArray {
     int[] freq;
     int mostFreq;
-    FrequencyArray(T[] arr){
+    FrequencyArray(int[] arr){
         int maxRange = 0;
-        for(T t: arr){
+        for(int t: arr){
             maxRange = Math.max(maxRange,t);
+        }
+        freq = new int[maxRange+1];
+        for(int t : arr){
+            
         }
     }
 }
