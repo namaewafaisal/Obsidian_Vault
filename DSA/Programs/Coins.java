@@ -1,8 +1,5 @@
 import java.util.Arrays;
-
 public class Coins {
-
-    private class Solution {
     public int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount+1];
         Arrays.fill(dp,amount+1);
@@ -17,9 +14,10 @@ public class Coins {
         }
         return dp[amount] > amount ? -1 : dp[amount];
     }
-    public static void main(String[] args) {
-        Sol
-    }
     
-}
+    public static void main(String[] args) {
+        Coins sol = new Coins();
+        sol.coinChange(new int[]{1,3,4,5},10);
+
+    }
 }

@@ -294,7 +294,7 @@ folders:
 
 ### Grind 75 Only
 * [ ] [LC 53. Maximum Subarray](53.%20Maximum%20Subarray.md)
-* [ ] [LC 322. Coin Change](322.%20Coin%20Change.md)
+* [x] [LC 322. Coin Change](322.%20Coin%20Change.md) ✅ 2026-03-15
 * [ ] [LC 70. Climbing Stairs](70.%20Climbing%20Stairs.md)
 * [ ] [LC 416. Partition Equal Subset Sum](416.%20Partition%20Equal%20Subset%20Sum.md)
 * [ ] [LC 62. Unique Paths](62.%20Unique%20Paths.md)
