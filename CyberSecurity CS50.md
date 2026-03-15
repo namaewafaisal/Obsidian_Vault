@@ -1127,4 +1127,14 @@ these language already always have an escaping solution so look into it.
 
 Developer tools : We can see the html, css etc
 html css, are sent to the client. so any kind of restrictions made to the user should not be in the client side cuz user can override, edit the html , js anytime. so always restrict the permissions and access in the server side. for example <input disabled type="checkbox"> `<input disabled type="checkbox"> ` meaning you have intended to restrict the user from clicking this maybe based on their role etc. but they can edit and remove the disabled and click the checkbox. now if you just trust the checkbox and not verify if the user is allowed to click checkbox by you then its a security risk
-So client side validation helps user to have fast and ea
+So client side validation helps user to have fast and easier way to obey the restrictions but it should always be accompanied by server side validation too. trust you server not the client.
+`<input required type="text">`
+they can remove the required and send it. if you dont validate the values and ensure the required values are sent and not bypassed then it creates bigger problem in future
+
+Server side Validation
+Always have server side validation regardless of client side exist or not
+
+Cross site request Forgery
+
+GET -> the url (likely the api endpoint might) or the a tag can have literally the link of the product in amazon. 
+like in buy now case , there can be a url that when clicked it triggers the buy now. suppose the url is used elsewhere by a hacker
