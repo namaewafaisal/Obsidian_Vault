@@ -30,7 +30,34 @@ public class BinarySearchTree<T extends Comparable<T>>{
         if(data.compareTo(root.data) > 0) return search(root.right, data);
         return true;
     }
-    public 
+    public void inOrder(){
+        inOrder(root);
+        System.out.println();
+    }
+    private void inOrder(Node<T> root){
+        if(root == null) return;
+        inOrder(root.left);
+        System.out.print(root.data + " ");
+        inOrder(root.right);
+    }
+    public void delete(T data){
+        delete(root,data); 
+    }
+    private void delete(Node root, T data){
 
+    }
+    
+    public T max(){
+        max(root);
+    }
+    private T max(Node<T> root) {
+        
+    }
+    public T min(){
+        min(root);
+    }
+    private T min(Node<T> root){
+        
+    }
 
 }
