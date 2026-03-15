@@ -1137,4 +1137,13 @@ Always have server side validation regardless of client side exist or not
 Cross site request Forgery
 
 GET -> the url (likely the api endpoint might) or the a tag can have literally the link of the product in amazon. 
-like in buy now case , there can be a url that when clicked it triggers the buy now. suppose the url is used elsewhere by a hacker
+like in buy now case , there can be a url that when clicked it triggers the buy now. suppose the url is used elsewhere by a hacker in a another link or img take that is no way related to buying a product then clicking or even visiting the site it might trigger buy now and problems. like all the info needed for the buy now action in in the url then just opening a site that uses this link in image tag downloads that as though its a link which triggers like a get method,
+Anything that changes anything in the server (state) should not use GET. GET is meant to be a safer method.
+
+POST : Even these are vulnerable. GET puts the info needed to get the data from server in URL which makes it not private. so post method doesnt do that in url but puts in a packet with headers and etc
+```html
+<form action="https://www.amazon.com/" method="post">
+<input name="dp" type="hidden" value="B07XLQ2FSK">
+<button type="submit">Buy Now</button>
+</form>
+
