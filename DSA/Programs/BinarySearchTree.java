@@ -1,5 +1,5 @@
 public class BinarySearchTree<T extends Comparable<T>>{
-    static class Node{
+    private static class Node<T>{
         T data;
         Node<T> left;
         Node<T> right;
@@ -9,22 +9,10 @@ public class BinarySearchTree<T extends Comparable<T>>{
             left = null;
             right = null;
         }
-
-        private Node root;
-
-        public Node build(int data){
-            Node newNode = new Node(data);
-            if(root == null){
-                root = newNode;
-                return root;
-            }
-            if(data < root.data){
-                if()
-            }
-            else if(data > root.data){
-
-            }
-
-        }
+    }
+    private Node<T> root;
+    
+    public void insert(T data){
+        insert(root,data);
     }
 }
