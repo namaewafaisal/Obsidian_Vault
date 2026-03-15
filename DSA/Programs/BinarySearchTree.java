@@ -58,6 +58,7 @@ public class BinarySearchTree<T extends Comparable<T>>{
     }
     
     public T max(){
+        if (root == null) throw new RuntimeException("Tree is empty");
         return max(root);
     }
     private T max(Node<T> root) {
@@ -65,11 +66,26 @@ public class BinarySearchTree<T extends Comparable<T>>{
         return max(root.right);
     }
     public T min(){
+        if (root == null) throw new RuntimeException("Tree is empty");
         return min(root);
     }
     private T min(Node<T> root){
         if(root.left == null) return root.data;
         return min(root.left);
+    }
+
+    public static void main(String[] args) {
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+        bst.insert(2);
+        bst.insert(3);
+        bst.insert(4);
+        bst.insert(1);
+        bst.insert(5);
+        bst.inOrder();
+        System.out.println(bst.min());
+        System.out.println(bst.max());
+        bst.delete(2);
+        bst.inOrder();
     }
 
 }
