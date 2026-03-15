@@ -60,7 +60,7 @@ tags:
 ## Phase 4 — Hierarchical Structures
 *(First non-linear mental jump)*
 
-12. [Tree — General Concept](../Tree%20—%20General%20Concept.md)
+12. [Tree — General Concept](Tree%20—%20General%20Concept.md)
 13. [[Binary Tree]]
 14. [[Binary Search Tree]]
 15. [[Balanced Trees — Conceptual]]
