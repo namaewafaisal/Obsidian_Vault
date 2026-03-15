@@ -298,7 +298,7 @@ folders:
 * [ ] [LC 70. Climbing Stairs](70.%20Climbing%20Stairs.md)
 * [ ] [LC 416. Partition Equal Subset Sum](416.%20Partition%20Equal%20Subset%20Sum.md)
 * [ ] [LC 62. Unique Paths](62.%20Unique%20Paths.md)
-* [ ] [LC 198. House Robber](198.%20House%20Robber.md)
+* [x] [LC 198. House Robber](198.%20House%20Robber.md) ✅ 2026-03-15
 * [ ] [LC 152. Maximum Product Subarray](152.%20Maximum%20Product%20Subarray.md)
 * [ ] [LC 300. Longest Increasing Subsequence](300.%20Longest%20Increasing%20Subsequence.md)
 * [ ] [LC 55. Jump Game](55.%20Jump%20Game.md)
