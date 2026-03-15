@@ -2,7 +2,9 @@ public class FrequencyArray<T> {
     int[] freq;
     int mostFreq;
     FrequencyArray(T[] arr){
-        
-        for()
+        int maxRange = 0;
+        for(T t: arr){
+            maxRange = Math.max(maxRange,t);
+        }
     }
 }
