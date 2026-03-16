@@ -1162,4 +1162,10 @@ We can solve it using csrf token
 </form>
 ```
 
-the csrf token is random and unique for the user. if amazon creates a random value and gives it to you then the buy now request works only when the csrf matches and if it doesnt then request ignored. the token is remembered by server to verify. since each user have unique and only works inside amazon.com then the hacker can
+the csrf token is random and unique for the user. if amazon creates a random value and gives it to you then the buy now request works only when the csrf matches and if it doesnt then request ignored. the token is remembered by server to verify. since each user have unique and only works inside amazon.com then the hacker cannot get the csrf token of you that will trigger the buy now. 
+we can do that with not only a form but http calls as such
+```HTTP
+POST / HTTP/3
+Host: amazon.com
+X-CSRFToken: 1234abcd
+```
