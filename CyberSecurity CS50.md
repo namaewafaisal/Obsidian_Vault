@@ -1199,4 +1199,15 @@ How do these app stores enforce you to use the apps only from the store.
 author of software gets hash using own public and private key.
 the use private key and hash to sign the software. this software is from him cuz signature is his.
 when you install they check the digital signature and know if the software is from the store
-package managers : let us install software and they too sign the digital signature
+package managers : let us install software and they too sign the digital signature.
+OS also build native support for the checking.
+It still not mean that it is safe either
+if the developer changed the code with malicious now then it would not check the new malicious and only check the signature 
+its not like you trust. its just layers of safety mesures that make the hacker harder and harder to hack or exploit
+
+Bug Bounty
+if u have skills to find bugs then the company will pay you but the big you found the info needs to be confidential and you should have good intentions. the pay you if they are in the bug bounty marketplace.  so these make the skilled user use that in good way and if not then might fall into bad evil actions for money
+
+Common Vulnerabilities and Exposures (CVE) : All unique bugs are given a unique ID so they are tracked and ensured that softwares are upto date with them
+Common vulnerability scoring system (CVSS) : rank the bugs based on how huge the threats are
+Exploit Prediction Scoring system (EPSS) : predicting how likely and 
