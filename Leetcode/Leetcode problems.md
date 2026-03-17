@@ -301,7 +301,7 @@ folders:
 * [x] [LC 198. House Robber](198.%20House%20Robber.md) ✅ 2026-03-15
 * [ ] [LC 152. Maximum Product Subarray](152.%20Maximum%20Product%20Subarray.md)
 * [ ] [LC 300. Longest Increasing Subsequence](300.%20Longest%20Increasing%20Subsequence.md)
-* [ ] [LC 55. Jump Game](55.%20Jump%20Game.md)
+* [x] [LC 55. Jump Game](55.%20Jump%20Game.md) ✅ 2026-03-16
 * [ ] [LC 221. Maximal Square](221.%20Maximal%20Square.md)
 * [ ] [LC 91. Decode Ways](91.%20Decode%20Ways.md)
 * [ ] [LC 377. Combination Sum IV](377.%20Combination%20Sum%20IV.md)
