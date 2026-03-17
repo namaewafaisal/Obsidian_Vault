@@ -1169,3 +1169,9 @@ POST / HTTP/3
 Host: amazon.com
 X-CSRFToken: 1234abcd
 ```
+
+Arbitary Code Execution
+hacker running a code from your laptop which is not meant to be ran by the softwares you are using. maybe calling someone in whatsapp when whatsapp is not even opened by you maybe
+
+Same is RCE Remote Code Execution
+this is done often via 
