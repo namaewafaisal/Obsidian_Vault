@@ -1188,4 +1188,15 @@ figuring out password or something using the input. like maybe give input that m
 ### REverse Engineering
 ability to figure out how  the software is developed using the machine and figuring out the actual human readable program. malware analysis is done by analysing the machine code of a malware and figuiring how it was built to create and contibute a slution
 
-we can use open source software to ensure no malicious code is executed cuz we can see the actual code but it doesnt mean what you use is same as what is in the op
+we can use open source software to ensure no malicious code is executed cuz we can see the actual code but it doesnt mean what you use is same as what is in the open source code
+but open sourcing a code might let the hacker to identify bugs and weaknesses in code easily with little effort 
+hence there is Close Source
+Lesser threat cuz code not visible, RE is not that easy or accurate. but you cannot know if actual software runs what you need.
+open source is getting good cuz more good programmers are looking at the code and figuring out the weaknesses and fixing but if they are hacker then more problems
+Using app stores can add a layer of security checks before the software comes to your phone andd is safe
+
+How do these app stores enforce you to use the apps only from the store.
+author of software gets hash using own public and private key.
+the use private key and hash to sign the software. this software is from him cuz signature is his.
+when you install they check the digital signature and know if the software is from the store
+package managers : let us install software and they too sign the digital signature
