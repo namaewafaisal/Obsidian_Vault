@@ -1174,4 +1174,7 @@ Arbitary Code Execution
 hacker running a code from your laptop which is not meant to be ran by the softwares you are using. maybe calling someone in whatsapp when whatsapp is not even opened by you maybe
 
 Same is RCE Remote Code Execution
-this is done often via 
+this is done often via buffer overflow.
+buffer overflow happens when user given input is larger than the antipcipated input and cant be confined in the provided buffer and hence the data overflows into the already allocated memory instead of creating new bigger space in the empty space.
+memory stack here is bottom up meaning it starts from the bottom and grow upwards when more data or new method calls. new method calls jump the machine code to run the method and it also needs to remember where to return to meaning the parent method that called
+the adversay might somehow give the input as a 0s and 1s that might represent a code that is not a part of the actual program. this cannot be just given in input but if it happens
