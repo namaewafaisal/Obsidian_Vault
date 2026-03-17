@@ -1178,3 +1178,14 @@ this is done often via buffer overflow.
 buffer overflow happens when user given input is larger than the antipcipated input and cant be confined in the provided buffer and hence the data overflows into the already allocated memory instead of creating new bigger space in the empty space.
 memory stack here is bottom up meaning it starts from the bottom and grow upwards when more data or new method calls. new method calls jump the machine code to run the method and it also needs to remember where to return to meaning the parent method that called
 the adversay might somehow give the input as a 0s and 1s that might represent a code that is not a part of the actual program. this cannot be just given in input but if it happens
+![](Pasted%20image%2020260317162207.png)
+if the code attack is big enough it just overflows and space in go to machine code.
+if they are skilled enough, with enough trial and errors they can even make the go to machine code instruction to go to attack code that is given by the attacker.
+this is stack overflow and its a problem.
+### Cracking 
+figuring out password or something using the input. like maybe give input that makes the software to skip the password verification maybe
+
+### REverse Engineering
+ability to figure out how  the software is developed using the machine and figuring out the actual human readable program. malware analysis is done by analysing the machine code of a malware and figuiring how it was built to create and contibute a slution
+
+we can use open source software to ensure no malicious code is executed cuz we can see the actual code but it doesnt mean what you use is same as what is in the op
