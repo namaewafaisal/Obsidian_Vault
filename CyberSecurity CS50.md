@@ -1210,4 +1210,5 @@ if u have skills to find bugs then the company will pay you but the big you foun
 
 Common Vulnerabilities and Exposures (CVE) : All unique bugs are given a unique ID so they are tracked and ensured that softwares are upto date with them
 Common vulnerability scoring system (CVSS) : rank the bugs based on how huge the threats are
-Exploit Prediction Scoring system (EPSS) : predicting how likely and 
+Exploit Prediction Scoring system (EPSS) : predicting how likely this bug affects the user and how often. regardless of threat level its like a possibility.
+Known exploited vulnerabilities Catalog (KEV) : known to have exploited, the
