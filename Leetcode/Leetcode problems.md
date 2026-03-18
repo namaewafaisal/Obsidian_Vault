@@ -213,7 +213,7 @@ folders:
 * [ ] [LC 297. Serialize and Deserialize Binary Tree](297.%20Serialize%20and%20Deserialize%20Binary%20Tree.md)
 * [ ] [LC 543. Diameter of Binary Tree](543.%20Diameter%20of%20Binary%20Tree.md)
 * [ ] [LC 199. Binary Tree Right Side View](199.%20Binary%20Tree%20Right%20Side%20View.md)
-* [ ] [LC 104. Maximum Depth of Binary Tree](104.%20Maximum%20Depth%20of%20Binary%20Tree.md)
+* [x] [LC 104. Maximum Depth of Binary Tree](104.%20Maximum%20Depth%20of%20Binary%20Tree.md) ✅ 2026-03-18
 * [ ] [LC 105. Construct Binary Tree from Preorder and Inorder Traversal](Problems/105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal.md)
 * [ ] [LC 124. Binary Tree Maximum Path Sum](124.%20Binary%20Tree%20Maximum%20Path%20Sum.md)
 * [ ] [LC 113. Path Sum II](113.%20Path%20Sum%20II.md)
