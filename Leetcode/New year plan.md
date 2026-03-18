@@ -72,9 +72,9 @@
 
 ### Day 10: Dynamic Programming & Heaps
 
-* [ ] [70. Climbing Stairs](70.%20Climbing%20Stairs)
-* [ ] [322. Coin Change](322.%20Coin%20Change)
-* [ ] [198. House Robber](198.%20House%20Robber)
+* [ ] [70. Climbing Stairs](Problems/70.%20Climbing%20Stairs.md)
+* [ ] [322. Coin Change](Problems/322.%20Coin%20Change.md)
+* [ ] [198. House Robber](Problems/198.%20House%20Robber.md)
 * [ ] [973. K Closest Points to Origin](973.%20K%20Closest%20Points%20to%20Origin)
 * [ ] [215. Kth Largest Element in an Array](215.%20Kth%20Largest%20Element%20in%20an%20Array)
 
@@ -130,10 +130,10 @@
 
 ### Day 16: Dynamic Programming (Controlled Scope)
 
-* [ ] [[70. Climbing Stairs]] — DP base
-* [ ] [[198. House Robber]] — state decision DP
+* [ ] [[Problems/70. Climbing Stairs]] — DP base
+* [ ] [[Problems/198. House Robber]] — state decision DP
 * [ ] [[213. House Robber II]] — circular constraint
-* [ ] [[322. Coin Change]] — DP with impossible states
+* [ ] [[Problems/322. Coin Change]] — DP with impossible states
 
 ---
 

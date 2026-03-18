@@ -15,7 +15,7 @@ folders:
 ## 🏗️ Arrays (30 Questions) (3/30)
 
 ### College
-* [ ] [LC 1295. Find Numbers with Even Number of Digits](1295.%20Find%20Numbers%20with%20Even%20Number%20of%20Digits.md)
+* [ ] [LC 1295. Find Numbers with Even Number of Digits](Problems/1295.%20Find%20Numbers%20with%20Even%20Number%20of%20Digits.md)
 * [ ] [LC 2114. Maximum Number of Words Found in Sentences](2114.%20Maximum%20Number%20of%20Words%20Found%20in%20Sentences.md)
 * [x] [LC 238. Product of Array Except Self](238.%20Product%20of%20Array%20Except%20Self.md)
 * [x] [LC 53. Maximum Subarray](53.%20Maximum%20Subarray.md)
@@ -294,14 +294,14 @@ folders:
 
 ### Grind 75 Only
 * [ ] [LC 53. Maximum Subarray](53.%20Maximum%20Subarray.md)
-* [x] [LC 322. Coin Change](322.%20Coin%20Change.md) ✅ 2026-03-15
-* [ ] [LC 70. Climbing Stairs](70.%20Climbing%20Stairs.md)
+* [x] [LC 322. Coin Change](Problems/322.%20Coin%20Change.md) ✅ 2026-03-15
+* [ ] [LC 70. Climbing Stairs](Problems/70.%20Climbing%20Stairs.md)
 * [ ] [LC 416. Partition Equal Subset Sum](416.%20Partition%20Equal%20Subset%20Sum.md)
 * [ ] [LC 62. Unique Paths](62.%20Unique%20Paths.md)
-* [x] [LC 198. House Robber](198.%20House%20Robber.md) ✅ 2026-03-15
+* [x] [LC 198. House Robber](Problems/198.%20House%20Robber.md) ✅ 2026-03-15
 * [ ] [LC 152. Maximum Product Subarray](152.%20Maximum%20Product%20Subarray.md)
 * [ ] [LC 300. Longest Increasing Subsequence](300.%20Longest%20Increasing%20Subsequence.md)
-* [x] [LC 55. Jump Game](55.%20Jump%20Game.md) ✅ 2026-03-16
+* [x] [LC 55. Jump Game](Problems/55.%20Jump%20Game.md) ✅ 2026-03-16
 * [ ] [LC 221. Maximal Square](221.%20Maximal%20Square.md)
 * [ ] [LC 91. Decode Ways](91.%20Decode%20Ways.md)
 * [ ] [LC 377. Combination Sum IV](377.%20Combination%20Sum%20IV.md)
