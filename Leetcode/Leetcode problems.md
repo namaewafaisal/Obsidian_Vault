@@ -218,7 +218,7 @@ folders:
 * [ ] [LC 124. Binary Tree Maximum Path Sum](124.%20Binary%20Tree%20Maximum%20Path%20Sum.md)
 * [ ] [LC 113. Path Sum II](113.%20Path%20Sum%20II.md)
 * [ ] [LC 662. Maximum Width of Binary Tree](662.%20Maximum%20Width%20of%20Binary%20Tree.md)
-* [ ] [LC 100. Same Tree](100.%20Same%20Tree.md)
+* [x] [LC 100. Same Tree](100.%20Same%20Tree.md) ✅ 2026-03-18
 * [ ] [LC 103. Binary Tree Zigzag Level Order Traversal](103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.md)
 * [ ] [LC 437. Path Sum III](437.%20Path%20Sum%20III.md)
 * [ ] [LC 101. Symmetric Tree](101.%20Symmetric%20Tree.md)
