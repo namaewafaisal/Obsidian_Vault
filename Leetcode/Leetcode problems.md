@@ -211,7 +211,7 @@ folders:
 * [ ] [LC 102. Binary Tree Level Order Traversal](102.%20Binary%20Tree%20Level%20Order%20Traversal.md)
 * [ ] [LC 236. Lowest Common Ancestor of a Binary Tree](236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.md)
 * [ ] [LC 297. Serialize and Deserialize Binary Tree](297.%20Serialize%20and%20Deserialize%20Binary%20Tree.md)
-* [ ] [LC 543. Diameter of Binary Tree](543.%20Diameter%20of%20Binary%20Tree.md)
+* [x] [LC 543. Diameter of Binary Tree](543.%20Diameter%20of%20Binary%20Tree.md) ✅ 2026-03-18
 * [ ] [LC 199. Binary Tree Right Side View](199.%20Binary%20Tree%20Right%20Side%20View.md)
 * [x] [LC 104. Maximum Depth of Binary Tree](104.%20Maximum%20Depth%20of%20Binary%20Tree.md) ✅ 2026-03-18
 * [ ] [LC 105. Construct Binary Tree from Preorder and Inorder Traversal](Problems/105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal.md)
