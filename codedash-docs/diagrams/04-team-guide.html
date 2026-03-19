@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeDash — Team Guide</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #f9f9f7; margin: 0; padding: 24px; }
+  h2 { font-size: 18px; font-weight: 500; color: #1a1a18; margin: 0 0 4px; }
+  p  { font-size: 13px; color: #5f5e5a; margin: 0 0 20px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+  .card { background: #fff; border: 1px solid #e8e6e0; border-radius: 10px; padding: 16px; }
+  .card-title { font-size: 14px; font-weight: 500; color: #1a1a18; margin-bottom: 4px; }
+  .card-owner { font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; display: inline-block; margin-bottom: 10px; }
+  .card-desc { font-size: 12px; color: #5f5e5a; line-height: 1.7; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin: 2px 2px 2px 0; }
+  .p1 .card-owner { background: #FAEEDA; color: #633806; }
+  .p1 .tag { background: #FAEEDA; color: #854F0B; }
+  .p2 .card-owner { background: #E1F5EE; color: #085041; }
+  .p2 .tag { background: #E1F5EE; color: #0F6E56; }
+  .p3 .card-owner { background: #FAECE7; color: #712B13; }
+  .p3 .tag { background: #FAECE7; color: #993C1D; }
+  .p4 .card-owner { background: #EEEDFE; color: #3C3489; }
+  .p4 .tag { background: #EEEDFE; color: #534AB7; }
+  .rule { background: #fff; border: 1px solid #e8e6e0; border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; font-size: 12px; color: #3d3d3a; line-height: 1.7; }
+  .rule strong { color: #1a1a18; }
+  .warn { background: #FAECE7; border-color: #F0997B; }
+  .code { background: #1a1a18; color: #c2c0b6; border-radius: 8px; padding: 14px 16px; font-family: monospace; font-size: 12px; line-height: 1.8; margin-top: 8px; }
+  .qk { color: #7F77DD; } .qv { color: #5DCAA5; } .qc { color: #888780; font-style: italic; }
+  h3 { font-size: 15px; font-weight: 500; color: #1a1a18; margin: 24px 0 10px; }
+</style>
+</head>
+<body>
+<h2>Team Guide — Ownership Split and Git Workflow</h2>
+<p>4 people, each owning a vertical slice from backend to frontend. Nobody is just "the frontend person."</p>
+
+<div class="grid">
+  <div class="card p1">
+    <div class="card-title">Person 1 — Mohamed (repo owner)</div>
+    <div class="card-owner">Sync Engine Core</div>
+    <div class="card-desc">
+      The hardest and most interview-worthy part. Own this completely.
+      <br><br>
+      <span class="tag">BullMQ queue setup</span>
+      <span class="tag">Cron scheduler</span>
+      <span class="tag">Two-write pattern</span>
+      <span class="tag">Rate limiter wrapper</span>
+      <span class="tag">Failure handling</span>
+      <span class="tag">Dead letter queue</span>
+      <span class="tag">Redis cache middleware</span>
+      <span class="tag">MongoDB index strategy</span>
+      <br><br>
+      <strong>Interview answer:</strong> "I designed the async sync architecture — a multi-queue BullMQ system with per-platform concurrency control, rate limiting with jitter, and a two-write pattern that updates both a full data store and a denormalized summary document."
+    </div>
+  </div>
+
+  <div class="card p2">
+    <div class="card-title">Person 2</div>
+    <div class="card-owner">LeetCode + CF adapters + Leaderboard UI</div>
+    <div class="card-desc">
+      Two most reliable platforms end-to-end, plus the primary dashboard view.
+      <br><br>
+      <span class="tag">LeetCode GraphQL adapter</span>
+      <span class="tag">Codeforces REST adapter</span>
+      <span class="tag">Summary extractors (lc.*, cf.*)</span>
+      <span class="tag">Leaderboard table (TanStack)</span>
+      <span class="tag">Platform filter toggle</span>
+      <span class="tag">Year/dept filter dropdowns</span>
+      <span class="tag">Sort controls</span>
+      <br><br>
+      <strong>Interview answer:</strong> "I built the LeetCode and Codeforces data pipeline end-to-end and the leaderboard UI with server-side filtering and multi-column sorting."
+    </div>
+  </div>
+
+  <div class="card p3">
+    <div class="card-title">Person 3</div>
+    <div class="card-owner">Scraping adapters + Admin sync panel</div>
+    <div class="card-desc">
+      The technically tricky platforms and operational visibility.
+      <br><br>
+      <span class="tag">CodeChef Cheerio scraper</span>
+      <span class="tag">GFG Cheerio scraper</span>
+      <span class="tag">HackerRank Playwright scraper</span>
+      <span class="tag">Separate Render worker for Playwright</span>
+      <span class="tag">Sync log writes</span>
+      <span class="tag">Admin sync panel UI</span>
+      <span class="tag">Failed jobs view</span>
+      <span class="tag">Force re-sync button</span>
+      <br><br>
+      <strong>Interview answer:</strong> "I built scraping adapters for three platforms including Playwright headless browser for HackerRank, implemented anti-detection strategies, and built the admin observability panel."
+    </div>
+  </div>
+
+  <div class="card p4">
+    <div class="card-title">Person 4</div>
+    <div class="card-owner">Student mgmt + Auth + Detail page + Docker</div>
+    <div class="card-desc">
+      User-facing reliability and open source deployability.
+      <br><br>
+      <span class="tag">Student CRUD API</span>
+      <span class="tag">Bulk CSV import</span>
+      <span class="tag">Handle management</span>
+      <span class="tag">JWT auth (admin / viewer roles)</span>
+      <span class="tag">Student detail page</span>
+      <span class="tag">Stale data warning badges</span>
+      <span class="tag">docker-compose.yml</span>
+      <span class="tag">DEPLOY.md</span>
+      <span class="tag">GitHub Actions CI</span>
+      <br><br>
+      <strong>Interview answer:</strong> "I owned the student management system, JWT role-based auth, the detail page aggregating all platforms, and the Docker setup that lets institutions self-host in 5 minutes."
+    </div>
+  </div>
+</div>
+
+<h3>Git workflow</h3>
+<div class="code">
+<span class="qc">Branch strategy:</span><br>
+main          <span class="qc">← protected, production-ready only</span><br>
+dev           <span class="qc">← integration branch, all PRs merge here first</span><br>
+feature/*     <span class="qc">← individual feature branches</span><br>
+<br>
+<span class="qc">Example branches:</span><br>
+<span class="qv">feature/sync-engine-core</span><br>
+<span class="qv">feature/leetcode-adapter</span><br>
+<span class="qv">feature/leaderboard-ui</span><br>
+<br>
+<span class="qc">Commit convention:</span><br>
+<span class="qv">feat:</span> add BullMQ queue setup for leetcode sync<br>
+<span class="qv">fix:</span>  handle null rating in codeforces adapter<br>
+<span class="qv">chore:</span> add docker-compose for local dev<br>
+<span class="qv">docs:</span> update DEPLOY.md with Atlas setup steps
+</div>
+
+<h3>Rules that keep teams from falling apart</h3>
+
+<div class="rule warn">
+  <strong>No one is "just the frontend person."</strong> Every person owns a backend component too. If someone only writes React, they have nothing interesting to say in a backend interview — and this project's value is in the backend.
+</div>
+
+<div class="rule">
+  <strong>Agree on API contracts early.</strong> Before building adapters, agree on the shape of what each adapter returns and what the queue job object looks like. Write this in a <code>CONTRACTS.md</code> file. Person 2 and Person 3 both feed into Person 1's queue — they need to agree on the job schema first.
+</div>
+
+<div class="rule">
+  <strong>GitHub Issues for every task.</strong> Every feature is an issue, assigned to an owner, with a rough due date. No ambiguity about who is doing what.
+</div>
+
+<div class="rule">
+  <strong>Don't go 3+ days without a commit</strong> if you're supposed to be building. A dead repo is a red flag in interviews. Keep the contribution graph green.
+</div>
+
+<div class="rule warn">
+  <strong>Don't rescue teammates silently.</strong> If you do someone else's feature because they're stuck, note it in the PR description. You get the credit for the commit, not them.
+</div>
+
+<div class="rule">
+  <strong>PR rule:</strong> Every PR to <code>dev</code> needs 1 review. Person 1 (Mohamed) does final merge to <code>main</code>. This is already set up via GitHub branch rulesets — you know how to do this from the OTT project.
+</div>
+</body>
+</html>

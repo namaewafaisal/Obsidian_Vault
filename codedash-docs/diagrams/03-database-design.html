@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeDash — Database Design</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #f9f9f7; margin: 0; padding: 24px; }
+  h2 { font-size: 18px; font-weight: 500; color: #1a1a18; margin: 0 0 4px; }
+  p  { font-size: 13px; color: #5f5e5a; margin: 0 0 20px; }
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 14px; font-weight: 500; color: #1a1a18; margin-bottom: 6px; }
+  .section-sub { font-size: 12px; color: #888780; margin-bottom: 12px; }
+  .doc-box { background: #fff; border: 1px solid #e8e6e0; border-radius: 10px; padding: 16px; font-size: 12px; font-family: monospace; color: #3d3d3a; line-height: 1.8; overflow-x: auto; }
+  .key { color: #185FA5; font-weight: 500; }
+  .val-str { color: #3B6D11; }
+  .val-num { color: #BA7517; }
+  .val-date { color: #993556; }
+  .val-obj { color: #534AB7; }
+  .comment { color: #888780; font-style: italic; }
+  .field-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+  .pill { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 500; font-family: system-ui; }
+  .pill-teal { background: #E1F5EE; color: #085041; border: 1px solid #9FE1CB; }
+  .pill-amber { background: #FAEEDA; color: #633806; border: 1px solid #FAC775; }
+  .pill-purple { background: #EEEDFE; color: #3C3489; border: 1px solid #CECBF6; }
+  .pill-gray { background: #F1EFE8; color: #2C2C2A; border: 1px solid #D3D1C7; }
+  .query-box { background: #1a1a18; color: #c2c0b6; border-radius: 8px; padding: 14px 16px; font-family: monospace; font-size: 12px; line-height: 1.8; margin-top: 8px; }
+  .qk { color: #7F77DD; } .qv { color: #5DCAA5; } .qc { color: #EF9F27; }
+  table { border-collapse: collapse; width: 100%; font-size: 12px; }
+  th { background: #f1efe8; padding: 7px 12px; text-align: left; font-weight: 500; border-bottom: 1px solid #e8e6e0; }
+  td { padding: 7px 12px; border-bottom: 1px solid #f1efe8; }
+</style>
+</head>
+<body>
+<h2>Database Design — Two Collections</h2>
+<p>One flat students document for all leaderboard queries. A separate platform_data document for full detail per student per platform.</p>
+
+<div class="section">
+  <div class="section-title">Collection 1: students</div>
+  <div class="section-sub">One document per student (~2KB). Used for ALL leaderboard and filter queries. Never joined.</div>
+  <div class="doc-box">
+{<br>
+&nbsp;&nbsp;<span class="key">_id</span>: ObjectId,<br>
+&nbsp;&nbsp;<span class="key">roll_number</span>: <span class="val-str">"21CSE001"</span>,<br>
+&nbsp;&nbsp;<span class="key">name</span>: <span class="val-str">"Mohamed Faisal"</span>,<br>
+&nbsp;&nbsp;<span class="key">department</span>: <span class="val-str">"CSE"</span>,<br>
+&nbsp;&nbsp;<span class="key">year</span>: <span class="val-num">3</span>,<br>
+&nbsp;&nbsp;<span class="key">is_active</span>: <span class="val-num">true</span>,<br>
+<br>
+&nbsp;&nbsp;<span class="comment">// platform handles — what the student registered</span><br>
+&nbsp;&nbsp;<span class="key">handles</span>: { <span class="key">leetcode</span>: <span class="val-str">"faisal_lc"</span>, <span class="key">codeforces</span>: <span class="val-str">"faisal_cf"</span>, ... },<br>
+<br>
+&nbsp;&nbsp;<span class="comment">// denormalized summary — written by sync engine, powers all queries</span><br>
+&nbsp;&nbsp;<span class="key">lc</span>: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">solved</span>: <span class="val-num">234</span>, <span class="key">easy</span>: <span class="val-num">69</span>, <span class="key">medium</span>: <span class="val-num">120</span>, <span class="key">hard</span>: <span class="val-num">45</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">rating</span>: <span class="val-num">1820</span>, <span class="key">contest_rank</span>: <span class="val-num">45230</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">last_synced</span>: <span class="val-date">ISODate("2025-03-18T02:11:00Z")</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">sync_status</span>: <span class="val-str">"ok"</span> <span class="comment">// "ok" | "failed" | "never"</span><br>
+&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;<span class="key">cf</span>: { <span class="key">rating</span>: <span class="val-num">1450</span>, <span class="key">max_rating</span>: <span class="val-num">1512</span>, <span class="key">rank</span>: <span class="val-str">"specialist"</span>, ... },<br>
+&nbsp;&nbsp;<span class="key">cc</span>: { <span class="key">rating</span>: <span class="val-num">1580</span>, <span class="key">stars</span>: <span class="val-num">3</span>, <span class="key">solved</span>: <span class="val-num">89</span>, ... },<br>
+&nbsp;&nbsp;<span class="key">hr</span>: { <span class="key">badges</span>: <span class="val-num">12</span>, <span class="key">gold_badges</span>: <span class="val-num">3</span>, ... },<br>
+&nbsp;&nbsp;<span class="key">gfg</span>: { <span class="key">solved</span>: <span class="val-num">145</span>, <span class="key">score</span>: <span class="val-num">620</span>, ... }<br>
+}
+  </div>
+  <div style="margin-top:10px">
+    <div style="font-size:12px; color:#5f5e5a; margin-bottom:6px">Fields used by each view:</div>
+    <div class="field-row">
+      <span class="pill pill-teal">name, roll_number, department, year</span>
+      <span class="pill pill-amber">lc.solved, lc.hard, lc.medium, lc.rating</span>
+      <span class="pill pill-purple">cf.rating, cf.rank</span>
+      <span class="pill pill-gray">cc.stars, hr.badges, gfg.score</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Collection 2: platform_data</div>
+  <div class="section-sub">One document per student per platform (~5–20KB). Only fetched when student detail page is opened.</div>
+  <div class="doc-box">
+{<br>
+&nbsp;&nbsp;<span class="key">student_id</span>: ObjectId, <span class="comment">// ref to students._id</span><br>
+&nbsp;&nbsp;<span class="key">platform</span>: <span class="val-str">"leetcode"</span>,<br>
+&nbsp;&nbsp;<span class="key">username</span>: <span class="val-str">"faisal_lc"</span>,<br>
+&nbsp;&nbsp;<span class="key">fetched_at</span>: <span class="val-date">ISODate</span>,<br>
+&nbsp;&nbsp;<span class="key">sync_status</span>: <span class="val-str">"ok"</span>,<br>
+&nbsp;&nbsp;<span class="key">consecutive_failures</span>: <span class="val-num">0</span>,<br>
+<br>
+&nbsp;&nbsp;<span class="comment">// full raw payload — shape differs per platform, stored as-is</span><br>
+&nbsp;&nbsp;<span class="key">data</span>: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">recent_submissions</span>: [ <span class="comment">/* last 20 */</span> ],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">topic_tags</span>: { <span class="val-str">"dynamic-programming"</span>: <span class="val-num">34</span>, <span class="val-str">"graphs"</span>: <span class="val-num">12</span> },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">badges</span>: [ <span class="val-str">"50 Days Badge"</span>, <span class="val-str">"Annual 2024"</span> ],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">contest_history</span>: [ <span class="comment">/* array of contests */</span> ]<br>
+&nbsp;&nbsp;}<br>
+}
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Indexes</div>
+  <div class="query-box">
+<span class="qc">// leaderboard: year filter + lc sort — covers 80% of queries</span><br>
+<span class="qv">db.students</span>.<span class="qk">createIndex</span>({ year: 1, <span class="qv">"lc.solved"</span>: -1 })<br>
+<span class="qv">db.students</span>.<span class="qk">createIndex</span>({ year: 1, <span class="qv">"lc.hard"</span>: -1 })<br>
+<span class="qv">db.students</span>.<span class="qk">createIndex</span>({ year: 1, <span class="qv">"cf.rating"</span>: -1 })<br>
+<span class="qv">db.students</span>.<span class="qk">createIndex</span>({ department: 1, year: 1 })<br>
+<br>
+<span class="qc">// detail page lookup</span><br>
+<span class="qv">db.platform_data</span>.<span class="qk">createIndex</span>({ student_id: 1, platform: 1 }, { unique: true })
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Query examples</div>
+  <div class="query-box">
+<span class="qc">// 3rd year, LC solved > 200, sort by hard desc</span><br>
+<span class="qv">Student</span>.<span class="qk">find</span>({<br>
+&nbsp;&nbsp;year: 3,<br>
+&nbsp;&nbsp;<span class="qv">"lc.solved"</span>: { $gte: 200 },<br>
+&nbsp;&nbsp;<span class="qv">"lc.sync_status"</span>: <span class="qv">"ok"</span><br>
+}).<span class="qk">sort</span>({ <span class="qv">"lc.hard"</span>: -1 }).<span class="qk">limit</span>(100)<br>
+<br>
+<span class="qc">// student detail — two parallel fetches, no join</span><br>
+<span class="qk">Promise</span>.all([<br>
+&nbsp;&nbsp;<span class="qv">Student</span>.<span class="qk">findById</span>(id),<br>
+&nbsp;&nbsp;<span class="qv">PlatformData</span>.<span class="qk">find</span>({ student_id: id }) <span class="qc">// max 5 docs</span><br>
+])
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Storage estimate — 2000 students</div>
+  <table>
+    <tr><th>Collection</th><th>Per document</th><th>Total</th></tr>
+    <tr><td>students</td><td>~2KB</td><td>~4MB</td></tr>
+    <tr><td>platform_data (LeetCode)</td><td>~15KB</td><td>~30MB</td></tr>
+    <tr><td>platform_data (Codeforces)</td><td>~8KB</td><td>~16MB</td></tr>
+    <tr><td>platform_data (others × 3)</td><td>~3KB</td><td>~18MB</td></tr>
+    <tr><td>sync_log</td><td>~0.5KB</td><td>~5MB/month</td></tr>
+    <tr style="font-weight:500; background:#f1efe8"><td>Total</td><td></td><td>~75MB (Atlas free tier is 512MB)</td></tr>
+  </table>
+</div>
+</body>
+</html>

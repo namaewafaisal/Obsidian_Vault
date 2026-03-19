@@ -41,8 +41,8 @@ tags: [data-structure, non-linear--trees-self-balancing]
 ## 4. Operations & Complexity
 
 | Operation | Time Complexity | Space | Notes |
-|---|---|---|---|
-| | | | |
+| --------- | --------------- | ----- | ----- |
+|           |                 |       |       |
 
 ---
 

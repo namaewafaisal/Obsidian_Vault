@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeDash — Two View Design</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #f9f9f7; margin: 0; padding: 24px; }
+  h2 { font-size: 18px; font-weight: 500; color: #1a1a18; margin: 0 0 4px; }
+  p  { font-size: 13px; color: #5f5e5a; margin: 0 0 20px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .view-card { background: #fff; border: 1px solid #e8e6e0; border-radius: 10px; padding: 16px; }
+  .view-title { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+  .view-sub { font-size: 11px; color: #888780; margin-bottom: 12px; }
+  .flow-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 12px; color: #3d3d3a; line-height: 1.6; }
+  .step-num { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; flex-shrink: 0; margin-top: 1px; }
+  .teal-num { background: #E1F5EE; color: #085041; }
+  .purple-num { background: #EEEDFE; color: #3C3489; }
+  .code { background: #1a1a18; color: #c2c0b6; border-radius: 8px; padding: 12px 14px; font-family: monospace; font-size: 11px; line-height: 1.8; margin-top: 10px; }
+  .qk { color: #7F77DD; } .qv { color: #5DCAA5; } .qc { color: #888780; }
+  h3 { font-size: 15px; font-weight: 500; color: #1a1a18; margin: 24px 0 10px; }
+  .platform-note { background: #FAEEDA; border: 1px solid #FAC775; border-radius: 8px; padding: 12px 16px; font-size: 12px; color: #633806; line-height: 1.7; margin-top: 20px; }
+</style>
+</head>
+<body>
+<h2>Two Views, Two Query Patterns</h2>
+<p>The leaderboard never touches platform_data. The detail page never re-runs a filter query. Clean separation.</p>
+
+<div class="two-col">
+  <div class="view-card">
+    <div class="view-title" style="color:#085041">View 1 — Leaderboard / dashboard</div>
+    <div class="view-sub">Filter year, platform, min solved. Sort by hard/medium/rating.</div>
+
+    <div class="flow-step">
+      <div class="step-num teal-num">1</div>
+      <div>Faculty selects: Year 3 / LeetCode / min 200 solved / sort by hard</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-num teal-num">2</div>
+      <div>API checks Redis cache — key is hash of query params. Cache HIT = instant response.</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-num teal-num">3</div>
+      <div>Cache MISS — query <strong>students collection only</strong>. Compound index makes this ~5ms.</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-num teal-num">4</div>
+      <div>Store result in Redis with 1hr TTL. Return to client.</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-num teal-num">5</div>
+      <div>Faculty switches to Codeforces view — client-side re-sort of already-fetched data. Zero new DB query.</div>
+    </div>
+
+    <div class="code">
+<span class="qv">Student</span>.<span class="qk">find</span>({<br>
+&nbsp;&nbsp;year: 3,<br>
+&nbsp;&nbsp;<span class="qv">"lc.solved"</span>: { $gte: 200 }<br>
+}).<span class="qk">sort</span>({ <span class="qv">"lc.hard"</span>: -1 })<br>
+ .<span class="qk">select</span>(<span class="qv">"name roll lc cf cc"</span>)<br>
+ .<span class="qk">limit</span>(100)<br>
+<span class="qc">// hits: { year:1, "lc.solved":-1 } index</span>
+    </div>
+  </div>
+
+  <div class="view-card">
+    <div class="view-title" style="color:#3C3489">View 2 — Student detail page</div>
+    <div class="view-sub">Click any row in the leaderboard to open a student's full profile.</div>
+
+    <div class="flow-step">
+      <div class="step-num purple-num">1</div>
+      <div>User clicks student row. Browser requests <code>/api/students/:id/detail</code></div>
+    </div>
+    <div class="flow-step">
+      <div class="step-num purple-num">2</div>
+      <div>Two parallel DB queries fire simultaneously (Promise.all)</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-num purple-num">3</div>
+      <div><code>students.findById</code> — returns basic info + summary stats (already have these from leaderboard, but confirming freshness)</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-num purple-num">4</div>
+      <div><code>platform_data.find({student_id})</code> — returns at most 5 docs (one per platform). Full submissions, topic tags, contest history.</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-num purple-num">5</div>
+      <div>Merge and return. Stale platforms (last_synced > 3 days) get a warning badge in the UI.</div>
+    </div>
+
+    <div class="code">
+<span class="qk">const</span> [student, platforms] =<br>
+&nbsp;&nbsp;<span class="qk">await</span> <span class="qv">Promise</span>.all([<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="qv">Student</span>.<span class="qk">findById</span>(id),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="qv">PlatformData</span>.<span class="qk">find</span>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ student_id: id }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;) <span class="qc">// max 5 docs total</span><br>
+&nbsp;&nbsp;])
+    </div>
+  </div>
+</div>
+
+<h3>Platform switching on the leaderboard — no extra query</h3>
+<div style="background:#fff; border:1px solid #e8e6e0; border-radius:8px; padding:14px 16px; font-size:12px; color:#3d3d3a; line-height:1.7">
+  When faculty switches from "LeetCode" to "Codeforces" view, you do NOT re-query the DB.
+  All summary numbers (<code>lc.*</code>, <code>cf.*</code>, <code>cc.*</code>) are already embedded in the same student documents
+  that were fetched for the initial leaderboard. The frontend re-sorts the existing data
+  by <code>cf.rating</code> instead of <code>lc.hard</code>. This is either a client-side sort (instant) or
+  a new API call to the same endpoint with a different sort key (fast, often cached).
+</div>
+
+<div class="platform-note">
+  <strong>Stale data — never show zeros.</strong> If a platform sync failed, show the last known
+  value with a "last updated X days ago" badge. Empty cells are confusing — was the score 0
+  or did the sync fail? Always show something with context. The <code>lc.sync_status</code> and
+  <code>lc.last_synced</code> fields in the student document are exactly for this.
+</div>
+</body>
+</html>
