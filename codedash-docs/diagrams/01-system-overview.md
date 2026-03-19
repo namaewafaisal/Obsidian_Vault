@@ -1,0 +1,70 @@
+<body>
+<h2>System Overview — Three Tiers</h2>
+<p>Client → API → Data, with the sync engine running separately in the background.</p>
+<svg width="100%" viewBox="0 0 720 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- CLIENT TIER -->
+  <rect x="40" y="20" width="640" height="74" rx="14" fill="none" stroke="#d3d1c7" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="58" y="38" font-size="11" fill="#888780">CLIENT TIER</text>
+  <rect x="60" y="44" width="176" height="40" rx="8" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.8"/>
+  <text x="148" y="69" text-anchor="middle" font-size="13" font-weight="500" fill="#3C3489">Next.js frontend</text>
+  <rect x="262" y="44" width="176" height="40" rx="8" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.8"/>
+  <text x="350" y="69" text-anchor="middle" font-size="13" font-weight="500" fill="#3C3489">Admin dashboard</text>
+  <rect x="464" y="44" width="196" height="40" rx="8" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.8"/>
+  <text x="562" y="69" text-anchor="middle" font-size="13" font-weight="500" fill="#3C3489">Student profile view</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="94" x2="360" y2="130" stroke="#888780" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- API TIER -->
+  <rect x="40" y="130" width="640" height="88" rx="14" fill="none" stroke="#d3d1c7" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="58" y="148" font-size="11" fill="#888780">API TIER — Spring Boot / Node.js</text>
+  <rect x="60" y="156" width="170" height="52" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.8"/>
+  <text x="145" y="175" text-anchor="middle" font-size="13" font-weight="500" fill="#085041">Student endpoints</text>
+  <text x="145" y="196" text-anchor="middle" font-size="11" fill="#0F6E56">/students, /leaderboard</text>
+  <rect x="248" y="156" width="170" height="52" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.8"/>
+  <text x="333" y="175" text-anchor="middle" font-size="13" font-weight="500" fill="#085041">Filter + query layer</text>
+  <text x="333" y="196" text-anchor="middle" font-size="11" fill="#0F6E56">year, platform, score</text>
+  <rect x="436" y="156" width="224" height="52" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.8"/>
+  <text x="548" y="175" text-anchor="middle" font-size="13" font-weight="500" fill="#085041">Cache layer (Redis/Upstash)</text>
+  <text x="548" y="196" text-anchor="middle" font-size="11" fill="#0F6E56">TTL-based, query key hash</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="218" x2="360" y2="254" stroke="#888780" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- DATA TIER -->
+  <rect x="40" y="254" width="640" height="74" rx="14" fill="none" stroke="#d3d1c7" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="58" y="272" font-size="11" fill="#888780">DATA TIER</text>
+  <rect x="60" y="278" width="200" height="40" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/>
+  <text x="160" y="303" text-anchor="middle" font-size="13" font-weight="500" fill="#2C2C2A">MongoDB (primary store)</text>
+  <rect x="278" y="278" width="180" height="40" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/>
+  <text x="368" y="303" text-anchor="middle" font-size="13" font-weight="500" fill="#2C2C2A">Redis (cache + queue)</text>
+  <rect x="476" y="278" width="184" height="40" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/>
+  <text x="568" y="303" text-anchor="middle" font-size="13" font-weight="500" fill="#2C2C2A">Sync log collection</text>
+
+  <!-- Separator -->
+  <line x1="40" y1="368" x2="680" y2="368" stroke="#d3d1c7" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#888780">BACKGROUND SYNC ENGINE — runs independently on schedule</text>
+
+  <!-- SYNC TIER -->
+  <rect x="40" y="398" width="640" height="110" rx="14" fill="none" stroke="#d3d1c7" stroke-width="1" stroke-dasharray="5 3"/>
+  <rect x="60" y="414" width="170" height="52" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.8"/>
+  <text x="145" y="433" text-anchor="middle" font-size="13" font-weight="500" fill="#633806">Cron scheduler</text>
+  <text x="145" y="452" text-anchor="middle" font-size="11" fill="#854F0B">per-platform intervals</text>
+  <rect x="248" y="414" width="170" height="52" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.8"/>
+  <text x="333" y="433" text-anchor="middle" font-size="13" font-weight="500" fill="#633806">Rate limiter</text>
+  <text x="333" y="452" text-anchor="middle" font-size="11" fill="#854F0B">delay + jitter + retry</text>
+  <rect x="436" y="414" width="224" height="52" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.8"/>
+  <text x="548" y="433" text-anchor="middle" font-size="13" font-weight="500" fill="#633806">Platform adapters</text>
+  <text x="548" y="452" text-anchor="middle" font-size="11" fill="#854F0B">LC, CF, CC, HR, GFG</text>
+
+  <!-- Sync writes back to DB -->
+  <path d="M360 466 L360 490 L160 490 L160 320" fill="none" stroke="#d3d1c7" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+  <text x="420" y="487" font-size="11" fill="#888780">writes to MongoDB</text>
+</svg>
+</body>
