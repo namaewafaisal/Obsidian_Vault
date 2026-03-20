@@ -223,7 +223,7 @@ folders:
 * [ ] [[437. Path Sum III]]
 * [ ] [[101. Symmetric Tree]]
 * [ ] [[863. All Nodes Distance K in Binary Tree]]
-* [ ] [[572. Subtree of Another Tree]]
+* [x] [[572. Subtree of Another Tree]] ✅ 2026-03-19
 
 ---
 
