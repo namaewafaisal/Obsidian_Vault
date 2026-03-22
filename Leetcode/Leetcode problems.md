@@ -233,7 +233,7 @@ folders:
 * [x] [[733. Flood Fill]] ✅ 2026-01-29
 * [ ] [[542. 01 Matrix]]
 * [ ] [[133. Clone Graph]]
-* [ ] [[207. Course Schedule]]
+* [x] [[207. Course Schedule]] ✅ 2026-03-22
 * [x] [[200. Number of Islands]] ✅ 2026-03-19
 * [x] [[994. Rotting Oranges]] ✅ 2026-03-19
 * [ ] [[721. Accounts Merge]]
