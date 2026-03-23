@@ -131,7 +131,7 @@ tags: [index, algorithms]
 | 1 | [[Dijkstra's Algorithm]] | O((V+E) log V) | Non-negative weights |
 | 2 | [[Bellman-Ford Algorithm]] | O(VE) | Handles negative weights |
 | 3 | [[Floyd-Warshall Algorithm]] | O(V³) | All-pairs shortest path |
-| 4 | [[A* Algorithm]] | O(E) best | Heuristic-guided, pathfinding |
+| 4 | [[../algorithms/A star Algorithm]] | O(E) best | Heuristic-guided, pathfinding |
 | 5 | [[Johnson's Algorithm]] | O(V² log V + VE) | All-pairs, sparse graphs |
 
 ### 3.3 Minimum Spanning Tree
@@ -180,7 +180,7 @@ tags: [index, algorithms]
 - [ ] [[Dijkstra's Algorithm]]
 - [ ] [[Bellman-Ford Algorithm]]
 - [ ] [[Floyd-Warshall Algorithm]]
-- [ ] [[A* Algorithm]]
+- [ ] [[../algorithms/A star Algorithm]]
 - [ ] [[Johnson's Algorithm]]
 - [ ] [[Kruskal's Algorithm]]
 - [ ] [[Prim's Algorithm]]
