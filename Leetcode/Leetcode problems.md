@@ -53,35 +53,35 @@ folders:
 ## 🔗 Two Pointers (6 Questions)
 
 ### College
-* [ ] [[125. Valid Palindrome]]
-* [ ] [[26. Remove Duplicates from Sorted Array]]
-* [ ] [[11. Container With Most Water]]
-* [ ] [[15. 3Sum]]
-* [ ] [[42. Trapping Rain Water]]
-* [ ] [[75. Sort Colors]]
+* [x] [[125. Valid Palindrome]] ✅ 2026-03-23
+* [x] [[26. Remove Duplicates from Sorted Array]] ✅ 2026-03-23
+* [x] [[11. Container With Most Water]] ✅ 2026-03-23
+* [x] [[15. 3Sum]] ✅ 2026-03-23
+* [x] [[42. Trapping Rain Water]] ✅ 2026-03-23
+* [x] [[75. Sort Colors]] ✅ 2026-03-23
 
 ---
 
 ## 🪟 Sliding Window (8 Questions)
 
 ### College
-* [ ] [[643. Maximum Average Subarray I]]
-* [ ] [[219. Contains Duplicate II]]
-* [ ] [[3. Longest Substring Without Repeating Characters]]
-* [ ] [[424. Longest Repeating Character Replacement]]
+* [x] [[643. Maximum Average Subarray I]] ✅ 2026-03-23
+* [x] [[219. Contains Duplicate II]] ✅ 2026-03-23
+* [x] [[3. Longest Substring Without Repeating Characters]] ✅ 2026-03-23
+* [x] [[424. Longest Repeating Character Replacement]] ✅ 2026-03-23
 * [ ] [[1004. Max Consecutive Ones III]]
-* [ ] [[567. Permutation in String]]
+* [x] [[567. Permutation in String]] ✅ 2026-03-23
 
 ### Grind 75 Only
-* [ ] [[76. Minimum Window Substring]]
-* [ ] [[438. Find All Anagrams in a String]]
+* [x] [[76. Minimum Window Substring]] ✅ 2026-03-23
+* [x] [[438. Find All Anagrams in a String]] ✅ 2026-03-23
 
 ---
 
 ## 🔤 Strings (14 Questions)
 
 ### Grind 75 Only
-* [ ] [[242. Valid Anagram]]
+* [x] [[242. Valid Anagram]] ✅ 2026-03-23
 * [ ] [[409. Longest Palindrome]]
 * [ ] [[8. String to Integer (atoi)]]
 * [ ] [[5. Longest Palindromic Substring]]
