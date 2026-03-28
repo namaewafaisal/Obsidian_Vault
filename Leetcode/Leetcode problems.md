@@ -243,7 +243,7 @@ folders:
 * [ ] [[417. Pacific Atlantic Water Flow]]
 * [ ] [[1197. Shortest Path to Get Food]]
 * [ ] [[261. Graph Valid Tree]]
-* [ ] [[210. Course Schedule II]]
+* [x] [[210. Course Schedule II]] ✅ 2026-03-28
 * [ ] [[323. Number of Connected Components]]
 * [ ] [[1197. Minimum Knight Moves]]
 * [ ] [[329. Longest Increasing Path in a Matrix]]
