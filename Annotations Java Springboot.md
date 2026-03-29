@@ -299,3 +299,42 @@ Use same error message:
 
 Reason:
 - prevents user enumeration attacks
+## JWT Payload (Claims)
+- Stores user data inside token
+- Common fields:
+  - sub (userId)
+  - role
+  - email
+
+---
+
+## Why store role in JWT?
+- Avoid DB lookup on every request
+- Enables stateless authentication
+- Improves performance
+
+---
+
+## Frontend vs Backend Trust
+
+Frontend:
+- receives role for UI logic
+- NOT trusted
+
+Backend:
+- extracts role from JWT
+- fully trusted (signed token)
+
+---
+
+## Stateless Authentication
+
+- Server does NOT store session
+- JWT contains all required data
+- Each request is self-contained
+
+---
+
+## Key Insight
+
+JWT = identity + authorization in one token
