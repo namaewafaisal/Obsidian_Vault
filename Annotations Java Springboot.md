@@ -159,3 +159,69 @@ Marks a class as a configuration class.
 
 - Contains @Bean methods
 - Used to define Spring-managed components
+
+## @RestController
+Marks class as REST API controller.
+
+- Returns JSON/text
+- Combines @Controller + @ResponseBody
+
+---
+
+## @RequestMapping
+Defines base URL for all endpoints in class.
+
+---
+
+## @PostMapping
+Handles HTTP POST requests.
+
+- Used for creating data
+
+---
+
+## @RequestBody
+Maps JSON request → Java object.
+
+---
+
+## SecurityFilterChain
+Defines security rules for requests.
+
+- Controls access (permit, restrict)
+- Replaces older WebSecurityConfigurerAdapter
+
+---
+
+## HttpSecurity
+Used to configure web security.
+
+- CSRF
+- authorization rules
+- filters
+
+## @Valid
+Triggers validation on request object.
+
+- Used in controller layer
+- Required to activate @Email, @NotBlank, etc.
+
+---
+
+## @Email
+Validates email format.
+
+- Only works when @Valid is present
+- Does NOT check if email exists (only format)
+
+---
+
+## @NotBlank
+Ensures field is not null or empty.
+
+---
+
+## Validation Flow
+- Define rules in DTO
+- Trigger with @Valid
+- Spring automatically handles errors
