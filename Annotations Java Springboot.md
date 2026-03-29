@@ -225,3 +225,77 @@ Ensures field is not null or empty.
 - Define rules in DTO
 - Trigger with @Valid
 - Spring automatically handles errors
+
+## @Email
+- Checks basic format only
+- Does NOT enforce domain (.com, .edu, etc.)
+- Allows values like "a@b"
+
+---
+
+## Business Validation (Custom)
+
+Example:
+```java
+email.endsWith("@trp.srmtrichy.edu.in")
+```
+
+- Enforces real requirement
+- More important than format validation
+
+---
+
+## Why not strict regex?
+- Emails have many valid formats
+- Regex becomes complex and unreliable
+- Business rules are clearer and safer
+
+---
+
+## Best Practice
+
+Use both:
+- @Email → format check
+- custom logic → business rule
+
+---
+
+## Key Insight
+
+Validation has 2 levels:
+1. Syntax validation (annotations)
+2. Business validation (service layer)
+
+## AuthResponse (DTO)
+- Used for sending login response
+- Contains:
+  - token
+  - role
+  - userId
+
+---
+
+## PasswordEncoder.matches()
+- Compares raw password with hashed password
+- Does NOT decrypt
+- Secure comparison method
+
+---
+
+## Login Flow
+
+1. Find user by email
+2. If not found → error
+3. Compare password
+4. If mismatch → error
+5. Return token + user data
+
+---
+
+## Security Practice
+
+Use same error message:
+- "Invalid credentials"
+
+Reason:
+- prevents user enumeration attacks
