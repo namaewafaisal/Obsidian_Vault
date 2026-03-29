@@ -23,3 +23,7 @@ jpa:
 
 
 @Getter @Setter are better in lazy loading
+
+`Controller -> service -> Repository -> DB`
+repository gives default methods like findById etc but we have to add methods if needed like findByEmail(String email) where the camel case matters thats how spring parses and generates the query
+
