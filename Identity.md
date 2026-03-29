@@ -21,3 +21,5 @@ jpa:
     show-sql: true
 ```
 
+
+@Getter @Setter are better in lazy loading
