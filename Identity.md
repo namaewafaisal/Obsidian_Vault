@@ -27,3 +27,5 @@ jpa:
 `Controller -> service -> Repository -> DB`
 repository gives default methods like findById etc but we have to add methods if needed like findByEmail(String email) where the camel case matters thats how spring parses and generates the query
 
+@Autowired is old
+@RequiredArgsConstructor sees the private final Class Objectname and if that is a bean then creates constructor with them as the params and make it this.some = some and spring does its job by injecting the bean it has. this is constructor injection

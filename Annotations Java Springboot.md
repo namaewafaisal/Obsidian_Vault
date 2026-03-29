@@ -130,3 +130,32 @@ void prePersist() {
 * Prefer UUID + STRING enums for safety
 * Lifecycle hooks reduce manual logic
 
+## @Service
+Marks a class as a Spring service component.
+
+- Managed by Spring container
+- Used for business logic layer
+
+---
+
+## @RequiredArgsConstructor (Lombok)
+Generates constructor for all `final` fields.
+
+- Enables constructor injection
+- Avoids using @Autowired
+
+---
+
+## @Bean
+Defines a method that returns an object managed by Spring.
+
+- Used inside @Configuration classes
+- Example: PasswordEncoder
+
+---
+
+## @Configuration
+Marks a class as a configuration class.
+
+- Contains @Bean methods
+- Used to define Spring-managed components
