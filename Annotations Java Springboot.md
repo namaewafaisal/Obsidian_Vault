@@ -338,3 +338,124 @@ Backend:
 ## Key Insight
 
 JWT = identity + authorization in one token
+
+## JWT (JSON Web Token)
+- Token used for authentication
+- Structure: HEADER.PAYLOAD.SIGNATURE
+
+---
+
+## JwtUtil
+- Handles token creation and parsing
+- Central place for JWT logic
+
+---
+
+## Claims
+- Data stored inside JWT
+- Example:
+  - userId (subject)
+  - role
+  - email
+
+---
+
+## @Value
+Injects values from application.yml
+
+---
+
+## @PostConstruct
+Runs after bean is created
+
+- Used to initialize secret key
+
+---
+
+## Secret Key
+- Used to sign JWT
+- Must be secure and private
+
+---
+
+## Token Expiration
+- Prevents long-term misuse
+- Forces re-login after time limit
+
+---
+
+## Key Insight
+
+JWT = signed data → can be trusted without DB lookup
+
+## JwtUtil
+- Handles JWT creation and parsing
+- Central class for token logic
+
+---
+
+## @Component
+- Marks class as Spring bean
+- Allows injection into services
+
+---
+
+## @Value
+- Injects values from application.yml
+
+---
+
+## @PostConstruct
+- Runs after bean initialization
+- Used to prepare secret key
+
+---
+
+## generateToken()
+- Creates JWT
+- Includes:
+  - userId (subject)
+  - role
+  - email
+
+---
+
+## extractClaims()
+- Reads JWT
+- Verifies signature
+- Returns stored data
+
+---
+
+## Key Insight
+
+JWT is signed → data can be trusted without DB query
+
+## spring-boot-starter-web
+- Correct dependency for building REST APIs
+- Includes:
+  - Spring MVC
+  - Tomcat
+  - Jackson
+
+---
+
+## Why not webmvc?
+- Internal module
+- Not intended for direct use
+
+---
+
+## spring-boot-starter-test
+- Unified testing dependency
+- Includes:
+  - JUnit
+  - Mockito
+  - Spring Test
+
+---
+
+## Key Insight
+
+Always use Spring Boot starters  
+→ They manage dependencies correctly
