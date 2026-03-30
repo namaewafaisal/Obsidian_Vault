@@ -605,3 +605,57 @@ Wrong decoding:
 ## Key Insight
 
 Secret format determines how it must be processed
+
+## JWT Purpose
+- Stateless authentication
+- No server-side session storage
+
+---
+
+## JWT Structure
+HEADER.PAYLOAD.SIGNATURE
+
+---
+
+## Payload (Claims)
+- sub → userId
+- role → authorization
+- email → optional
+
+---
+
+## Login Flow
+
+1. User sends credentials
+2. Server verifies
+3. Server generates JWT
+4. Client stores token
+
+---
+
+## Request Flow
+
+1. Client sends token
+2. Server verifies signature
+3. Extracts claims
+4. Authorizes request
+
+---
+
+## Why JWT is Secure
+
+- Signed using secret key
+- Cannot be modified without invalidating signature
+
+---
+
+## Stateless Architecture
+
+- No session stored on server
+- Token contains all required data
+
+---
+
+## Key Insight
+
+JWT = identity + authorization + security in one token
