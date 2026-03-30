@@ -149,3 +149,11 @@ Firmware / EC charging logic (Dell SMBIOS / WMI) stuck after AC state transition
 ### ✅ End Result
 
 Charging correctly resumes at normal power draw (~16 W) after the reset procedure.
+
+
+Final fix. just sudo poweroff after that unplug charger.
+the capacitor will discharge in about 60s then plug in and poweron
+
+```shell
+watch -n 1 "upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E 'state|energy-rate|percentage|energy:'"
+```
