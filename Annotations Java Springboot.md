@@ -459,3 +459,149 @@ JWT is signed → data can be trusted without DB query
 
 Always use Spring Boot starters  
 → They manage dependencies correctly
+
+## Maven Dependency Resolution
+
+- Adding dependency ≠ automatically available
+- Must reload Maven project
+
+---
+
+## mvn clean install
+- Downloads dependencies
+- Compiles project
+- Fixes missing imports
+
+---
+
+## mvn dependency:tree
+- Shows all dependencies
+- Used to verify libraries are loaded
+
+---
+
+## JJWT Libraries
+
+- jjwt-api → interfaces
+- jjwt-impl → implementation (runtime)
+- jjwt-jackson → JSON parsing
+
+---
+
+## Secret Key Handling
+
+Two approaches:
+1. Base64 encoded → use Decoders.BASE64
+2. Plain string → use getBytes()
+
+---
+
+## Key Insight
+
+Red import = dependency not resolved, not code issue
+
+## Maven Dependency Version Rule
+
+Spring Boot starters:
+- Version managed automatically
+- DO NOT specify version
+
+External libraries (like jjwt):
+- Must specify version manually
+
+---
+
+## JJWT Version
+- Current stable: 0.12.5
+
+---
+
+## Common Error
+
+"dependency.version is missing"
+
+Reason:
+- Library not managed by Spring Boot
+
+Fix:
+- Add `<version>` manually
+
+---
+
+## Key Insight
+
+Dependency management depends on parent BOM  
+→ not all libraries are covered
+
+## JWT Secret Types
+
+### Plain String Secret
+Example:
+"mysecret123"
+
+Usage:
+secret.getBytes()
+
+---
+
+### Base64 Encoded Secret
+Example:
+"c2VjcmV0MTIz..."
+
+Usage:
+Decoders.BASE64.decode(secret)
+
+---
+
+## Why Base64 is Preferred
+- Fixed length
+- Safe encoding for binary data
+- Works reliably with crypto libraries
+
+---
+
+## Common Mistake
+Using BASE64 decode on plain string
+
+→ leads to invalid key or runtime error
+
+---
+
+## Key Insight
+
+Secret format must match decoding method
+
+## How to Identify Secret Type
+
+### Plain String
+- Random readable characters
+- Example:
+  "tyu0XaD5HCtPWZj7..."
+
+Usage:
+secret.getBytes()
+
+---
+
+### Base64 Encoded
+- Often ends with "="
+- Looks encoded
+- Example:
+  "c2VjcmV0MTIz..."
+
+Usage:
+Decoders.BASE64.decode(secret)
+
+---
+
+## Why This Matters
+
+Wrong decoding:
+- produces invalid key
+- breaks JWT signing/verification
+
+---
+
+## Key Insight
+
+Secret format determines how it must be processed
