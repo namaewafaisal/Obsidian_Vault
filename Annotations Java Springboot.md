@@ -983,3 +983,175 @@ JWT = signed proof of identity + authorization
 Server trusts token ONLY because:
 - signature is valid
 - secret is known only to server
+
+## JWT Readability
+
+- JWT payload is Base64 encoded, not encrypted
+- Anyone can decode and read it
+- Example:
+  payload = BASE64 → JSON
+
+---
+
+## Decoding JWT
+
+Steps:
+1. Split token → HEADER.PAYLOAD.SIGNATURE
+2. Take PAYLOAD
+3. Base64 decode → JSON
+
+---
+
+## Important Distinction
+
+Decoding ≠ Verification
+
+- Decoding → just reading data
+- Verification → checking if data is authentic
+
+---
+
+## Verification Requirement
+
+Server must verify token using:
+
+expected_signature = HMAC(secret, data)
+
+Compare with:
+signature_from_token
+
+---
+
+## Why Secret is Required
+
+- Same secret is used for:
+  - signing (token creation)
+  - verification (token validation)
+
+Without secret:
+- cannot generate valid signature
+- cannot forge token
+
+---
+
+## Attack Scenario Prevention
+
+Attacker:
+- modifies payload
+- creates fake signature
+
+Fails because:
+- server recomputes signature using secret
+- mismatch → token rejected
+
+---
+
+## JWT Security Guarantee
+
+JWT ensures:
+- integrity (data not changed)
+- authenticity (issued by server)
+
+JWT does NOT ensure:
+- confidentiality (data is visible)
+
+---
+
+## Token Lifecycle
+
+Login:
+- server generates token
+
+Request:
+- client sends token
+
+Backend:
+- verifies token
+- extracts claims
+- processes request
+
+---
+
+## Claims Extraction
+
+Using:
+jwtUtil.extractClaims(token)
+
+Internally:
+- verifies signature
+- checks expiration
+- returns payload
+
+---
+
+## Authentication Object Creation
+
+UsernamePasswordAuthenticationToken
+
+Represents:
+- authenticated user
+
+Contains:
+- principal (userId)
+- authorities (roles)
+
+---
+
+## Authority Mapping
+
+role = "ADMIN"
+
+Converted to:
+"ROLE_ADMIN"
+
+Reason:
+- Spring Security expects ROLE_ prefix
+
+---
+
+## SecurityContext
+
+SecurityContextHolder.getContext().setAuthentication(...)
+
+Purpose:
+- stores current user info
+- makes user available across request lifecycle
+
+---
+
+## Filter Responsibility
+
+JWT Filter:
+- runs on every request
+- extracts token
+- verifies token
+- sets authentication
+
+---
+
+## Request Authorization Flow
+
+Request →
+Filter →
+Verify JWT →
+Set SecurityContext →
+Controller →
+Service
+
+---
+
+## Protected Routes
+
+Without token:
+- request denied
+
+With valid token:
+- request allowed
+
+---
+
+## Key Insight
+
+JWT is useful only when:
+- it is verified
+- and linked to request context (SecurityContext)
