@@ -659,3 +659,327 @@ HEADER.PAYLOAD.SIGNATURE
 ## Key Insight
 
 JWT = identity + authorization + security in one token
+
+## JWT vs Encryption
+
+JWT is NOT encryption
+
+- Payload is NOT hidden
+- Anyone can decode and read it
+- JWT only ensures data is NOT modified
+
+---
+
+## JWT Structure
+
+HEADER.PAYLOAD.SIGNATURE
+
+Example:
+aaa.bbb.ccc
+
+- HEADER → algorithm info
+- PAYLOAD → actual data (claims)
+- SIGNATURE → verification proof
+
+---
+
+## What is inside Payload (Claims)
+
+Example:
+{
+  "sub": "userId",
+  "role": "STUDENT",
+  "email": "test@..."
+}
+
+- sub → subject (user identity)
+- role → authorization
+- email → optional metadata
+
+---
+
+## How JWT Signing Works
+
+Step 1:
+data = BASE64(header) + "." + BASE64(payload)
+
+Step 2:
+signature = HMAC(secret, data)
+
+Step 3:
+token = data + "." + signature
+
+---
+
+## HMAC (Important)
+
+HMAC = Hash + Secret Key
+
+signature = HMAC(secret, data)
+
+- Not just hashing
+- Requires secret key
+- Cannot be recreated without secret
+
+---
+
+## Verification Process (Exact)
+
+Input:
+HEADER.PAYLOAD.SIGNATURE
+
+Step 1:
+Extract:
+- data = HEADER.PAYLOAD
+- signature_from_token
+
+Step 2:
+Recompute:
+expected_signature = HMAC(secret, data)
+
+Step 3:
+Compare:
+expected_signature == signature_from_token
+
+---
+
+## If Verification Passes
+
+- Token is valid
+- Data is trusted
+- Claims can be used
+
+---
+
+## If Verification Fails
+
+- Token rejected
+- Exception thrown
+- Request denied
+
+---
+
+## Why Attacker Cannot Forge Token
+
+Attacker can:
+- read payload
+- modify payload
+
+BUT cannot:
+- generate valid signature
+
+Because:
+- secret key is unknown
+
+---
+
+## Important Security Insight
+
+JWT security depends on:
+
+secret key secrecy
+
+If secret is leaked:
+- attacker can generate valid tokens
+- system is compromised
+
+---
+
+## JWT is NOT Encryption
+
+- Payload is visible
+- Only integrity is protected
+- Not confidentiality
+
+---
+
+## Password vs JWT Difference
+
+Password:
+- hashed (one-way)
+- cannot retrieve original
+
+JWT:
+- data is visible
+- signature ensures integrity
+
+---
+
+## JwtUtil Responsibilities
+
+- generateToken() → create signed token
+- extractClaims() → verify + read token
+
+---
+
+## @Component
+
+Marks JwtUtil as Spring-managed bean
+
+- allows injection into services
+
+---
+
+## @Value
+
+Injects values from application.yml
+
+Example:
+@Value("${app.jwt.secret}")
+
+---
+
+## @PostConstruct
+
+Runs after bean creation
+
+Used for:
+- initializing SecretKey
+
+---
+
+## Secret Handling
+
+Two types:
+
+1. Plain string:
+   use → secret.getBytes()
+
+2. Base64 encoded:
+   use → Decoders.BASE64.decode(secret)
+
+---
+
+## Your Case
+
+Secret:
+tyu0XaD5HCtPWZj7dWRGEJuPszdaZ6zrny0KTRwQZIy
+
+- Plain string
+- NOT base64
+
+Correct usage:
+Keys.hmacShaKeyFor(secret.getBytes())
+
+---
+
+## Token Expiration
+
+.expiration(new Date(...))
+
+- defines validity time
+- prevents long-term misuse
+
+---
+
+## PasswordEncoder.matches()
+
+Used during login
+
+- compares raw vs hashed password
+- does NOT decrypt password
+
+---
+
+## Login Flow (Detailed)
+
+1. User sends email + password
+2. Find user in DB
+3. Compare password using matches()
+4. If valid → generate JWT
+5. Return token + user info
+
+---
+
+## Why Same Error Message
+
+"Invalid credentials"
+
+Reason:
+- prevent user enumeration
+- attacker cannot know:
+  - email exists or not
+  - password is wrong
+
+---
+
+## Role Storage in JWT
+
+Stored as:
+user.getRole().name()
+
+Why:
+- stable value
+- not affected by toString override
+
+---
+
+## .name() vs .toString()
+
+.name()
+- returns enum constant
+- safe
+
+.toString()
+- can be overridden
+- unsafe for JWT
+
+---
+
+## ROLE_ Prefix (Spring Security)
+
+Spring expects:
+ROLE_ADMIN
+
+But:
+
+hasRole("ADMIN")
+→ internally becomes ROLE_ADMIN
+
+---
+
+## Two Approaches
+
+1. Store "ADMIN"
+   use hasRole("ADMIN") ✅
+
+2. Store "ROLE_ADMIN"
+   use hasAuthority("ROLE_ADMIN")
+
+---
+
+## Current Approach (Correct)
+
+- Store "ADMIN"
+- Use hasRole()
+
+---
+
+## Stateless Authentication
+
+- Server does NOT store session
+- Token contains all required data
+
+---
+
+## Request Flow (After JWT)
+
+Client sends:
+Authorization: Bearer `<token>`
+
+Server:
+1. Extract token
+2. Verify signature
+3. Extract claims
+4. Identify user
+5. Authorize request
+
+---
+
+## Key Insight (Final)
+
+JWT = signed proof of identity + authorization
+
+Server trusts token ONLY because:
+- signature is valid
+- secret is known only to server
