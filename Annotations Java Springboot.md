@@ -1155,3 +1155,129 @@ With valid token:
 JWT is useful only when:
 - it is verified
 - and linked to request context (SecurityContext)
+
+## permitAll vs Filter Execution
+
+permitAll():
+- skips authorization
+- does NOT skip filters
+
+---
+
+## Filter Order
+
+Request →
+Filter →
+Authentication →
+Authorization →
+Controller
+
+---
+
+## Problem Scenario
+
+Public endpoint (/login) with invalid token:
+- filter tries to validate
+- fails → returns 401
+- controller never reached
+
+---
+
+## Solution
+
+Skip filter for public endpoints:
+
+if (path.startsWith("/api/auth")) {
+    doFilter()
+}
+
+---
+
+## Correct Behavior
+
+Public endpoints:
+- ignore token
+
+Protected endpoints:
+- enforce token validation
+
+---
+
+## Validation Layer
+
+Validation should be applied in DTO, not entity
+
+---
+
+## @NotBlank
+- ensures string is not null and not empty
+
+---
+
+## @NotNull
+- ensures value is not null
+
+---
+
+## @Valid
+
+Used in controller to trigger validation
+
+Example:
+@Valid @RequestBody ProfileRequest
+
+---
+
+## Validation Flow
+
+Request →
+DTO validation →
+Controller →
+Service
+
+---
+
+## Key Insight
+
+Security and validation are separate concerns:
+- JWT → authentication
+- DTO validation → input correctness
+
+## Environment Variables in Spring Boot
+
+Use:
+${VAR_NAME}
+
+Example:
+secret: ${JWT_SECRET}
+
+---
+
+## Why Use Env Variables
+
+- prevents secrets in code
+- safer for GitHub
+- required in production
+
+---
+
+## Common Mistake
+
+Env variables not available because:
+- set in different terminal
+- not exported properly
+
+---
+
+## .env File
+
+Stores variables locally
+
+Must be added to:
+.gitignore
+
+---
+
+## Key Insight
+
+Secrets should never be hardcoded in config files
