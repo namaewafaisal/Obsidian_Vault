@@ -43,6 +43,7 @@ Usernames / handles
 5. linkdin
 6. codechef
 7. codeforces
+8. gfg
 
 Marks Academics
 1. history of arrears
@@ -58,3 +59,5 @@ Other data
 1. Internships done
 2. role
 3. whatever they did
+4. skills
+5. 
