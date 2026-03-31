@@ -19,7 +19,21 @@ Auth table
 15. phone number
 16. personal email id
 17. identity card number
-18. 
+18. mentor name
+19. CC name
+20. Gender
+21. Degree
+22. Institution name
+23. father name
+24. mother name
+25. father mobile number
+26. mother mobile number
+27. current address
+28. permanent address
+29. current city
+30. permanent city
+31. mode of transportation
+32. day scholar or hostel
 
 Usernames / handles
 1. Leetcode
@@ -35,4 +49,12 @@ Marks Academics
 2. standing arears
 3. current cgpa
 4. each sem marks and gpa(every subject data, its credit , grade got internal marks all of it somehow)
-5. 
+5. 10th percentage
+6. 12th percentage
+7. Diploma percentage
+8. Career Choice
+
+Other data
+1. Internships done
+2. role
+3. whatever they did
