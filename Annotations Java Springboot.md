@@ -1873,3 +1873,280 @@ Mapper → transformation
 ## Key Insight
 
 MapStruct replaces repetitive mapping logic with generated, maintainable code
+
+## PATCH /profile — Partial Update Design
+
+Used PATCH instead of PUT
+
+Reason:
+- PUT → full replacement
+- PATCH → partial update (only provided fields)
+
+---
+
+## Problem with Initial Approach
+
+Manual update:
+
+if (field != null) {
+    setField(...)
+}
+
+Issues:
+- repetitive
+- not scalable
+- every new field → change service logic
+
+---
+
+## Solution: MapStruct
+
+MapStruct:
+- generates mapping code at compile time
+- removes boilerplate
+- improves maintainability
+
+---
+
+## Mapper Setup
+
+@Mapper(componentModel = "spring")
+
+Meaning:
+- MapStruct generates implementation
+- Spring registers it as a bean
+
+---
+
+## Update Mapping Method
+
+@BeanMapping(nullValuePropertyMappingStrategy = IGNORE)
+void updateProfileFromDto(UpdateProfileRequest dto,
+                          @MappingTarget StudentProfile entity);
+
+---
+
+## @BeanMapping + IGNORE
+
+nullValuePropertyMappingStrategy = IGNORE
+
+Meaning:
+- if DTO field == null → do not update entity
+- enables partial update
+
+---
+
+## @MappingTarget
+
+Indicates:
+- update existing entity
+- do NOT create new object
+
+Without it:
+- MapStruct creates new object ❌
+
+With it:
+- updates existing entity ✔
+
+---
+
+## Generated Code Behavior
+
+MapStruct generates:
+
+if (dto.field != null) {
+    entity.field = dto.field;
+}
+
+But automatically
+
+---
+
+## DTO for Partial Update
+
+Used wrapper types:
+
+Integer instead of int
+
+Reason:
+- int → default 0 (cannot detect missing field)
+- Integer → null means "not provided"
+
+---
+
+## Service Layer After Refactor
+
+mapper.updateProfileFromDto(request, profile);
+
+profileRepository.save(profile);
+
+Service now:
+- contains only business logic
+- no field-level update logic
+
+---
+
+## Response Mapping
+
+ProfileResponse toResponse(StudentProfile profile);
+
+Purpose:
+- convert entity → response DTO
+- avoid exposing internal entity
+
+---
+
+## Constructor Issue (MapStruct)
+
+Error:
+- no default constructor
+
+Fix:
+- add @NoArgsConstructor
+
+Reason:
+- MapStruct uses:
+  new Object() + setters
+
+---
+
+## Lombok + MapStruct Issue
+
+Problem:
+- DTO fields always null
+- mapper not updating anything
+
+Cause:
+- MapStruct could not see Lombok-generated getters
+
+---
+
+## Root Cause
+
+Annotation processing order:
+
+Lombok → generates getters  
+MapStruct → needs those getters  
+
+If order wrong or binding missing:
+- MapStruct sees no getters
+- assumes all fields null
+
+---
+
+## Fix: lombok-mapstruct-binding
+
+Added:
+
+lombok-mapstruct-binding
+
+Purpose:
+- bridge between Lombok and MapStruct
+- ensures MapStruct recognizes Lombok-generated methods
+
+---
+
+## Annotation Processor Order
+
+Correct order:
+
+1. lombok
+2. lombok-mapstruct-binding
+3. mapstruct-processor
+
+---
+
+## Why Order Matters
+
+Processors run during compilation
+
+Correct flow:
+- Lombok generates methods
+- MapStruct reads them
+- MapStruct generates mapper
+
+Wrong order:
+- MapStruct runs first → sees nothing → null mapping
+
+---
+
+## Debugging Insight
+
+Observed:
+Before: 4
+After: 4
+
+Meaning:
+- mapper didn’t update entity
+- no DB update triggered
+
+---
+
+## JPA Behavior Insight
+
+JPA only updates if:
+- entity field actually changes
+
+If no change:
+- no UPDATE query executed
+
+---
+
+## Separation of Concerns (Final Design)
+
+DTO:
+- data transfer
+
+Mapper:
+- transformation logic
+
+Service:
+- business logic
+
+Repository:
+- persistence
+
+---
+
+## Security Insight
+
+User identity always comes from:
+
+authentication.getPrincipal()
+
+Never from request body
+
+Ensures:
+- user can only update own profile
+
+---
+
+## Final Architecture Improvement
+
+Before:
+- service handled mapping ❌
+
+After:
+- mapper handles mapping ✔
+- service is clean ✔
+
+---
+
+## Key Takeaway
+
+MapStruct + Lombok requires:
+- correct processor order
+- binding dependency
+
+Otherwise:
+- silent failures (null mapping)
+
+---
+
+## Design Maturity Achieved
+
+- Partial update support ✔
+- Clean service layer ✔
+- DTO separation ✔
+- Scalable mapping ✔
+- Secure user handling ✔
