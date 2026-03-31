@@ -43,7 +43,8 @@ Usernames / handles
 5. linkdin
 6. codechef
 7. codeforces
-8. gfg
+8. hackerearth
+9. gfg
 
 Marks Academics
 1. history of arrears
@@ -60,4 +61,10 @@ Other data
 2. role
 3. whatever they did
 4. skills
-5. 
+5. event participations
+6. certifications
+7. projects(github and website links)
+8. patents
+9. resume
+10. languages known
+11. 
