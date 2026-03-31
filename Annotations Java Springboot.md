@@ -2498,3 +2498,241 @@ Never trust client for:
 
 Always enforce in backend
 
+## Database Reset During Development
+
+Problem:
+- Entity updated (new fields)
+- Database schema not updated automatically
+
+---
+
+## Solution Used
+
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+
+---
+
+## Effect
+
+- removes all tables
+- removes all constraints
+- resets database completely
+
+---
+
+## When to Use
+
+- development phase ✔
+- schema evolving frequently ✔
+
+---
+
+## Warning
+
+- deletes ALL data permanently
+- never use in production
+
+---
+
+## Why Errors Happened
+
+Entity change:
+
+private boolean profileCompleted;
+
+But DB:
+- did not have column
+
+Result:
+- SQL error: column does not exist
+
+---
+
+## Hibernate Behavior
+
+ddl-auto: update
+
+- tries to update schema
+- not always reliable
+- may miss column changes
+
+---
+
+## Key Insight
+
+Entity ≠ Database
+
+Schema must be:
+- recreated
+OR
+- manually updated
+
+---
+
+## System Design Clarification
+
+Project is NOT:
+- identity generator ❌
+
+Project IS:
+- student data storage system ✔
+
+---
+
+## Core Concept
+
+Student identity already exists (college given)
+
+System stores:
+- latest student information
+- retrievable by staff
+
+---
+
+## Main Entity Responsibility
+
+User:
+- authentication
+- login system
+
+StudentProfile:
+- student identity data
+
+---
+
+## Identity Definition
+
+registerNumber:
+- unique identifier
+- primary lookup field
+
+---
+
+## Schema Design Principle
+
+Design based on:
+
+"What queries will system support?"
+
+---
+
+## Primary Use Case
+
+Given register number:
+→ retrieve student data
+
+---
+
+## Core Fields
+
+registerNumber
+fullName
+department
+year
+
+---
+
+## Extended Fields (optional)
+
+section
+phoneNumber
+dateOfBirth
+address
+
+---
+
+## System Fields
+
+createdAt
+updatedAt
+
+---
+
+## Relationship Design
+
+User → StudentProfile (One-to-One)
+
+Reason:
+- separate auth from data
+- clean architecture
+
+---
+
+## Avoid Over-Engineering
+
+Do NOT:
+- split into too many tables
+- add unnecessary relationships
+- build complex systems early
+
+---
+
+## Query-Driven Design
+
+Design DB based on:
+
+Search patterns:
+- findByRegisterNumber
+- filter by department + year
+
+---
+
+## Repository Strategy
+
+Use method naming:
+
+findByRegisterNumber(...)
+findByDepartmentAndYear(...)
+
+---
+
+## Unique Constraint
+
+registerNumber must be:
+
+@Column(unique = true)
+
+---
+
+## Validation Insight
+
+registerNumber:
+- required
+- unique
+
+---
+
+## Development Workflow
+
+1. Change entity
+2. DB mismatch occurs
+3. Reset DB
+4. Restart app
+
+---
+
+## Architecture Clarity
+
+User → authentication layer
+
+StudentProfile → business data layer
+
+---
+
+## Key Insight
+
+Schema design should reflect:
+- real-world data
+- actual system usage
+- not hypothetical features
+
+---
+
+## Design Maturity
+
+Moved from:
+- feature-first thinking ❌
+
+To:
+- data-first design ✔
