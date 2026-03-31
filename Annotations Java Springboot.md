@@ -1281,3 +1281,322 @@ Must be added to:
 ## Key Insight
 
 Secrets should never be hardcoded in config files
+
+
+## Environment Variables with Fallback
+
+Syntax:
+${VAR_NAME:default_value}
+
+Behavior:
+- If VAR_NAME exists → use it
+- If NOT → use default_value
+
+---
+
+## Important Clarification
+
+Fallback is NOT validation
+
+- Spring does NOT check if fallback works
+- It only checks if env variable exists
+
+---
+
+## Example
+
+url: ${DB_URL:jdbc:postgresql://localhost:5432/identity}
+
+Cases:
+
+1. DB_URL not set:
+→ fallback used
+
+2. DB_URL set but wrong:
+→ fallback ignored
+→ wrong value used
+
+---
+
+## Key Insight
+
+Env variable presence ≠ correctness
+
+---
+
+## Environment Variable Scope
+
+Env variables exist per shell session
+
+Correct:
+source ~/.zshrc
+mvn spring-boot:run
+
+Incorrect:
+source ~/.zshrc
+(open new terminal)
+mvn spring-boot:run
+
+---
+
+## Checking Env Variables
+
+echo $DB_URL
+echo $JWT_SECRET
+
+Empty output:
+→ variable not set
+
+---
+
+## Debugging Tip
+
+Remove fallback:
+
+url: ${DB_URL}
+
+If env missing:
+→ app fails immediately (good for debugging)
+
+---
+
+## JWT Filter vs permitAll
+
+permitAll():
+- skips authorization
+- does NOT skip filters
+
+---
+
+## Filter Execution Order
+
+Request →
+Filter →
+Authentication →
+Authorization →
+Controller
+
+---
+
+## Problem Scenario
+
+Public endpoint (/login) with invalid token:
+
+- filter runs
+- tries to validate token
+- fails → returns 401
+- controller not reached
+
+---
+
+## Solution
+
+Skip filter for public endpoints:
+
+if (path.startsWith("/api/auth")) {
+    filterChain.doFilter(...)
+    return;
+}
+
+---
+
+## Correct Behavior
+
+Public endpoints:
+- ignore token completely
+
+Protected endpoints:
+- require valid token
+
+---
+
+## HTTP Status Meaning
+
+401:
+- authentication failed
+- invalid or missing token
+
+403:
+- authenticated but not allowed
+- OR unhandled exceptions (temporary behavior)
+
+---
+
+## Exception Behavior (Current)
+
+RuntimeException in service:
+→ not handled
+→ results in 403 or inconsistent response
+
+---
+
+## Proper Handling (Future)
+
+Use global exception handler:
+
+@RestControllerAdvice
+
+→ convert exceptions into proper responses
+
+---
+
+## DTO Validation
+
+Validation should be in DTO, not entity
+
+---
+
+## @NotBlank
+
+- not null
+- not empty
+- not whitespace
+
+---
+
+## @NotNull
+
+- must not be null
+- allows empty string
+
+---
+
+## @Valid
+
+Used in controller to trigger validation
+
+@Valid @RequestBody
+
+---
+
+## Validation Flow
+
+Request →
+DTO validation →
+Controller →
+Service
+
+---
+
+## Security vs Validation
+
+JWT:
+- verifies identity
+
+Validation:
+- verifies input correctness
+
+---
+
+## GitHub Security (Config)
+
+application.yml must NOT contain:
+
+- JWT secret
+- DB password
+
+---
+
+## Correct Config Pattern
+
+secret: ${JWT_SECRET}
+password: ${DB_PASSWORD}
+
+---
+
+## Secret Storage
+
+Use:
+- OS env variables (.zshrc)
+
+Avoid:
+- hardcoded values in repo
+
+---
+
+## .gitignore Essentials
+
+target/
+.env
+*.log
+
+---
+
+## Why target/ is ignored
+
+- contains compiled code
+- not needed in version control
+
+---
+
+## Git Safety Check
+
+grep -r "secret" .
+grep -r "password" .
+
+Only env placeholders should appear
+
+---
+
+## Spring Profiles (Concept)
+
+application.yml → default
+
+application-local.yml → local overrides
+
+application-prod.yml → production config
+
+---
+
+## Your Setup
+
+Using .zshrc env variables:
+→ clean enough
+→ profiles optional
+
+---
+
+## Maven Cleanup
+
+mvn clean
+
+Removes:
+- build artifacts
+- target directory contents
+
+---
+
+## Minimal pom.xml Principle
+
+- only required dependencies
+- no duplicates
+- no unused libraries
+
+---
+
+## License Choice
+
+MIT License recommended
+
+Reasons:
+- simple
+- widely used
+- minimal restrictions
+- good for portfolio projects
+
+---
+
+## Key Insight
+
+Clean repo = code + config separation + no secrets
+
+---
+
+## Final System State
+
+- JWT auth working
+- filter working
+- profile system working
+- env-based config working
+
+→ backend is production-ready foundation
