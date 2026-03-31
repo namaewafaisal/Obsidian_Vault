@@ -1600,3 +1600,276 @@ Clean repo = code + config separation + no secrets
 - env-based config working
 
 → backend is production-ready foundation
+
+## Profile API Design Evolution
+
+Built endpoints:
+- POST /profile → create
+- GET /profile → fetch
+- PATCH /profile → update
+
+---
+
+## Identity Source
+
+User identity is always derived from:
+
+authentication.getPrincipal()
+
+- comes from JWT
+- NOT from request body
+- ensures user can only access own data
+
+---
+
+## DTO Usage Strategy
+
+Current design:
+- ProfileRequest → create + update
+- ProfileResponse → get
+
+---
+
+## DTO Separation Principle
+
+Request DTO:
+- represents client input
+
+Response DTO:
+- represents server output
+
+---
+
+## DTO Reuse Decision
+
+DTO reuse is allowed only if:
+- fields identical
+- validation identical
+- behavior identical
+
+Otherwise:
+- separate DTOs required
+
+---
+
+## Partial Update Design
+
+PATCH endpoint introduced:
+- allows updating only selected fields
+
+---
+
+## Primitive vs Wrapper Types
+
+int:
+- default = 0
+- cannot detect "not provided"
+
+Integer:
+- can be null
+- null = field not sent
+
+---
+
+## Partial Update Logic
+
+Manual approach:
+
+if (field != null) → update
+
+Problems:
+- repetitive
+- not scalable
+- violates clean design
+
+---
+
+## API Design Insight
+
+PUT:
+- full replacement
+
+PATCH:
+- partial update (preferred here)
+
+---
+
+## Design Improvement Trigger
+
+Observation:
+- adding fields requires updating service logic
+
+Conclusion:
+- need automated mapping
+
+---
+
+## Separation of Concerns
+
+DTO:
+- data transport
+
+Service:
+- business logic
+
+Mapper:
+- data transformation
+
+---
+
+## Clean Architecture Insight
+
+Avoid:
+- mixing update logic with service logic
+
+Use:
+- dedicated mapping layer
+
+---
+
+## Data Control Principle
+
+User can only modify:
+- fields exposed in DTO
+
+User cannot modify:
+- hidden/internal fields (e.g., user relation)
+
+---
+
+## Security Reinforcement
+
+Even during update:
+- userId comes from JWT
+- prevents cross-user modification
+
+---
+
+## Key Insight
+
+Design should evolve when:
+- repetition appears
+- scaling becomes difficult
+
+Not:
+- after bugs appear
+
+---
+
+## Final Design Direction
+
+Move from:
+manual field updates
+
+To:
+automated mapping (MapStruct)
+
+## MapStruct Overview
+
+MapStruct is a compile-time mapper
+
+- generates code automatically
+- no reflection
+- type-safe
+
+---
+
+## @Mapper
+
+Marks interface for MapStruct
+
+- generates implementation class
+- no manual coding required
+
+---
+
+## componentModel = "spring"
+
+- registers mapper as Spring Bean
+- allows dependency injection
+
+---
+
+## Mapping Types
+
+1. Entity → DTO
+2. DTO → Entity
+3. DTO → Existing Entity (update)
+
+---
+
+## @BeanMapping
+
+Used to configure mapping behavior
+
+---
+
+## nullValuePropertyMappingStrategy = IGNORE
+
+- null fields in source are ignored
+- prevents overwriting existing values
+
+---
+
+## @MappingTarget
+
+Indicates:
+- update existing object
+- not create new one
+
+---
+
+## Generated Code Behavior
+
+MapStruct generates:
+
+if (source.field != null) {
+    target.field = source.field;
+}
+
+---
+
+## Benefits
+
+- removes boilerplate code
+- improves readability
+- reduces bugs
+- scales with fields
+
+---
+
+## Performance
+
+- compile-time generation
+- no runtime reflection
+- very fast
+
+---
+
+## Field Matching
+
+- matches fields by name
+- same name → automatic mapping
+- different name → requires configuration
+
+---
+
+## Separation of Concerns
+
+DTO → data transport  
+Entity → database  
+Mapper → transformation  
+
+---
+
+## When to Use
+
+- multiple DTOs
+- partial updates
+- large models
+
+---
+
+## Key Insight
+
+MapStruct replaces repetitive mapping logic with generated, maintainable code
