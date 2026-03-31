@@ -2150,3 +2150,168 @@ Otherwise:
 - DTO separation ✔
 - Scalable mapping ✔
 - Secure user handling ✔
+
+## Validation Layer Introduction
+
+Validation ensures:
+- invalid data is rejected before reaching service layer
+- protects database integrity
+- improves API reliability
+
+---
+
+## @Valid
+
+Used in controller:
+
+@Valid @RequestBody DTO
+
+Meaning:
+- triggers validation annotations in DTO
+- without it → validation is ignored
+
+---
+
+## Validation Flow
+
+Request → Controller → Validation → Service → Repository
+
+If validation fails:
+- request never reaches service
+
+---
+
+## Validation Annotations Used
+
+@NotBlank:
+- not null
+- not empty
+- not whitespace
+
+@Min / @Max:
+- numeric range validation
+
+@Size(min=1):
+- string must not be empty
+- allows null (important for PATCH)
+
+---
+
+## Create vs Update Validation
+
+Create (POST):
+- all fields required
+- strict validation
+
+Update (PATCH):
+- fields optional
+- validate only if present
+
+---
+
+## PATCH Validation Design
+
+Goal:
+- allow partial updates
+- prevent invalid values
+
+---
+
+## Problem
+
+DTO without validation:
+
+"" (empty string) → accepted ❌
+
+---
+
+## Solution
+
+Use:
+
+@Size(min = 1)
+
+Behavior:
+- null → allowed (field not sent)
+- "" → rejected
+- valid string → accepted
+
+---
+
+## Why Not @NotBlank for PATCH
+
+@NotBlank:
+- rejects null
+- breaks partial update
+
+Example:
+
+{} → invalid ❌
+
+---
+
+## Wrapper Types for PATCH
+
+Use:
+
+Integer instead of int
+
+Reason:
+- int → default 0 (cannot detect missing field)
+- Integer → null means "not provided"
+
+---
+
+## Domain Constraint
+
+Year field:
+
+@Min(1)
+@Max(4)
+
+Reason:
+- reflects real-world constraint (college years)
+
+---
+
+## Important Design Principle
+
+Validation should reflect:
+- business rules
+- not just technical constraints
+
+---
+
+## Key Insight
+
+Validation differs based on operation:
+- Create → strict
+- Update → flexible but controlled
+
+---
+
+## Security Note
+
+Validation works alongside:
+- authentication (who user is)
+- authorization (what user can do)
+
+---
+
+## Final Behavior Achieved
+
+PATCH:
+- allows partial updates ✔
+- rejects invalid values ✔
+- keeps existing data safe ✔
+
+---
+
+## Common Mistake Avoided
+
+Using same validation for:
+- create ❌
+- update ❌
+
+Instead:
+- tailored validation ✔
