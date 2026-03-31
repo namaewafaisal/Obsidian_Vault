@@ -2315,3 +2315,185 @@ Using same validation for:
 
 Instead:
 - tailored validation ✔
+
+## Profile Completion Flag
+
+Added field in User entity:
+
+private boolean profileCompleted;
+
+---
+
+## Purpose
+
+Tracks whether user has completed profile setup
+
+Used for:
+- enforcing onboarding flow
+- restricting features
+- backend business logic
+
+---
+
+## Design Decision
+
+profileCompleted is:
+- NOT part of DTO
+- NOT user-controlled
+- managed only by server
+
+---
+
+## Security Principle
+
+Client:
+- controls request DTO
+
+Server:
+- controls internal state
+
+---
+
+## Why Not Include in DTO
+
+If included:
+
+{
+  "profileCompleted": true
+}
+
+User could:
+- bypass onboarding
+- fake system state
+
+---
+
+## Correct Flow
+
+User:
+- registers
+- creates profile
+
+Server:
+- sets profileCompleted = true
+
+---
+
+## Service Layer Responsibility
+
+Business rule:
+
+user.setProfileCompleted(true);
+
+Handled inside service layer:
+- not controller
+- not DTO
+
+---
+
+## Transaction Management
+
+Used:
+
+@Transactional
+
+---
+
+## What @Transactional Does
+
+Wraps method in a database transaction
+
+Behavior:
+- all operations succeed → commit
+- any operation fails → rollback
+
+---
+
+## Example in createProfile
+
+Operations:
+
+1. save user
+2. save profile
+
+---
+
+## Without Transaction
+
+Possible state:
+
+user updated ✔  
+profile not saved ❌  
+
+→ inconsistent database
+
+---
+
+## With Transaction
+
+Either:
+
+both succeed ✔  
+OR  
+both fail ✔  
+
+---
+
+## Atomicity
+
+Transaction ensures:
+
+"All or nothing"
+
+---
+
+## When to Use Transactions
+
+Use when:
+- multiple DB operations
+- data consistency required
+
+---
+
+## Where to Place @Transactional
+
+Service layer ✔
+
+Not:
+- controller
+- repository
+
+---
+
+## Code Smell Found
+
+Duplicate dependency:
+
+private final UserRepository userRepo;
+private final UserRepository userRepository;
+
+---
+
+## Fix
+
+Keep only one instance
+
+---
+
+## Final Design Achieved
+
+- secure internal state handling ✔
+- proper layering ✔
+- transactional safety ✔
+- no client trust for critical flags ✔
+
+---
+
+## Key Insight
+
+Never trust client for:
+- system state
+- security flags
+- business rules
+
+Always enforce in backend
