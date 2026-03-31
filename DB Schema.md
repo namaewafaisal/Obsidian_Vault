@@ -18,7 +18,21 @@ Auth table
 14. batch
 15. phone number
 16. personal email id
+17. identity card number
+18. 
 
-Usernames
+Usernames / handles
 1. Leetcode
-2. Leetcode url(Compute)
+2. Leetcode url(Computed maybe)
+3. Hacker Rank
+4. Github
+5. linkdin
+6. codechef
+7. codeforces
+
+Marks Academics
+1. history of arrears
+2. standing arears
+3. current cgpa
+4. each sem marks and gpa(every subject data, its credit , grade got internal marks all of it somehow)
+5. 
