@@ -2737,3 +2737,218 @@ Moved from:
 To:
 - data-first design ✔
 
+## StudentProfile Schema (Finalized)
+
+Core purpose:
+- store student identity + basic info
+- retrievable by staff
+
+---
+
+## Final Fields
+
+registerNumber (unique, identity)
+fullName
+dateOfBirth
+gender
+department
+year
+section
+batch
+phoneNumber
+personalEmail
+
+user_id (relation to User)
+
+createdAt
+updatedAt
+
+---
+
+## Design Decisions
+
+- registerNumber = primary identity (NOT user id)
+- college email comes from User table (no duplication)
+- no career / marks / placement data here (separate modules later)
+- no status field (intentionally skipped)
+
+---
+
+## Why Not Enum (department, etc)
+
+- values may change
+- requires redeploy
+- not flexible
+
+Use:
+- String instead
+
+---
+
+## DTO Strategy
+
+ProfileRequest → create  
+UpdateProfileRequest → partial update  
+ProfileResponse → fixed output  
+
+---
+
+## Key Rule
+
+Fixed DTO:
+- backend returns full structure
+- frontend decides what to display
+
+---
+
+## Update Logic (MapStruct)
+
+@Mapper with:
+
+@BeanMapping(nullValuePropertyMappingStrategy = IGNORE)
+
+---
+
+## Effect
+
+PATCH request:
+{
+  "section": "B"
+}
+
+→ only updates section  
+→ other fields remain unchanged
+
+---
+
+## Why This Works
+
+MapStruct:
+- checks each field
+- skips null values
+- updates only provided data
+
+---
+
+## Important Fix
+
+registerNumber should NOT be updatable
+
+Reason:
+- it is identity
+- changing it breaks system consistency
+
+---
+
+## Date Handling
+
+LocalDate expects:
+
+YYYY-MM-DD
+
+---
+
+## Valid
+
+"dateOfBirth": "2006-06-04"
+
+---
+
+## Invalid
+
+"dateOfBirth": "" ❌
+
+Use:
+
+null ✔ (if optional)
+
+---
+
+## Service Layer Design
+
+createProfile:
+- check user exists
+- check profile not exists
+- check registerNumber unique
+- save profile
+- mark user.profileCompleted = true
+
+---
+
+updateProfile:
+- fetch profile by userId
+- MapStruct updates fields
+- save entity
+
+---
+
+getProfile:
+- fetch by userId
+- map to DTO
+
+---
+
+## Transaction Usage
+
+@Transactional on create
+
+Why:
+- multiple DB operations
+- must succeed/fail together
+
+---
+
+## Relationship
+
+User (auth)
+    ↓
+StudentProfile (data)
+
+One-to-One mapping
+
+---
+
+## Validation Used
+
+@NotBlank → strings not empty  
+@Email → valid email format  
+@Min / @Max → year bounds  
+@Size → phone length  
+
+---
+
+## Important Insight
+
+"" (empty string) ≠ null
+
+Validation behavior differs
+
+---
+
+## Architecture Maturity
+
+You now have:
+
+- clean entity design
+- proper DTO separation
+- safe update mechanism
+- controlled validation
+- scalable structure
+
+---
+
+## Development Pattern Learned
+
+Entity → DB  
+DTO → API  
+Mapper → bridge  
+Service → logic  
+
+---
+
+## Biggest Takeaway
+
+A clean schema + DTO design makes:
+- updates safe
+- code simple
+- system scalable
