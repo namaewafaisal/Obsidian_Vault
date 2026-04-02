@@ -2952,3 +2952,217 @@ A clean schema + DTO design makes:
 - updates safe
 - code simple
 - system scalable
+
+## Dynamic Filtering using JPA Specification
+
+### What problem this solves
+- Fixed methods like:
+  - `findByDepartmentAndYear(...)`
+- become unscalable when filters grow
+
+Example problem:
+- department only
+- year only
+- department + year
+- future filters (batch, section, etc.)
+
+👉 Too many combinations → too many repository methods ❌
+
+---
+
+### Solution: Specification
+
+- `Specification<T>` is a way to **build dynamic SQL queries**
+- Instead of writing many methods → build conditions at runtime
+
+---
+
+### Core Idea
+
+```text
+Build query step by step → combine conditions → execute once
+```
+
+---
+
+### Service Layer Implementation
+
+```java
+Specification<StudentProfile> spec = (root, query, cb) -> null;
+
+if (department != null && !department.isBlank()) {
+    spec = spec.and(ProfileSpecifications.hasDepartment(department));
+}
+
+if (year != null) {
+    spec = spec.and(ProfileSpecifications.hasYear(year));
+}
+
+List<StudentProfile> profiles = profileRepository.findAll(spec);
+```
+
+---
+
+### Important Concepts
+
+#### 1. Specification is NOT a query
+- It is a **query builder**
+- No DB call happens here
+
+#### 2. Query executes only here
+```java
+profileRepository.findAll(spec);
+```
+
+---
+
+### Flow
+
+```text
+Controller → Service builds Specification → Repository → Hibernate → SQL → DB
+```
+
+---
+
+### How conditions are combined
+
+```text
+spec.and(A).and(B)
+```
+
+👉 becomes:
+
+```sql
+WHERE A AND B
+```
+
+---
+
+### Example SQL Generated
+
+If:
+```text
+department = CSE
+year = 4
+```
+
+👉 SQL:
+
+```sql
+SELECT * FROM student_profile
+WHERE department = 'CSE' AND year = 4;
+```
+
+---
+
+### Specification Class
+
+```java
+public class ProfileSpecifications {
+
+    public static Specification<StudentProfile> hasDepartment(String dept) {
+        return (root, query, cb) ->
+                cb.equal(root.get("department"), dept);
+    }
+
+    public static Specification<StudentProfile> hasYear(Integer year) {
+        return (root, query, cb) ->
+                cb.equal(root.get("year"), year);
+    }
+}
+```
+
+---
+
+### Key Parts Explained
+
+#### root
+- Represents the table (`student_profile`)
+
+#### query
+- The final SQL query (rarely used here)
+
+#### cb (CriteriaBuilder)
+- Used to create conditions like:
+  - `equal`
+  - `like`
+  - `greaterThan`
+
+---
+
+### Why `(root, query, cb) -> null` works
+
+- Returns no condition → acts like "empty filter"
+- Allows chaining with `.and(...)`
+
+BUT:
+
+```text
+It is implicit behavior (Spring handles null internally)
+```
+
+---
+
+### Best Practice Insight
+
+```text
+Specification = condition builder, not data filter
+```
+
+- Filtering happens in DB, not Java
+- Efficient for large datasets
+
+---
+
+### Mapping after filtering
+
+```java
+profiles.stream()
+        .map(mapper::toResponse)
+        .toList();
+```
+
+- Converts Entity → DTO
+- Happens in memory AFTER DB query
+
+---
+
+### When to use Specification
+
+Use when:
+- Filters are optional
+- Filters are dynamic
+- Many combinations exist
+
+Avoid when:
+- Simple fixed queries
+
+---
+
+### Comparison
+
+| Approach | Use Case |
+|--------|--------|
+| findByDepartmentAndYear | Fixed filters |
+| Specification | Dynamic filters |
+
+---
+
+### Debug Tip
+
+Log input:
+
+```java
+System.out.println(department + " " + year);
+```
+
+👉 Helps detect query param issues
+
+---
+
+### Key Takeaway
+
+```text
+Specification lets you build flexible, scalable, single-query filters dynamically
+```
+
