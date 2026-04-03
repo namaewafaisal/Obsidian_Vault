@@ -3166,3 +3166,198 @@ System.out.println(department + " " + year);
 Specification lets you build flexible, scalable, single-query filters dynamically
 ```
 
+## Pagination + Sorting + Search (Integrated API)
+
+### Pageable Integration
+
+- `Pageable` allows backend to control:
+  - page number
+  - page size
+  - sorting
+
+- Spring automatically builds `Pageable` from query params
+
+Example:
+```text
+?page=0&size=3
+```
+
+---
+
+### Service Usage
+
+```java
+Page<StudentProfile> page = profileRepository.findAll(spec, pageable);
+return page.map(mapper::toResponse);
+```
+
+---
+
+### Key Difference
+
+| Before | After |
+|------|------|
+| List | Page |
+| No metadata | Includes pagination info |
+
+---
+
+### Page Object
+
+`Page<T>` contains:
+
+- `getContent()` → actual data
+- `getTotalElements()` → total records
+- `getTotalPages()` → total pages
+- `getNumber()` → current page
+- `isFirst()` / `isLast()`
+
+---
+
+### Response Structure
+
+```json
+{
+  "content": [...],
+  "totalElements": 10,
+  "totalPages": 4,
+  "size": 3,
+  "number": 0,
+  "first": true,
+  "last": false
+}
+```
+
+---
+
+### Sorting
+
+- Controlled via query param
+
+```text
+&sort=fullName,asc
+```
+
+---
+
+#### Rules
+
+- Use **entity field names**, not DB column names
+
+Correct:
+```text
+sort=fullName
+```
+
+Wrong:
+```text
+sort=full_name
+```
+
+---
+
+### Multiple Sorting
+
+```text
+?sort=year,desc&sort=fullName,asc
+```
+
+---
+
+### Search (Partial Match)
+
+```java
+cb.like(
+    cb.lower(root.get("fullName")),
+    "%" + name.toLowerCase() + "%"
+)
+```
+
+---
+
+### What this does
+
+Input:
+```text
+name=ed
+```
+
+Matches:
+```text
+"Edwin", "Mohamed", "Reda"
+```
+
+---
+
+### Case Insensitive Search
+
+- `cb.lower(...)` ensures case-insensitive matching
+
+---
+
+### Combined Query Example
+
+```text
+/api/profile/filter?
+department=CSE
+&year=3
+&name=ed
+&page=0
+&size=3
+&sort=fullName,asc
+```
+
+---
+
+### Generated SQL (conceptual)
+
+```sql
+SELECT * FROM student_profile
+WHERE department = 'CSE'
+AND year = 3
+AND LOWER(full_name) LIKE '%ed%'
+ORDER BY full_name ASC
+LIMIT 3 OFFSET 0;
+```
+
+---
+
+### Important Insight
+
+```text
+Filtering → Specification
+Pagination → Pageable
+Sorting → Pageable
+Search → LIKE condition
+```
+
+---
+
+### Flow
+
+```text
+Controller → Service builds spec → Pageable applied → DB query → Page returned → DTO mapping
+```
+
+---
+
+### Why this design is powerful
+
+```text
+✔ Single endpoint handles all filters
+✔ No multiple repository methods needed
+✔ Scales easily when new filters added
+✔ Efficient (DB does all filtering)
+✔ Frontend-friendly response
+```
+
+---
+
+### Design Philosophy
+
+```text
+Start structured → extend safely
+```
+
+- Avoid "search everything everywhere" early
+- Build controlled filters first
