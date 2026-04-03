@@ -1372,3 +1372,268 @@ Database handles WHERE
 
 ---
 
+## Search API — Pagination, Sorting, and Safety (Concise Notes)
+
+---
+
+## 🧠 1. Goal
+
+```text
+Provide fast, filtered, paginated student search for staff
+```
+
+---
+
+## 🧠 2. Core Components
+
+```text
+✔ Specification → filtering
+✔ Pageable → pagination + sorting
+✔ Service logic → safety + defaults
+```
+
+---
+
+## 🧠 3. Pagination Defaults
+
+### Controller level
+
+```java
+@PageableDefault(page = 0, size = 30)
+```
+
+---
+
+### Meaning
+
+```text
+If user sends nothing:
+→ page = 0
+→ size = 30
+```
+
+---
+
+## 🧠 4. Pagination Safety (Service Layer)
+
+```text
+Never trust user input directly
+```
+
+---
+
+### Fix invalid values
+
+```java
+page = page < 0 → 0
+```
+
+---
+
+### Cap size
+
+```java
+size > maxSize → maxSize
+```
+
+---
+
+### Example
+
+|Input|Used|
+|---|---|
+|page=-6|0|
+|size=60|50|
+
+---
+
+## 🧠 5. Config-driven limits
+
+### application.yml
+
+```yaml
+app:
+  pagination:
+    max-size: 50
+```
+
+---
+
+### Inject
+
+```java
+@Value("${app.pagination.max-size}")
+private int maxSize;
+```
+
+---
+
+### Why
+
+```text
+✔ no hardcoding
+✔ easy to change
+✔ environment flexible
+```
+
+---
+
+## 🧠 6. Sorting Logic
+
+### Problem
+
+```text
+User may or may not send sort
+```
+
+---
+
+### Solution
+
+```java
+if (pageable.getSort().isUnsorted()) {
+    apply default sort
+}
+```
+
+---
+
+### Default
+
+```text
+registerNumber ASC
+```
+
+---
+
+## 🧠 7. Important Rule
+
+```text
+Modify Pageable → NOT repository call
+```
+
+---
+
+## 🧠 8. DB-Level Sorting
+
+```java
+findAll(spec, pageable)
+```
+
+---
+
+### Happens in DB
+
+```sql
+ORDER BY register_number ASC
+```
+
+---
+
+### Why
+
+```text
+✔ efficient
+✔ avoids in-memory sorting
+✔ scalable
+```
+
+---
+
+## 🧠 9. Filtering (Specification)
+
+```text
+department → optional
+year → optional
+name → optional
+```
+
+---
+
+### Combined as
+
+```text
+spec = A AND B AND C
+```
+
+---
+
+## 🧠 10. Final Flow
+
+```text
+Request
+   ↓
+Spring builds Pageable
+   ↓
+Service sanitizes Pageable
+   ↓
+Specification builds query
+   ↓
+DB executes (filter + sort + limit)
+   ↓
+Page returned
+```
+
+---
+
+## 🧠 11. Response Structure
+
+```json
+{
+  "content": [...],
+  "pageable": {...},
+  "totalElements": ...,
+  "totalPages": ...,
+  "size": ...,
+  "number": ...
+}
+```
+
+---
+
+## 🧠 12. Design Choice
+
+### Current approach
+
+```text
+Auto-correct invalid input
+```
+
+---
+
+### Alternative
+
+```text
+Reject invalid input
+```
+
+---
+
+### Decision
+
+```text
+Auto-correct → better UX for this project
+```
+
+---
+
+## 🧠 13. Key Insights
+
+```text
+✔ Pagination is NOT just limit → it's control
+✔ Sorting belongs to DB
+✔ Never trust user-provided size/page
+✔ Defaults should be predictable
+```
+
+---
+
+## 🎯 One-line Summary
+
+```text
+User controls query,
+Backend controls safety,
+Database executes efficiently
+```
+
+---
