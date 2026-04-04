@@ -2642,3 +2642,53 @@ You now have:
 ✔ Swagger documentation  
 
 👉 This is **feature-complete backend (MVP level)**
+## 🛠️ Swagger Response Fix (Important)
+
+### Problem
+Swagger showed same response (ProfileResponse) for:
+- 200 ✅ correct
+- 401 ❌ wrong
+- 404 ❌ wrong
+
+### Cause
+Swagger infers response type from method return type
+
+---
+
+### Fix
+
+Explicitly define response schema:
+
+```
+@ApiResponse(
+    responseCode = "404",
+    description = "Not found",
+    content = @Content(schema = @Schema(implementation = ErrorResponse.class))
+)
+```
+
+---
+
+### Pattern
+
+- 200 → actual response DTO (e.g., ProfileResponse)
+- 4xx/5xx → ErrorResponse
+
+---
+
+### Extra
+
+```
+@Parameter(hidden = true)
+Authentication authentication
+```
+
+→ hides internal param from Swagger UI
+
+---
+
+### Result
+
+✔ Accurate API contract  
+✔ Frontend-safe error handling  
+✔ No misleading responses  
