@@ -1,3 +1,4 @@
+Learned from [SQLBOLT](sqlbolt.com)
 # Intro
 SQL or structured query language is most common way of interacting with database. Its used in SQLite, MySQL, Postgres, Oracle etc
 A database is like a collection of tables or relations which are in someway might be linked or have a relation between them.
@@ -66,6 +67,8 @@ Skip first n values (like page but not a index but index times the size like)
 SELECT column, another_column, …
 FROM mytable
 WHERE condition(s)
-ORDER BY column ASC/DESC;
-LIMIT 
+ORDER BY column ASC/DESC
+LIMIT num_limit OFFSET num_offset;
 ```
+
+
