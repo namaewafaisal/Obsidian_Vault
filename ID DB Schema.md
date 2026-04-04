@@ -69,3 +69,31 @@ Other data
 10. languages known
 
 
+
+# Staff Controlled
+1. regiterNumber
+2. department
+3. year
+4. section
+5. cgpa
+6. cgpa list (all sems)
+7. standing arrears
+8. history of arrears
+9. tenthmarks
+10. twelthmarks
+11. diplomamarks
+12. careerchoice decided(placement, entrepreanor, higher studies)
+
+# Student Handled
+1. github
+2. leetcode
+3. linkedin
+4. hackerrank
+5. codeforces
+6. gfg
+7. hackerearth
+8. skill
+9. projects
+
+> Student can request to change any data single or multiple data
+> 
