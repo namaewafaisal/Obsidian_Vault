@@ -46,9 +46,26 @@ WHERE condition
 | LIKE       | Case insensitive exact string comparison                                                              | col_name LIKE "ABC"                                                     |
 | NOT LIKE   | Case insensitive exact string inequality comparison                                                   | col_name NOT LIKE "ABCD"                                                |
 | %          | Used anywhere in a string to match a sequence of zero or more characters (only with LIKE or NOT LIKE) | col_name LIKE "%AT%"  <br>(matches "AT", "ATTIC", "CAT" or even "BATS") |
-| _          | Used anywhere in a string to match a single character (only with LIKE or NOT LIKE)                    | col_name LIKE "AN_"  <br>(matches "AND", but not "AN")                  |
+| _          | Used anywhere in a string to match a single character (only with LIKE or NOT LIKE)                    | col_name LIKE `"AN\_"`  <br>(matches "AND", but not "AN")               |
 | IN (…)     | String exists in a list                                                                               | col_name IN ("A", "B", "C")                                             |
 | NOT IN (…) | String does not exist in a list                                                                       | col_name NOT IN ("D", "E", "F")                                         |
 
 > [Apache Lucene](http://lucene.apache.org/ "Apache Lucene") or [Sphinx](http://sphinxsearch.com/ "Sphinx Search") are better in full text search as they are designed for it
 
+## Distinct 
+GET only unique values
+## ORDER BY
+It takes a column to sort by and gets ASC or DESC
+## LIMIT
+limits the number of rows returned (like size in backend pagination)
+## OFFSET
+Skip first n values (like page but not a index but index times the size like)
+
+
+```sql
+SELECT column, another_column, …
+FROM mytable
+WHERE condition(s)
+ORDER BY column ASC/DESC;
+LIMIT 
+```
