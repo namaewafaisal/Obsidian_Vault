@@ -78,3 +78,24 @@ queries become more complex.
 
 ## Inner Join
 Take only the common in both tables. can be used as INNER JOIN or JOIN. refer to same
+
+# Left Join
+All records, columns from left, matching records in right
+
+## Right
+Vice versa of left join
+## Full join or Outer Join
+both tables regardless what what matches
+
+we have to manage how to deal with null
+
+```sql
+SELECT column, another_column, …
+FROM mytable
+INNER/LEFT/RIGHT/FULL JOIN another_table 
+    ON mytable.id = another_table.matching_id
+WHERE condition(s)
+ORDER BY column, … ASC/DESC
+LIMIT num_limit OFFSET num_offset;
+```
+
