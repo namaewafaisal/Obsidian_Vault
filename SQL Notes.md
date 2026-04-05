@@ -183,3 +183,77 @@ AND/OR another_condition
 AND/OR …;
 ```
 
+# SQL Expressions (append)
+
+## Idea
+- Perform calculations on column values (row-by-row)
+- Does NOT combine rows (not aggregates)
+
+---
+
+## Syntax
+```sql
+SELECT expression AS alias
+FROM table;
+```
+
+---
+
+## Common operations
+
+### Arithmetic
+```sql
+col1 + col2
+col1 / 1000000
+col * 10
+```
+
+---
+
+### Conditions (with expressions)
+```sql
+WHERE col % 2 = 0   -- even numbers
+```
+
+---
+
+## Alias (important)
+```sql
+SELECT col * 10 AS new_col
+```
+- Renames output column
+- Improves readability
+
+---
+
+## Key rule
+- Expression → transforms each row
+- Aggregate → combines multiple rows (not used here)
+
+---
+
+## Pattern (this exercise)
+
+### Combine columns
+```sql
+col1 + col2
+```
+
+### Convert values
+```sql
+col * 10
+col / 1000000
+```
+
+### Filter using logic
+```sql
+WHERE col % 2 = 0
+```
+
+---
+
+## Notes
+- Works per row
+- No GROUP BY needed
+- Avoid SELECT * when modifying columns
+
