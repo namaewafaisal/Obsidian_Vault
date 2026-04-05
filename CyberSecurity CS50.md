@@ -1211,4 +1211,18 @@ if u have skills to find bugs then the company will pay you but the big you foun
 Common Vulnerabilities and Exposures (CVE) : All unique bugs are given a unique ID so they are tracked and ensured that softwares are upto date with them
 Common vulnerability scoring system (CVSS) : rank the bugs based on how huge the threats are
 Exploit Prediction Scoring system (EPSS) : predicting how likely this bug affects the user and how often. regardless of threat level its like a possibility.
-Known exploited vulnerabilities Catalog (KEV) : known to have exploited, the
+Known exploited vulnerabilities Catalog (KEV) : vulnerabitiltes known to have exploited, use to create a secure system using the past experience
+
+## Preserving Privacy
+Understand what threats, vulnerabilities are we already under without knowledge and secure ourselves from current and future risks
+
+### Browser history
+Its useful and convenient but also a privacy concern if someone else access it.
+Solution : Clear History, Dont login or use private windows
+
+### Logs in server
+server remembers your IP, date time, what request, url we used or browser. it has more info than needed
+
+### HTTP Headers
+
+key value pair that indicate a settings or config like structure to provide info about the request
