@@ -1263,4 +1263,17 @@ google analytics
 ### Tracking parameters
 using https parmams
 the params might have extra data.
-like click_id which is logged 
+like click_id which is logged and they can know which page we visited, and ads watched maybe
+
+### Tracking cookies
+Third party cookies if a site refers a cookie of another domain like google search clicking a link.
+Third party has become more used than the first party sites we actually visit. third party like google adsense can know sites data too
+Where it all connects is if a site i visit has a third party url being fetched like an ad.gif maybe then it means that the request to that third party is also done with the referer too. 
+```mermaid
+graph LR
+Harvard --> A[google adsense]
+Yale --> A
+Standford --> A
+A --> _[knows we visit harvard, yale, stanford sites]
+```
+
