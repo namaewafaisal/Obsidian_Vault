@@ -1244,8 +1244,23 @@ Cookies should be stored in localstorage
 ### Session Cookies
 Cookies are generated the first time a user logges in a site and sent from the server to client. server stores it somewhere (stateful) and client browser have it. any time request sent cookies are added in the header, server matches cookies, identify user
 
-when first logged in
+when first logged in response can be
 ```http
 HTTP/3 200
 Set-Cookie: session=1234abcd
 ```
+Session isnt meant to be lifelong. it has shorter lifespan
+the request after having cookie would be 
+```http
+GET / HTTP/3
+Cookie: session=1234abcd
+```
+
+### Tracking cookie
+designed to track, many purposes, bug fix, ads etc.
+google analytics
+
+### Tracking parameters
+using https parmams
+the params might have extra data.
+like click_id which is logged 
