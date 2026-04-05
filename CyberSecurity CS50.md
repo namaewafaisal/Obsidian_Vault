@@ -1277,3 +1277,14 @@ Standford --> A
 A --> _[knows we visit harvard, yale, stanford sites via referer and sent cookie]
 ```
 
+## Private Browsing
+special window with separate memory with no knowledge of cookies, and history we had.
+but it still works exacly same with new cookies, referer etc. even though its fresh everything in that session of private window is also tracked and stored.
+only way it can match your private session with your actual browsing is via IP if we dont use vpn, browser name version, OS, version, resolution, referer etc. Mainly client side privacy but still somewhat similar in server side
+
+### Supercookies
+injected via company, network, proxy  maybe and add their own headers. they might want to know your data, or purposely let other third party to get your data.
+using HTTP will save you from network but proxy cannot. 
+
+cookies can be used to store confidential data so encrytion of it by browser is good if done.
+cookies should not have all data but only a id like number which maps to data in server. cookies if stealed can be used to impersonate user.
