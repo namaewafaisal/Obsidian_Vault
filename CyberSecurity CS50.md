@@ -1274,6 +1274,6 @@ graph LR
 Harvard --> A[google adsense]
 Yale --> A
 Standford --> A
-A --> _[knows we visit harvard, yale, stanford sites]
+A --> _[knows we visit harvard, yale, stanford sites via referer and sent cookie]
 ```
 
