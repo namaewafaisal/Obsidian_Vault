@@ -1229,4 +1229,9 @@ key value pair that indicate a settings or config like structure to provide info
 if you click a link from another site like google then it adds a header value called 
 `Referer : https://www.google.com/search?q=cats`
 
-browser may use this `<meta name="referrer" `
+site may use this `<meta name="referrer" content="origin"` to embed the referer link
+we can use third party software to remove the headers or anything when request is sent
+### Fingerprinting
+extract a lot of information from user/client and creating a unique user identification data so anytime we send a request they know this user.
+mostly using IP address. User-Agent : browser, version, OS ,version 
+![](Pasted%20image%2020260405145103.png)
