@@ -1233,5 +1233,19 @@ site may use this `<meta name="referrer" content="origin"` to embed the referer 
 we can use third party software to remove the headers or anything when request is sent
 ### Fingerprinting
 extract a lot of information from user/client and creating a unique user identification data so anytime we send a request they know this user.
-mostly using IP address. User-Agent : browser, version, OS ,version 
+mostly using IP address. User-Agent : browser, version, OS ,version,
+or send a code to client to ask browser about timezone, settings, resolution, fonts installed and much more which collectively can be unique to identify you
 ![](Pasted%20image%2020260405145103.png)
+VPN does only mask IP not other data like browser etc
+If hacker gets these data then its a problem. if https then cant hack the packets but if hacked client or server then data is leaked
+Phone have more data like GPS so if you provide access then it can also reach the server
+Cookies should be stored in localstorage
+
+### Session Cookies
+Cookies are generated the first time a user logges in a site and sent from the server to client. server stores it somewhere (stateful) and client browser have it. any time request sent cookies are added in the header, server matches cookies, identify user
+
+when first logged in
+```http
+HTTP/3 200
+Set-Cookie: session=1234abcd
+```
