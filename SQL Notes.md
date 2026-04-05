@@ -72,3 +72,9 @@ LIMIT num_limit OFFSET num_offset;
 ```
 
 
+# Normalization
+Storing less duplicate data across tables so each grow separately independent of each other while still holding a relation. 
+queries become more complex.
+
+## Inner Join
+Take only the common in both tables. can be used as INNER JOIN or JOIN. refer to same
