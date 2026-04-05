@@ -1226,3 +1226,7 @@ server remembers your IP, date time, what request, url we used or browser. it ha
 ### HTTP Headers
 
 key value pair that indicate a settings or config like structure to provide info about the request
+if you click a link from another site like google then it adds a header value called 
+`Referer : https://www.google.com/search?q=cats`
+
+browser may use this `<meta name="referrer" `
