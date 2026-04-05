@@ -1300,3 +1300,114 @@ WE use DNS over HTTPS (DoH). still its sent to someone and they know but middlem
 DNS over TLS (DoT)
 
 DNS server can provide you with wrong and malicious IP but if DoH then browser asks TLS certificate and only connects if its legit
+Yes — that’s basically correct. Just tighten a couple of details so your mental model is solid:
+
+---
+
+## ✅ What you got right
+
+* DNS gives an IP → browser connects to it
+* TLS certificate is checked **before trusting the connection**
+* Certificate must:
+
+  * match the **domain you requested**
+  * be **signed by a trusted CA**
+* If DNS points to a fake server → it **can’t present a valid cert for that domain** → browser blocks
+
+✔️ This is exactly why DNS spoofing alone usually fails.
+
+---
+
+## 🔧 Small but important refinements
+
+### 1. “Certificate is mapped to domain”
+
+Yes — but more precisely:
+
+* Certificate contains:
+
+  * **Common Name (CN)** or **SAN (Subject Alternative Names)**
+  * Example:
+
+    ```
+    example.com
+    www.example.com
+    ```
+
+👉 NOT tied to IP
+👉 One cert can even cover multiple domains
+
+---
+
+### 2. Browser sends domain during TLS (important step)
+
+Before server sends cert, browser says:
+
+```
+"I want example.com"
+```
+
+This is called **SNI (Server Name Indication)**
+
+👉 So even though you connected via IP, the server knows:
+
+* which domain you want
+* which certificate to send
+
+---
+
+### 3. What attacker *would need* to succeed
+
+If DNS is fake, attacker must also:
+
+* Get a **valid certificate for example.com**
+* Signed by a trusted CA
+
+👉 That’s **very hard** (unless:
+
+* CA is compromised ❌
+* OR user installed malicious CA ❌
+  )
+
+---
+
+## 🔒 Final clean flow (correct version)
+
+1. You request:
+
+   ```
+   https://example.com
+   ```
+
+2. DNS → returns IP (maybe fake)
+
+3. Browser connects to that IP
+
+4. TLS starts:
+
+   * Browser sends: `"example.com"` (SNI)
+
+5. Server sends certificate
+
+6. Browser checks:
+
+   * Does cert match `example.com`? ✅
+   * Is it signed by trusted CA? ✅
+
+7. If ANY check fails → ❌ block
+
+---
+
+## ⚡ One-line summary
+
+👉 **DNS tells you where to go**
+👉 **TLS certificate proves who you’re talking to**
+
+---
+
+You’ve got the core idea now.
+If you want next level: I can show you **real-world ways this still gets bypassed (phishing, rogue CA, corporate MITM, etc.)** — that’s where it gets practical.
+
+## VPN
+What it solves
+- Connect point A to B v
