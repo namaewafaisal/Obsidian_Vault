@@ -1288,3 +1288,15 @@ using HTTP will save you from network but proxy cannot.
 
 cookies can be used to store confidential data so encrytion of it by browser is good if done.
 cookies should not have all data but only a id like number which maps to data in server. cookies if stealed can be used to impersonate user.
+SMS or phone number is very insecure.
+
+## DNS
+Domain Name System is a database of IP and domain names mapped to it. url domain is checked in hierarchy and when IP is obtained it is stored in cache and used to connect.
+home router doesnt know -> ISP -> indian server maybe
+USES PORT 53
+traffic to DNS is UNENCRYTPED?? 
+anyone can intercept and even the ISP would know which site we asked for. although it doesnt know the page or anything inside the site but it knows the site we requested
+WE use DNS over HTTPS (DoH). still its sent to someone and they know but middlemen dont know.
+DNS over TLS (DoT)
+
+DNS server can provide you with wrong and malicious IP but if DoH then browser asks TLS certificate and only connects if its legit
