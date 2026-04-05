@@ -1410,4 +1410,18 @@ If you want next level: I can show you **real-world ways this still gets bypasse
 
 ## VPN
 What it solves
-- Connect point A to B v
+- Connect point A to B via a tunnel. mostly a A to B which B is only have the data of client and B to C where C is the side we want to request. so B is like an anonymous mail man who know us but does all work instead of us. its about we believe him VPN.
+- Everything encrypted
+What it doesnt solve
+- IP is the only thing changed so can be fingerprinted
+
+## TOR
+Server is accessed via going through multiple nodes that run tor and finally reaching server. atleast 3 jumps happen. 
+different path every request so cant be logged as much
+If the nodes are handled by someone who has access to the nodes and put together the traffic they can find the client.
+The less nodes the easier to find who uses TOR
+
+## Permissions
+permissions are asked by browser and apps to access data, io devices etc
+location services turned on can let the software which has permission would track us
+
