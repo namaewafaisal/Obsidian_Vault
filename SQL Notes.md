@@ -99,3 +99,77 @@ ORDER BY column, … ASC/DESC
 LIMIT num_limit OFFSET num_offset;
 ```
 
+# SQL JOIN (append)
+
+## 1. INNER JOIN
+- Only matching rows (intersection)
+
+Example:
+```sql
+SELECT b.building_name, e.role
+FROM buildings b
+JOIN employees e
+ON b.building_name = e.building;
+```
+
+Use when:
+- You only want data that exists in both tables
+
+---
+
+## 2. LEFT JOIN
+- All rows from left + matching from right
+- No match → NULL
+
+Example:
+```sql
+SELECT b.building_name, e.role
+FROM buildings b
+LEFT JOIN employees e
+ON b.building_name = e.building;
+```
+
+Use when:
+- You want ALL buildings (even empty ones)
+
+---
+
+## 3. RIGHT JOIN
+- All rows from right + matching from left
+
+Example:
+```sql
+SELECT b.building_name, e.role
+FROM buildings b
+RIGHT JOIN employees e
+ON b.building_name = e.building;
+```
+
+Use when:
+- Rare → usually just swap tables and use LEFT JOIN
+
+---
+
+## 4. FULL JOIN
+- All rows from both sides
+- No match → NULL
+
+Example:
+```sql
+SELECT *
+FROM buildings
+FULL JOIN employees
+ON buildings.building_name = employees.building;
+```
+
+Use when:
+- Need everything from both tables
+
+---
+
+## Notes
+- JOIN without type = INNER JOIN
+- Use DISTINCT if duplicates appear
+- Always use ON (else cartesian product)
+  
+  ---
