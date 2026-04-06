@@ -485,4 +485,5 @@ Altering table name
 
 ## Drop 
 ```sql
-DROP TABLE IF EXISTS mytable;```
+DROP TABLE IF EXISTS mytable;
+```
