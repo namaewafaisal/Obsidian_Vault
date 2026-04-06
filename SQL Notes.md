@@ -487,3 +487,283 @@ Altering table name
 ```sql
 DROP TABLE IF EXISTS mytable;
 ```
+
+Here are **clean, compact notes** (your style) 👇
+
+---
+
+# 📌 Subqueries
+
+## 🧠 Definition
+
+A **subquery** is a query inside another query.
+
+```sql
+SELECT ...
+FROM table
+WHERE column > (SELECT ...);
+```
+
+👉 Inner query → produces data
+👉 Outer query → uses it
+
+---
+
+# 🔹 Types of Subqueries
+
+---
+
+## 1️⃣ Simple Subquery (Scalar)
+
+* Returns **single value**
+* Runs **once**
+
+```sql
+SELECT *
+FROM employees
+WHERE salary > (
+    SELECT AVG(revenue_generated)
+    FROM employees
+);
+```
+
+---
+
+## 2️⃣ IN Subquery (List)
+
+* Returns **multiple values**
+* Used with `IN`
+
+```sql
+SELECT *
+FROM AlienSpecies
+WHERE habitat_id IN (
+    SELECT habitat_id
+    FROM AlienSpecies
+    GROUP BY habitat_id
+    HAVING COUNT(*) > 1
+);
+```
+
+---
+
+## 3️⃣ Correlated Subquery
+
+* Runs **for each row**
+* Uses outer query value
+
+```sql
+SELECT *
+FROM employees e
+WHERE salary > (
+    SELECT AVG(revenue_generated)
+    FROM employees
+    WHERE department = e.department
+);
+```
+
+---
+
+## 🔥 Execution Model (Important)
+
+```text
+For each row in outer query:
+    take current row values
+    run inner query using those values
+    compare result
+```
+
+---
+
+## ⚠️ Key Understanding
+
+* Inner query → full table access
+* Outer query → gives **one row at a time**
+* Correlation = **value sharing**
+
+---
+
+# 🔹 Where Subqueries Can Be Used
+
+---
+
+## 1️⃣ In WHERE
+
+👉 Most common
+
+```sql
+SELECT *
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+```
+
+---
+
+## 2️⃣ In FROM (Derived Table)
+
+👉 Acts like a temporary table
+
+```sql
+SELECT d.department, d.avg_salary
+FROM (
+    SELECT department, AVG(salary) AS avg_salary
+    FROM employees
+    GROUP BY department
+) d;
+```
+
+---
+
+## 3️⃣ In SELECT
+
+👉 Return computed value per row
+
+```sql
+SELECT 
+    name,
+    (SELECT AVG(salary) FROM employees) AS company_avg
+FROM employees;
+```
+
+---
+
+## 4️⃣ With IN / NOT IN
+
+```sql
+SELECT *
+FROM employees
+WHERE department IN (
+    SELECT department
+    FROM departments
+    WHERE location = 'NY'
+);
+```
+
+---
+
+## 5️⃣ With EXISTS (advanced but useful)
+
+```sql
+SELECT *
+FROM employees e
+WHERE EXISTS (
+    SELECT 1
+    FROM employees
+    WHERE department = e.department
+    AND salary > 100000
+);
+```
+
+---
+
+# 🔹 Performance Insight
+
+| Type       | Cost        |
+| ---------- | ----------- |
+| Simple     | ✅ Fast      |
+| IN         | ✅ Moderate  |
+| Correlated | ❌ Expensive |
+
+---
+
+# 🔥 Mental Summary
+
+* Subquery = **helper query**
+* Scalar → one value
+* IN → list
+* Correlated → per-row execution
+
+---
+
+# 🔹 One-line
+
+👉 **“Compute something → use it inside another query”**
+
+---
+
+If you want next step, I’ll convert this into a **problem + solution note (interview style)** so it sticks permanently.
+
+
+# 📌 Set Operations (UNION, INTERSECT, EXCEPT)
+
+## 🧠 Definition
+Set operations combine results of multiple queries (not tables like JOIN).
+
+---
+
+## 🔹 Rules
+- Same number of columns  
+- Same order of columns  
+- Compatible data types  
+
+---
+
+## 🔹 UNION
+- Combines results
+- Removes duplicates
+
+```sql
+SELECT name FROM students
+UNION
+SELECT name FROM teachers;
+```
+
+---
+
+## 🔹 UNION ALL
+- Combines results
+- Keeps duplicates
+
+```sql
+SELECT name FROM students
+UNION ALL
+SELECT name FROM teachers;
+```
+
+---
+
+## 🔹 INTERSECT
+- Returns only common rows
+
+```sql
+SELECT name FROM students
+INTERSECT
+SELECT name FROM teachers;
+```
+
+---
+
+## 🔹 EXCEPT
+- Returns rows in first query but not in second
+
+```sql
+SELECT name FROM students
+EXCEPT
+SELECT name FROM teachers;
+```
+
+---
+
+## ⚠️ Order Matters
+```sql
+A EXCEPT B ≠ B EXCEPT A
+```
+
+---
+
+## 🔹 Execution Order
+1. Run both queries  
+2. Apply set operation  
+3. Apply ORDER BY / LIMIT  
+
+---
+
+## 🔹 Mental Model
+- UNION → merge  
+- INTERSECT → common  
+- EXCEPT → difference  
+
+---
+
+## 🔹 One-line
+👉 Run multiple queries → combine results like sets
