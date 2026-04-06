@@ -464,3 +464,25 @@ CREATE TABLE IF NOT EXISTS mytable (
 | `NOT NULL`           | This means that the inserted value can not be `NULL`.                                                                                                                                                                                                                                                                                                                                              |
 | `CHECK (expression)` | This allows you to run a more complex expression to test whether the values inserted are valid. For example, you can check that values are positive, or greater than a specific size, or start with a certain prefix, etc.                                                                                                                                                                         |
 | `FOREIGN KEY`        | This is a consistency check which ensures that each value in this column corresponds to another value in a column in another table.  <br>  <br>For example, if there are two tables, one listing all Employees by ID, and another listing their payroll information, the `FOREIGN KEY` can ensure that every row in the payroll table corresponds to a valid employee in the master Employee list. |
+
+`ALTER TABLE mytable ADD column _DataType_ _OptionalTableConstraint_ DEFAULT default_value;`
+
+# Removing columns
+
+Dropping columns is as easy as specifying the column to drop, however, some databases (including SQLite) don't support this feature. Instead you may have to create a new table and migrate the data over.
+
+Altering table to remove column(s)
+
+`ALTER TABLE mytable DROP column_to_be_deleted;`
+
+# Renaming the table
+
+If you need to rename the table itself, you can also do that using the `RENAME TO` clause of the statement.
+
+Altering table name
+
+`ALTER TABLE mytable RENAME TO new_table_name;`
+
+## Drop 
+```sql
+DROP TABLE IF EXISTS mytable;```
