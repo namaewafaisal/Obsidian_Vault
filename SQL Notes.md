@@ -405,3 +405,16 @@ INSERT INTO boxoffice
 VALUES (1, 9.9, 283742034 / 1000000);
 ```
 
+# Creating a relation
+```sql
+INSERT INTO boxoffice (movie_id, rating, domestic_sales, international_sales)
+SELECT 
+    id,
+    8.7,
+    340000000,
+    270000000
+FROM movies
+WHERE title = 'Toy Story 4';
+```
+
+## Update
