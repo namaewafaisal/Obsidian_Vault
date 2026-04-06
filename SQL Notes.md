@@ -373,3 +373,35 @@ If an order is specified by the `ORDER BY` clause, the rows are then sorted by t
 
 Finally, the rows that fall outside the range specified by the `LIMIT` and `OFFSET` are discarded, leaving the final set of rows to be returned from the query.
 
+So far query is over for now
+
+# Inserting data
+
+```sql
+INSERT INTO mytable
+VALUES (value_or_expr, another_value_or_expr, …),
+       (value_or_expr_2, another_value_or_expr_2, …),
+       …;
+```
+
+In some cases, if you have incomplete data and the table contains columns that support default values, you can insert rows with only the columns of data you have by specifying them explicitly.
+Insert statement with specific columns
+
+```sql
+INSERT INTO mytable
+(column, another_column, …)
+VALUES (value_or_expr, another_value_or_expr, …),
+      (value_or_expr_2, another_value_or_expr_2, …),
+      …;
+```
+
+In addition, you can use mathematical and string expressions with the values that you are inserting.
+This can be useful to ensure that all data inserted is formatted a certain way.
+Example Insert statement with expressions
+
+```sql
+INSERT INTO boxoffice
+(movie_id, rating, sales_in_millions)
+VALUES (1, 9.9, 283742034 / 1000000);
+```
+
