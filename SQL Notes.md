@@ -257,3 +257,70 @@ WHERE col % 2 = 0
 - No GROUP BY needed
 - Avoid SELECT * when modifying columns
 
+
+## Aggregate
+
+| Function                            | Description                                                                                                                                                                                     |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **COUNT(*)**, **COUNT(**column**)** | A common function used to counts the number of rows in the group if no column name is specified. Otherwise, count the number of rows in the group with non-NULL values in the specified column. |
+| **MIN(**column**)**                 | Finds the smallest numerical value in the specified column for all rows in the group.                                                                                                           |
+| **MAX(**column**)**                 | Finds the largest numerical value in the specified column for all rows in the group.                                                                                                            |
+| **AVG(**column)                     | Finds the average numerical value in the specified column for all rows in the group.                                                                                                            |
+| **SUM(**column**)**                 | Finds the sum of all numerical values in the specified column for the rows in the group.                                                                                                        |
+## GROUP BY (Quick Note)
+
+* Used to **group rows with same values** in a column
+* Always used with **aggregate functions** (`COUNT`, `SUM`, `AVG`, etc.)
+
+---
+
+## Basic Syntax
+
+```sql
+SELECT column, AGG_FUNC(column)
+FROM table
+GROUP BY column;
+```
+
+---
+
+## Key Rules
+
+* Every column in `SELECT` must be:
+
+  * either in `GROUP BY`, OR
+  * used inside an aggregate function
+
+* `WHERE` → filters **before grouping**
+
+* `HAVING` → filters **after grouping**
+
+---
+
+## Example
+
+```sql
+SELECT habitat_id, COUNT(*) AS species_count
+FROM AlienSpecies
+GROUP BY habitat_id
+HAVING COUNT(*) > 1;
+```
+
+👉 Groups species by habitat
+👉 Keeps only habitats with more than 1 species
+
+---
+
+## Mental Model
+
+* `GROUP BY` = “make buckets”
+* Aggregate = “calculate per bucket”
+* `HAVING` = “filter buckets”
+
+```sql
+SELECT group_by_column, AGG_FUNC(column_expression) AS aggregate_result_alias, …
+FROM mytable
+WHERE condition
+GROUP BY column
+HAVING group_condition;
+```
