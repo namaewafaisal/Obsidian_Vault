@@ -72,17 +72,20 @@ Other data
 
 # Staff Controlled
 1. regiterNumber
-2. department
-3. year
-4. section
-5. cgpa
-6. cgpa list (all sems)
-7. standing arrears
-8. history of arrears
-9. tenthmarks
-10. twelthmarks
-11. diplomamarks
-12. careerchoice decided(placement, entrepreanor, higher studies)
+2. Full Name
+3. department
+4. year
+5. section
+6. DOB
+7. cgpa
+8. cgpa list (all sems)
+9. standing arrears
+10. history of arrears
+11. tenthmarks
+12. twelthmarks
+13. diplomamarks
+14. careerchoice decided(placement, entrepreanor, higher studies)
+15. isLateral
 
 # Student Handled
 1. github
