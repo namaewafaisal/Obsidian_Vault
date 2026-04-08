@@ -84,7 +84,7 @@ folders:
 * [x] [[242. Valid Anagram]] ✅ 2026-03-23
 * [ ] [[409. Longest Palindrome]]
 * [ ] [[8. String to Integer (atoi)]]
-* [x] [[5. Longest Palindromic Substring]] ✅ 2026-04-08
+* [x] [[Problems/5. Longest Palindromic Substring]] ✅ 2026-04-08
 * [ ] [[14. Longest Common Prefix]]
 * [ ] [[179. Largest Number]]
 * [ ] [[271. Encode and Decode Strings]]
@@ -211,19 +211,19 @@ folders:
 * [ ] [[102. Binary Tree Level Order Traversal]]
 * [ ] [[236. Lowest Common Ancestor of a Binary Tree]]
 * [ ] [[297. Serialize and Deserialize Binary Tree]]
-* [x] [[543. Diameter of Binary Tree]] ✅ 2026-03-18
+* [x] [[Problems/543. Diameter of Binary Tree]] ✅ 2026-03-18
 * [ ] [[199. Binary Tree Right Side View]]
-* [x] [[104. Maximum Depth of Binary Tree]] ✅ 2026-03-18
+* [x] [[Problems/104. Maximum Depth of Binary Tree]] ✅ 2026-03-18
 * [ ] [[105. Construct Binary Tree from Preorder and Inorder Traversal]]
 * [ ] [[124. Binary Tree Maximum Path Sum]]
 * [ ] [[113. Path Sum II]]
 * [ ] [[662. Maximum Width of Binary Tree]]
-* [x] [[100. Same Tree]] ✅ 2026-03-18
+* [x] [[Problems/100. Same Tree]] ✅ 2026-03-18
 * [ ] [[103. Binary Tree Zigzag Level Order Traversal]]
 * [ ] [[437. Path Sum III]]
 * [ ] [[101. Symmetric Tree]]
 * [ ] [[863. All Nodes Distance K in Binary Tree]]
-* [x] [[572. Subtree of Another Tree]] ✅ 2026-03-19
+* [x] [[Problems/572. Subtree of Another Tree]] ✅ 2026-03-19
 
 ---
 
@@ -233,7 +233,7 @@ folders:
 * [x] [[733. Flood Fill]] ✅ 2026-01-29
 * [ ] [[542. 01 Matrix]]
 * [ ] [[133. Clone Graph]]
-* [x] [[207. Course Schedule]] ✅ 2026-03-22
+* [x] [[Problems/207. Course Schedule]] ✅ 2026-03-22
 * [x] [[200. Number of Islands]] ✅ 2026-03-19
 * [x] [[994. Rotting Oranges]] ✅ 2026-03-19
 * [ ] [[721. Accounts Merge]]
@@ -243,7 +243,7 @@ folders:
 * [ ] [[417. Pacific Atlantic Water Flow]]
 * [ ] [[1197. Shortest Path to Get Food]]
 * [ ] [[261. Graph Valid Tree]]
-* [x] [[210. Course Schedule II]] ✅ 2026-03-28
+* [x] [[Problems/210. Course Schedule II]] ✅ 2026-03-28
 * [ ] [[323. Number of Connected Components]]
 * [ ] [[1197. Minimum Knight Moves]]
 * [ ] [[329. Longest Increasing Path in a Matrix]]

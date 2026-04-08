@@ -66,7 +66,7 @@
 
 * [x] [200. Number of Islands](Problems/200.%20Number%20of%20Islands.md) ✅ 2026-01-29
 * [ ] [133. Clone Graph](133.%20Clone%20Graph)
-* [ ] [207. Course Schedule](207.%20Course%20Schedule)
+* [ ] [207. Course Schedule](Problems/207.%20Course%20Schedule.md)
 * [x] [994. Rotting Oranges](Problems/994.%20Rotting%20Oranges.md) ✅ 2026-01-29
 * [x] [733. Flood Fill](Problems/733.%20Flood%20Fill.md) ✅ 2026-01-29
 
@@ -112,7 +112,7 @@
 
 ### Day 14: Trees → Graph Reinforcement
 
-* [x] [[695. Max Area of Island]] — DFS counting (from 200) ✅ 2026-04-08
+* [x] [[Problems/695. Max Area of Island]] — DFS counting (from 200) ✅ 2026-04-08
 * [ ] [[199. Binary Tree Right Side View]] — BFS levels (from 102)
 * [ ] [[236. Lowest Common Ancestor of a Binary Tree]] — harder LCA (from 235)
 * [ ] [[106. Construct Binary Tree from Inorder and Postorder Traversal]] — tree construction (from 105)
@@ -124,7 +124,7 @@
 * [ ] [[133. Clone Graph]] — DFS + hashmap
 * [ ] [[547. Number of Provinces]] — islands via adjacency matrix
 * [ ] [[1091. Shortest Path in Binary Matrix]] — BFS distance (from 994)
-* [ ] [[210. Course Schedule II]] — topo sort result (from 207)
+* [ ] [[Problems/210. Course Schedule II]] — topo sort result (from 207)
 
 ---
 
