@@ -84,7 +84,7 @@ folders:
 * [x] [[242. Valid Anagram]] ✅ 2026-03-23
 * [ ] [[409. Longest Palindrome]]
 * [ ] [[8. String to Integer (atoi)]]
-* [ ] [[5. Longest Palindromic Substring]]
+* [x] [[5. Longest Palindromic Substring]] ✅ 2026-04-08
 * [ ] [[14. Longest Common Prefix]]
 * [ ] [[179. Largest Number]]
 * [ ] [[271. Encode and Decode Strings]]

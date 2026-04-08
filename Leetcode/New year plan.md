@@ -112,7 +112,7 @@
 
 ### Day 14: Trees → Graph Reinforcement
 
-* [ ] [[695. Max Area of Island]] — DFS counting (from 200)
+* [x] [[695. Max Area of Island]] — DFS counting (from 200) ✅ 2026-04-08
 * [ ] [[199. Binary Tree Right Side View]] — BFS levels (from 102)
 * [ ] [[236. Lowest Common Ancestor of a Binary Tree]] — harder LCA (from 235)
 * [ ] [[106. Construct Binary Tree from Inorder and Postorder Traversal]] — tree construction (from 105)
