@@ -153,7 +153,7 @@ folders:
 * [x] [[20. Valid Parentheses]] ✅ 2026-03-19
 * [ ] [[1021. Remove Outermost Parentheses]]
 * [x] [[503. Next Greater Element II]] ✅ 2026-03-19
-* [ ] [[739. Daily Temperatures]]
+* [x] [[739. Daily Temperatures]] ✅ 2026-04-08
 * [x] [[150. Evaluate Reverse Polish Notation]] ✅ 2026-03-19
 
 ### Grind 75 Only
