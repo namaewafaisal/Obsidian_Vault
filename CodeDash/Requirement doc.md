@@ -1,10 +1,10 @@
 ## Actors
-- Admin (ME)
-- Institution Admin (who register the college, maybe even buy service for college if i make it paid)
-- Institution Staff (Views and analyses student reports, and export etc placement head and staff, mentor all come here. if placement head wants the full control he should have been the one that registered the college for service)
-- Institution Student (he manages his profile and handles)
+- Master (ME)
+-  Admin (who register the college, maybe even buy service for college if i make it paid)
+-  Staff (Views and analyses student reports, and export etc placement head and staff, mentor all come here. if placement head wants the full control he should have been the one that registered the college for service)
+-  Student (he manages his profile and handles)
 
-so at the top ADMIN is there and then i control the institution admins. it means i dont get to see the students or anything directly but manage institution admin subscription or something. then every other is split based on the institution. then institiuion admin, staff, and student. so a student is found by college, and role.
+so at the top Master is there and then i control the institution admins. it means i dont get to see the students or anything directly but manage admin subscription or something. then every other is split based on the institution. then admin, staff, and student. so a student is found by college, and role.
 
 initially no institution then an institution registers witht the details
 
@@ -13,7 +13,7 @@ initially no institution then an institution registers witht the details
  - slug (maybe if needed) 
  - email
  - password
-the person who registers become the institution admin.
+the person who registers become the admin.
 and he has access to all students and features of the students of his institution
 
 then a student/staff register 
@@ -23,7 +23,7 @@ then a student/staff register
 the email is verfied agaisnt the domain of the institution and even sent a mail to verify ownership.
 
 then after registration user is created. 
-next is the institution admin has access to change the user role to institution staff or if the user is student he remains student. meaning default is student.
+next is the admin has access to change the user role to staff or if the user is student he remains student. meaning default is student.
 
 after that student need to create a profile to mark profile done or else user is removed maybe. but these maybe are just a future features. after creation the student will be listed in dashboard. his individual profile and the leaderboard.
 after prfile the user needs to add handles. 
@@ -32,15 +32,30 @@ maybe we even add a feature to verify the handles via mail but likely its paid.
 
 ## Verification
 
-- Institution admin -> give domain -> check every new staff/student registration against domain -> domain confirmed
+-  admin -> give domain -> check every new staff/student registration against domain -> domain confirmed
 - send a verification mail -> enter code -> mail ownership confirmed.
 Now the user is of that institution and the owner of the mail.
 
-- Ins Admin verifies the user -> promote role if ins staff
+-  Admin verifies the user -> promote role if ins staff
 
 - verification of student details -> staff compares mail and register number and name maybe? or the initial creation of profile itself done by the staff.
 #### Handle verfication
 - handle entered -> verification email -> ownership confirmed
-a
+
+Now user confirmed , handles confirmed -> authentic.
+> Our college uses registernumber in email as 814723104089@trp.srmtrichy.edu.in. if that is common for student login then match register number from email to confirm student
+
+## Functionalities
+
+- leaderboard based on github contributions, leetcode problems(all,hard,medium,easy,consistency maybe)
+- export the stats (userdetails, leetcode, gtihub,codechef selected bythe staff or admin. )
+- View last week stats, by days. meaning full data of last 7 days and additonal if exist in the platform data retreived
+
+## Schema (planned as of now)
+
+### User
+```
+email String validated by @Email
+```
 
 
