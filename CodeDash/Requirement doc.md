@@ -54,8 +54,38 @@ Now user confirmed , handles confirmed -> authentic.
 ## Schema (planned as of now)
 
 ### User
+I think the below is good schema for all the roles users
 ```
-email String validated by @Email
+id uuid
+email String validated by @Email, Emaildomain given
+password min 8 char max 64 min 1 numeric and min 1 uppercase
+role enum MASTER or ADMIN for me, STUDENT, STAFF, INSTITUTION_ADMIN (now yet fixed name)
+Institution id to join maybe or slug
+created_at date enough
+
+past design 
+profile completed (no need for admin, staff so removed)
+verified -> only creates user if verified the email so no need
 ```
 
+### Institution
+A table where each institution specific data lives
+```
+id Integer autoincrement or generation type identity
+manytoone userid fk 
+institution name 
+domain name String to verify
+```
+
+### StudentProfile
+Only needed for the student to create
+```
+id autoincrement Integer
+userid fk
+Name String
+register number Verified from email
+Department
+year
+training
+```
 
