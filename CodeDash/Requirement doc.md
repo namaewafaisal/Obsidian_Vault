@@ -86,6 +86,30 @@ Name String
 register number Verified from email
 Department
 year
-training
+section
+trainingBatch
+created_at date
+gender but mostly not needed
+one to many -> handles
+```
+with above student is identified via institution, department, year, section, register number
+
+### StudentHandle
+One record per {profile,platform}
+```
+id Autoincrement
+manytoone profile fk
+Platform enum github, leetcode etc
+
+// Below are maybe null fields based on the platform
+totalproblemssolved
+easysolved
+medium solved
+hardsolved
+ranking
+rating
+lastUpdated
+latestsubmission
+
 ```
 
