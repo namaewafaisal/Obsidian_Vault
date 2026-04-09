@@ -1,3 +1,4 @@
+# Requirements Document
 ## Actors
 - Master (ME)
 -  Admin (who register the college, maybe even buy service for college if i make it paid)
@@ -100,9 +101,19 @@ One record per {profile,platform}
 id Autoincrement
 manytoone profile fk
 Platform enum github, leetcode etc
+lastUpdated Date (last change of username)
+onetoone stats fk
+```
+
+## HandleStats
+For each student's each platform
+```
+id autoincrement
+onetoone handle fk
+Platform enum github, leetcode etc
 
 // Below are maybe null fields based on the platform
-totalproblemssolved
+problemssolved
 easysolved
 medium solved
 hardsolved
@@ -110,6 +121,7 @@ ranking
 rating
 lastUpdated
 latestsubmission
-
+totalsubmissioninpastweek
+rawdata jsonb
 ```
 
