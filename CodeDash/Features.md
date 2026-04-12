@@ -1,0 +1,8 @@
+- [x] Institution Registration ✅ 2026-04-12
+- [x] User Registration ✅ 2026-04-12
+- [x] master creation ✅ 2026-04-12
+- [x] pending institutions endpoints for master ✅ 2026-04-12
+- [x] verify endpoint for users ✅ 2026-04-12
+- [ ] admin change user role to student/staff
+- [ ] student profile creation
+- [ ] hande
