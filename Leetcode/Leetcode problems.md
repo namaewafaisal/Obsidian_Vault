@@ -21,7 +21,7 @@ folders:
 * [x] [[53. Maximum Subarray]]
 * [x] [[560. Subarray Sum Equals K]]
 * [x] [[56. Merge Intervals]]
-* [ ] [73. Set Matrix Zeroes](73.%20Set%20Matrix%20Zeroes)
+* [x] [73. Set Matrix Zeroes](73.%20Set%20Matrix%20Zeroes) ✅ 2026-04-12
 
 ### Grind 75 Only
 * [x] [[1. Two Sum]]
@@ -31,9 +31,8 @@ folders:
 * [ ] [[39. Combination Sum]]
 * [x] [[169. Majority Element]]
 * [x] [[75. Sort Colors]]
-* [ ] [[217. Contains Duplicate]]
+* [x] [[217. Contains Duplicate]] ✅ 2026-04-12
 * [x] [[11. Container With Most Water]]
-* [ ] [[252. Meeting Rooms]]
 * [ ] [[134. Gas Station]]
 * [ ] [[128. Longest Consecutive Sequence]]
 * [ ] [[189. Rotate Array]]
