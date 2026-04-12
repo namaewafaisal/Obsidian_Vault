@@ -15,8 +15,8 @@ folders:
 ## 🏗️ Arrays (30 Questions) (3/30)
 
 ### College
-* [ ] [[1295. Find Numbers with Even Number of Digits]]
-* [ ] [[2114. Maximum Number of Words Found in Sentences]]
+* [x] [[1295. Find Numbers with Even Number of Digits]] ✅ 2026-04-12
+* [ ] [[Problems/2114. Maximum Number of Words Found in Sentences]]
 * [x] [[238. Product of Array Except Self]]
 * [x] [[53. Maximum Subarray]]
 * [x] [[560. Subarray Sum Equals K]]
