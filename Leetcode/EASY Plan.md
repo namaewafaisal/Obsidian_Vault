@@ -56,7 +56,7 @@
 - [20. Valid Parentheses](Problems/20.%20Valid%20Parentheses.md)
 - [150. Evaluate Reverse Polish Notation](Problems/150.%20Evaluate%20Reverse%20Polish%20Notation.md)
 - [496. Next Greater Element I](496.%20Next%20Greater%20Element%20I)
-- [739. Daily Temperatures](739.%20Daily%20Temperatures)
+- [739. Daily Temperatures](Problems/739.%20Daily%20Temperatures.md)
 - [84. Largest Rectangle in Histogram](Problems/84.%20Largest%20Rectangle%20in%20Histogram.md) (review-only, no new code)
 
 ---

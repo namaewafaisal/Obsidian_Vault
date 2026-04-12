@@ -16,12 +16,12 @@ folders:
 
 ### College
 * [x] [[1295. Find Numbers with Even Number of Digits]] ✅ 2026-04-12
-* [ ] [[Problems/2114. Maximum Number of Words Found in Sentences]]
+* [x] [2114. Maximum Number of Words Found in Sentences](Problems/2114.%20Maximum%20Number%20of%20Words%20Found%20in%20Sentences.md) ✅ 2026-04-12
 * [x] [[238. Product of Array Except Self]]
 * [x] [[53. Maximum Subarray]]
 * [x] [[560. Subarray Sum Equals K]]
 * [x] [[56. Merge Intervals]]
-* [ ] [[73. Set Matrix Zeroes]]
+* [ ] [73. Set Matrix Zeroes](73.%20Set%20Matrix%20Zeroes)
 
 ### Grind 75 Only
 * [x] [[1. Two Sum]]
@@ -153,7 +153,7 @@ folders:
 * [x] [[20. Valid Parentheses]] ✅ 2026-03-19
 * [ ] [[1021. Remove Outermost Parentheses]]
 * [x] [[503. Next Greater Element II]] ✅ 2026-03-19
-* [x] [[739. Daily Temperatures]] ✅ 2026-04-08
+* [x] [[Problems/739. Daily Temperatures]] ✅ 2026-04-08
 * [x] [[150. Evaluate Reverse Polish Notation]] ✅ 2026-03-19
 
 ### Grind 75 Only
