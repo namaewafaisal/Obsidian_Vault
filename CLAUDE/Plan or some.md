@@ -1,9 +1,9 @@
 ## **TIER 1: Language Fundamentals** (prerequisite for everything)
 These are non-negotiable. Pick **one** language (Java for you, given your Spring Boot background).
 
-- [ ] **Variables, Data Types, Type Casting**
+- [ ] **Variables, Data Types, Type Casting** [[Variables notes]]
   - Primitives vs objects, boxing/unboxing, overflow behavior
-  - String immutability (critical in Java)
+  - String immutability (critical in Java) 
   
 - [ ] **Control Flow** (if/else, loops, break/continue)
   - Loop invariants, when to use which loop type
