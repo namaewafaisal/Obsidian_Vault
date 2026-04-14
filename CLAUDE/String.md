@@ -499,3 +499,6 @@ Tier 1 → Tier 2 → interview edge cases → internals last
 ```
 
 Tier 1 is one focused session. You already have the mental model — it's just API surface now.
+
+
+[String](../Java%20Backend/Chatgpt%20learning/String.md)
