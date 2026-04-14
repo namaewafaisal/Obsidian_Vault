@@ -291,9 +291,9 @@ System.out.println(s == t);
 ```
 
 ### Prediction
-
+TRUE
 ### Actual
-
+TRUE
 ### Why
 intern fixes reference
 
@@ -309,9 +309,9 @@ System.out.println(a == b);
 ```
 
 ### Prediction
-
+TRUE
 ### Actual
-
+TRUE (String.valueOf() creates String in pool)
 ### Why
 Returns same reference (no new object)
 
