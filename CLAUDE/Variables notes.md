@@ -21,8 +21,36 @@ System.out.println(b+1); // -2147483648
 - strings are reused across entire program if they are same. 
 - `String s2 = "Hello"` -> sees StringPOOL if `Hello` exists ? reuse : create new in String pool
 - `String s3 = new String("Hello")` creates a new object in heap not in string pool. this is separate on its own
--
+- `String a = "hello" + "world"` -> compile time , converted to "helloworld" and stored in String pool
+- `String b = a + "world"`-> run time, new object created in heap not in String pool
+- So anything in in runtime cannot be in StringPool?
 
+## 🔍 Case 2
+
+```java
+String b = "hello";  
+String c = b + "world";
+String d = (b + "world").intern();
+```
+### What actually happens:
+
+- This is **runtime**
+- Compiler turns it into something like:
+
+```java
+new StringBuilder()  
+    .append(b)  
+    .append("world")  
+    .toString();
+```
+### Result:
+
+- `"hello"` → pool
+- `"world"` → pool
+- `"helloworld"` → **NEW object in heap (NOT pool)**
+Auto pool -> expensive -> runtime -> unpredictable -> no autopool
+
+👉
 ### Critical correction:
 
 ❌ “reference is sent” → WRONG wording  
