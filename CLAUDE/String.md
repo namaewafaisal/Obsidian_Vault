@@ -192,9 +192,9 @@ System.out.println(b == c);
 ```
 
 ### Prediction
-
+FALSE
 ### Actual
-
+TRUE (JSHELL is the problem)
 ### Why
 final → treated as compile-time constant
 
@@ -211,9 +211,9 @@ System.out.println(b == c);
 ```
 
 ### Prediction
-
+FALSE
 ### Actual
-
+FALSE
 ### Why
 Runtime concat → not pooled
 
@@ -229,9 +229,9 @@ System.out.println(a == b);
 ```
 
 ### Prediction
-
+TRUE
 ### Actual
-
+TRUE
 ### Why
 First intern may define pool entry
 
@@ -248,9 +248,9 @@ System.out.println(b == c);
 ```
 
 ### Prediction
-
+FALSE
 ### Actual
-
+FALSE
 ### Why
 substring creates new object
 
@@ -269,9 +269,9 @@ System.out.println(s == t);
 ```
 
 ### Prediction
-
+FALSE
 ### Actual
-
+FALSE
 ### Why
 Repeated runtime concat → heap
 
