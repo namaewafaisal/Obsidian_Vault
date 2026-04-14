@@ -426,3 +426,76 @@ That's why `s == a` is always `true` for fresh strings — same object promoted.
 
 
 `String = s "Hello" is same as String s = new String("Hello").intern() object created and promoted`
+
+
+
+Here's the full String topic map with your status:
+
+---
+
+## ✅ Done (you own these)
+
+- String Pool & interning
+- ` ==` vs `.equals()`
+- Literals vs `new String()`
+- Compile-time vs runtime concat
+- `final` as compile-time constant
+- `intern()` deep behavior
+- `String.valueOf()`
+- `substring()`, `concat()`, `StringBuilder` → heap objects
+- `null` → NPE behavior
+
+---
+
+## 🔶 Gaps to fill
+
+### Tier 1 — Core (do these first)
+
+- `StringBuilder` vs `StringBuffer` — when to use which, why
+- `String` immutability — why it's immutable, what that means in memory
+- `charAt()`, `indexOf()`, `lastIndexOf()`, `contains()`
+- `replace()`, `replaceAll()` — second one uses regex
+- `split()` — regex-based, edge cases (trailing empty strings)
+- `trim()` vs `strip()` — `strip()` is Unicode-aware, added JDK 11
+- `toUpperCase()` / `toLowerCase()` — locale-sensitive traps
+- `startsWith()` / `endsWith()`
+- `isEmpty()` vs `isBlank()` — `isBlank()` added JDK 11
+
+### Tier 2 — Intermediate
+
+- `String.format()` — format specifiers `%s %d %f %n`
+- `String.join()` and `StringJoiner`
+- `chars()` — returns `IntStream`, bridge to streams
+- `matches()` — full regex match vs `contains()`
+- `toCharArray()` — string ↔ char array conversion
+- `String.format()` vs `formatted()` — JDK 15+
+- `repeat()` — JDK 11+
+- `compareTO()` / `compareToIgnoreCase()` — lexicographic ordering
+
+### Tier 3 — Internals/Advanced
+
+- Compact Strings (JDK 9+) — Latin-1 vs UTF-16 internal encoding
+- Why `intern()` overuse is a performance problem
+- String deduplication (G1GC `-XX:+UseStringDeduplication`)
+- `String` in switch statements — how it works under the hood (uses `hashCode()` + `equals()`)
+- Text blocks (`"""`) — JDK 15+, indentation trimming rules
+
+### Tier 4 — Interview/Edge cases
+
+- Why `String` is `final` (can't be subclassed)
+- `hashCode()` contract for strings — same value = same hash always
+- Passing `String` to methods — why it feels like pass-by-value
+- String comparison in `switch` — gotchas with `null`
+- `+` operator with `null` — `"hi" + null` = `"hinull"`
+
+---
+
+## Priority order for you right now
+
+Since you're targeting placements and have CodeDash to finish:
+
+```
+Tier 1 → Tier 2 → interview edge cases → internals last
+```
+
+Tier 1 is one focused session. You already have the mental model — it's just API surface now.
