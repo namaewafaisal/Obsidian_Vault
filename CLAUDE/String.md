@@ -328,9 +328,9 @@ System.out.println(b == c);
 ```
 
 ### Prediction
-
+FALSE
 ### Actual
-
+FALSE
 ### Why
 concat → new object
 
@@ -346,9 +346,9 @@ System.out.println(a == b);
 ```
 
 ### Prediction
-
+TRUE
 ### Actual
-
+TRUE
 ### Why
 Depends on whether pool already contains it
 
@@ -365,8 +365,64 @@ System.out.println(a.equals(b));
 ```
 
 ### Prediction
-
+NPE
 ### Actual
-
+NPE tries to read null
 ### Why
 null → NPE when calling method
+
+
+
+```java
+  String s = sc.next();
+  String a = String.valueOf(s).intern();
+  String b = "hi";
+  System.out.println(a == b);
+  System.out.println(s == b);
+  System.out.println(s == a);
+```
+Exactly, you got it. Let me draw it cleanly:
+
+## When input is `"hello"` (not already in pool)
+
+```
+Before intern():
+s ──────────────→ [ "hello" ] (heap object)
+
+After a = String.valueOf(s).intern():
+s ──────────────→ [ "hello" ] (same object, now also the pool entry)
+a ──────────────↗
+pool["hello"] ──↗
+```
+
+`intern()` didn't create a new object — it **pinned `s` itself** as the canonical pool entry. Both `s` and `a` are the same reference. So `s == a` → `true`.
+
+---
+
+## When input is `"hi"` (already in pool from `String b = "hi"`)
+
+```
+Pool already has:
+pool["hi"] ──→ [ "hi" ] (this object was created at class-load)
+b ───────────↗
+
+Scanner creates:
+s ──→ [ "hi" ] (different heap object, same content)
+
+After a = String.valueOf(s).intern():
+a ───→ pool["hi"] ──→ original [ "hi" ] object
+s ───→ still the scanner-created object (untouched)
+```
+
+`intern()` found `"hi"` already in pool → returned the **old object**, left `s` alone. So `s != a` technically — but JVM gave `s` the pool reference directly (the quirk we saw earlier).
+
+---
+
+## One line summary
+
+> `intern()` says — _"if this string is already pooled, give me that one. If not, make THIS object the pooled one."_
+
+That's why `s == a` is always `true` for fresh strings — same object promoted.
+
+
+`String = s "Hello" is same as String s = new String("Hello").intern() object created and promoted`
