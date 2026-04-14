@@ -126,3 +126,173 @@ b = b + 1;
 - `b + 1` → promoted to `int`
 - Java won’t auto-cast back → possible data loss
 
+
+## Evaluation Order (Critical)
+
+- Java evaluates expressions **left → right**
+- Each operand is evaluated fully before moving to next
+
+### Example:
+```java
+int i = 1;
+int j = i++ + ++i + i++;
+```
+
+Step-by-step:
+- `i++` → use 1 → i = 2
+- `++i` → i = 3 → use 3
+- `i++` → use 3 → i = 4
+
+Result:
+```java
+j = 7
+i = 4
+```
+
+---
+
+## Type Promotion Rules
+
+- `byte`, `short`, `char` → promoted to **int** in expressions
+
+### Example:
+```java
+char c = 'A';
+c = c + 1; // ❌ compile error
+```
+
+- `c + 1` becomes `int`
+- cannot assign int → char without cast
+
+### Fix:
+```java
+c = (char)(c + 1);
+```
+
+---
+
+## Compound Assignment (+=)
+
+```java
+c += 1; // ✔ works
+```
+
+- Internally:
+```java
+c = (char)(c + 1);
+```
+
+👉 `+=` performs **implicit narrowing conversion**
+
+---
+
+## Wrapper vs Primitive (Null Danger)
+
+```java
+Integer a = null;
+int b = 10;
+
+System.out.println(a + b); // ❌ NullPointerException
+```
+
+- Expression forces **unboxing**
+```java
+a.intValue()
+```
+- `a` is null → crash
+
+---
+
+## equals vs == (Wrapper Types)
+
+```java
+Integer a = 10;
+Integer b = null;
+```
+
+- `a == b` → false (reference compare)
+- `a.equals(b)` → ❌ NullPointerException
+
+👉 `equals()` may internally use value comparison → triggers unboxing
+
+---
+
+## Integer Cache Edge
+
+```java
+Integer a = 127;
+Integer b = 127;
+Integer c = 128;
+Integer d = 128;
+```
+
+Results:
+```java
+a == b → true   (cached)
+c == d → false  (new objects)
+a.equals(b) → true
+c.equals(d) → true
+```
+
+👉 Cache range: **[-128 to 127]**
+
+---
+
+## Variable Scope & Shadowing
+
+```java
+class Test {
+    int x = 10;
+
+    void print() {
+        int x = 20;
+        System.out.println(x);      // 20
+        System.out.println(this.x); // 10
+    }
+}
+```
+
+- Local variable **shadows** instance variable
+- Closest scope wins
+
+---
+
+## Default Values
+
+- Instance variables → auto-initialized
+- Local variables → must be initialized
+
+```java
+int a; // ❌ error if used
+```
+
+---
+
+## Final Keyword
+
+```java
+final int a = 10;
+a = 20; // ❌ error
+```
+
+```java
+final int[] arr = {1,2};
+arr[0] = 99; // ✔ allowed
+```
+
+- `final` → reference cannot change
+- object content can change
+
+---
+
+## Array Initialization Trap
+
+```java
+add({1,2}); // ❌ invalid
+```
+
+```java
+add(new int[]{1,2}); // ✔ correct
+```
+
+- `{}` only allowed during declaration
