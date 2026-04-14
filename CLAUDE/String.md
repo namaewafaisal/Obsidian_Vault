@@ -101,9 +101,9 @@ System.out.println(b == c);
 ```
 
 ### Prediction
-
+TRUE
 ### Actual
-
+TRUE
 ### Why
 intern() returns pooled reference
 
@@ -119,9 +119,9 @@ System.out.println(a == b);
 ```
 
 ### Prediction
-
+TRUE
 ### Actual
-
+TRUE
 ### Why
 intern forces pooling
 
@@ -137,9 +137,9 @@ System.out.println(a == b);
 ```
 
 ### Prediction
-
+FALSE
 ### Actual
-
+FALSE
 ### Why
 Two separate heap objects
 
@@ -155,9 +155,9 @@ System.out.println(a == b);
 ```
 
 ### Prediction
-
+FALSE
 ### Actual
-
+FALSE
 ### Why
 Runtime → heap object
 
@@ -173,9 +173,9 @@ System.out.println(a == b);
 ```
 
 ### Prediction
-
+TRUE
 ### Actual
-
+TRUE
 ### Why
 intern aligns reference
 
