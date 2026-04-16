@@ -502,3 +502,316 @@ Tier 1 is one focused session. You already have the mental model — it's just A
 
 
 [String](../Java%20Backend/Chatgpt%20learning/String.md)
+
+
+
+
+
+
+
+
+
+
+---
+topic: string
+date-time: INVALID_DATETIME
+time-taken(min): INVALID_TIME
+---
+
+# String Fundamentals (Tier 1 + Tier 2)
+
+---
+
+## CONCEPT: StringBuilder vs StringBuffer
+
+### WHY
+- String is immutable → repeated modification = new objects → slow
+- Builders solve performance issue
+
+### DIFFERENCE
+
+| Class | Thread-safe | Performance |
+|------|------------|------------|
+| StringBuilder | ❌ | Fast |
+| StringBuffer | ✔ (synchronized) | Slower |
+
+### USE
+- StringBuilder → default choice
+- StringBuffer → only when multiple threads modify same string
+
+### EDGE CASE
+- Using String in loops:
+```java
+String s = "";
+for (int i = 0; i < 1000; i++) {
+    s += i; // creates 1000 objects ❌
+}
+```
+
+---
+
+## CONCEPT: String Immutability
+
+### WHY
+- Enables String Pool
+- Thread-safe
+- Hashcode caching (used in HashMap keys)
+
+### MEMORY
+```java
+String s = "hi";
+s.concat("there");
+```
+
+- `"hi"` unchanged
+- `"hithere"` → new object
+
+### EDGE CASE
+```java
+String s = "hi";
+s.concat("there");
+System.out.println(s); // hi
+```
+
+---
+
+## CONCEPT: Search Methods
+
+### METHODS
+```java
+charAt(i)          // char at index
+indexOf("a")       // first occurrence
+lastIndexOf("a")   // last occurrence
+contains("a")      // boolean (uses indexOf)
+```
+
+### EDGE CASE
+```java
+"abc".indexOf("z") → -1
+```
+
+---
+
+## CONCEPT: replace vs replaceAll
+
+### DIFFERENCE
+```java
+replace("a","b")      // literal
+replaceAll("a","b")   // REGEX
+```
+
+### EDGE CASE
+```java
+"1.2".replaceAll(".", "-") → "---"
+```
+
+---
+
+## CONCEPT: split()
+
+### RULE
+- Uses REGEX
+
+```java
+"a,b,c".split(",")
+```
+
+### EDGE CASES
+
+#### 1. Special char
+```java
+"a.b".split(".") → [] ❌
+"a.b".split("\\.") → ["a","b"] ✔
+```
+
+#### 2. Trailing empty removal
+```java
+"a,b,".split(",") → ["a","b"]
+"a,b,".split(",", -1) → ["a","b",""]
+```
+
+---
+
+## CONCEPT: trim vs strip
+
+### DIFFERENCE
+```java
+trim()  // ASCII only
+strip() // Unicode aware
+```
+
+### EDGE CASE
+- Unicode spaces not removed by trim
+
+---
+
+## CONCEPT: Case Conversion
+
+```java
+toUpperCase()
+toLowerCase()
+```
+
+### EDGE CASE (Locale)
+```java
+"i".toUpperCase(Locale.TURKISH) → "İ"
+```
+
+---
+
+## CONCEPT: startsWith / endsWith
+
+```java
+"hello".startsWith("he") → true
+"hello".endsWith("lo") → true
+```
+
+---
+
+## CONCEPT: isEmpty vs isBlank
+
+```java
+isEmpty() → length == 0
+isBlank() → only whitespace
+```
+
+### EDGE CASE
+```java
+"   ".isEmpty() → false
+"   ".isBlank() → true
+```
+
+---
+
+# ---------------- TIER 2 ----------------
+
+---
+
+## CONCEPT: String.format
+
+```java
+String.format("Name: %s Age: %d", "Faizal", 20);
+```
+
+### SPECIFIERS
+- `%s` → string
+- `%d` → int
+- `%f` → float
+- `%n` → newline
+
+---
+
+## CONCEPT: formatted (JDK 15+)
+
+```java
+"Hello %s".formatted("Faizal");
+```
+
+### DIFFERENCE
+- Same as format
+- More readable
+
+---
+
+## CONCEPT: String.join / StringJoiner
+
+```java
+String.join(",", "a","b","c") → "a,b,c"
+```
+
+### USE
+- clean joining without loops
+
+---
+
+## CONCEPT: chars()
+
+```java
+"abc".chars()
+```
+
+- returns `IntStream`
+- gives ASCII values
+
+### EDGE CASE
+```java
+"abc".chars().count() → 3
+```
+
+---
+
+## CONCEPT: matches()
+
+```java
+"abc".matches("a.*") → true
+```
+
+### RULE
+- FULL string match (not partial)
+
+### EDGE CASE
+```java
+"abc".matches("a") → false
+```
+
+---
+
+## CONCEPT: toCharArray()
+
+```java
+char[] arr = "abc".toCharArray();
+```
+
+### USE
+- easier char manipulation
+
+---
+
+## CONCEPT: repeat()
+
+```java
+"a".repeat(3) → "aaa"
+```
+
+### EDGE CASE
+```java
+"a".repeat(0) → ""
+```
+
+---
+
+## CONCEPT: compareTo()
+
+```java
+"a".compareTo("b") → negative
+```
+
+### RULE
+- lexicographic (Unicode difference)
+
+### EDGE CASE
+```java
+"A".compareTo("a") → -32
+```
+
+---
+
+## CONCEPT: compareToIgnoreCase()
+
+```java
+"A".compareToIgnoreCase("a") → 0
+```
+
+---
+
+# FINAL SUMMARY
+
+- Strings → immutable + pooled
+- Regex affects: split, replaceAll, matches
+- Streams integrate via `chars()`
+- Always distinguish:
+  - compile-time vs runtime
+  - literal vs regex
+  - value vs reference
+
+
