@@ -1,1 +1,0 @@
-username like unique string but for media
