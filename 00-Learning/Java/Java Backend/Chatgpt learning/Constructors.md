@@ -154,8 +154,8 @@ B constructor
 
 ## 🔗 Related Notes
 - [[Constructors]]
-- [[Inheritance]]
-- [[Polymorphism]]
+- [[../JAVA/OOP/Inheritance]]
+- [[../JAVA/OOP/Polymorphism]]
 - [[Memory Model]]
 
 ---

@@ -207,9 +207,9 @@ For true Zettelkasten linking consistency:
 
 |Reference|Purpose|
 |:--|:--|
-|[[Conditional Statements]]|Loops often depend on Boolean conditions.|
+|[[../Conditionals/Conditional Statements]]|Loops often depend on Boolean conditions.|
 |[[Operators – Relational and Logical]]|Loops use relational/logical operators in conditions.|
-|[[Operator Precedence]]|Determines how complex conditions inside loops are evaluated.|
+|[[../Operators/Operator Precedence]]|Determines how complex conditions inside loops are evaluated.|
 
 ---
 

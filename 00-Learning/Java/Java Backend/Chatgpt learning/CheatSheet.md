@@ -50,7 +50,7 @@ public static void main(String[] args)
 
 ---
 
-## [StringBuilder StringBuffer](StringBuilder%20StringBuffer)
+## [StringBuilder StringBuffer](StringBuilder%20StringBuffer.md)
 
 ### Difference
 - `StringBuilder` → not thread-safe (faster)
@@ -67,7 +67,7 @@ public static void main(String[] args)
 
 ---
 
-## [[../../DSA/Data-Structues/Arrays_Fundamentals]]
+## [[../../../../DSA/Data-Structues/Arrays_Fundamentals]]
 
 ### Basics
 ```java
@@ -89,7 +89,7 @@ int[] b = {1,2,3};
 
 ---
 
-## [Wrapper Classes](Wrapper%20Classes)
+## [Wrapper Classes](Wrapper%20Classes.md)
 
 ### Common ones
 - `Integer`, `Double`, `Boolean`, `Character`
@@ -106,7 +106,7 @@ int[] b = {1,2,3};
 
 ---
 
-## [Object Class](Object%20Class)
+## [Object Class](Object%20Class.md)
 
 Inherited by all classes.
 
@@ -120,7 +120,7 @@ Inherited by all classes.
 
 ---
 
-## [OOP Rules](OOP%20Rules)
+## [OOP Rules](OOP%20Rules.md)
 
 - Variables → resolved by **reference**
 - Overridden methods → resolved by **object**
@@ -238,7 +238,7 @@ class MyRunEx extends RuntimeException { }
 
 ---
 
-## [Memory Model](Memory%20Model)
+## [Memory Model](Memory%20Model.md)
 
 - Stack → method calls, locals
 - Heap → objects

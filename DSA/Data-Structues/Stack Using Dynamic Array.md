@@ -107,4 +107,4 @@ Prevents memory waste.
 
 - [[Stack_Array_Implementation]]
 - [[Amortized_Analysis]]
-- [[Array]]
+- [[../../00-Learning/Java/Java Backend/JAVA/Array/Array]]

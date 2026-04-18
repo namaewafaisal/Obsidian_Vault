@@ -184,6 +184,6 @@ _(This helps your notes stay relevant to modern Java ≥ 12.)_
 
 | Reference                                                 | Purpose            |
 | :-------------------------------------------------------- | :----------------- |
-| [Operator Precedence](Operators/Operator%20Precedence.md) | To recall how `&&` |
+| [Operator Precedence](../Operators/Operator%20Precedence.md) | To recall how `&&` |
 
 ---

@@ -259,6 +259,6 @@ Used internally in:
 
 - [[Doubly_Linked_List]]
 - [[Circular_Linked_List]]
-- [[Array]]
+- [[../../00-Learning/Java/Java Backend/JAVA/Array/Array]]
 - [[Stack_Linked_Implementation]]
 - [[Hash_Table_Chaining]]

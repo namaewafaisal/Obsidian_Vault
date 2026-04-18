@@ -29,7 +29,7 @@ tags: [index, data-structures]
 
 | # | Structure | Access | Insert | Delete | Space | Note |
 |---|---|---|---|---|---|---|
-| 1 | [[Array]] | O(1) | O(n) | O(n) | O(n) | Foundation |
+| 1 | [[../../00-Learning/Java/Java Backend/JAVA/Array/Array]] | O(1) | O(n) | O(n) | O(n) | Foundation |
 | 2 | [[Dynamic Array]] | O(1) | O(1)* | O(n) | O(n) | Amortized insert |
 | 3 | [[Prefix Sum Array]] | O(1) | O(n) | O(n) | O(n) | Range query trick |
 | 4 | [[Difference Array]] | O(1) | O(1) | O(1) | O(n) | Range update trick |
@@ -39,7 +39,7 @@ tags: [index, data-structures]
 | 8 | [[Bitset]] | O(1) | O(1) | O(1) | O(n/w) | Compact bool array |
 
 ### Checklist
-- [ ] [[Array]]
+- [ ] [[../../00-Learning/Java/Java Backend/JAVA/Array/Array]]
 - [ ] [[Dynamic Array]]
 - [ ] [[Prefix Sum Array]]
 - [ ] [[Difference Array]]
