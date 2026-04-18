@@ -25,4 +25,4 @@
 - O(n): Extra array/hash-map
 - O(n^2): DP table for grids
 - O(h): Recursion depth (h = height of recursion tree)
-<span style="display:none">[[../Misc/Index]]</span>
+<span style="display:none">[[../04-Career/Placements/Aptitude/Index]]</span>
