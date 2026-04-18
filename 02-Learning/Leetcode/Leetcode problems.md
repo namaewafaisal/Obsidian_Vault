@@ -21,7 +21,7 @@ folders:
 * [x] [[Not Fixed/53. Maximum Subarray]]
 * [x] [[Not Fixed/560. Subarray Sum Equals K]]
 * [x] [[Not Fixed/56. Merge Intervals]]
-* [x] [73. Set Matrix Zeroes](73.%20Set%20Matrix%20Zeroes.md) ✅ 2026-04-12
+* [x] [73. Set Matrix Zeroes](Problems/73.%20Set%20Matrix%20Zeroes.md) ✅ 2026-04-12
 
 ### Grind 75 Only
 * [x] [[Problems/1. Two Sum]]
@@ -119,7 +119,7 @@ folders:
 * [x] [[Not Fixed/54. Spiral Matrix]] ✅ 2026-03-09
 * [ ] [[36. Valid Sudoku]]
 * [x] [[Not Fixed/48. Rotate Image]] ✅ 2026-03-09
-* [ ] [[73. Set Matrix Zeroes]]
+* [ ] [[Problems/73. Set Matrix Zeroes]]
 * [ ] [[37. Sudoku Solver]]
 
 ---
