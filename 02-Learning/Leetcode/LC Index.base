@@ -3,13 +3,15 @@ views:
     name: View
     filters:
       or:
-        - file.folder.startsWith("Leetcode")
+        - file.folder == "02-Learning/Leetcode/Problems"
     groupBy:
       property: patterns
       direction: ASC
     order:
       - file.name
       - difficulty
-    sort: []
+    sort:
+      - property: file.name
+        direction: ASC
     columnSize:
       file.name: 448
