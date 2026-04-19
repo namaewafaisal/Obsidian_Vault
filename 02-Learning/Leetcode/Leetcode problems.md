@@ -280,7 +280,7 @@ folders:
 ## 🔄 Recursion / Backtracking (6 Questions)
 
 ### Grind 75 Only
-* [ ] [[46. Permutations]]
+* [x] [[Problems/46. Permutations]] ✅ 2026-04-19
 * [ ] [[78. Subsets]]
 * [ ] [[17. Letter Combinations of a Phone Number]]
 * [ ] [[Not Fixed/31. Next Permutation]]
