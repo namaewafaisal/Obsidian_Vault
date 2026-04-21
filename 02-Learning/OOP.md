@@ -539,8 +539,8 @@ If you remember this → **90% output questions are solved**.
 ---
 
 
-2026-04-21
-Objects
+# 2026-04-21
+## Objects
 have state (fields) and behavior (methods)
 map real world to objects
 some have multiple states
@@ -549,4 +549,17 @@ work at the internal state of object. only work through object. object can have 
 here encapsulation helps in the working to obey rules.
 variables change only through methods and can reject or accept if the value is valid
 gear = 100 wrong. gear.set(100) invalid return
+- **Modularity**  
+    Each object is an independent unit → can be developed, tested, and maintained separately.
+- **Information Hiding**  
+    Internal data/logic is hidden → access only through public methods.
+- **Code Reuse**  
+    Existing objects can be reused → no need to rewrite functionality.
+- **Pluggability & Debugging**  
+    Objects are replaceable → swap faulty object without affecting the whole system.
 
+## Class
+Blueprint from which objects are created. Have same structure in all objects of the class.
+
+Class variables -> Object state
+methods -> behavior of object
