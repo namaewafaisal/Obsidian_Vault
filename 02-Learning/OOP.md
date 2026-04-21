@@ -587,5 +587,19 @@ Inteface -> Only a contract between interface and the class that implements it.
 Since there is no working given the implementer class must define all the methods working.
 Example : A fully working remote has specific functionalities for each button
 Programmable remote only has the means to program and the buttons. If you claim to implement then must define working for each button.
-the button for the volume up(void volumeUp()) may 
+the button for the volume up(void volumeUp()) but it may increase +10 or +5 which is not defined in the interface.
 the implemented methods must be available at compile time in the implement class
+
+### Core Properties
+
+- Methods are **abstract by default** (no body)
+- Fields are **public static final (constants)**
+- A class must use `implements` and **provide all method implementations**
+
+Contracts or rules of what class must give definition
+
+## Package
+Folder -> organize similar classes and stuff
+Java large built in library(set of packages) -> API
+String, File
+Every common things that has a state and behavior has classes in the API
