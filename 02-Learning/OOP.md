@@ -577,3 +577,15 @@ each method(new and overridden) in subclass is in its metaspace and reference to
 
 ## Interface
 Methods are the interface between object and outside world.
+buttons in remote are the interface for you to change stuff.
+declares the method signature (what it does) not the working (how it does)
+So interface is a group of related methods with empty bodies
+from this side we only see the buttons not the internal wiring and how it works
+empty methods also are showing only the interface(methods) not the working
+Class -> All methods defined
+Inteface -> Only a contract between interface and the class that implements it. 
+Since there is no working given the implementer class must define all the methods working.
+Example : A fully working remote has specific functionalities for each button
+Programmable remote only has the means to program and the buttons. If you claim to implement then must define working for each button.
+the button for the volume up(void volumeUp()) may 
+the implemented methods must be available at compile time in the implement class
