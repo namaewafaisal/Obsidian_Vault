@@ -603,3 +603,4 @@ Folder -> organize similar classes and stuff
 Java large built in library(set of packages) -> API
 String, File
 Every common things that has a state and behavior has classes in the API
+provide infrastructure -> focus on design your own app
