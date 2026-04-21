@@ -545,3 +545,8 @@ have state (fields) and behavior (methods)
 map real world to objects
 some have multiple states
 have objects inside objects
+work at the internal state of object. only work through object. object can have method accessing another object
+here encapsulation helps in the working to obey rules.
+variables change only through methods and can reject or accept if the value is valid
+gear = 100 wrong. gear.set(100) invalid return
+
