@@ -1,6 +1,6 @@
 {
-  "cssTheme": "OLED.Black",
-  "accentColor": "#999999",
+  "cssTheme": "Vanilla AMOLED",
+  "accentColor": "#8785ff",
   "interfaceFontFamily": "Maple Mono,Adwaita Mono,Courier New",
   "textFontFamily": "Helvetica",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
