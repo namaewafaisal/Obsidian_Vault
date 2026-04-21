@@ -566,4 +566,14 @@ methods -> behavior of object
 Objects of the current class may be created in another class
 
 ## Inheritance
-A class can inherit another single class -> gets all met
+A class can inherit another single class -> gets all methods and variables for it too -> can add more or override the inherited variables and methods
+Single class can have unlimited child class. child can have single parent. prevents diamond problem.
+
+single inheritance, multilevel
+use extends keyword
+
+Each object have all the inherited variables. 
+each method(new and overridden) in subclass is in its metaspace and reference to the methods in parent.
+
+## Interface
+Methods are the interface between object and outside world.
