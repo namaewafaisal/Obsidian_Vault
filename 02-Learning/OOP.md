@@ -563,3 +563,7 @@ Blueprint from which objects are created. Have same structure in all objects of 
 
 Class variables -> Object state
 methods -> behavior of object
+Objects of the current class may be created in another class
+
+## Inheritance
+A class can inherit another single class -> gets all met
