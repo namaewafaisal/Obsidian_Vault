@@ -537,3 +537,11 @@ class UpiPayment implements Payment {
 If you remember this → **90% output questions are solved**.
 
 ---
+
+
+2026-04-21
+Objects
+have state (fields) and behavior (methods)
+map real world to objects
+some have multiple states
+have objects inside objects
