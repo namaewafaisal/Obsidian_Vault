@@ -17,23 +17,23 @@ folders:
 ### College
 * [x] [[Problems/1295. Find Numbers with Even Number of Digits]] ✅ 2026-04-12
 * [x] [2114. Maximum Number of Words Found in Sentences](Problems/2114.%20Maximum%20Number%20of%20Words%20Found%20in%20Sentences.md) ✅ 2026-04-12
-* [x] [[Not Fixed/238. Product of Array Except Self]]
-* [x] [[Not Fixed/53. Maximum Subarray]]
-* [x] [[Not Fixed/560. Subarray Sum Equals K]]
-* [x] [[Not Fixed/56. Merge Intervals]]
+* [x] [[238. Product of Array Except Self]]
+* [x] [[53. Maximum Subarray]]
+* [x] [[560. Subarray Sum Equals K]]
+* [x] [[56. Merge Intervals]]
 * [x] [73. Set Matrix Zeroes](Problems/73.%20Set%20Matrix%20Zeroes.md) ✅ 2026-04-12
 
 ### Grind 75 Only
-* [x] [[Problems/1. Two Sum]]
-* [x] [[Not Fixed/121. Best Time to Buy and Sell Stock]]
-* [x] [[Not Fixed/57. Insert Interval]]
-* [x] [[Problems/15. 3Sum]]
+* [x] [[1. Two Sum]]
+* [x] [[121. Best Time to Buy and Sell Stock]]
+* [x] [[57. Insert Interval]]
+* [x] [[15. 3Sum]]
 * [ ] [[39. Combination Sum]]
-* [x] [[Not Fixed/169. Majority Element]]
+* [x] [[169. Majority Element]]
 * [x] [[Not Fixed/75. Sort Colors]]
 * [x] [[Not Fixed/217. Contains Duplicate]] ✅ 2026-04-12
 * [x] [[Problems/11. Container With Most Water]]
-* [ ] [[134. Gas Station]]
+* [x] [[134. Gas Station]] ✅ 2026-04-23
 * [ ] [[128. Longest Consecutive Sequence]]
 * [ ] [[Not Fixed/189. Rotate Array]]
 * [ ] [[Not Fixed/525. Contiguous Array]]
@@ -41,22 +41,22 @@ folders:
 * [ ] [[Not Fixed/283. Move Zeroes]]
 * [ ] [[253. Meeting Rooms II]]
 * [x] [[Not Fixed/239. Sliding Window Maximum]]
-* [ ] [[Not Fixed/977. Squares of a Sorted Array]]
+* [ ] [[ 977. Squares of a Sorted Array]]
 * [ ] [[Problems/16. 3Sum Closest]]
 * [x] [[Not Fixed/435. Non-overlapping Intervals]]
-* [ ] [[Not Fixed/31. Next Permutation]]
-* [ ] [[Not Fixed/152. Maximum Product Subarray]]
+* [ ] [[ 31. Next Permutation]]
+* [ ] [[ 152. Maximum Product Subarray]]
 
 ---
 
 ## 🔗 Two Pointers (6 Questions)
 
 ### College
-* [x] [[Not Fixed/125. Valid Palindrome]] ✅ 2026-03-23
-* [x] [[Not Fixed/26. Remove Duplicates from Sorted Array]] ✅ 2026-03-23
+* [x] [[ 125. Valid Palindrome]] ✅ 2026-03-23
+* [x] [[ 26. Remove Duplicates from Sorted Array]] ✅ 2026-03-23
 * [x] [[Problems/11. Container With Most Water]] ✅ 2026-03-23
 * [x] [[Problems/15. 3Sum]] ✅ 2026-03-23
-* [x] [[Not Fixed/42. Trapping Rain Water]] ✅ 2026-03-23
+* [x] [[ 42. Trapping Rain Water]] ✅ 2026-03-23
 * [x] [[Not Fixed/75. Sort Colors]] ✅ 2026-03-23
 
 ---

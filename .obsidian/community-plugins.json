@@ -7,5 +7,6 @@
   "highlightr-plugin",
   "cm-typewriter-scroll-obsidian",
   "obsidian-statusbar-pomo",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "find-unlinked-files"
 ]
