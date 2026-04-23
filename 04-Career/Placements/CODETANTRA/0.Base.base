@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - file.folder == "04-Career/Placements/CODETANTRA"
