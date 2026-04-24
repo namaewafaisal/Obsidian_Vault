@@ -33,7 +33,7 @@ folders:
 * [x] [[75. Sort Colors]]
 * [x] [[217. Contains Duplicate]] ✅ 2026-04-12
 * [x] [[Problems/11. Container With Most Water]]
-* [x] [[134. Gas Station]] ✅ 2026-04-23
+* [x] [[Problems/134. Gas Station]] ✅ 2026-04-23
 * [ ] [[128. Longest Consecutive Sequence]]
 * [ ] [[189. Rotate Array]]
 * [ ] [[525. Contiguous Array]]
