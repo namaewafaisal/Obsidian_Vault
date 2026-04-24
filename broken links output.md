@@ -113,7 +113,7 @@ Don't forget that creating the file from here may create the file in the wrong d
 - [[Reverse proxy basics]] in [[02-Learning/Java/Java Backend/Java Backend Index]]
 - [[Spring MVC vs WebFlux]] in [[02-Learning/Java/Java Backend/Java IO vs NIO]]
 - [[Spring Security]] in [[02-Learning/Java/Java Backend/Stateless vs Stateful systems]]
-- [[39. Combination Sum]] in [[02-Learning/Leetcode/Leetcode problems]]
+- [[02-Learning/Leetcode/Problems/39. Combination Sum]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[128. Longest Consecutive Sequence]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[759. Employee Free Time]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[253. Meeting Rooms II]] in [[02-Learning/Leetcode/Leetcode problems]]

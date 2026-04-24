@@ -28,7 +28,7 @@ folders:
 * [x] [[121. Best Time to Buy and Sell Stock]]
 * [x] [[57. Insert Interval]]
 * [x] [[15. 3Sum]]
-* [ ] [[39. Combination Sum]]
+* [x] [[Problems/39. Combination Sum]] ✅ 2026-04-24
 * [x] [[169. Majority Element]]
 * [x] [[75. Sort Colors]]
 * [x] [[217. Contains Duplicate]] ✅ 2026-04-12
