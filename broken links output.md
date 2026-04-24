@@ -11,7 +11,7 @@ Don't forget that creating the file from here may create the file in the wrong d
 - [[List]] in [[02-Learning/Java/Java Backend/Chatgpt learning/Collections Framework]]
 - [[ArrayList]] in [[02-Learning/Java/Java Backend/Chatgpt learning/Collections Framework]]
 - [[LinkedList]] in [[02-Learning/Java/Java Backend/Chatgpt learning/Collections Framework]]
-- [[Set]] in [[02-Learning/Java/Java Backend/Chatgpt learning/Collections Framework]]
+- [[02-Learning/Leetcode/Problems/3046. Split the Array]] in [[02-Learning/Java/Java Backend/Chatgpt learning/Collections Framework]]
 - [[HashSet]] in [[02-Learning/Java/Java Backend/Chatgpt learning/Collections Framework]]
 - [[Map]] in [[02-Learning/Java/Java Backend/Chatgpt learning/Collections Framework]]
 - [[HashMap]] in [[02-Learning/Java/Java Backend/Chatgpt learning/Collections Framework]]

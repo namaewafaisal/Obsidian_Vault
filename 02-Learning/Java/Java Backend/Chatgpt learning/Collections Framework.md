@@ -75,7 +75,7 @@ Extra methods:
 
 ---
 
-## [[Set]]
+## [[../../../Leetcode/Problems/3046. Split the Array]]
 
 ### Properties
 - No duplicates
