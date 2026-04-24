@@ -30,57 +30,57 @@ folders:
 * [x] [[15. 3Sum]]
 * [ ] [[39. Combination Sum]]
 * [x] [[169. Majority Element]]
-* [x] [[Not Fixed/75. Sort Colors]]
-* [x] [[Not Fixed/217. Contains Duplicate]] ✅ 2026-04-12
+* [x] [[75. Sort Colors]]
+* [x] [[217. Contains Duplicate]] ✅ 2026-04-12
 * [x] [[Problems/11. Container With Most Water]]
 * [x] [[134. Gas Station]] ✅ 2026-04-23
 * [ ] [[128. Longest Consecutive Sequence]]
-* [ ] [[Not Fixed/189. Rotate Array]]
-* [ ] [[Not Fixed/525. Contiguous Array]]
+* [ ] [[189. Rotate Array]]
+* [ ] [[525. Contiguous Array]]
 * [ ] [[759. Employee Free Time]]
-* [ ] [[Not Fixed/283. Move Zeroes]]
+* [ ] [[283. Move Zeroes]]
 * [ ] [[253. Meeting Rooms II]]
-* [x] [[Not Fixed/239. Sliding Window Maximum]]
-* [ ] [[ 977. Squares of a Sorted Array]]
+* [x] [[239. Sliding Window Maximum]]
+* [ ] [[977. Squares of a Sorted Array]]
 * [ ] [[Problems/16. 3Sum Closest]]
-* [x] [[Not Fixed/435. Non-overlapping Intervals]]
-* [ ] [[ 31. Next Permutation]]
-* [ ] [[ 152. Maximum Product Subarray]]
+* [x] [[435. Non-overlapping Intervals]]
+* [ ] [[31. Next Permutation]]
+* [ ] [[152. Maximum Product Subarray]]
 
 ---
 
 ## 🔗 Two Pointers (6 Questions)
 
 ### College
-* [x] [[ 125. Valid Palindrome]] ✅ 2026-03-23
-* [x] [[ 26. Remove Duplicates from Sorted Array]] ✅ 2026-03-23
+* [x] [[125. Valid Palindrome]] ✅ 2026-03-23
+* [x] [[26. Remove Duplicates from Sorted Array]] ✅ 2026-03-23
 * [x] [[Problems/11. Container With Most Water]] ✅ 2026-03-23
 * [x] [[Problems/15. 3Sum]] ✅ 2026-03-23
-* [x] [[ 42. Trapping Rain Water]] ✅ 2026-03-23
-* [x] [[Not Fixed/75. Sort Colors]] ✅ 2026-03-23
+* [x] [[42. Trapping Rain Water]] ✅ 2026-03-23
+* [x] [[75. Sort Colors]] ✅ 2026-03-23
 
 ---
 
 ## 🪟 Sliding Window (8 Questions)
 
 ### College
-* [x] [[Not Fixed/643. Maximum Average Subarray I]] ✅ 2026-03-23
+* [x] [[ 643. Maximum Average Subarray I]] ✅ 2026-03-23
 * [x] [[219. Contains Duplicate II]] ✅ 2026-03-23
 * [x] [[Problems/3. Longest Substring Without Repeating Characters]] ✅ 2026-03-23
-* [x] [[Not Fixed/424. Longest Repeating Character Replacement]] ✅ 2026-03-23
+* [x] [[ 424. Longest Repeating Character Replacement]] ✅ 2026-03-23
 * [ ] [[1004. Max Consecutive Ones III]]
-* [x] [[Not Fixed/567. Permutation in String]] ✅ 2026-03-23
+* [x] [[ 567. Permutation in String]] ✅ 2026-03-23
 
 ### Grind 75 Only
-* [x] [[Not Fixed/76. Minimum Window Substring]] ✅ 2026-03-23
-* [x] [[Not Fixed/438. Find All Anagrams in a String]] ✅ 2026-03-23
+* [x] [[ 76. Minimum Window Substring]] ✅ 2026-03-23
+* [x] [[ 438. Find All Anagrams in a String]] ✅ 2026-03-23
 
 ---
 
 ## 🔤 Strings (14 Questions)
 
 ### Grind 75 Only
-* [x] [[Not Fixed/242. Valid Anagram]] ✅ 2026-03-23
+* [x] [[ 242. Valid Anagram]] ✅ 2026-03-23
 * [ ] [[409. Longest Palindrome]]
 * [ ] [[8. String to Integer (atoi)]]
 * [x] [[Problems/5. Longest Palindromic Substring]] ✅ 2026-04-08
@@ -88,12 +88,12 @@ folders:
 * [ ] [[179. Largest Number]]
 * [ ] [[271. Encode and Decode Strings]]
 * [ ] [[336. Palindrome Pairs]]
-* [ ] [[Not Fixed/383. Ransom Note]]
-* [ ] [[Not Fixed/49. Group Anagrams]]
-* [ ] [[Not Fixed/438. Find All Anagrams in a String]]
-* [ ] [[Problems/3. Longest Substring Without Repeating Characters]]
-* [ ] [[Not Fixed/424. Longest Repeating Character Replacement]]
-* [ ] [[Not Fixed/76. Minimum Window Substring]]
+* [x] [[ 383. Ransom Note]] ✅ 2026-04-23
+* [x] [[ 49. Group Anagrams]] ✅ 2026-04-23
+* [x] [[ 438. Find All Anagrams in a String]] ✅ 2026-04-23
+* [x] [[Problems/3. Longest Substring Without Repeating Characters]] ✅ 2026-04-23
+* [x] [[ 424. Longest Repeating Character Replacement]] ✅ 2026-04-23
+* [x] [[ 76. Minimum Window Substring]] ✅ 2026-04-23
 
 ---
 
@@ -101,13 +101,13 @@ folders:
 
 ### College
 * [ ] [[387. First Unique Character in a String]]
-* [x] [[Not Fixed/169. Majority Element]] ✅ 2026-03-19
-* [x] [[Not Fixed/347. Top K Frequent Elements]] ✅ 2026-03-19
-* [x] [[Not Fixed/49. Group Anagrams]] ✅ 2026-03-19
+* [x] [[ 169. Majority Element]] ✅ 2026-03-19
+* [x] [[ 347. Top K Frequent Elements]] ✅ 2026-03-19
+* [x] [[ 49. Group Anagrams]] ✅ 2026-03-19
 * [ ] [[974. Subarray Sums Divisible by K]]
 
 ### Grind 75 Only
-* [x] [[Not Fixed/383. Ransom Note]] ✅ 2026-03-19
+* [x] [[ 383. Ransom Note]] ✅ 2026-03-19
 * [ ] [[380. Insert Delete GetRandom O(1)]]
 * [ ] [[41. First Missing Positive]]
 
@@ -116,9 +116,9 @@ folders:
 ## 🧊 Matrix (5 Questions)
 
 ### Grind 75 Only
-* [x] [[Not Fixed/54. Spiral Matrix]] ✅ 2026-03-09
+* [x] [[ 54. Spiral Matrix]] ✅ 2026-03-09
 * [ ] [[36. Valid Sudoku]]
-* [x] [[Not Fixed/48. Rotate Image]] ✅ 2026-03-09
+* [x] [[ 48. Rotate Image]] ✅ 2026-03-09
 * [ ] [[Problems/73. Set Matrix Zeroes]]
 * [ ] [[37. Sudoku Solver]]
 
@@ -127,8 +127,8 @@ folders:
 ## 🔗 Linked List (14 Questions)
 
 ### College
-* [x] [[Not Fixed/206. Reverse Linked List]] ✅ 2026-03-09
-* [x] [[Not Fixed/141. Linked List Cycle]] ✅ 2026-03-09
+* [x] [[ 206. Reverse Linked List]] ✅ 2026-03-09
+* [x] [[ 141. Linked List Cycle]] ✅ 2026-03-09
 * [x] [[Problems/21. Merge Two Sorted Lists]] ✅ 2026-03-09
 * [ ] [[19. Remove Nth Node From End of List]]
 * [ ] [[2. Add Two Numbers]]
@@ -141,7 +141,7 @@ folders:
 * [ ] [[328. Odd Even Linked List]]
 * [ ] [[148. Sort List]]
 * [ ] [[234. Palindrome Linked List]]
-* [x] [[Not Fixed/61. Rotate List]] ✅ 2026-03-19
+* [x] [[ 61. Rotate List]] ✅ 2026-03-19
 * [ ] [[25. Reverse Nodes in k-Group]]
 
 ---
@@ -151,16 +151,16 @@ folders:
 ### College
 * [x] [[Problems/20. Valid Parentheses]] ✅ 2026-03-19
 * [ ] [[1021. Remove Outermost Parentheses]]
-* [x] [[Not Fixed/503. Next Greater Element II]] ✅ 2026-03-19
+* [x] [[ 503. Next Greater Element II]] ✅ 2026-03-19
 * [x] [[Problems/739. Daily Temperatures]] ✅ 2026-04-08
-* [x] [[Not Fixed/150. Evaluate Reverse Polish Notation]] ✅ 2026-03-19
+* [x] [[ 150. Evaluate Reverse Polish Notation]] ✅ 2026-03-19
 
 ### Grind 75 Only
 * [ ] [[232. Implement Queue using Stacks]]
 * [x] [[Problems/155. Min Stack]] ✅ 2026-03-19
-* [x] [[Not Fixed/42. Trapping Rain Water]] ✅ 2026-03-19
+* [x] [[ 42. Trapping Rain Water]] ✅ 2026-03-19
 * [ ] [[224. Basic Calculator]]
-* [x] [[Not Fixed/84. Largest Rectangle in Histogram]] ✅ 2026-03-19
+* [x] [[ 84. Largest Rectangle in Histogram]] ✅ 2026-03-19
 * [ ] [[844. Backspace String Compare]]
 * [ ] [[895. Maximum Frequency Stack]]
 * [ ] [[394. Decode String]]
@@ -175,7 +175,7 @@ folders:
 ### College
 * [ ] [[232. Implement Queue using Stacks]]
 * [ ] [[933. Number of Recent Calls]]
-* [x] [[Not Fixed/994. Rotting Oranges]] ✅ 2026-03-19
+* [x] [[ 994. Rotting Oranges]] ✅ 2026-03-19
 * [ ] [[1091. Shortest Path in Binary Matrix]]
 
 ### Grind 75 Only
@@ -186,34 +186,34 @@ folders:
 ## 🔍 Binary Search (8 Questions)
 
 ### Grind 75 Only
-* [x] [[Not Fixed/704. Binary Search]] ✅ 2026-03-19
+* [x] [[ 704. Binary Search]] ✅ 2026-03-19
 * [ ] [[278. First Bad Version]]
-* [x] [[Not Fixed/33. Search in Rotated Sorted Array]] ✅ 2026-03-19
+* [x] [[ 33. Search in Rotated Sorted Array]] ✅ 2026-03-19
 * [ ] [[981. Time Based Key-Value Store]]
 * [ ] [[1235. Maximum Profit in Job Scheduling]]
 * [ ] [[4. Median of Two Sorted Arrays]]
-* [x] [[Not Fixed/74. Search a 2D Matrix]] ✅ 2026-03-19
-* [x] [[Not Fixed/153. Find Minimum in Rotated Sorted Array]] ✅ 2026-03-19
+* [x] [[ 74. Search a 2D Matrix]] ✅ 2026-03-19
+* [x] [[ 153. Find Minimum in Rotated Sorted Array]] ✅ 2026-03-19
 
 ---
 
 ## 🌳 Trees (BST & Binary Tree) (23 Questions)
 
 ### Grind 75 Only
-* [ ] [[Not Fixed/235. Lowest Common Ancestor of a BST]]
-* [ ] [[Not Fixed/98. Validate Binary Search Tree]]
+* [ ] [[ 235. Lowest Common Ancestor of a BST]]
+* [ ] [[ 98. Validate Binary Search Tree]]
 * [ ] [[230. Kth Smallest Element in a BST]]
 * [ ] [[285. Inorder Successor in BST]]
 * [ ] [[108. Convert Sorted Array to BST]]
-* [ ] [[Not Fixed/226. Invert Binary Tree]]
+* [ ] [[ 226. Invert Binary Tree]]
 * [ ] [[110. Balanced Binary Tree]]
-* [ ] [[Not Fixed/102. Binary Tree Level Order Traversal]]
+* [ ] [[ 102. Binary Tree Level Order Traversal]]
 * [ ] [[236. Lowest Common Ancestor of a Binary Tree]]
 * [ ] [[297. Serialize and Deserialize Binary Tree]]
 * [x] [[Problems/543. Diameter of Binary Tree]] ✅ 2026-03-18
 * [ ] [[199. Binary Tree Right Side View]]
 * [x] [[Problems/104. Maximum Depth of Binary Tree]] ✅ 2026-03-18
-* [ ] [[Not Fixed/105. Construct Binary Tree from Preorder and Inorder Traversal]]
+* [ ] [[ 105. Construct Binary Tree from Preorder and Inorder Traversal]]
 * [ ] [[124. Binary Tree Maximum Path Sum]]
 * [ ] [[113. Path Sum II]]
 * [ ] [[662. Maximum Width of Binary Tree]]
@@ -229,12 +229,12 @@ folders:
 ## 🕸️ Graph (21 Questions)
 
 ### Grind 75 Only
-* [x] [[Not Fixed/733. Flood Fill]] ✅ 2026-01-29
+* [x] [[ 733. Flood Fill]] ✅ 2026-01-29
 * [ ] [[542. 01 Matrix]]
 * [ ] [[133. Clone Graph]]
 * [x] [[Problems/207. Course Schedule]] ✅ 2026-03-22
-* [x] [[Not Fixed/200. Number of Islands]] ✅ 2026-03-19
-* [x] [[Not Fixed/994. Rotting Oranges]] ✅ 2026-03-19
+* [x] [[ 200. Number of Islands]] ✅ 2026-03-19
+* [x] [[ 994. Rotting Oranges]] ✅ 2026-03-19
 * [ ] [[721. Accounts Merge]]
 * [ ] [[127. Word Ladder]]
 * [ ] [[79. Word Search]]
@@ -283,7 +283,7 @@ folders:
 * [x] [[Problems/46. Permutations]] ✅ 2026-04-19
 * [ ] [[78. Subsets]]
 * [ ] [[17. Letter Combinations of a Phone Number]]
-* [ ] [[Not Fixed/31. Next Permutation]]
+* [ ] [[ 31. Next Permutation]]
 * [ ] [[Problems/22. Generate Parentheses]]
 * [ ] [[51. N-Queens]]
 
@@ -292,13 +292,13 @@ folders:
 ## 📈 Dynamic Programming (12 Questions)
 
 ### Grind 75 Only
-* [ ] [[Not Fixed/53. Maximum Subarray]]
+* [ ] [[ 53. Maximum Subarray]]
 * [x] [[Problems/322. Coin Change]] ✅ 2026-03-15
 * [ ] [[Problems/70. Climbing Stairs]]
 * [ ] [[416. Partition Equal Subset Sum]]
 * [ ] [[62. Unique Paths]]
 * [x] [[Problems/198. House Robber]] ✅ 2026-03-15
-* [ ] [[Not Fixed/152. Maximum Product Subarray]]
+* [ ] [[ 152. Maximum Product Subarray]]
 * [ ] [[300. Longest Increasing Subsequence]]
 * [x] [[Problems/55. Jump Game]] ✅ 2026-03-16
 * [ ] [[221. Maximal Square]]
