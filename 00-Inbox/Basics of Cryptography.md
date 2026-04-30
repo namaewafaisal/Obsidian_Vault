@@ -39,3 +39,5 @@ Security systems are designed assuming attackers are intelligent and capable
 Sender → Encryption → Ciphertext → Decryption → Receiver  
                 ↑  
         Cryptanalysis happens here
+
+
