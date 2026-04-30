@@ -96,3 +96,11 @@ Example: RSA
 
 Example: SHA-256
 
+
+---
+### 🔐 Kerckhoffs’s Principle — what it _really_ means
+
+Security must depend on the secrecy of the key. not the algorithm
+Creating a new algorithm and hiding and counting on the secrecy of it is bad. If they understand entire system is vulnerable
+Use well known tested algorithm such as AES, DES and have the key as secret. Even the hacker knows the working of algorithm but cant break without key and cant guess key mathematically
+
