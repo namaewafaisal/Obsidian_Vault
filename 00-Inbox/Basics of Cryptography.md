@@ -197,7 +197,7 @@ ODLREOLLHW
 - Letter frequency remains unchanged
 - Vulnerable to analysis
   
-  ## Stream Ciphers vs Block Ciphers
+## Stream Ciphers vs Block Ciphers
 
 ### Stream Cipher
 - Encrypts data one unit at a time (bit/byte)
@@ -233,3 +233,33 @@ Block = chunk-based
 
 ### Note
 Block ciphers use modes of operation (e.g., CBC, CTR) to modify behavior
+
+---
+## Kerckhoffs’s Principle
+
+### Definition
+- A cryptosystem should be secure even if the algorithm is publicly known
+- Only the key should remain secret
+
+---
+
+### Key Idea
+Security = secrecy of key, not secrecy of algorithm
+
+---
+
+### Security Through Obscurity
+- Relying on hiding the algorithm
+- Considered weak and unreliable
+
+---
+
+### Modern Practice
+- Algorithms are public (AES, TLS)
+- Security depends on strong keys
+
+---
+
+### Importance
+- Encourages strong, well-tested systems
+- Prevents reliance on hidden designs
