@@ -29,3 +29,18 @@ Read the encrypted data, unauthorized.
 ### Active attack
 Delete or Modify unauthorized data.
 
+---
+### What is cryptography
+Mathematical techniques to protect information by transforming it into a secure form
+
+- **Confidentiality** → only intended person can read
+- **Integrity** → data not changed
+- **Authentication** → sender is real
+- **Non-repudiation** → sender cannot deny sending
+
+```mermaid
+graph LR
+A[Plaintext] --> B[Algorithm]
+K{Key} --> B
+B --> C[CipherText]
+```
