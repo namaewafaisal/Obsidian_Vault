@@ -37,10 +37,19 @@ Mathematical techniques to protect information by transforming it into a secure 
 - **Integrity** → data not changed
 - **Authentication** → sender is real
 - **Non-repudiation** → sender cannot deny sending
+> Build Secure Systems
 
 ```mermaid
 graph LR
 A[Plaintext] --> B[Algorithm]
 K{Key} --> B
 B --> C[CipherText]
+C --> D[Algorithm]
+K --> D
+D --> N[Plaintext]
 ```
+
+### Cryptanalysis
+Break Secure systems without key
+
+### Key
