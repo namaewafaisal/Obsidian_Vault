@@ -104,3 +104,57 @@ Security must depend on the secrecy of the key. not the algorithm
 Creating a new algorithm and hiding and counting on the secrecy of it is bad. If they understand entire system is vulnerable
 Use well known tested algorithm such as AES, DES and have the key as secret. Even the hacker knows the working of algorithm but cant break without key and cant guess key mathematically
 
+
+# 🔐 Symmetric vs Asymmetric Encryption
+
+## Symmetric Encryption
+- One shared key (K)
+- Encrypt + Decrypt use same key
+- Fast, efficient
+- Problem: key distribution
+
+### Flow
+```mermaid
+flowchart LR
+A[Plaintext] --> B[Encrypt with K]
+B --> C[Ciphertext]
+C --> D[Decrypt with K]
+D --> E[Plaintext]
+```
+
+### Example
+- AES
+
+---
+
+## Asymmetric Encryption
+- Two keys: Public + Private
+- Public → encrypt
+- Private → decrypt
+- Slower but secure key sharing
+
+### Flow
+```mermaid
+flowchart LR
+A[Plaintext] --> B[Encrypt with Public Key]
+B --> C[Ciphertext]
+C --> D[Decrypt with Private Key]
+D --> E[Plaintext]
+```
+
+### Example
+- RSA
+
+---
+
+## Key Insight
+- Asymmetric → key exchange
+- Symmetric → actual encryption
+
+---
+
+## Comparison
+- Symmetric: fast, less secure key sharing
+- Asymmetric: secure, slower
+
+
