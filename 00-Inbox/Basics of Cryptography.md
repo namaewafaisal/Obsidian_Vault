@@ -53,3 +53,46 @@ D --> N[Plaintext]
 Break Secure systems without key
 
 ### Key
+
+- Algorithm = lock design (public)
+- Key = actual key (secret)
+
+### 🔐 Kerckhoffs’s Principle
+
+> System should be secure even if everything is known except the key
+
+
+### Passive & Active
+Passive -> Read, Steal data unauthorized
+Active -> Modify, inject, Delete data unauthorized
+Danger -> Active >> Passive
+
+## 1️⃣ Symmetric Cryptography
+
+- Same key for encryption + decryption
+- Fast
+- Problem: how to share key?
+
+Example: AES
+
+---
+
+## 2️⃣ Asymmetric Cryptography
+
+- Two keys:
+    - Public key
+    - Private key
+- Solves key sharing problem
+
+Example: RSA
+
+---
+
+## 3️⃣ Hash Functions
+
+- No decryption
+- One-way
+- Used for integrity
+
+Example: SHA-256
+
