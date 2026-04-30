@@ -41,3 +41,28 @@ Sender → Encryption → Ciphertext → Decryption → Receiver
         Cryptanalysis happens here
 
 
+## Types of Attacks on Cryptosystems
+
+### Ciphertext-Only Attack
+- Attacker has only ciphertext
+- No knowledge of plaintext
+- Hardest scenario for attacker
+
+### Known-Plaintext Attack
+- Attacker has some plaintext and corresponding ciphertext
+- Uses this to find patterns
+
+### Chosen-Plaintext Attack
+- Attacker can choose plaintext and get ciphertext
+- Helps analyze encryption behavior
+
+### Chosen-Ciphertext Attack
+- Attacker can choose ciphertext and get decrypted plaintext
+- Most powerful attack model
+
+### Attack Strength Order
+Ciphertext-only < Known-plaintext < Chosen-plaintext < Chosen-ciphertext
+
+### Key Idea
+More access to the system = higher chance of breaking it
+
