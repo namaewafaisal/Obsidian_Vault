@@ -17,3 +17,25 @@ Ciphertext + Key → Decryption → Plaintext
 ### Example (Caesar Cipher)
 HELLO → (shift +3) → KHOOR → (shift -3) → HELLO
 
+## Cryptography vs Cryptanalysis
+
+### Definitions
+- Cryptography: Study of securing communication using encryption techniques
+- Cryptanalysis: Study of breaking encryption to recover plaintext or keys
+
+### Roles
+- Cryptography → Defender (builds secure systems)
+- Cryptanalysis → Attacker (tries to break systems)
+
+### Attacker Goals
+- Recover plaintext from ciphertext
+- Recover the key
+- Identify weaknesses in the system
+
+### Key Idea
+Security systems are designed assuming attackers are intelligent and capable
+
+### Flow
+Sender → Encryption → Ciphertext → Decryption → Receiver  
+                ↑  
+        Cryptanalysis happens here
