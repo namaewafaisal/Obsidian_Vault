@@ -42,12 +42,12 @@
   * [x] TX/RX concept + basic data flow ✅ 2026-05-02
   * [x] Serial modes (basic overview) ✅ 2026-05-02
 - [x] Addressing Modes ✅ 2026-05-02
-- [ ] SFR
+- [x] SFR ✅ 2026-05-02
 
 ## ⚖️ MODERATE (EXAM DEPTH)
 
-* [ ] Register types (general purpose vs SFRs)
-* [ ] Parallel port programming (input/output logic)
+* [x] Register types (general purpose vs SFRs) ✅ 2026-05-02
+* [x] Parallel port programming (input/output logic) ✅ 2026-05-02
 * [ ] Interrupt handling mechanism in detail (ISR, RETI, flag clearing)
 
 ## 💤 LEAST (LOW ROI)
@@ -57,7 +57,7 @@
 
 ---
 
-# 🔹 UNIT II – Embedded C Programming
+# 🔹 [[UNIT II – Embedded C Programming]]
 
 ## ✅ MOST IMPORTANT (CORE CONCEPTS)
 
