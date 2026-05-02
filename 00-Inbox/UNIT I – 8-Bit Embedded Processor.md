@@ -431,3 +431,262 @@ CLR A            ; Logical (clear A)
 ```
 
 ---
+
+# 🔹 Interrupts in 8051 – Complete Concise Notes
+
+---
+
+## 🔸 1. Definition
+
+An **interrupt** is a signal that **temporarily stops the normal execution of a program** so that the CPU can handle an urgent event.
+
+👉 After handling, CPU returns to the previous task.
+
+---
+
+## 🔸 2. Purpose (Why interrupts are needed)
+
+- Handle **real-time events immediately**
+- Avoid continuous checking (polling)
+- Improve **efficiency of CPU**
+
+### Example:
+Instead of:
+```text
+keep checking button again and again
+```
+
+👉 Use interrupt:
+```text
+only react when button is pressed
+```
+
+---
+
+## 🔸 3. Types of Interrupts in 8051
+
+### 1. External Interrupts
+- Triggered by external signals (pins)
+- Examples:
+  - INT0
+  - INT1
+
+👉 Example use: button press, sensor trigger
+
+---
+
+### 2. Timer Interrupts
+- Triggered when timer overflows
+- Examples:
+  - Timer 0 (T0)
+  - Timer 1 (T1)
+
+👉 Example use: delay completion, periodic tasks
+
+---
+
+### 3. Serial Interrupt
+- Triggered during serial communication
+- Occurs when:
+  - data received
+  - data transmitted
+
+👉 Example use: UART communication
+
+---
+
+## 🔸 4. Basic Working (ISR Flow)
+
+Step-by-step:
+
+1. CPU is executing main program  
+2. Interrupt occurs  
+3. CPU:
+   - pauses current execution  
+   - saves current state (PC, registers)  
+4. CPU jumps to **ISR (Interrupt Service Routine)**  
+5. ISR executes (handles event)  
+6. CPU restores previous state  
+7. CPU resumes main program  
+
+👉 Flow:
+```text
+Main Program → Interrupt → ISR → Return → Continue
+```
+
+---
+
+## 🔸 5. Interrupt Service Routine (ISR)
+
+- Special function written to handle interrupt
+- Located at **fixed memory addresses (vector locations)**
+- Must end with:
+```asm
+RETI
+```
+
+👉 RETI = Return from Interrupt
+
+---
+
+## 🔸 6. Priority of Interrupts
+
+- Determines **which interrupt is handled first** if multiple occur
+
+### Two levels:
+- High priority
+- Low priority
+
+👉 High priority interrupt:
+- can interrupt low priority ISR  
+- cannot be interrupted by low priority  
+
+---
+
+## 🔸 7. Enable / Disable Interrupts
+
+### Global control:
+- EA (Enable All) bit  
+  - EA = 1 → interrupts enabled  
+  - EA = 0 → all interrupts disabled  
+
+### Individual control:
+- Each interrupt has enable bit:
+  - EX0 → external interrupt 0  
+  - ET0 → timer 0  
+  - ES → serial  
+
+👉 Allows selective control
+
+---
+
+## 🔸 8. Important Registers
+
+- IE (Interrupt Enable register) → enable/disable  
+- IP (Interrupt Priority register) → set priority  
+
+---
+
+## 🔸 9. Key Advantages
+
+- Faster response to events  
+- Efficient CPU usage  
+- Suitable for real-time systems  
+
+---
+
+## 🔸 10. One-Line Summary
+
+👉 Interrupt = **mechanism that lets CPU pause current work to handle urgent events and then resume execution**
+
+---
+
+# 🔹 Timers in 8051 – Complete Concise Notes
+
+---
+
+## 🔸 1. What is a Timer?
+
+A **timer** in the 8051 is a hardware counter that increments with each clock pulse (or external signal) to **measure time or count events**.
+
+👉 8051 has **2 timers**:
+- Timer 0 (T0)
+- Timer 1 (T1)
+
+---
+
+## 🔸 2. Delay Generation (Time Measurement)
+
+### What it does:
+Creates **precise time delays**
+
+### How:
+- Timer counts internal clock pulses
+- When it overflows → delay completed
+
+### Example:
+```text
+Turn ON LED → wait 1 second → Turn OFF LED
+```
+
+👉 Timer helps generate the "wait"
+
+---
+
+## 🔸 3. Counting Events
+
+### What it does:
+Counts **external signals/events**
+
+### How:
+- Timer increments when external pulse is received
+
+### Example:
+- Count number of objects passing a sensor  
+- Count button presses  
+
+👉 Acts as a **counter instead of a timer**
+
+---
+
+## 🔸 4. Timer Modes (TMOD Register Controls Modes)
+
+### 🔹 Mode 0 (13-bit Timer)
+- Uses **13 bits**
+- Range: 0 → 8191
+- Old/rarely used
+
+👉 Idea: smaller range, legacy mode
+
+---
+
+### 🔹 Mode 1 (16-bit Timer)
+- Uses **16 bits**
+- Range: 0 → 65535
+- Most commonly used
+
+👉 Idea: larger range → better for delays
+
+---
+
+### 🔹 Mode 2 (8-bit Auto-Reload)
+- 8-bit timer
+- Automatically reloads initial value after overflow
+
+👉 Idea:
+- Good for **repeated delays / periodic signals**
+
+---
+
+### 🔹 Mode 3 (Split Mode)
+- Timer 0 splits into **two separate 8-bit timers**
+- Timer 1 is stopped
+
+👉 Idea:
+- Use when you need **more timers**
+
+---
+
+## 🔸 5. Key Concepts
+
+- Timer increments with clock pulses  
+- Overflow → timer reaches maximum and resets  
+- Can be used as:
+  - Timer (internal clock)
+  - Counter (external input)
+
+---
+
+## 🔸 6. Important Registers
+
+- TMOD → selects mode  
+- TCON → controls start/stop + flags  
+- THx / TLx → timer high/low registers  
+
+---
+
+## 🔸 7. One-Line Summary
+
+👉 Timer = **hardware unit that counts pulses to measure time delays or external events**
+
+---

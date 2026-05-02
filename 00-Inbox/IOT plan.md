@@ -29,11 +29,11 @@
   * [x] Logical (ANL, ORL) ✅ 2026-05-02
   * [x] Branch / Jump (SJMP, JZ) ✅ 2026-05-02
   * [x] *(Know what each category does — enough for a short answer)* ✅ 2026-05-02
-* [ ] Interrupt:
-  * [ ] definition + purpose
-  * [ ] types (external, timer, serial)
-  * [ ] basic working (ISR flow)
-  * [ ] priority + enable/disable
+* [x] Interrupt: ✅ 2026-05-02
+  * [x] definition + purpose ✅ 2026-05-02
+  * [x] types (external, timer, serial) ✅ 2026-05-02
+  * [x] basic working (ISR flow) ✅ 2026-05-02
+  * [x] priority + enable/disable ✅ 2026-05-02
 * [ ] Timer:
   * [ ] delay generation
   * [ ] counting events
