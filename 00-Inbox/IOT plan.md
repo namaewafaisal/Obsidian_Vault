@@ -62,7 +62,7 @@
 ## ✅ MOST IMPORTANT (CORE CONCEPTS)
 
 * [x] Embedded C vs standard C (key differences) ✅ 2026-05-02
-* [ ] Characteristics of embedded systems
+* [x] Characteristics of embedded systems ✅ 2026-05-02
 * [ ] Programming embedded systems in C:
   * [ ] `volatile` keyword and why it matters
   * [ ] Bitwise operations for register control

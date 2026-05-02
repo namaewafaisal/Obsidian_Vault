@@ -153,3 +153,139 @@ Standard C cannot:
 👉 Standard C = **C used for general-purpose software development**
 
 ---
+# 🔹 Characteristics of Embedded Systems – Complete Notes
+
+---
+
+# 🔸 1. Definition
+
+An embedded system is a **dedicated computing system** designed to perform a **specific task**, often as part of a larger system, with direct interaction with hardware.
+
+---
+
+# 🔸 2. Core Characteristics
+
+---
+
+## 🔹 1. Single Purpose (Dedicated Function)
+
+- Designed for **one specific task**
+- Not general-purpose like a computer
+
+👉 Examples:
+- washing machine controller  
+- traffic light system  
+
+---
+
+## 🔹 2. Real-Time Operation (VERY IMPORTANT)
+
+- Must respond within **strict time constraints**
+- Output correctness depends on **timing + result**
+
+### Types:
+- Hard real-time → no delay allowed  
+- Soft real-time → small delay acceptable  
+
+---
+
+## 🔹 3. Continuous Operation
+
+- Runs continuously using:
+```text
+while(1)
+```
+- Does not terminate like standard programs  
+
+👉 Always monitors and controls system  
+
+---
+
+## 🔹 4. Resource Constraints
+
+- Limited:
+  - memory (RAM, ROM)
+  - processing power
+  - storage
+
+👉 Requires optimized and efficient code  
+
+---
+
+## 🔹 5. Hardware-Software Integration
+
+- Software directly interacts with hardware
+- Tight coupling between:
+  - code
+  - sensors
+  - actuators  
+
+👉 No abstraction like in general-purpose systems  
+
+---
+
+## 🔹 6. Reliability and Stability
+
+- Must operate **correctly for long durations**
+- Often runs without human intervention  
+
+👉 Failure can lead to critical issues  
+
+---
+
+## 🔹 7. Low Power Consumption
+
+- Designed for energy efficiency
+- Important for:
+  - battery-powered devices
+  - IoT systems  
+
+---
+
+## 🔹 8. Compact Size and Low Cost
+
+- Small hardware footprint  
+- Designed for mass production  
+
+---
+
+## 🔹 9. Minimal User Interface
+
+- Limited interaction:
+  - buttons
+  - LEDs
+  - sensors  
+
+👉 No complex UI like computers  
+
+---
+
+## 🔹 10. Fast Boot Time
+
+- Starts quickly after power-on  
+- No heavy OS loading  
+
+---
+
+# 🔸 3. Summary Table
+
+| Characteristic | Meaning |
+|--------------|--------|
+| Dedicated | Performs one task |
+| Real-time | Time-critical response |
+| Continuous | Runs forever |
+| Resource-limited | Low memory/CPU |
+| Hardware-coupled | Direct control |
+| Reliable | Stable operation |
+| Low power | Energy efficient |
+| Compact | Small size |
+| Minimal UI | Simple interface |
+
+---
+
+# 🔸 4. One-Line Summary
+
+👉 Embedded system = **a dedicated, real-time, continuously running system that directly controls hardware with limited resources**
+
+---
+
