@@ -690,3 +690,337 @@ Counts **external signals/events**
 👉 Timer = **hardware unit that counts pulses to measure time delays or external events**
 
 ---
+# 🔹 Serial Communication in 8051 – Complete Concise Notes
+
+---
+
+## 🔸 1. What is Serial Communication?
+
+Serial communication is the process of sending/receiving data **one bit at a time** over a communication line.
+
+👉 Used to communicate with:
+- computers
+- other microcontrollers
+- sensors/modules
+
+---
+
+## 🔸 2. TX / RX Concept
+
+- **TX (Transmit)** → sends data out  
+- **RX (Receive)** → receives data  
+
+👉 In 8051:
+- TX → P3.1  
+- RX → P3.0  
+
+---
+
+## 🔸 3. Basic Data Flow
+
+### Sending (TX):
+1. CPU loads data into serial register  
+2. Data is converted to bits  
+3. Bits are sent one by one via TX  
+
+---
+
+### Receiving (RX):
+1. Bits arrive one by one via RX  
+2. Hardware reconstructs full byte  
+3. Data stored in register for CPU  
+
+---
+
+### Flow:
+```text
+CPU → Serial Register → TX → (wire) → RX → Serial Register → CPU
+```
+
+---
+
+## 🔸 4. Key Register
+
+- **SBUF (Serial Buffer Register)**  
+  - Used for both transmit and receive  
+
+👉 Write to SBUF → send data  
+👉 Read from SBUF → receive data  
+
+---
+
+## 🔸 5. Serial Modes (Overview)
+
+Controlled by **SCON register**
+
+---
+
+### 🔹 Mode 0 (Shift Register Mode)
+- 8-bit data
+- Fixed baud rate
+- No start/stop bits
+
+👉 Simple internal communication
+
+---
+
+### 🔹 Mode 1 (Standard UART Mode)
+- 8-bit data
+- Variable baud rate
+- Start + Stop bits
+
+👉 Most commonly used mode
+
+---
+
+### 🔹 Mode 2 (9-bit UART, Fixed Baud)
+- 9-bit data (extra bit for control)
+- Fixed baud rate
+
+👉 Used in multiprocessor communication
+
+---
+
+### 🔹 Mode 3 (9-bit UART, Variable Baud)
+- 9-bit data
+- Variable baud rate
+
+👉 More flexible version of Mode 2
+
+---
+
+## 🔸 6. Important Concepts
+
+- **Baud rate** → speed of data transfer  
+- Data sent in form of:
+  - Start bit  
+  - Data bits  
+  - Stop bit  
+
+---
+
+## 🔸 7. One-Line Summary
+
+👉 Serial communication = **sending and receiving data bit-by-bit using TX and RX lines**
+
+---
+
+# 🔹 Addressing Modes in 8051 – Complete Concise Notes
+
+---
+
+## 🔸 1. What is Addressing Mode?
+
+An **addressing mode** defines **how the operand (data) is specified** in an instruction.
+
+👉 It tells the CPU:
+- where to find data  
+- how to access it  
+
+---
+
+## 🔸 2. Why Needed?
+
+- Provides **flexibility** in accessing data  
+- Improves **efficiency of instructions**  
+- Supports different memory types (RAM, ROM, registers)
+
+---
+
+# 🔹 TYPES OF ADDRESSING MODES IN 8051
+
+---
+
+## 🔸 1. Immediate Addressing
+
+### Concept:
+Data is given **directly in the instruction**
+
+### Syntax:
+```asm
+MOV A, #25H
+```
+
+### Meaning:
+Load value **25H directly into A**
+
+### Key idea:
+👉 Data is part of instruction
+
+---
+
+## 🔸 2. Register Addressing
+
+### Concept:
+Operand is in a **register**
+
+### Syntax:
+```asm
+MOV A, R1
+```
+
+### Meaning:
+Copy value from register R1 to A
+
+### Key idea:
+👉 Fast access (register → register)
+
+---
+
+## 🔸 3. Direct Addressing
+
+### Concept:
+Instruction specifies the **direct memory address**
+
+### Syntax:
+```asm
+MOV A, 30H
+```
+
+### Meaning:
+Load value from memory location 30H
+
+### Key idea:
+👉 Address explicitly given
+
+---
+
+## 🔸 4. Register Indirect Addressing
+
+### Concept:
+Register holds the **address of data**
+
+### Syntax:
+```asm
+MOV A, @R0
+```
+
+### Meaning:
+R0 contains address → fetch data from that address
+
+### Key idea:
+👉 Register points to memory
+
+---
+
+## 🔸 5. Indexed Addressing
+
+### Concept:
+Used to access **program memory (ROM)** using index
+
+### Syntax:
+```asm
+MOVC A, @A+DPTR
+```
+
+### Meaning:
+Address = DPTR + A  
+Fetch data from that location
+
+### Key idea:
+👉 Used for lookup tables
+
+---
+
+## 🔸 6. Bit Addressing
+
+### Concept:
+Access **individual bits**
+
+### Syntax:
+```asm
+SETB P1.0
+CLR P1.0
+```
+
+### Meaning:
+Set or clear specific bit
+
+### Key idea:
+👉 Control single bits (useful in hardware)
+
+---
+
+## 🔸 7. Relative Addressing
+
+### Concept:
+Used in **branch/jump instructions**
+
+### Syntax:
+```asm
+JNZ LOOP
+```
+
+### Meaning:
+Jump relative to current location
+
+### Key idea:
+👉 Used for loops and conditions
+
+---
+
+## 🔸 8. Absolute Addressing
+
+### Concept:
+Jump within **same memory page**
+
+### Syntax:
+```asm
+AJMP LABEL
+```
+
+### Key idea:
+👉 Limited range jump
+
+---
+
+## 🔸 9. Long Addressing
+
+### Concept:
+Jump anywhere in memory
+
+### Syntax:
+```asm
+LJMP LABEL
+```
+
+### Key idea:
+👉 Full memory access jump
+
+---
+
+# 🔹 Summary Table
+
+| Mode | Concept |
+|------|--------|
+| Immediate | Data inside instruction |
+| Register | Data in register |
+| Direct | Address given directly |
+| Register Indirect | Register holds address |
+| Indexed | ROM access using index |
+| Bit | Single bit access |
+| Relative | Short jumps |
+| Absolute | Page-level jump |
+| Long | Full memory jump |
+
+---
+
+# 🔹 Simple Mental Model
+
+👉 Where is data?
+
+- inside instruction → Immediate  
+- in register → Register  
+- at fixed address → Direct  
+- address inside register → Indirect  
+- ROM table → Indexed  
+- single bit → Bit  
+- change flow → Relative / Absolute / Long  
+
+---
+
+# 🔹 One-Line Summary
+
+👉 Addressing mode = **method used to locate and access data in an instruction**
+
+---

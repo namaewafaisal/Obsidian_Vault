@@ -34,13 +34,13 @@
   * [x] types (external, timer, serial) ✅ 2026-05-02
   * [x] basic working (ISR flow) ✅ 2026-05-02
   * [x] priority + enable/disable ✅ 2026-05-02
-* [ ] Timer:
-  * [ ] delay generation
-  * [ ] counting events
-  * [ ] Timer modes 0–3 (basic idea of each)
-* [ ] Serial communication:
-  * [ ] TX/RX concept + basic data flow
-  * [ ] Serial modes (basic overview)
+* [x] Timer: ✅ 2026-05-02
+  * [x] delay generation ✅ 2026-05-02
+  * [x] counting events ✅ 2026-05-02
+  * [x] Timer modes 0–3 (basic idea of each) ✅ 2026-05-02
+* [x] Serial communication: ✅ 2026-05-02
+  * [x] TX/RX concept + basic data flow ✅ 2026-05-02
+  * [x] Serial modes (basic overview) ✅ 2026-05-02
 - [ ] Addressing Modes
 
 ## ⚖️ MODERATE (EXAM DEPTH)
