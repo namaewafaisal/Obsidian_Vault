@@ -41,7 +41,8 @@
 * [x] Serial communication: ✅ 2026-05-02
   * [x] TX/RX concept + basic data flow ✅ 2026-05-02
   * [x] Serial modes (basic overview) ✅ 2026-05-02
-- [ ] Addressing Modes
+- [x] Addressing Modes ✅ 2026-05-02
+- [ ] SFR
 
 ## ⚖️ MODERATE (EXAM DEPTH)
 

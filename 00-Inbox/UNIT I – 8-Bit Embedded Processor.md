@@ -805,222 +805,458 @@ Controlled by **SCON register**
 
 ---
 
-# 🔹 Addressing Modes in 8051 – Complete Concise Notes
+# 🔹 Addressing Modes – Complete Notes (General + 8051 Context)
 
 ---
 
-## 🔸 1. What is Addressing Mode?
+# 🔸 1. What is Addressing Mode?
 
-An **addressing mode** defines **how the operand (data) is specified** in an instruction.
+An **addressing mode** defines **how an instruction finds its operand (data)**.
 
-👉 It tells the CPU:
-- where to find data  
-- how to access it  
-
----
-
-## 🔸 2. Why Needed?
-
-- Provides **flexibility** in accessing data  
-- Improves **efficiency of instructions**  
-- Supports different memory types (RAM, ROM, registers)
+👉 It answers:
+- Where is the data?
+- How do we access it?
 
 ---
 
-# 🔹 TYPES OF ADDRESSING MODES IN 8051
+# 🔸 2. Why Addressing Modes Exist
+
+- Different ways to access memory (fast vs flexible)
+- Support for:
+  - constants
+  - registers
+  - memory
+  - arrays
+  - pointers
+
+---
+
+# 🔹 CORE ADDRESSING MODES (GENERAL)
 
 ---
 
 ## 🔸 1. Immediate Addressing
 
 ### Concept:
-Data is given **directly in the instruction**
+Data is given **directly inside instruction**
 
-### Syntax:
+### Example:
 ```asm
 MOV A, #25H
 ```
 
-### Meaning:
-Load value **25H directly into A**
-
-### Key idea:
-👉 Data is part of instruction
+👉 No memory access needed
 
 ---
 
 ## 🔸 2. Register Addressing
 
 ### Concept:
-Operand is in a **register**
+Data is stored in a **register**
 
-### Syntax:
+### Example:
 ```asm
 MOV A, R1
 ```
 
-### Meaning:
-Copy value from register R1 to A
-
-### Key idea:
-👉 Fast access (register → register)
+👉 Fastest access
 
 ---
 
 ## 🔸 3. Direct Addressing
 
 ### Concept:
-Instruction specifies the **direct memory address**
+Instruction directly gives **memory address**
 
-### Syntax:
+### Example:
 ```asm
 MOV A, 30H
 ```
 
-### Meaning:
-Load value from memory location 30H
-
-### Key idea:
-👉 Address explicitly given
+👉 Go to address 30H and read data
 
 ---
 
-## 🔸 4. Register Indirect Addressing
+## 🔸 4. Indirect Addressing (Single-Level)
 
 ### Concept:
-Register holds the **address of data**
+A **register holds the address of data**
 
-### Syntax:
+### Example:
 ```asm
 MOV A, @R0
 ```
 
-### Meaning:
-R0 contains address → fetch data from that address
+👉 Flow:
+```text
+R0 → Address → Data
+```
 
-### Key idea:
-👉 Register points to memory
+👉 Used for:
+- arrays
+- dynamic access
 
 ---
 
-## 🔸 5. Indexed Addressing
+## 🔸 5. Double Indirect Addressing (General Concept)
 
 ### Concept:
-Used to access **program memory (ROM)** using index
+Memory holds address → which holds actual data
 
-### Syntax:
+👉 Flow:
+```text
+Register → Address1 → Address2 → Data
+```
+
+👉 Common in high-level languages (pointer to pointer)
+
+❌ Not supported in 8051 directly
+
+---
+
+## 🔸 6. Indexed Addressing
+
+### Concept:
+Address = **Base + Index**
+
+### Example:
 ```asm
 MOVC A, @A+DPTR
 ```
 
-### Meaning:
-Address = DPTR + A  
-Fetch data from that location
-
-### Key idea:
-👉 Used for lookup tables
+👉 Used for:
+- lookup tables
+- arrays
 
 ---
 
-## 🔸 6. Bit Addressing
+## 🔸 7. Base Addressing (General CPUs)
 
 ### Concept:
-Access **individual bits**
+Address = Base Register + Offset
 
-### Syntax:
+👉 Used in:
+- modern CPUs
+- structured memory access
+
+---
+
+## 🔸 8. Relative Addressing
+
+### Concept:
+Address relative to current instruction
+
+### Example:
+```asm
+JNZ LOOP
+```
+
+👉 Used for:
+- loops
+- conditional jumps
+
+---
+
+## 🔸 9. Absolute Addressing
+
+### Concept:
+Jump within limited range/page
+
+### Example:
+```asm
+AJMP LABEL
+```
+
+---
+
+## 🔸 10. Long Addressing
+
+### Concept:
+Jump to any memory location
+
+### Example:
+```asm
+LJMP LABEL
+```
+
+---
+
+## 🔸 11. Bit Addressing
+
+### Concept:
+Access individual bits
+
+### Example:
 ```asm
 SETB P1.0
 CLR P1.0
 ```
 
-### Meaning:
-Set or clear specific bit
-
-### Key idea:
-👉 Control single bits (useful in hardware)
+👉 Useful for hardware control
 
 ---
 
-## 🔸 7. Relative Addressing
+## 🔸 12. Stack Addressing (General Concept)
 
 ### Concept:
-Used in **branch/jump instructions**
+Data accessed using stack (LIFO)
 
-### Syntax:
+### Example:
 ```asm
-JNZ LOOP
+PUSH A
+POP A
 ```
 
-### Meaning:
-Jump relative to current location
-
-### Key idea:
-👉 Used for loops and conditions
+👉 Used in:
+- function calls
+- interrupts
 
 ---
 
-## 🔸 8. Absolute Addressing
+## 🔸 13. Implied Addressing
 
 ### Concept:
-Jump within **same memory page**
+Operand is implied (no need to specify)
 
-### Syntax:
+### Example:
 ```asm
-AJMP LABEL
+CLR A
 ```
 
-### Key idea:
-👉 Limited range jump
+👉 A is automatically understood
 
 ---
 
-## 🔸 9. Long Addressing
-
-### Concept:
-Jump anywhere in memory
-
-### Syntax:
-```asm
-LJMP LABEL
-```
-
-### Key idea:
-👉 Full memory access jump
-
----
-
-# 🔹 Summary Table
+# 🔹 SUMMARY TABLE
 
 | Mode | Concept |
 |------|--------|
-| Immediate | Data inside instruction |
+| Immediate | Data in instruction |
 | Register | Data in register |
-| Direct | Address given directly |
-| Register Indirect | Register holds address |
-| Indexed | ROM access using index |
-| Bit | Single bit access |
-| Relative | Short jumps |
-| Absolute | Page-level jump |
+| Direct | Address given |
+| Indirect | Register holds address |
+| Double Indirect | Address → address → data |
+| Indexed | Base + index |
+| Base | Base + offset |
+| Relative | Offset from current |
+| Absolute | Fixed range jump |
 | Long | Full memory jump |
+| Bit | Single bit access |
+| Stack | Uses stack |
+| Implied | Operand implicit |
 
 ---
 
-# 🔹 Simple Mental Model
+# 🔹 SIMPLE MENTAL MODEL
 
-👉 Where is data?
+👉 Ask: “Where is the data?”
 
-- inside instruction → Immediate  
-- in register → Register  
-- at fixed address → Direct  
-- address inside register → Indirect  
-- ROM table → Indexed  
-- single bit → Bit  
-- change flow → Relative / Absolute / Long  
+- Inside instruction → Immediate  
+- In register → Register  
+- At fixed address → Direct  
+- Address inside register → Indirect  
+- Address inside memory → Double indirect  
+- Table lookup → Indexed  
+- Offset jump → Relative  
+- Stack → Stack mode  
 
 ---
 
-# 🔹 One-Line Summary
+# 🔹 8051 CONTEXT (IMPORTANT)
 
-👉 Addressing mode = **method used to locate and access data in an instruction**
+8051 supports mainly:
+- Immediate  
+- Register  
+- Direct  
+- Register Indirect  
+- Indexed  
+- Bit  
+- Relative / Absolute / Long  
+
+❌ Does NOT support:
+- Double indirect  
+- Base addressing (full general form)
+
+---
+
+# 🔹 ONE-LINE SUMMARY
+
+👉 Addressing mode = **method used by CPU to locate and access data for an instruction**
+
+---
+
+# 🔹 SFR + Register Types + Parallel Port Programming (8051)
+
+---
+
+# 🔸 1. Special Function Registers (SFRs)
+
+### What are SFRs?
+**Special Function Registers (SFRs)** are control registers used to **configure and control internal hardware** of the 8051.
+
+👉 They act like **control switches** for:
+- ports
+- timers
+- serial communication
+- interrupts
+
+---
+
+### Where are they located?
+- Upper address space: **80H to FFH**
+- Accessed like normal memory locations
+
+---
+
+### Why needed?
+CPU alone cannot manage hardware directly → SFRs provide **control interface**
+
+---
+
+### Important SFRs (know purpose, not all bits)
+
+| SFR | Purpose |
+|-----|--------|
+| A (Accumulator) | Main working register |
+| B | Used in multiplication/division |
+| PSW | Flags (carry, overflow, etc.) |
+| SP | Stack pointer |
+| DPTR | Data pointer (16-bit) |
+| P0–P3 | Port control registers |
+| TMOD | Timer mode selection |
+| TCON | Timer control |
+| SCON | Serial control |
+| SBUF | Serial data buffer |
+| IE | Interrupt enable |
+| IP | Interrupt priority |
+
+---
+
+### Key idea:
+👉 SFR = **control center for internal peripherals**
+
+---
+
+# 🔸 2. Register Types in 8051
+
+## 🔹 (A) General Purpose Registers
+
+### What they are:
+Registers used to **store data temporarily**
+
+### Examples:
+- R0–R7 (in register banks)
+- Accumulator (A)
+- B register
+
+### Use:
+- arithmetic operations
+- temporary storage
+
+---
+
+## 🔹 (B) Special Function Registers (SFRs)
+
+### What they are:
+Registers used to **control hardware behavior**
+
+### Examples:
+- IE → enable interrupts
+- TMOD → set timer mode
+- SCON → configure serial
+
+---
+
+## 🔹 Difference
+
+| Feature | General Purpose Registers | SFRs |
+|--------|--------------------------|------|
+| Use | Store data | Control hardware |
+| Location | Lower RAM | Upper memory (80H–FFH) |
+| Function | Computation | Configuration |
+
+---
+
+### One-line:
+👉 General registers = data storage  
+👉 SFRs = hardware control  
+
+---
+
+# 🔸 3. Parallel Port Programming (I/O Logic)
+
+## 🔹 What is it?
+Using I/O ports to **send and receive data simultaneously (parallel)**
+
+👉 8051 has:
+- 4 ports → P0, P1, P2, P3  
+- Each port = 8 bits  
+
+---
+
+## 🔹 Input Operation
+
+### Concept:
+Read data from external device
+
+### Example:
+```asm
+MOV A, P1
+```
+
+👉 CPU reads data from Port 1 into A
+
+---
+
+## 🔹 Output Operation
+
+### Concept:
+Send data to external device
+
+### Example:
+```asm
+MOV P1, A
+```
+
+👉 Data in A sent to Port 1
+
+---
+
+## 🔹 How ports behave
+
+- Writing `1` → pin acts as input  
+- Writing `0` → pin acts as output (pulls low)
+
+👉 Important concept for exam
+
+---
+
+## 🔹 Example Flow
+
+### Button (input) → LED (output)
+
+```asm
+MOV A, P1     ; read button
+MOV P2, A     ; send to LED
+```
+
+👉 Simple data transfer from input to output
+
+---
+
+## 🔹 Key Points
+
+- Ports are **bidirectional**
+- Used to interface:
+  - sensors (input)
+  - actuators (output)
+
+---
+
+# 🔸 One-Line Summary
+
+- SFR → controls hardware  
+- Registers → store data  
+- Ports → interact with outside world  
 
 ---
