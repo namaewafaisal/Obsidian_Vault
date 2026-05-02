@@ -16,19 +16,19 @@
 
 * [x] Microcontroller vs Microprocessor (definition + differences) ✅ 2026-05-02
 * [x] 8-bit microcontroller concept ✅ 2026-05-02
-* [ ] 8051 microcontroller overview
-* [ ] Architecture:
-  * [ ] CPU (ALU + registers)
-  * [ ] RAM / ROM
-  * [ ] I/O Ports
-  * [ ] Practice drawing the architecture diagram
-* [ ] Program memory vs Data memory
-* [ ] Instruction Set – categories (not full syntax):
-  * [ ] Data transfer (MOV)
-  * [ ] Arithmetic (ADD, SUB)
-  * [ ] Logical (ANL, ORL)
-  * [ ] Branch / Jump (SJMP, JZ)
-  * [ ] *(Know what each category does — enough for a short answer)*
+* [x] 8051 microcontroller overview ✅ 2026-05-02
+* [x] Architecture: ✅ 2026-05-02
+  * [x] CPU (ALU + registers) ✅ 2026-05-02
+  * [x] RAM / ROM ✅ 2026-05-02
+  * [x] I/O Ports ✅ 2026-05-02
+  * [x] Practice drawing the architecture diagram ✅ 2026-05-02
+* [x] Program memory vs Data memory ✅ 2026-05-02
+* [x] Instruction Set – categories (not full syntax): ✅ 2026-05-02
+  * [x] Data transfer (MOV) ✅ 2026-05-02
+  * [x] Arithmetic (ADD, SUB) ✅ 2026-05-02
+  * [x] Logical (ANL, ORL) ✅ 2026-05-02
+  * [x] Branch / Jump (SJMP, JZ) ✅ 2026-05-02
+  * [x] *(Know what each category does — enough for a short answer)* ✅ 2026-05-02
 * [ ] Interrupt:
   * [ ] definition + purpose
   * [ ] types (external, timer, serial)
@@ -41,6 +41,7 @@
 * [ ] Serial communication:
   * [ ] TX/RX concept + basic data flow
   * [ ] Serial modes (basic overview)
+- [ ] Addressing Modes
 
 ## ⚖️ MODERATE (EXAM DEPTH)
 
