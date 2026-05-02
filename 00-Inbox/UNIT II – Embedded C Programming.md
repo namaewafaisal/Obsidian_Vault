@@ -289,3 +289,155 @@ while(1)
 
 ---
 
+# 🔹 Bitwise Operations for Register Control – Complete Notes
+
+---
+
+# 🔸 1. Why Bitwise Operations are Needed
+
+- Hardware works **bit-by-bit**
+- Each bit in a register controls:
+  - a pin
+  - a signal
+  - a flag  
+
+👉 We must control **individual bits without affecting others**
+
+---
+
+# 🔸 2. Bit Mask Concept
+
+```c
+1 << n
+```
+
+👉 Creates a mask with only the nth bit = 1
+
+### Examples:
+```text
+1 << 0 → 00000001
+1 << 1 → 00000010
+1 << 2 → 00000100
+```
+
+---
+
+# 🔸 3. Set (Turn ON) a Bit
+
+```c
+P1 |= (1 << n);
+```
+
+### Operation:
+- Uses OR (`|`)
+- Sets nth bit to 1
+
+### Example:
+```text
+P1 = 00000000
+Mask = 00000001
+Result = 00000001
+```
+
+👉 Only that bit becomes 1
+
+---
+
+# 🔸 4. Clear (Turn OFF) a Bit
+
+```c
+P1 &= ~(1 << n);
+```
+
+### Operation:
+- Uses AND (`&`) with NOT (`~`)
+- Clears nth bit to 0
+
+### Example:
+```text
+P1 = 00000001
+Mask = 11111110
+Result = 00000000
+```
+
+👉 Only that bit becomes 0
+
+---
+
+# 🔸 5. Toggle (Flip) a Bit
+
+```c
+P1 ^= (1 << n);
+```
+
+### Operation:
+- Uses XOR (`^`)
+- Flips nth bit
+
+### Example:
+```text
+P1 = 00000001
+Mask = 00000001
+Result = 00000000
+```
+
+👉 1 → 0, 0 → 1
+
+---
+
+# 🔸 6. Flip All Bits
+
+```c
+P1 ^= 0xFF;
+```
+
+### Example:
+```text
+P1 = 10101010
+Mask = 11111111
+Result = 01010101
+```
+
+👉 All bits are inverted
+
+---
+
+# 🔸 7. XOR Rule (Important)
+
+| Input A | Mask B | Result |
+|--------|--------|--------|
+| 0 | 1 | 1 (flip) |
+| 1 | 1 | 0 (flip) |
+| 0 | 0 | 0 (no change) |
+| 1 | 0 | 1 (no change) |
+
+👉 Flip happens only when mask bit = 1
+
+---
+
+# 🔸 8. Summary Table
+
+| Operation | Code | Purpose |
+|----------|------|--------|
+| Set bit | `P1 |= (1 << n)` | Turn ON bit |
+| Clear bit | `P1 &= ~(1 << n)` | Turn OFF bit |
+| Toggle bit | `P1 ^= (1 << n)` | Flip bit |
+| Flip all bits | `P1 ^= 0xFF` | Invert all bits |
+
+---
+
+# 🔸 9. Real-World Meaning
+
+If a bit controls an LED:
+- Set → LED ON  
+- Clear → LED OFF  
+- Toggle → LED blink  
+
+---
+
+# 🔸 10. One-Line Summary
+
+👉 Bitwise operations allow **precise control of individual hardware bits without affecting others**
+
+---
+

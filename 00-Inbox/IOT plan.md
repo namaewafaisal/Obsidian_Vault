@@ -63,10 +63,10 @@
 
 * [x] Embedded C vs standard C (key differences) ✅ 2026-05-02
 * [x] Characteristics of embedded systems ✅ 2026-05-02
-* [ ] Programming embedded systems in C:
-  * [ ] `volatile` keyword and why it matters
-  * [ ] Bitwise operations for register control
-  * [ ] Memory-mapped I/O (concept + hardware interaction)
+* [x] Programming embedded systems in C: ✅ 2026-05-02
+  * [x] `volatile` keyword and why it matters ✅ 2026-05-02
+  * [x] Bitwise operations for register control ✅ 2026-05-02
+  * [x] Memory-mapped I/O (concept + hardware interaction) ✅ 2026-05-02
 * [ ] Interfacing memory and I/O devices (basic idea)
 * [ ] RTOS:
   * [ ] definition + need for RTOS
