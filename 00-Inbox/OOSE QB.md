@@ -1,22 +1,22 @@
 # CCS356 – OOSE
 ## QUESTION BANK
 
-1.	Give the importance of Agile process.
-2.	What is meant by Extreme programming?
-3.	Give the primary goals in the design of UML.
-4.	Differentiate Sequence and Collaboration Diagram.
-5.	“A system must be loosely coupled and highly cohesive”-Justify.
-6.	State Design Pattern.
-7.	Analyse about CASE tools and where it is used?
-8.	Illustrate the impact on object orientation in testing.
-9.	What are the main functions of software configuration management?
-10.	List out the steps in project scheduling.
-11.	Discuss about Perspective and Specialized Process in software Engineering.
-12.	Write a problem statement for Library Management System. Perform the Object-Oriented System Development and give the Use Case model for the same (use include, extend and generalization) and design the UML Use Case diagram for the same
-13.	Analyse the Observer pattern for a problem of your choice and discuss about the solution with neat diagram.
-14.	Discuss in detail about White box testing, Black box testing and Debugging concepts.
-15.	Apply the Bamboo software development tool for integration mechanisms.
-16.	Draw product breakdown structure and product flow diagram for online ticket reservation system.
+1.	[x] Give the importance of [AGILE](AGILE.md) process.
+2.	[x] What is meant by [Extreme Programming](Extreme%20Programming.md)?
+3.	[x] Give the primary goals in the design of [UML](UML.md).
+4.	[x] Differentiate [Sequence vs Collaboration](Sequence%20vs%20Collaboration.md) Diagram.
+5.	[ ] “A system must be loosely coupled and highly cohesive”-Justify.
+6.	[ ] State Design Pattern.
+7.	[ ] Analyse about CASE tools and where it is used?
+8.	[ ] Illustrate the impact on object orientation in testing.
+9.	[ ] What are the main functions of software configuration management?
+10. [ ] List out the steps in project scheduling.
+11. [ ] Discuss about Perspective and Specialized Process in software Engineering.
+12. [ ] Write a problem statement for Library Management System. Perform the Object-Oriented System Development and give the Use Case model for the same (use include, extend and generalization) and design the UML Use Case diagram for the same
+13. [ ] Analyse the Observer pattern for a problem of your choice and discuss about the solution with neat diagram.
+14. [ ] Discuss in detail about White box testing, Black box testing and Debugging concepts.
+15. [ ] Apply the Bamboo software development tool for integration mechanisms.
+16. [ ] Draw product breakdown structure and product flow diagram for online ticket reservation system.
 
 1.	List out the essential steps involved in step wise planning.
 2.	What are the problems with software project from student’s point of view?
