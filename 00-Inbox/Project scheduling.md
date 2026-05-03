@@ -1,7 +1,6 @@
 ---
 topic: Project Scheduling
 ---
-
 # 🧠 Project Scheduling
 
 ## 🧩 Core Idea

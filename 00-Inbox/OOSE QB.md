@@ -1,16 +1,16 @@
 # CCS356 – OOSE
 ## QUESTION BANK
 
-1.	[x] Give the importance of [AGILE](AGILE.md) process.
-2.	[x] What is meant by [Extreme Programming](Extreme%20Programming.md)?
-3.	[x] Give the primary goals in the design of [UML](UML.md).
-4.	[x] Differentiate [Sequence vs Collaboration](Sequence%20vs%20Collaboration.md) Diagram.
-5.	[x] “A system must be loosely coupled and highly cohesive”-Justify.[Loose Coupling & High Cohesion](Loose%20Coupling%20&%20High%20Cohesion.md)
-6.	[x] State [[Design Pattern]].
-7.	[x] Analyse about [[CASE tools]] and where it is used?
-8.	[x] Illustrate the [[OOP Impact on Testing]].
-9.	[x] What are the main functions of [[Software configuration management]]?
-10. [ ] List out the steps in [[Project scheduling]].
+1. [x] Give the importance of [AGILE](AGILE.md) process.
+2. [x] What is meant by [Extreme Programming](Extreme%20Programming.md)?
+3. [x] Give the primary goals in the design of [UML](UML.md).
+4. [x] Differentiate [Sequence vs Collaboration](Sequence%20vs%20Collaboration.md) Diagram.
+5. [x] “A system must be loosely coupled and highly cohesive”-Justify.[Loose Coupling & High Cohesion](Loose%20Coupling%20&%20High%20Cohesion.md)
+6. [x] State [[Design Pattern]].
+7. [x] Analyse about [[CASE tools]] and where it is used?
+8. [x] Illustrate the [[OOP Impact on Testing]].
+9. [x] What are the main functions of [[Software configuration management]]?
+10. [x] List out the steps in [[Project scheduling]]. ✅ 2026-05-03
 11. [ ] Discuss about Perspective and Specialized Process in software Engineering.
 12. [ ] Write a problem statement for Library Management System. Perform the Object-Oriented System Development and give the Use Case model for the same (use include, extend and generalization) and design the UML Use Case diagram for the same
 13. [ ] Analyse the Observer pattern for a problem of your choice and discuss about the solution with neat diagram.
