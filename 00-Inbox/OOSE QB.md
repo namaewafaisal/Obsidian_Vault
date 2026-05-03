@@ -14,8 +14,8 @@
 11. [x] Discuss about [[Perspective and Specialized Process]] in software Engineering. ✅ 2026-05-03
 12. [x] Write a problem statement for [[Library Management System]]. Perform the Object-Oriented System Development and give the Use Case model for the same (use include, extend and generalization) and design the UML Use Case diagram for the same ✅ 2026-05-03
 13. [x] Analyse the [[Observer pattern]] for a problem of your choice and discuss about the solution with neat diagram. ✅ 2026-05-03
-14. [ ] Discuss in detail about White box testing, Black box testing and Debugging concepts.
-15. [ ] Apply the Bamboo software development tool for integration mechanisms.
+14. [x] Discuss in detail about White box testing, Black box testing and Debugging concepts.[Software Testing & Debugging](Software%20Testing%20&%20Debugging.md) ✅ 2026-05-03
+15. [x] Apply the [[Bamboo software development tool]] for integration mechanisms. ✅ 2026-05-03
 16. [ ] Draw product breakdown structure and product flow diagram for online ticket reservation system.
 
 1.	List out the essential steps involved in step wise planning.
