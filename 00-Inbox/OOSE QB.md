@@ -8,7 +8,7 @@
 5.	[x] “A system must be loosely coupled and highly cohesive”-Justify.[Loose Coupling & High Cohesion](Loose%20Coupling%20&%20High%20Cohesion.md)
 6.	[x] State [[Design Pattern]].
 7.	[x] Analyse about [[CASE tools]] and where it is used?
-8.	[ ] Illustrate the impact on object orientation in testing.
+8.	[x] Illustrate the [[OOP Impact on Testing]].
 9.	[ ] What are the main functions of software configuration management?
 10. [ ] List out the steps in project scheduling.
 11. [ ] Discuss about Perspective and Specialized Process in software Engineering.
