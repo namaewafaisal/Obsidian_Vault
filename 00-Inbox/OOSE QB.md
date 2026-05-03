@@ -9,7 +9,7 @@
 6.	[x] State [[Design Pattern]].
 7.	[x] Analyse about [[CASE tools]] and where it is used?
 8.	[x] Illustrate the [[OOP Impact on Testing]].
-9.	[ ] What are the main functions of software configuration management?
+9.	[x] What are the main functions of [[Software configuration management]]?
 10. [ ] List out the steps in project scheduling.
 11. [ ] Discuss about Perspective and Specialized Process in software Engineering.
 12. [ ] Write a problem statement for Library Management System. Perform the Object-Oriented System Development and give the Use Case model for the same (use include, extend and generalization) and design the UML Use Case diagram for the same
