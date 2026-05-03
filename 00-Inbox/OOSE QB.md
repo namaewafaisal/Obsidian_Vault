@@ -17,10 +17,10 @@
 14. [x] Discuss in detail about White box testing, Black box testing and Debugging concepts.[Software Testing & Debugging](Software%20Testing%20&%20Debugging.md) ✅ 2026-05-03
 15. [x] Apply the [[Bamboo software development tool]] for integration mechanisms. ✅ 2026-05-03
 16. [x] Draw [[PBS and PFD]] for online ticket reservation system. ✅ 2026-05-03
-
-1.	List out the essential steps involved in [[Step wise planning]].
-2.	What are the problems with software project from student’s point of view?
-3.	What is an attribute? Mention its types.
+---
+1. [x] List out the essential steps involved in [[Step wise planning]]. ✅ 2026-05-03
+2. [ ] What are the problems with software project from student’s point of view?
+3. [ ] What is an attribute? Mention its types.
 4.	Differentiate aggregation and composition. 
 5.	Analyse as to which object-oriented methodology is well suited for (i) Design (ii) Analysis (iii) Full life cycle (iv) Real time systems.
 6.	Identify when a pattern is said to be a good pattern.
