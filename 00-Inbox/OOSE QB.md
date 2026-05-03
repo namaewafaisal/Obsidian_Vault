@@ -6,7 +6,7 @@
 3.	[x] Give the primary goals in the design of [UML](UML.md).
 4.	[x] Differentiate [Sequence vs Collaboration](Sequence%20vs%20Collaboration.md) Diagram.
 5.	[x] “A system must be loosely coupled and highly cohesive”-Justify.[Loose Coupling & High Cohesion](Loose%20Coupling%20&%20High%20Cohesion.md)
-6.	[ ] State Design Pattern.
+6.	[x] State [[Design Pattern]].
 7.	[ ] Analyse about CASE tools and where it is used?
 8.	[ ] Illustrate the impact on object orientation in testing.
 9.	[ ] What are the main functions of software configuration management?
