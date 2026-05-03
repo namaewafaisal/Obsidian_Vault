@@ -21,11 +21,11 @@
 1. [x] List out the essential steps involved in [[Step wise planning]]. ✅ 2026-05-03
 2. [x] What are the problems with [[software project from student’s point of view]]? ✅ 2026-05-03
 3. [x] What is an [[Attribute]]? Mention its types. ✅ 2026-05-03
-4. [ ] Differentiate [[aggregation and composition]]. 
-5. [ ] Analyse as to which object-oriented methodology is well suited for (i) Design (ii) Analysis (iii) Full life cycle (iv) Real time systems.
-6. [ ] Identify when a pattern is said to be a good pattern.
-7. [ ] Differentiate White box testing and Regression Testing.
-8. [ ] Illustrate the different kinds of errors you might encounter when you run your program.
+4. [x] Differentiate [[Aggregation vs Composition]]. ✅ 2026-05-03
+5. [x] Analyse as to which [[OO Methodologies Suitability]] is well suited for (i) Design (ii) Analysis (iii) Full life cycle (iv) Real time systems. ✅ 2026-05-03
+6. [x] Identify when a pattern is said to be a [Good Design Pattern](Good%20Design%20Pattern.md). ✅ 2026-05-03
+7. [x] Differentiate [White Box vs Regression Testing](White%20Box%20vs%20Regression%20Testing.md) ✅ 2026-05-03
+8. [x] Illustrate the different [[Types of errors]] you might encounter when you run your program. ✅ 2026-05-03
 9. [ ] What are the different stages in classic project life cycle?
 10. [ ] Highlight the levels of decision making and information system.
 11.	Discuss in detail about Agile process and its steps.
