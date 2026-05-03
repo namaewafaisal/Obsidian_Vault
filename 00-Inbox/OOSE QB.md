@@ -26,8 +26,8 @@
 6. [x] Identify when a pattern is said to be a [Good Design Pattern](Good%20Design%20Pattern.md). ✅ 2026-05-03
 7. [x] Differentiate [White Box vs Regression Testing](White%20Box%20vs%20Regression%20Testing.md) ✅ 2026-05-03
 8. [x] Illustrate the different [[Types of errors]] you might encounter when you run your program. ✅ 2026-05-03
-9. [ ] What are the different stages in classic project life cycle?
-10. [ ] Highlight the levels of decision making and information system.
+9. [x] What are the different stages in [[Classic project life cycle]]? ✅ 2026-05-03
+10. [ ] Highlight the levels of [[decision making and information system]].
 11.	Discuss in detail about Agile process and its steps.
 12.	Analyse about Finite State Machines in Unified Modelling Language.
 13.	Apply the implementation model (Mapping design to code) and give the NextGen POS program solution.
