@@ -12,8 +12,8 @@
 9. [x] What are the main functions of [[Software configuration management]]?
 10. [x] List out the steps in [[Project scheduling]]. ✅ 2026-05-03
 11. [x] Discuss about [[Perspective and Specialized Process]] in software Engineering. ✅ 2026-05-03
-12. [ ] Write a problem statement for [[Library Management System]]. Perform the Object-Oriented System Development and give the Use Case model for the same (use include, extend and generalization) and design the UML Use Case diagram for the same
-13. [ ] Analyse the Observer pattern for a problem of your choice and discuss about the solution with neat diagram.
+12. [x] Write a problem statement for [[Library Management System]]. Perform the Object-Oriented System Development and give the Use Case model for the same (use include, extend and generalization) and design the UML Use Case diagram for the same ✅ 2026-05-03
+13. [x] Analyse the [[Observer pattern]] for a problem of your choice and discuss about the solution with neat diagram. ✅ 2026-05-03
 14. [ ] Discuss in detail about White box testing, Black box testing and Debugging concepts.
 15. [ ] Apply the Bamboo software development tool for integration mechanisms.
 16. [ ] Draw product breakdown structure and product flow diagram for online ticket reservation system.
