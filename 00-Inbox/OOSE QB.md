@@ -27,10 +27,10 @@
 7. [x] Differentiate [White Box vs Regression Testing](White%20Box%20vs%20Regression%20Testing.md) ✅ 2026-05-03
 8. [x] Illustrate the different [[Types of errors]] you might encounter when you run your program. ✅ 2026-05-03
 9. [x] What are the different stages in [[Classic project life cycle]]? ✅ 2026-05-03
-10. [ ] Highlight the levels of [[decision making and information system]].
-11.	Discuss in detail about Agile process and its steps.
-12.	Analyse about Finite State Machines in Unified Modelling Language.
-13.	Apply the implementation model (Mapping design to code) and give the NextGen POS program solution.
-14.	Discuss in detail about different types of testing with examples.
-15.	Explain the various activities to be performed in “Analysing the project characteristics”.
-16.	Represent the activity diagram for the following Scenario, Booking a ticket on Indian railways e-ticket system (IRCTC).
+10. [x] Highlight the levels of [[decision making and information system]]. ✅ 2026-05-03
+11. [ ] Discuss in detail about Agile process and its steps.
+12. [ ] Analyse about Finite State Machines in Unified Modelling Language.
+13. [ ] Apply the implementation model (Mapping design to code) and give the NextGen POS program solution.
+14. [ ] Discuss in detail about different types of testing with examples.
+15. [ ] Explain the various activities to be performed in “Analysing the project characteristics”.
+16. [ ] Represent the activity diagram for the following Scenario, Booking a ticket on Indian railways e-ticket system (IRCTC).
