@@ -16,7 +16,7 @@
 13. [x] Analyse the [[Observer pattern]] for a problem of your choice and discuss about the solution with neat diagram. ✅ 2026-05-03
 14. [x] Discuss in detail about White box testing, Black box testing and Debugging concepts.[Software Testing & Debugging](Software%20Testing%20&%20Debugging.md) ✅ 2026-05-03
 15. [x] Apply the [[Bamboo software development tool]] for integration mechanisms. ✅ 2026-05-03
-16. [ ] Draw product breakdown structure and product flow diagram for online ticket reservation system.
+16. [x] Draw [[PBS and PFD]] for online ticket reservation system. ✅ 2026-05-03
 
 1.	List out the essential steps involved in step wise planning.
 2.	What are the problems with software project from student’s point of view?
