@@ -18,7 +18,7 @@
 15. [x] Apply the [[Bamboo software development tool]] for integration mechanisms. ✅ 2026-05-03
 16. [x] Draw [[PBS and PFD]] for online ticket reservation system. ✅ 2026-05-03
 
-1.	List out the essential steps involved in step wise planning.
+1.	List out the essential steps involved in [[Step wise planning]].
 2.	What are the problems with software project from student’s point of view?
 3.	What is an attribute? Mention its types.
 4.	Differentiate aggregation and composition. 
