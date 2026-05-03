@@ -1260,3 +1260,4 @@ MOV P2, A     ; send to LED
 - Ports → interact with outside world  
 
 ---
+
