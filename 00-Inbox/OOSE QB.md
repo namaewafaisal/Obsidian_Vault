@@ -19,15 +19,15 @@
 16. [x] Draw [[PBS and PFD]] for online ticket reservation system. ✅ 2026-05-03
 ---
 1. [x] List out the essential steps involved in [[Step wise planning]]. ✅ 2026-05-03
-2. [ ] What are the problems with software project from student’s point of view?
-3. [ ] What is an attribute? Mention its types.
-4.	Differentiate aggregation and composition. 
-5.	Analyse as to which object-oriented methodology is well suited for (i) Design (ii) Analysis (iii) Full life cycle (iv) Real time systems.
-6.	Identify when a pattern is said to be a good pattern.
-7.	Differentiate White box testing and Regression Testing.
-8.	Illustrate the different kinds of errors you might encounter when you run your program.
-9.	What are the different stages in classic project life cycle?
-10.	Highlight the levels of decision making and information system.
+2. [x] What are the problems with [[software project from student’s point of view]]? ✅ 2026-05-03
+3. [x] What is an [[Attribute]]? Mention its types. ✅ 2026-05-03
+4. [ ] Differentiate [[aggregation and composition]]. 
+5. [ ] Analyse as to which object-oriented methodology is well suited for (i) Design (ii) Analysis (iii) Full life cycle (iv) Real time systems.
+6. [ ] Identify when a pattern is said to be a good pattern.
+7. [ ] Differentiate White box testing and Regression Testing.
+8. [ ] Illustrate the different kinds of errors you might encounter when you run your program.
+9. [ ] What are the different stages in classic project life cycle?
+10. [ ] Highlight the levels of decision making and information system.
 11.	Discuss in detail about Agile process and its steps.
 12.	Analyse about Finite State Machines in Unified Modelling Language.
 13.	Apply the implementation model (Mapping design to code) and give the NextGen POS program solution.
