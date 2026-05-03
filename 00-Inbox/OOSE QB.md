@@ -5,7 +5,7 @@
 2.	[x] What is meant by [Extreme Programming](Extreme%20Programming.md)?
 3.	[x] Give the primary goals in the design of [UML](UML.md).
 4.	[x] Differentiate [Sequence vs Collaboration](Sequence%20vs%20Collaboration.md) Diagram.
-5.	[ ] “A system must be loosely coupled and highly cohesive”-Justify.
+5.	[x] “A system must be loosely coupled and highly cohesive”-Justify.[Loose Coupling & High Cohesion](Loose%20Coupling%20&%20High%20Cohesion.md)
 6.	[ ] State Design Pattern.
 7.	[ ] Analyse about CASE tools and where it is used?
 8.	[ ] Illustrate the impact on object orientation in testing.
