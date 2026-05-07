@@ -32,5 +32,5 @@
 12. [x] Analyse about [[Finite State Machines]] in Unified Modelling Language. ✅ 2026-05-03
 13. [x] Apply the implementation model (Mapping design to code) and give the [[NextGen POS]] program solution. ✅ 2026-05-03
 14. [x] Discuss in detail about different [[types of testing]] with examples. ✅ 2026-05-03
-15. [ ] Explain the various activities to be performed in “Analysing the project characteristics”.
-16. [ ] Represent the activity diagram for the following Scenario, Booking a ticket on Indian railways e-ticket system (IRCTC).
+15. [x] Explain the various activities to be performed in “[[Analysing the project characteristics]]”. ✅ 2026-05-03
+16. [x] Represent the activity diagram for the following Scenario, Booking a ticket on [[Indian railways e-ticket system (IRCTC)]]. ✅ 2026-05-03
