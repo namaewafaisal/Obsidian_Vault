@@ -296,12 +296,12 @@ LazyVim shows open buffers as tabs in the **bufferline** at the top.
 
 ### Splitting Windows
 
-| Keymap         | Action                          |
-|----------------|---------------------------------|
-| `<leader>|`    | Split vertically (side by side) |
-| `<leader>-`    | Split horizontally (top/bottom) |
-| `<leader>wd`   | Delete/close current window     |
-| `<leader>ww`   | Jump to other window            |
+| Keymap       | Action                          |                                 |
+| ------------ | ------------------------------- | ------------------------------- |
+| `<leader>    | `                               | Split vertically (side by side) |
+| `<leader>-`  | Split horizontally (top/bottom) |                                 |
+| `<leader>wd` | Delete/close current window     |                                 |
+| `<leader>ww` | Jump to other window            |                                 |
 
 ### Moving Between Windows
 
