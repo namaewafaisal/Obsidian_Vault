@@ -7,7 +7,7 @@
 4. [x] Differentiate [Sequence vs Collaboration](Sequence%20vs%20Collaboration.md) Diagram.
 5. [x] “A system must be loosely coupled and highly cohesive”-Justify.[Loose Coupling & High Cohesion](Loose%20Coupling%20&%20High%20Cohesion.md)
 6. [x] State [[Design Pattern]].
-7. [x] Analyse about [[CASE tools]] and where it is used?
+7. [x] Analyse about [[CASE Tools]] and where it is used?
 8. [x] Illustrate the [[OOP Impact on Testing]].
 9. [x] What are the main functions of [[Software configuration management]]?
 10. [x] List out the steps in [[Project scheduling]]. ✅ 2026-05-03
