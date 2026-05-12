@@ -235,3 +235,7 @@ So:
 $$99x=45$$
 
 $$x=\frac{45}{99} =\frac{5}{11}$$​
+
+## Percentage error is always:
+
+$$\frac{\text{Error}}{\text{Correct Value}}\times100Correct ValueError​×100$$
