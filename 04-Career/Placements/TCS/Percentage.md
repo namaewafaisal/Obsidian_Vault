@@ -209,3 +209,29 @@ $$
 - Graph-based theory  
 
 ---
+
+# Errors
+
+##  Convert decimal to fraction
+```
+45 + 0.454545...
+```
+
+$$0.454545$$
+
+Let:
+
+$$x=0.454545$$
+
+Since repeating block has 2 digits (`45`), multiply by 100:
+
+$$100x=45.454545$$
+Subtract:
+
+$$100x−x=45.454545…−0.454545… = 45$$
+
+So:
+
+$$99x=45$$
+
+$$x=\frac{45}{99} =\frac{5}{11}$$​
