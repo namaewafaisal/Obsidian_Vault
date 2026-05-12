@@ -102,6 +102,10 @@ $$
 
 ### Comparison Shortcut
 
+
+> [!ERROR] Below part needs addressing
+> Logic needs understanding
+
 If A is R% more than B:
 $$
 B \text{ is } \frac{R}{100+R} \times 100\% \text{ less than A}
