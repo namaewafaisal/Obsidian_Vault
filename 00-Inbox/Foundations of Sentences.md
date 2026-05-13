@@ -858,3 +858,4 @@ Everything else modifies:
 * perspective
 
 Core skeleton remains the same.
+[[Questions for SVO]]
