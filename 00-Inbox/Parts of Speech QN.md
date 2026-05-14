@@ -1,13 +1,4 @@
 # Parts of Speech — Practice Review
-
-Score:
-29/30
-
-Wrong:
-26
-
----
-
 # 1
 
 Correct usage of `in`:
