@@ -1,4 +1,4 @@
-Alright Faisal, this is a complete breakdown. June 9 gives you roughly 4 weeks — that's tight but very doable if you're focused. Let me give you everything.
+nAlright Faisal, this is a complete breakdown. June 9 gives you roughly 4 weeks — that's tight but very doable if you're focused. Let me give you everything.
 
 ---
 
