@@ -1,0 +1,136 @@
+```md
+---
+title: 5.5 - Sequence Diagram
+part: 5
+---
+
+# 5.5 — Sequence Diagram
+
+Sequence Diagram:
+> models how objects interact over time.
+
+Focus:
+- message flow
+- interaction order
+- runtime communication
+
+Time flows:
+> top → bottom
+
+---
+
+# Main Components
+
+| Component | Meaning |
+|---|---|
+| Actor/Object | Participant |
+| Lifeline | Existence over time |
+| Message | Communication |
+| Activation | Object currently executing |
+
+---
+
+# Basic Example
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant AuthService
+    participant Database
+
+    User->>AuthService: login(username, password)
+    AuthService->>Database: verifyUser()
+    Database-->>AuthService: validUser
+    AuthService-->>User: loginSuccess
+```
+
+---
+
+# Explanation
+
+| Part | Meaning |
+|---|---|
+| User | Initiates interaction |
+| AuthService | Handles login |
+| Database | Verifies user |
+| Arrows | Messages |
+
+---
+
+# Message Types
+
+## Synchronous Message
+Sender waits for response.
+
+```mermaid
+sequenceDiagram
+    A->>B: request()
+```
+
+---
+
+## Return Message
+
+```mermaid
+sequenceDiagram
+    A-->>B: response
+```
+
+---
+
+## Asynchronous Message
+Sender does not wait.
+
+```mermaid
+sequenceDiagram
+    A-)B: asyncEvent()
+```
+
+---
+
+# Conditional Flow (alt)
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Auth
+
+    User->>Auth: login()
+
+    alt Valid Credentials
+        Auth-->>User: success
+    else Invalid Credentials
+        Auth-->>User: error
+    end
+```
+
+---
+
+# Loop Example
+
+```mermaid
+sequenceDiagram
+    participant Service
+
+    loop Retry 3 Times
+        Service->>Service: retry()
+    end
+```
+
+---
+
+# Sequence vs Class Diagram
+
+| Class Diagram | Sequence Diagram |
+|---|---|
+| Static structure | Runtime interaction |
+| Classes | Messages |
+| What exists | What happens over time |
+
+---
+
+# Important Insight
+
+Sequence Diagram answers:
+> "Who communicates with whom, and in what order?"
+```
