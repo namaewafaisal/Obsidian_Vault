@@ -7,5 +7,6 @@
   "nativeMenus": false,
   "baseFontSize": 16,
   "theme": "system",
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [],
+  "showRibbon": true
 }
