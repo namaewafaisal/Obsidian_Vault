@@ -58,7 +58,7 @@ Before instructions make sense, you need to know how operands are specified:
 - **Indirect (Register Indirect)**: the operand is the memory address *stored* in a register. `MOV A, @R0` — R0 holds an address; load from that address into A. The `@` symbol means "indirect"
 - **Indexed**: base register plus offset. `MOVC A, @A+DPTR` — used for reading from program memory tables
 
-### 1.3.2 — Instruction Categories and Key Instructions
+### [[1.3.2 — Instruction Categories and Key Instructions]]
 
 - **Data Transfer**: MOV, MOVX (external data memory), MOVC (program memory/code), XCH (exchange), XCHD, PUSH, POP, SWAP
 - **Arithmetic**: ADD, ADDC (add with carry), SUBB (subtract with borrow), MUL AB (A × B → BA), DIV AB (A ÷ B → A remainder B), INC, DEC, DA A (decimal adjust)
