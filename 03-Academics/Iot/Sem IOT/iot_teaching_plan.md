@@ -28,7 +28,7 @@
 
 ---
 
-## 1.2 — 8051 Architecture: What's Inside the Chip
+## [[1.2 — 8051 Architecture What's Inside the Chip]]
 
 - The CPU core: ALU (Arithmetic Logic Unit), Accumulator (A), B register, Program Counter (PC), Stack Pointer (SP)
 - Memory organisation — two separate address spaces (Harvard Architecture):
