@@ -48,7 +48,7 @@
 
 ## 1.3 — 8051 Instruction Set and Programming
 
-### 1.3.1 — Addressing Modes
+### [[1.3.1 — Addressing Modes]]
 
 Before instructions make sense, you need to know how operands are specified:
 
