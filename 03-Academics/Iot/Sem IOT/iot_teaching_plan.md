@@ -15,7 +15,7 @@
 
 # PART 1 — The 8-Bit Microcontroller: Understanding the Brain
 
-## 1.1 — What Is a Microcontroller (And How Is It Different From a Processor)?
+## [[1.1 — What Is a Microcontroller]] (And How Is It Different From a Processor)?
 
 - The difference between a microprocessor (just a CPU), a microcontroller (CPU + memory + peripherals on one chip), and a computer (full system with OS)
 - Why "embedded" means the processor is embedded inside a larger system that isn't a general-purpose computer
