@@ -1103,3 +1103,470 @@ Next remaining useful UNIT V questions:
 3. **IoT for Smart Home Automation**
 
 
+# UNIT V – Q15(a)
+
+# IoT in Smart Agriculture
+
+*(How IoT improves efficiency, reduces cost, reduces waste and improves yield)*
+
+## Introduction
+
+Smart Agriculture uses IoT devices, sensors, cloud computing and automation to improve farming productivity.
+
+Goal:
+
+```text
+Higher Yield
+Lower Cost
+Less Water Usage
+Reduced Human Effort
+```
+
+---
+
+# Architecture
+
+```text
+Soil Moisture Sensor
+Temperature Sensor
+Humidity Sensor
+Rain Sensor
+          ↓
+      Controller
+ (Arduino/ESP32/RPi)
+          ↓
+      Wi-Fi/GSM
+          ↓
+        Cloud
+          ↓
+     Farmer App
+          ↓
+      Water Pump
+```
+
+---
+
+# Working
+
+## Step 1
+
+Sensors continuously monitor:
+
+* Soil moisture
+* Temperature
+* Humidity
+* Rainfall
+
+---
+
+## Step 2
+
+Data sent to controller.
+
+---
+
+## Step 3
+
+Controller uploads data to cloud.
+
+---
+
+## Step 4
+
+Farmer receives information through mobile app.
+
+---
+
+## Step 5
+
+Automatic irrigation starts when moisture falls below threshold.
+
+---
+
+# How IoT Improves Agriculture
+
+## 1. Increases Operational Efficiency
+
+Real-time monitoring eliminates manual inspection.
+
+```text
+Sensor → Automatic Decision
+```
+
+Benefits:
+
+* Faster response
+* Better management
+
+---
+
+## 2. Reduces Cost
+
+Automation reduces:
+
+* Labor cost
+* Water consumption
+* Fertilizer usage
+
+---
+
+## 3. Reduces Waste
+
+Sensors ensure resources are used only when needed.
+
+Examples:
+
+* Water conservation
+* Fertilizer optimization
+
+---
+
+## 4. Improves Yield
+
+Continuous monitoring provides:
+
+* Optimal irrigation
+* Better crop health
+* Early disease detection
+
+Result:
+
+```text
+Higher Crop Production
+```
+
+---
+
+# Applications
+
+* Smart Irrigation
+* Greenhouse Monitoring
+* Livestock Monitoring
+* Precision Farming
+
+---
+
+# Advantages
+
+* Water conservation
+* Increased productivity
+* Reduced operational cost
+* Better resource utilization
+
+---
+
+## Keywords
+
+Smart Agriculture, Precision Farming, Soil Moisture Sensor, Smart Irrigation, Yield Improvement, Resource Optimization, Cloud Monitoring.
+
+---
+
+# UNIT V – Q15(b)
+
+# IoT in Healthcare, Fitness Monitoring and Wearable Electronics
+
+## Introduction
+
+IoT Healthcare uses connected medical devices and wearable sensors to continuously monitor health conditions.
+
+Examples:
+
+* Smart Watches
+* Fitness Bands
+* ECG Monitors
+* Smart Glucose Monitors
+
+---
+
+# Architecture
+
+```text
+Wearable Sensor
+       ↓
+Microcontroller
+       ↓
+Bluetooth/Wi-Fi
+       ↓
+Mobile App
+       ↓
+Cloud Server
+       ↓
+Doctor/Hospital
+```
+
+---
+
+# Fitness Monitoring System
+
+## Parameters Monitored
+
+* Heart Rate
+* Step Count
+* Calories Burned
+* Sleep Pattern
+* Blood Oxygen (SpO₂)
+
+---
+
+## Working
+
+### Step 1
+
+Wearable sensor collects data.
+
+---
+
+### Step 2
+
+Data transmitted to smartphone.
+
+---
+
+### Step 3
+
+Mobile app uploads information to cloud.
+
+---
+
+### Step 4
+
+User and doctor monitor health status.
+
+---
+
+# Wearable Electronics
+
+Examples:
+
+### Smart Watch
+
+Measures:
+
+* Heart rate
+* Activity level
+
+---
+
+### Fitness Band
+
+Measures:
+
+* Steps
+* Distance
+* Calories
+
+---
+
+### Smart ECG Device
+
+Measures:
+
+* Cardiac activity
+
+---
+
+# Impact on Healthcare
+
+## Continuous Monitoring
+
+Patient health tracked 24×7.
+
+---
+
+## Early Disease Detection
+
+Abnormal readings trigger alerts.
+
+---
+
+## Remote Healthcare
+
+Doctors monitor patients from anywhere.
+
+---
+
+## Reduced Hospital Visits
+
+Routine monitoring performed at home.
+
+---
+
+# Advantages
+
+* Real-time monitoring
+* Better patient care
+* Faster emergency response
+* Improved fitness tracking
+
+---
+
+# Applications
+
+* Elderly Care
+* Chronic Disease Monitoring
+* Sports Analytics
+* Remote Patient Monitoring
+
+---
+
+## Keywords
+
+Wearable Electronics, Smart Watch, Fitness Band, SpO₂ Monitoring, Remote Healthcare, Telemedicine, Continuous Monitoring.
+
+---
+
+# UNIT V – Q15(b)
+
+# Role and Necessity of IoT in Healthcare with Real-Time Example
+
+## Introduction
+
+IoT enables healthcare systems to collect, process and transmit patient information in real time.
+
+Objectives:
+
+* Continuous monitoring
+* Remote diagnosis
+* Emergency alerts
+* Improved healthcare quality
+
+---
+
+# Necessity of IoT in Healthcare
+
+## 1. Real-Time Monitoring
+
+Sensors continuously collect patient data.
+
+Examples:
+
+* Heart Rate
+* Blood Pressure
+* Temperature
+
+---
+
+## 2. Remote Patient Care
+
+Doctors can monitor patients without requiring hospital visits.
+
+---
+
+## 3. Early Warning System
+
+Abnormal conditions generate alerts.
+
+Example:
+
+```text
+Heart Rate > Safe Limit
+        ↓
+Alert Sent
+```
+
+---
+
+## 4. Reduced Healthcare Cost
+
+Remote monitoring reduces:
+
+* Hospital admissions
+* Travel expenses
+* Consultation frequency
+
+---
+
+## 5. Improved Emergency Response
+
+Critical alerts reach doctors instantly.
+
+---
+
+# Real-Time Example
+
+# Remote Heart Monitoring System
+
+## Architecture
+
+```text
+Heart Rate Sensor
+       ↓
+ESP32 / Arduino
+       ↓
+Wi-Fi/GSM
+       ↓
+Cloud Server
+       ↓
+Doctor Mobile App
+```
+
+---
+
+## Working
+
+### Step 1
+
+Heart-rate sensor measures pulse.
+
+---
+
+### Step 2
+
+Microcontroller processes data.
+
+---
+
+### Step 3
+
+Data uploaded to cloud.
+
+---
+
+### Step 4
+
+Doctor monitors readings remotely.
+
+---
+
+### Step 5
+
+If heart rate becomes abnormal:
+
+```text
+Alert Generated
+SMS Sent
+Emergency Notification
+```
+
+---
+
+# Benefits
+
+* Continuous supervision
+* Early diagnosis
+* Reduced mortality risk
+* Better patient management
+
+---
+
+# Applications
+
+* ICU Monitoring
+* Cardiac Care
+* Elderly Care
+* Home Healthcare
+
+---
+
+# Advantages
+
+* 24×7 monitoring
+* Remote accessibility
+* Improved treatment quality
+* Faster medical response
+
+---
+
+## Keywords
+
+IoT Healthcare, Remote Monitoring, Telemedicine, Heart Rate Sensor, Cloud Healthcare, Emergency Alert System, Patient Monitoring.

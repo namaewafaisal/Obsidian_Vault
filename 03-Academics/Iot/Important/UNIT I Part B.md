@@ -1651,3 +1651,337 @@ __|‾‾|__|‾‾|__|‾‾|__
 ## Keywords
 
 Machine Cycle, XTAL, Timer0 Mode1, TH0, TL0, TF0, TR0, Embedded C, Delay Calculation, Toggle Operation.
+
+
+# UNIT I – Q16(a)
+
+# Traffic Light Control using 8051 Microcontroller
+
+## Introduction
+
+A Traffic Light Control System uses an 8051 microcontroller to control:
+
+* Red Light
+* Yellow Light
+* Green Light
+
+in a predefined sequence.
+
+---
+
+# Interfacing Diagram
+
+```text
+           8051
+      +------------+
+P1.0 -----> RED LED
+P1.1 -----> YELLOW LED
+P1.2 -----> GREEN LED
+      +------------+
+```
+
+(Each LED connected through a current limiting resistor.)
+
+---
+
+# Working Principle
+
+### State 1
+
+```text
+RED ON
+YELLOW OFF
+GREEN OFF
+```
+
+Vehicles Stop.
+
+---
+
+### State 2
+
+```text
+RED OFF
+YELLOW ON
+GREEN OFF
+```
+
+Prepare to move.
+
+---
+
+### State 3
+
+```text
+RED OFF
+YELLOW OFF
+GREEN ON
+```
+
+Vehicles Move.
+
+---
+
+# Flowchart
+
+```text
+Start
+  |
+Red ON
+Delay
+  |
+Yellow ON
+Delay
+  |
+Green ON
+Delay
+  |
+Repeat
+```
+
+---
+
+# Embedded C Program
+
+```c
+#include <reg51.h>
+
+sbit RED = P1^0;
+sbit YELLOW = P1^1;
+sbit GREEN = P1^2;
+
+void delay()
+{
+    int i,j;
+    for(i=0;i<500;i++)
+        for(j=0;j<1275;j++);
+}
+
+void main()
+{
+    while(1)
+    {
+        RED = 1;
+        YELLOW = 0;
+        GREEN = 0;
+        delay();
+
+        RED = 0;
+        YELLOW = 1;
+        GREEN = 0;
+        delay();
+
+        RED = 0;
+        YELLOW = 0;
+        GREEN = 1;
+        delay();
+    }
+}
+```
+
+---
+
+# Applications
+
+* Road Junctions
+* Railway Crossings
+* Industrial Traffic Management
+
+---
+
+# Keywords
+
+8051, Port P1, LED Interfacing, Traffic Control, Delay Routine, Embedded C.
+
+---
+
+# UNIT I – Q16(b)
+
+# Stepper Motor Interfacing with 8051 and Speed/Direction Control
+
+## Introduction
+
+A Stepper Motor converts electrical pulses into precise mechanical rotation.
+
+Characteristics:
+
+* High accuracy
+* Precise position control
+* No feedback required
+
+Applications:
+
+* CNC Machines
+* Printers
+* Robotics
+* Industrial Automation
+
+---
+
+# Working Principle
+
+Motor rotates by energizing coils in sequence.
+
+Example sequence:
+
+```text
+A → B → C → D
+```
+
+Each pulse:
+
+```text
+One Step Rotation
+```
+
+---
+
+# Interfacing Diagram
+
+```text
+              8051
+         +------------+
+P1.0 ----> IN1
+P1.1 ----> IN2
+P1.2 ----> IN3
+P1.3 ----> IN4
+         +------------+
+                |
+             ULN2003
+                |
+         Stepper Motor
+```
+
+### Why ULN2003?
+
+8051 cannot supply sufficient current.
+
+ULN2003 acts as:
+
+```text
+Driver Circuit
+```
+
+---
+
+# Full Step Sequence
+
+| Step | P1.3 P1.2 P1.1 P1.0 |
+|--------|------|------|------|------|
+| 1 | 0 | 0 | 0 | 1 |
+| 2 | 0 | 0 | 1 | 0 |
+| 3 | 0 | 1 | 0 | 0 |
+| 4 | 1 | 0 | 0 | 0 |
+
+Hex Values:
+
+```text
+01H
+02H
+04H
+08H
+```
+
+---
+
+# Clockwise Rotation
+
+```text
+01H → 02H → 04H → 08H
+```
+
+---
+
+# Anticlockwise Rotation
+
+```text
+08H → 04H → 02H → 01H
+```
+
+---
+
+# Speed Control
+
+Speed depends on delay between steps.
+
+### Small Delay
+
+```text
+Fast Rotation
+```
+
+### Large Delay
+
+```text
+Slow Rotation
+```
+
+---
+
+# Embedded C Program (Clockwise)
+
+```c
+#include <reg51.h>
+
+unsigned char step[4]={0x01,0x02,0x04,0x08};
+
+void delay()
+{
+    int i,j;
+    for(i=0;i<200;i++)
+        for(j=0;j<1275;j++);
+}
+
+void main()
+{
+    int i;
+
+    while(1)
+    {
+        for(i=0;i<4;i++)
+        {
+            P1 = step[i];
+            delay();
+        }
+    }
+}
+```
+
+---
+
+# Reverse Direction Program Logic
+
+Use:
+
+```c
+for(i=3;i>=0;i--)
+```
+
+instead of:
+
+```c
+for(i=0;i<4;i++)
+```
+
+---
+
+# Advantages
+
+* Accurate positioning
+* Simple control
+* Good repeatability
+
+---
+
+# Applications
+
+* Robotics
+* CNC Machines
+* Camera Positioning Systems
+* Medical Equipment
+
+---
+
+# Keywords
+
+Stepper Motor, ULN2003, Full Step Mode, Clockwise Rotation, Anticlockwise Rotation, Driver Circuit, Speed Control, Position Control.
