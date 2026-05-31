@@ -1010,3 +1010,737 @@ Next I'll do:
 
 **Q12(a) Process Scheduling Algorithms (Explain Any Two)**
 **Q12(b) States of a Task in RTOS**
+
+
+# UNIT II – Q12(a)
+
+# Process Scheduling Algorithms – Explain Any Two
+
+## Introduction
+
+A scheduling algorithm determines:
+
+* Which process gets CPU time
+* Execution order of processes
+* CPU utilization
+* Waiting time
+* Turnaround time
+
+Scheduling is performed by the:
+
+```text
+Scheduler
+```
+
+inside the RTOS/Operating System.
+
+---
+
+# Common Scheduling Algorithms
+
+1. First Come First Serve (FCFS)
+2. Shortest Job First (SJF)
+3. Priority Scheduling
+4. Round Robin (RR)
+5. Rate Monotonic Scheduling (RMS)
+6. Earliest Deadline First (EDF)
+
+---
+
+# 1. Round Robin (RR)
+
+## Definition
+
+A preemptive scheduling algorithm where each process receives CPU for a fixed time called:
+
+```text
+Time Quantum
+```
+
+After the quantum expires:
+
+```text
+Running Process
+      ↓
+Ready Queue
+```
+
+---
+
+## Working
+
+Suppose:
+
+| Process | Burst Time |
+| ------- | ---------- |
+| P1      | 10         |
+| P2      | 5          |
+| P3      | 8          |
+
+Quantum:
+
+```text
+Q = 4
+```
+
+---
+
+## Gantt Chart
+
+```text
+0   4   8   12  16  19  23
+|P1|P2|P3|P1|P3|P1|
+```
+
+---
+
+## Advantages
+
+* Fair CPU allocation
+* Good response time
+* Suitable for time-sharing systems
+
+---
+
+## Disadvantages
+
+* High context switching overhead
+* Performance depends on quantum size
+
+---
+
+# 2. Priority Scheduling
+
+## Definition
+
+CPU allocated according to priority.
+
+Rule:
+
+```text
+Higher Priority
+      ↓
+Executed First
+```
+
+---
+
+## Example
+
+| Process | Priority |
+| ------- | -------- |
+| P1      | 3        |
+| P2      | 1        |
+| P3      | 2        |
+
+Execution:
+
+```text
+P2 → P3 → P1
+```
+
+---
+
+## Types
+
+### Preemptive
+
+Higher-priority process can interrupt running process.
+
+### Non-Preemptive
+
+Running process continues until completion.
+
+---
+
+## Advantages
+
+* Important tasks finish quickly
+* Suitable for RTOS
+
+---
+
+## Disadvantages
+
+### Starvation
+
+Low-priority process may wait indefinitely.
+
+Solution:
+
+```text
+Aging
+```
+
+(increase priority over time)
+
+---
+
+# Comparison
+
+| Feature    | Round Robin  | Priority                    |
+| ---------- | ------------ | --------------------------- |
+| Basis      | Time Quantum | Priority                    |
+| Type       | Preemptive   | Preemptive / Non-preemptive |
+| Fairness   | High         | Lower                       |
+| Starvation | No           | Possible                    |
+| RTOS Usage | Moderate     | High                        |
+
+---
+
+## Keywords
+
+Scheduler, Ready Queue, Context Switch, Time Quantum, Priority, Preemptive Scheduling, Starvation, Aging, CPU Utilization.
+
+---
+
+# UNIT II – Q12(b)
+
+# Various States of a Task in Real-Time Operating Systems (RTOS)
+
+## Introduction
+
+A **Task** is the basic unit of execution in an RTOS.
+
+Examples:
+
+* Reading sensor data
+* Updating LCD
+* Sending IoT data
+* Handling interrupts
+
+The RTOS scheduler manages tasks by moving them through different states.
+
+---
+
+# Task State Diagram
+
+```text
+                 +---------+
+                 |  Ready  |
+                 +----+----+
+                      |
+                      |
+                      v
+                +-----+-----+
+                | Running   |
+                +-----+-----+
+                      |
+          +-----------+-----------+
+          |                       |
+          v                       v
+      +---+----+            +-----+------+
+      |Blocked |            | Suspended  |
+      +---+----+            +-----+------+
+          |                       |
+          +-----------+-----------+
+                      |
+                      v
+                   Ready
+```
+
+---
+
+# 1. New State
+
+Task has been created but not yet ready for execution.
+
+Operations:
+
+* Memory allocation
+* Task initialization
+* Stack creation
+
+---
+
+# 2. Ready State
+
+Task is prepared for execution.
+
+Characteristics:
+
+* Waiting for CPU
+* All resources available
+* Present in Ready Queue
+
+Example:
+
+```text
+Sensor Task waiting for CPU
+```
+
+---
+
+# 3. Running State
+
+Task currently executing on CPU.
+
+Characteristics:
+
+* CPU assigned
+* Instructions executing
+
+Only one task can run at a time on a single-core processor.
+
+---
+
+# 4. Blocked (Waiting) State
+
+Task waits for:
+
+* Event
+* I/O completion
+* Message
+* Semaphore
+* Timer expiration
+
+Example:
+
+```text
+Waiting for UART data
+```
+
+---
+
+# 5. Suspended State
+
+Task temporarily removed from scheduling.
+
+Characteristics:
+
+* Cannot execute
+* Must be resumed explicitly
+
+Example:
+
+```text
+Maintenance task disabled temporarily
+```
+
+---
+
+# 6. Terminated State
+
+Task has completed execution.
+
+Characteristics:
+
+* Resources released
+* Removed from scheduler
+
+---
+
+# State Transitions
+
+| Current State | Next State |
+| ------------- | ---------- |
+| New           | Ready      |
+| Ready         | Running    |
+| Running       | Blocked    |
+| Blocked       | Ready      |
+| Running       | Suspended  |
+| Suspended     | Ready      |
+| Running       | Terminated |
+
+---
+
+# Task Management Functions
+
+RTOS provides:
+
+### Task Creation
+
+```text
+Create Task
+```
+
+### Task Deletion
+
+```text
+Delete Task
+```
+
+### Task Suspension
+
+```text
+Suspend Task
+```
+
+### Task Resumption
+
+```text
+Resume Task
+```
+
+### Context Switching
+
+Switch CPU from one task to another.
+
+---
+
+# Importance of Task States
+
+* Efficient CPU utilization
+* Supports multitasking
+* Improves responsiveness
+* Helps meet real-time deadlines
+
+---
+
+# Applications
+
+* Embedded Controllers
+* Robotics
+* Automotive Systems
+* Medical Devices
+* Industrial Automation
+* IoT Systems
+
+---
+
+## Keywords
+
+Task, Process, Scheduler, Ready Queue, Running State, Blocked State, Suspended State, Context Switching, Multitasking, Semaphore, RTOS.
+
+
+# UNIT II – Remaining Question 1
+
+# Priority-Based Scheduling Policies
+
+## Introduction
+
+Priority Scheduling is a CPU scheduling algorithm in which each process is assigned a priority and the CPU is allocated to the highest-priority process first.
+
+Rule:
+
+```text
+Higher Priority
+      ↓
+Executed First
+```
+
+Used in:
+
+* RTOS
+* Embedded Systems
+* Industrial Automation
+* Mission Critical Systems
+
+---
+
+# Types of Priority Scheduling
+
+## 1. Non-Preemptive Priority Scheduling
+
+Once CPU is allocated:
+
+```text
+Process runs till completion
+```
+
+even if a higher-priority process arrives.
+
+---
+
+### Example
+
+| Process | Priority |
+| ------- | -------- |
+| P1      | 3        |
+| P2      | 1        |
+| P3      | 2        |
+
+Execution:
+
+```text
+P2 → P3 → P1
+```
+
+---
+
+## 2. Preemptive Priority Scheduling
+
+If a higher-priority process arrives:
+
+```text
+Running Process
+       ↓
+Interrupted
+```
+
+CPU immediately assigned to higher-priority process.
+
+---
+
+### Example
+
+```text
+Time 0 : P1 starts
+
+Time 3 : P2 arrives
+         Higher Priority
+
+P1 interrupted
+P2 executes
+```
+
+---
+
+# Working Principle
+
+```text
+Ready Queue
+      ↓
+Scheduler checks priorities
+      ↓
+Highest Priority Selected
+      ↓
+CPU Allocation
+      ↓
+Execution
+```
+
+---
+
+# Advantages
+
+* Fast response for critical tasks
+* Suitable for real-time systems
+* Better control over task execution
+* Important tasks finish first
+
+---
+
+# Disadvantages
+
+## Starvation
+
+Low-priority processes may never execute.
+
+Example:
+
+```text
+High Priority Jobs
+keep arriving continuously
+```
+
+Low-priority task waits forever.
+
+---
+
+## Aging
+
+Solution to starvation.
+
+Priority gradually increased with waiting time.
+
+```text
+Waiting Time ↑
+Priority ↑
+```
+
+---
+
+# Example Gantt Chart
+
+| Process | Burst | Priority |
+| ------- | ----- | -------- |
+| P1      | 8     | 3        |
+| P2      | 4     | 1        |
+| P3      | 6     | 2        |
+
+Execution:
+
+```text
+0      4      10      18
+| P2 | P3 | P1 |
+```
+
+---
+
+# Comparison
+
+| Feature          | Preemptive | Non-Preemptive |
+| ---------------- | ---------- | -------------- |
+| CPU Interruption | Yes        | No             |
+| Response Time    | Better     | Slower         |
+| Complexity       | Higher     | Lower          |
+| RTOS Usage       | Common     | Less Common    |
+
+---
+
+## Keywords
+
+Priority Scheduling, Preemptive, Non-Preemptive, Starvation, Aging, Ready Queue, Scheduler, CPU Allocation, RTOS.
+
+---
+
+# UNIT II – Remaining Question 2
+
+# Round Robin Scheduling Numerical
+
+## Given
+
+| Process | Burst Time | Arrival Time |
+| ------- | ---------- | ------------ |
+| P0      | 80         | 0            |
+| P1      | 20         | 10           |
+| P2      | 10         | 10           |
+| P3      | 20         | 40           |
+| P4      | 50         | 45           |
+
+Time Quantum:
+
+```text
+Q = 15
+```
+
+---
+
+# Step 1: Gantt Chart
+
+```text
+0   15  30  45  55  70  85 100 115 130 145 160 175 190
+|P0|P1|P2|P0|P3|P4|P1|P0|P3|P4|P0|P4|P0|
+```
+
+Completion Times:
+
+| Process | Completion Time |
+| ------- | --------------- |
+| P2      | 55              |
+| P1      | 85              |
+| P3      | 130             |
+| P4      | 190             |
+| P0      | 190             |
+
+---
+
+# Step 2: Turnaround Time
+
+Formula:
+
+```text
+TAT = Completion Time − Arrival Time
+```
+
+| Process | CT  | AT | TAT |
+| ------- | --- | -- | --- |
+| P0      | 190 | 0  | 190 |
+| P1      | 85  | 10 | 75  |
+| P2      | 55  | 10 | 45  |
+| P3      | 130 | 40 | 90  |
+| P4      | 190 | 45 | 145 |
+
+---
+
+## Average Turnaround Time
+
+```text
+(190+75+45+90+145)/5
+```
+
+```text
+545/5
+```
+
+```text
+109 units
+```
+
+---
+
+# Step 3: Waiting Time
+
+Formula:
+
+```text
+WT = TAT − Burst Time
+```
+
+| Process | TAT | BT | WT  |
+| ------- | --- | -- | --- |
+| P0      | 190 | 80 | 110 |
+| P1      | 75  | 20 | 55  |
+| P2      | 45  | 10 | 35  |
+| P3      | 90  | 20 | 70  |
+| P4      | 145 | 50 | 95  |
+
+---
+
+## Average Waiting Time
+
+```text
+(110+55+35+70+95)/5
+```
+
+```text
+365/5
+```
+
+```text
+73 units
+```
+
+---
+
+# Step 4: Context Switches
+
+Gantt Chart:
+
+```text
+P0→P1
+P1→P2
+P2→P0
+P0→P3
+P3→P4
+P4→P1
+P1→P0
+P0→P3
+P3→P4
+P4→P0
+P0→P4
+P4→P0
+```
+
+Total Context Switches:
+
+```text
+12
+```
+
+If context switch time is not specified:
+
+```text
+Context Switching Count = 12
+```
+
+If each switch takes:
+
+```text
+1 unit
+```
+
+Then:
+
+```text
+Total Context Switching Time = 12 units
+```
+
+---
+
+# UNIT II – Final Unique Question List
+
+### Q12(a)
+
+1. RMS Schedulability Analysis (Numerical)
+2. Process Scheduling Algorithms (Explain Any Two)
+
+### Q12(b)
+
+3. RMS vs EDF Comparison
+4. Task States in RTOS
+5. Priority-Based Scheduling Policies
+6. Round Robin Scheduling Numerical
+
+That completes all unique UNIT II long questions visible across the papers you shared.
