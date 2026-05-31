@@ -221,3 +221,118 @@ A **smart irrigation system** uses sensors and IoT technology to automatically s
 * Output devices (LEDs, motors, displays)
 * Communication interfaces
 * Power supply unit
+
+
+# 2023
+
+# UNIT I (Q1–Q2)
+
+### 1. What are the main components of embedded systems?
+
+* Microcontroller/Microprocessor
+* Memory (RAM, ROM, Flash)
+* Input devices (Sensors, Switches)
+* Output devices (LEDs, Motors, Displays)
+* Communication interfaces
+* Power supply unit
+
+### 2. Name the flags in 8051 microcontroller and write their significance.
+
+| Flag                 | Significance                                    |
+| -------------------- | ----------------------------------------------- |
+| CY (Carry)           | Indicates carry/borrow in arithmetic operations |
+| AC (Auxiliary Carry) | Used in BCD arithmetic                          |
+| OV (Overflow)        | Indicates arithmetic overflow                   |
+| P (Parity)           | Indicates parity of accumulator contents        |
+| F0                   | User-defined flag                               |
+
+---
+
+# UNIT II (Q3–Q4)
+
+### 3. A switch is connected to pin P1.0 and LED to pin P2.7. Write an 8051 Embedded C program to get the status of the switch and send it to the LED.
+
+```c
+#include <reg51.h>
+
+sbit SW  = P1^0;
+sbit LED = P2^7;
+
+void main()
+{
+    while(1)
+    {
+        LED = SW;
+    }
+}
+```
+
+### 4. Compare RTOS and Operating Systems.
+
+| RTOS                         | General Operating System               |
+| ---------------------------- | -------------------------------------- |
+| Deterministic response time  | Response time not guaranteed           |
+| Designed for real-time tasks | Designed for general-purpose computing |
+| Priority-based scheduling    | Fairness-oriented scheduling           |
+| Low latency                  | Higher latency                         |
+| Used in embedded systems     | Used in PCs and servers                |
+
+---
+
+# UNIT III (Q5–Q6)
+
+### 5. List the various libraries in Arduino.
+
+* EEPROM Library
+* SPI Library
+* Wire (I²C) Library
+* Servo Library
+* LiquidCrystal Library
+* SoftwareSerial Library
+
+### 6. What is a sketch in Arduino?
+
+A **Sketch** is an Arduino program written in the Arduino IDE and uploaded to the Arduino board for execution.
+
+---
+
+# UNIT IV (Q7–Q8)
+
+### 7. List the states of a Bluetooth device.
+
+* Standby State
+* Inquiry State
+* Page State
+* Connected State
+
+### 8. Interpret the usage of Raspberry Pi interface in IoT.
+
+* Acts as an IoT gateway/controller
+* Interfaces with sensors and actuators
+* Processes collected data
+* Connects devices to the Internet
+* Supports protocols such as I²C, SPI, UART, Wi-Fi, and Bluetooth
+
+---
+
+# UNIT V (Q9–Q10)
+
+### 9. List the components of a wearable device.
+
+* Sensors
+* Microcontroller/Processor
+* Battery
+* Communication Module (Bluetooth/Wi-Fi)
+* Display/User Interface
+* Memory
+
+### 10. Recall the scope of developing IoT applications in public services and smart cities.
+
+* Smart traffic management
+* Smart street lighting
+* Waste management
+* Smart parking systems
+* Public safety and surveillance
+* Water and energy management
+* Environmental monitoring
+* Smart healthcare services
