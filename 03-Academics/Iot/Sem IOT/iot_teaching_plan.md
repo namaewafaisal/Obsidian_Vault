@@ -75,7 +75,7 @@ Before instructions make sense, you need to know how operands are specified:
 
 ---
 
-## 1.4 — Parallel Ports: Programming I/O
+## [[1.4 — Parallel Ports Programming IO]]
 
 - The 8051 has four 8-bit parallel ports: P0, P1, P2, P3 (SFR addresses 80H, 90H, A0H, B0H)
 - P0: bidirectional I/O but also used as low-byte address/data bus when accessing external memory — needs external pull-up resistors
