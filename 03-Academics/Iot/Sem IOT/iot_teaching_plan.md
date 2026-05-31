@@ -164,7 +164,7 @@ Formula: Machine cycle = 1 µs. 10,000 µs delay. Count = 10,000. Reload = 65536
 
 ## 2.1 — Memory and I/O Devices Interfacing
 
-### 2.1.1 — Memory Interfacing
+### [[2.1.1 — Memory Interfacing]]
 
 - Why external memory is needed: internal 4KB ROM and 128B RAM isn't enough for most real systems
 - Address space: 8051 can address 64KB external program memory (PSEN signal) and 64KB external data memory (RD/WR signals)
@@ -172,7 +172,7 @@ Formula: Machine cycle = 1 µs. 10,000 µs delay. Count = 10,000. Reload = 65536
 - Memory-mapped I/O: peripherals assigned addresses in the data memory space, accessed with MOVX instruction
 - How to expand: EPROM or Flash for program memory, SRAM for data memory, connected via address decoder
 
-### 2.1.2 — Common I/O Device Interfacing
+### [[2.1.2 — Common IO Device Interfacing]]
 
 - LCD (16×2): understand pin interface (RS, RW, EN, D0-D7); command mode vs data mode; 4-bit vs 8-bit interface; initialisation sequence
 - Keypad (4×4 matrix): row-column scanning to detect which key is pressed; avoiding bounce with software debounce
