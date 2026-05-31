@@ -1,171 +1,8 @@
-# UNIT II – PART B
+# UNIT II – Complete Question Bank
 
 ---
 
-# 1. Scheduling Policies: Compare Rate Monotonic Scheduling (RMS) and Earliest Deadline First (EDF)
-
-## Introduction
-
-In a **Real-Time Operating System (RTOS)**, multiple tasks compete for CPU time.
-
-A **Scheduling Algorithm** decides:
-
-* Which task executes next
-* When a task executes
-* Whether deadlines can be met
-
-Two important scheduling algorithms are:
-
-1. Rate Monotonic Scheduling (RMS)
-2. Earliest Deadline First (EDF)
-
----
-
-# A. Rate Monotonic Scheduling (RMS)
-
-## Definition
-
-RMS is a **fixed-priority scheduling algorithm**.
-
-Priority is assigned according to the **task period**.
-
-### Rule
-
-```text
-Smaller Period → Higher Priority
-Larger Period → Lower Priority
-```
-
----
-
-## Example
-
-| Task | Period |
-| ---- | ------ |
-| T1   | 10 ms  |
-| T2   | 20 ms  |
-| T3   | 50 ms  |
-
-Priority:
-
-```text
-T1 > T2 > T3
-```
-
-because T1 occurs most frequently.
-
----
-
-## Characteristics
-
-* Fixed priorities
-* Preemptive scheduling
-* Suitable for periodic tasks
-* Easy to implement
-* Widely used in embedded systems
-
----
-
-## Advantages
-
-* Simple algorithm
-* Predictable behavior
-* Low overhead
-
----
-
-## Disadvantages
-
-* CPU utilization not optimal
-* May fail even when a valid schedule exists
-
----
-
-# B. Earliest Deadline First (EDF)
-
-## Definition
-
-EDF is a **dynamic-priority scheduling algorithm**.
-
-Priority is assigned according to the task deadline.
-
-### Rule
-
-```text
-Nearest Deadline → Highest Priority
-```
-
----
-
-## Example
-
-| Task | Deadline |
-| ---- | -------- |
-| T1   | 15 ms    |
-| T2   | 30 ms    |
-| T3   | 10 ms    |
-
-Priority:
-
-```text
-T3 > T1 > T2
-```
-
-because T3 has the earliest deadline.
-
----
-
-## Characteristics
-
-* Dynamic priorities
-* Preemptive scheduling
-* Higher CPU utilization
-* Flexible scheduling
-
----
-
-## Advantages
-
-* Better processor utilization
-* Can schedule more tasks
-* Optimal for single processor systems
-
----
-
-## Disadvantages
-
-* More complex
-* Higher scheduling overhead
-
----
-
-# Comparison Between RMS and EDF
-
-| Feature         | RMS         | EDF           |
-| --------------- | ----------- | ------------- |
-| Priority Type   | Fixed       | Dynamic       |
-| Basis           | Task Period | Task Deadline |
-| Complexity      | Simple      | Complex       |
-| CPU Utilization | Lower       | Higher        |
-| Overhead        | Less        | More          |
-| Predictability  | High        | Moderate      |
-| Performance     | Good        | Better        |
-
----
-
-## Keywords
-
-* RTOS
-* Scheduling
-* Fixed Priority
-* Dynamic Priority
-* Deadline
-* Period
-* Preemptive Scheduling
-
----
-
-# 2. Interfacing of Matrix Keyboard and LCD with 8051
+# Q1: Interfacing of Matrix Keyboard and LCD with 8051
 
 ---
 
@@ -236,7 +73,6 @@ P1.7 ---|C4    |
 3. One row is made LOW.
 4. Columns are checked.
 5. If a key is pressed:
-
    * Corresponding column becomes LOW.
 6. Position of key identified.
 
@@ -268,8 +104,6 @@ Key at (R2,C3) is pressed.
 ---
 
 # B. LCD Interfacing with 8051
-
----
 
 ## Introduction
 
@@ -327,16 +161,12 @@ RS = 0 → Command Register
 RS = 1 → Data Register
 ```
 
----
-
 ### RW (Read/Write)
 
 ```text
 RW = 0 → Write
 RW = 1 → Read
 ```
-
----
 
 ### EN (Enable)
 
@@ -375,261 +205,13 @@ Used to latch data into LCD.
 
 ## Keywords
 
-* Matrix Keyboard
-* Row Scanning
-* Column Scanning
-* LCD
-* RS
-* RW
-* EN
-* Character Display
+Matrix Keyboard, Row Scanning, Column Scanning, LCD, RS, RW, EN, Character Display.
 
 ---
 
-# 3. Multi-tasking & Processes: Task Management and Task States in RTOS
+# Q2: Verify Schedulability Using Rate Monotonic Scheduling (RMS)
 
----
-
-# Introduction
-
-A **Task** is a program that performs a specific function.
-
-Examples:
-
-* Reading sensor
-* Displaying LCD data
-* Sending IoT data
-* Handling keypad input
-
-RTOS manages many tasks simultaneously.
-
-This is called:
-
-```text
-Multitasking
-```
-
----
-
-# Task Management
-
-## Definition
-
-Task Management is the process of:
-
-* Creating tasks
-* Scheduling tasks
-* Suspending tasks
-* Resuming tasks
-* Deleting tasks
-
----
-
-## Functions of Task Management
-
-### Task Creation
-
-Creates a new task.
-
-Example:
-
-```text
-Sensor Task
-LCD Task
-Communication Task
-```
-
----
-
-### Task Scheduling
-
-Decides which task gets CPU.
-
----
-
-### Task Synchronization
-
-Coordinates tasks sharing resources.
-
----
-
-### Task Communication
-
-Allows tasks to exchange data.
-
-Methods:
-
-* Message Queue
-* Semaphore
-* Event Flags
-
----
-
-# Task States in RTOS
-
-A task moves through several states during execution.
-
----
-
-## Task State Diagram
-
-```text
-          +-------+
-          | Ready |
-          +---+---+
-              |
-              |
-              v
-         +----+----+
-         | Running |
-         +----+----+
-              |
-     +--------+--------+
-     |                 |
-     v                 v
-+----+----+       +----+----+
-|Blocked |       | Suspended|
-+----+----+       +----+----+
-     |                 |
-     +--------+--------+
-              |
-              v
-           Ready
-```
-
----
-
-# 1. Ready State
-
-* Task is prepared for execution.
-* Waiting for CPU allocation.
-
-Example:
-
-```text
-Task loaded into memory.
-```
-
----
-
-# 2. Running State
-
-* CPU is executing the task.
-
-Only one task can run on a single-core processor at a time.
-
----
-
-# 3. Blocked (Waiting) State
-
-Task waits for:
-
-* Event
-* Data
-* I/O completion
-* Timer expiration
-
-Example:
-
-```text
-Waiting for sensor data.
-```
-
----
-
-# 4. Suspended State
-
-Task is temporarily stopped.
-
-Cannot execute until resumed.
-
----
-
-# 5. Terminated State
-
-Task execution completed.
-
-Resources are released.
-
----
-
-# State Transitions
-
-| From      | To         |
-| --------- | ---------- |
-| Ready     | Running    |
-| Running   | Blocked    |
-| Blocked   | Ready      |
-| Running   | Suspended  |
-| Suspended | Ready      |
-| Running   | Terminated |
-
----
-
-# Advantages of Multitasking
-
-* Better CPU utilization
-* Faster response
-* Efficient resource sharing
-* Supports real-time systems
-
----
-
-## Keywords
-
-* RTOS
-* Task
-* Process
-* Multitasking
-* Scheduler
-* Ready State
-* Running State
-* Blocked State
-* Suspended State
-* Semaphore
-* Message Queue
-
----
-
-# Exam Tip
-
-For a **13–16 mark answer**, draw:
-
-* **RMS vs EDF comparison table**
-* **Matrix Keyboard interface diagram**
-* **LCD interface diagram**
-* **RTOS task state diagram**
-
-These diagrams alone usually fetch several marks even before the explanation.
-
-
-You're right. For these papers, **Unit = Question Number**, not topic.
-
-From the image:
-
-## UNIT II Unique Questions
-
-### 12(a) – RMS Schedulability Analysis
-
-### 12(b) – RMS vs EDF Comparison
-
-### 12(a) – Process Scheduling Algorithms (Explain any two)
-
-### 12(b) – Task States in RTOS
-
-### 12(b) – Round Robin Numerical
-
-### 12(b) – Priority-Based Scheduling Policies
-
-Let's do the first two.
-
----
-
-# UNIT II – Q12(a)
-
-# Verify the Schedulability using Rate Monotonic Scheduling (RMS)
-
-Given:
+## Given
 
 | Task | Execution Time (C) | Period (T) |
 | ---- | ------------------ | ---------- |
@@ -647,8 +229,6 @@ In RMS:
 Smaller Period → Higher Priority
 ```
 
-Therefore:
-
 | Task | Period | Priority |
 | ---- | ------ | -------- |
 | T2   | 5      | Highest  |
@@ -661,84 +241,55 @@ Therefore:
 
 Formula:
 
-U=\sum \frac{C_i}{T_i}
+```text
+U = Σ (Ci / Ti)
+```
 
 Substituting values:
 
-[
-U=\frac{3}{20}+\frac{2}{5}+\frac{2}{10}
-]
-
-[
-U=0.15+0.40+0.20
-]
-
-[
-U=0.75
-]
-
-[
-U=75%
-]
+```text
+U = (3/20) + (2/5) + (2/10)
+U = 0.15 + 0.40 + 0.20
+U = 0.75
+U = 75%
+```
 
 ---
 
 ## Step 3: RMS Utilization Bound
 
-For:
+For n = 3 tasks:
 
 ```text
-n = 3 Tasks
+U_max = n(2^(1/n) − 1)
+U_max = 3(2^(1/3) − 1)
+U_max = 0.779
+U_max = 77.9%
 ```
-
-Formula:
-
-[
-U_{max}=n(2^{1/n}-1)
-]
-
-[
-U_{max}=3(2^{1/3}-1)
-]
-
-[
-U_{max}=0.779
-]
-
-[
-U_{max}=77.9%
-]
 
 ---
 
 ## Step 4: Verification
 
-[
+```text
 75% < 77.9%
-]
+```
 
 Hence:
 
 ```text
-Task Set is Schedulable
-under RMS.
+Task Set is Schedulable under RMS.
 ```
 
 ---
 
 ## Step 5: Hyperperiod
 
-LCM:
-
 ```text
-LCM(20,5,10)=20
+LCM(20, 5, 10) = 20
 ```
 
-Schedule must be checked from:
-
-```text
-0 → 20
-```
+Schedule must be verified from 0 → 20.
 
 ---
 
@@ -781,9 +332,7 @@ Rate Monotonic Scheduling, Fixed Priority Scheduling, Hyperperiod, CPU Utilizati
 
 ---
 
-# UNIT II – Q12(b)
-
-# Compare Rate Monotonic Scheduling (RMS) and Earliest Deadline First (EDF)
+# Q3: Compare Rate Monotonic Scheduling (RMS) and Earliest Deadline First (EDF)
 
 ## Introduction
 
@@ -805,27 +354,16 @@ A fixed-priority scheduling algorithm.
 Priority assigned according to:
 
 ```text
-Smaller Period
-→ Higher Priority
+Smaller Period → Higher Priority
 ```
-
----
 
 ## Example
 
-| Task | Period |
-| ---- | ------ |
-| T1   | 5      |
-| T2   | 10     |
-| T3   | 20     |
-
-Priority:
-
-```text
-T1 > T2 > T3
-```
-
----
+| Task | Period | Priority |
+| ---- | ------ | -------- |
+| T1   | 5      | Highest  |
+| T2   | 10     | Medium   |
+| T3   | 20     | Lowest   |
 
 ## Characteristics
 
@@ -834,21 +372,30 @@ T1 > T2 > T3
 * Predictable
 * Easy implementation
 
----
-
 ## CPU Utilization Bound
 
-[
-U=n(2^{1/n}-1)
-]
+```text
+U = n(2^(1/n) − 1)
+```
 
 For large n:
 
-[
-U \approx 69%
-]
+```text
+U ≈ 69%
+```
 
 Guaranteed schedulable only up to this bound.
+
+## Advantages
+
+* Simple algorithm
+* Predictable behavior
+* Low overhead
+
+## Disadvantages
+
+* CPU utilization not optimal
+* May fail even when a valid schedule exists
 
 ---
 
@@ -861,27 +408,16 @@ A dynamic-priority scheduling algorithm.
 Priority assigned according to:
 
 ```text
-Earliest Deadline
-→ Highest Priority
+Earliest Deadline → Highest Priority
 ```
-
----
 
 ## Example
 
-| Task | Deadline |
-| ---- | -------- |
-| T1   | 8        |
-| T2   | 5        |
-| T3   | 15       |
-
-Priority:
-
-```text
-T2 > T1 > T3
-```
-
----
+| Task | Deadline | Priority |
+| ---- | -------- | -------- |
+| T2   | 5        | Highest  |
+| T1   | 8        | Medium   |
+| T3   | 15       | Lowest   |
 
 ## Characteristics
 
@@ -890,44 +426,45 @@ T2 > T1 > T3
 * Optimal Scheduling
 * Higher CPU Utilization
 
----
-
 ## CPU Utilization Bound
 
 EDF can schedule tasks if:
 
-[
-U \le 100%
-]
-
-Thus:
-
 ```text
-Maximum Utilization
-=
-100%
+U ≤ 100%
 ```
 
----
+Maximum utilization = 100%.
 
-# Comparison
+## Advantages
 
-| Feature           | RMS    | EDF            |
-| ----------------- | ------ | -------------- |
-| Priority          | Fixed  | Dynamic        |
-| Based On          | Period | Deadline       |
-| Complexity        | Low    | High           |
-| Overhead          | Less   | More           |
-| Predictability    | High   | Moderate       |
-| Utilization Limit | 69–78% | 100%           |
-| Schedulability    | Lower  | Better         |
-| Implementation    | Easier | More Difficult |
+* Optimal scheduling
+* Maximum CPU utilization
+* Better deadline satisfaction
+
+## Disadvantages
+
+* Complex implementation
+* Higher overhead
 
 ---
 
-# CPU Utilization Analysis
+# Comparison Table
 
-Example:
+| Feature           | RMS        | EDF            |
+| ----------------- | ---------- | -------------- |
+| Priority Type     | Fixed      | Dynamic        |
+| Based On          | Period     | Deadline       |
+| Complexity        | Low        | High           |
+| Overhead          | Less       | More           |
+| Predictability    | High       | Moderate       |
+| Utilization Limit | 69–78%     | 100%           |
+| Schedulability    | Lower      | Better         |
+| Implementation    | Easier     | More Difficult |
+
+---
+
+# CPU Utilization Analysis Example
 
 | Task | C | T  |
 | ---- | - | -- |
@@ -935,86 +472,35 @@ Example:
 | T2   | 3 | 10 |
 | T3   | 2 | 20 |
 
-[
-U=\frac{2}{5}+\frac{3}{10}+\frac{2}{20}
-]
-
-[
-U=0.4+0.3+0.1
-]
-
-[
-U=0.8
-]
-
-[
-U=80%
-]
-
-Since:
-
 ```text
-80% > RMS Bound
+U = (2/5) + (3/10) + (2/20)
+U = 0.4 + 0.3 + 0.1
+U = 0.8 = 80%
 ```
 
-RMS may fail.
+Since 80% > RMS bound → RMS may fail.
 
-But:
-
-```text
-80% < 100%
-```
-
-EDF can schedule successfully.
-
----
-
-## Advantages of RMS
-
-* Simple
-* Predictable
-* Low overhead
-
-### Disadvantages
-
-* Lower utilization
-* Not optimal
-
----
-
-## Advantages of EDF
-
-* Optimal scheduling
-* Maximum CPU utilization
-* Better deadline satisfaction
-
-### Disadvantages
-
-* Complex implementation
-* Higher overhead
+Since 80% < 100% → EDF can schedule successfully.
 
 ---
 
 ## Conclusion
 
 ```text
-RMS → Simple, Fixed Priority
+RMS → Simple, Fixed Priority, lower utilization
 
-EDF → Optimal, Dynamic Priority,
-Higher Processor Utilization
+EDF → Optimal, Dynamic Priority, maximum CPU utilization
 ```
 
 ---
 
-Next I'll do:
+## Keywords
 
-**Q12(a) Process Scheduling Algorithms (Explain Any Two)**
-**Q12(b) States of a Task in RTOS**
+RTOS, Scheduling, Fixed Priority, Dynamic Priority, Deadline, Period, Preemptive Scheduling, Utilization Bound.
 
+---
 
-# UNIT II – Q12(a)
-
-# Process Scheduling Algorithms – Explain Any Two
+# Q4: Process Scheduling Algorithms – Explain Any Two
 
 ## Introduction
 
@@ -1026,17 +512,11 @@ A scheduling algorithm determines:
 * Waiting time
 * Turnaround time
 
-Scheduling is performed by the:
-
-```text
-Scheduler
-```
-
-inside the RTOS/Operating System.
+Scheduling is performed by the **Scheduler** inside the RTOS/OS.
 
 ---
 
-# Common Scheduling Algorithms
+## Common Scheduling Algorithms
 
 1. First Come First Serve (FCFS)
 2. Shortest Job First (SJF)
@@ -1057,19 +537,11 @@ A preemptive scheduling algorithm where each process receives CPU for a fixed ti
 Time Quantum
 ```
 
-After the quantum expires:
-
-```text
-Running Process
-      ↓
-Ready Queue
-```
+After the quantum expires, the running process moves to the back of the ready queue.
 
 ---
 
 ## Working
-
-Suppose:
 
 | Process | Burst Time |
 | ------- | ---------- |
@@ -1077,13 +549,7 @@ Suppose:
 | P2      | 5          |
 | P3      | 8          |
 
-Quantum:
-
-```text
-Q = 4
-```
-
----
+Quantum: Q = 4
 
 ## Gantt Chart
 
@@ -1092,15 +558,11 @@ Q = 4
 |P1|P2|P3|P1|P3|P1|
 ```
 
----
-
 ## Advantages
 
 * Fair CPU allocation
 * Good response time
 * Suitable for time-sharing systems
-
----
 
 ## Disadvantages
 
@@ -1115,70 +577,44 @@ Q = 4
 
 CPU allocated according to priority.
 
-Rule:
-
 ```text
-Higher Priority
-      ↓
-Executed First
+Higher Priority → Executed First
 ```
-
----
 
 ## Example
 
-| Process | Priority |
-| ------- | -------- |
-| P1      | 3        |
-| P2      | 1        |
-| P3      | 2        |
-
-Execution:
-
-```text
-P2 → P3 → P1
-```
-
----
+| Process | Priority | Execution Order |
+| ------- | -------- | --------------- |
+| P1      | 3        | 3rd             |
+| P2      | 1        | 1st             |
+| P3      | 2        | 2nd             |
 
 ## Types
 
 ### Preemptive
 
-Higher-priority process can interrupt running process.
+Higher-priority process can interrupt a running process immediately.
 
 ### Non-Preemptive
 
-Running process continues until completion.
-
----
+Running process continues until completion even if higher-priority process arrives.
 
 ## Advantages
 
 * Important tasks finish quickly
 * Suitable for RTOS
 
----
-
 ## Disadvantages
 
-### Starvation
+**Starvation** — low-priority process may wait indefinitely.
 
-Low-priority process may wait indefinitely.
-
-Solution:
-
-```text
-Aging
-```
-
-(increase priority over time)
+**Solution — Aging:** priority gradually increases with waiting time.
 
 ---
 
-# Comparison
+# Comparison: Round Robin vs Priority Scheduling
 
-| Feature    | Round Robin  | Priority                    |
+| Feature    | Round Robin  | Priority Scheduling         |
 | ---------- | ------------ | --------------------------- |
 | Basis      | Time Quantum | Priority                    |
 | Type       | Preemptive   | Preemptive / Non-preemptive |
@@ -1194,9 +630,7 @@ Scheduler, Ready Queue, Context Switch, Time Quantum, Priority, Preemptive Sched
 
 ---
 
-# UNIT II – Q12(b)
-
-# Various States of a Task in Real-Time Operating Systems (RTOS)
+# Q5: Various States of a Task in RTOS
 
 ## Introduction
 
@@ -1213,13 +647,17 @@ The RTOS scheduler manages tasks by moving them through different states.
 
 ---
 
-# Task State Diagram
+## Task State Diagram
 
 ```text
                  +---------+
-                 |  Ready  |
+                 |   New   |
                  +----+----+
                       |
+                      v
+                 +---------+
+                 |  Ready  |
+                 +----+----+
                       |
                       v
                 +-----+-----+
@@ -1237,11 +675,16 @@ The RTOS scheduler manages tasks by moving them through different states.
                       |
                       v
                    Ready
+                      |
+                      v
+                +-----+-----+
+                | Terminated|
+                +-----------+
 ```
 
 ---
 
-# 1. New State
+## 1. New State
 
 Task has been created but not yet ready for execution.
 
@@ -1253,13 +696,10 @@ Operations:
 
 ---
 
-# 2. Ready State
+## 2. Ready State
 
-Task is prepared for execution.
+Task is prepared for execution, waiting for CPU.
 
-Characteristics:
-
-* Waiting for CPU
 * All resources available
 * Present in Ready Queue
 
@@ -1271,27 +711,21 @@ Sensor Task waiting for CPU
 
 ---
 
-# 3. Running State
+## 3. Running State
 
 Task currently executing on CPU.
-
-Characteristics:
-
-* CPU assigned
-* Instructions executing
 
 Only one task can run at a time on a single-core processor.
 
 ---
 
-# 4. Blocked (Waiting) State
+## 4. Blocked (Waiting) State
 
 Task waits for:
 
 * Event
 * I/O completion
-* Message
-* Semaphore
+* Message / Semaphore
 * Timer expiration
 
 Example:
@@ -1302,14 +736,9 @@ Waiting for UART data
 
 ---
 
-# 5. Suspended State
+## 5. Suspended State
 
-Task temporarily removed from scheduling.
-
-Characteristics:
-
-* Cannot execute
-* Must be resumed explicitly
+Task temporarily removed from scheduling. Cannot execute until resumed explicitly.
 
 Example:
 
@@ -1319,18 +748,13 @@ Maintenance task disabled temporarily
 
 ---
 
-# 6. Terminated State
+## 6. Terminated State
 
-Task has completed execution.
-
-Characteristics:
-
-* Resources released
-* Removed from scheduler
+Task has completed execution. Resources released and task removed from scheduler.
 
 ---
 
-# State Transitions
+## State Transitions
 
 | Current State | Next State |
 | ------------- | ---------- |
@@ -1344,50 +768,28 @@ Characteristics:
 
 ---
 
-# Task Management Functions
+## Task Management Functions
 
-RTOS provides:
-
-### Task Creation
-
-```text
-Create Task
-```
-
-### Task Deletion
-
-```text
-Delete Task
-```
-
-### Task Suspension
-
-```text
-Suspend Task
-```
-
-### Task Resumption
-
-```text
-Resume Task
-```
-
-### Context Switching
-
-Switch CPU from one task to another.
+| Function          | Action                              |
+| ----------------- | ----------------------------------- |
+| Task Creation     | Create a new task                   |
+| Task Deletion     | Remove task from system             |
+| Task Suspension   | Temporarily stop task               |
+| Task Resumption   | Resume a suspended task             |
+| Context Switching | Switch CPU from one task to another |
 
 ---
 
-# Importance of Task States
+## Advantages of Multitasking
 
-* Efficient CPU utilization
-* Supports multitasking
-* Improves responsiveness
-* Helps meet real-time deadlines
+* Better CPU utilization
+* Faster response
+* Efficient resource sharing
+* Supports real-time deadlines
 
 ---
 
-# Applications
+## Applications
 
 * Embedded Controllers
 * Robotics
@@ -1402,91 +804,57 @@ Switch CPU from one task to another.
 
 Task, Process, Scheduler, Ready Queue, Running State, Blocked State, Suspended State, Context Switching, Multitasking, Semaphore, RTOS.
 
+---
 
-# UNIT II – Remaining Question 1
-
-# Priority-Based Scheduling Policies
+# Q6: Priority-Based Scheduling Policies
 
 ## Introduction
 
-Priority Scheduling is a CPU scheduling algorithm in which each process is assigned a priority and the CPU is allocated to the highest-priority process first.
-
-Rule:
+Priority Scheduling is a CPU scheduling algorithm in which each process is assigned a priority and CPU is allocated to the highest-priority process first.
 
 ```text
-Higher Priority
-      ↓
-Executed First
+Higher Priority → Executed First
 ```
 
-Used in:
-
-* RTOS
-* Embedded Systems
-* Industrial Automation
-* Mission Critical Systems
+Used in: RTOS, Embedded Systems, Industrial Automation, Mission Critical Systems.
 
 ---
 
-# Types of Priority Scheduling
+## Types of Priority Scheduling
 
-## 1. Non-Preemptive Priority Scheduling
+### 1. Non-Preemptive Priority Scheduling
 
-Once CPU is allocated:
+Once CPU is allocated, process runs till completion even if a higher-priority process arrives.
 
-```text
-Process runs till completion
-```
+**Example:**
 
-even if a higher-priority process arrives.
-
----
-
-### Example
-
-| Process | Priority |
-| ------- | -------- |
-| P1      | 3        |
-| P2      | 1        |
-| P3      | 2        |
-
-Execution:
+| Process | Priority | Execution Order |
+| ------- | -------- | --------------- |
+| P1      | 3        | 3rd             |
+| P2      | 1        | 1st             |
+| P3      | 2        | 2nd             |
 
 ```text
-P2 → P3 → P1
+Execution: P2 → P3 → P1
 ```
 
 ---
 
-## 2. Preemptive Priority Scheduling
+### 2. Preemptive Priority Scheduling
 
-If a higher-priority process arrives:
+If a higher-priority process arrives, the running process is immediately interrupted.
 
-```text
-Running Process
-       ↓
-Interrupted
-```
-
-CPU immediately assigned to higher-priority process.
-
----
-
-### Example
+**Example:**
 
 ```text
 Time 0 : P1 starts
-
-Time 3 : P2 arrives
-         Higher Priority
-
-P1 interrupted
-P2 executes
+Time 3 : P2 arrives with higher priority
+         P1 interrupted → P2 executes
 ```
 
 ---
 
-# Working Principle
+## Working Principle
 
 ```text
 Ready Queue
@@ -1502,63 +870,40 @@ Execution
 
 ---
 
-# Advantages
+## Advantages
 
 * Fast response for critical tasks
 * Suitable for real-time systems
-* Better control over task execution
 * Important tasks finish first
 
----
+## Disadvantages
 
-# Disadvantages
+**Starvation** — low-priority processes may never execute if high-priority jobs keep arriving.
 
-## Starvation
-
-Low-priority processes may never execute.
-
-Example:
+**Solution — Aging:** priority gradually increases with waiting time.
 
 ```text
-High Priority Jobs
-keep arriving continuously
-```
-
-Low-priority task waits forever.
-
----
-
-## Aging
-
-Solution to starvation.
-
-Priority gradually increased with waiting time.
-
-```text
-Waiting Time ↑
-Priority ↑
+Waiting Time ↑ → Priority ↑
 ```
 
 ---
 
-# Example Gantt Chart
+## Example Gantt Chart
 
-| Process | Burst | Priority |
-| ------- | ----- | -------- |
-| P1      | 8     | 3        |
-| P2      | 4     | 1        |
-| P3      | 6     | 2        |
-
-Execution:
+| Process | Burst Time | Priority |
+| ------- | ---------- | -------- |
+| P1      | 8          | 3        |
+| P2      | 4          | 1        |
+| P3      | 6          | 2        |
 
 ```text
 0      4      10      18
-| P2 | P3 | P1 |
+| P2  |  P3  |   P1  |
 ```
 
 ---
 
-# Comparison
+## Comparison: Preemptive vs Non-Preemptive
 
 | Feature          | Preemptive | Non-Preemptive |
 | ---------------- | ---------- | -------------- |
@@ -1575,9 +920,7 @@ Priority Scheduling, Preemptive, Non-Preemptive, Starvation, Aging, Ready Queue,
 
 ---
 
-# UNIT II – Remaining Question 2
-
-# Round Robin Scheduling Numerical
+# Q7: Round Robin Scheduling – Numerical
 
 ## Given
 
@@ -1589,15 +932,11 @@ Priority Scheduling, Preemptive, Non-Preemptive, Starvation, Aging, Ready Queue,
 | P3      | 20         | 40           |
 | P4      | 50         | 45           |
 
-Time Quantum:
-
-```text
-Q = 15
-```
+Time Quantum: Q = 15
 
 ---
 
-# Step 1: Gantt Chart
+## Step 1: Gantt Chart
 
 ```text
 0   15  30  45  55  70  85 100 115 130 145 160 175 190
@@ -1616,7 +955,7 @@ Completion Times:
 
 ---
 
-# Step 2: Turnaround Time
+## Step 2: Turnaround Time
 
 Formula:
 
@@ -1632,25 +971,11 @@ TAT = Completion Time − Arrival Time
 | P3      | 130 | 40 | 90  |
 | P4      | 190 | 45 | 145 |
 
----
-
-## Average Turnaround Time
-
-```text
-(190+75+45+90+145)/5
-```
-
-```text
-545/5
-```
-
-```text
-109 units
-```
+Average TAT = (190 + 75 + 45 + 90 + 145) / 5 = **109 units**
 
 ---
 
-# Step 3: Waiting Time
+## Step 3: Waiting Time
 
 Formula:
 
@@ -1666,81 +991,24 @@ WT = TAT − Burst Time
 | P3      | 90  | 20 | 70  |
 | P4      | 145 | 50 | 95  |
 
----
-
-## Average Waiting Time
-
-```text
-(110+55+35+70+95)/5
-```
-
-```text
-365/5
-```
-
-```text
-73 units
-```
+Average WT = (110 + 55 + 35 + 70 + 95) / 5 = **73 units**
 
 ---
 
-# Step 4: Context Switches
-
-Gantt Chart:
+## Step 4: Context Switches
 
 ```text
-P0→P1
-P1→P2
-P2→P0
-P0→P3
-P3→P4
-P4→P1
-P1→P0
-P0→P3
-P3→P4
-P4→P0
-P0→P4
-P4→P0
+P0→P1, P1→P2, P2→P0, P0→P3, P3→P4,
+P4→P1, P1→P0, P0→P3, P3→P4, P4→P0,
+P0→P4, P4→P0
 ```
 
-Total Context Switches:
+Total Context Switches = **12**
 
-```text
-12
-```
-
-If context switch time is not specified:
-
-```text
-Context Switching Count = 12
-```
-
-If each switch takes:
-
-```text
-1 unit
-```
-
-Then:
-
-```text
-Total Context Switching Time = 12 units
-```
+If each switch takes 1 unit → Total Context Switching Time = **12 units**
 
 ---
 
-# UNIT II – Final Unique Question List
+## Keywords
 
-### Q12(a)
-
-1. RMS Schedulability Analysis (Numerical)
-2. Process Scheduling Algorithms (Explain Any Two)
-
-### Q12(b)
-
-3. RMS vs EDF Comparison
-4. Task States in RTOS
-5. Priority-Based Scheduling Policies
-6. Round Robin Scheduling Numerical
-
-That completes all unique UNIT II long questions visible across the papers you shared.
+Round Robin, Time Quantum, Turnaround Time, Waiting Time, Context Switch, Gantt Chart, Preemptive Scheduling.

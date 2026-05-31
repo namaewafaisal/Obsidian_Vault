@@ -758,3 +758,269 @@ For **13–16 marks**, always draw:
 3. **Sensor → Arduino → Actuator Flow Diagram**
 
 These diagrams plus the keyword-heavy points are usually enough for full-mark answers.
+
+
+Based on your existing UNIT III notes, the **only additional content worth adding** is:
+
+---
+
+# Arduino UNO Components
+
+*(For questions specifically asking "main components of Arduino UNO")*
+
+## Block Diagram
+
+```text
+          USB Port
+              |
+      USB-UART Converter
+              |
+       ATmega328P MCU
+              |
+ +------+------+------+------+
+ |             |             |
+Digital     Analog      Communication
+ Pins        Pins       UART/SPI/I²C
+              |
+         Crystal Oscillator
+              |
+         Voltage Regulator
+              |
+          Power Supply
+```
+
+---
+
+## Components
+
+### 1. ATmega328P
+
+Main microcontroller.
+
+Specifications:
+
+```text
+8-bit AVR
+16 MHz Clock
+32 KB Flash
+2 KB SRAM
+1 KB EEPROM
+```
+
+---
+
+### 2. USB-to-Serial Converter
+
+Converts:
+
+```text
+USB ↔ UART
+```
+
+Used for program uploading and serial communication.
+
+---
+
+### 3. Crystal Oscillator
+
+```text
+16 MHz
+```
+
+Provides clock signal.
+
+---
+
+### 4. Voltage Regulator
+
+Converts external voltage into stable:
+
+```text
+5V
+3.3V
+```
+
+for board operation.
+
+---
+
+### 5. Reset Circuit
+
+Restarts execution from beginning.
+
+---
+
+### 6. ICSP Header
+
+Used for:
+
+* Bootloader burning
+* Direct programming
+
+---
+
+# digitalWrite() vs analogWrite()
+
+| digitalWrite()   | analogWrite()            |
+| ---------------- | ------------------------ |
+| Digital output   | PWM output               |
+| HIGH or LOW only | 0–255 value              |
+| ON/OFF control   | Brightness/Speed control |
+| Any digital pin  | PWM pins only            |
+| 0V or 5V         | Variable average voltage |
+
+---
+
+## digitalWrite()
+
+Syntax:
+
+```cpp
+digitalWrite(pin,HIGH);
+digitalWrite(pin,LOW);
+```
+
+Example:
+
+```cpp
+digitalWrite(13,HIGH);
+```
+
+LED fully ON.
+
+---
+
+## analogWrite()
+
+Syntax:
+
+```cpp
+analogWrite(pin,value);
+```
+
+Example:
+
+```cpp
+analogWrite(9,128);
+```
+
+Produces:
+
+```text
+50% Duty Cycle PWM
+```
+
+Used for:
+
+* LED brightness control
+* Motor speed control
+
+---
+
+# LED Control Using Arduino
+
+## Circuit
+
+```text
+Arduino D13
+      |
+     LED
+      |
+ 220Ω Resistor
+      |
+     GND
+```
+
+---
+
+## Program
+
+```cpp
+void setup()
+{
+    pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+    digitalWrite(13, HIGH);
+    delay(1000);
+
+    digitalWrite(13, LOW);
+    delay(1000);
+}
+```
+
+---
+
+## Working
+
+```text
+LED ON  → 1 second
+LED OFF → 1 second
+Repeat continuously
+```
+
+---
+
+# Sensor and Actuator Selection Criteria
+
+*(Not present in your notes and appears as a separate 13-mark question)*
+
+## Sensor Selection Criteria
+
+* Accuracy
+* Sensitivity
+* Resolution
+* Measurement Range
+* Response Time
+* Power Consumption
+* Reliability
+* Environmental Compatibility
+* Cost
+
+---
+
+## Actuator Selection Criteria
+
+* Torque (Motors)
+* Speed
+* Power Rating
+* Precision
+* Efficiency
+* Reliability
+* Operating Voltage
+* Load Capacity
+* Cost
+
+---
+
+## Example
+
+### Sensor
+
+```text
+LDR
+```
+
+Selected because:
+
+* Low cost
+* Good sensitivity to light
+
+### Actuator
+
+```text
+Relay
+```
+
+Selected because:
+
+* Can switch high-power loads
+* Electrically isolated
+
+---
+
+That's essentially **all the UNIT III content missing from your existing notes**. Everything else (IoT Architecture, Arduino boards, pin structure, sketches, sensors/actuators integration) is already covered in your notes. 
+
+
