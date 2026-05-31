@@ -47,10 +47,10 @@
 
 ## Unit 5
 
-- [[DevOps]]
-- [[Cloud as a Service]]
+- [[../../Iot/Sem IOT/DevOps]]
+- [[../../Iot/Sem IOT/Cloud as a Service]]
 - [[Deployment Pipeline]]
 - [[COCOMO I]]
 - [[COCOMO II]]
-- [[Change Control]]
+- [[../../Iot/Sem IOT/Change Control]]
 - [[Version Control]]
