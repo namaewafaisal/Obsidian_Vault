@@ -617,3 +617,425 @@ For **13–16 marks**, draw:
 3. **GSM Architecture Diagram (MS → BTS → BSC → MSC → HLR/VLR)**
 
 These diagrams + keywords usually secure most of the marks.
+
+
+Perfect. Comparing the **8 Unit IV questions in the image** against what you already have in your notes:
+
+Already covered well:
+
+* Raspberry Pi Architecture & IoT Applications 
+* Bluetooth vs Wi-Fi vs ZigBee comparison 
+* GSM Architecture & Working 
+
+So for those, I'll only give the **missing parts**.
+
+---
+
+# UNIT IV – Q14(a)
+
+# Bluetooth Architecture and Connection States
+
+*(Mostly new — not covered in your notes)*
+
+## Introduction
+
+Bluetooth is a short-range wireless communication technology operating in the:
+
+```text
+2.4 GHz ISM Band
+```
+
+Standard:
+
+```text
+IEEE 802.15.1
+```
+
+Range:
+
+```text
+10m – 100m
+```
+
+Applications:
+
+* Headphones
+* Smart Watches
+* IoT Devices
+* Medical Sensors
+
+---
+
+# Bluetooth Architecture
+
+```text
++----------------------+
+| Application Layer    |
++----------------------+
+| RFCOMM               |
++----------------------+
+| L2CAP                |
++----------------------+
+| HCI                  |
++----------------------+
+| Link Manager (LMP)   |
++----------------------+
+| Baseband             |
++----------------------+
+| Radio Layer          |
++----------------------+
+```
+
+---
+
+## Radio Layer
+
+Responsible for:
+
+* Wireless transmission
+* Frequency hopping
+* Signal modulation
+
+Uses:
+
+```text
+2.4 GHz Band
+```
+
+---
+
+## Baseband Layer
+
+Functions:
+
+* Packet formation
+* Error correction
+* Synchronization
+
+Supports:
+
+```text
+Piconet
+Scatternet
+```
+
+---
+
+## Link Manager Protocol (LMP)
+
+Functions:
+
+* Device authentication
+* Encryption
+* Power management
+* Link setup
+
+---
+
+## HCI (Host Controller Interface)
+
+Interface between:
+
+```text
+Bluetooth Hardware
+↕
+Host Software
+```
+
+---
+
+## L2CAP
+
+Logical Link Control and Adaptation Protocol.
+
+Functions:
+
+* Multiplexing
+* Segmentation
+* Reassembly
+
+---
+
+## RFCOMM
+
+Provides:
+
+```text
+Virtual Serial Port
+```
+
+Used for serial communication over Bluetooth.
+
+---
+
+# Bluetooth Network Structures
+
+## Piconet
+
+```text
+      Master
+     /  |  \
+Slave Slave Slave
+```
+
+* 1 Master
+* Up to 7 Active Slaves
+
+---
+
+## Scatternet
+
+Multiple piconets interconnected.
+
+```text
+Piconet 1 ↔ Piconet 2
+```
+
+---
+
+# Bluetooth Connection States
+
+## 1. Standby
+
+Default state.
+
+Characteristics:
+
+* Device inactive
+* Conserves power
+
+---
+
+## 2. Inquiry
+
+Searches for nearby devices.
+
+```text
+Who is nearby?
+```
+
+---
+
+## 3. Page
+
+Attempts connection.
+
+```text
+Connect to device
+```
+
+---
+
+## 4. Connected
+
+Data communication occurs.
+
+---
+
+## 5. Active
+
+Fully operational communication.
+
+---
+
+## 6. Sniff
+
+Reduced activity.
+
+Lower power consumption.
+
+---
+
+## 7. Hold
+
+Temporarily suspends communication.
+
+---
+
+## 8. Park
+
+Device remains synchronized but inactive.
+
+Lowest power state.
+
+---
+
+# Connection Process
+
+```text
+Standby
+   ↓
+Inquiry
+   ↓
+Page
+   ↓
+Connected
+   ↓
+Active
+```
+
+---
+
+## Keywords
+
+Bluetooth, IEEE 802.15.1, Piconet, Scatternet, L2CAP, RFCOMM, HCI, Inquiry State, Page State, Active State.
+
+---
+
+# UNIT IV – Q14(b)
+
+# LDR Interfacing with Raspberry Pi and Python Program
+
+*(Completely new)*
+
+---
+
+# Objective
+
+Control an LED based on ambient light intensity using:
+
+```text
+LDR + Raspberry Pi
+```
+
+---
+
+# Components Required
+
+* Raspberry Pi
+* LDR
+* 10kΩ Resistor
+* LED
+* 220Ω Resistor
+* MCP3008 ADC
+* Breadboard
+
+---
+
+# Why ADC is Needed
+
+Raspberry Pi GPIO supports:
+
+```text
+Digital Input Only
+```
+
+LDR produces:
+
+```text
+Analog Signal
+```
+
+Hence:
+
+```text
+MCP3008 ADC
+```
+
+is used.
+
+---
+
+# Block Diagram
+
+```text
+LDR
+ ↓
+Voltage Divider
+ ↓
+MCP3008 ADC
+ ↓
+Raspberry Pi
+ ↓
+GPIO Output
+ ↓
+LED
+```
+
+---
+
+# Working
+
+### Bright Environment
+
+```text
+LDR Resistance ↓
+ADC Value ↓
+LED OFF
+```
+
+---
+
+### Dark Environment
+
+```text
+LDR Resistance ↑
+ADC Value ↑
+LED ON
+```
+
+---
+
+# Python Program
+
+```python
+import RPi.GPIO as GPIO
+import time
+
+LED = 18
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(LED, GPIO.OUT)
+
+while True:
+
+    ldr_value = read_adc(0)
+
+    if ldr_value > 500:
+        GPIO.output(LED, GPIO.HIGH)
+    else:
+        GPIO.output(LED, GPIO.LOW)
+
+    time.sleep(0.1)
+```
+
+---
+
+# Algorithm
+
+```text
+Start
+  ↓
+Read LDR Value
+  ↓
+Value > Threshold ?
+  ↓
+Yes → LED ON
+No  → LED OFF
+  ↓
+Repeat
+```
+
+---
+
+# Applications
+
+* Automatic Street Lights
+* Smart Home Lighting
+* Energy Management
+* Security Systems
+
+---
+
+## Keywords
+
+LDR, Raspberry Pi, MCP3008, ADC, GPIO, Voltage Divider, Threshold Detection, Automatic Lighting.
+
+---
+
+These are the first **2 Unit IV questions that are not already covered by your notes**. The next 2 worthwhile ones are:
+
+1. **ZigBee Architecture** (mostly new)
+2. **IoT Communication Protocols & Comparison** (partly overlaps Bluetooth/Wi-Fi/ZigBee but has additional protocol details)
+
+
