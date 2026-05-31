@@ -697,3 +697,409 @@ For maximum marks, always draw:
 4. **Smart Farming Architecture**
 
 These diagrams + headings + keywords usually cover almost every marking point expected in university answers.
+
+
+For **UNIT V**, most of the standard questions are already covered in the notes you pasted. 
+
+From the screenshots, the **extra unique questions not properly covered** are:
+
+1. IoT Strategy for Smart City + Layered Architecture
+2. Smart Parking IoT System
+3. Smart Home Automation (separate justification question)
+4. Agriculture Industry: Increase efficiency, reduce cost, reduce waste, improve yield
+5. Fitness Monitoring & Wearable Electronics
+6. Role and Necessity of IoT in Healthcare with one real-time example
+
+Let's do the first 2.
+
+---
+
+# UNIT V – Q15(b)
+
+# IoT Strategy for Smart City and Layered Architecture
+
+## Introduction
+
+A **Smart City** uses IoT, Cloud Computing, Sensors and Communication Networks to improve:
+
+* Transportation
+* Energy Management
+* Water Management
+* Waste Management
+* Public Safety
+
+Goal:
+
+```text
+Improve Quality of Life
+Reduce Cost
+Improve Resource Utilization
+```
+
+---
+
+# Smart City IoT Strategy
+
+## Step 1: Data Collection
+
+Install sensors throughout the city.
+
+Examples:
+
+* Traffic Sensors
+* Air Quality Sensors
+* Smart Meters
+* CCTV Cameras
+
+---
+
+## Step 2: Connectivity
+
+Transfer collected data using:
+
+```text
+Wi-Fi
+5G
+GSM
+LoRaWAN
+ZigBee
+```
+
+---
+
+## Step 3: Data Processing
+
+Use:
+
+```text
+Edge Computing
+Cloud Computing
+```
+
+to process city-wide data.
+
+---
+
+## Step 4: Decision Making
+
+Analyze data for:
+
+* Traffic optimization
+* Pollution monitoring
+* Smart lighting
+* Emergency response
+
+---
+
+## Step 5: Citizen Services
+
+Provide information through:
+
+* Mobile Apps
+* Web Portals
+* Digital Dashboards
+
+---
+
+# Layered Architecture of Smart City
+
+```text
++----------------------+
+| Application Layer    |
++----------------------+
+| Cloud / Processing   |
++----------------------+
+| Network Layer        |
++----------------------+
+| Perception Layer     |
++----------------------+
+```
+
+---
+
+## 1. Perception Layer
+
+Physical layer.
+
+Contains:
+
+* Sensors
+* RFID
+* Cameras
+* Smart Meters
+
+Functions:
+
+```text
+Data Acquisition
+Environment Monitoring
+```
+
+---
+
+## 2. Network Layer
+
+Responsible for data transfer.
+
+Technologies:
+
+* Wi-Fi
+* GSM
+* ZigBee
+* Bluetooth
+* LoRa
+
+Functions:
+
+```text
+Communication
+Routing
+Connectivity
+```
+
+---
+
+## 3. Cloud / Processing Layer
+
+Functions:
+
+* Data Storage
+* Analytics
+* Machine Learning
+* Decision Support
+
+---
+
+## 4. Application Layer
+
+Provides services to users.
+
+Examples:
+
+* Smart Parking
+* Smart Traffic
+* Smart Healthcare
+* Smart Energy Management
+
+---
+
+# Applications
+
+* Smart Transportation
+* Smart Waste Management
+* Smart Lighting
+* Smart Water Distribution
+* Smart Surveillance
+
+---
+
+# Advantages
+
+* Better public services
+* Reduced traffic congestion
+* Lower energy consumption
+* Improved safety
+* Efficient resource utilization
+
+---
+
+## Keywords
+
+Smart City, IoT Strategy, Perception Layer, Network Layer, Cloud Layer, Application Layer, Smart Governance, Smart Infrastructure.
+
+---
+
+# UNIT V – Q15(a)(i)
+
+# Smart Parking IoT System and Process Specification
+
+## Introduction
+
+A Smart Parking System uses IoT devices to monitor parking slot availability and guide drivers to free spaces.
+
+Objectives:
+
+* Reduce traffic congestion
+* Save fuel
+* Improve parking efficiency
+
+---
+
+# Architecture
+
+```text
+Parking Slot Sensor
+        ↓
+Microcontroller
+        ↓
+Wi-Fi/GSM
+        ↓
+Cloud Server
+        ↓
+Mobile App
+        ↓
+Driver
+```
+
+---
+
+# Components
+
+## Sensors
+
+Examples:
+
+* IR Sensor
+* Ultrasonic Sensor
+
+Purpose:
+
+```text
+Detect Vehicle Presence
+```
+
+---
+
+## Controller
+
+Examples:
+
+* Arduino
+* ESP32
+* Raspberry Pi
+
+Functions:
+
+* Collect sensor data
+* Process occupancy status
+
+---
+
+## Communication Module
+
+* Wi-Fi
+* GSM
+* LoRa
+
+Used for cloud connectivity.
+
+---
+
+## Cloud Platform
+
+Stores:
+
+* Slot availability
+* Parking history
+* User information
+
+---
+
+## Mobile Application
+
+Displays:
+
+```text
+Available Slots
+Reserved Slots
+Occupied Slots
+```
+
+---
+
+# Process Specification
+
+## Step 1
+
+Vehicle enters parking area.
+
+---
+
+## Step 2
+
+Sensor checks slot status.
+
+```text
+Vehicle Present?
+```
+
+---
+
+## Step 3
+
+Controller updates occupancy.
+
+---
+
+## Step 4
+
+Status uploaded to cloud.
+
+---
+
+## Step 5
+
+Mobile application refreshed.
+
+---
+
+## Step 6
+
+Driver guided to nearest free slot.
+
+---
+
+# Flowchart
+
+```text
+Start
+  |
+Check Sensor
+  |
+Vehicle Present?
+ /       \
+Yes       No
+ |          |
+Occupied   Available
+ |          |
+Update Cloud
+ |
+Display Status
+ |
+Repeat
+```
+
+---
+
+# Advantages
+
+* Reduced parking search time
+* Reduced fuel consumption
+* Less traffic congestion
+* Better space utilization
+
+---
+
+# Applications
+
+* Shopping Malls
+* Airports
+* Railway Stations
+* Smart Cities
+* Corporate Campuses
+
+---
+
+## Keywords
+
+Smart Parking, IR Sensor, Ultrasonic Sensor, Cloud Platform, Slot Detection, Parking Management, IoT Monitoring.
+
+---
+
+Next remaining useful UNIT V questions:
+
+1. **IoT for Agriculture Industry (efficiency, cost reduction, yield improvement)**
+2. **IoT in Healthcare / Fitness Monitoring / Wearable Electronics**
+3. **IoT for Smart Home Automation**
+
+

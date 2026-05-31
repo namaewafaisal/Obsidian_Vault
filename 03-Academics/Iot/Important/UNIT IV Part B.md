@@ -1554,3 +1554,359 @@ Features:
 ## Keywords
 
 MQTT, HTTP, CoAP, Publish/Subscribe, Broker, TCP, UDP, Wi-Fi, Bluetooth, ZigBee, GSM, IoT Communication.
+
+The remaining unique UNIT IV questions from your screenshots are:
+
+1. **Explain about WAMP: AutoBahn and Xively Cloud for IoT** *(completely new)*
+2. **Raspberry Pi Architecture and discuss how RPi is used for IoT application** *(already covered in your notes — only extra content if needed)*
+
+---
+
+# UNIT IV – Q14(b)
+
+# WAMP, AutoBahn and Xively Cloud for IoT
+
+## Introduction
+
+IoT systems require communication between devices, gateways, cloud platforms and applications.
+
+One protocol used for real-time communication is:
+
+```text
+WAMP
+(Web Application Messaging Protocol)
+```
+
+Cloud services such as:
+
+```text
+Xively
+```
+
+provide data storage and device management.
+
+---
+
+# WAMP (Web Application Messaging Protocol)
+
+## Definition
+
+WAMP is an open communication protocol that provides:
+
+1. Remote Procedure Calls (RPC)
+2. Publish/Subscribe Messaging (Pub/Sub)
+
+over:
+
+```text
+WebSocket
+```
+
+---
+
+## WAMP Architecture
+
+```text
+        +-------------+
+        |   Router    |
+        +------+------+ 
+               |
+    +----------+----------+
+    |                     |
+Publisher           Subscriber
+    |                     |
+Caller                Callee
+```
+
+---
+
+## Components
+
+### Router
+
+Central communication node.
+
+Functions:
+
+* Message routing
+* Session management
+
+---
+
+### Publisher
+
+Sends data.
+
+Example:
+
+```text
+Temperature Sensor
+```
+
+---
+
+### Subscriber
+
+Receives data.
+
+Example:
+
+```text
+Mobile App
+```
+
+---
+
+### Caller
+
+Invokes remote procedures.
+
+---
+
+### Callee
+
+Executes requested functions.
+
+---
+
+# Features of WAMP
+
+* Full duplex communication
+* Real-time messaging
+* Event-driven architecture
+* Lightweight communication
+* Supports distributed systems
+
+---
+
+# AutoBahn
+
+## Definition
+
+AutoBahn is an open-source implementation of:
+
+```text
+WAMP + WebSocket
+```
+
+for IoT and distributed applications.
+
+---
+
+## Functions
+
+* Implements WAMP protocol
+* Provides RPC support
+* Supports Publish/Subscribe messaging
+
+---
+
+## Architecture
+
+```text
+Device
+   ↓
+AutoBahn Client
+   ↓
+WAMP Router
+   ↓
+Cloud/Application
+```
+
+---
+
+## Advantages
+
+* Scalable
+* Cross-platform
+* Real-time communication
+* Supports Python, JavaScript and other languages
+
+---
+
+# Xively Cloud for IoT
+
+## Definition
+
+Xively is a cloud platform designed for:
+
+* Device connectivity
+* Data collection
+* Data visualization
+* Device management
+
+---
+
+## Architecture
+
+```text
+Sensors
+   ↓
+Gateway
+   ↓
+Xively Cloud
+   ↓
+Web/Mobile Application
+```
+
+---
+
+## Features
+
+### Device Management
+
+Registers and monitors IoT devices.
+
+---
+
+### Data Storage
+
+Stores sensor information.
+
+---
+
+### Data Analytics
+
+Processes collected data.
+
+---
+
+### Security
+
+Provides:
+
+* Authentication
+* Encryption
+* Access control
+
+---
+
+# Advantages of Xively
+
+* Cloud scalability
+* Real-time monitoring
+* Easy device integration
+* Secure communication
+
+---
+
+# Applications
+
+* Smart Homes
+* Smart Cities
+* Smart Healthcare
+* Industrial IoT
+
+---
+
+## Keywords
+
+WAMP, WebSocket, AutoBahn, RPC, Publish/Subscribe, Router, Caller, Callee, Xively Cloud, Device Management, Real-Time Communication.
+
+---
+
+# UNIT IV – Raspberry Pi (Only Extra Content Beyond Your Existing Notes)
+
+Your notes already cover the architecture, components, features, applications and IoT usage. 
+
+### Additional Points You Can Add
+
+## Raspberry Pi Hardware Interfaces
+
+### UART
+
+```text
+TXD
+RXD
+```
+
+Used for GSM, GPS and serial communication.
+
+---
+
+### SPI
+
+Used for:
+
+* ADC modules
+* Displays
+* Sensors
+
+Pins:
+
+```text
+MOSI
+MISO
+SCLK
+CE
+```
+
+---
+
+### I²C
+
+Used for:
+
+* RTC modules
+* Sensors
+* EEPROM
+
+Pins:
+
+```text
+SDA
+SCL
+```
+
+---
+
+### CSI Port
+
+```text
+Camera Serial Interface
+```
+
+Used for Raspberry Pi Camera Module.
+
+---
+
+### DSI Port
+
+```text
+Display Serial Interface
+```
+
+Used for touch displays.
+
+---
+
+## Raspberry Pi as IoT Gateway
+
+Functions:
+
+```text
+Sensors
+   ↓
+Raspberry Pi
+   ↓
+Data Filtering
+   ↓
+Cloud
+```
+
+Responsibilities:
+
+* Protocol conversion
+* Local data processing
+* Security implementation
+* Edge computing
+
+---
+
+## Additional Keywords
+
+UART, SPI, I²C, CSI, DSI, IoT Gateway, Edge Computing, Protocol Conversion.
+
+---
+
+That completes all the unique UNIT IV long-answer questions visible in the papers you shared. The remaining questions in the screenshots are **UNIT V (Question 15)**.
