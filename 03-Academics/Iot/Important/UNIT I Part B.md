@@ -831,3 +831,695 @@ For **13–16 marks**, always write:
 5. Keywords or summary points
 
 This structure usually fetches the maximum marks in university exams.
+
+
+Good point. Let's do it properly.
+
+# UNIT I – Q1
+
+# 8051 Microcontroller Architecture with Timer Mode Operation
+
+## Introduction
+
+The **8051** is an 8-bit microcontroller developed by Intel. It contains CPU, memory, timers, serial communication, interrupt controller and I/O ports on a single chip.
+
+### Features
+
+* 8-bit CPU
+* 4 KB ROM
+* 128 Bytes RAM
+* 32 I/O pins
+* 2 Timers/Counters
+* 5 Interrupts
+* Full Duplex UART
+* Bit-addressable RAM
+
+---
+
+## Architecture Diagram
+
+```text
+                      +----------------+
+                      | Oscillator     |
+                      +-------+--------+
+                              |
++--------------------------------------------------+
+|                    CPU                           |
+| ALU | Accumulator | B | PSW | PC | DPTR | SP    |
++--------------------------------------------------+
+      |          |           |            |
+      |          |           |            |
+ +----+---+  +---+----+  +---+---+  +----+----+
+ | ROM   |  | RAM    |  |Timers |  | Serial  |
+ | 4 KB  |  |128 B   |  |T0,T1  |  | Port    |
+ +--------+ +--------+  +-------+  +---------+
+      |          |           |            |
+      +----------+-----------+------------+
+                         |
+                +--------+--------+
+                | I/O Ports       |
+                | P0 P1 P2 P3     |
+                +-----------------+
+```
+
+---
+
+## CPU
+
+CPU executes instructions.
+
+Contains:
+
+### ALU
+
+Performs:
+
+* Addition
+* Subtraction
+* AND
+* OR
+* XOR
+* Comparison
+
+### Accumulator (A)
+
+Main arithmetic register.
+
+Example:
+
+```assembly
+ADD A,R0
+```
+
+### B Register
+
+Used in:
+
+```assembly
+MUL AB
+DIV AB
+```
+
+### PSW (Program Status Word)
+
+Contains flags:
+
+```text
+CY AC F0 RS1 RS0 OV -- P
+```
+
+| Flag | Function        |
+| ---- | --------------- |
+| CY   | Carry           |
+| AC   | Auxiliary Carry |
+| OV   | Overflow        |
+| P    | Parity          |
+
+---
+
+## Program Memory (ROM)
+
+* Size = 4 KB
+* Stores instructions
+* Non-volatile
+
+Can be expanded externally up to:
+
+```text
+64 KB
+```
+
+using:
+
+```text
+EA
+PSEN
+```
+
+pins.
+
+---
+
+## Data Memory (RAM)
+
+Size:
+
+```text
+128 Bytes
+```
+
+Organization:
+
+```text
+00H–1FH   Register Banks
+20H–2FH   Bit Addressable RAM
+30H–7FH   General Purpose RAM
+```
+
+---
+
+## Register Banks
+
+Four banks:
+
+```text
+Bank0
+Bank1
+Bank2
+Bank3
+```
+
+Each contains:
+
+```text
+R0–R7
+```
+
+Selected using:
+
+```text
+PSW → RS1 RS0
+```
+
+---
+
+## I/O Ports
+
+Four ports:
+
+```text
+P0
+P1
+P2
+P3
+```
+
+Total:
+
+```text
+32 I/O Pins
+```
+
+### Port Functions
+
+| Port | Function            |
+| ---- | ------------------- |
+| P0   | Address/Data Bus    |
+| P1   | General Purpose     |
+| P2   | Higher Address Bus  |
+| P3   | Alternate Functions |
+
+---
+
+### Port 3 Alternate Functions
+
+| Pin  | Function |
+| ---- | -------- |
+| P3.0 | RXD      |
+| P3.1 | TXD      |
+| P3.2 | INT0     |
+| P3.3 | INT1     |
+| P3.4 | T0       |
+| P3.5 | T1       |
+| P3.6 | WR       |
+| P3.7 | RD       |
+
+---
+
+## Serial Communication Unit
+
+Uses UART.
+
+Pins:
+
+```text
+RXD → P3.0
+TXD → P3.1
+```
+
+Supports:
+
+* Transmission
+* Reception
+* Full Duplex Communication
+
+---
+
+## Interrupt Controller
+
+Five interrupt sources:
+
+| Interrupt | Vector Address |
+| --------- | -------------- |
+| INT0      | 0003H          |
+| Timer0    | 000BH          |
+| INT1      | 0013H          |
+| Timer1    | 001BH          |
+| Serial    | 0023H          |
+
+Priority controlled through:
+
+```text
+IE Register
+IP Register
+```
+
+---
+
+# Timer Mode Operation
+
+8051 contains:
+
+```text
+Timer0
+Timer1
+```
+
+Each timer is:
+
+```text
+16-bit
+```
+
+using:
+
+```text
+TH0 TL0
+TH1 TL1
+```
+
+---
+
+## TMOD Register
+
+```text
+GATE C/T M1 M0 | GATE C/T M1 M0
+ Timer1             Timer0
+```
+
+### GATE
+
+* 0 → Software control
+* 1 → Hardware control
+
+### C/T
+
+* 0 → Timer
+* 1 → Counter
+
+### M1 M0
+
+Select mode.
+
+---
+
+## Timer Modes
+
+### Mode 0
+
+```text
+M1=0 M0=0
+```
+
+* 13-bit timer
+* Count = 8192
+
+---
+
+### Mode 1
+
+```text
+M1=0 M0=1
+```
+
+* 16-bit timer
+* Range:
+
+```text
+0000H → FFFFH
+```
+
+* Most widely used
+
+---
+
+### Mode 2
+
+```text
+M1=1 M0=0
+```
+
+* 8-bit Auto Reload
+* THx stores reload value
+* TLx performs counting
+
+Used for:
+
+```text
+Baud Rate Generation
+```
+
+---
+
+### Mode 3
+
+```text
+M1=1 M0=1
+```
+
+Timer0 splits into:
+
+```text
+TL0
+TH0
+```
+
+Two separate 8-bit timers.
+
+---
+
+## TCON Register
+
+```text
+TF1 TR1 TF0 TR0 IE1 IT1 IE0 IT0
+```
+
+### TF0
+
+Timer0 overflow flag.
+
+### TF1
+
+Timer1 overflow flag.
+
+### TR0
+
+Starts Timer0.
+
+### TR1
+
+Starts Timer1.
+
+---
+
+## Timer Operation Sequence
+
+```text
+Select Mode
+      ↓
+Load THx TLx
+      ↓
+Set TRx
+      ↓
+Timer Counts
+      ↓
+Overflow
+      ↓
+TFx = 1
+      ↓
+Interrupt / Polling
+```
+
+---
+
+## Applications
+
+* Time Delay Generation
+* Frequency Measurement
+* Event Counting
+* UART Baud Rate Generation
+* Real-Time Clock
+
+---
+
+## Keywords
+
+8051, CPU, ALU, Accumulator, PSW, ROM, RAM, Register Bank, UART, TMOD, TCON, Timer0, Timer1, Counter Mode, Auto Reload, Overflow Flag, Interrupt Controller.
+
+---
+
+# UNIT I – Q2
+
+# Interrupt Handling Methods in 8051 with Neat Sketch
+
+## Introduction
+
+An **Interrupt** is an event that temporarily suspends the current program execution and transfers control to an Interrupt Service Routine (ISR).
+
+Interrupts improve:
+
+* CPU Utilization
+* Response Time
+* Real-Time Performance
+
+---
+
+## Need for Interrupts
+
+### Polling Method
+
+```text
+CPU checks device continuously
+```
+
+Disadvantages:
+
+* CPU wastage
+* Slow response
+
+---
+
+### Interrupt Method
+
+```text
+Device requests service only when needed
+```
+
+Advantages:
+
+* Efficient CPU utilization
+* Faster response
+
+---
+
+## Interrupt Structure
+
+```text
+              Interrupt Request
+                       |
+                       v
+               Interrupt Controller
+                       |
+                       v
+                    CPU
+                       |
+                       v
+                     ISR
+                       |
+                     RETI
+                       |
+                   Main Program
+```
+
+---
+
+## Interrupt Sources in 8051
+
+| Source      | Flag  | Vector Address |
+| ----------- | ----- | -------------- |
+| INT0        | IE0   | 0003H          |
+| Timer0      | TF0   | 000BH          |
+| INT1        | IE1   | 0013H          |
+| Timer1      | TF1   | 001BH          |
+| Serial Port | RI/TI | 0023H          |
+
+---
+
+## Interrupt Enable Register (IE)
+
+```text
+EA -- -- ES ET1 EX1 ET0 EX0
+```
+
+### EA
+
+Global Interrupt Enable.
+
+```text
+EA = 1
+```
+
+Enable interrupts.
+
+```text
+EA = 0
+```
+
+Disable interrupts.
+
+---
+
+### ET0
+
+Enable Timer0 interrupt.
+
+### ET1
+
+Enable Timer1 interrupt.
+
+### EX0
+
+Enable INT0.
+
+### EX1
+
+Enable INT1.
+
+### ES
+
+Enable Serial interrupt.
+
+---
+
+## Interrupt Priority Register (IP)
+
+```text
+-- -- -- PS PT1 PX1 PT0 PX0
+```
+
+Used to assign:
+
+* High Priority
+* Low Priority
+
+---
+
+## External Interrupt Control
+
+Located in:
+
+```text
+TCON Register
+```
+
+```text
+TF1 TR1 TF0 TR0 IE1 IT1 IE0 IT0
+```
+
+---
+
+### IT0
+
+INT0 Trigger Type
+
+```text
+IT0=1
+```
+
+Edge Triggered
+
+```text
+IT0=0
+```
+
+Level Triggered
+
+---
+
+### IT1
+
+INT1 Trigger Type
+
+Same operation.
+
+---
+
+## Interrupt Handling Sequence
+
+```text
+Interrupt Occurs
+        ↓
+Current Instruction Finishes
+        ↓
+PC Saved In Stack
+        ↓
+Jump To Vector Address
+        ↓
+ISR Executes
+        ↓
+RETI
+        ↓
+PC Restored
+        ↓
+Main Program Continues
+```
+
+---
+
+## Example ISR
+
+```assembly
+ORG 0003H
+
+ISR:
+    CPL P1.0
+    RETI
+```
+
+When INT0 occurs:
+
+```text
+LED connected to P1.0 toggles
+```
+
+---
+
+## Interrupt Handling Methods
+
+### 1. Polling
+
+CPU continuously checks flags.
+
+```text
+TF0 ?
+RI ?
+IE0 ?
+```
+
+Simple but inefficient.
+
+---
+
+### 2. Interrupt-Driven Method
+
+Hardware automatically invokes ISR.
+
+Most efficient.
+
+Used in RTOS and Embedded Systems.
+
+---
+
+## Advantages
+
+* Better CPU utilization
+* Fast response
+* Supports multitasking
+* Suitable for real-time applications
+
+---
+
+## Keywords
+
+Interrupt, ISR, RETI, Vector Address, IE Register, IP Register, TCON, Polling, Edge Triggered, Level Triggered, INT0, INT1, Timer Interrupt, Serial Interrupt.
+
+---
+
+Send **"next 2"** and I'll do:
+
+**3. Internal RAM Organization + Stack Operation**
+**4. Serial Communication in 8051**
+
+at the same exam-answer level.
+
+
