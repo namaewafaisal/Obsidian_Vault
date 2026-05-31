@@ -1039,3 +1039,518 @@ These are the first **2 Unit IV questions that are not already covered by your n
 2. **IoT Communication Protocols & Comparison** (partly overlaps Bluetooth/Wi-Fi/ZigBee but has additional protocol details)
 
 
+# UNIT IV – Q14(a)
+
+# ZigBee Architecture
+
+_(Mostly new. Your notes only compare ZigBee with Wi-Fi/Bluetooth, but do not explain architecture.)_
+
+---
+
+# Introduction
+
+**ZigBee** is a low-power, low-data-rate wireless communication protocol designed for IoT and Wireless Sensor Networks (WSN).
+
+Standard:
+
+```text
+IEEE 802.15.4
+```
+
+Characteristics:
+
+- Low power consumption
+    
+- Low cost
+    
+- Mesh networking
+    
+- Long battery life
+    
+- Supports thousands of nodes
+    
+
+Applications:
+
+- Home Automation
+    
+- Smart Agriculture
+    
+- Industrial Monitoring
+    
+- Smart Metering
+    
+
+---
+
+# ZigBee Architecture
+
+```text
++----------------------+
+| Application Layer    |
++----------------------+
+| Network Layer (NWK)  |
++----------------------+
+| MAC Layer            |
++----------------------+
+| Physical Layer       |
++----------------------+
+```
+
+---
+
+## 1. Physical Layer (PHY)
+
+Responsible for:
+
+- Data transmission
+    
+- Frequency selection
+    
+- Modulation
+    
+- Signal detection
+    
+
+Frequency Bands:
+
+|Band|Data Rate|
+|---|---|
+|868 MHz|20 kbps|
+|915 MHz|40 kbps|
+|2.4 GHz|250 kbps|
+
+---
+
+## 2. MAC Layer
+
+MAC = Medium Access Control
+
+Functions:
+
+- Channel access
+    
+- Frame validation
+    
+- Error detection
+    
+- Beacon management
+    
+
+Uses:
+
+```text
+CSMA/CA
+```
+
+(Carrier Sense Multiple Access with Collision Avoidance)
+
+---
+
+## 3. Network Layer (NWK)
+
+Functions:
+
+- Routing
+    
+- Network formation
+    
+- Node joining/leaving
+    
+- Address assignment
+    
+
+Supports:
+
+```text
+Star Topology
+Tree Topology
+Mesh Topology
+```
+
+---
+
+## 4. Application Layer
+
+Contains:
+
+### APS (Application Support Sublayer)
+
+Provides communication services.
+
+### ZDO (ZigBee Device Object)
+
+Responsible for:
+
+- Device discovery
+    
+- Security management
+    
+- Service management
+    
+
+---
+
+# ZigBee Device Types
+
+---
+
+## Coordinator
+
+```text
+Only One Per Network
+```
+
+Functions:
+
+- Creates network
+    
+- Assigns addresses
+    
+- Maintains network
+    
+
+---
+
+## Router
+
+Functions:
+
+- Route packets
+    
+- Extend network range
+    
+
+---
+
+## End Device
+
+Functions:
+
+- Collect sensor data
+    
+- Communicate with coordinator/router
+    
+
+Lowest power consumption.
+
+---
+
+# ZigBee Network Topologies
+
+## Star
+
+```text
+      Coordinator
+      /  |  \
+     D   D   D
+```
+
+Simple but limited range.
+
+---
+
+## Tree
+
+```text
+       Coordinator
+        /      \
+    Router    Router
+      |          |
+    Device    Device
+```
+
+---
+
+## Mesh
+
+```text
+Node ↔ Node ↔ Node
+  ↕      ↕      ↕
+Node ↔ Node ↔ Node
+```
+
+Most reliable.
+
+Advantages:
+
+- Self-healing
+    
+- Multiple communication paths
+    
+
+---
+
+# Advantages
+
+- Very low power consumption
+    
+- Low cost
+    
+- Long battery life
+    
+- Secure communication
+    
+- Supports large networks
+    
+
+---
+
+# Applications
+
+- Smart Homes
+    
+- Smart Irrigation
+    
+- Industrial Automation
+    
+- Smart Energy Metering
+    
+
+---
+
+## Keywords
+
+IEEE 802.15.4, PHY, MAC, NWK, APS, ZDO, Coordinator, Router, End Device, Mesh Network, CSMA/CA.
+
+---
+
+# UNIT IV – Q14(b)
+
+# IoT Communication Protocols and Comparison
+
+_(Additional content beyond the Bluetooth/Wi-Fi/ZigBee comparison already in your notes.)_
+
+---
+
+# Introduction
+
+IoT communication protocols enable devices to exchange information efficiently.
+
+Protocols can be classified as:
+
+```text
+Network Protocols
+Application Protocols
+```
+
+---
+
+# Network Protocols
+
+---
+
+## Wi-Fi
+
+Standard:
+
+```text
+IEEE 802.11
+```
+
+Features:
+
+- High speed
+    
+- Internet connectivity
+    
+- Moderate range
+    
+
+Applications:
+
+- Smart Homes
+    
+- Surveillance Systems
+    
+
+---
+
+## Bluetooth
+
+Standard:
+
+```text
+IEEE 802.15.1
+```
+
+Features:
+
+- Short range
+    
+- Low power
+    
+
+Applications:
+
+- Wearables
+    
+- Medical Devices
+    
+
+---
+
+## ZigBee
+
+Standard:
+
+```text
+IEEE 802.15.4
+```
+
+Features:
+
+- Very low power
+    
+- Mesh networking
+    
+
+Applications:
+
+- Sensor Networks
+    
+
+---
+
+## GSM/GPRS
+
+Features:
+
+- Wide coverage
+    
+- Cellular communication
+    
+
+Applications:
+
+- Vehicle Tracking
+    
+- Remote Monitoring
+    
+
+---
+
+# Application Protocols
+
+These operate above network protocols.
+
+---
+
+## MQTT
+
+MQTT = Message Queuing Telemetry Transport
+
+Architecture:
+
+```text
+Publisher
+    ↓
+ Broker
+    ↓
+Subscriber
+```
+
+Features:
+
+- Lightweight
+    
+- Low bandwidth
+    
+- Publish/Subscribe model
+    
+
+Applications:
+
+- IoT Sensors
+    
+- Smart Homes
+    
+
+---
+
+## HTTP
+
+HTTP = HyperText Transfer Protocol
+
+Architecture:
+
+```text
+Client
+   ↓
+ Server
+```
+
+Features:
+
+- Simple
+    
+- Widely supported
+    
+
+Disadvantage:
+
+```text
+Higher Overhead
+```
+
+---
+
+## CoAP
+
+CoAP = Constrained Application Protocol
+
+Designed for:
+
+```text
+Resource-Constrained Devices
+```
+
+Features:
+
+- Lightweight
+    
+- Low power consumption
+    
+- UDP-based
+    
+
+---
+
+# Protocol Comparison
+
+|Protocol|Range|Speed|Power Consumption|
+|---|---|---|---|
+|Bluetooth|Short|Medium|Low|
+|Wi-Fi|Medium|High|High|
+|ZigBee|Medium|Low|Very Low|
+|GSM|Very Long|Medium|High|
+
+---
+
+# MQTT vs HTTP vs CoAP
+
+|Feature|MQTT|HTTP|CoAP|
+|---|---|---|---|
+|Model|Publish/Subscribe|Request/Response|Request/Response|
+|Transport|TCP|TCP|UDP|
+|Overhead|Low|High|Very Low|
+|IoT Suitability|Excellent|Moderate|Excellent|
+
+---
+
+# Why MQTT is Popular in IoT
+
+- Small packet size
+    
+- Low bandwidth requirement
+    
+- Reliable communication
+    
+- Efficient for battery-powered devices
+    
+
+---
+
+## Keywords
+
+MQTT, HTTP, CoAP, Publish/Subscribe, Broker, TCP, UDP, Wi-Fi, Bluetooth, ZigBee, GSM, IoT Communication.
