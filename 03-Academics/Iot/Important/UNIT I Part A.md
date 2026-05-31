@@ -68,4 +68,9 @@ The register bank is selected using bits **RS1** and **RS0** of the **Program St
 
    * Example: `SETB P1.0`
 
-These are the standard 2-mark exam answers.
+
+
+---
+
+## UNIT 2
+
