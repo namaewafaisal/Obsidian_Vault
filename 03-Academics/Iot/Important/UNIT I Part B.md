@@ -1523,3 +1523,1126 @@ Send **"next 2"** and I'll do:
 at the same exam-answer level.
 
 
+# UNIT I – Q3
+
+# Internal RAM Organization of 8051 and Stack Operation
+
+## Introduction
+
+The 8051 contains **128 Bytes of internal RAM** located from:
+
+```text
+00H to 7FH
+```
+
+This RAM is divided into:
+
+1. Register Banks
+2. Bit Addressable RAM
+3. General Purpose RAM
+
+Internal RAM is used for:
+
+* Variables
+* Stack
+* Temporary Data Storage
+* Register Banks
+
+---
+
+## Internal RAM Organization
+
+### Memory Map
+
+```text
++---------------------+
+| 7FH                 |
+| General Purpose RAM |
+| 30H - 7FH           |
++---------------------+
+| Bit Addressable RAM |
+| 20H - 2FH           |
++---------------------+
+| Register Banks      |
+| 00H - 1FH           |
++---------------------+
+| 00H                 |
++---------------------+
+```
+
+---
+
+## Register Bank Area
+
+Address Range:
+
+```text
+00H - 1FH
+```
+
+Size:
+
+```text
+32 Bytes
+```
+
+Contains:
+
+```text
+4 Register Banks
+```
+
+---
+
+### Bank 0
+
+```text
+00H - 07H
+```
+
+Registers:
+
+```text
+R0 R1 R2 R3 R4 R5 R6 R7
+```
+
+---
+
+### Bank 1
+
+```text
+08H - 0FH
+```
+
+---
+
+### Bank 2
+
+```text
+10H - 17H
+```
+
+---
+
+### Bank 3
+
+```text
+18H - 1FH
+```
+
+---
+
+### Bank Selection
+
+Done using:
+
+```text
+PSW Register
+```
+
+Bits:
+
+```text
+RS1 RS0
+```
+
+| RS1 | RS0 | Bank  |
+| --- | --- | ----- |
+| 0   | 0   | Bank0 |
+| 0   | 1   | Bank1 |
+| 1   | 0   | Bank2 |
+| 1   | 1   | Bank3 |
+
+---
+
+## Bit Addressable RAM
+
+Address Range:
+
+```text
+20H - 2FH
+```
+
+Size:
+
+```text
+16 Bytes
+```
+
+Contains:
+
+```text
+128 individually addressable bits
+```
+
+Useful for:
+
+* Flags
+* Control Bits
+* Status Indicators
+
+---
+
+### Example
+
+```assembly
+SETB 20H
+CLR 20H
+```
+
+Individual bits can be manipulated.
+
+---
+
+## General Purpose RAM
+
+Address Range:
+
+```text
+30H - 7FH
+```
+
+Size:
+
+```text
+80 Bytes
+```
+
+Used for:
+
+* Variables
+* Buffers
+* Arrays
+* Temporary Storage
+
+Example:
+
+```assembly
+MOV 30H,#25H
+```
+
+Stores 25H in RAM location 30H.
+
+---
+
+# Stack Operation
+
+## Definition
+
+Stack is a temporary storage area used to store:
+
+* Return Addresses
+* Register Contents
+* Local Data
+
+Works on:
+
+```text
+LIFO
+(Last In First Out)
+```
+
+---
+
+## Stack Pointer (SP)
+
+Special Function Register:
+
+```text
+SP
+```
+
+Stores address of top of stack.
+
+Default Value:
+
+```text
+SP = 07H
+```
+
+Therefore first PUSH occurs at:
+
+```text
+08H
+```
+
+---
+
+## PUSH Operation
+
+Syntax:
+
+```assembly
+PUSH direct_address
+```
+
+Example:
+
+```assembly
+MOV 30H,#55H
+PUSH 30H
+```
+
+Operation:
+
+```text
+SP = SP + 1
+Data stored at stack location
+```
+
+---
+
+### PUSH Illustration
+
+Initially:
+
+```text
+SP = 07H
+```
+
+After:
+
+```assembly
+PUSH 30H
+```
+
+```text
+SP = 08H
+RAM[08H] = 55H
+```
+
+---
+
+## POP Operation
+
+Syntax:
+
+```assembly
+POP direct_address
+```
+
+Example:
+
+```assembly
+POP 40H
+```
+
+Operation:
+
+```text
+Data copied from stack
+SP = SP - 1
+```
+
+---
+
+### POP Illustration
+
+Before:
+
+```text
+SP = 08H
+RAM[08H] = 55H
+```
+
+After:
+
+```assembly
+POP 40H
+```
+
+```text
+40H = 55H
+SP = 07H
+```
+
+---
+
+## Stack During Subroutine Call
+
+### CALL Instruction
+
+When CALL executes:
+
+```text
+Program Counter saved on stack
+```
+
+---
+
+### RET Instruction
+
+When RET executes:
+
+```text
+Program Counter restored
+```
+
+from stack.
+
+---
+
+## Demonstration Program
+
+```assembly
+MOV SP,#07H
+
+MOV 30H,#25H
+MOV 31H,#55H
+
+PUSH 30H
+PUSH 31H
+
+POP 40H
+POP 41H
+
+END
+```
+
+### Result
+
+```text
+41H = 25H
+40H = 55H
+```
+
+LIFO property verified.
+
+---
+
+## Applications of Stack
+
+* Function Calls
+* Interrupt Handling
+* Temporary Data Storage
+* Context Saving
+
+---
+
+## Keywords
+
+Internal RAM, Register Bank, Bit Addressable Memory, General Purpose RAM, Stack Pointer, PUSH, POP, LIFO, CALL, RET, PSW, RS1, RS0.
+
+---
+
+# UNIT I – Q4
+
+# Serial Communication in 8051 and Hardware/Software Support
+
+## Introduction
+
+Serial communication transfers data:
+
+```text
+One Bit At A Time
+```
+
+through a single communication channel.
+
+8051 provides built-in UART hardware for serial communication.
+
+Applications:
+
+* PC Interfacing
+* GSM Module
+* GPS Module
+* Bluetooth Module
+* IoT Communication
+
+---
+
+## Serial Communication Block
+
+```text
+          +-------------+
+          |   8051      |
+          |             |
+RXD P3.0 <---- Receive
+TXD P3.1 ----> Transmit
+          +-------------+
+```
+
+---
+
+## Hardware Support
+
+### Serial Port
+
+Dedicated UART available inside 8051.
+
+Uses:
+
+| Pin  | Function |
+| ---- | -------- |
+| P3.0 | RXD      |
+| P3.1 | TXD      |
+
+---
+
+## Important Registers
+
+### SBUF Register
+
+Serial Buffer Register.
+
+Used for:
+
+* Transmission
+* Reception
+
+Example:
+
+```assembly
+MOV SBUF,#'A'
+```
+
+Transmits character A.
+
+---
+
+### SCON Register
+
+Serial Control Register.
+
+Format:
+
+```text
+SM0 SM1 SM2 REN TB8 RB8 TI RI
+```
+
+---
+
+### SM0, SM1
+
+Select serial mode.
+
+---
+
+### REN
+
+Receive Enable.
+
+```text
+REN = 1
+```
+
+Reception enabled.
+
+---
+
+### TI
+
+Transmit Interrupt Flag.
+
+Set when transmission completes.
+
+---
+
+### RI
+
+Receive Interrupt Flag.
+
+Set when reception completes.
+
+---
+
+## PCON Register
+
+Used for baud rate control.
+
+Important Bit:
+
+```text
+SMOD
+```
+
+When:
+
+```text
+SMOD = 1
+```
+
+Baud rate doubles.
+
+---
+
+# Serial Modes
+
+## Mode 0
+
+### Features
+
+* Shift Register Mode
+* 8-bit Data
+* Fixed Baud Rate
+
+---
+
+## Mode 1
+
+### Features
+
+* 8-bit UART
+* Start Bit
+* Stop Bit
+* Variable Baud Rate
+
+Most commonly used.
+
+Frame Format:
+
+```text
+Start
+  |
+8 Data Bits
+  |
+Stop
+```
+
+---
+
+## Mode 2
+
+### Features
+
+* 9-bit UART
+* Fixed Baud Rate
+
+---
+
+## Mode 3
+
+### Features
+
+* 9-bit UART
+* Variable Baud Rate
+
+---
+
+# Baud Rate Generation
+
+Usually generated using:
+
+```text
+Timer1
+Mode2
+```
+
+(8-bit Auto Reload)
+
+---
+
+## Baud Rate Formula
+
+For Mode 1:
+
+```text
+Baud Rate =
+(2^SMOD / 32)
+×
+Timer Overflow Rate
+```
+
+---
+
+# Data Transmission Process
+
+```assembly
+MOV SBUF,#'A'
+```
+
+Process:
+
+```text
+Load SBUF
+     ↓
+UART Transmits
+     ↓
+TI = 1
+     ↓
+Transmission Complete
+```
+
+---
+
+## Transmission Program
+
+```assembly
+MOV SCON,#50H
+MOV TMOD,#20H
+MOV TH1,#0FDH
+SETB TR1
+
+MOV SBUF,#'A'
+
+WAIT:
+JNB TI,WAIT
+
+CLR TI
+```
+
+---
+
+# Data Reception Process
+
+```text
+Data Arrives
+      ↓
+Stored in SBUF
+      ↓
+RI = 1
+      ↓
+CPU Reads Data
+```
+
+---
+
+## Reception Program
+
+```assembly
+WAIT:
+JNB RI,WAIT
+
+MOV A,SBUF
+CLR RI
+```
+
+---
+
+# Serial Interrupt
+
+Interrupt Vector:
+
+```text
+0023H
+```
+
+Flags:
+
+```text
+TI
+RI
+```
+
+Trigger serial interrupt.
+
+---
+
+# Applications
+
+* PC Communication
+* GSM Interfacing
+* GPS Tracking
+* Bluetooth Communication
+* IoT Devices
+* Wireless Sensor Networks
+
+---
+
+## Advantages
+
+* Requires fewer wires
+* Long-distance communication
+* Low hardware cost
+* Easy interfacing
+
+---
+
+## Keywords
+
+UART, RXD, TXD, SBUF, SCON, PCON, Baud Rate, Timer1 Mode2, TI, RI, Serial Interrupt, Start Bit, Stop Bit, Full Duplex Communication.
+
+
+# UNIT I – Q5
+
+# Timer/Counter Programming in 8051 and Time-of-Day Clock
+
+## Definition
+
+Timer/Counter is a hardware module used for:
+
+* Delay generation
+* Event counting
+* Frequency measurement
+* Baud rate generation
+* Real-time clock implementation
+
+8051 contains:
+
+```text
+Timer0
+Timer1
+```
+
+Each timer consists of:
+
+```text
+TH0 TL0
+TH1 TL1
+```
+
+---
+
+## Timer Registers
+
+### TMOD
+
+```text
+GATE C/T M1 M0 | GATE C/T M1 M0
+ Timer1             Timer0
+```
+
+### GATE
+
+* 0 → Software control
+* 1 → External hardware control
+
+### C/T
+
+* 0 → Timer
+* 1 → Counter
+
+### M1 M0
+
+Select timer mode.
+
+---
+
+## Timer Modes
+
+### Mode 0
+
+```text
+13-bit Timer
+```
+
+Count Range:
+
+```text
+0000H – 1FFFH
+```
+
+---
+
+### Mode 1
+
+```text
+16-bit Timer
+```
+
+Count Range:
+
+```text
+0000H – FFFFH
+```
+
+Most commonly used.
+
+---
+
+### Mode 2
+
+```text
+8-bit Auto Reload
+```
+
+Used for:
+
+* UART Baud Rate Generation
+
+---
+
+### Mode 3
+
+```text
+Split Timer Mode
+```
+
+Timer0 becomes:
+
+```text
+TH0
+TL0
+```
+
+independent timers.
+
+---
+
+## TCON Register
+
+```text
+TF1 TR1 TF0 TR0 IE1 IT1 IE0 IT0
+```
+
+### TF0
+
+Timer0 Overflow Flag
+
+### TF1
+
+Timer1 Overflow Flag
+
+### TR0
+
+Start Timer0
+
+### TR1
+
+Start Timer1
+
+---
+
+# Time-of-Day Clock
+
+Displays:
+
+```text
+Hours
+Minutes
+Seconds
+```
+
+using BCD format.
+
+---
+
+## Block Diagram
+
+```text
+         Timer0
+            |
+            v
+      1 Second Delay
+            |
+            v
+      Update Time
+            |
+   +--------+--------+
+   |        |        |
+ Hours   Minutes  Seconds
+```
+
+---
+
+## Algorithm
+
+1. Initialize Timer0 Mode1.
+2. Generate 1-second delay.
+3. Increment seconds.
+4. If seconds = 60:
+
+   * seconds = 00
+   * increment minutes
+5. If minutes = 60:
+
+   * minutes = 00
+   * increment hours
+6. If hours = 24:
+
+   * hours = 00
+7. Output values to ports.
+
+---
+
+## Flowchart
+
+```text
+Start
+  |
+Initialize Timer
+  |
+Generate 1 sec Delay
+  |
+Seconds++
+  |
+Seconds=60?
+ / \
+No  Yes
+ |    |
+ |  Seconds=0
+ |  Minutes++
+ |     |
+ | Minutes=60?
+ |   / \
+ | No  Yes
+ |      |
+ |   Minutes=0
+ |   Hours++
+ |      |
+ | Hours=24?
+ |   / \
+ | No  Yes
+ |      |
+ |   Hours=0
+ |
+Display Time
+ |
+Repeat
+```
+
+---
+
+## Keywords
+
+TMOD, TCON, Timer0, Timer1, BCD, Overflow Flag, TH0, TL0, Real-Time Clock, Delay Generation.
+
+---
+
+# UNIT I – Q6
+
+# Embedded C Program to Toggle P1.0 Every 10 ms (XTAL = 11.0592 MHz)
+
+## Given
+
+```text
+XTAL = 11.0592 MHz
+Delay = 10 ms
+Output Pin = P1.0
+```
+
+---
+
+## Timer Calculation
+
+### Machine Cycle Frequency
+
+```text
+11.0592 MHz / 12
+=
+921.6 kHz
+```
+
+---
+
+### Machine Cycle Time
+
+```text
+1 / 921.6k
+=
+1.085 µs
+```
+
+---
+
+### Required Counts
+
+```text
+10 ms / 1.085 µs
+≈ 9216
+```
+
+---
+
+### Initial Timer Value
+
+```text
+65536 - 9216
+=
+56320
+=
+DC00H
+```
+
+Load:
+
+```text
+TH0 = DCH
+TL0 = 00H
+```
+
+---
+
+## Algorithm
+
+1. Configure Timer0 Mode1.
+2. Load TH0 and TL0.
+3. Start Timer0.
+4. Wait for TF0.
+5. Stop Timer0.
+6. Clear TF0.
+7. Toggle P1.0.
+8. Repeat.
+
+---
+
+## Embedded C Program
+
+```c
+#include <reg51.h>
+
+sbit LED = P1^0;
+
+void delay10ms()
+{
+    TMOD = 0x01;
+
+    TH0 = 0xDC;
+    TL0 = 0x00;
+
+    TR0 = 1;
+
+    while(TF0 == 0);
+
+    TR0 = 0;
+    TF0 = 0;
+}
+
+void main()
+{
+    while(1)
+    {
+        LED = ~LED;
+        delay10ms();
+    }
+}
+```
+
+---
+
+## Program Flow
+
+```text
+Start
+  |
+Initialize Timer0
+  |
+Load DC00H
+  |
+Start Timer
+  |
+TF0 = 1 ?
+  |
+Toggle P1.0
+  |
+Repeat
+```
+
+---
+
+## Output Waveform
+
+```text
+P1.0
+
+__|‾‾|__|‾‾|__|‾‾|__
+<10ms><10ms><10ms>
+```
+
+---
+
+## Keywords
+
+Machine Cycle, XTAL, Timer0 Mode1, TH0, TL0, TF0, TR0, Embedded C, Delay Calculation, Toggle Operation.
+
+---
+
+These complete **all unique UNIT I 13-mark questions** found across the uploaded papers:
+
+1. 8051 Architecture with Timer Mode Operation
+2. Interrupt Handling Methods
+3. Internal RAM Organization & Stack Operation
+4. Serial Communication in 8051
+5. Timer/Counter Programming & Time-of-Day Clock
+6. 10 ms Toggle Program (Embedded C)
+
