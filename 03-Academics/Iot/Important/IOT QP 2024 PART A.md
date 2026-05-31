@@ -336,3 +336,117 @@ A **Sketch** is an Arduino program written in the Arduino IDE and uploaded to th
 * Water and energy management
 * Environmental monitoring
 * Smart healthcare services
+
+---
+
+# UNIT I (Q1–Q2)
+
+### 1. Analyse and list the advantages of microcontroller over microprocessor.
+
+* Microcontroller has CPU, RAM, ROM, and I/O ports on a single chip.
+* Lower power consumption.
+* Smaller size.
+* Lower cost.
+* Faster interfacing with peripherals.
+* Suitable for dedicated embedded applications.
+
+### 2. Name the interrupts available in 8051 microcontroller.
+
+The 8051 provides **5 interrupt sources**:
+
+1. External Interrupt 0 (INT0)
+2. Timer 0 Interrupt
+3. External Interrupt 1 (INT1)
+4. Timer 1 Interrupt
+5. Serial Port Interrupt
+
+---
+
+# UNIT II (Q3–Q4)
+
+### 3. Define RTOS and some of its characteristics.
+
+**RTOS (Real-Time Operating System)** is an operating system designed to provide deterministic responses within specified time constraints.
+
+**Characteristics:**
+
+* Deterministic behavior
+* Fast context switching
+* Multitasking support
+* Priority-based scheduling
+* Low interrupt latency
+* High reliability
+
+### 4. Differentiate pre-emptive and non-pre-emptive scheduling.
+
+| Pre-emptive Scheduling          | Non-Pre-emptive Scheduling         |
+| ------------------------------- | ---------------------------------- |
+| Running task can be interrupted | Running task cannot be interrupted |
+| Better responsiveness           | Simpler implementation             |
+| Suitable for RTOS               | Suitable for simple systems        |
+| Higher overhead                 | Lower overhead                     |
+
+---
+
+# UNIT III (Q5–Q6)
+
+### 5. What is key bouncing? How is it eliminated?
+
+**Key Bouncing:**
+When a mechanical switch is pressed or released, multiple unwanted transitions occur before a stable state is reached.
+
+**Elimination Methods:**
+
+* Hardware debouncing using RC circuits.
+* Software debouncing using delay routines.
+
+### 6. List the RTOS kernel services.
+
+* Task management
+* Scheduling
+* Memory management
+* Interrupt management
+* Inter-task communication
+* Synchronization (Semaphore/Mutex)
+* Timer management
+
+---
+
+# UNIT IV (Q7–Q8)
+
+### 7. List the IoT communication models.
+
+1. Device-to-Device (D2D)
+2. Device-to-Cloud (D2C)
+3. Device-to-Gateway (D2G)
+4. Back-End Data Sharing Model
+
+### 8. What is Raspbian OS?
+
+**Raspbian** (now called **Raspberry Pi OS**) is a Debian-based Linux operating system designed specifically for Raspberry Pi boards.
+
+**Features:**
+
+* Open source
+* Lightweight
+* Supports Python and IoT applications
+* Easy hardware interfacing
+
+---
+
+# UNIT V (Q9–Q10)
+
+### 9. List the typical non-functional requirements for embedded system design.
+
+* Reliability
+* Performance
+* Safety
+* Security
+* Power efficiency
+* Maintainability
+* Scalability
+* Cost effectiveness
+
+### 10. Define smart irrigation system.
+
+A **Smart Irrigation System** is an IoT-based automated irrigation system that uses sensors to monitor soil moisture and controls water supply automatically, reducing water wastage and improving crop growth.
