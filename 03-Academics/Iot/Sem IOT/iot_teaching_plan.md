@@ -97,7 +97,7 @@ Before instructions make sense, you need to know how operands are specified:
 
 ## 1.5 — Timers and Serial Port
 
-### 1.5.1 — Timers/Counters
+### [[1.5.1 — Timers Counters]]
 
 - The 8051 has two 16-bit timers: Timer 0 and Timer 1
 - Key SFRs: TMOD (Timer Mode register), TCON (Timer Control register), TH0/TL0, TH1/TL1
