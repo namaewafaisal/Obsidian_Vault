@@ -603,3 +603,410 @@ For a **13–16 mark answer**, draw:
 These diagrams alone usually fetch several marks even before the explanation.
 
 
+You're right. For these papers, **Unit = Question Number**, not topic.
+
+From the image:
+
+## UNIT II Unique Questions
+
+### 12(a) – RMS Schedulability Analysis
+
+### 12(b) – RMS vs EDF Comparison
+
+### 12(a) – Process Scheduling Algorithms (Explain any two)
+
+### 12(b) – Task States in RTOS
+
+### 12(b) – Round Robin Numerical
+
+### 12(b) – Priority-Based Scheduling Policies
+
+Let's do the first two.
+
+---
+
+# UNIT II – Q12(a)
+
+# Verify the Schedulability using Rate Monotonic Scheduling (RMS)
+
+Given:
+
+| Task | Execution Time (C) | Period (T) |
+| ---- | ------------------ | ---------- |
+| T1   | 3                  | 20         |
+| T2   | 2                  | 5          |
+| T3   | 2                  | 10         |
+
+---
+
+## Step 1: Priority Assignment
+
+In RMS:
+
+```text
+Smaller Period → Higher Priority
+```
+
+Therefore:
+
+| Task | Period | Priority |
+| ---- | ------ | -------- |
+| T2   | 5      | Highest  |
+| T3   | 10     | Medium   |
+| T1   | 20     | Lowest   |
+
+---
+
+## Step 2: Calculate CPU Utilization
+
+Formula:
+
+U=\sum \frac{C_i}{T_i}
+
+Substituting values:
+
+[
+U=\frac{3}{20}+\frac{2}{5}+\frac{2}{10}
+]
+
+[
+U=0.15+0.40+0.20
+]
+
+[
+U=0.75
+]
+
+[
+U=75%
+]
+
+---
+
+## Step 3: RMS Utilization Bound
+
+For:
+
+```text
+n = 3 Tasks
+```
+
+Formula:
+
+[
+U_{max}=n(2^{1/n}-1)
+]
+
+[
+U_{max}=3(2^{1/3}-1)
+]
+
+[
+U_{max}=0.779
+]
+
+[
+U_{max}=77.9%
+]
+
+---
+
+## Step 4: Verification
+
+[
+75% < 77.9%
+]
+
+Hence:
+
+```text
+Task Set is Schedulable
+under RMS.
+```
+
+---
+
+## Step 5: Hyperperiod
+
+LCM:
+
+```text
+LCM(20,5,10)=20
+```
+
+Schedule must be checked from:
+
+```text
+0 → 20
+```
+
+---
+
+## RMS Schedule
+
+```text
+Time
+
+0---2   T2
+2---4   T3
+4---5   T1
+
+5---7   T2
+7---9   T1
+
+10--12  T2
+12--14  T3
+
+15--17  T2
+
+17--20  Idle
+```
+
+All deadlines are met.
+
+---
+
+## Conclusion
+
+* CPU Utilization = 75%
+* RMS Bound = 77.9%
+* All deadlines satisfied
+* Task set is schedulable
+
+---
+
+## Keywords
+
+Rate Monotonic Scheduling, Fixed Priority Scheduling, Hyperperiod, CPU Utilization, Schedulability Test, Deadline Satisfaction.
+
+---
+
+# UNIT II – Q12(b)
+
+# Compare Rate Monotonic Scheduling (RMS) and Earliest Deadline First (EDF)
+
+## Introduction
+
+Scheduling determines the order in which tasks receive CPU time in an RTOS.
+
+Two important real-time scheduling algorithms:
+
+1. Rate Monotonic Scheduling (RMS)
+2. Earliest Deadline First (EDF)
+
+---
+
+# Rate Monotonic Scheduling (RMS)
+
+## Definition
+
+A fixed-priority scheduling algorithm.
+
+Priority assigned according to:
+
+```text
+Smaller Period
+→ Higher Priority
+```
+
+---
+
+## Example
+
+| Task | Period |
+| ---- | ------ |
+| T1   | 5      |
+| T2   | 10     |
+| T3   | 20     |
+
+Priority:
+
+```text
+T1 > T2 > T3
+```
+
+---
+
+## Characteristics
+
+* Fixed Priority
+* Preemptive
+* Predictable
+* Easy implementation
+
+---
+
+## CPU Utilization Bound
+
+[
+U=n(2^{1/n}-1)
+]
+
+For large n:
+
+[
+U \approx 69%
+]
+
+Guaranteed schedulable only up to this bound.
+
+---
+
+# Earliest Deadline First (EDF)
+
+## Definition
+
+A dynamic-priority scheduling algorithm.
+
+Priority assigned according to:
+
+```text
+Earliest Deadline
+→ Highest Priority
+```
+
+---
+
+## Example
+
+| Task | Deadline |
+| ---- | -------- |
+| T1   | 8        |
+| T2   | 5        |
+| T3   | 15       |
+
+Priority:
+
+```text
+T2 > T1 > T3
+```
+
+---
+
+## Characteristics
+
+* Dynamic Priority
+* Preemptive
+* Optimal Scheduling
+* Higher CPU Utilization
+
+---
+
+## CPU Utilization Bound
+
+EDF can schedule tasks if:
+
+[
+U \le 100%
+]
+
+Thus:
+
+```text
+Maximum Utilization
+=
+100%
+```
+
+---
+
+# Comparison
+
+| Feature           | RMS    | EDF            |
+| ----------------- | ------ | -------------- |
+| Priority          | Fixed  | Dynamic        |
+| Based On          | Period | Deadline       |
+| Complexity        | Low    | High           |
+| Overhead          | Less   | More           |
+| Predictability    | High   | Moderate       |
+| Utilization Limit | 69–78% | 100%           |
+| Schedulability    | Lower  | Better         |
+| Implementation    | Easier | More Difficult |
+
+---
+
+# CPU Utilization Analysis
+
+Example:
+
+| Task | C | T  |
+| ---- | - | -- |
+| T1   | 2 | 5  |
+| T2   | 3 | 10 |
+| T3   | 2 | 20 |
+
+[
+U=\frac{2}{5}+\frac{3}{10}+\frac{2}{20}
+]
+
+[
+U=0.4+0.3+0.1
+]
+
+[
+U=0.8
+]
+
+[
+U=80%
+]
+
+Since:
+
+```text
+80% > RMS Bound
+```
+
+RMS may fail.
+
+But:
+
+```text
+80% < 100%
+```
+
+EDF can schedule successfully.
+
+---
+
+## Advantages of RMS
+
+* Simple
+* Predictable
+* Low overhead
+
+### Disadvantages
+
+* Lower utilization
+* Not optimal
+
+---
+
+## Advantages of EDF
+
+* Optimal scheduling
+* Maximum CPU utilization
+* Better deadline satisfaction
+
+### Disadvantages
+
+* Complex implementation
+* Higher overhead
+
+---
+
+## Conclusion
+
+```text
+RMS → Simple, Fixed Priority
+
+EDF → Optimal, Dynamic Priority,
+Higher Processor Utilization
+```
+
+---
+
+Next I'll do:
+
+**Q12(a) Process Scheduling Algorithms (Explain Any Two)**
+**Q12(b) States of a Task in RTOS**
