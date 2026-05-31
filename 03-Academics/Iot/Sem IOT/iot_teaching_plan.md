@@ -114,7 +114,7 @@ Before instructions make sense, you need to know how operands are specified:
 **[NUMERICAL]**: For a 12 MHz crystal, calculate TH0 and TL0 to generate a 10 ms delay in Mode 1.
 Formula: Machine cycle = 1 µs. 10,000 µs delay. Count = 10,000. Reload = 65536 − 10000 = 55536 = D8F0H. TH0 = D8H, TL0 = F0H.
 
-### 1.5.2 — Serial Port (UART)
+### [[1.5.2 — Serial Port (UART)]]
 
 - The 8051 has a built-in UART: full-duplex, uses P3.0 (RXD) and P3.1 (TXD)
 - SCON (Serial Control register): SM0/SM1 (mode), SM2, REN (receive enable), TB8, RB8, TI (transmit interrupt flag), RI (receive interrupt flag)
@@ -135,7 +135,7 @@ Formula: Machine cycle = 1 µs. 10,000 µs delay. Count = 10,000. Reload = 65536
 
 ---
 
-## 1.6 — Interrupt Handling
+## [[1.6 — Interrupt Handling]]
 
 - What an interrupt is: an asynchronous signal that causes the CPU to stop what it's doing, save its state, run a special routine (ISR — Interrupt Service Routine), and resume
 - Why interrupts exist: the alternative (polling) wastes CPU cycles constantly checking a condition; interrupts are event-driven
