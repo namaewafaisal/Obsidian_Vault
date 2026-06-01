@@ -1985,3 +1985,517 @@ for(i=0;i<4;i++)
 # Keywords
 
 Stepper Motor, ULN2003, Full Step Mode, Clockwise Rotation, Anticlockwise Rotation, Driver Circuit, Speed Control, Position Control.
+
+
+# UNIT I – Q16(a)
+
+# Timer0 Auto Reload Mode and Generation of 4 kHz Square Wave on P1.3
+
+## Introduction
+
+8051 contains two timers:
+
+```text
+Timer0
+Timer1
+```
+
+Timer0 can operate in:
+
+- Mode 0 (13-bit)
+    
+- Mode 1 (16-bit)
+    
+- Mode 2 (8-bit Auto Reload)
+    
+- Mode 3 (Split Timer)
+    
+
+This question uses:
+
+```text
+Mode 2 (Auto Reload)
+```
+
+---
+
+# Special Function Registers Used
+
+## TMOD Register
+
+Used to select timer mode.
+
+Format:
+
+```text
+GATE C/T M1 M0 | GATE C/T M1 M0
+ Timer1             Timer0
+```
+
+For:
+
+```text
+Timer0 Mode 2
+```
+
+```text
+M1=1
+M0=0
+```
+
+TMOD:
+
+```text
+00000010B
+=
+02H
+```
+
+---
+
+## TCON Register
+
+```text
+TF1 TR1 TF0 TR0 IE1 IT1 IE0 IT0
+```
+
+Important bits:
+
+### TR0
+
+```text
+Timer0 Run Control
+```
+
+### TF0
+
+```text
+Timer0 Overflow Flag
+```
+
+---
+
+## TH0
+
+Stores reload value.
+
+---
+
+## TL0
+
+Actual counting register.
+
+---
+
+# Frequency Calculation
+
+Given:
+
+```text
+XTAL = 12 MHz
+```
+
+Machine Cycle:
+
+```text
+12 MHz / 12
+=
+1 MHz
+```
+
+Therefore:
+
+```text
+1 Machine Cycle = 1 µs
+```
+
+---
+
+Required Frequency:
+
+```text
+4 kHz
+```
+
+Period:
+
+[  
+T=\frac{1}{4000}  
+]
+
+[  
+T=250 \mu s  
+]
+
+Square wave requires toggle every:
+
+[  
+125\mu s  
+]
+
+---
+
+Required Counts:
+
+```text
+125 Counts
+```
+
+---
+
+Timer Reload Value
+
+```text
+256 - 125
+=
+131
+=
+83H
+```
+
+Load:
+
+```text
+TH0 = 83H
+```
+
+---
+
+# Flowchart
+
+```text
+Start
+  |
+TMOD = 02H
+  |
+TH0 = 83H
+  |
+TR0 = 1
+  |
+Wait TF0
+  |
+Toggle P1.3
+  |
+Clear TF0
+  |
+Repeat
+```
+
+---
+
+# Assembly Program
+
+```assembly
+MOV TMOD,#02H
+
+MOV TH0,#83H
+MOV TL0,#83H
+
+SETB TR0
+
+BACK:
+
+JNB TF0,BACK
+
+CLR TF0
+
+CPL P1.3
+
+SJMP BACK
+```
+
+---
+
+# Working
+
+1. Timer0 configured in Mode 2.
+    
+2. TH0 loaded with 83H.
+    
+3. TL0 starts counting.
+    
+4. After 125 µs overflow occurs.
+    
+5. TF0 becomes 1.
+    
+6. P1.3 toggles.
+    
+7. TH0 automatically reloads into TL0.
+    
+8. Process repeats.
+    
+
+---
+
+# Advantages of Auto Reload Mode
+
+- No need to reload timer repeatedly.
+    
+- Less CPU overhead.
+    
+- Suitable for waveform generation.
+    
+- Used in baud-rate generation.
+    
+
+---
+
+# Keywords
+
+TMOD, TCON, TH0, TL0, TF0, TR0, Mode 2, Auto Reload, Square Wave Generation, Timer0.
+
+---
+
+# UNIT I – Q16(a)
+
+# Key Bounce and Keyboard Interfacing with 8051
+
+## Introduction
+
+A keyboard is an input device used to enter data into a microcontroller system.
+
+Types:
+
+- Individual Switch Keyboard
+    
+- Matrix Keyboard
+    
+
+---
+
+# Key Bounce
+
+## Definition
+
+When a key is pressed, the contacts do not settle immediately.
+
+They make and break contact multiple times before stabilizing.
+
+This phenomenon is called:
+
+```text
+Key Bounce
+```
+
+---
+
+## Effect
+
+Single key press may be interpreted as:
+
+```text
+Multiple Key Presses
+```
+
+---
+
+## Key Bounce Illustration
+
+```text
+Ideal:
+
+_____|‾‾‾‾‾
+
+
+Actual:
+
+___|_|_|_|‾‾‾
+```
+
+---
+
+# Elimination of Key Bounce
+
+## 1. Hardware Debouncing
+
+Using:
+
+- RC Circuit
+    
+- Schmitt Trigger
+    
+
+```text
+Switch
+  |
+ RC Network
+  |
+8051 Input
+```
+
+---
+
+## 2. Software Debouncing
+
+After detecting key press:
+
+```text
+Wait 10–20 ms
+```
+
+then verify again.
+
+Most common technique.
+
+---
+
+# Matrix Keyboard Interfacing
+
+A matrix keyboard reduces the number of I/O pins.
+
+Example:
+
+```text
+4 × 4 Keyboard
+```
+
+Contains:
+
+```text
+16 Keys
+```
+
+using only:
+
+```text
+8 Pins
+```
+
+---
+
+# Matrix Structure
+
+```text
+      C0 C1 C2 C3
+       |  |  |  |
+
+R0 ----o--o--o--o
+
+R1 ----o--o--o--o
+
+R2 ----o--o--o--o
+
+R3 ----o--o--o--o
+```
+
+Rows:
+
+```text
+R0-R3
+```
+
+Columns:
+
+```text
+C0-C3
+```
+
+---
+
+# Interfacing with 8051
+
+```text
+Rows    → P1.0-P1.3
+
+Columns → P1.4-P1.7
+```
+
+---
+
+# Row-Column Scanning Technique
+
+## Step 1
+
+Make all rows HIGH.
+
+---
+
+## Step 2
+
+Ground one row.
+
+Example:
+
+```text
+R0 = 0
+```
+
+---
+
+## Step 3
+
+Read column inputs.
+
+If:
+
+```text
+C2 = 0
+```
+
+then:
+
+```text
+Key at R0,C2 pressed
+```
+
+---
+
+## Step 4
+
+Repeat for all rows.
+
+---
+
+# Flowchart
+
+```text
+Start
+  |
+Scan Rows
+  |
+Key Pressed?
+ /       \
+No       Yes
+ |         |
+Repeat  Debounce
+           |
+       Identify Key
+           |
+         Process
+```
+
+---
+
+# Advantages of Matrix Keyboard
+
+- Fewer I/O pins
+    
+- Low cost
+    
+- Easy scanning
+    
+- Widely used
+    
+
+---
+
+# Applications
+
+- Calculators
+    
+- ATMs
+    
+- Industrial Panels
+    
+- Access Control Systems
+    
+
+---
+
+# Keywords
+
+Key Bounce, Debouncing, Matrix Keyboard, Row Scanning, Column Scanning, RC Circuit, Software Debounce, Key Detection.
+
+---
+
+That completes **all UNIT I Part C unique questions**. Next unit with Part C content is **UNIT III: Sensor & Actuator Interfacing for Real-Time Industrial Applications**.

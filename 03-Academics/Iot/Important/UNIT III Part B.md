@@ -1024,3 +1024,243 @@ Selected because:
 That's essentially **all the UNIT III content missing from your existing notes**. Everything else (IoT Architecture, Arduino boards, pin structure, sketches, sensors/actuators integration) is already covered in your notes. 
 
 
+After UNIT I, the only remaining **Part C unique questions** are:
+
+# UNIT III
+
+### Sensor and Actuator Interfacing for Real-Time Industrial Applications
+
+```text
+Elaborate on interfacing the sensors and actuators
+for real time industrial applications.
+Detail any example based on it.
+```
+
+---
+
+# UNIT III – Sensor and Actuator Interfacing for Real-Time Industrial Applications
+
+## Introduction
+
+Industrial automation systems use sensors to collect information from the environment and actuators to perform physical actions based on controller decisions.
+
+Basic flow:
+
+```text
+Sensor
+   ↓
+Controller
+(PLC/Arduino/8051/RPi)
+   ↓
+Actuator
+   ↓
+Industrial Process
+```
+
+---
+
+# Sensors Used in Industries
+
+Sensors convert physical quantities into electrical signals.
+
+Examples:
+
+| Sensor             | Measures          |
+| ------------------ | ----------------- |
+| Temperature Sensor | Temperature       |
+| Pressure Sensor    | Pressure          |
+| Proximity Sensor   | Object Detection  |
+| Flow Sensor        | Flow Rate         |
+| Humidity Sensor    | Humidity          |
+| Gas Sensor         | Gas Concentration |
+
+---
+
+# Actuators Used in Industries
+
+Actuators convert electrical signals into physical action.
+
+Examples:
+
+| Actuator       | Action           |
+| -------------- | ---------------- |
+| DC Motor       | Rotation         |
+| Stepper Motor  | Precise Rotation |
+| Solenoid Valve | Open/Close Flow  |
+| Relay          | Switch Loads     |
+| Pump           | Move Liquid      |
+| Heater         | Generate Heat    |
+
+---
+
+# Industrial Interfacing Architecture
+
+```text
+Temperature Sensor
+        ↓
+     ADC
+        ↓
+ Microcontroller
+        ↓
+ Driver Circuit
+        ↓
+      Relay
+        ↓
+    Heater
+```
+
+---
+
+# Need for Driver Circuits
+
+Microcontrollers cannot directly drive:
+
+* Motors
+* Pumps
+* Relays
+
+Therefore driver circuits are used:
+
+Examples:
+
+```text
+ULN2003
+L293D
+Relay Driver
+```
+
+---
+
+# Steps in Sensor-Actuator Interfacing
+
+### Step 1
+
+Sensor measures physical parameter.
+
+---
+
+### Step 2
+
+Controller reads sensor value.
+
+---
+
+### Step 3
+
+Decision logic executed.
+
+Example:
+
+```text
+Temperature > Set Point ?
+```
+
+---
+
+### Step 4
+
+Controller activates actuator.
+
+---
+
+### Step 5
+
+Actuator performs required operation.
+
+---
+
+# Example
+
+# Industrial Temperature Control System
+
+## Block Diagram
+
+```text
+LM35 Sensor
+      ↓
+8051 Controller
+      ↓
+Relay Driver
+      ↓
+Heater
+```
+
+---
+
+## Working
+
+### Case 1
+
+```text
+Temperature < 30°C
+```
+
+Controller:
+
+```text
+Relay ON
+Heater ON
+```
+
+---
+
+### Case 2
+
+```text
+Temperature ≥ 30°C
+```
+
+Controller:
+
+```text
+Relay OFF
+Heater OFF
+```
+
+---
+
+# Real-Time Characteristics
+
+Industrial systems require:
+
+* Deterministic response
+* Fast execution
+* Continuous monitoring
+* High reliability
+* Fault tolerance
+
+---
+
+# Applications
+
+* Factory Automation
+* Process Control
+* Smart Manufacturing
+* Power Plants
+* Chemical Industries
+
+---
+
+# Advantages
+
+* Increased productivity
+* Reduced human intervention
+* Better accuracy
+* Improved safety
+* Reduced operational cost
+
+---
+
+## Keywords
+
+Industrial Automation, Sensor Interfacing, Actuator Interfacing, Relay Driver, Real-Time System, Process Control, Closed Loop Control, Monitoring.
+
+---
+
+# UNIT IV
+
+### None Remaining
+
+GSM Architecture was already covered under Unit IV.
+
+---

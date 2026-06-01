@@ -1570,3 +1570,207 @@ Emergency Notification
 ## Keywords
 
 IoT Healthcare, Remote Monitoring, Telemedicine, Heart Rate Sensor, Cloud Healthcare, Emergency Alert System, Patient Monitoring.
+
+
+
+# UNIT V
+
+### Smart City – Characteristics and Challenges
+
+```text
+What is a smart city?
+What are the characteristics of a smart city?
+Explain challenges of smart city implementation.
+```
+
+---
+
+# UNIT V – Smart City: Characteristics and Challenges
+
+## Definition
+
+A Smart City uses IoT, communication networks, cloud computing and intelligent systems to improve urban services and quality of life.
+
+Goal:
+
+```text
+Efficient Resource Utilization
+Sustainable Development
+Improved Citizen Services
+```
+
+---
+
+# Characteristics of Smart City
+
+## 1. Smart Governance
+
+Use of digital technologies for administration.
+
+Examples:
+
+* E-Governance
+* Online Public Services
+
+---
+
+## 2. Smart Transportation
+
+Uses IoT for:
+
+* Traffic Monitoring
+* Smart Parking
+* Intelligent Traffic Signals
+
+---
+
+## 3. Smart Energy
+
+Examples:
+
+* Smart Grid
+* Smart Metering
+
+Benefits:
+
+```text
+Reduced Energy Consumption
+```
+
+---
+
+## 4. Smart Environment
+
+Uses sensors for:
+
+* Air Quality Monitoring
+* Pollution Control
+* Waste Management
+
+---
+
+## 5. Smart Healthcare
+
+Examples:
+
+* Remote Patient Monitoring
+* Telemedicine
+
+---
+
+## 6. Smart Water Management
+
+Uses sensors to monitor:
+
+* Water Quality
+* Leakage Detection
+* Consumption
+
+---
+
+## 7. Smart Security
+
+Examples:
+
+* CCTV Surveillance
+* Emergency Alert Systems
+
+---
+
+# Smart City Architecture
+
+```text
+Sensors
+   ↓
+Communication Network
+   ↓
+Cloud Platform
+   ↓
+Analytics
+   ↓
+Citizen Services
+```
+
+---
+
+# Challenges in Smart City Implementation
+
+## 1. High Initial Cost
+
+Requires:
+
+* Sensors
+* Communication Infrastructure
+* Cloud Services
+
+---
+
+## 2. Data Security and Privacy
+
+Large amount of citizen data collected.
+
+Risks:
+
+* Data Breaches
+* Cyber Attacks
+
+---
+
+## 3. Interoperability Issues
+
+Devices from different vendors may not communicate properly.
+
+---
+
+## 4. Scalability
+
+Managing millions of devices is difficult.
+
+---
+
+## 5. Network Reliability
+
+Smart services depend on continuous connectivity.
+
+---
+
+## 6. Maintenance Challenges
+
+Large sensor deployments require continuous maintenance.
+
+---
+
+## 7. Skilled Workforce Requirement
+
+Need experts in:
+
+* IoT
+* Networking
+* Cloud Computing
+* Cybersecurity
+
+---
+
+## 8. Power Management
+
+Many IoT devices require long-term power supply.
+
+---
+
+# Advantages
+
+* Better public services
+* Reduced traffic congestion
+* Efficient resource usage
+* Improved sustainability
+* Enhanced quality of life
+
+---
+
+## Keywords
+
+Smart City, Smart Governance, Smart Transportation, Smart Grid, Sustainability, Interoperability, Scalability, Cybersecurity, Smart Infrastructure.
+
+---
+
+That completes all the **remaining unique Part C questions** that were not already covered elsewhere in Units I–V.
