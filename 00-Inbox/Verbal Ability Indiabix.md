@@ -53,3 +53,49 @@
 * ✅ **Dignified** — Showing a serious, respectful, and noble manner.
 * **Petty** — Of little importance, trivial, or small-minded.
 
+---
+
+### 1.6. CANNY
+❓ Question Word: Canny — Having or showing shrewdness and good judgment, especially in money or business matters.
+* **Obstinate** — Stubbornly refusing to change one's opinion or chosen course of action.
+* **Handsome** — Visually attractive or good-looking, typically used to describe a man.
+* **Clever** — Quick to understand, learn, and devise ideas; intelligent or shrewd. ✅
+* **Stout** — Somewhat fat, heavily built, or sturdy in structure.
+
+---
+
+### 1.7. ALERT
+❓ Question Word: Alert — Quick to notice any unusual or potentially dangerous circumstances; vigilant.
+* **Energetic** — Showing or involving great vitality, activity, or enthusiasm.
+* **Observant** — Quick to notice things; alert and paying close attention.
+* **Intelligent** — Having or showing a high ability to acquire and apply knowledge and skills.
+* **Watchful** — Watching someone or something closely; alert and vigilant. ✅
+
+---
+
+### 1.8. WARRIOR
+❓ Question Word: Warrior — A brave or experienced soldier or fighter.
+* **Soldier** — A person who serves in an army, fighting for a nation or group. ✅
+* **Sailor** — A person whose job it is to work as a member of the crew of a ship or boat.
+* **Pirate** — A person who attacks and robs ships at sea.
+* **Spy** — A person employed to secretly collect and report information on the activities of others.
+
+---
+
+### 1.9. DISTANT
+❓ Question Word: Distant — Far away in space, time, or relationship.
+* **Far** — Situated a great distance away or remote. ✅
+* **Removed** — Separated or distant from something in place, time, or character.
+* **Reserved** — Slow to reveal emotion or opinions; quiet and kept to oneself.
+* **Separate** — Existing or happening independently; detached or disconnected from others.
+
+---
+
+### 1.10. ADVERSITY
+❓ Question Word: Adversity — A state or instance of serious or continued difficulty, misfortune, or hardship.
+* **Failure** — Lack of success in achieving a specific goal or expectation.
+* **Helplessness** — The state of being unable to defend oneself or act effectively.
+* **Misfortune** — Unfortunate conditions, bad luck, or an unfortunate event. ✅
+* **Crisis** — A time of intense difficulty, trouble, or danger requiring a major decision.
+
+---
