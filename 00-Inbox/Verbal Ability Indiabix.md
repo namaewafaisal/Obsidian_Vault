@@ -591,3 +591,87 @@ $$would / could / might + have + past\ participle$$
 
 * **Grammar Rule:** This is an error of **adverb placement**. The frequency adverb "never" is poorly positioned at the start of the clause. In standard declarative English syntax, frequency adverbs should be placed right after the auxiliary/helping verb ("will") and before the main verb ("get").
 * **Correction:** Shift "never" to read "...and you will never get it back."
+
+---
+### 11. According to the Bible it is meek and humble who shall inherit the earth.
+
+#### `According to the Bible` <- ✓ CORRECT
+
+* **Grammar Rule:** The proper noun "Bible" is correctly initialized with the definite article "the", and the introductory phrase "According to" is standard usage.
+
+#### `it is meek and humble` <- ❌ INCORRECT
+
+* **Grammar Rule:** "Meek" and "humble" are standalone adjectives. In English, when you want to refer to a whole group or class of people using an adjective, you must place the definite article "the" before it ($the + adjective = plural\ noun$). Without "the", they cannot act as the subject of the clause.
+* **Correction:** Change to "it is the meek and humble" (or "the meek and the humble").
+
+#### `who shall inherit the earth.` <- ✓ CORRECT
+
+* **Grammar Rule:** The relative pronoun "who" correctly refers to the collective group of people, and the modal verb "shall" matches traditional or formal biblical phrasing.
+
+---
+
+### 12. Do the roses in your garden smell more sweetly than those in ours?
+
+#### `Do the roses in your garden smell` <- ✓ CORRECT
+
+* **Grammar Rule:** The plural auxiliary verb "Do" correctly matches the plural subject "roses". The noun phrase is perfectly constructed.
+
+#### `more sweetly` <- ❌ INCORRECT
+
+* **Grammar Rule:** The verb "smell" functions here as a **linking verb** (copular verb) expressing a sensory state, not an action. Linking verbs must be modified by predicate adjectives, not adverbs. Using the adverb "sweetly" implies the roses have noses and are performing the physical act of smelling rapidly or intensely.
+* **Correction:** Change the comparative adverb "more sweetly" to the comparative adjective "sweeter".
+
+#### `than those in ours?` <- ✓ CORRECT
+
+* **Grammar Rule:** The pronoun "those" correctly substitutes for the plural noun "roses" to avoid repetition, and the possessive pronoun "ours" correctly closes the comparison phrase.
+
+---
+
+### 13. Block of Residential flats are coming up near our house.
+
+#### `Block of Residential flats` <- ❌ INCORRECT
+
+* **Grammar Rule:** This is an error of **subject-verb agreement**. The singular noun "Block" is paired with the plural verb "are" in the next part of the sentence. Since multiple residential units are being constructed, the head noun must be converted to its plural form to establish structural balance.
+* **Correction:** Change "Block" to "Blocks".
+
+#### `are coming up` <- ✓ CORRECT
+
+* **Grammar Rule:** The present continuous phrasal verb phrase "are coming up" is structurally sound and accurately implies ongoing development.
+
+#### `near our house.` <- ✓ CORRECT
+
+* **Grammar Rule:** The spatial preposition "near" correctly links the location to the possessive noun phrase "our house".
+
+---
+
+### 14. You can get all the information that you want in this book.
+
+#### `You can get` <- ✓ CORRECT
+
+* **Grammar Rule:** Standard active voice construction using the modal helper verb "can" paired with the base form main verb "get".
+
+#### `all the information that you want` <- ✓ CORRECT
+
+* **Grammar Rule:** "Information" is an **uncountable noun** and is correctly left singular without an "s" at the end. The adjective "all" and relative clause "that you want" are cleanly applied.
+
+#### `in this book.` <- ✓ CORRECT
+
+* **Grammar Rule:** The spatial preposition "in" correctly indicates the location of the contents within the boundaries of the text, and the demonstrative adjective "this" is perfectly sound.
+* **Status:** This entire sentence contains **No error**.
+
+---
+
+### 15. The students were awaiting for the arrival of the chief guest.
+
+#### `The students were` <- ✓ CORRECT
+
+* **Grammar Rule:** The plural past-tense auxiliary verb "were" correctly establishes subject-verb agreement with the plural subject "students".
+
+#### `awaiting for` <- ❌ INCORRECT
+
+* **Grammar Rule:** "Await" is a **transitive verb** that directly requires an object without any preposition following it ($await = wait\ for$). Adding the preposition "for" immediately after "awaiting" is an ungrammatical redundancy.
+* **Correction:** Either remove "for" (changing it to "awaiting") or rewrite the verb structure entirely as "waiting for".
+
+#### `the arrival of the chief guest.` <- ✓ CORRECT
+
+* **Grammar Rule:** The direct object noun phrase is perfectly formatted with the accurate sequence of definite articles and prepositions.
