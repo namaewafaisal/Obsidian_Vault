@@ -1273,3 +1273,93 @@ $$\text{Subject} + \text{Verb 1 (-s)} + \text{Verb 2 (-es)} + \text{Verb 3 (-es)
 .
 * **Why the other options are wrong:**
 * **Option A**, **Option B**, and **Option C** all rely on the continuous participle form `relaxing`, which breaks the uniform parallel flow of the sentence.
+
+---
+
+# Complete the Sentence
+
+## 1. Despite his best efforts to conceal his anger ......
+
+### Options
+
+* A. we could detect that he was very happy
+* B. he failed to give us an impression of his agony
+* C. he succeeded in camouflaging his emotions
+* D. he could succeed in doing it easily
+* E. people came to know that he was annoyed (Correct Answer)
+
+### Explanation
+
+* **Why Option E is correct:** The connector **"Despite"** sets up a contrast between an action and its outcome. If he tried his best to *hide* his anger, the logical contrast is that he failed and people found out anyway. "Annoyed" is a direct synonym for angry.
+* **Why the others are wrong:** Option C and D contradict "Despite" because they claim he succeeded. Option A switches to happiness out of nowhere, and Option B uses "agony" instead of anger.
+
+---
+
+## 2. Even if it rains I shall come means ......
+
+### Options
+
+* A. if I come it will not rain
+* B. if it rains I shall not come
+* C. I will certainly come whether it rains or not (Correct Answer)
+* D. whenever there is rain I shall come
+* E. I am less likely to come if it rains
+
+### Explanation
+
+* **Why Option C is correct:** The phrase **"Even if"** means that the condition (rain) will not change the outcome. His arrival is guaranteed regardless of the weather.
+* **Why the others are wrong:** Options B and E say the exact opposite of the prompt. Option A creates an illogical cause-and-effect loop, and Option D changes a specific plan into a general habit ("whenever").
+
+---
+
+## 3. His appearance is unsmiling but ......
+
+### Options
+
+* A. his heart is full of compassion for others (Correct Answer)
+* B. he looks very serious on most occasions
+* C. people are afraid of him
+* D. he is uncompromising on matters of task performance
+* E. he is full of jealousy towards his colleagues
+
+### Explanation
+
+* **Why Option A is correct:** The conjunction **"but"** requires a positive trait to balance out his cold, unsmiling appearance. Having a heart full of compassion provides that exact internal vs. external contrast.
+* **Why the others are wrong:** Options B, C, D, and E all match or amplify the negative vibe of being "unsmiling" instead of contrasting it.
+
+---
+
+## 4. She never visits any zoo because she is strong opponent of the idea of ......
+
+### Options
+
+* A. setting the animals free into forest
+* B. feeding the animals while others are watching
+* C. watching the animals in their natural abode
+* D. going out of the house on a holiday
+* E. holding the animals in captivity for our joy (Correct Answer)
+
+### Explanation
+
+* **Why Option E is correct:** To explain *why* she boycotts zoos, the blank must define what a zoo fundamentally represents. Zoos hold wild animals in cages (**captivity**) for human entertainment.
+* **Why the others are wrong:** Options A and C describe the exact opposite of a zoo (freedom and natural habitats). Option B and D focus on minor details that don't capture the core purpose of a zoo.
+
+---
+
+## 5. I felt somewhat more relaxed ......
+
+### Options
+
+* A. but tense as compared to earlier
+* B. and tense as compared to earlier
+* C. as there was already no tension at all
+* D. and tension-free as compared to earlier (Correct Answer)
+* E. because the worry had already captured by mind
+
+### Explanation
+
+* **Why Option D is correct:** The comparative modifier "more relaxed" matches perfectly with the phrase **"and tension-free as compared to earlier"** to continue the peaceful tone.
+* **Why the others are wrong:** Options A and B introduce the word "tense," which clashes with feeling relaxed. Option C overstates things to a point of logical error, and Option E contradicts the idea of relaxation entirely.
+
+---
+
