@@ -239,3 +239,187 @@
 
 ## Antonyms
 
+---
+
+### 2.1. ENORMOUS
+❓ Question Word: Enormous — Very large in size, quantity, or extent.
+* **Soft** — Easy to mold, cut, or compress; not hard or firm.
+* **Average** — Mediocre or ordinary; constituting the normal amount or standard.
+* **Tiny** — Extremely small in size or scale. ✅
+* **Weak** — Lacking physical strength, energy, or power.
+
+---
+
+### 2.2. COMMISSIONED
+❓ Question Word: Commissioned — Formally brought into active service, appointed, or ordered to be made.
+* **Started** — Began an action, process, or journey.
+* **Closed** — Blocked against entry, or brought to a conclusion.
+* **Finished** — Brought to an end or completed.
+* **Terminated** — Brought to a premature or final end; dismissed from service. ✅
+
+---
+
+### 2.3. ARTIFICIAL
+❓ Question Word: Artificial — Made or produced by human beings rather than occurring naturally.
+* **Red** — A primary color resembling the color of blood or fire.
+* **Natural** — Existing in or caused by nature; not made or caused by humankind. ✅
+* **Truthful** — Telling or expressing the absolute truth; honest.
+* **Solid** — Firm and stable in shape; not liquid or fluid.
+
+---
+
+### 2.4. EXODUS
+❓ Question Word: Exodus — A mass departure or leaving of people.
+* **Influx** — An arrival or entry of large numbers of people or things. ✅
+* **Home-coming** — An instance of returning home or back to one's origins.
+* **Return** — The act of coming or going back to a place or condition.
+* **Restoration** — The act of returning something to its former condition or position.
+
+---
+
+### 2.5. RELINQUISH
+❓ Question Word: Relinquish — To voluntarily cease to keep or claim; give up.
+* **Abdicate** — To formally renounce a throne, high office, or function.
+* **Renounce** — To formally declare one's abandonment of a claim, right, or possession.
+* **Possess** — To own, keep, or occupy something as a property or characteristic. ✅
+* **Deny** — To state that something is untrue, or refuse to grant it.
+
+---
+
+### 2.6. EXPAND
+❓ Question Word: Expand — To become or make larger or more extensive in size.
+* **Convert** — To change something into a different form, state, or function.
+* **Condense** — To make something denser, more compact, or smaller in scope. ✅
+* **Congest** — To block or crowd a space or passage to excess.
+* **Conclude** — To bring something to an end, finish, or final judgment.
+
+---
+
+### 2.7. MORTAL
+❓ Question Word: Mortal — Subject to death or certain to die eventually.
+* **Divine** — Relating to, coming from, or proceeding from God or a god.
+* **Immortal** — Living forever; never dying or decaying. ✅
+* **Spiritual** — Relating to or affecting the human spirit or soul.
+* **Eternal** — Lasting or existing forever; without an end or beginning.
+
+---
+
+### 2.8. QUIESCENT
+❓ Question Word: Quiescent — In a state or period of temporary inactivity, rest, or dormancy.
+* **ACTIVE** — Engaging or ready to engage in physically energetic pursuits or operations. ✅
+* **Dormant** — Having normal physical functions suspended or slowed down for a time.
+* **Weak** — Lacking physical strength, intensity, or structural stability.
+* **Unconcerned** — Showing a lack of worry, care, or interest.
+
+---
+
+### 2.9. OBEYING
+❓ Question Word: Obeying — Complying with an order, request, law, or authority figure.
+* **Ordering** — Giving an authoritative instruction or command to someone. ✅
+* **Following** — Coming after or moving behind; adhering to a standard.
+* **Refusing** — Indicating an unwillingness to accept, do, or grant something.
+* **Contradicting** — Denying the truth of a statement by asserting the opposite.
+
+---
+
+### 2.10. FRAUDULENT
+❓ Question Word: Fraudulent — Obtained, done by, or involving criminal deception or dishonesty.
+* **Candid** — Truthful and straightforward; frank in talk or expression.
+* **Direct** — Proceeding in a straight line without detour or intermediate steps.
+* **Forthright** — Direct and outspoken; straightforward and honest.
+* **Genuine** — Truly what something is said to be; authentic and honest. ✅
+
+---
+
+### 2.11. FLAGITIOUS
+❓ Question Word: Flagitious — Deeply criminal, wicked, villainous, or shamefully scandalous.
+* **Innocent** — Free from moral wrong, sin, guilt, or specific crime. ✅
+* **Vapid** — Offering nothing that is stimulating, challenging, or interesting; bland.
+* **Ignorant** — Lacking knowledge, information, or awareness about something.
+* **Frivolous** — Not having any serious purpose, value, or maturity.
+
+---
+
+### 2.12. BELITTLE
+❓ Question Word: Belittle — To dismiss or describe someone or something as unimportant or small.
+* **Criticize** — To indicate the faults or shortcomings of someone or something disapprovingly.
+* **Flatter** — To praise someone excessively or insincerely, often for self-interest.
+* **Exaggerate** — To represent something as being larger, better, or worse than it really is. ✅
+* **Adore** — To love, respect, and admire someone or something deeply.
+
+---
+
+### 2.13. STARTLED
+❓ Question Word: Startled — Feeling or showing sudden shock, alarm, or surprise.
+* **Amused** — Finding something funny, entertaining, or mildly humorous.
+* **Relaxed** — Free from tension and anxiety; calm and at ease. ✅
+* **Endless** — Having or seeming to have no end, limit, or boundary.
+* **Astonished** — Greatly surprised, amazed, or shocked by something.
+
+---
+
+### 2.14. BUSY
+❓ Question Word: Busy — Actively engaged in work or another demanding activity.
+* **Occupied** — Busy or actively engaged in a specific task or thought.
+* **Engrossed** — Having all one's attention or interest completely absorbed by something.
+* **Relaxed** — At ease, resting, and completely free from stress or active duties. ✅
+* **Engaged** — Occupied or involved in an activity or committed to something.
+
+---
+
+### 2.15. FRESH
+❓ Question Word: Fresh — Recently made, gathered, or arrived; not stale or spoiled.
+* **Faulty** — Working incorrectly, damaged, or containing flaws.
+* **Sluggish** — Slow-moving, lacking energy, or reacting very slowly.
+* **Disgraceful** — Bringing or deserving severe shame, dishonor, or public disapproval.
+* **Stale** — No longer fresh, pleasant, or original; musty or dry. ✅
+
+---
+
+### 2.16. CULPABLE
+❓ Question Word: Culpable — Deserving blame or considered responsible for a wrongdoing.
+* **Defendable** — Capable of being justified, protected, or argued for successfully.
+* **Blameless** — Free from any guilt, wrongdoing, or responsibility for a mistake. ✅
+* **Careless** — Not giving sufficient attention or thought to avoiding harm or errors.
+* **Irresponsible** — Not showing a proper sense of duty, care, or accountability.
+
+---
+
+### 2.17. EVASIVE
+❓ Question Word: Evasive — Tending to avoid commitment or self-revelation, usually by responding indirectly.
+* **Free** — Able to act or move as one wishes; unrestricted.
+* **Honest** — Free of deceit and untruthfulness; sincere.
+* **Liberal** — Open to new behavior or opinions and willing to discard traditional values.
+* **Frank** — Open, honest, and direct in speech or writing, especially when blunt. ✅
+
+---
+
+### 2.18. GREGARIOUS
+❓ Question Word: Gregarious — Fond of company; highly sociable and comfortable in groups.
+* **Antisocial** — Not sociable or actively avoiding the company of others. ✅
+* **Glorious** — Having, bringing, or deserving great fame, honor, or beauty.
+* **Horrendous** — Extremely unpleasant, horrifying, or terrible in nature.
+* **Similar** — Resembling without being identical; sharing common traits.
+
+---
+
+### 2.19. AWARE
+❓ Question Word: Aware — Having knowledge or perception of a situation, fact, or development.
+* **Uncertain** — Not completely confident, sure, or decided about something.
+* **Ignorant** — Lacking knowledge, training, information, or awareness about something. ✅
+* **Sure** — Completely confident in the truth or accuracy of something.
+* **Doubtful** — Feeling uncertain or hesitant about something; unlikely.
+
+---
+
+### 2.20. HIRSUTE
+❓ Question Word: Hirsute — Covered with hair; hairy, shaggy, or bristly.
+* **Scaly** — Covered with small, thin, overlapping protective plates.
+* **Bald** — Having little or no hair on the head or body. ✅
+* **Erudite** — Having or showing great knowledge, learning, or scholarship.
+* **Quiet** — Making very little or no noise; peaceful or silent.
+
+---
+
+## Spotting Errors
+
