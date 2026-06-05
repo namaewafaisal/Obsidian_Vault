@@ -1363,3 +1363,274 @@ $$\text{Subject} + \text{Verb 1 (-s)} + \text{Verb 2 (-es)} + \text{Verb 3 (-es)
 
 ---
 
+## 6. It is not easy to remain tranquil when those around you ......
+
+### Options
+
+* A. behave in a socially acceptable manner
+* B. exhibit pleasant mannerism
+* C. are losing their heads (Correct Answer)
+* D. agree to whatever you say
+* E. exhibit generous and magnanimous gestures
+
+### Explanation
+
+* **Tranquil** means calm, peaceful, and undisturbed.
+* **Losing their heads** is an idiom that means panicking, getting angry, or acting irrationally.
+* **Why it's correct:** The word "when" sets up a challenging situation. It is hard to stay calm (**tranquil**) precisely when the people around you are panicking (**losing their heads**). All other options describe pleasant behavior, which would make staying calm easy.
+
+---
+
+## 7. "The food in this hotel is no match to what were forced at late hours in Hotel Kohinoor " means ......
+
+### Options
+
+* A. The food in this hotel is quite good compared to what we ate at kohinoor (Correct Answer)
+* B. Hotel kohinoor served us good quality food than what we get here
+* C. Both hotels have maintained good quality of food
+* D. Both hotels serve poor quality of food
+* E. it is better to eat food than remain hungry
+
+### Explanation
+
+* **No match to** means vastly superior to or much better than something else.
+* **Forced at late hours** implies they had to compromise and eat poor quality food at Kohinoor simply because it was late.
+* **Why it's correct:** Saying the current hotel's food is "no match" to Kohinoor's midnight food means the current hotel is much better than the bad food they were forced to eat before.
+
+---
+
+## 8. Although initial investigations pointed towards him ......
+
+### Options
+
+* A. the preceding events corroborated his involvement in the crime
+* B. the additional information confirmed his guilt
+* C. the subsequent events established that he was guilt
+* D. the subsequent events proved that he was innocent (Correct Answer)
+* E. he gave an open confession of his crime
+
+### Explanation
+
+* **Although** is a conjunction used to show a direct contradiction or surprise.
+* **Subsequent** means coming after something else; later.
+* **Why it's correct:** Because "Although" signals a complete plot twist, the fact that early clues pointed to his guilt must be countered by later (**subsequent**) evidence proving he did not do it.
+
+---
+
+## 9. The weather outside was extremely pleasant and hence we decided to ......
+
+### Options
+
+* A. utilise our time in watching the television
+* B. refrain from going out for a morning walk
+* C. enjoy a morning ride in the open (Correct Answer)
+* D. employ this rare opportunity for writing letters
+* E. remain seated in our rooms in the bungalow
+
+### Explanation
+
+* **Hence** means as a consequence; for this reason; therefore.
+* **Refrain** means to stop oneself from doing something.
+* **Why it's correct:** If the weather is beautiful, the logical consequence (**hence**) is to go outdoors and experience it directly ("in the open"). Options A, B, D, and E all describe staying indoors or avoiding the outside.
+
+---
+
+## 10. "It is an uphill task but you will have to do it" means ......
+
+### Options
+
+* A. The work is above the hill and you will have to do it
+* B. It is a very easy task but you must do it
+* C. It is very difficult task but you have to do it (Correct Answer)
+* D. This work is not reserved for you but you will have to do it
+* E. It is almost impossible for others but you can do it
+
+### Explanation
+
+* **An uphill task** is an idiom that means a major challenge requiring massive physical or mental effort (like walking up a steep mountain).
+* **Why it's correct:** It directly translates to a "very difficult task." The word "but" emphasizes that despite the extreme difficulty, completion is mandatory.
+  
+---
+
+## 11. " You are thinking very highly about Ravi but he is not so" means ......
+
+### Options
+
+* A. Ravi is as good as you think about him
+* B. You have a good opinion about Ravi but he is not as good as you think (Correct Answer)
+* C. Your view about Ravi is philosophical, keep it up
+* D. Ravi is much better, than what you think of him
+* E. You have a good opinion about Ravi but he does not have a good opinion about you
+
+### Explanation
+
+* **Thinking highly** means holding someone in great esteem or having an excellent opinion of them.
+* **Why it's correct:** The phrase "but he is not so" directly cuts down that high expectation. It means your positive view of him doesn't match the reality of who he is.
+
+---
+
+## 12. "Anand stuck up a friendship with Mahesh in just 2 days" means ......
+
+### Options
+
+* A. Anand friendship with Mahesh came to an end recently
+* B. Anand found out the other friends of Mahesh
+* C. Anand fixed a deal with Mahesh in 2 days
+* D. Anand's friendship with Mahesh lasted for 2 years
+* E. Anand became a friend of Mahesh in less than 2 days (Correct Answer)
+
+### Explanation
+
+* **Stuck up a friendship** (more commonly phrased as *struck up a friendship*) is an idiom that means to start or form a friendship with someone.
+* **Why it's correct:** It directly translates to becoming friends with someone within that short, specified timeline.
+
+---
+
+## 13. Although, he is reputed for making very candid statements ......
+
+### Options
+
+* A. his today speech was not fairly audible
+* B. his promises had always been realistic
+* C. his speech was very interesting
+* D. people follow whatever he instructs to them
+* E. his today's statements were very ambiguous (Correct Answer)
+
+### Explanation
+
+* **Candid** means completely truthful, direct, and straightforward.
+* **Ambiguous** means open to more than one interpretation; unclear or confusing.
+* **Why it's correct:** The conjunction "Although" tells us a contradiction is coming. If he is famous for being brutally clear and honest (**candid**), the twist is that his remarks today were completely confusing and unclear (**ambiguous**).
+
+---
+
+## 14. The manager would like you to help Dhiraj, means ......
+
+### Options
+
+* A. the manager would like you if you help Dhiraj
+* B. the manager desires you to help Dhiraj (Correct Answer)
+* C. the manager likes you because you help Dhiraj
+* D. Dhiraj expects the manager to tell you to help him
+* E. it will be a help to the manager if you like Dhiraj
+
+### Explanation
+
+* **Would like** is a polite, formal way to express a wish, want, or expectation.
+* **Desires** means strongly wishes or wants something to happen.
+* **Why it's correct:** The phrase simply re-states the boss's request directly: the manager wants (**desires**) you to step in and help.
+
+---
+
+## 15. Owing to the acute power shortage, the people of our locality have decided to ......
+
+### Options
+
+* A. dispense with other non-conventional energy sources
+* B. resort to abundant use of electricity for illumination
+* C. off-switch the electrical appliance while not in use
+* D. explore other avenues for utilising the excess power
+* E. resort to use of electricity only when it is inevitable (Correct Answer)
+
+### Explanation
+
+* **Acute** means severe, critical, or extreme.
+* **Inevitable** means completely unavoidable or absolutely necessary.
+* **Why it's correct:** If there is a critical (**acute**) power deficit, people must cut back heavily. Using electricity only when it is absolutely unavoidable (**inevitable**) is the most rational crisis response. (Option C uses broken, non-standard English phrasing "off-switch").
+
+---
+
+## 16. He has no money now ......
+
+### Options
+
+* A. although he was very poor once
+* B. as he has given up all his wealth (Correct Answer)
+* C. because he was very rich once
+* D. because he has received huge donation
+* E. because he was very greedy about wealth
+
+### Explanation
+
+* **As** functions here as a subordinating conjunction meaning "because" or "since."
+* **Why it's correct:** The clause explains the logical cause behind his empty pockets: he has no money *because* he willingly parted with (**has given up**) everything he owned. Options C and D introduce situations where he should logically have plenty of cash.
+
+---
+
+## 17. He is so lazy that he ......
+
+### Options
+
+* A. cannot depend on others for getting his work done
+* B. cannot delay the schedule of completing the work
+* C. can seldom complete his work on time (Correct Answer)
+* D. dislike to postpone the work that he undertakes to do
+* E. always help others to complete their work
+
+### Explanation
+
+* **Seldom** means rarely or fluids.
+* **Why it's correct:** The "so + adjective + that" structure creates a cause-and-effect baseline. If a person is incredibly lazy, the direct real-world result is that they rarely (**seldom**) finish tasks before deadlines. All other choices describe highly efficient, proactive habits.
+
+---
+
+## 18. Dinesh is as stupid as he is lazy means ......
+
+### Options
+
+* A. Dinesh is stupid because he is lazy
+* B. Dinesh is lazy because he is stupid
+* C. Dinesh is either stupid or lazy
+* D. Dinesh is hardly stupid but he is lazy
+* E. Dinesh is equally stupid and lazy (Correct Answer)
+
+### Explanation
+
+* **As... as** is a comparative structure used here to show an equal balance between two distinct qualities inside the same individual.
+* **Why it's correct:** It means his level of stupidity perfectly matches his level of laziness. They are present in equal measures, which translates directly to being **equally** stupid and lazy.
+
+---
+
+## 19. Practically, very little work could be completed in the last week as it was ......
+
+### Options
+
+* A. full of working days
+* B. a very hectic week
+* C. full of holidays (Correct Answer)
+* D. a very busy week
+* E. loaded with work
+
+### Explanation
+
+* **Practically** means virtually or almost.
+* **Why it's correct:** The conjunction "as" introduces the cause for zero productivity. If the week was completely **full of holidays**, the office or school was closed, making it logically impossible to complete any routine work. Options B, D, and E imply that a massive volume of work was active, which doesn't directly explain why "very little" actually got finalized.
+
+---
+
+## 20. Because he believes in democratic principles, he always ......
+
+### Options
+
+* A. decides all the matters himself
+* B. listen to others views and enforces his own
+* C. shown respect to others opinions if they match his own
+* D. reconciles with the majority views and gives us his own (Correct Answer)
+* E. imposes his own views on others
+
+### Explanation
+
+* **Democratic principles** rely on collective agreement, respecting the majority, and finding a shared middle ground.
+* **Reconciles** means to make consistent, harmonize, or settle differences.
+* **Why it's correct:** A democratic leader doesn't force single-minded views. Instead, he aligns and harmonizes (**reconciles**) his ideas with what the majority wants. All other options describe authoritarian or ego-driven behaviors (dictating things alone or forcing personal opinions).
+  
+---
+
+# Comprehension
+
+
+> [!NOTE] Not done
+
+---
+
+# 
