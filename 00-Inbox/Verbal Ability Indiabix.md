@@ -1036,3 +1036,240 @@ $$Why + did + subject + not + base\ verb?$$
 
 ---
 
+## 11. Shapes of gods and goddess are worshipped by people.
+
+### Options
+
+* **A. Images** (Correct Answer)
+* **B. Reflections**
+* **C. Clay shapes**
+* **D. Clay toys**
+* **E. No correction required**
+
+### Grammatical & Lexical Explanation
+
+* **Why the original sentence is wrong:** The phrase `Shapes of gods` is lexically weak and unnatural in English when referring to religious devotion. Furthermore, `goddess` is a singular noun that breaks parallelism with the plural noun `gods`.
+* **Why Option A is correct:** In the context of religious worship, the specific, established term for a physical, carved, or painted representation of a deity is an **"Image"** (or idol/statue). Replacing the awkward phrase with `Images` creates a natural, idiomatic sentence: *"Images of gods and goddesses..."*
+* **Why the other options are wrong:**
+* **Option B (Reflections)** refers to a mirror image or a surface throwback of light, which cannot be physically worshipped.
+* **Option C** and **Option D** are too restrictive; religious worship isn't limited exclusively to artifacts made of `Clay`.
+
+
+
+---
+
+## 12. In addition to enhanced their reputations through strategic use of philanthropy, companies are sponsoring social initiatives to open new markets.
+
+### Options
+
+* **A. of enhancing their reputation**
+* **B. to having enhance their reputation**
+* **C. to enhancing their reputation** (Correct Answer)
+* **D. to have their reputation enhancing**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The multi-word prepositional phrase **"In addition to"** requires its object to be either a noun or a **gerund** ($verb + ing$). The original sentence incorrectly uses the past participle verb `enhanced` after "to".
+* **Why Option C is correct:** In the phrase "In addition to", the word "to" functions as a true preposition, not as part of an infinitive verb. Because prepositions must be followed by a noun or noun equivalent, the verb must take the gerund form **enhancing**: 
+$$\text{In addition to} + \text{Gerund (-ing)} + \text{Object}$$
+
+
+.
+* **Why the other options are wrong:**
+* **Option A** incorrectly changes the fixed phrase "In addition to" into "In addition of".
+* **Option B** is ungrammatical because the auxiliary verb "having" must be followed by a past participle (*enhanced*), not a base verb (*enhance*).
+* **Option D** uses an awkward and ungrammatical passive continuous construction that alters the sentence's clarity.
+
+
+
+---
+
+## 13. The intruder stood quietly for few moments
+
+### Options
+
+* **A. for few time**
+* **B. for the few moments**
+* **C. for moments**
+* **D. for a few moments** (Correct Answer)
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** In English grammar, the standalone word `few` carries a negative meaning, implying "almost none" or "not enough". Using it here makes it sound as though no time passed at all.
+* **Why Option D is correct:** To express a positive, unspecified small quantity of time (a short duration), you must use the indefinite modifier phrase **"a few"**. Saying `for a few moments` accurately communicates that the intruder stood still for a brief period of time.
+* **Why the other options are wrong:**
+* **Option A** is completely ungrammatical because "few" can only modify countable plural nouns, whereas "time" is an uncountable noun.
+* **Option B** incorrectly introduces the definite article "the", which is only used if the sentence specifies *which* specific moments were being discussed.
+* **Option C** drops the quantifier entirely, making the duration sound vague and awkward.
+
+
+
+---
+
+## 14. The police has so far succeeded in recovering only a part of the stolen property.
+
+### Options
+
+* **A. thus far succeeded for recovery**
+* **B. so far succeeded in recovery of**
+* **C. as for as succeeded in recovery of**
+* **D. so far succeeded to recover**
+* **E. No correction required** (Correct Answer)
+
+### Grammatical Explanation
+
+* **Why the original sentence is correct:** The verb **succeeded** idiomatically pairs with the preposition **"in"**, which must then be followed by a gerund ($succeeded + in + verb\text{-}ing$). The adverbial phrase `so far` properly positions itself between the auxiliary verb and the main verb.
+> *Note on Subject-Verb Agreement:* While "police" is a collective noun that usually takes a plural verb (`have`) in modern English, standard sentence correction questions often focus on the underlined phrase's internal structure. Because the bold phrase `so far succeeded in recovering` perfectly follows standard prepositional idioms, no modification is needed.
+
+
+* **Why the other options are wrong:**
+* **Option A** pairs "succeeded" with the incorrect preposition "for".
+* **Option B** uses the abstract noun phrase "in recovery of", which is less direct and more awkward than the original gerund participle.
+* **Option C** uses "as for as", which is a complete misspelling of the comparative phrase *as far as*.
+* **Option D** incorrectly tries to follow "succeeded" with an infinitive phrase (`to recover`), violating the standard **succeed + in** idiom.
+
+
+
+---
+
+## 15. He confidentially asked the crowd if they thought he was right and the crowd shouted that they did.
+
+### Options
+
+* **A. that he did**
+* **B. that they had**
+* **C. that he is**
+* **D. that he didn't**
+* **E. No correction required** (Correct Answer)
+
+### Grammatical Explanation
+
+* **Why the original sentence is correct:** This sentence uses indirect speech set in the past tense. The clause `the crowd shouted that they did` uses the past auxiliary verb **did** as a **pro-verb** to avoid repeating the main action phrase (*that they thought he was right*). Because "crowd" is a collective noun representing multiple individuals shouting in agreement, the plural pronoun **they** is entirely accurate.
+* **Why the other options are wrong:**
+* **Option A**, **Option C**, and **Option D** change the pronoun to the singular `he`, which completely disrupts the meaning by making it sound like the crowd was shouting about what *the speaker* thought or did, rather than voicing their own collective agreement.
+* **Option B** shifts the auxiliary helper to `had`, which introduces an incorrect past perfect aspect that does not match the simple past tense established by `thought`.
+  
+  ---
+
+## 16. Why should the candidates be afraid of English Language is not clear.
+
+### Options
+
+* **A. the candidates should be** (Correct Answer)
+* **B. do the candidates be**
+* **C. should be the candidates**
+* **D. are the candidates**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The sentence is not a direct question; it is a complex statement where `Why should the candidates be afraid of English Language` acts as a **noun clause** serving as the subject of the main verb `is`. In English grammar, noun clauses must follow standard declarative word order ($Subject + Verb$), not inverted interrogative word order ($Verb + Subject$).
+* **Why Option A is correct:** Shifting the phrase to `Why the candidates should be` restores the correct declarative alignment: 
+$$\text{Wh- Word} + \text{Subject (the candidates)} + \text{Verb (should be)}$$
+
+
+. This allows the entire opening clause to sit perfectly as a singular subject block for the final predicate *is not clear*.
+* **Why the other options are wrong:**
+* **Option B**, **Option C**, and **Option D** all maintain an inverted auxiliary verb structure, which is exclusively reserved for direct questions ending in a question mark.
+
+
+
+---
+
+## 17. He found the gold coin as he cleans the floor.
+
+### Options
+
+* **A. as he had cleaned**
+* **B. while he cleans**
+* **C. which he is cleaning**
+* **D. while cleaning** (Correct Answer)
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** This sentence features a sharp mismatch in its timeline sequence. The main action `found` is in the simple past tense, but the subordinate time clause `as he cleans` uses the simple present tense, creating an illogical chronological split.
+* **Why Option D is correct:** To show that a sudden past action interrupted a longer, ongoing past activity, you can use a reduced adverbial clause using **"while + participle (-ing)"**. The phrase `while cleaning` elegantly handles this context, meaning *while he was cleaning*, without needing extra pronouns or tense markers.
+* **Why the other options are wrong:**
+* **Option B** and **Option C** keep the action stuck in the present tense (`cleans`, `is cleaning`), which fails to match the past tense action of finding the coin.
+* **Option A** uses the past perfect tense (`had cleaned`), which implies that the cleaning was already completely finished before he found the coin, which contradicts the concept of finding it during the act.
+
+
+
+---
+
+## 18. He admired the speed with which he completed the work and appreciating the method adopted by him
+
+### Options
+
+* **A. appreciate the method being adopted**
+* **B. appreciated the method adopted** (Correct Answer)
+* **C. appreciate the method of adoption**
+* **D. appreciated the method adopting method**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** This sentence violates the core rule of **parallel structure**. The coordinating conjunction `and` links two distinct actions performed by the same subject ("He"). The first action verb `admired` is in the simple past tense, so the second verb `appreciating` cannot randomly shift into a present participle form.
+* **Why Option B is correct:** Shifting the second verb to the simple past tense form **appreciated** establishes structural symmetry with the initial verb *admired*: 
+$$\text{Subject} + \text{Verb 1 (past)} + \dots + \text{and} + \text{Verb 2 (past)}$$
+
+
+.
+* **Why the other options are wrong:**
+* **Option A** and **Option C** use the base form verb `appreciate`, which breaks tense consistency and causes a subject-verb agreement error with the singular past subject *He*.
+* **Option D** introduces a clumsy and repetitive phrase pattern (`adopting method`) that degrades the sentence layout.
+
+
+
+---
+
+## 19. Maria unnecessarily picked up a quarrel with Rani and left the party hurried.
+
+### Options
+
+* **A. has picked up**
+* **B. picked on**
+* **C. picked** (Correct Answer)
+* **D. picking up**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The phrasal verb `picked up` means to lift an object, collect someone, or acquire a habit. When referring to initiating a dispute, argument, or fight with someone, the correct, established idiom in standard English is simply **"picked a quarrel"**. The addition of the preposition "up" is redundant and incorrect in this specific phrase context.
+* **Why Option C is correct:** Removing the filler word "up" yields the exact idiomatic formula: 
+$$\text{to pick a quarrel with someone}$$
+
+
+. This allows the sentence to read smoothly and naturally in the past tense.
+* **Why the other options are wrong:**
+* **Option A** uses the present perfect tense, which contradicts the simple past tense context established by the parallel verb *left*.
+* **Option B** uses `picked on`, which means to tease, bully, or harass someone repeatedly, altering the original meaning of initiating a singular dispute.
+* **Option D** uses a participle form that breaks parallel alignment with the past tense verb *left*.
+
+
+
+---
+
+## 20. She cooks, washes dishes, does her homework and then relaxing.
+
+### Options
+
+* **A. relaxing then**
+* **B. then is relaxing**
+* **C. relaxing is then**
+* **D. then relaxes** (Correct Answer)
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** This sentence presents a serialized list of actions performed sequentially by a single subject ("She"). The first three items in the series are formatted using the simple present tense third-person singular form (`cooks`, `washes`, `does`). To maintain a proper **parallel structure**, the final item after the conjunction cannot shift to the participle form `relaxing`.
+* **Why Option D is correct:** Choosing `then relaxes` uses the required simple present third-person singular form, matching the rest of the chain perfectly: 
+$$\text{Subject} + \text{Verb 1 (-s)} + \text{Verb 2 (-es)} + \text{Verb 3 (-es)} + \text{and then} + \text{Verb 4 (-es)}$$
+
+
+.
+* **Why the other options are wrong:**
+* **Option A**, **Option B**, and **Option C** all rely on the continuous participle form `relaxing`, which breaks the uniform parallel flow of the sentence.
