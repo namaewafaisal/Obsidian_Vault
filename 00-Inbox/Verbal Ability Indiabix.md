@@ -423,3 +423,171 @@
 
 ## Spotting Errors
 
+### 1. We discussed about the problem so thoroughly on the eve of the examination that I found it very easy to work it out
+
+#### `We discussed about the problem so thoroughly` <- ❌ INCORRECT
+
+* **Grammar Rule:** "Discuss" is a transitive verb, meaning it directly acts on its object without needing a preposition. Adding "about" is redundant because the definition of "discuss" already translates to "to talk about".
+* **Correction:** Remove the word "about".
+
+#### `on the eve of the examination` <- ✓ CORRECT
+
+* **Grammar Rule:** The preposition "on" is correctly implemented here to designate a specific day or time frame (the eve). The phrase structure is completely accurate.
+
+#### `that I found it very easy to work it out` <- ✓ CORRECT
+
+* **Grammar Rule:** This accurately completes the consecutive modifier structure "so + [adverb] + that + [clause]". The phrasal verb "work it out" correctly splits around the objective pronoun "it".
+
+---
+
+### 2. An Indian ship laden with merchandise got drowned in the Pacific Ocean.
+
+#### `An Indian ship` <- ✓ CORRECT
+
+* **Grammar Rule:** Properly uses the indefinite article "An" before a proper adjective that initiates with a vowel sound ("Indian").
+
+#### `laden with merchandise` <- ✓ CORRECT
+
+* **Grammar Rule:** "Laden" serves as a past participle functioning as an adjective meaning "heavily loaded", which idiomatically pairs with the preposition "with".
+
+#### `got drowned in the Pacific Ocean.` <- ❌ INCORRECT
+
+* **Grammar Rule:** In English syntax, "drown" is exclusively reserved for living beings that perish from suffocation in fluid. Non-living objects like ships, boats, or cargo "sink" (past tense: "sank").
+* **Correction:** Change "got drowned" to "sank".
+
+---
+
+### 3. I could not put up in a hotel because the boarding and lodging charges were exorbitant.
+
+#### `I could not put up in a hotel` <- ❌ INCORRECT
+
+* **Grammar Rule:** The phrasal verb "put up" signifies lodging or staying temporarily. When referring to establishing oneself at a physical business or building, it idiomatically requires the preposition "at", not "in".
+* **Correction:** Change "in a hotel" to "at a hotel".
+
+#### `because the boarding and lodging charges` <- ✓ CORRECT
+
+* **Grammar Rule:** "Because" functions correctly as a subordinating conjunction introducing a dependent clause of reason. The compound noun phrase is structurally sound.
+
+#### `were exorbitant.` <- ✓ CORRECT
+
+* **Grammar Rule:** The plural past-tense helping verb "were" correctly matches the plural head noun of the compound subject phrase ("charges"). "Exorbitant" functions accurately as the predicate adjective.
+
+---
+
+### 4. The Indian radio which was previously controlled by the British rulers is free now from the narrow vested interests.
+
+#### `The Indian radio` <- ✓ CORRECT
+
+* **Grammar Rule:** A clear noun phrase with a proper adjective, correctly initiated with the definite article "The" to identify a specific national entity.
+
+#### `which was previously controlled by the British rulers` <- ✓ CORRECT
+
+* **Grammar Rule:** A non-restrictive relative clause correctly introduced by the relative pronoun "which". The passive voice structure ("was controlled by") accurately attributes agency to the past actors.
+
+#### `is free now from the narrow vested interests.` <- ❌ INCORRECT
+
+* **Grammar Rule:** This is an error of adverb placement. Mid-position adverbs of time like "now" should be placed directly before the adjective or predicate they modify, immediately following the linking verb "is".
+* **Correction:** Shift "now" to read "...is now free from...".
+
+---
+
+### 5. If I had known this yesterday I will have helped him.
+
+#### `If I had known` <- ✓ CORRECT
+
+* **Grammar Rule:** This correctly initializes a conditional clause for a Third Conditional sentence (representing a hypothetical, unreal past event) using "If" paired with the past perfect tense ("had" + past participle).
+
+#### `this yesterday` <- ✓ CORRECT
+
+* **Grammar Rule:** The demonstrative pronoun "this" acts as the direct object of the verb "known", anchored by the past adverb of time "yesterday" which warrants the past perfect construction.
+
+#### `I will have helped him.` <- ❌ INCORRECT
+
+* **Grammar Rule:** Third conditional rules strictly mandate that a past perfect if-clause must pair with a perfect conditional structure in the consequence clause: 
+$$would / could / might + have + past\ participle$$
+. Utilizing the simple future modal "will" breaks the required sequence of tenses.
+* **Correction:** Change "will" to "would".
+
+---
+
+### 6. A lot of travel delay is caused due to the inefficiency and lack of good management on behalf of the railways.
+
+#### `A lot of travel delay is caused` <- ✓ CORRECT
+
+* **Grammar Rule:** The subject phrase "A lot of travel delay" uses "delay" as an uncountable mass noun here, which correctly takes the singular passive verb "is caused".
+
+#### `due to the inefficiency and lack of good management` <- ✓ CORRECT
+
+* **Grammar Rule:** The compound preposition "due to" is used correctly to introduce the reasons ("inefficiency and lack of good management") modifying the main cause.
+
+#### `on behalf of the railways.` <- ❌ INCORRECT
+
+* **Grammar Rule:** The idiom "on behalf of" means "as the representative of" or "in the interest of" someone else. When talking about a fault, action, or responsibility belonging to a specific group, the correct idiomatic phrase is "on the part of".
+* **Correction:** Change "on behalf of" to "on the part of".
+
+---
+
+### 7. One of the members expressed doubt if the Minister was an atheist.
+
+#### `One of the members` <- ✓ CORRECT
+
+* **Grammar Rule:** The structure "One of + [plural noun]" matches perfectly with standard subject-verb agreement rules, setting up a singular focus for the rest of the sentence.
+
+#### `expressed doubt if` <- ❌ INCORRECT
+
+* **Grammar Rule:** In formal affirmative statements, the noun "doubt" should be followed by a noun clause introduced by the conjunction "that", not "if" or "whether". "If" is typically reserved for conditional clauses or when expressing an alternative choice in interrogative settings.
+* **Correction:** Change "if" to "that".
+
+#### `the Minister was an atheist.` <- ✓ CORRECT
+
+* **Grammar Rule:** The past tense verb "was" correctly maintains the sequence of tenses established by the main past tense verb "expressed".
+
+---
+
+### 8. I have got my M.Sc. degree in 1988.
+
+#### `I have got` <- ❌ INCORRECT
+
+* **Grammar Rule:** The present perfect tense ("have got") cannot be paired with a specific, finished past time marker. Whenever a definite time in the past is mentioned, you must use the simple past tense.
+* **Correction:** Change "I have got" to "I got".
+
+#### `my M.Sc. degree` <- ✓ CORRECT
+
+* **Grammar Rule:** The noun phrase is perfectly fine. The possessive pronoun "my" accurately pairs with the object noun phrase.
+
+#### `in 1988.` <- ✓ CORRECT
+
+* **Grammar Rule:** The preposition "in" is the correct choice for indicating a specific calendar year.
+
+---
+
+### 9. Having received your letter this morning, we are writing to thank you for the same.
+
+#### `Having received your letter` <- ✓ CORRECT
+
+* **Grammar Rule:** This utilizes a perfect participle clause ("Having + past participle") which correctly shows that one action (receiving the letter) was completed before the next action (writing back) begins.
+
+#### `this morning, we are writing` <- ✓ CORRECT
+
+* **Grammar Rule:** The temporal adverb phrase "this morning" serves as a valid timeframe, and the present continuous "we are writing" cleanly fits the immediate real-time intent of the communication.
+
+#### `to thank you for the same.` <- ✓ CORRECT
+
+* **Grammar Rule:** The infinitive purpose phrase "to thank you" is structurally sound. While "for the same" is a slightly old-fashioned business/formal phrasing style referring back to the letter, it does not violate any core rules of English grammar.
+
+---
+
+### 10. If you lend him a book he will lend it to some one else and never you will get it back.
+
+#### `If you lend him a book` <- ✓ CORRECT
+
+* **Grammar Rule:** This sets up a standard First Conditional structure using "If" + simple present tense to state a possible real-world scenario.
+
+#### `he will lend it to some one else` <- ✓ CORRECT
+
+* **Grammar Rule:** This satisfies the consequence side of the First Conditional by properly using the simple future structure ("will" + base verb).
+
+#### `and never you will get it back.` <- ❌ INCORRECT
+
+* **Grammar Rule:** This is an error of **adverb placement**. The frequency adverb "never" is poorly positioned at the start of the clause. In standard declarative English syntax, frequency adverbs should be placed right after the auxiliary/helping verb ("will") and before the main verb ("get").
+* **Correction:** Shift "never" to read "...and you will never get it back."
