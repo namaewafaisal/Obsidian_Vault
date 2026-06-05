@@ -806,3 +806,233 @@ $$would / could / might + have + past\ participle$$
 ---
 
 # Sentence Correction
+
+## 1. The small child does whatever his father was done.
+
+### Options
+
+* **A. has done**
+* **B. did**
+* **C. does** (Correct Answer)
+* **D. had done**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The bold phrase `was done` is in the passive voice. If you look at the structure, it implies that the father himself was completed or performed by someone else, which makes absolutely no sense in this context.
+* **Why Option C is correct:** This sentence establishes a general truth or a habitual action about the child's behavior. Habitual actions and general truths are governed by the **Simple Present Tense**. The main verb `does` is in the simple present tense, so the dependent clause must mirror this tense structure to maintain logical symmetry: 
+$$Subject (singular) + Verb (s/es)$$
+
+
+. Therefore, `his father does` is the only choice that cleanly shows a parallel habit.
+* **Why the other options are wrong:**
+* **Option A (has done)** changes the aspect to the present perfect, implying a focus on past completed actions affecting the present, rather than a universal habit.
+* **Option B (did)** and **Option D (had done)** shift the timeline into the past, breaking the simple present sequence established by the opening verb `does`.
+
+
+
+---
+
+## 2. You need not come unless you want to.
+
+### Options
+
+* **A. You don't need to come unless you want to**
+* **B. You come only when you want to**
+* **C. You come unless you don't want to**
+* **D. You needn't come until you don't want to**
+* **E. No correction required** (Correct Answer)
+
+### Grammatical Explanation
+
+* **Why the original sentence is correct:** The original sentence uses `need` as a **modal auxiliary verb** expressing absence of obligation. When used as a negative modal, it is perfectly valid to format it as `need not` + bare infinitive (`come`). Furthermore, `unless` is a conditional conjunction meaning "if... not", which smoothly introduces the exception clause `unless you want to` (if you do not want to, you don't have to come).
+* **Why the other options are wrong:**
+* **Option A** is grammatically correct on its own as an alternative phrasing (using `need` as a main verb), but it doesn't offer any structural improvement over the original clean modal formulation.
+* **Option B** changes the tone entirely to a command rather than an optional choice.
+* **Option C** and **Option D** introduce an ungrammatical **double negative** conflict; because `unless` and `until` already carry negative weight, adding `don't` directly after them breaks standard semantic syntax rules.
+
+
+
+---
+
+## 3. There are not many men who are so famous that they are frequently referred to by their short names only
+
+### Options
+
+* **A. initials** (Correct Answer)
+* **B. signatures**
+* **C. pictures**
+* **D. middle names**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The phrase `short names` is textually weak and colloquially ambiguous. In professional or mainstream contexts, famous individuals who reach a massive level of global recognition are typically referenced merely by the first letters of their names (e.g., MKG, JFK, SRK).
+* **Why Option A is correct:** The word `initials` fits the structural context of extreme fame. It refers precisely to the arrangement of the first letter of each word in a person's name. It acts as a concise and universally recognized noun modifier in English vocabulary exercises for identifying people at a glance.
+* **Why the other options are wrong:**
+* **Option B (signatures)** is irrelevant because people do not verbally refer to someone out loud by their handwritten legal signature.
+* **Option C (pictures)** violates the phrase `referred to by`, which demands a linguistic identifier, not a visual graphic medium.
+* **Option D (middle names)** doesn't fit because very few public figures are uniquely recognizable solely by a middle name alone.
+
+
+
+---
+
+## 4. The man to who I sold my house was a cheat.
+
+### Options
+
+* **A. to whom I sell**
+* **B. to who I sell**
+* **C. who was sold to**
+* **D. to whom I sold** (Correct Answer)
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The pronoun `who` is a subjective pronoun, meaning it can only stand in as the agent performing a verb. In this phrase, the pronoun is placed directly after the preposition `to`, meaning it is acting as the **object of a preposition**.
+* **Why Option D is correct:** Grammatical convention states that when a relative pronoun functions as the object of a preposition or receiving an action, you must use the objective form **whom**. Furthermore, because the overarching main verb of the sentence is past tense (`was a cheat`), the relative clause must remain in the past tense (`sold`) to ensure chronological consistency.
+* **Why the other options are wrong:**
+* **Option A** correctly shifts to `whom`, but errantly changes the action to the present tense `sell`, which contradicts the past tense reality that the house was already bought by a cheat.
+* **Option B** fails to correct the core objective pronoun error (`who`).
+* **Option C** switches the word order into a passive reading that implies the *man* himself was sold to someone else, destroying the intended meaning.
+
+
+
+---
+
+## 5. They were all shocked at his failure in the competition.
+
+### Options
+
+* **A. were shocked at all**
+* **B. had all shocked at**
+* **C. had all shocked by**
+* **D. had been all shocked on**
+* **E. No correction required** (Correct Answer)
+
+### Grammatical Explanation
+
+* **Why the original sentence is correct:** The adjective/participle `shocked` is idiomatically paired with the preposition **at** when referring to an event, result, or piece of news (e.g., *shocked at the news*, *shocked at his behavior*). The placement of the word `all` directly after the linking verb `were` cleanly modifies the collective pronoun subject `They`.
+* **Why the other options are wrong:**
+* **Option A** repositions `all` to the end of the phrase, which changes its meaning entirely to the idiom "at all" (meaning "not even a little bit"), twisting a positive shock into a completely negative statement.
+* **Option B** and **Option C** omit the critical passive helping verb `been`, which leaves the past perfect structure sounding as if "They" were the active entities doing the shocking to someone else.
+* **Option D** uses the ungrammatical preposition pairing `shocked on`, which violates standard prepositional idioms.
+
+---
+
+## 6. I need not offer any explanation regarding this incident - my behaviour is speaking itself.
+
+### Options
+
+* **A. will speak to itself**
+* **B. speaks for itself** (Correct Answer)
+* **C. has been speaking**
+* **D. speaks about itself**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The bold phrase `is speaking itself` uses the present continuous tense incorrectly to express an established truth, and it lacks the necessary preposition to form a logical idiom.
+* **Why Option B is correct:** This sentence deals with a universal truth or clear evidence, which requires the **Simple Present Tense**. Furthermore, it must use the precise English idiom **"speaks for itself"**. This idiom means that something's meaning, quality, or truth is so obvious that it does not need any additional explanation or defense.
+* **Why the other options are wrong:**
+* **Option A** and **Option D** alter the preposition to `to` or `about`, which completely destroys the standard idiom and changes the meaning into nonsense.
+* **Option C** uses the present perfect continuous tense (`has been speaking`), which sounds as if the person's behavior has physically been talking out loud over a period of time.
+
+
+
+---
+
+## 7. He is too important for tolerating any delay.
+
+### Options
+
+* **A. to tolerate** (Correct Answer)
+* **B. to tolerating**
+* **C. at tolerating**
+* **D. with tolerating**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The prepositional phrase `for tolerating` is ungrammatical here. When using the adverbial intensive construction **"too + adjective"**, it must be followed by an **infinitive phrase** ($to + base\ verb$) to express a negative consequence or limitation.
+* **Why Option A is correct:** The formula **"too + adjective + to + infinitive"** means that someone or something has an excessive amount of a quality, making a certain action impossible or unacceptable. Thus, `too important to tolerate` correctly communicates that because of his high importance, he cannot and will not tolerate delays.
+* **Why the other options are wrong:**
+* **Option B** incorrectly mixes the infinitive marker `to` with a gerund (`tolerating`).
+* **Option C** and **Option D** replace the structure with incorrect prepositions (`at`, `with`) that fail to complete the required grammatical correlation with the adverb `too`.
+
+
+
+---
+
+## 8. The population of Tokyo is greater than that of any other town in the world.
+
+### Options
+
+* **A. greatest among any other**
+* **B. greater than all other**
+* **C. greater than those of any other**
+* **D. greater than any other**
+* **E. No correction required** (Correct Answer)
+
+### Grammatical Explanation
+
+* **Why the original sentence is correct:** This sentence evaluates a singular attribute (`the population`) of one city against the same attribute of other cities. To avoid comparing a *population* directly to a physical *town* (a logical fallacy), the singular pronoun **"that of"** is properly inserted to stand in for "the population of". Additionally, because Tokyo is itself a town in the world, the word **"other"** must be included to exclude Tokyo from the comparison group so it isn't being compared to itself.
+* **Why the other options are wrong:**
+* **Option A** incorrectly mixes the superlative degree adjective `greatest` with the comparative modifier `any other`.
+* **Option B** leaves out the necessary pronoun phrase "that of", which creates an illogical comparison: *The population of Tokyo is greater than all other towns*.
+* **Option C** uses the plural pronoun `those of`, which is a mismatch since the subject entity we are comparing (`population`) is strictly singular.
+* **Option D** also drops "that of", creating the same illogical comparison error as Option B.
+
+
+
+---
+
+## 9. The performance of our players was rather worst than I had expected.
+
+### Options
+
+* **A. bad as I had expected**
+* **B. worse than I had expected** (Correct Answer)
+* **C. worse than expectation**
+* **D. worst than was expected**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The sentence uses the conjunction `than`, which signals a direct comparison between two things (the actual performance vs. the expected performance). Using the superlative adjective `worst` breaks comparative rules, as superlatives are only used when comparing three or more things.
+* **Why Option B is correct:** A direct comparison between two scenarios mandates the **Comparative Degree** of an irregular adjective ($bad \rightarrow worse \rightarrow worst$). Therefore, the comparative form `worse` must be used alongside the conjunction `than`. The past perfect modifier clause `I had expected` is also properly framed to show an expectation formed prior to the game.
+* **Why the other options are wrong:**
+* **Option A** drops the essential comparative indicator `than` and fails to establish a proper equative structure (which would require *as bad as*).
+* **Option C** condenses the phrase to "worse than expectation", which sounds awkward and less idiomatically precise than the full clause.
+* **Option D** retains the incorrect superlative form `worst`.
+
+
+
+---
+
+## 10. Why did you not threw the bag away?
+
+### Options
+
+* **A. did you not throw** (Correct Answer)
+* **B. had you not threw**
+* **C. did you not thrown**
+* **D. you did not thrown**
+* **E. No correction required**
+
+### Grammatical Explanation
+
+* **Why the original sentence is wrong:** The sentence uses the past-tense helping verb `did` to form a negative question. In English grammar, when an auxiliary verb like *do/did* is used to show tense, the main action verb that follows it **must remain in its base form** (infinitive without to). Using `did` alongside the past-tense verb `threw` creates an ungrammatical double past tense error.
+* **Why Option A is correct:** Following the interrogative formula: 
+$$Why + did + subject + not + base\ verb?$$
+
+
+, the main verb must shift cleanly to its base form, which is `throw`. This keeps the sentence structurally sound and simple.
+* **Why the other options are wrong:**
+* **Option B** pairs the auxiliary verb `had` with a simple past verb `threw` instead of the required past participle (*thrown*).
+* **Option C** pairs `did` with a past participle `thrown`, violating the rule requiring a base verb.
+* **Option D** uses an incorrect word order for a direct question and incorrectly drops the root form of the verb.
+
+---
+
