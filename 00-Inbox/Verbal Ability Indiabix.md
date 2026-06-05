@@ -237,12 +237,14 @@
 
 ---
 
-## Antonyms
+# Antonyms
 
 ---
 
-### 2.1. ENORMOUS
+## 2.1. ENORMOUS
+
 ❓ Question Word: Enormous — Very large in size, quantity, or extent.
+
 * **Soft** — Easy to mold, cut, or compress; not hard or firm.
 * **Average** — Mediocre or ordinary; constituting the normal amount or standard.
 * **Tiny** — Extremely small in size or scale. ✅
@@ -250,26 +252,30 @@
 
 ---
 
-### 2.2. COMMISSIONED
+## 2.2. COMMISSIONED
+
 ❓ Question Word: Commissioned — Formally brought into active service, appointed, or ordered to be made.
+
 * **Started** — Began an action, process, or journey.
 * **Closed** — Blocked against entry, or brought to a conclusion.
 * **Finished** — Brought to an end or completed.
 * **Terminated** — Brought to a premature or final end; dismissed from service. ✅
 
 ---
+## 2.3. ARTIFICIAL
 
-### 2.3. ARTIFICIAL
 ❓ Question Word: Artificial — Made or produced by human beings rather than occurring naturally.
+
 * **Red** — A primary color resembling the color of blood or fire.
 * **Natural** — Existing in or caused by nature; not made or caused by humankind. ✅
 * **Truthful** — Telling or expressing the absolute truth; honest.
 * **Solid** — Firm and stable in shape; not liquid or fluid.
 
 ---
+## 2.4. EXODUS
 
-### 2.4. EXODUS
 ❓ Question Word: Exodus — A mass departure or leaving of people.
+
 * **Influx** — An arrival or entry of large numbers of people or things. ✅
 * **Home-coming** — An instance of returning home or back to one's origins.
 * **Return** — The act of coming or going back to a place or condition.
@@ -277,8 +283,10 @@
 
 ---
 
-### 2.5. RELINQUISH
+## 2.5. RELINQUISH
+
 ❓ Question Word: Relinquish — To voluntarily cease to keep or claim; give up.
+
 * **Abdicate** — To formally renounce a throne, high office, or function.
 * **Renounce** — To formally declare one's abandonment of a claim, right, or possession.
 * **Possess** — To own, keep, or occupy something as a property or characteristic. ✅
@@ -286,8 +294,10 @@
 
 ---
 
-### 2.6. EXPAND
+## 2.6. EXPAND
+
 ❓ Question Word: Expand — To become or make larger or more extensive in size.
+
 * **Convert** — To change something into a different form, state, or function.
 * **Condense** — To make something denser, more compact, or smaller in scope. ✅
 * **Congest** — To block or crowd a space or passage to excess.
@@ -295,8 +305,10 @@
 
 ---
 
-### 2.7. MORTAL
+## 2.7. MORTAL
+
 ❓ Question Word: Mortal — Subject to death or certain to die eventually.
+
 * **Divine** — Relating to, coming from, or proceeding from God or a god.
 * **Immortal** — Living forever; never dying or decaying. ✅
 * **Spiritual** — Relating to or affecting the human spirit or soul.
@@ -304,8 +316,10 @@
 
 ---
 
-### 2.8. QUIESCENT
+## 2.8. QUIESCENT
+
 ❓ Question Word: Quiescent — In a state or period of temporary inactivity, rest, or dormancy.
+
 * **ACTIVE** — Engaging or ready to engage in physically energetic pursuits or operations. ✅
 * **Dormant** — Having normal physical functions suspended or slowed down for a time.
 * **Weak** — Lacking physical strength, intensity, or structural stability.
@@ -313,8 +327,10 @@
 
 ---
 
-### 2.9. OBEYING
+## 2.9. OBEYING
+
 ❓ Question Word: Obeying — Complying with an order, request, law, or authority figure.
+
 * **Ordering** — Giving an authoritative instruction or command to someone. ✅
 * **Following** — Coming after or moving behind; adhering to a standard.
 * **Refusing** — Indicating an unwillingness to accept, do, or grant something.
@@ -322,8 +338,10 @@
 
 ---
 
-### 2.10. FRAUDULENT
+## 2.10. FRAUDULENT
+
 ❓ Question Word: Fraudulent — Obtained, done by, or involving criminal deception or dishonesty.
+
 * **Candid** — Truthful and straightforward; frank in talk or expression.
 * **Direct** — Proceeding in a straight line without detour or intermediate steps.
 * **Forthright** — Direct and outspoken; straightforward and honest.
@@ -331,8 +349,10 @@
 
 ---
 
-### 2.11. FLAGITIOUS
+## 2.11. FLAGITIOUS
+
 ❓ Question Word: Flagitious — Deeply criminal, wicked, villainous, or shamefully scandalous.
+
 * **Innocent** — Free from moral wrong, sin, guilt, or specific crime. ✅
 * **Vapid** — Offering nothing that is stimulating, challenging, or interesting; bland.
 * **Ignorant** — Lacking knowledge, information, or awareness about something.
@@ -340,8 +360,10 @@
 
 ---
 
-### 2.12. BELITTLE
+## 2.12. BELITTLE
+
 ❓ Question Word: Belittle — To dismiss or describe someone or something as unimportant or small.
+
 * **Criticize** — To indicate the faults or shortcomings of someone or something disapprovingly.
 * **Flatter** — To praise someone excessively or insincerely, often for self-interest.
 * **Exaggerate** — To represent something as being larger, better, or worse than it really is. ✅
@@ -349,8 +371,10 @@
 
 ---
 
-### 2.13. STARTLED
+## 2.13. STARTLED
+
 ❓ Question Word: Startled — Feeling or showing sudden shock, alarm, or surprise.
+
 * **Amused** — Finding something funny, entertaining, or mildly humorous.
 * **Relaxed** — Free from tension and anxiety; calm and at ease. ✅
 * **Endless** — Having or seeming to have no end, limit, or boundary.
@@ -358,8 +382,10 @@
 
 ---
 
-### 2.14. BUSY
+## 2.14. BUSY
+
 ❓ Question Word: Busy — Actively engaged in work or another demanding activity.
+
 * **Occupied** — Busy or actively engaged in a specific task or thought.
 * **Engrossed** — Having all one's attention or interest completely absorbed by something.
 * **Relaxed** — At ease, resting, and completely free from stress or active duties. ✅
@@ -367,8 +393,10 @@
 
 ---
 
-### 2.15. FRESH
+## 2.15. FRESH
+
 ❓ Question Word: Fresh — Recently made, gathered, or arrived; not stale or spoiled.
+
 * **Faulty** — Working incorrectly, damaged, or containing flaws.
 * **Sluggish** — Slow-moving, lacking energy, or reacting very slowly.
 * **Disgraceful** — Bringing or deserving severe shame, dishonor, or public disapproval.
@@ -376,8 +404,10 @@
 
 ---
 
-### 2.16. CULPABLE
+## 2.16. CULPABLE
+
 ❓ Question Word: Culpable — Deserving blame or considered responsible for a wrongdoing.
+
 * **Defendable** — Capable of being justified, protected, or argued for successfully.
 * **Blameless** — Free from any guilt, wrongdoing, or responsibility for a mistake. ✅
 * **Careless** — Not giving sufficient attention or thought to avoiding harm or errors.
@@ -385,8 +415,10 @@
 
 ---
 
-### 2.17. EVASIVE
+## 2.17. EVASIVE
+
 ❓ Question Word: Evasive — Tending to avoid commitment or self-revelation, usually by responding indirectly.
+
 * **Free** — Able to act or move as one wishes; unrestricted.
 * **Honest** — Free of deceit and untruthfulness; sincere.
 * **Liberal** — Open to new behavior or opinions and willing to discard traditional values.
@@ -394,8 +426,10 @@
 
 ---
 
-### 2.18. GREGARIOUS
+## 2.18. GREGARIOUS
+
 ❓ Question Word: Gregarious — Fond of company; highly sociable and comfortable in groups.
+
 * **Antisocial** — Not sociable or actively avoiding the company of others. ✅
 * **Glorious** — Having, bringing, or deserving great fame, honor, or beauty.
 * **Horrendous** — Extremely unpleasant, horrifying, or terrible in nature.
@@ -403,275 +437,372 @@
 
 ---
 
-### 2.19. AWARE
+## 2.19. AWARE
+
 ❓ Question Word: Aware — Having knowledge or perception of a situation, fact, or development.
+
 * **Uncertain** — Not completely confident, sure, or decided about something.
 * **Ignorant** — Lacking knowledge, training, information, or awareness about something. ✅
 * **Sure** — Completely confident in the truth or accuracy of something.
-* **Doubtful** — Feeling uncertain or hesitant about something; unlikely.
+* **Doubtful** feeling uncertain or hesitant about something; unlikely.
 
 ---
 
-### 2.20. HIRSUTE
+## 2.20. HIRSUTE
+
 ❓ Question Word: Hirsute — Covered with hair; hairy, shaggy, or bristly.
+
 * **Scaly** — Covered with small, thin, overlapping protective plates.
 * **Bald** — Having little or no hair on the head or body. ✅
 * **Erudite** — Having or showing great knowledge, learning, or scholarship.
 * **Quiet** — Making very little or no noise; peaceful or silent.
 
 ---
+# Spotting Errors
 
-## Spotting Errors
+## 1. We discussed about the problem so thoroughly on the eve of the examination that I found it very easy to work it out
 
-### 1. We discussed about the problem so thoroughly on the eve of the examination that I found it very easy to work it out
-
-#### `We discussed about the problem so thoroughly` <- ❌ INCORRECT
+### `We discussed about the problem so thoroughly` <- ❌ INCORRECT
 
 * **Grammar Rule:** "Discuss" is a transitive verb, meaning it directly acts on its object without needing a preposition. Adding "about" is redundant because the definition of "discuss" already translates to "to talk about".
 * **Correction:** Remove the word "about".
 
-#### `on the eve of the examination` <- ✓ CORRECT
+### `on the eve of the examination` <- ✓ CORRECT
 
 * **Grammar Rule:** The preposition "on" is correctly implemented here to designate a specific day or time frame (the eve). The phrase structure is completely accurate.
 
-#### `that I found it very easy to work it out` <- ✓ CORRECT
+### `that I found it very easy to work it out` <- ✓ CORRECT
 
 * **Grammar Rule:** This accurately completes the consecutive modifier structure "so + [adverb] + that + [clause]". The phrasal verb "work it out" correctly splits around the objective pronoun "it".
 
 ---
 
-### 2. An Indian ship laden with merchandise got drowned in the Pacific Ocean.
+## 2. An Indian ship laden with merchandise got drowned in the Pacific Ocean.
 
-#### `An Indian ship` <- ✓ CORRECT
+### `An Indian ship` <- ✓ CORRECT
 
 * **Grammar Rule:** Properly uses the indefinite article "An" before a proper adjective that initiates with a vowel sound ("Indian").
 
-#### `laden with merchandise` <- ✓ CORRECT
+### `laden with merchandise` <- ✓ CORRECT
 
 * **Grammar Rule:** "Laden" serves as a past participle functioning as an adjective meaning "heavily loaded", which idiomatically pairs with the preposition "with".
 
-#### `got drowned in the Pacific Ocean.` <- ❌ INCORRECT
+### `got drowned in the Pacific Ocean.` <- ❌ INCORRECT
 
 * **Grammar Rule:** In English syntax, "drown" is exclusively reserved for living beings that perish from suffocation in fluid. Non-living objects like ships, boats, or cargo "sink" (past tense: "sank").
 * **Correction:** Change "got drowned" to "sank".
 
 ---
 
-### 3. I could not put up in a hotel because the boarding and lodging charges were exorbitant.
+## 3. I could not put up in a hotel because the boarding and lodging charges were exorbitant.
 
-#### `I could not put up in a hotel` <- ❌ INCORRECT
+### `I could not put up in a hotel` <- ❌ INCORRECT
 
 * **Grammar Rule:** The phrasal verb "put up" signifies lodging or staying temporarily. When referring to establishing oneself at a physical business or building, it idiomatically requires the preposition "at", not "in".
 * **Correction:** Change "in a hotel" to "at a hotel".
 
-#### `because the boarding and lodging charges` <- ✓ CORRECT
+### `because the boarding and lodging charges` <- ✓ CORRECT
 
 * **Grammar Rule:** "Because" functions correctly as a subordinating conjunction introducing a dependent clause of reason. The compound noun phrase is structurally sound.
 
-#### `were exorbitant.` <- ✓ CORRECT
+### `were exorbitant.` <- ✓ CORRECT
 
 * **Grammar Rule:** The plural past-tense helping verb "were" correctly matches the plural head noun of the compound subject phrase ("charges"). "Exorbitant" functions accurately as the predicate adjective.
 
 ---
 
-### 4. The Indian radio which was previously controlled by the British rulers is free now from the narrow vested interests.
+## 4. The Indian radio which was previously controlled by the British rulers is free now from the narrow vested interests.
 
-#### `The Indian radio` <- ✓ CORRECT
+### `The Indian radio` <- ✓ CORRECT
 
 * **Grammar Rule:** A clear noun phrase with a proper adjective, correctly initiated with the definite article "The" to identify a specific national entity.
 
-#### `which was previously controlled by the British rulers` <- ✓ CORRECT
+### `which was previously controlled by the British rulers` <- ✓ CORRECT
 
 * **Grammar Rule:** A non-restrictive relative clause correctly introduced by the relative pronoun "which". The passive voice structure ("was controlled by") accurately attributes agency to the past actors.
 
-#### `is free now from the narrow vested interests.` <- ❌ INCORRECT
+### `is free now from the narrow vested interests.` <- ❌ INCORRECT
 
 * **Grammar Rule:** This is an error of adverb placement. Mid-position adverbs of time like "now" should be placed directly before the adjective or predicate they modify, immediately following the linking verb "is".
 * **Correction:** Shift "now" to read "...is now free from...".
 
 ---
 
-### 5. If I had known this yesterday I will have helped him.
+## 5. If I had known this yesterday I will have helped him.
 
-#### `If I had known` <- ✓ CORRECT
+### `If I had known` <- ✓ CORRECT
 
 * **Grammar Rule:** This correctly initializes a conditional clause for a Third Conditional sentence (representing a hypothetical, unreal past event) using "If" paired with the past perfect tense ("had" + past participle).
 
-#### `this yesterday` <- ✓ CORRECT
+### `this yesterday` <- ✓ CORRECT
 
 * **Grammar Rule:** The demonstrative pronoun "this" acts as the direct object of the verb "known", anchored by the past adverb of time "yesterday" which warrants the past perfect construction.
 
-#### `I will have helped him.` <- ❌ INCORRECT
+### `I will have helped him.` <- ❌ INCORRECT
 
-* **Grammar Rule:** Third conditional rules strictly mandate that a past perfect if-clause must pair with a perfect conditional structure in the consequence clause: 
+* **Grammar Rule:** Third conditional rules strictly mandate that a past perfect if-clause must pair with a perfect conditional structure in the consequence clause:
+
 $$would / could / might + have + past\ participle$$
+
+
+
 . Utilizing the simple future modal "will" breaks the required sequence of tenses.
 * **Correction:** Change "will" to "would".
 
 ---
 
-### 6. A lot of travel delay is caused due to the inefficiency and lack of good management on behalf of the railways.
+## 6. A lot of travel delay is caused due to the inefficiency and lack of good management on behalf of the railways.
 
-#### `A lot of travel delay is caused` <- ✓ CORRECT
+### `A lot of travel delay is caused` <- ✓ CORRECT
 
 * **Grammar Rule:** The subject phrase "A lot of travel delay" uses "delay" as an uncountable mass noun here, which correctly takes the singular passive verb "is caused".
 
-#### `due to the inefficiency and lack of good management` <- ✓ CORRECT
+### `due to the inefficiency and lack of good management` <- ✓ CORRECT
 
 * **Grammar Rule:** The compound preposition "due to" is used correctly to introduce the reasons ("inefficiency and lack of good management") modifying the main cause.
 
-#### `on behalf of the railways.` <- ❌ INCORRECT
+### `on behalf of the railways.` <- ❌ INCORRECT
 
 * **Grammar Rule:** The idiom "on behalf of" means "as the representative of" or "in the interest of" someone else. When talking about a fault, action, or responsibility belonging to a specific group, the correct idiomatic phrase is "on the part of".
 * **Correction:** Change "on behalf of" to "on the part of".
 
 ---
 
-### 7. One of the members expressed doubt if the Minister was an atheist.
+## 7. One of the members expressed doubt if the Minister was an atheist.
 
-#### `One of the members` <- ✓ CORRECT
+### `One of the members` <- ✓ CORRECT
 
 * **Grammar Rule:** The structure "One of + [plural noun]" matches perfectly with standard subject-verb agreement rules, setting up a singular focus for the rest of the sentence.
 
-#### `expressed doubt if` <- ❌ INCORRECT
+### `expressed doubt if` <- ❌ INCORRECT
 
 * **Grammar Rule:** In formal affirmative statements, the noun "doubt" should be followed by a noun clause introduced by the conjunction "that", not "if" or "whether". "If" is typically reserved for conditional clauses or when expressing an alternative choice in interrogative settings.
 * **Correction:** Change "if" to "that".
 
-#### `the Minister was an atheist.` <- ✓ CORRECT
+### `the Minister was an atheist.` <- ✓ CORRECT
 
 * **Grammar Rule:** The past tense verb "was" correctly maintains the sequence of tenses established by the main past tense verb "expressed".
 
 ---
 
-### 8. I have got my M.Sc. degree in 1988.
+## 8. I have got my M.Sc. degree in 1988.
 
-#### `I have got` <- ❌ INCORRECT
+### `I have got` <- ❌ INCORRECT
 
 * **Grammar Rule:** The present perfect tense ("have got") cannot be paired with a specific, finished past time marker. Whenever a definite time in the past is mentioned, you must use the simple past tense.
 * **Correction:** Change "I have got" to "I got".
 
-#### `my M.Sc. degree` <- ✓ CORRECT
+### `my M.Sc. degree` <- ✓ CORRECT
 
 * **Grammar Rule:** The noun phrase is perfectly fine. The possessive pronoun "my" accurately pairs with the object noun phrase.
 
-#### `in 1988.` <- ✓ CORRECT
+### `in 1988.` <- ✓ CORRECT
 
 * **Grammar Rule:** The preposition "in" is the correct choice for indicating a specific calendar year.
 
 ---
 
-### 9. Having received your letter this morning, we are writing to thank you for the same.
+## 9. Having received your letter this morning, we are writing to thank you for the same.
 
-#### `Having received your letter` <- ✓ CORRECT
+### `Having received your letter` <- ✓ CORRECT
 
 * **Grammar Rule:** This utilizes a perfect participle clause ("Having + past participle") which correctly shows that one action (receiving the letter) was completed before the next action (writing back) begins.
 
-#### `this morning, we are writing` <- ✓ CORRECT
+### `this morning, we are writing` <- ✓ CORRECT
 
 * **Grammar Rule:** The temporal adverb phrase "this morning" serves as a valid timeframe, and the present continuous "we are writing" cleanly fits the immediate real-time intent of the communication.
 
-#### `to thank you for the same.` <- ✓ CORRECT
+### `to thank you for the same.` <- ✓ CORRECT
 
 * **Grammar Rule:** The infinitive purpose phrase "to thank you" is structurally sound. While "for the same" is a slightly old-fashioned business/formal phrasing style referring back to the letter, it does not violate any core rules of English grammar.
 
 ---
 
-### 10. If you lend him a book he will lend it to some one else and never you will get it back.
+## 10. If you lend him a book he will lend it to some one else and never you will get it back.
 
-#### `If you lend him a book` <- ✓ CORRECT
+### `If you lend him a book` <- ✓ CORRECT
 
 * **Grammar Rule:** This sets up a standard First Conditional structure using "If" + simple present tense to state a possible real-world scenario.
 
-#### `he will lend it to some one else` <- ✓ CORRECT
+### `he will lend it to some one else` <- ✓ CORRECT
 
 * **Grammar Rule:** This satisfies the consequence side of the First Conditional by properly using the simple future structure ("will" + base verb).
 
-#### `and never you will get it back.` <- ❌ INCORRECT
+### `and never you will get it back.` <- ❌ INCORRECT
 
 * **Grammar Rule:** This is an error of **adverb placement**. The frequency adverb "never" is poorly positioned at the start of the clause. In standard declarative English syntax, frequency adverbs should be placed right after the auxiliary/helping verb ("will") and before the main verb ("get").
 * **Correction:** Shift "never" to read "...and you will never get it back."
 
 ---
-### 11. According to the Bible it is meek and humble who shall inherit the earth.
 
-#### `According to the Bible` <- ✓ CORRECT
+## 11. According to the Bible it is meek and humble who shall inherit the earth.
+
+### `According to the Bible` <- ✓ CORRECT
 
 * **Grammar Rule:** The proper noun "Bible" is correctly initialized with the definite article "the", and the introductory phrase "According to" is standard usage.
 
-#### `it is meek and humble` <- ❌ INCORRECT
+### `it is meek and humble` <- ❌ INCORRECT
 
 * **Grammar Rule:** "Meek" and "humble" are standalone adjectives. In English, when you want to refer to a whole group or class of people using an adjective, you must place the definite article "the" before it ($the + adjective = plural\ noun$). Without "the", they cannot act as the subject of the clause.
 * **Correction:** Change to "it is the meek and humble" (or "the meek and the humble").
 
-#### `who shall inherit the earth.` <- ✓ CORRECT
+### `who shall inherit the earth.` <- ✓ CORRECT
 
 * **Grammar Rule:** The relative pronoun "who" correctly refers to the collective group of people, and the modal verb "shall" matches traditional or formal biblical phrasing.
 
 ---
 
-### 12. Do the roses in your garden smell more sweetly than those in ours?
+## 12. Do the roses in your garden smell more sweetly than those in ours?
 
-#### `Do the roses in your garden smell` <- ✓ CORRECT
+### `Do the roses in your garden smell` <- ✓ CORRECT
 
 * **Grammar Rule:** The plural auxiliary verb "Do" correctly matches the plural subject "roses". The noun phrase is perfectly constructed.
 
-#### `more sweetly` <- ❌ INCORRECT
+### `more sweetly` <- ❌ INCORRECT
 
 * **Grammar Rule:** The verb "smell" functions here as a **linking verb** (copular verb) expressing a sensory state, not an action. Linking verbs must be modified by predicate adjectives, not adverbs. Using the adverb "sweetly" implies the roses have noses and are performing the physical act of smelling rapidly or intensely.
 * **Correction:** Change the comparative adverb "more sweetly" to the comparative adjective "sweeter".
 
-#### `than those in ours?` <- ✓ CORRECT
+### `than those in ours?` <- ✓ CORRECT
 
 * **Grammar Rule:** The pronoun "those" correctly substitutes for the plural noun "roses" to avoid repetition, and the possessive pronoun "ours" correctly closes the comparison phrase.
 
 ---
 
-### 13. Block of Residential flats are coming up near our house.
+## 13. Block of Residential flats are coming up near our house.
 
-#### `Block of Residential flats` <- ❌ INCORRECT
+### `Block of Residential flats` <- ❌ INCORRECT
 
 * **Grammar Rule:** This is an error of **subject-verb agreement**. The singular noun "Block" is paired with the plural verb "are" in the next part of the sentence. Since multiple residential units are being constructed, the head noun must be converted to its plural form to establish structural balance.
 * **Correction:** Change "Block" to "Blocks".
 
-#### `are coming up` <- ✓ CORRECT
+### `are coming up` <- ✓ CORRECT
 
 * **Grammar Rule:** The present continuous phrasal verb phrase "are coming up" is structurally sound and accurately implies ongoing development.
 
-#### `near our house.` <- ✓ CORRECT
+### `near our house.` <- ✓ CORRECT
 
 * **Grammar Rule:** The spatial preposition "near" correctly links the location to the possessive noun phrase "our house".
 
 ---
 
-### 14. You can get all the information that you want in this book.
+## 14. You can get all the information that you want in this book.
 
-#### `You can get` <- ✓ CORRECT
+### `You can get` <- ✓ CORRECT
 
 * **Grammar Rule:** Standard active voice construction using the modal helper verb "can" paired with the base form main verb "get".
 
-#### `all the information that you want` <- ✓ CORRECT
+### `all the information that you want` <- ✓ CORRECT
 
 * **Grammar Rule:** "Information" is an **uncountable noun** and is correctly left singular without an "s" at the end. The adjective "all" and relative clause "that you want" are cleanly applied.
 
-#### `in this book.` <- ✓ CORRECT
+### `in this book.` <- ✓ CORRECT
 
 * **Grammar Rule:** The spatial preposition "in" correctly indicates the location of the contents within the boundaries of the text, and the demonstrative adjective "this" is perfectly sound.
 * **Status:** This entire sentence contains **No error**.
 
 ---
 
-### 15. The students were awaiting for the arrival of the chief guest.
+## 15. The students were awaiting for the arrival of the chief guest.
 
-#### `The students were` <- ✓ CORRECT
+### `The students were` <- ✓ CORRECT
 
 * **Grammar Rule:** The plural past-tense auxiliary verb "were" correctly establishes subject-verb agreement with the plural subject "students".
 
-#### `awaiting for` <- ❌ INCORRECT
+### `awaiting for` <- ❌ INCORRECT
 
 * **Grammar Rule:** "Await" is a **transitive verb** that directly requires an object without any preposition following it ($await = wait\ for$). Adding the preposition "for" immediately after "awaiting" is an ungrammatical redundancy.
 * **Correction:** Either remove "for" (changing it to "awaiting") or rewrite the verb structure entirely as "waiting for".
 
-#### `the arrival of the chief guest.` <- ✓ CORRECT
+### `the arrival of the chief guest.` <- ✓ CORRECT
 
 * **Grammar Rule:** The direct object noun phrase is perfectly formatted with the accurate sequence of definite articles and prepositions.
+
+---
+
+## 16. Sixty miles are a good distance.
+
+### `Sixty miles` <- ✓ CORRECT
+
+* **Grammar Rule:** The phrase states a specific quantity of distance. While "miles" is plural, the entire quantity is viewed as a single, collective measurement or block of distance.
+
+### `are` <- ❌ INCORRECT
+
+* **Grammar Rule:** This is an error of **subject-verb agreement**. When plural units of distance, time, money, or weight express a single collective amount or an overarching concept (like "a good distance"), they take a **singular verb**.
+* **Correction:** Change "are" to "is".
+
+### `a good distance.` <- ✓ CORRECT
+
+* **Grammar Rule:** The use of the singular indefinite article "a" in "a good distance" explicitly confirms that the subject "Sixty miles" is being treated as one single unit of measurement.
+
+---
+
+## 17. They have been very close friends until they quarrelled.
+
+### `They have been` <- ❌ INCORRECT
+
+* **Grammar Rule:** The present perfect tense ("have been") links the past to the present moment. However, the subsequent clause reveals that the state of being close friends came to a definite end in the past when they fought. To describe a past state that continued up to another specific point in the past, you must use the **past perfect tense**.
+* **Correction:** Change "have been" to "had been".
+
+### `very close friends` <- ✓ CORRECT
+
+* **Grammar Rule:** The phrase is structured cleanly. The modifier "very" properly intensifies the adjective "close" before the plural noun "friends".
+
+### `until they quarrelled.` <- ✓ CORRECT
+
+* **Grammar Rule:** "Until" acts as a valid subordinating conjunction introducing the past time boundary, marked correctly by the simple past tense verb "quarrelled".
+
+---
+
+## 18. When the dentist came in my tooth was stopped aching out of fear that I might lose my tooth.
+
+### `When the dentist came in` <- ✓ CORRECT
+
+* **Grammar Rule:** An introductory adverbial time clause framed correctly using the simple past tense verb phrase "came in".
+
+### `my tooth was stopped aching` <- ❌ INCORRECT
+
+* **Grammar Rule:** This is an ungrammatical **passive voice** construction. The verb "stop" here functions as an intransitive action that the subject ("my tooth") did on its own. Using "was stopped" implies that an external person or force mechanically grabbed the tooth and made it stop.
+* **Correction:** Change "was stopped aching" to "stopped aching" (active voice).
+
+### `out of fear that I might lose my tooth.` <- ✓ CORRECT
+
+* **Grammar Rule:** The idiomatic phrase "out of fear" is correct, and the modal past verb "might" properly matches the past-tense sequence of the rest of the sentence.
+
+---
+
+## 19. It is the duty of every citizen to do his utmost to defend the hardly-won freedom of the country.
+
+### `It is the duty of every citizen to do his utmost` <- ✓ CORRECT
+
+* **Grammar Rule:** Formulated correctly with a dummy pronoun subject "It", followed by an infinitive phrase. The singular possessive pronoun "his" is traditionally used to match the singular distributive pronoun "every citizen".
+
+### `to defend the hardly-won` <- ❌ INCORRECT
+
+* **Grammar Rule:** The adverb "hardly" means "scarcely" or "barely" (e.g., "I could hardly breathe"). Using it here completely flips the intended meaning to mean the freedom was barely won. To describe something achieved through intense effort, struggle, or hard work, the correct compound adjective is **hard-won**.
+* **Correction:** Change "hardly-won" to "hard-won".
+
+### `freedom of the country.` <- ✓ CORRECT
+
+* **Grammar Rule:** A clear, standard noun phrase using the definite article "the" and a prepositional phrase to signify the exact nation being referenced.
+
+---
+
+## 20. No sooner did I open the door when the rain, heavy and stormy, rushed in making us shiver from head to foot
+
+### `No sooner did I open the door` <- ✓ CORRECT
+
+* **Grammar Rule:** When an introductory phrase begins with a negative adverbial like "No sooner", **adverbial inversion** must occur. The auxiliary verb "did" correctly shifts before the subject "I", followed by the base form verb "open".
+
+### `when the rain, heavy and stormy, rushed in` <- ❌ INCORRECT
+
+* **Grammar Rule:** This is an error of **correlative conjunction pairing**. The comparative expression "No sooner" must always be paired with the conjunction **than** later in the sentence ($No\ sooner... than$). It can never be paired with "when" (which is reserved for expressions like "Hardly/Scarcely had I...").
+* **Correction:** Change "when" to "than".
+
+### `making us shiver from head to foot` <- ✓ CORRECT
+
+* **Grammar Rule:** The present participle clause acts as a smooth modifier showing immediate consequence. The bare infinitive "shiver" is used accurately after the causative verb "making".
+
+---
+
+# Sentence Correction
