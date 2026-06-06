@@ -1633,4 +1633,62 @@ $$\text{Subject} + \text{Verb 1 (-s)} + \text{Verb 2 (-es)} + \text{Verb 3 (-es)
 
 ---
 
-# 
+# Syllogism
+
+## 1. The Golden Rules of Syllogism
+
+* **Ignore Real-World Facts:** If a statement says *"All cats are dogs,"* accept it as 100% true. Do not apply common sense or real-world knowledge.
+* **Definite vs. Possible:** A conclusion only "follows" if it is **absolutely 100% true in every single diagram** you can possibly draw. If it is true in one diagram but fails in another, it **does not follow**.
+* **The Negative Rule:** If all your statements are positive (using "All" or "Some"), you can **instantly eliminate any definite negative conclusion** (like "No A is B" or "Some A are not B"). Positive statements cannot give a 100% certain negative conclusion.
+
+---
+
+## 2. Reading Venn Diagrams (The Inside-Out Trick)
+
+When you have concentric circles (circles inside one another like a bullseye target):
+
+* **Going Inward to Outward (Small circle $\rightarrow$ Large circle):**
+* Both **"All"** and **"Some"** are true.
+* *Example:* If All A are B, and All B are C $\rightarrow$ **All A are C** is true, and **Some A are C** is also true.
+
+
+* **Going Outward to Inward (Large circle $\rightarrow$ Small circle):**
+* Only **"Some"** is true. **"All"** is false.
+* *Example:* If A is inside B $\rightarrow$ **Some B are A** is true, but **All B are A** is false.
+
+---
+
+## 3. The Reversal Shortcuts (Immediate Inference)
+
+You don't even need to draw a diagram if you see these conversions:
+
+* **"Some A are B"** can always be reversed to **"Some B are A"** (100% valid).
+* **"No A is B"** can always be reversed to **"No B is A"** (100% valid).
+* *Warning:* **"All A are B"** **CANNOT** be reversed to "All B are A". It can only be scaled down to **"Some B are A"**.
+
+---
+
+## 4. Trick for "Either / Or" Cases
+
+If the options include "Either (1) or (2) follows", look for these 3 conditions. If all three match, it is an **Either/Or** case:
+
+1. Both conclusions must be **completely false/undetermined** on their own.
+2. The subjects and predicates in both conclusions must be the **exact same** (e.g., Conclusion 1: Some *rats* are *cats*; Conclusion 2: No *rats* are *cats*).
+3. They must form a **Complementary Pair**. Only these combinations work:
+* $$\text{Some} + \text{No}$$
+* $$\text{All} + \text{Some Not}$$
+---
+
+## 5. Vocabulary Translation Cheat Sheet
+
+Exam papers love to swap out standard words to confuse you. Use this translation guide:
+
+| Word in Exam | What it actually means (Draw it as) |
+| --- | --- |
+| **Each, Every, Any, 100%** | **ALL** |
+| **At least, Few, Most, Many, 1% to 99%** | **SOME** |
+| **None, Not a single, 0%** | **NO** |
+| **Seldom, Hardly, Scarcely** | **SOME NOT** |
+
+---
+
