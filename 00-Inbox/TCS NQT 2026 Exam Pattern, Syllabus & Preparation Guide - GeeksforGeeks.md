@@ -86,7 +86,7 @@ Here is the cleaned-up list with proper markdown checkboxes and standard `[[wiki
 
 ### Quantitative Ability (20 Questions | 25 Minutes)
 
-* [ ] [[Clocks & Calendar]]
+* [x] [[Clocks & Calendar]] ✅ 2026-06-06
 * [ ] [[Series and Progressions]]
 * [ ] [[Equations]]
 * [ ] [[Averages]]
