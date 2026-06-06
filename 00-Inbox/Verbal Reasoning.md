@@ -9,7 +9,7 @@
 
 **Verbal Reasoning → do these 4:**
 
-- [x] Syllogism
+- [ ] Syllogism
 - [ ] Blood Relation Test
 - [ ] Seating Arrangement
 - [ ] Direction Sense Test

@@ -1683,12 +1683,12 @@ If the options include "Either (1) or (2) follows", look for these 3 conditions.
 
 Exam papers love to swap out standard words to confuse you. Use this translation guide:
 
-| Word in Exam | What it actually means (Draw it as) |
-| --- | --- |
-| **Each, Every, Any, 100%** | **ALL** |
-| **At least, Few, Most, Many, 1% to 99%** | **SOME** |
-| **None, Not a single, 0%** | **NO** |
-| **Seldom, Hardly, Scarcely** | **SOME NOT** |
+| Word in Exam                             | What it actually means (Draw it as) |
+| ---------------------------------------- | ----------------------------------- |
+| **Each, Every, Any, 100%**               | **ALL**                             |
+| **At least, Few, Most, Many, 1% to 99%** | **SOME**                            |
+| **None, Not a single, 0%**               | **NO**                              |
+| **Seldom, Hardly, Scarcely**             | **SOME NOT**                        |
 
 ---
 
