@@ -49,21 +49,81 @@ Stage 1 is the online test. The examination comprises two sections and these are
 ### ****Foundation Section(75 minutes & 65 Questions)****
 
 Here is the corrected markdown table format for both the Foundation and Advanced sections of the exam:
+Here is the cleaned-up list with proper markdown checkboxes and standard `[[wikilink]]` syntax so you can click them to instantly generate your local notes:
 
-### Foundation Section (75 Minutes)
+## Foundation Section (75 Minutes Total)
 
-| Section                  | No. of Questions | Topics                                                                                                                                                                                                                                                                                                                                                      | Duration (Minutes) |
-| ------------------------ | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| **Verbal Ability**       | 25               | Sentence CompletionWords CompletionReading ComprehensionPara jumblesError DetectionSentence BuildingIdioms & Phrases                                                                                                                                                                                                                                        | 25                 |
-| **Reasoning Ability**    | 20               | Blood RelationsSeating ArrangementCoding-DecodingData SufficiencyData ArrangementsDistance and DirectionsStatement and ConclusionData InterpretationSyllogism topicsWord PatternLetter SeriesNumber SeriesDirectional SenseCube Folding, Paper Cuts and Folds                                                                                               | 25                 |
-| **Quantitative Ability** | 20               | Clocks & CalendarSeries and ProgressionsEquations, AveragesArea, Shapes & PerimeterNumbers & Decimal FractionsNumber SystemLCM & HCFPercentagesAllegations and MixturesProbabilityRatiosProportionAveragesReasoningWork and TimeGeometryDivisibilityProfit and LossAgesSpeed Distance and TimePie ChartsMean, Median, Mode, Variance and Standard Deviation | 25                 |
+### Verbal Ability (25 Questions | 25 Minutes)
 
-### Advance Section (115 Minutes)
+* [ ] [[Sentence Completion]]
+* [ ] [[Words Completion]]
+* [ ] [[Reading Comprehension]]
+* [ ] [[Para jumbles]]
+* [ ] [[Error Detection]]
+* [ ] [[Sentence Building]]
+* [ ] [[Idioms & Phrases]]
 
-| Section B: Advanced | No. of Questions | Topics | Duration (Minutes) |
-| --- | --- | --- | --- |
-| **Advanced Quantitative & Reasoning Ability** | 15 | All of the foundational topics of Numerical & Reasoning Ability (with higher difficulty). | 25 |
-| **Advanced Coding** | 2 | All foundational programming constructs, Data Structures, and Algorithms. | 90 |
+---
+
+### Reasoning Ability (20 Questions | 25 Minutes)
+
+* [ ] [[Blood Relations]]
+* [ ] [[Seating Arrangement]]
+* [ ] [[Coding-Decoding]]
+* [ ] [[Data Sufficiency]]
+* [ ] [[Data Arrangements]]
+* [ ] [[Distance and Directions]]
+* [ ] [[Statement and Conclusion]]
+* [ ] [[Data Interpretation]]
+* [ ] [[Syllogism topics]]
+* [ ] [[Word Pattern]]
+* [ ] [[Letter Series]]
+* [ ] [[Number Series]]
+* [ ] [[Directional Sense]]
+* [ ] [[Cube Folding, Paper Cuts and Folds]]
+
+---
+
+### Quantitative Ability (20 Questions | 25 Minutes)
+
+* [ ] [[Clocks & Calendar]]
+* [ ] [[Series and Progressions]]
+* [ ] [[Equations]]
+* [ ] [[Averages]]
+* [ ] [[Area, Shapes & Perimeter]]
+* [ ] [[Numbers & Decimal Fractions]]
+* [ ] [[Number System]]
+* [ ] [[LCM & HCF]]
+* [ ] [[Percentages]]
+* [ ] [[Allegations and Mixtures]]
+* [ ] [[Probability]]
+* [ ] [[Ratios]]
+* [ ] [[Proportion]]
+* [ ] [[Reasoning]]
+* [ ] [[Work and Time]]
+* [ ] [[Geometry]]
+* [ ] [[Divisibility]]
+* [ ] [[Profit and Loss]]
+* [ ] [[Ages]]
+* [ ] [[Speed Distance and Time]]
+* [ ] [[Pie Charts]]
+* [ ] [[Mean, Median, Mode, Variance and Standard Deviation]]
+
+---
+
+## Advance Section (115 Minutes Total)
+
+### Advanced Quantitative & Reasoning Ability (15 Questions | 25 Minutes)
+
+* [ ] [[Advanced Numerical Ability]]
+* [ ] [[Advanced Reasoning Ability]]
+
+### Advanced Coding (2 Questions | 90 Minutes)
+
+* [ ] [[Foundational Programming Constructs]]
+* [ ] [[Data Structures]]
+* [ ] [[Algorithms]]
+
 ### 2\. Interview Stages
 
 If you clear the NQT cutoff, you will be invited for a face-to-face or virtual interview panel consisting of:
