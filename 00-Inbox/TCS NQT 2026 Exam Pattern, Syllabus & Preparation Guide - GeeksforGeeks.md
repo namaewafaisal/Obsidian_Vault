@@ -93,7 +93,7 @@ Here is the cleaned-up list with proper markdown checkboxes and standard `[[wiki
 * [ ] [[Area, Shapes & Perimeter]]
 * [ ] [[Numbers & Decimal Fractions]]
 * [ ] [[Number System]]
-* [ ] [[LCM & HCF]]
+* [x] [[LCM & HCF]] ✅ 2026-06-08
 * [ ] [[Percentages]]
 * [ ] [[Allegations and Mixtures]]
 * [ ] [[Probability]]
