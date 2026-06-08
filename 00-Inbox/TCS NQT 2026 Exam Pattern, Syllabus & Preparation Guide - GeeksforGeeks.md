@@ -104,7 +104,7 @@ Here is the cleaned-up list with proper markdown checkboxes and standard `[[wiki
 * [ ] [[Geometry]]
 * [ ] [[Divisibility]]
 * [ ] [[Profit and Loss]]
-* [ ] [[Ages]]
+* [x] [[Ages]] ✅ 2026-06-08
 * [ ] [[Speed Distance and Time]]
 * [ ] [[Pie Charts]]
 * [ ] [[Mean, Median, Mode, Variance and Standard Deviation]]
