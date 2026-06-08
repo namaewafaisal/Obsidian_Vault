@@ -89,7 +89,7 @@ Here is the cleaned-up list with proper markdown checkboxes and standard `[[wiki
 * [x] [[Clocks & Calendar]] ✅ 2026-06-06
 * [x] [[Series and Progressions]] ✅ 2026-06-07
 * [x] [[Equations]] ✅ 2026-06-08
-* [ ] [[Averages]]
+* [x] [[Averages]] ✅ 2026-06-08
 * [ ] [[Area, Shapes & Perimeter]]
 * [ ] [[Numbers & Decimal Fractions]]
 * [ ] [[Number System]]
