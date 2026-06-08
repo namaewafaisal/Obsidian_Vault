@@ -88,7 +88,7 @@ Here is the cleaned-up list with proper markdown checkboxes and standard `[[wiki
 
 * [x] [[Clocks & Calendar]] ✅ 2026-06-06
 * [x] [[Series and Progressions]] ✅ 2026-06-07
-* [ ] [[Equations]]
+* [x] [[Equations]] ✅ 2026-06-08
 * [ ] [[Averages]]
 * [ ] [[Area, Shapes & Perimeter]]
 * [ ] [[Numbers & Decimal Fractions]]
