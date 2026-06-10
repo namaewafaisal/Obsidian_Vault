@@ -90,7 +90,7 @@ Here is the cleaned-up list with proper markdown checkboxes and standard `[[wiki
 * [x] [[Series and Progressions]] ✅ 2026-06-07
 * [x] [[Equations]] ✅ 2026-06-08
 * [x] [[Averages]] ✅ 2026-06-08
-* [ ] [[Area, Shapes & Perimeter]]
+* [x] [[Area, Shapes & Perimeter]] ✅ 2026-06-08
 * [ ] [[Numbers & Decimal Fractions]]
 * [ ] [[Number System]]
 * [x] [[LCM & HCF]] ✅ 2026-06-08
