@@ -36,24 +36,18 @@ PGP integrates four distinct operational processes to achieve its security goals
 
 ```mermaid
 graph TD
-    subgraph Transmission_Engine [Transmission Processing Engine Sender]
-        M[Plaintext Message] --> HASH[1. Hash Engine]
-        HASH -->|Digest| Sign[2. Encrypt with Sender's Private Asymmetric Key]
-        Sign -->|Digital Signature| Combine[Combine Signature + Message]
-        M --> Combine
-        
-        Combine --> COMP[3. ZIP Compression Engine]
-        COMP -->|Compressed Payload| BulkEnc[4. Encrypt Payload with Symmetric Session Key]
-        
-        SymKey[Random Session Key] --> BulkEnc
-        SymKey --> KeyEnc[5. Encrypt Key with Receiver's Public Asymmetric Key]
-        
-        BulkEnc --> Package[Merge Encrypted Key + Encrypted Payload]
-        KeyEnc --> Package
-        
-        Package --> R64[6. Radix-64 Encoding]
-        R64 --> Out[Final ASCII Email Text]
-    end
+    Plaintext --> HashEngine
+    HashEngine --> EncryptionStep
+    EncryptionStep --> CombineStep
+    Plaintext --> CombineStep
+    CombineStep --> CompressionStep
+    CompressionStep --> PayloadEncryption
+    SessionKey --> PayloadEncryption
+    SessionKey --> KeyEncryption
+    PayloadEncryption --> MergeStep
+    KeyEncryption --> MergeStep
+    MergeStep --> RadixEncoding
+    RadixEncoding --> FinalEmail
 ```
 
 ---
