@@ -1,94 +1,481 @@
-# Question 7: Intrusion Detection Systems (IDS) Framework (15-Mark Master Blueprint)
+# Intrusion Detection System (IDS)
 
-## 1. Core Concept (The "Why")
+## Why Does IDS Exist?
 
-While firewalls act as static border guards blocking unauthorized entrance to a network, sophisticated attacks or rogue internal users can still bypass them. An Intrusion Detection System (IDS) acts as an internal security camera network. It continuously monitors system logs, configurations, and live network packets to identify, log, and alert administrators about malicious activity occurring inside the perimeter.
+Even strong firewalls cannot stop every attack.
 
----
+Examples:
 
-## 2. Architectural Comparison: Host-Based vs. Network-Based
+* Insider threats
+* Misconfigured firewalls
+* Zero-day exploits
+* Malware brought through USB devices
+* Compromised user accounts
 
-An IDS is deployed using two primary architectural strategies depending on the operational environment:
+An organization needs a system that continuously monitors activity and alerts administrators when suspicious behavior occurs.
 
-### A. Host-Based IDS (HIDS)
+This is the role of an Intrusion Detection System (IDS).
 
-* **Deployment:** Installed directly onto a specific high-value machine, such as a core database or an Active Directory server.
-* **Data Monitored:** Internal operating system logs, local application trails, registry changes, and file integrity modifications.
-* **Main Advantage:** Can inspect decrypted traffic seamlessly because it analyzes data at the endpoint level after the host has processed and terminated the encryption layer.
-* **Main Weakness:** Consumes local CPU and memory resources directly from the host system it guards, and its local logs can be altered or disabled if an attacker achieves root system compromise.
-
-### B. Network-Based IDS (NIDS)
-
-* **Deployment:** Placed at strategic network bottleneck points, such as right behind a perimeter firewall or attached to a network switch SPAN port.
-* **Data Monitored:** Raw inbound and outbound network packet headers and payloads moving across network segments in real time.
-* **Main Advantage:** A single NIDS sensor can transparently monitor traffic for hundreds of connected devices without requiring individual machine agent installations or degrading endpoint host performance.
-* **Main Weakness:** Completely blind to encrypted packet payloads (such as HTTPS or SSH traffic streams) moving across the wire, and cannot verify if an observed exploit packet successfully executed on the target host.
+> [!important]
+> IDS detects attacks and generates alerts.
+>
+> It does not automatically block traffic.
 
 ---
 
-## 3. Detection Methodologies & Measures
+## Real-World Analogy
 
-To determine if an active event constitutes an attack, an IDS utilizes three core tracking methodologies:
+Think of a building.
 
-```mermaid
-graph TD
-    A[IDS Detection Engines] --> B[Signature-Based <br> Looks for known malware fingerprints]
-    A --> C[Anomaly-Based <br> Looks for deviations from normal baseline]
-    A --> D[Heuristic/Behavioral <br> Looks for dangerous action patterns]
+| Security Component | Real-World Equivalent         |
+| ------------------ | ----------------------------- |
+| Firewall           | Security guard at the gate    |
+| IDS                | CCTV cameras and alarm system |
+| IPS                | Automatic locking system      |
 
+The firewall controls entry.
+
+The IDS watches for suspicious activity after entry.
+
+---
+
+## What Does an IDS Monitor?
+
+An IDS analyzes:
+
+* Network traffic
+* System logs
+* File modifications
+* Login attempts
+* Running processes
+* User behavior
+
+If suspicious activity is detected:
+
+```text id="awybhs"
+Generate Alert → Notify Administrator
 ```
 
-### 1. Signature-Based Detection (Misuse Detection)
-
-* **Mechanism:** Compares network traffic or log entries directly against a static database of known attack fingerprints, similar to traditional antivirus software.
-* **Example:** Matching a specific sequence of bytes in a packet header known to belong to a legacy remote code execution exploit.
-* **Evaluation:** Highly accurate with near-zero false alarms for known threats, but completely blind to brand-new, modified, or zero-day attacks.
-
-### 2. Anomaly-Based Detection
-
-* **Mechanism:** First monitors normal network operation over an initial baseline phase to establish a statistical model of standard behavior (e.g., normal bandwidth volumes, typical login hours). It flags any deviation from this baseline.
-* **Example:** A regular user account suddenly downloading 50GB of raw database files via an unusual protocol at 3:00 AM.
-* **Evaluation:** Highly capable of identifying unknown zero-day attacks, but prone to high false-positive rates because legitimate user behavior changes dynamically.
-
-### 3. Heuristic / Behavioral Tracking
-
-* **Mechanism:** Instead of looking for exact signature matches or pure statistical metrics, it evaluates the *intent* and behavioral characteristics of an application’s actions over a timeline.
-* **Example:** Detecting an unknown program that is rapidly opening documents, reading them, writing encrypted output copies, and deleting the originals (the definitive behavior of active ransomware).
-* **Evaluation:** Highly effective at neutralizing mutating malware variants, but demands significant computational processing power to track and parse application execution states.
-
 ---
 
-## 4. Consolidated Operational Summary Matrix
+## Basic IDS Architecture
 
-| Evaluation Metric | Host-Based (HIDS) | Network-Based (NIDS) |
-| --- | --- | --- |
-| **Data Visibility** | Local OS files, memory spaces, and application logs. | Network wire packets and communication protocol headers. |
-| **Encryption Handling** | Decrypts and views data at the OS layer. | Blind to encrypted payload data packets. |
-| **Primary Methodology** | Integrates file integrity and signature checks. | Integrates network signatures and baseline anomaly tracing. |
+```mermaid id="3ayfwu"
+flowchart LR
+    A[Data Sources] --> B[IDS Sensors]
 
----
+    B --> C[Analysis Engine]
 
-# Exam Note: IDS Architecture and Detection Engines
+    C --> D[Alert Database]
 
-## 1. Topographic Deployments
-
-* **NIDS Layer:** Positioned out-of-band at the network core to parse packet traffic structures.
-* **HIDS Layer:** Provisioned directly onto high-value target assets to watch system-level runtime events.
-
-```mermaid
-graph LR
-    Router[Perimeter Router] --> NIDS[NIDS Sensor]
-    NIDS --> Switch[Internal Switch]
-    Switch --> Host1[Server with HIDS]
-    Switch --> Host2[Workstation]
-
+    D --> E[Administrator]
 ```
 
-## 2. Detection Rule Sets
+---
 
-* **Signature Engine:** Static pattern matching. Zero configuration overhead but blind to new exploits.
-* **Anomaly Engine:** Baseline variance tracing. Identifies custom threats but produces high false-alarm noise profiles.
+## IDS Components
+
+### Sensors
+
+Collect security data.
+
+Examples:
+
+* Network packets
+* System logs
+* File changes
 
 ---
 
-Say **"Next"** whenever you are ready to proceed to the next long-answer topic in the sequence: **Pretty Good Privacy (PGP) Architecture**.
+### Analysis Engine
+
+Processes collected data.
+
+Detection methods include:
+
+* Signature-based detection
+* Anomaly-based detection
+* Behavioral detection
+
+---
+
+### Alert System
+
+Generates:
+
+* Emails
+* SMS notifications
+* Dashboard alerts
+* Log entries
+
+---
+
+### Management Console
+
+Allows administrators to:
+
+* View alerts
+* Configure rules
+* Investigate incidents
+
+---
+
+## IDS Deployment Types
+
+There are two major IDS architectures:
+
+1. Host-Based IDS (HIDS)
+2. Network-Based IDS (NIDS)
+
+---
+
+## Host-Based IDS (HIDS)
+
+Installed directly on individual systems.
+
+Examples:
+
+* Database servers
+* Domain controllers
+* Critical workstations
+
+### Monitors
+
+* System logs
+* Registry changes
+* File integrity
+* Running processes
+* User activities
+
+### Architecture
+
+```mermaid id="dxagff"
+flowchart TD
+
+    Server[Protected Host]
+
+    Server --> Logs[System Logs]
+    Server --> Files[Critical Files]
+    Server --> Processes[Processes]
+
+    Logs --> HIDS[HIDS Agent]
+    Files --> HIDS
+    Processes --> HIDS
+
+    HIDS --> Admin[Administrator]
+```
+
+### Advantages
+
+* Detects insider attacks
+* Monitors file changes
+* Sees decrypted traffic
+* Provides detailed host visibility
+
+### Limitations
+
+* Consumes host resources
+* Requires installation on each host
+* Can be disabled after full system compromise
+
+---
+
+## Network-Based IDS (NIDS)
+
+Installed at strategic network locations.
+
+Common placements:
+
+* Behind firewalls
+* DMZ
+* Core switches
+* Network gateways
+
+NIDS usually receives traffic through:
+
+* SPAN ports
+* Network TAPs
+
+### Monitors
+
+* Packet headers
+* Packet payloads
+* Network sessions
+
+### Architecture
+
+```mermaid id="e97jv8"
+flowchart LR
+
+    Internet --> Firewall
+
+    Firewall --> Switch
+
+    Switch --> Users[Internal Hosts]
+
+    Switch -. Mirror Traffic .-> NIDS[NIDS Sensor]
+
+    NIDS --> Admin[Administrator]
+```
+
+### Advantages
+
+* One sensor monitors many devices
+* No endpoint installation required
+* Minimal impact on hosts
+
+### Limitations
+
+* Cannot inspect encrypted traffic
+* Cannot determine whether an attack succeeded
+* High-speed networks may overwhelm sensors
+
+---
+
+## HIDS vs NIDS
+
+| Feature           | HIDS                | NIDS                |
+| ----------------- | ------------------- | ------------------- |
+| Deployment        | Individual hosts    | Network segments    |
+| Data Source       | Logs and files      | Packets and traffic |
+| Encrypted Traffic | ✅ Visible           | ❌ Hidden            |
+| Resource Usage    | Host CPU and memory | Dedicated sensor    |
+| Attack Visibility | Host-level          | Network-level       |
+| Scalability       | Lower               | Higher              |
+
+---
+
+## Detection Methodologies
+
+```mermaid id="tq0b7t"
+flowchart TD
+
+    IDS[IDS Detection Engine]
+
+    IDS --> S[Signature-Based]
+    IDS --> A[Anomaly-Based]
+    IDS --> B[Behavioral / Heuristic]
+```
+
+---
+
+## 1. Signature-Based Detection
+
+Compares activity against a database of known attack patterns.
+
+Similar to antivirus software.
+
+### Example
+
+```text id="e4rkta"
+Known SQL Injection Pattern
+
+Known Malware Hash
+
+Known Buffer Overflow Payload
+```
+
+### Advantages
+
+* High accuracy
+* Low false positives
+* Fast detection
+
+### Limitations
+
+* Cannot detect unknown attacks
+* Requires frequent updates
+
+> [!note]
+> Signature-based IDS is effective against known threats.
+
+---
+
+## 2. Anomaly-Based Detection
+
+Creates a baseline of normal behavior.
+
+Any significant deviation triggers an alert.
+
+### Example
+
+Normal behavior:
+
+```text id="s0fdkr"
+Employee logs in at 9 AM
+Downloads 500 MB daily
+```
+
+Suspicious behavior:
+
+```text id="0j3j2j"
+Employee logs in at 3 AM
+Downloads 50 GB
+```
+
+### Advantages
+
+* Detects zero-day attacks
+* Identifies unknown threats
+
+### Limitations
+
+* High false positive rate
+* Requires training period
+
+---
+
+## 3. Heuristic / Behavioral Detection
+
+Analyzes actions instead of exact signatures.
+
+Focuses on intent and activity patterns.
+
+### Example
+
+Ransomware behavior:
+
+```text id="8lv1tg"
+Read file
+
+Encrypt file
+
+Delete original file
+
+Repeat thousands of times
+```
+
+Even if the malware is new, the behavior is suspicious.
+
+### Advantages
+
+* Detects modified malware
+* Effective against advanced threats
+
+### Limitations
+
+* Computationally expensive
+* Complex to configure
+
+---
+
+## IDS vs IPS
+
+Students often confuse these terms.
+
+| Feature          | IDS         | IPS    |
+| ---------------- | ----------- | ------ |
+| Detects Threats  | ✅           | ✅      |
+| Generates Alerts | ✅           | ✅      |
+| Blocks Traffic   | ❌           | ✅      |
+| Deployment       | Out-of-band | Inline |
+
+Remember:
+
+```text id="s0hhjt"
+IDS = Detect
+
+IPS = Detect + Prevent
+```
+
+---
+
+## Enterprise IDS Deployment
+
+Modern organizations deploy multiple IDS layers.
+
+```mermaid id="c0jfwj"
+flowchart LR
+
+    Internet --> FW[Firewall]
+
+    FW --> DMZ[DMZ]
+
+    DMZ -. Mirror Traffic .-> NIDS1[NIDS]
+
+    DMZ --> Internal[Internal Network]
+
+    Internal -. Mirror Traffic .-> NIDS2[NIDS]
+
+    Internal --> Server[Critical Server]
+
+    Server --> HIDS[HIDS Agent]
+```
+
+### Deployment Strategy
+
+* NIDS at network boundaries
+* NIDS in the DMZ
+* HIDS on critical servers
+
+This provides:
+
+```text id="8ikcrx"
+Defense in Depth
+```
+
+---
+
+## Advantages of IDS
+
+* Detects internal threats
+* Provides security visibility
+* Supports incident response
+* Identifies policy violations
+* Monitors suspicious behavior
+
+---
+
+## Limitations of IDS
+
+* Cannot stop attacks automatically
+* Generates false positives
+* Requires skilled administrators
+* High alert volume
+
+---
+
+## Memory Shortcuts
+
+```text id="95vp8d"
+HIDS → Hosts
+
+NIDS → Network
+```
+
+```text id="mwm7eh"
+Signature → Known attacks
+
+Anomaly → Unusual behavior
+
+Behavioral → Suspicious actions
+```
+
+Remember:
+
+```text id="kt2nlt"
+Firewall Prevents
+
+IDS Detects
+
+IPS Prevents + Detects
+```
+
+---
+
+## Exam Points
+
+* IDS monitors systems and networks for malicious activity.
+* HIDS monitors individual hosts.
+* NIDS monitors network traffic.
+* Signature-based detection identifies known attacks.
+* Anomaly-based detection identifies deviations from normal behavior.
+* Behavioral detection tracks suspicious activities.
+* IDS generates alerts but does not block traffic.
+* Organizations often deploy both HIDS and NIDS.
+
+---
+
+## One-Line Summary
+
+> An Intrusion Detection System is a security solution that monitors hosts or network traffic to detect malicious activities using signature-based, anomaly-based, and behavioral analysis techniques.
