@@ -1,108 +1,306 @@
-Up next in our consolidated question bank is **Question 10**, the fifth item under the *Moderately Repeated Part B & C* list: **IPsec Architecture (AH vs. ESP Modes)**.
+
+# IPsec Architecture: AH vs ESP
+
+## Overview
+
+Internet Protocol (IP) was designed without built-in security. Any packet traveling through the public internet can potentially be:
+
+* Read by unauthorized users
+* Modified during transmission
+* Forged by attackers
+* Replayed multiple times
+
+**IPsec (Internet Protocol Security)** is a collection of protocols that secures communication at the **Network Layer (OSI Layer 3)**.
+
+Instead of securing individual applications, IPsec secures all IP traffic transparently.
+
+> [!important]
+> IPsec is commonly used to build secure VPN connections over the public internet.
 
 ---
 
-# Question 10: IPsec Architecture - AH vs. ESP (15-Mark Master Blueprint)
+## Security Services Provided by IPsec
 
-## 1. Core Concept (The "Why")
+IPsec offers four major security services:
 
-The Internet Protocol (IP) was originally designed without built-in security, meaning packets moving across the public internet can be intercepted, read, or modified. **IPsec (Internet Protocol Security)** is a suite of protocols that operates at the Network Layer (Layer 3) of the OSI model to secure IP traffic.
-
-Instead of protecting individual applications, IPsec transparently secures all data moving between two points (like two corporate offices) by wrapping standard IP packets inside cryptographically protected containers.
-
----
-
-## 2. Operational Protocols: AH vs. ESP
-
-IPsec uses two distinct protocols to handle packet protection depending on the security requirements of the connection:
-
-### A. Authentication Header (AH)
-
-* **What it does:** Provides data integrity, data origin authentication, and anti-replay protection.
-* **The Catch:** **AH does not provide encryption (confidentiality).** If a hacker intercepts an AH packet, they can read the data payload in plain text.
-* **Key Feature:** AH authenticates the entire packet, including the outer IP header (source and destination IP addresses). Because it locks the IP addresses mathematically, **AH breaks Network Address Translation (NAT)**.
-
-### B. Encapsulating Security Payload (ESP)
-
-* **What it does:** Provides complete data confidentiality (encryption), data origin authentication, integrity, and anti-replay protection.
-* **Key Feature:** ESP encrypts the payload of the packet. It adds an ESP Header to the front of the data and an ESP Trailer/Auth section to the back.
-* **Key Advantage:** ESP does not protect the outer IP header from modification. Because of this flexibility, **ESP works seamlessly with NAT** and is the standard choice for modern corporate VPNs.
+1. **Confidentiality** → Prevents unauthorized users from reading data
+2. **Integrity** → Detects whether data was modified
+3. **Authentication** → Verifies the sender's identity
+4. **Anti-replay protection** → Prevents attackers from resending old packets
 
 ---
 
-## 3. Deployment Modes: Transport vs. Tunnel
+## AH vs ESP
 
-Both AH and ESP can be executed in two different physical deployment configurations:
+IPsec uses two protocols:
 
-### 1. Transport Mode
-
-* **Where it is used:** Used for end-to-end communications directly between two host computers (e.g., a workstation connecting to a specific server).
-* **Mechanism:** The original outer IP header is kept intact. IPsec simply inserts its security header (AH or ESP) right between the original IP header and the payload (TCP/UDP layer).
-* **Packet Visual:** `[Original IP Header] -> [IPsec Header] -> [Encrypted/Protected Data Payload]`
-
-### 2. Tunnel Mode
-
-* **Where it is used:** Used for gateway-to-gateway configurations, such as connecting a branch office router to a main corporate headquarters firewall over the public internet.
-* **Mechanism:** The entire original IP packet (including its original inner IP header) is completely encrypted or sealed. The IPsec device then slaps a brand-new, outer IP header onto the very front of the packet to mask the true origin and destination across the public web.
-* **Packet Visual:** `[New Outer IP Header] -> [IPsec Header] -> [Encrypted Original Inner IP Header + Original Payload]`
+* Authentication Header (AH)
+* Encapsulating Security Payload (ESP)
 
 ---
 
-## 4. Packet Structure Transformation Diagrams
+## Authentication Header (AH)
 
-### ESP Transport Mode vs. ESP Tunnel Mode Structural Differences
+AH ensures:
+
+* Data integrity
+* Data origin authentication
+* Anti-replay protection
+
+AH does **not** encrypt data.
+
+### Analogy
+
+Imagine sending a transparent box with a tamper-proof seal.
+
+* Everyone can see the contents
+* Nobody can modify the contents without detection
+
+### Features
+
+✅ Authentication
+
+✅ Integrity
+
+✅ Anti-replay protection
+
+❌ Confidentiality
+
+---
+
+## Encapsulating Security Payload (ESP)
+
+ESP provides:
+
+* Encryption
+* Authentication
+* Integrity
+* Anti-replay protection
+
+### Analogy
+
+Imagine placing the message inside a locked box.
+
+* Outsiders cannot read it
+* Tampering is detected
+* The sender is verified
+
+### Features
+
+✅ Confidentiality
+
+✅ Authentication
+
+✅ Integrity
+
+✅ Anti-replay protection
+
+> [!tip]
+> ESP is the standard choice for modern VPNs.
+
+---
+
+## Why AH Does Not Work with NAT
+
+Network Address Translation (NAT) changes IP addresses during packet forwarding.
+
+Example:
+
+```text
+Original IP Address: 192.168.1.10
+Translated IP Address: 49.36.x.x
+```
+
+AH protects the IP header itself.
+
+When NAT modifies the source or destination address, AH detects the change and rejects the packet.
 
 ```mermaid
-graph TD
-    subgraph ESP Transport Mode
-        A["Original IP Header (Unencrypted)"] --> B["ESP Header"]
-        B --> C["TCP/UDP Payload (Encrypted)"]
-        C --> D["ESP Trailer & Auth Summary Data"]
+flowchart LR
+    A[Host Creates AH Packet] --> B[Router Performs NAT]
+    B --> C[IP Address Changes]
+    C --> D[AH Integrity Check Fails]
+    D --> E[Packet Rejected]
+```
+
+Therefore:
+
+* AH ❌ NAT compatible
+* ESP ✅ NAT compatible
+
+---
+
+## IPsec Modes
+
+Both AH and ESP can operate in two modes:
+
+1. Transport Mode
+2. Tunnel Mode
+
+---
+
+## Transport Mode
+
+Only the payload is protected.
+
+The original IP header remains visible.
+
+### Packet Structure
+
+```text
+[Original IP Header][IPsec Header][Protected Payload]
+```
+
+### Visible Information
+
+* Source IP address
+* Destination IP address
+
+### Protected Information
+
+* Application data
+
+### Use Cases
+
+* Host-to-host communication
+* Server-to-server communication
+
+### Analogy
+
+A letter is locked inside a box, but the shipping label remains visible.
+
+---
+
+## Tunnel Mode
+
+The entire original IP packet is protected.
+
+A new IP header is added.
+
+### Packet Structure
+
+```text
+[New IP Header][IPsec Header][Original IP Header][Payload]
+```
+
+### Visible Information
+
+* VPN gateway addresses
+
+### Protected Information
+
+* Original source IP address
+* Original destination IP address
+* Application data
+
+### Use Cases
+
+* Site-to-site VPNs
+* Branch office connectivity
+* Remote access VPNs
+
+### Analogy
+
+A sealed package is placed inside another package with a new shipping label.
+
+---
+
+## Transport Mode vs Tunnel Mode
+
+```mermaid
+flowchart TD
+
+    subgraph Transport_Mode
+        A[Original IP Header<br>Visible]
+        B[IPsec Header]
+        C[Payload<br>Protected]
+
+        A --> B --> C
     end
 
-    subgraph ESP Tunnel Mode
-        E["New Outer IP Header (Unencrypted Router Route)"] --> F["ESP Header"]
-        F --> G["Original Inner IP Header (Encrypted Target Host)"]
-        G --> H["TCP/UDP Payload (Encrypted)"]
-        H --> I["ESP Trailer & Auth Summary Data"]
-    end
+    subgraph Tunnel_Mode
+        D[New IP Header<br>Visible]
+        E[IPsec Header]
+        F[Original IP Header<br>Protected]
+        G[Payload<br>Protected]
 
+        D --> E --> F --> G
+    end
 ```
 
 ---
 
-## 5. Summary Evaluation Matrix
+## AH vs ESP Comparison
 
-| Security Feature | Authentication Header (AH) | Encapsulating Security Payload (ESP) |
-| --- | --- | --- |
-| **Confidentiality (Encryption)** | No | **Yes** |
-| **Integrity & Authentication** | Yes | Yes |
-| **Protects Outer IP Header?** | Yes | No |
-| **NAT Traversal Compatible?** | No (Breaks connections) | **Yes** (Standard VPN behavior) |
-| **Primary Use Case** | Legacy internal integrity verification | Secure public internet tunnels & VPNs |
+| Feature                  | AH       | ESP   |
+| ------------------------ | -------- | ----- |
+| Encryption               | ❌ No     | ✅ Yes |
+| Authentication           | ✅ Yes    | ✅ Yes |
+| Integrity                | ✅ Yes    | ✅ Yes |
+| Anti-replay Protection   | ✅ Yes    | ✅ Yes |
+| Protects Outer IP Header | ✅ Yes    | ❌ No  |
+| NAT Compatible           | ❌ No     | ✅ Yes |
+| Commonly Used Today      | ❌ Rarely | ✅ Yes |
 
 ---
 
-# Exam Note: IPsec Architecture Core Blueprint
+## Transport Mode vs Tunnel Mode Comparison
 
-## 1. Protocol Layering Focus
+| Feature                         | Transport Mode | Tunnel Mode        |
+| ------------------------------- | -------------- | ------------------ |
+| Protects Only Payload           | ✅ Yes          | ❌ No               |
+| Protects Entire Original Packet | ❌ No           | ✅ Yes              |
+| Original IP Header Visible      | ✅ Yes          | ❌ No               |
+| Adds New IP Header              | ❌ No           | ✅ Yes              |
+| Typical Use                     | Host-to-host   | Gateway-to-gateway |
 
-* **OSI Layer:** Operates strictly at Layer 3 (Network Layer).
-* **Advantage:** Higher layers (Layer 4 TCP/UDP and Layer 7 Applications) do not need any code changes to run securely over an IPsec connection.
+---
+
+## Working of IPsec
 
 ```mermaid
-graph LR
-    L7[Application Layer: HTTP/SMTP] --> L4[Transport Layer: TCP/UDP]
-    L4 --> L3[IPsec Layer: Crypto & Encapsulation]
-    L3 --> L2[Data Link Layer: Ethernet/WiFi]
-
+flowchart LR
+    A[Application Data] --> B[TCP/UDP]
+    B --> C[IPsec Processing]
+    C --> D[Internet]
+    D --> E[IPsec Processing]
+    E --> F[Destination Host]
 ```
 
-## 2. Key Takeaways
-
-* **Transport Mode:** Protects payload data but keeps the original endpoint host IP addresses visible.
-* **Tunnel Mode:** Completely hides the internal network topology by wrapping the entire original packet inside a new public outer routing envelope.
+> [!note]
+> IPsec operates at the Network Layer, so applications do not need modification.
 
 ---
 
-Say **"Next"** whenever you are ready to proceed to the next long-answer topic in the sequence: **Kerberos Authentication Protocol**.
+## Memory Shortcuts
+
+```text
+AH = Authenticate only
+
+ESP = Encrypt + Secure Packet
+
+Transport Mode = Protect data
+
+Tunnel Mode = Protect entire packet
+```
+
+---
+
+## Exam Points
+
+* IPsec operates at OSI Layer 3.
+* AH provides authentication and integrity without encryption.
+* ESP provides encryption, authentication, and integrity.
+* AH protects the IP header and therefore fails with NAT.
+* ESP works with NAT and is widely used in VPNs.
+* Transport mode protects only the payload.
+* Tunnel mode protects the entire original packet.
+
+> [!success]
+> Real-world VPN deployments almost always use ESP in Tunnel Mode.
+
+---
+
+## One-Line Summary
+
+> IPsec secures IP communication using AH or ESP protocols, operating in either Transport Mode or Tunnel Mode to provide authentication, integrity, confidentiality, and anti-replay protection.
