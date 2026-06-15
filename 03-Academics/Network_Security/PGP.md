@@ -1,7 +1,3 @@
----
-
-## topic: PGP
-
 # Pretty Good Privacy (PGP) Architecture
 
 ## Why Does PGP Exist?

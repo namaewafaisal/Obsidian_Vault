@@ -1,7 +1,3 @@
----
-
-## topic: Authenticated Key Agreement
-
 # Authenticated Diffie-Hellman with RSA Signatures
 
 ## Why Does This Protocol Exist?
