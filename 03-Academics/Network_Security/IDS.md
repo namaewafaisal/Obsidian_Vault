@@ -1,99 +1,82 @@
-# Question 8: Pretty Good Privacy (PGP) Architecture (15-Mark Master Blueprint)
+````
+# Question 7: Intrusion Detection Systems (IDS) Framework (15-Mark Master Blueprint)
 
 ## 1. Core Concept (The "Why")
-Standard internet email systems transmit messages in plain text, meaning anyone intercepting them along the network route can read sensitive details or alter payloads undetected. Pretty Good Privacy (PGP) provides an application-layer cryptographic framework designed specifically to protect email. It delivers a comprehensive security bundle—confidentiality, integrity, non-repudiation, and efficient resource utilization—without relying on a centralized global infrastructure.
+While firewalls act as static border guards blocking unauthorized entrance to a network, sophisticated attacks or rogue internal users can still bypass them. An Intrusion Detection System (IDS) acts as an internal security camera network[cite: 76]. It continuously monitors system logs, configurations, and live network packets to identify, log, and alert administrators about malicious activity occurring inside the perimeter[cite: 48, 51, 75].
 
 ---
 
-## 2. Core Cryptographic Functions & Workflows
+## 2. Architectural Comparison: Host-Based vs. Network-Based
+An IDS is deployed using two primary architectural strategies depending on the operational environment[cite: 49, 50]:
 
-[cite_start]PGP integrates four distinct operational processes to achieve its security goals[cite: 52]:
 
-### A. Digital Signature & Authentication (Non-Repudiation)
 
-* **The Process:** The sender hashes the message to create a message digest, encrypts that digest using their own **Private RSA/DSS Key** to generate a digital signature, and attaches it to the front of the raw message.
-* **The Verification:** The recipient decrypts the signature using the sender's public key, hashes the incoming text locally, and compares the two values. A perfect match guarantees data integrity and absolute non-repudiation (the sender cannot deny writing the email).
+### A. Host-Based IDS (HIDS)
+* **Deployment:** Installed directly onto a specific high-value machine, such as a core database or an Active Directory server[cite: 49].
+* **Data Monitored:** Internal operating system logs, local application trails, registry changes, and file integrity modifications[cite: 50].
+* **Main Advantage:** Can inspect decrypted traffic seamlessly because it analyzes data at the endpoint level after the host has processed and terminated the encryption layer.
+* **Main Weakness:** Consumes local CPU and memory resources directly from the host system it guards, and its local logs can be altered or disabled if an attacker achieves root system compromise.
 
-### B. Confidentiality (Encryption)
-* **The Process:** PGP uses a hybrid cryptosystem. Because asymmetric key encryption is computationally heavy, PGP generates a unique, one-time temporary **Symmetric Session Key** (using AES or Triple-DES) for every single message.
-* **The Execution:** The bulk message is encrypted using this fast symmetric session key. Then, the session key itself is encrypted using the recipient's **Public Asymmetric Key** and appended to the front of the encrypted message envelope. Only the recipient's corresponding private key can unlock the session key, which then unlocks the message.
-
-### C. Compression (Efficiency)
-* **The Process:** PGP applies a compression algorithm (ZIP or Deflate) immediately *after* signature generation but *before* encryption.
-* **Why it matters:** 1. It saves significant bandwidth and network transit time.
-  2. It improves cryptographic security by drastically reducing redundant patterns in the text, making it significantly harder for attackers to launch cryptanalytic pattern attacks against the subsequent encryption layer.
-
-### D. Email Compatibility Transmission
-* **The Process:** Cryptographic ciphertext and compressed binaries contain raw 8-bit arbitrary character codes. Standard legacy email transfer protocols (like SMTP) handle only basic 7-bit ASCII text and will choke or corrupt raw binary. PGP routes the entire finalized binary envelope through a **Radix-64 (Base64) conversion engine**, transforming the ciphertext into safe, standardized 7-bit ASCII print text.
+### B. Network-Based IDS (NIDS)
+* **Deployment:** Placed at strategic network bottleneck points, such as right behind a perimeter firewall or attached to a network switch SPAN port[cite: 49, 50].
+* **Data Monitored:** Raw inbound and outbound network packet headers and payloads moving across network segments in real time[cite: 50].
+* **Main Advantage:** A single NIDS sensor can transparently monitor traffic for hundreds of connected devices without requiring individual machine agent installations or degrading endpoint host performance.
+* **Main Weakness:** Completely blind to encrypted packet payloads (such as HTTPS or SSH traffic streams) moving across the wire, and cannot verify if an observed exploit packet successfully executed on the target host.
 
 ---
 
-## 3. PGP Algorithmic Operation Pipeline
+## 3. Detection Methodologies & Measures
+To determine if an active event constitutes an attack, an IDS utilizes three core tracking methodologies[cite: 51]:
 
 ```mermaid
 graph TD
-    subgraph Transmission Processing Engine (Sender)
-        M[Plaintext Message] --> HASH[1. Hash Engine]
-        HASH -->|Digest| Sign[2. Encrypt with Sender's Private Asymmetric Key]
-        Sign -->|Digital Signature| Combine[Combine Signature + Message]
-        M --> Combine
-        Combine --> COMP[3. ZIP Compression Engine]
-        COMP -->|Compressed Payload| BulkEnc[4. Encrypt Payload with Symmetric Session Key]
-        SymKey[Random Session Key] --> BulkEnc
-        SymKey --> KeyEnc[5. Encrypt Key with Receiver's Public Asymmetric Key]
-        BulkEnc --> Package[Merge Encrypted Key + Encrypted Payload]
-        KeyEnc --> Package
-        Package --> R64[6. Radix-64 Encoding]
-        R64 --> Out[Final ASCII Email Text]
-    end
+    A[IDS Detection Engines] --> B[Signature-Based <br> Looks for known malware fingerprints]
+    A --> C[Anomaly-Based <br> Looks for deviations from normal baseline]
+    A --> D[Heuristic/Behavioral <br> Looks for dangerous action patterns]
 ```
 
+### 1. Signature-Based Detection (Misuse Detection)
+* **Mechanism:** Compares network traffic or log entries directly against a static database of known attack fingerprints, similar to traditional antivirus software[cite: 51].
+* **Example:** Matching a specific sequence of bytes in a packet header known to belong to a legacy remote code execution exploit.
+* **Evaluation:** Highly accurate with near-zero false alarms for known threats, but completely blind to brand-new, modified, or zero-day attacks.
+
+### 2. Anomaly-Based Detection
+* **Mechanism:** First monitors normal network operation over an initial baseline phase to establish a statistical model of standard behavior (e.g., normal bandwidth volumes, typical login hours)[cite: 51]. It flags any deviation from this baseline[cite: 51].
+* **Example:** A regular user account suddenly downloading 50GB of raw database files via an unusual protocol at 3:00 AM.
+* **Evaluation:** Highly capable of identifying unknown zero-day attacks, but prone to high false-positive rates because legitimate user behavior changes dynamically.
+
+### 3. Heuristic / Behavioral Tracking
+* **Mechanism:** Instead of looking for exact signature matches or pure statistical metrics, it evaluates the *intent* and behavioral characteristics of an application’s actions over a timeline[cite: 51].
+* **Example:** Detecting an unknown program that is rapidly opening documents, reading them, writing encrypted output copies, and deleting the originals (the definitive behavior of active ransomware).
+* **Evaluation:** Highly effective at neutralizing mutating malware variants, but demands significant computational processing power to track and parse application execution states.
+
 ---
 
-## 4. Radical Key Management Structure: The Web of Trust
+## 4. Consolidated Operational Summary Matrix
 
-[cite_start]Unlike traditional corporate infrastructures that depend on central, hierarchical Certificate Authorities (like X.509) to vouch for public keys[cite: 40], PGP implements a decentralized framework known as the **Web of Trust**.
-
-
-
-* **No Central Hierarchy:** There is no single, absolute root authority that can be hacked or compromised to take down the network.
-* **Direct Peer Endorsement:** Users sign each other’s public keys directly. For instance, if Bob trusts Alice implicitly, and Alice signs Charlie's public key certificate, Bob can use Alice's signature to automatically trust that Charlie's key is genuine.
-* **The Trust Levels:** PGP keyrings track and quantify trust dynamically. Each certificate contains metadata tags detailing how far a user trusts an individual to validate other members. This creates a distributed web of horizontal identity verification across global networks.
-
----
-
-## 5. Consolidated Functional Matrix
-
-| PGP Security Service | Underlying Algorithm Options | Key Component Utilized |
+| Evaluation Metric | Host-Based (HIDS) [cite: 49] | Network-Based (NIDS) [cite: 49] |
 | :--- | :--- | :--- |
-| **Digital Signature** | SHA-256 / SHA-512 with RSA or DSS | [cite_start]Sender's Private Key [cite: 52, 89] |
-| **Confidentiality** | AES / CAST-128 / 3DES / IDEA | [cite_start]Temporary Session Key + Recipient's Public Key [cite: 52, 89] |
-| **Compression** | ZIP / Deflate | [cite_start]N/A (Standard algorithmic reduction) [cite: 52] |
-| **Radix-64 Format** | Base64 Encoding Map | N/A (Converts binary payload to ASCII) |
+| **Data Visibility** | Local OS files, memory spaces, and application logs[cite: 50]. | Network wire packets and communication protocol headers[cite: 50]. |
+| **Encryption Handling** | Decrypts and views data at the OS layer. | Blind to encrypted payload data packets. |
+| **Primary Methodology** | Integrates file integrity and signature checks[cite: 51]. | Integrates network signatures and baseline anomaly tracing[cite: 51]. |
 
-```obsidian
-# Exam Note: Pretty Good Privacy (PGP) Architecture Blueprint
+# Exam Note: IDS Architecture and Detection Engines
 
-## 1. Sequence Priority Logic
-* **Rule:** Encryption happens *after* signing. 
-* **Justification:** This allows the signature layer to be verified directly without forcing third-party mail systems to fully decrypt the underlying text payload for basic message tracking.
+## 1. Topographic Deployments
+* **NIDS Layer:** Positioned out-of-band at the network core to parse packet traffic structures[cite: 49, 50].
+* **HIDS Layer:** Provisioned directly onto high-value target assets to watch system-level runtime events[cite: 49, 50].
 
 ```mermaid
 graph LR
-    Plaintext --> Sign[Sign: Sender PrivKey]
-    Sign --> Compress[Compress: ZIP]
-    Compress --> Encrypt[Encrypt: Session Key]
-    Encrypt --> Radix[Encode: Radix-64]
+    Router[Perimeter Router] --> NIDS[NIDS Sensor]
+    NIDS --> Switch[Internal Switch]
+    Switch --> Host1[Server with HIDS]
+    Switch --> Host2[Workstation]
 ```
 
-## 2. Structural Core Traits
-* `Session Key`: Ephemeral single-use metric; discarded immediately after payload assembly.
-* [cite_start]`Web of Trust`: Eliminates fixed administrative point vulnerabilities through peer-to-peer certificate signing[cite: 52, 80].
-* [cite_start]`Radix-64 Engine`: Modifies binary streams to safe character domains to protect payloads from SMTP translation errors[cite: 72].
-```
+## 2. Detection Rule Sets
+* `Signature Engine`: Static pattern matching[cite: 51]. Zero configuration overhead but blind to new exploits[cite: 51].
+* `Anomaly Engine`: Baseline variance tracing[cite: 51]. Identifies custom threats but produces high false-alarm noise profiles[cite: 51].
 
-```
-
----
 
 Say **"Next"** whenever you are ready to proceed to the next long-answer topic in the sequence: **Public Key Distribution Schemes**.
