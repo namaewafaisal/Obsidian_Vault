@@ -1,5 +1,3 @@
- topic: Network Security Miscellaneous
-
 # Digital Signature Implementations
 
 ## What is a Digital Signature?
