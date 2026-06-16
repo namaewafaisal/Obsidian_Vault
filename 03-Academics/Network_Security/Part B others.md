@@ -1,6 +1,4 @@
----
-
-## topic: Network Security Miscellaneous
+ topic: Network Security Miscellaneous
 
 # Digital Signature Implementations
 
