@@ -1,0 +1,7 @@
+- 4:30 Wake up
+- 4:45 Bath And Toilet
+- 5:30 Dress Change
+- 6:00 Depart
+- 6:45 Reach
+- 7:00 Print then food 
+- 8:00 Reach College
