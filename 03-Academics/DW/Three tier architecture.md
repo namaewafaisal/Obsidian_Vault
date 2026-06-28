@@ -504,3 +504,584 @@ The **Three-Tier Data Warehouse Architecture** organizes a data warehouse into t
 * **Top Tier:** Reporting, dashboards, OLAP, and data mining tools used by decision-makers.
 * **Flow:** Data Sources → ETL → Data Warehouse → OLAP Server → Reports/Dashboards.
 * **Purpose:** Enable fast, secure, and efficient analysis of historical data for decision-making.
+
+
+---
+
+# Unit 1: Autonomous Data Warehouse (ADW)
+
+This is a **frequently asked theory question** (10–15 marks). The examiner expects:
+
+* Definition
+* Architecture/working
+* Features
+* Advantages
+* Comparison with Snowflake (if asked)
+
+---
+
+# What is an Autonomous Data Warehouse?
+
+An **Autonomous Data Warehouse (ADW)** is a **cloud-based data warehouse** that uses **Artificial Intelligence (AI)** and **Machine Learning (ML)** to automate almost all database administration tasks.
+
+Unlike a traditional data warehouse, an ADW can **manage itself** with little or no human intervention.
+
+It automatically performs tasks such as:
+
+* Provisioning
+* Configuration
+* Indexing
+* Performance tuning
+* Security updates
+* Backup and recovery
+* Scaling
+
+In short,
+
+> **An Autonomous Data Warehouse is a self-driving, self-securing, and self-repairing data warehouse.**
+
+---
+
+# Basic Architecture
+
+```text
+          Users / BI Tools
+                 │
+                 ▼
+        SQL Queries / Reports
+                 │
+                 ▼
+     +--------------------------+
+     | Autonomous Data Warehouse|
+     |--------------------------|
+     | AI & Machine Learning    |
+     | Automatic Tuning         |
+     | Auto Scaling             |
+     | Security                 |
+     | Backup & Recovery        |
+     +--------------------------+
+                 ▲
+                 │
+      ETL / Data Integration
+                 ▲
+                 │
+      Databases, ERP, CRM, Files
+```
+
+---
+
+# Working of an ADW
+
+### Step 1
+
+Data is collected from multiple sources.
+
+Example:
+
+* Banking database
+* Sales database
+* Customer database
+* Cloud applications
+
+↓
+
+### Step 2
+
+ETL cleans and integrates the data.
+
+↓
+
+### Step 3
+
+Data is stored in the Autonomous Data Warehouse.
+
+↓
+
+### Step 4
+
+AI continuously monitors the workload.
+
+↓
+
+### Step 5
+
+The system automatically:
+
+* Optimizes queries
+* Creates indexes if needed
+* Allocates CPU and memory
+* Applies security patches
+* Performs backups
+
+↓
+
+### Step 6
+
+Users generate reports and dashboards without worrying about database maintenance.
+
+---
+
+# Features of Autonomous Data Warehouse
+
+## 1. Self-Driving
+
+The warehouse automatically manages itself.
+
+Examples:
+
+* Automatic indexing
+* Query optimization
+* Resource allocation
+* Database tuning
+
+No DBA intervention is required for routine tasks.
+
+---
+
+## 2. Self-Securing
+
+Security updates happen automatically.
+
+Features:
+
+* Automatic patching
+* Data encryption
+* Access control
+* Threat detection
+
+This minimizes security vulnerabilities.
+
+---
+
+## 3. Self-Repairing
+
+If hardware or software failures occur, the warehouse detects and fixes them automatically.
+
+Examples:
+
+* Automatic recovery
+* Failover
+* Error correction
+
+Downtime is greatly reduced.
+
+---
+
+## 4. Auto Scaling
+
+Resources increase or decrease based on workload.
+
+Example:
+
+During a festive sale, query traffic increases sharply.
+
+The warehouse automatically adds CPU and memory.
+
+After the sale ends, resources are reduced to save cost.
+
+---
+
+## 5. Automatic Backup and Recovery
+
+The warehouse periodically creates backups and can restore data automatically if needed.
+
+---
+
+## 6. AI-Based Performance Optimization
+
+AI analyzes query patterns and optimizes execution without manual tuning.
+
+---
+
+## 7. High Availability
+
+The system remains available even during failures, ensuring continuous business operations.
+
+---
+
+## 8. Cloud-Based
+
+Runs on cloud infrastructure.
+
+Benefits:
+
+* Access from anywhere
+* Elastic scalability
+* Lower infrastructure costs
+
+---
+
+# Advantages
+
+* Minimal manual administration
+* Reduced operational cost
+* Improved security
+* High availability
+* Better performance
+* Automatic optimization
+* Automatic backup
+* Faster deployment
+* Easy scalability
+
+---
+
+# Disadvantages
+
+* Requires internet connectivity
+* Vendor dependency (vendor lock-in)
+* Limited manual control
+* Subscription costs
+* Less flexibility for highly customized configurations
+
+---
+
+# Real-Life Example
+
+A multinational retail company stores sales data in an ADW.
+
+Every day:
+
+* Millions of transactions are loaded.
+* AI detects that sales queries are increasing.
+* The warehouse automatically scales resources.
+* Query performance is optimized.
+* Security patches are installed automatically at night.
+* Backups are created without interrupting users.
+
+Managers receive reports without noticing any maintenance activities.
+
+---
+
+# Autonomous Data Warehouse vs Snowflake
+
+> **Note:** Here, **Snowflake** refers to the cloud data warehouse platform, **not the Snowflake Schema**.
+
+| Feature               | Autonomous Data Warehouse                    | Snowflake                                                         |
+| --------------------- | -------------------------------------------- | ----------------------------------------------------------------- |
+| Management            | Fully autonomous                             | User-managed (some automation)                                    |
+| Database Tuning       | Automatic                                    | Mostly manual/configurable                                        |
+| Indexing              | Automatic                                    | No traditional indexes; optimization handled differently          |
+| Security Patching     | Automatic                                    | Managed by Snowflake, but admin still manages many configurations |
+| Auto Scaling          | Automatic                                    | Supported                                                         |
+| AI-Based Optimization | Extensive                                    | Limited compared to ADW                                           |
+| DBA Requirement       | Very low                                     | Moderate                                                          |
+| Vendor                | Oracle                                       | Snowflake Inc.                                                    |
+| Best For              | Organizations wanting minimal administration | Organizations needing flexible cloud analytics                    |
+
+---
+
+# Exam Conclusion
+
+An **Autonomous Data Warehouse** is a modern cloud-based warehouse that automates administration using AI and machine learning. It is **self-driving, self-securing, and self-repairing**, reducing operational costs while improving scalability, security, and performance, making it ideal for modern business intelligence and analytics.
+
+---
+
+# Quick 2-Mark Revision
+
+* Autonomous Data Warehouse = **Self-driving + Self-securing + Self-repairing**
+* Uses **AI and Machine Learning**
+* Automatically handles tuning, backups, scaling, and security
+* Reduces DBA workload
+* Provides high availability and cloud scalability
+
+---
+
+# Unit 3: Metadata Repository and Metadata Management Challenges
+
+---
+
+# What is Metadata?
+
+**Metadata** means:
+
+> **"Data about data."**
+
+It describes the structure, meaning, origin, and usage of data stored in a data warehouse.
+
+Metadata helps both users and systems understand:
+
+* What the data represents
+* Where it came from
+* How it is stored
+* How it should be used
+
+---
+
+# What is a Metadata Repository?
+
+A **Metadata Repository** is a centralized storage area that stores all metadata related to a data warehouse.
+
+It acts like a **catalog or dictionary** for the warehouse.
+
+It does **not** store business data.
+
+It stores information **about** the business data.
+
+---
+
+# Diagram
+
+```text
+          Data Sources
+               │
+               ▼
+      +-----------------+
+      | Metadata        |
+      | Repository      |
+      +-----------------+
+         ▲         ▲
+         │         │
+     ETL Process  Data Warehouse
+         │         │
+         ▼         ▼
+      Reports / BI Tools
+```
+
+The repository is accessed by ETL tools, administrators, developers, and reporting tools.
+
+---
+
+# Types of Metadata
+
+## 1. Business Metadata
+
+Describes the business meaning of data.
+
+Example:
+
+```text
+Customer_ID → Unique identifier of every customer
+
+Sales → Total revenue generated
+```
+
+Used mainly by managers and business users.
+
+---
+
+## 2. Technical Metadata
+
+Describes technical details.
+
+Example:
+
+```text
+Table Name
+
+Column Name
+
+Data Type
+
+Indexes
+
+Relationships
+```
+
+Used by developers and DBAs.
+
+---
+
+## 3. Operational Metadata
+
+Describes warehouse operations.
+
+Includes:
+
+* ETL execution time
+* Load status
+* Backup history
+* Error logs
+* Refresh schedules
+
+Used for monitoring and maintenance.
+
+---
+
+# Role / Importance of Metadata Repository
+
+## 1. Data Understanding
+
+Users can easily understand the meaning and structure of data.
+
+Example:
+
+Instead of guessing what `Cust_ID` means, the metadata clearly explains it.
+
+---
+
+## 2. Data Integration
+
+Metadata records where data originated and how it was transformed.
+
+This makes integration from multiple sources easier.
+
+---
+
+## 3. ETL Support
+
+ETL tools use metadata to:
+
+* Extract data
+* Transform it
+* Load it into the warehouse
+
+---
+
+## 4. Query Processing
+
+Reporting and OLAP tools use metadata to identify:
+
+* Tables
+* Relationships
+* Dimensions
+* Measures
+
+This enables accurate and efficient queries.
+
+---
+
+## 5. Data Governance
+
+Metadata helps enforce:
+
+* Naming standards
+* Business rules
+* Data ownership
+* Security policies
+
+---
+
+## 6. Impact Analysis
+
+When a table or column changes, metadata identifies all dependent reports, dashboards, and ETL jobs.
+
+This simplifies maintenance.
+
+---
+
+## 7. Better Documentation
+
+The repository serves as centralized documentation for developers, administrators, and business users.
+
+---
+
+# Challenges in Metadata Management
+
+Managing metadata is not easy because it changes along with the data warehouse.
+
+---
+
+## 1. Frequent Updates
+
+As tables, columns, or ETL processes change, metadata must also be updated.
+
+Outdated metadata can mislead users.
+
+---
+
+## 2. Metadata Consistency
+
+Metadata collected from different tools and systems may use different naming conventions or formats.
+
+Maintaining consistency is challenging.
+
+---
+
+## 3. Integration from Multiple Sources
+
+Organizations often use different databases and ETL tools.
+
+Combining metadata from all of them into one repository is difficult.
+
+---
+
+## 4. Scalability
+
+As the warehouse grows, the amount of metadata increases significantly.
+
+The repository must scale efficiently.
+
+---
+
+## 5. Security
+
+Metadata may reveal sensitive information such as:
+
+* Database structure
+* Table names
+* Data sources
+
+Unauthorized access can expose critical system details.
+
+---
+
+## 6. Synchronization
+
+Whenever the warehouse changes, metadata must be updated immediately.
+
+Delayed synchronization results in incorrect documentation.
+
+---
+
+## 7. Data Quality
+
+Incorrect or incomplete metadata can lead to:
+
+* Wrong reports
+* Incorrect ETL mappings
+* Faulty business decisions
+
+---
+
+## 8. Version Control
+
+As schemas evolve over time, organizations must maintain different versions of metadata to support older reports and ensure traceability.
+
+---
+
+# Real-Life Example
+
+An e-commerce company has:
+
+* Customer Database
+* Orders Database
+* Inventory Database
+
+The metadata repository stores:
+
+* Table names
+* Relationships
+* ETL schedules
+* Column definitions
+* Data owners
+* Business descriptions
+
+When the `Customer_Address` column is renamed to `Address`, the metadata repository is updated. ETL jobs and reports reference the repository to adjust automatically, reducing errors.
+
+---
+
+# Advantages of Metadata Repository
+
+* Centralized documentation
+* Easier maintenance
+* Better ETL management
+* Improved data quality
+* Faster report development
+* Better governance
+* Simplified impact analysis
+
+---
+
+# Exam Conclusion
+
+A **Metadata Repository** is the centralized store for all information about data in a data warehouse. It enables efficient ETL, reporting, governance, and maintenance. However, maintaining accurate, consistent, secure, and up-to-date metadata is challenging, especially in large organizations where data sources and warehouse structures change frequently.
+
+---
+
+# Quick 2-Mark Revision
+
+* **Metadata:** Data about data.
+* **Metadata Repository:** Centralized storage of metadata.
+* **Types:** Business, Technical, Operational.
+* **Importance:** Supports ETL, reporting, governance, documentation, and impact analysis.
+* **Challenges:** Frequent updates, consistency, integration, scalability, security, synchronization, data quality, and version control.
