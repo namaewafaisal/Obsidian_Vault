@@ -1940,3 +1940,263 @@ The **Load Manager** and **Warehouse Manager** perform complementary roles in a 
 * **Relationship:** **Load Manager → Data Warehouse → Warehouse Manager → OLAP/Reports**.
 
 ---
+
+Sounds good. I'll keep these **exam-oriented but concise**—enough for a **5–10 mark answer**, with definitions, key points, simple examples, and tables where useful.
+
+---
+
+# 1. Unit 2: Compare OLAP and OLTP Systems
+
+## What is OLTP?
+
+**OLTP (Online Transaction Processing)** manages daily business transactions.
+
+Examples:
+
+* ATM transactions
+* Online shopping orders
+* Railway ticket booking
+
+Its goal is **fast transaction processing**.
+
+---
+
+## What is OLAP?
+
+**OLAP (Online Analytical Processing)** is used to analyze historical data for decision-making.
+
+Examples:
+
+* Monthly sales analysis
+* Customer trends
+* Profit forecasting
+
+Its goal is **fast data analysis**.
+
+---
+
+## OLTP vs OLAP
+
+| Feature    | OLTP                   | OLAP                          |
+| ---------- | ---------------------- | ----------------------------- |
+| Purpose    | Daily transactions     | Data analysis                 |
+| Data       | Current                | Historical                    |
+| Users      | Cashiers, Customers    | Managers, Analysts            |
+| Operations | Insert, Update, Delete | Read and Analyze              |
+| Query Type | Simple                 | Complex                       |
+| Database   | Normalized             | Denormalized (Star/Snowflake) |
+| Speed      | Fast transactions      | Fast analytical queries       |
+| Example    | Banking system         | Sales dashboard               |
+
+### Example
+
+**OLTP:** Customer buys a laptop → order is stored.
+
+**OLAP:** Manager checks laptop sales over the last 5 years.
+
+---
+
+## Conclusion
+
+* **OLTP = Run the business**
+* **OLAP = Analyze the business**
+
+---
+
+# 2. Unit 2: MOLAP, ROLAP and HOLAP Architecture
+
+## 1. MOLAP (Multidimensional OLAP)
+
+Data is stored in **multidimensional cubes**.
+
+```text
+Data Warehouse
+      │
+      ▼
+ MOLAP Server
+      │
+      ▼
+ OLAP Cube
+      │
+      ▼
+ Users
+```
+
+### Features
+
+* Very fast queries
+* Uses precomputed cubes
+* More storage required
+
+**Example:** Sales cube with Product, Time, and Region dimensions.
+
+---
+
+## 2. ROLAP (Relational OLAP)
+
+Data remains in **relational database tables**.
+
+```text
+Data Warehouse
+      │
+      ▼
+ ROLAP Server
+      │
+      ▼
+Relational Database
+      │
+      ▼
+ Users
+```
+
+### Features
+
+* Uses SQL queries
+* Handles very large datasets
+* Slower than MOLAP
+
+---
+
+## 3. HOLAP (Hybrid OLAP)
+
+Combination of MOLAP and ROLAP.
+
+```text
+         HOLAP
+      /         \
+ OLAP Cubes   Relational DB
+```
+
+Frequently used summary data is stored in cubes, while detailed data remains in relational tables.
+
+---
+
+## Comparison
+
+| Feature       | MOLAP         | ROLAP          | HOLAP                |
+| ------------- | ------------- | -------------- | -------------------- |
+| Storage       | Cubes         | Tables         | Both                 |
+| Speed         | Fastest       | Slowest        | Moderate             |
+| Scalability   | Medium        | High           | High                 |
+| Storage Space | High          | Low            | Moderate             |
+| Best For      | Fast analysis | Huge databases | Balanced performance |
+
+---
+
+## Conclusion
+
+* **MOLAP:** Fastest, cube-based.
+* **ROLAP:** Flexible, table-based.
+* **HOLAP:** Combines advantages of both.
+
+---
+
+# 3. Unit 2: Phases of the Delivery Process in a Data Warehouse
+
+The **Data Warehouse Delivery Process** is the sequence of steps followed to successfully build and deploy a data warehouse.
+
+---
+
+## Phase 1: Requirement Analysis
+
+Understand business needs.
+
+Questions:
+
+* What reports are required?
+* Which departments will use the warehouse?
+
+Example:
+Sales department wants monthly revenue reports.
+
+---
+
+## Phase 2: Data Modeling
+
+Design:
+
+* Fact tables
+* Dimension tables
+* Star or Snowflake Schema
+
+---
+
+## Phase 3: ETL Development
+
+Perform:
+
+* Extract
+* Transform
+* Load
+
+Data is cleaned and loaded into the warehouse.
+
+---
+
+## Phase 4: Warehouse Implementation
+
+Create:
+
+* Database
+* Tables
+* Indexes
+* Metadata
+
+---
+
+## Phase 5: Testing
+
+Check:
+
+* Data accuracy
+* Performance
+* Query correctness
+* Security
+
+---
+
+## Phase 6: Deployment
+
+The warehouse is made available to users.
+
+Managers can now generate reports and dashboards.
+
+---
+
+## Phase 7: Maintenance
+
+Regular activities include:
+
+* Refreshing data
+* Performance tuning
+* Backup and recovery
+* Monitoring
+
+---
+
+## Delivery Process Flow
+
+```text
+Requirements
+      ↓
+Data Modeling
+      ↓
+ETL Development
+      ↓
+Warehouse Creation
+      ↓
+Testing
+      ↓
+Deployment
+      ↓
+Maintenance
+```
+
+---
+
+## Conclusion
+
+The delivery process ensures that the data warehouse is planned, built, tested, deployed, and maintained systematically, resulting in reliable and efficient decision support.
+
+---
+
