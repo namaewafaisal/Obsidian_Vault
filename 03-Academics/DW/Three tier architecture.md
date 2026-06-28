@@ -1938,3 +1938,5 @@ The **Load Manager** and **Warehouse Manager** perform complementary roles in a 
 * **Load Manager:** Extracts, transforms, validates, and loads data.
 * **Warehouse Manager:** Maintains, optimizes, indexes, backs up, and manages warehouse data.
 * **Relationship:** **Load Manager → Data Warehouse → Warehouse Manager → OLAP/Reports**.
+
+---
