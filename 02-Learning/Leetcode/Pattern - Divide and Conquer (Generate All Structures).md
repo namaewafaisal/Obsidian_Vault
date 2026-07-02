@@ -4,8 +4,8 @@
 
 ## Problem Index
 
-- [ ] [[Problems/95. Unique Binary Search Trees II]]
-- [ ] [[241. Different Ways to Add Parentheses]]
+- [x] [[Problems/95. Unique Binary Search Trees II]] ✅ 2026-07-02
+- [x] [[241. Different Ways to Add Parentheses]] ✅ 2026-07-02
 - [ ] [[894. All Possible Full Binary Trees]]
 - [ ] [[1130. Minimum Cost Tree From Leaf Values]]
 - [ ] [[1039. Minimum Score Triangulation of Polygon]]
