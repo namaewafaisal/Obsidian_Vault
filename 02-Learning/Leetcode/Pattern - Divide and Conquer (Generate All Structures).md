@@ -4,7 +4,7 @@
 
 ## Problem Index
 
-- [ ] [[95. Unique Binary Search Trees II]]
+- [ ] [[Problems/95. Unique Binary Search Trees II]]
 - [ ] [[241. Different Ways to Add Parentheses]]
 - [ ] [[894. All Possible Full Binary Trees]]
 - [ ] [[1130. Minimum Cost Tree From Leaf Values]]
