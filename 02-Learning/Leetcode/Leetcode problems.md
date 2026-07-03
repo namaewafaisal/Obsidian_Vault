@@ -131,7 +131,7 @@ folders:
 * [x] [[ 141. Linked List Cycle]] ✅ 2026-03-09
 * [x] [[Problems/21. Merge Two Sorted Lists]] ✅ 2026-03-09
 * [ ] [[19. Remove Nth Node From End of List]]
-* [ ] [[2. Add Two Numbers]]
+* [ ] [[Problems/2. Add Two Numbers]]
 * [ ] [[143. Reorder List]]
 
 ### Grind 75 Only

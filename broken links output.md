@@ -132,7 +132,7 @@ Don't forget that creating the file from here may create the file in the wrong d
 - [[36. Valid Sudoku]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[37. Sudoku Solver]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[19. Remove Nth Node From End of List]] in [[02-Learning/Leetcode/Leetcode problems]]
-- [[2. Add Two Numbers]] in [[02-Learning/Leetcode/Leetcode problems]]
+- [[02-Learning/Leetcode/Problems/2. Add Two Numbers]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[143. Reorder List]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[876. Middle of the Linked List]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[146. LRU Cache]] in [[02-Learning/Leetcode/Leetcode problems]]
