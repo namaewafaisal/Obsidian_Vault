@@ -62,7 +62,49 @@ Intro
   - Kernel identifies files by metadata/content, not extension.
   - `out`, `notes.txt`, `abc.xyz` are all just filenames.
 
+## Processes & fork()
 
+- Process
+  - Running instance of a program.
+  - Has its own memory, registers, stack, heap and FD table.
+
+- `fork()`
+  - Creates a new process (child).
+  - Child is an almost exact copy of the parent.
+  - Both continue executing from the **next instruction** after `fork()`.
+
+- `pid = fork()`
+  - `pid` is **NOT** the process ID.
+  - `pid` stores the **return value of `fork()`**.
+  - Parent: `pid > 0` (child's actual PID).
+  - Child: `pid == 0`.
+  - Error: `pid == -1`.
+
+- Actual Process ID
+  - Every process has a unique PID assigned by the OS.
+  - Doesn't change during the process lifetime.
+  - Obtain using `getpid()`.
+
+- Memory after `fork()`
+  - Entire process memory is copied.
+  - Variables initially have the same values.
+  - Only the return value of `fork()` differs between parent and child.
+
+- Multiple `fork()`
+  - Every existing process executes the next `fork()`.
+  - Number of processes:
+    - 1 fork → 2 processes
+    - 2 forks → 4 processes
+    - 3 forks → 8 processes (`2^n`)
+
+- Scheduling
+  - Parent and child run independently.
+  - Execution order is **not guaranteed**.
+  - Parent may run first, child may run first, or execution may interleave.
+
+- Output
+  - Linux usually buffers `printf()`, so output often appears line-by-line.
+  - xv6 may interleave characters because both processes write concurrently with minimal buffering.
 
 
 ---
