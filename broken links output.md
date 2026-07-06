@@ -167,7 +167,7 @@ Don't forget that creating the file from here may create the file in the wrong d
 - [[124. Binary Tree Maximum Path Sum]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[113. Path Sum II]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[662. Maximum Width of Binary Tree]] in [[02-Learning/Leetcode/Leetcode problems]]
-- [[103. Binary Tree Zigzag Level Order Traversal]] in [[02-Learning/Leetcode/Leetcode problems]]
+- [[02-Learning/Leetcode/Problems/103. Binary Tree Zigzag Level Order Traversal]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[437. Path Sum III]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[101. Symmetric Tree]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[863. All Nodes Distance K in Binary Tree]] in [[02-Learning/Leetcode/Leetcode problems]]

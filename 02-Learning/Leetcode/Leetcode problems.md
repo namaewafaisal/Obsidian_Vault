@@ -218,7 +218,7 @@ folders:
 * [ ] [[113. Path Sum II]]
 * [ ] [[662. Maximum Width of Binary Tree]]
 * [x] [[Problems/100. Same Tree]] ✅ 2026-03-18
-* [ ] [[103. Binary Tree Zigzag Level Order Traversal]]
+* [ ] [[Problems/103. Binary Tree Zigzag Level Order Traversal]]
 * [ ] [[437. Path Sum III]]
 * [ ] [[101. Symmetric Tree]]
 * [ ] [[863. All Nodes Distance K in Binary Tree]]
