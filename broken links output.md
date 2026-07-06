@@ -156,7 +156,7 @@ Don't forget that creating the file from here may create the file in the wrong d
 - [[278. First Bad Version]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[981. Time Based Key-Value Store]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[1235. Maximum Profit in Job Scheduling]] in [[02-Learning/Leetcode/Leetcode problems]]
-- [[4. Median of Two Sorted Arrays]] in [[02-Learning/Leetcode/Leetcode problems]]
+- [[02-Learning/Leetcode/Problems/4. Median of Two Sorted Arrays]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[230. Kth Smallest Element in a BST]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[285. Inorder Successor in BST]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[108. Convert Sorted Array to BST]] in [[02-Learning/Leetcode/Leetcode problems]]

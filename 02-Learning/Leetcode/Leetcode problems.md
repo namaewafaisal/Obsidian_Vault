@@ -191,7 +191,7 @@ folders:
 * [x] [[ 33. Search in Rotated Sorted Array]] ✅ 2026-03-19
 * [ ] [[981. Time Based Key-Value Store]]
 * [ ] [[1235. Maximum Profit in Job Scheduling]]
-* [ ] [[4. Median of Two Sorted Arrays]]
+* [ ] [[Problems/4. Median of Two Sorted Arrays]]
 * [x] [[ 74. Search a 2D Matrix]] ✅ 2026-03-19
 * [x] [[ 153. Find Minimum in Rotated Sorted Array]] ✅ 2026-03-19
 
