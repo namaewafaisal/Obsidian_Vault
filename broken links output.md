@@ -172,7 +172,7 @@ Don't forget that creating the file from here may create the file in the wrong d
 - [[101. Symmetric Tree]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[863. All Nodes Distance K in Binary Tree]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[542. 01 Matrix]] in [[02-Learning/Leetcode/Leetcode problems]]
-- [[133. Clone Graph]] in [[02-Learning/Leetcode/Leetcode problems]]
+- [[02-Learning/Leetcode/Problems/133. Clone Graph]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[721. Accounts Merge]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[127. Word Ladder]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[79. Word Search]] in [[02-Learning/Leetcode/Leetcode problems]]
