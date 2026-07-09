@@ -141,7 +141,7 @@ Don't forget that creating the file from here may create the file in the wrong d
 - [[148. Sort List]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[234. Palindrome Linked List]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[25. Reverse Nodes in k-Group]] in [[02-Learning/Leetcode/Leetcode problems]]
-- [[1021. Remove Outermost Parentheses]] in [[02-Learning/Leetcode/Leetcode problems]]
+- [[02-Learning/Leetcode/Problems/1021. Remove Outermost Parentheses]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[232. Implement Queue using Stacks]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[224. Basic Calculator]] in [[02-Learning/Leetcode/Leetcode problems]]
 - [[844. Backspace String Compare]] in [[02-Learning/Leetcode/Leetcode problems]]
