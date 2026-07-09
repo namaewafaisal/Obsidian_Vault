@@ -202,7 +202,7 @@ folders:
 ### Grind 75 Only
 * [ ] [[ 235. Lowest Common Ancestor of a BST]]
 * [ ] [[ 98. Validate Binary Search Tree]]
-* [ ] [[230. Kth Smallest Element in a BST]]
+* [ ] [[Problems/230. Kth Smallest Element in a BST]]
 * [ ] [[285. Inorder Successor in BST]]
 * [ ] [[108. Convert Sorted Array to BST]]
 * [ ] [[ 226. Invert Binary Tree]]

@@ -1,6 +1,6 @@
 # English Grammar Index
 
-## 1. [[Foundations of Sentences]]
+## 1. [[../../Aptitude/Foundations of Sentences]]
 - [[What is a Sentence]]
 - [[Subject Verb Object (SVO)]]
 - [[Sentence Types]]
@@ -9,7 +9,7 @@
 
 ---
 
-## 2. [[Parts of Speech]]
+## 2. [[../../Aptitude/Parts of Speech]]
 - [[Nouns]]
 - [[Pronouns]]
 - [[Verbs]]

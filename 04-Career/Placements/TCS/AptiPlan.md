@@ -53,7 +53,7 @@ Mocks + Analysis
   * [[Trains]]
 * [[Simple Interest]]
 * [[Compound Interest]]
-* [[Averages]]
+* [[../Aptitude/Averages]]
 * [[Ratio and Proportion]]
 
 ---
