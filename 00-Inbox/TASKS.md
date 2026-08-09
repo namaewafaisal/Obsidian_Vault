@@ -1,0 +1,4 @@
+- [ ] College Tution fees
+- [ ] Bus fees
+- [ ] Passport apply
+- [ ] Complete TCS forms
