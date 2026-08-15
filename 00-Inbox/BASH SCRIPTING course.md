@@ -36,3 +36,5 @@ grep -A1 above -B1 below one line -C both
 grep -i case insensitive
 grep -o match the part onely dont printed full line
 cat file.txt | grep dave ,  pipe output of cat send input to grep
+less paginate. press q to exit / search.
+more is similar but actual move page not each entry move
