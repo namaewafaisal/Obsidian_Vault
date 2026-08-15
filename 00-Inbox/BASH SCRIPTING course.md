@@ -31,3 +31,8 @@ grep search a pattern in file or piped output
 grep hello text.txt
 grep '^start end$'
 echo somthing > file overwrite
+`>>` append
+grep -A1 above -B1 below one line -C both 
+grep -i case insensitive
+grep -o match the part onely dont printed full line
+cat file.txt | grep dave ,  pipe output of cat send input to grep
