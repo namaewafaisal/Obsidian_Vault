@@ -1,0 +1,6 @@
+- [[Things to Know in C++ Java Python or any language|Things to Know in C++/Java/Python or any language]]
+- [[Build-up Logical Thinking|Build-up Logical Thinking]]
+- [[Learn STL Java Collections or similar thing in your language|Learn STL/Java-Collections or similar thing in your language]]
+- [[Know Basic Maths|Know Basic Maths]]
+- [[Learn Basic Recursion|Learn Basic Recursion]]
+- [[Learn Basic Hashing|Learn Basic Hashing]]
