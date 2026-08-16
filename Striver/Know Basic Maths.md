@@ -1,0 +1,7 @@
+- [[Count Digits|Count Digits]]
+- [[Reverse a Number|Reverse a Number]]
+- [[Check Palindrome|Check Palindrome]]
+- [[GCD HCF|GCD / HCF]]
+- [[Armstrong Number|Armstrong Number]]
+- [[Print all Divisors|Print all Divisors]]
+- [[Check for Prime|Check for Prime]]
