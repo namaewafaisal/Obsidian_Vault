@@ -43,3 +43,8 @@ man <any number> printf gets the bash or c version
 history is from bash so help history is the man
 which gets the path of command
 type ls gives types maybe
+echo -e 'hello'
+echo is both built in and library /bin/echo
+man echo is for the lib one
+type is very helpful
+help comand is used for built in
