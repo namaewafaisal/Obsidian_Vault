@@ -1,5 +1,5 @@
-A
-BB
-CCC
-DDDD
-EEEEE
+5
+4
+3
+2
+1
