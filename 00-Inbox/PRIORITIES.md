@@ -1,4 +1,4 @@
-how- [ ] Final year project
+- [ ] Final year project
 - [ ] DSA
 - [ ] system design
 - [ ] CS Fundamentals
