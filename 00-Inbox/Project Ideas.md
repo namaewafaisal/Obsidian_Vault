@@ -22,3 +22,8 @@ user enters what they know, project suggest most optimal next knowledge to learn
 
 # Soumi
 Just a cloudstream like app with flutter for cross platform. use extensions to view and get content from sites.
+
+
+# Money Manager
+if the app can get the information about each transaction, who send, who receives, what purpose, etc then store, graph etc. when qr, qr not only havepayee info and the amount but also other metadata helpful for money manage and its purpose maybe
+but its still more on data acquire position than do something useful by itself
