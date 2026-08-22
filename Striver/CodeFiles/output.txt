@@ -1,2 +1,4 @@
-Elapsed time: 6.74E-4 ms
-55
+Input : 10
+Output : 55
+
+Elapsed time: 22.452475 ms

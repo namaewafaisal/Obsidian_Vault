@@ -76,18 +76,25 @@ public class Recursion {
 
         // Perform task
 
-        long endTime = System.nanoTime();
-        long durationNs = endTime - startTime;
-        double durationMs = durationNs / 1_000_000.0;
-
-        System.out.println("Elapsed time: " + durationMs + " ms");        // String str = sc.next();
-        // int n = sc.nextInt();
-
+        
+        int n = sc.nextInt();
+        
         // printNTo1Backtrack(n);
         // int[] arr = new int[] {1,2,3,3,2,1};
         // display(arr);
-        int result = fib(10);
-        System.out.println(result);
+        System.out.println("Input : " + n);
+        int result = fib(n);
+        System.out.println("Output : " + result);
+        
+        
+        
+        System.out.println();
+        
+        
+        long endTime = System.nanoTime();
+        long durationNs = endTime - startTime;
+        double durationMs = durationNs / 1_000_000.0;
+        System.out.println("Elapsed time: " + durationMs + " ms");        // String str = sc.next();
         
     }
 }
