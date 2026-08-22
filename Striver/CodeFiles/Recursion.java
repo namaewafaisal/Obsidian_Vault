@@ -33,14 +33,44 @@ public class Recursion {
         printNTo1Backtrack(count - 1);
     }
 
+    static void reverseArray(int start, int end, int[] arr) {
+        if(start >= end) {
+            return;
+        }
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        reverseArray(start + 1, end - 1, arr);
+    }
 
+    static boolean isPalindrome(int i, int[] arr) {
+        int n = arr.length;
+        if(i >= n/2) {
+            return true;
+        }
+        if(arr[i] == arr[n-i-1]) {
+            return isPalindrome(i + 1, arr);
+        }
+        reverseArray(start + 1, end - 1, arr);
+    }
+
+    static void display(int[] arr) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         // String str = sc.next();
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
 
-        printNTo1Backtrack(n);
+        // printNTo1Backtrack(n);
+        int[] arr = new int[] {1,2,3,4,5};
+        display(arr);
+        reverseArray(0, arr.length-1, arr);
+        display(arr);
     }
 }
