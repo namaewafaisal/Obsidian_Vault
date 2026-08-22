@@ -48,10 +48,11 @@ public class Recursion {
         if(i >= n/2) {
             return true;
         }
-        if(arr[i] == arr[n-i-1]) {
-            return isPalindrome(i + 1, arr);
+        if(arr[i] != arr[n-i-1]) {
+            return false;
         }
-        reverseArray(start + 1, end - 1, arr);
+        return isPalindrome(i + 1, arr);
+
     }
 
     static void display(int[] arr) {
@@ -60,17 +61,33 @@ public class Recursion {
         }
         System.out.println();
     }
+
+    static int fib(int n) {
+        if(n <= 1) {
+            return n;
+        }
+        return fib(n - 1) + fib(n - 2);
+    }
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // String str = sc.next();
+        long startTime = System.nanoTime();
+
+        // Perform task
+
+        long endTime = System.nanoTime();
+        long durationNs = endTime - startTime;
+        double durationMs = durationNs / 1_000_000.0;
+
+        System.out.println("Elapsed time: " + durationMs + " ms");        // String str = sc.next();
         // int n = sc.nextInt();
 
         // printNTo1Backtrack(n);
-        int[] arr = new int[] {1,2,3,4,5};
-        display(arr);
-        reverseArray(0, arr.length-1, arr);
-        display(arr);
+        // int[] arr = new int[] {1,2,3,3,2,1};
+        // display(arr);
+        int result = fib(10);
+        System.out.println(result);
+        
     }
 }
