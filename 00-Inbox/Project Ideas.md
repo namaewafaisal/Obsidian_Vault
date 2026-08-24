@@ -3,6 +3,8 @@ PHEL is a proposed open-source, emergent physics and chemistry simulation platfo
 
 The long-term vision: a Minecraft-like sandbox where a student can build a rocket, synthesise a compound, or model a thermodynamic system — not because the developer scripted those outcomes, but because the underlying physics is accurate enough that reality reproduces itself in simulation.
 
+# OpenContinuity
+Apple like ecosystem like sync between multiple devices. Even android, laptop, PC, headphones(single connected to all and can be switched to any based on priority like call) while calls can also be transferred from any device to us cuz all are like same device maybe. whatsapp notifcation should not duplicate and more i would need to think
 # Uniroute
 multimodal, path finding with cheapest, fastest and best routes combining the public transports and cabs, creating the optimal path.
 requires the bus, metro routes, cab timings and api to work in real world
