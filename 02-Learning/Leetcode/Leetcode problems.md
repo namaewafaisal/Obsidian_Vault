@@ -230,7 +230,7 @@ folders:
 
 ### Grind 75 Only
 * [x] [[ 733. Flood Fill]] ✅ 2026-01-29
-* [ ] [[542. 01 Matrix]]
+* [ ] [[Problems/542. 01 Matrix]]
 * [ ] [[Problems/133. Clone Graph]]
 * [x] [[Problems/207. Course Schedule]] ✅ 2026-03-22
 * [x] [[ 200. Number of Islands]] ✅ 2026-03-19
