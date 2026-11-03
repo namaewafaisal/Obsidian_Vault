@@ -1,0 +1,12 @@
+## TODO
+- [ ] Use Xperiance to setup the catalog
+- [ ] both general and anime profile need separate xperiance
+- [ ] find the best https addon list/ top 3 enough
+- [ ] find a way to include aiostreams via some public hosted but no restriction that bothers
+- [ ] make sure anime is tracked in anilist and every other is trakt
+- [ ] find out if i need torbox and try atleast once
+- [ ] optimize the search for the sources to get only the best result and others are omitted
+- [ ] make sure i only spend 1 hour on this from 4 Nov 2026
+- [ ] make this reliable in all devices.
+- [ ] make sure this knowledge sticks and used in future too. 
+- [ ] try not to jump to another setup (eg cloudstream to nuvio)
